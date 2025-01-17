@@ -1,68 +1,46 @@
 base_url = "https://audacis.net"
+
 title = "~/pkuehn"
 description = "I'm Philipp and this is my webspace, where I write about current projects or ideas, discuss what moves me forward, or occupies me right now."
-author = "Philipp"
-compile_sass = true
-build_search_index = true
-generate_feeds = true
-minify_html = true
-default_language = "en"
 
+compile_sass = true
+minify_html = true
+
+build_search_index = true
+
+generate_feeds = true
 taxonomies = [{name = "tags", rss = true}]
 
-theme = "tabi"
+theme = "apollo"
 
 [markdown]
 highlight_code = true
-highlight_theme = "css"
+highlight_theme = "ayu-light"
 bottom_footnotes = true
-smart_punctuation = true
 
 [search]
 include_title = true
 include_description = true
-include_path = true
 include_content = true
-# At which character to truncate the content to. Useful if you have a lot of pages and the index would
-# become too big to load on the site. Defaults to not being set.
-# truncate_content_length = 100
-# Wether to produce the search index as a javascript file or as a JSON file.
-# Accepted value "elasticlunr_javascript" or "elasticlunr_json".
 index_format = "elasticlunr_json"
 
 [link_checker]
 internal_level = "warn"
 
 [extra]
-logo_text = "Philipp is writing"
-logo_home_link = "$HOME"
-copyright = "Philipp Kühn"
-mode = "toggle"
-posted_on = "on"
-read_time = "minute read"
-show_more = "Read more ⟶"
-skin = "lavender"
-# skin = "purple"
-
-
-post_listing_index_reversed = true
-
-favicon_emoji = "🧑‍💻"
+toc = false
+use_cdn = false
+theme = "auto"
+fancy_code = true
+repo_url = "https://github.com/randomn4me/randomn4me.github.io/tree/main/content/"
 
 menu = [
-    { name = "/posts", url = "/posts" },
-    { name = "/now", url = "/now" },
-    { name = "/about", url = "/about" },
+    { name = "/posts", url = "/posts", weight = 1 },
+    { name = "/now", url = "/now", weight = 2 },
+    { name = "/about", url = "/about", weight = 3 },
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/randomn4me", icon = "github" },
-    { name = "orcid", url = "https://orcid.org/0000-0002-1739-876X", icon = "orcid" },
-    { name = "scholar", url = "https://scholar.google.com/citations?user=yEOvWXAAAAAJ&hl=en", icon = "google-scholar" },
-    { name = "linkedin", url = "https://www.linkedin.com/in/philipp-k%C3%BChn-724a7a320/", icon = "linkedin" },
+    { name = "linkedin", url = "https://linkedin.com/in/ph-kuehn", icon = "linkedin" },
+    { name = "github", url = "https://github.com/randomn4me/", icon = "github" },
 ]
-
-# footer_menu = [
-#     {url = "about", name = "about", trailing_slash = true},
-#     {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
-# ]

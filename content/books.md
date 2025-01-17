@@ -1,6 +1,5 @@
 +++
 title = 'Books'
-date = 2024-12-07
 +++
 
 This is a list of books that I have read.
