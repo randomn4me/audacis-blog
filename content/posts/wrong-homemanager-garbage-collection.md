@@ -1,5 +1,5 @@
 +++
-date = 2024-09-16
+date = 2024-09-27
 title = "Home Manager Garbage Collection gone wrong"
 description = "A simple mistake in my NixOS configuration led to a full disk."
 
@@ -7,9 +7,9 @@ description = "A simple mistake in my NixOS configuration led to a full disk."
 tags = [ "sysadmin", "nixos", "home-manager", ]
 +++
 
-I recently ran into a problem with my NixOS server.
-As a proud and convinced NixOS user, I use all the fancy features, like [Home Manager](https://nix-community.github.io/home-manager/) to manage my user configuration.
-Unfortunately, I made a mistake in my configuration, which led to a full disk and the inability to update my system any longer.
+I recently ran into a problem with my NixOS server (and apparently my laptop as well).
+And as a proud and convinced, but novice NixOS user, I use all the fancy features like [Flakes](https://nixos.wiki/wiki/flakes) and [Home Manager](https://nix-community.github.io/home-manager/) to manage my user configuration.
+Unfortunately, I made a mistake in my configuration which led to a full disk, and the inability to update my server any longer.
 
 ## The Problem
 
@@ -19,7 +19,7 @@ I suspected some services like Mastodon, which I ran at that time, to be the cul
 
 However, after a short investigation, I found out that the root cause was actually the `/nix/store` directory.
 As I use flakes to manage my NixOS configuration, I checked on my laptop as well, and noticed a similar problem with nearly 300 GB of `/nix/store` usage and 295 GB in `/nix/store/.links` 🤯
-While this might not be uncommon when installing a lot of packages with a lot of different versions, it still seemed a bit too much for me, as I try to keep my systems as clean as possible.
+While this might not be uncommon on NixOS when installing a lot of packages with a lot of different versions, keeping a lot of generations it still seemed a bit too much for me, as I try to keep my systems as clean as possible.
 
 I checked in with my local [NixOS community](https://www.chaos-darmstadt.de/2023/erstes-nixos-meetup/) (esp. [Atemu](https://darmstadt.social/@atemu)) and they pointed me to the Home Manager garbage collection as this needs to be configured separately from the NixOS garbage collection.
 After a `nix-env --list-generations` it confirmed, that I had just 7 NixOS generations on my system.
