@@ -13,8 +13,9 @@ in
     };
 
     domain = lib.mkOption {
-      type = lib.types.str;
-      description = "Domain name for the blog";
+      type = lib.types.nullOr lib.types.str;
+      default = null;
+      description = "Domain name for the blog. When null, nginx will serve on localhost only without SSL.";
     };
   };
 
@@ -24,25 +25,35 @@ in
       recommendedGzipSettings = true;
       recommendedOptimisation = true;
       recommendedProxySettings = true;
-      recommendedTlsSettings = true;
+      recommendedTlsSettings = lib.mkIf (cfg.domain != null) true;
 
-      virtualHosts.${cfg.domain} = {
-        enableACME = true;
-        forceSSL = true;
-        serverAliases = [ "www.${cfg.domain}" ];
-        root = "${self.packages.${pkgs.system}.audacis-blog}";
-        
-        locations."/" = {
-          tryFiles = "$uri $uri/ /index.html";
+      virtualHosts = if cfg.domain != null then {
+        ${cfg.domain} = {
+          enableACME = true;
+          forceSSL = true;
+          serverAliases = [ "www.${cfg.domain}" ];
+          root = "${self.packages.${pkgs.system}.audacis-blog}";
+          
+          locations."/" = {
+            tryFiles = "$uri $uri/ /index.html";
+          };
+        };
+      } else {
+        "localhost" = {
+          root = "${self.packages.${pkgs.system}.audacis-blog}";
+          
+          locations."/" = {
+            tryFiles = "$uri $uri/ /index.html";
+          };
         };
       };
     };
 
-    security.acme = {
+    security.acme = lib.mkIf (cfg.domain != null) {
       acceptTerms = true;
       defaults.email = "admin@${cfg.domain}";
     };
 
-    networking.firewall.allowedTCPPorts = [ 80 443 ];
+    networking.firewall.allowedTCPPorts = if cfg.domain != null then [ 80 443 ] else [ 80 ];
   };
 }
