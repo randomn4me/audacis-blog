@@ -32,7 +32,7 @@ in
           enableACME = true;
           forceSSL = true;
           serverAliases = [ "www.${cfg.domain}" ];
-          root = "${self.packages.${pkgs.system}.audacis-blog}";
+          root = "${self.packages.${pkgs.stdenv.hostPlatform.system}.audacis-blog}";
           
           locations."/" = {
             tryFiles = "$uri $uri/ /index.html";
@@ -40,7 +40,7 @@ in
         };
       } else {
         "localhost" = {
-          root = "${self.packages.${pkgs.system}.audacis-blog}";
+          root = "${self.packages.${pkgs.stdenv.hostPlatform.system}.audacis-blog}";
           
           locations."/" = {
             tryFiles = "$uri $uri/ /index.html";
