@@ -1,4 +1,4 @@
-{ pkgs, src }:
+{ pkgs, src, tabi }:
 
 pkgs.stdenv.mkDerivation {
   pname = "audacis-blog";
@@ -6,7 +6,15 @@ pkgs.stdenv.mkDerivation {
   inherit src;
   nativeBuildInputs = [ pkgs.zola ];
   buildPhase = ''
+    runHook preBuild
+    
+    mkdir -p themes/tabi
+    cp -r ${tabi}/* themes/tabi/
+    chmod -R u+w themes/
+    
     zola build
+    
+    runHook postBuild
   '';
   installPhase = ''
     mkdir -p $out

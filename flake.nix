@@ -3,12 +3,17 @@
 
   inputs.nixpkgs.url = "github:nixos/nixpkgs/nixpkgs-unstable";
   inputs.flake-utils.url = "github:numtide/flake-utils";
+  inputs.tabi = {
+    url = "github:welpo/tabi";
+    flake = false;
+  };
 
   outputs =
     {
       self,
       nixpkgs,
       flake-utils,
+      tabi,
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
@@ -17,14 +22,14 @@
       in
       {
         packages.audacis-blog = import ./nix/package.nix {
-          inherit pkgs;
+          inherit pkgs tabi;
           src = ./.;
         };
         packages.default = self.packages.${system}.audacis-blog;
         
         apps.default = {
           type = "app";
-          program = "${import ./nix/serve.nix { inherit pkgs; src = ./.; }}/bin/serve-blog";
+          program = "${import ./nix/serve.nix { inherit pkgs tabi; src = ./.; }}/bin/serve-blog";
         };
         
         formatter = pkgs.nixfmt-rfc-style;
