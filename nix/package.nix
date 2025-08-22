@@ -1,4 +1,4 @@
-{ pkgs, src, tabi }:
+{ pkgs, src, tabi, baseUrl }:
 
 pkgs.stdenv.mkDerivation {
   pname = "audacis-blog";
@@ -11,6 +11,9 @@ pkgs.stdenv.mkDerivation {
     mkdir -p themes/tabi
     cp -r ${tabi}/* themes/tabi/
     chmod -R u+w themes/
+    
+    # Override base_url in config.toml for the build
+    sed -i 's|base_url = .*|base_url = "${baseUrl}"|' config.toml
     
     zola build
     

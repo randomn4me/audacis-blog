@@ -3,6 +3,16 @@
 
 let
   cfg = config.services.audacis-blog;
+  
+  # Build the blog with the correct base URL
+  buildBlog = baseUrl: import ./package.nix {
+    inherit pkgs baseUrl;
+    tabi = self.inputs.tabi;
+    src = self;
+  };
+  
+  # Determine the base URL and build the appropriate package
+  blogPackage = buildBlog "https://${cfg.domain}";
 in
 {
   options.services.audacis-blog = {
@@ -13,9 +23,8 @@ in
     };
 
     domain = lib.mkOption {
-      type = lib.types.nullOr lib.types.str;
-      default = null;
-      description = "Domain name for the blog. When null, nginx will serve on localhost only without SSL.";
+      type = lib.types.str;
+      description = "Domain name for the blog.";
     };
   };
 
@@ -25,35 +34,24 @@ in
       recommendedGzipSettings = true;
       recommendedOptimisation = true;
       recommendedProxySettings = true;
-      recommendedTlsSettings = lib.mkIf (cfg.domain != null) true;
+      recommendedTlsSettings = true;
 
-      virtualHosts = if cfg.domain != null then {
-        ${cfg.domain} = {
-          enableACME = true;
-          forceSSL = true;
-          serverAliases = [ "www.${cfg.domain}" ];
-          root = "${self.packages.${pkgs.stdenv.hostPlatform.system}.audacis-blog}";
-          
-          locations."/" = {
-            tryFiles = "$uri $uri/ /index.html";
-          };
-        };
-      } else {
-        "localhost" = {
-          root = "${self.packages.${pkgs.stdenv.hostPlatform.system}.audacis-blog}";
-          
-          locations."/" = {
-            tryFiles = "$uri $uri/ /index.html";
-          };
+      virtualHosts.${cfg.domain} = {
+        enableACME = true;
+        forceSSL = true;
+        root = "${blogPackage}";
+        
+        locations."/" = {
+          tryFiles = "$uri $uri/ /index.html";
         };
       };
     };
 
-    security.acme = lib.mkIf (cfg.domain != null) {
+    security.acme = {
       acceptTerms = true;
       defaults.email = "admin@${cfg.domain}";
     };
 
-    networking.firewall.allowedTCPPorts = if cfg.domain != null then [ 80 443 ] else [ 80 ];
+    networking.firewall.allowedTCPPorts = [ 80 443 ];
   };
 }
