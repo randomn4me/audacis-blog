@@ -33,6 +33,11 @@
           program = "${import ./nix/serve.nix { inherit pkgs tabi; src = ./.; }}/bin/serve-blog";
         };
         
+        apps.newpost = {
+          type = "app";
+          program = "${import ./nix/newpost.nix { inherit pkgs; }}/bin/newpost";
+        };
+        
         formatter = pkgs.nixfmt-rfc-style;
         
         devShells.default = import ./nix/shell.nix {
