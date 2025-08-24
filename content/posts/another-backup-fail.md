@@ -2,7 +2,6 @@
 title = "Another Backup Fail"
 description = "Or how I lost another round of pictures.. again"
 date = 2025-08-24
-draft = true
 
 [taxonomies]
 tags = ["system administration", "backup"]
