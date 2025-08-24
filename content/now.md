@@ -1,14 +1,14 @@
 +++
 title = "Now"
-date = 2024-12-24
+date = 2025-08-22
 +++
 
 ## Now
 
-I'm currently looking for jobs in the tech industry in the engineering field, preferably in the context of *search*.
-If you know somebody working in this field, who is interested in somebody with by profile, feel free to contact me on [LinkedIn](https://www.linkedin.com/in/ph-kuehn/) or via [mail](mailto:blog@audacis.net), or link this person to me directly.
+Working on different projects, including:
+- Getting state funding for a verification stage of my PhD topic as a commercial product.
+- Still finalizing the publication of my PhD thesis. I opted to publish it via Springer, but this taskes a lot longer than expected.
+- Working on updating our [CySecBERT model](https://huggingface.co/markusbayer/CySecBERT). I am working on gathering more cybersecurity data, using a modern model as base, and techniques for optimization.
+- Getting collaborations with other researchers and companies going to foster research in this area and identifying the gap for a commercial product.
 
-Besides that, I am 
-- finalizing my dissertation defense
-- preparing the publication of my dissertation
-- learning Japanese
+Other than that, school started again after a 6 week long time off, which is a blessing for us parents.
