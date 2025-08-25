@@ -41,10 +41,8 @@ pkgs.writeShellScriptBin "newpost" ''
   tags = ["tag1", "tag2"]
   +++
   
-  <!-- Summary/excerpt that appears in post listings -->
   Brief description of the post goes here...
   
-  <!-- more -->
   EOF
 
   nvim "$filepath"
