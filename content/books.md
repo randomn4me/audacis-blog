@@ -5,6 +5,7 @@ title = 'Books'
 This is a list of books that I have read.
 I started compiling this list in 2024 and only included a few books from before that year.
 
+The books listed here do not necessarily represent an endorsement of the authors or their views.
 
 ## Current
 
@@ -14,15 +15,15 @@ I started compiling this list in 2024 and only included a few books from before 
 
 ## 2025
 
-- Martin Luther King *(Claudia Mocek)* -- [Notes](/books/2025-martin-luther-king-claudia-mocek)
-- The Art of Attack *(Maxie Reynolds)* -- [Notes](/books/2025-the-art-of-attack-maxie-renolds)
-- The Every *(Dave Eggers)*
+- Martin Luther King *(Claudia Mocek)* -- ★★★★ -- [Notes](/books/2025-martin-luther-king-claudia-mocek)
+- The Art of Attack *(Maxie Reynolds)* -- ★★★ -- [Notes](/books/2025-the-art-of-attack-maxie-renolds)
+- The Every *(Dave Eggers)* -- ★★★★
 
 ## 2024
 
-- Dune *(Frank Herbert)*
-- Getting Things Done: The Art of Stress-Free Productivity *(David Allen)*
-- How to Take Smart Notes *(Sönke Ahrens)*
+- Dune *(Frank Herbert)* -- ★★★★★
+- Getting Things Done: The Art of Stress-Free Productivity *(David Allen)* -- ★★★★
+- How to Take Smart Notes *(Sönke Ahrens)* -- ★★★★
 
 ## Earlier
 
@@ -34,10 +35,10 @@ I started compiling this list in 2024 and only included a few books from before 
 - Gier *(Marc Elsberg)*
 - Influx *(Daniel Suarez)*
 - Limit *(Frank Schätzing)*
-- Ministry of the Future
-- Rethinking Conversation
-- The Circle
-- The Uninhabitable Earth
+- Ministry of the Future *(Kim Stanley Robinson)*
+- Reclaiming Conversation *(Sherry Turkle)*
+- The Circle *(Dave Eggers)*
+- The Uninhabitable Earth *(David Wallace-Wells)*
 - Zero *(Marc Elsberg)*
 
 [^1]: The book seemed to share a storyline remarkably similar to other works by Marc Elsberg. After successfully predicting the next 50 pages of Celsius (on page 150) with most of it coming true, I decided to stop reading.
