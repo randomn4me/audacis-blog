@@ -23,7 +23,7 @@ I did not think about the possibility that this would go into my `$HOME/Pictures
 
 # What I tried to recover
 
-So after I noticed my fuck-up (which was a day after), I checked all my backups, which did not work.
+So after I noticed my *fuck-up* (which was a day after), I checked all my backups, but none had my images.
 While I installed [nix-darwin](https://nix-darwin.github.io/nix-darwin/) on this device a month before, none of the services I configured in my flake for [home-manager](https://nix-community.github.io/home-manager/) worked, as they are built on top of [systemd](https://systemd.io/), which is not available on macOS.
 There are services in `nix-darwin` which are using [launchd](https://en.wikipedia.org/wiki/Launchd), but none for [borg](https://www.borgbackup.org/)/[borgmatic](https://torsion.org/borgmatic/).
 Hence, I did not have automatic backups yet.
