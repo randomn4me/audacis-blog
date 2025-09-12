@@ -1,7 +1,7 @@
 +++
 title = "My MacOS Backup Strategy"
 description = "When you want to use custom tooling instead of something like time machine"
-date = 2025-09-09
+date = 2025-09-12
 
 [taxonomies]
 tags = ["macos", "backup", "sysadmin", ]
