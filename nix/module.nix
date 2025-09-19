@@ -49,7 +49,7 @@ in
 
     security.acme = {
       acceptTerms = true;
-      defaults.email = "admin@${cfg.domain}";
+      defaults.email = lib.mkDefault "admin@${cfg.domain}";
     };
 
     networking.firewall.allowedTCPPorts = [ 80 443 ];
