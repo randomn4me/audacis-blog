@@ -15,6 +15,7 @@ The books listed here do not necessarily represent an endorsement of the authors
 
 ## 2025
 
+- The Decision Book: Fifty Models for Strategic Thinking *(Mikael Krogerus & Roman Tschäppeler)* -- ★★★★★ -- [Notes](/books/2025-the-decision-book_krogerus-tschaeppeler)
 - Martin Luther King *(Claudia Mocek)* -- ★★★★ -- [Notes](/books/2025-martin-luther-king-claudia-mocek)
 - The Art of Attack *(Maxie Reynolds)* -- ★★★ -- [Notes](/books/2025-the-art-of-attack-maxie-renolds)
 - The Every *(Dave Eggers)* -- ★★★★
