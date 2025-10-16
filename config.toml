@@ -27,7 +27,7 @@ truncate_content_length = 0
 [extra]
 primary_color = "#951169"
 secondary_color = "#732054"
-gradient_rotation = 135 
+gradient_rotation = 135
 meta_separator = "•"
 profile_image = "static/images/profile.png"
 show_cv_intro = true
@@ -35,6 +35,7 @@ show_rss = true
 
 favicon_emoji = "🚀"
 # favicon = "/favicon.ico"
+
 
 menu = [
     { name = "/blog", url = "@/blog/_index.md" },
