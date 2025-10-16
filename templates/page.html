@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title | default(value=config.title) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <article class="page-content">
+        <header>
+            <h1>{{ page.title }}</h1>
+            <div class="post-meta">
+                {% if page.date %}
+                <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+                {% endif %}
+                {% if page.taxonomies.tags %}
+                <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                <div class="post-tags">
+                    {% for tag in page.taxonomies.tags %}
+                    <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="tag">{{ tag }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
+        </header>
+
+        <div class="content">
+            {{ page.content | safe }}
+        </div>
+    </article>
+</div>
+{% endblock %}

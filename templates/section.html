@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title | default(value=config.title) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <section class="blog-section">
+        <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem;">
+            <h1 style="margin: 0;">{{ section.title }}</h1>
+            {% if section.title == "Blog" and config.extra.show_rss %}
+            <a href="{{ config.base_url }}/rss.xml" target="_blank" rel="noopener noreferrer" aria-label="RSS Feed" style="color: var(--secondary-color); font-size: 1.5rem; text-decoration: none; display: flex; align-items: center; opacity: 0.7; transition: opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">
+                <i class="fa-solid fa-rss"></i>
+            </a>
+            {% endif %}
+        </div>
+
+        {% if section.content %}
+        <div class="section-intro">
+            {{ section.content | safe }}
+        </div>
+        {% endif %}
+
+        {% if section.pages %}
+        <div class="blog-list">
+            {% for page in section.pages %}
+            <article class="blog-post">
+                <h2 class="post-title">
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </h2>
+                <div class="post-meta">
+                    {% if page.date %}
+                    <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+                    {% endif %}
+                    {% if page.taxonomies.tags %}
+                    <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                    <div class="post-tags">
+                        {% for tag in page.taxonomies.tags %}
+                        <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="tag">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% if page.summary %}
+                <p class="post-excerpt">{{ page.summary }}</p>
+                {% elif page.description %}
+                <p class="post-excerpt">{{ page.description }}</p>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </section>
+</div>
+{% endblock %}

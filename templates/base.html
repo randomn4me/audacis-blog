@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ config.title }}{% endblock %}</title>
+
+    {% if config.extra.favicon_emoji %}
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>{{ config.extra.favicon_emoji }}</text></svg>">
+    {% elif config.extra.favicon %}
+    <link rel="icon" href="{{ get_url(path=config.extra.favicon) }}">
+    {% endif %}
+
+    <link rel="stylesheet" href="{{ get_url(path='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/elasticlunr@0.9.5/elasticlunr.min.js"></script>
+    {% if config.extra.primary_color or config.extra.secondary_color %}
+    <style>
+        :root {
+            {% if config.extra.primary_color %}
+            --primary-color: {{ config.extra.primary_color }};
+            --primary-color-dark: color-mix(in srgb, {{ config.extra.primary_color }} 90%, black);
+            --primary-color-darker: color-mix(in srgb, {{ config.extra.primary_color }} 80%, black);
+            --primary-color-light: color-mix(in srgb, {{ config.extra.primary_color }} 90%, white);
+            --primary-color-lighter: color-mix(in srgb, {{ config.extra.primary_color }} 80%, white);
+            {% endif %}
+            {% if config.extra.secondary_color %}
+            --secondary-color: {{ config.extra.secondary_color }};
+            {% endif %}
+            {% if config.extra.primary_color and config.extra.secondary_color %}
+            --gradient-primary: linear-gradient({{ config.extra.gradient_rotation | default(value=135) }}deg, {{ config.extra.primary_color }}, {{ config.extra.secondary_color }});
+            {% endif %}
+        }
+        [data-theme="dark"] {
+            --text-color: #d0d0d0;
+            {% if config.extra.primary_color %}
+            --primary-color: color-mix(in srgb, {{ config.extra.primary_color }} 90%, white);
+            --primary-color-light: color-mix(in srgb, {{ config.extra.primary_color }} 80%, white);
+            --primary-color-lighter: color-mix(in srgb, {{ config.extra.primary_color }} 70%, white);
+            {% endif %}
+            {% if config.extra.secondary_color %}
+            --secondary-color: color-mix(in srgb, {{ config.extra.secondary_color }} 90%, white);
+            {% endif %}
+            {% if config.extra.primary_color and config.extra.secondary_color %}
+            --gradient-primary: linear-gradient({{ config.extra.gradient_rotation | default(value=135) }}deg, color-mix(in srgb, {{ config.extra.primary_color }} 90%, white), color-mix(in srgb, {{ config.extra.secondary_color }} 90%, white));
+            {% endif %}
+        }
+    </style>
+    {% endif %}
+    {% block extra_head %}{% endblock %}
+</head>
+<body>
+    {% include "partials/header.html" %}
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    {% include "partials/footer.html" %}
+    {% include "partials/search-modal.html" %}
+
+    <script>
+        // Dark mode toggle
+        (function() {
+            const themeToggle = document.querySelector('.theme-toggle');
+            const html = document.documentElement;
+
+            // Check for saved theme preference or use system preference
+            let currentTheme = localStorage.getItem('theme');
+
+            if (!currentTheme) {
+                // No saved preference, use system preference
+                const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+                currentTheme = prefersDark ? 'dark' : 'light';
+            }
+
+            html.setAttribute('data-theme', currentTheme);
+
+            // Update icon based on current theme
+            function updateIcon() {
+                const icon = themeToggle.querySelector('i');
+                if (html.getAttribute('data-theme') === 'dark') {
+                    icon.className = 'fa-solid fa-sun';
+                } else {
+                    icon.className = 'fa-solid fa-moon';
+                }
+            }
+
+            updateIcon();
+
+            themeToggle.addEventListener('click', function() {
+                const currentTheme = html.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+                html.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateIcon();
+            });
+
+            // Listen for system theme changes (if user hasn't set a preference)
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function(e) {
+                if (!localStorage.getItem('theme')) {
+                    const newTheme = e.matches ? 'dark' : 'light';
+                    html.setAttribute('data-theme', newTheme);
+                    updateIcon();
+                }
+            });
+        })();
+
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.mobile-menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', function() {
+                    menuToggle.classList.toggle('active');
+                    navLinks.classList.toggle('active');
+                });
+
+                // Close menu when clicking on a link
+                navLinks.querySelectorAll('a').forEach(function(link) {
+                    link.addEventListener('click', function() {
+                        menuToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    });
+                });
+
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!menuToggle.contains(event.target) && !navLinks.contains(event.target)) {
+                        menuToggle.classList.remove('active');
+                        navLinks.classList.remove('active');
+                    }
+                });
+            }
+        });
+
+        // Wrap code blocks with language header and copy button
+        document.addEventListener('DOMContentLoaded', function() {
+            const codeBlocks = document.querySelectorAll('pre code');
+
+            codeBlocks.forEach(function(codeBlock) {
+                const pre = codeBlock.parentElement;
+                const wrapper = document.createElement('div');
+                wrapper.className = 'code-block-wrapper';
+
+                // Check if code block has a language class
+                const languageClass = Array.from(codeBlock.classList).find(cls => cls.startsWith('language-'));
+                const language = languageClass ? languageClass.replace('language-', '') : 'code';
+
+                // Insert wrapper before pre element
+                pre.parentNode.insertBefore(wrapper, pre);
+
+                // Add language header
+                const header = document.createElement('div');
+                header.className = 'code-header';
+                header.textContent = language;
+                wrapper.appendChild(header);
+
+                // Move pre into wrapper
+                wrapper.appendChild(pre);
+
+                // Add copy button
+                const copyButton = document.createElement('button');
+                copyButton.className = 'copy-button';
+                copyButton.innerHTML = '<i class="fa-regular fa-copy"></i>';
+                copyButton.setAttribute('aria-label', 'Copy code to clipboard');
+
+                copyButton.addEventListener('click', function() {
+                    const code = codeBlock.textContent;
+                    navigator.clipboard.writeText(code).then(function() {
+                        copyButton.innerHTML = '<i class="fa-solid fa-check"></i>';
+                        copyButton.classList.add('copied');
+
+                        setTimeout(function() {
+                            copyButton.innerHTML = '<i class="fa-regular fa-copy"></i>';
+                            copyButton.classList.remove('copied');
+                        }, 2000);
+                    }).catch(function(err) {
+                        console.error('Failed to copy:', err);
+                    });
+                });
+
+                wrapper.appendChild(copyButton);
+            });
+        });
+
+        // Search modal functionality
+        (function() {
+            const searchModal = document.getElementById('search-modal');
+            const searchInput = document.getElementById('search-modal-input');
+            const searchResults = document.getElementById('search-modal-results');
+            const searchClose = document.querySelector('.search-modal-close');
+            const searchOverlay = document.querySelector('.search-modal-overlay');
+            let searchIndex = null;
+
+            // Load search index
+            fetch('{{ get_url(path="search_index.en.json") }}')
+                .then(response => response.json())
+                .then(data => {
+                    searchIndex = elasticlunr.Index.load(data);
+                })
+                .catch(error => {
+                    console.error('Error loading search index:', error);
+                });
+
+            // Open search modal
+            function openSearch() {
+                searchModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+                setTimeout(() => searchInput.focus(), 100);
+            }
+
+            // Close search modal
+            function closeSearch() {
+                searchModal.classList.remove('active');
+                document.body.style.overflow = '';
+                searchInput.value = '';
+                searchResults.innerHTML = '';
+            }
+
+            // Listen for search links
+            document.addEventListener('click', function(e) {
+                const target = e.target.closest('a[href*="/search"]');
+                if (target) {
+                    e.preventDefault();
+                    openSearch();
+                }
+            });
+
+            // Keyboard shortcut (Cmd/Ctrl + K)
+            document.addEventListener('keydown', function(e) {
+                if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                    e.preventDefault();
+                    openSearch();
+                }
+                if (e.key === 'Escape' && searchModal.classList.contains('active')) {
+                    closeSearch();
+                }
+            });
+
+            // Close button
+            searchClose.addEventListener('click', closeSearch);
+            searchOverlay.addEventListener('click', closeSearch);
+
+            // Debounce function
+            function debounce(func, wait) {
+                let timeout;
+                return function executedFunction(...args) {
+                    const later = () => {
+                        clearTimeout(timeout);
+                        func(...args);
+                    };
+                    clearTimeout(timeout);
+                    timeout = setTimeout(later, wait);
+                };
+            }
+
+            // Highlight search terms
+            function highlightText(text, terms) {
+                let highlighted = text;
+                terms.forEach(term => {
+                    const regex = new RegExp(`(${term})`, 'gi');
+                    highlighted = highlighted.replace(regex, '<span class="search-highlight">$1</span>');
+                });
+                return highlighted;
+            }
+
+            // Get excerpt with context
+            function getExcerpt(text, terms, maxLength = 200) {
+                if (!text) return '';
+                const lowerText = text.toLowerCase();
+                let bestPosition = 0;
+                let bestScore = 0;
+
+                terms.forEach(term => {
+                    const pos = lowerText.indexOf(term.toLowerCase());
+                    if (pos !== -1) {
+                        const score = terms.filter(t =>
+                            lowerText.substring(Math.max(0, pos - 100), pos + 100)
+                                .includes(t.toLowerCase())
+                        ).length;
+                        if (score > bestScore) {
+                            bestScore = score;
+                            bestPosition = pos;
+                        }
+                    }
+                });
+
+                const start = Math.max(0, bestPosition - maxLength / 2);
+                const end = Math.min(text.length, start + maxLength);
+                let excerpt = text.substring(start, end);
+
+                if (start > 0) excerpt = '...' + excerpt;
+                if (end < text.length) excerpt = excerpt + '...';
+
+                return excerpt;
+            }
+
+            // Perform search
+            function performSearch(query) {
+                if (!searchIndex || !query || query.length < 2) {
+                    searchResults.innerHTML = '';
+                    return;
+                }
+
+                const results = searchIndex.search(query, {
+                    fields: {
+                        title: { boost: 3 },
+                        description: { boost: 2 },
+                        body: { boost: 1 }
+                    },
+                    expand: true
+                });
+
+                const searchDocs = results.map(result => {
+                    const doc = searchIndex.documentStore.getDoc(result.ref);
+                    return { ...doc, url: result.ref, score: result.score };
+                });
+
+                const terms = query.toLowerCase().split(/\s+/).filter(term => term.length > 1);
+                displayResults(searchDocs, terms, query);
+            }
+
+            // Display results
+            function displayResults(results, terms, query) {
+                if (results.length === 0) {
+                    searchResults.innerHTML = `
+                        <div class="no-results">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <p>No results found for "${query}"</p>
+                        </div>
+                    `;
+                    return;
+                }
+
+                const resultsHTML = `
+                    <div class="search-results-count">
+                        Found ${results.length} result${results.length !== 1 ? 's' : ''}
+                    </div>
+                    ${results.map(result => {
+                        const excerpt = getExcerpt(result.body, terms);
+                        const highlightedTitle = highlightText(result.title, terms);
+                        const highlightedExcerpt = highlightText(excerpt, terms);
+
+                        return `
+                            <div class="search-result" onclick="window.location.href='${result.url}'">
+                                <div class="search-result-title">
+                                    <a href="${result.url}">${highlightedTitle}</a>
+                                </div>
+                                ${highlightedExcerpt ? `<div class="search-result-excerpt">${highlightedExcerpt}</div>` : ''}
+                            </div>
+                        `;
+                    }).join('')}
+                `;
+
+                searchResults.innerHTML = resultsHTML;
+            }
+
+            // Search input listener
+            searchInput.addEventListener('input', debounce((e) => {
+                performSearch(e.target.value);
+            }, 300));
+        })();
+
+        // Add clickable backlinks to footnotes
+        document.addEventListener('DOMContentLoaded', function() {
+            const footnotes = document.querySelectorAll('.footnote-definition');
+
+            footnotes.forEach(function(footnote) {
+                const id = footnote.getAttribute('id');
+                const p = footnote.querySelector('p');
+
+                if (id && p) {
+                    // Find the corresponding reference in the text
+                    const ref = document.querySelector(`a[href="#${id}"]`);
+
+                    if (ref) {
+                        // Get the parent sup element's ID or create one
+                        let refId = ref.parentElement.id;
+                        if (!refId) {
+                            refId = `fnref-${id}`;
+                            ref.parentElement.id = refId;
+                        }
+
+                        // Create a clickable backlink
+                        const backlink = document.createElement('a');
+                        backlink.href = `#${refId}`;
+                        backlink.className = 'footnote-backlink';
+                        backlink.innerHTML = ' ↩';
+                        backlink.setAttribute('aria-label', 'Back to content');
+
+                        // Remove the CSS-generated arrow and add the clickable one
+                        p.style.setProperty('--has-backlink', 'true');
+                        p.appendChild(backlink);
+                    }
+                }
+            });
+        });
+
+        // Open external links in new tab
+        document.addEventListener('DOMContentLoaded', function() {
+            const links = document.querySelectorAll('a');
+            const currentDomain = window.location.hostname;
+
+            links.forEach(function(link) {
+                const href = link.getAttribute('href');
+
+                // Skip if no href or already has target attribute
+                if (!href || link.hasAttribute('target')) {
+                    return;
+                }
+
+                // Check if link is external
+                try {
+                    const url = new URL(href, window.location.href);
+                    const isExternal = url.hostname !== currentDomain;
+                    const isAnchor = href.startsWith('#');
+
+                    if (isExternal && !isAnchor) {
+                        link.setAttribute('target', '_blank');
+                        link.setAttribute('rel', 'noopener noreferrer');
+                    }
+                } catch (e) {
+                    // If URL parsing fails, it's likely a relative link (internal)
+                    // Do nothing
+                }
+            });
+        });
+
+    </script>
+
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

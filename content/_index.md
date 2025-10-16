@@ -1,12 +1,10 @@
 +++
-title = "Latest posts"
+title = "Welcome"
+template = "index.html"
 
 [extra]
-header = {title = "Hi, I'm Philipp", img = "img/profile-business.png", img_alt = "Profile picture" }
-section_path = "posts/_index.md"
-max_posts = 5
-sort_by = "date"
+cv_intro = "Software engineer with 5+ years of experience building scalable web applications. Check out my full CV for details on my experience, education, and publications."
+recent_posts_count = 3
 +++
 
-I'm a computer scientist who is fascinated by processes and how to find the needle in the haystack.
-This led to [5 years of research](https://orcid.org/0000-0002-1739-876X) with deep dives into NLP, IR, Data Analysis and Mining, and Web Scraping.
+Welcome to my personal website. I'm a passionate software engineer interested in web development, distributed systems, and open source. Here you'll find my blog posts, technical writings, and various curated lists.

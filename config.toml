@@ -1,68 +1,51 @@
+title = "~/"
 base_url = "https://audacis.net"
-title = "~/pkuehn"
-description = "I'm Philipp and this is my webspace, where I write about current projects or ideas, discuss what moves me forward, or occupies me right now."
-author = "Philipp"
-compile_sass = true
-build_search_index = true
-generate_feeds = true
-minify_html = true
+author = "Philipp Kühn"
 default_language = "en"
 
-taxonomies = [{name = "tags", rss = true}]
+compile_sass = true
+minify_html = true
+build_search_index = true
 
-theme = "tabi"
+generate_feeds = true 
+feed_filenames = ["rss.xml"]
+
+taxonomies = [
+    {name = "tags", feed = true},
+]
 
 [markdown]
 highlight_code = true
-highlight_theme = "css"
-bottom_footnotes = true
-smart_punctuation = true
 
 [search]
+index_format = "elasticlunr_json"
 include_title = true
 include_description = true
-include_path = true
 include_content = true
-# At which character to truncate the content to. Useful if you have a lot of pages and the index would
-# become too big to load on the site. Defaults to not being set.
-# truncate_content_length = 100
-# Wether to produce the search index as a javascript file or as a JSON file.
-# Accepted value "elasticlunr_javascript" or "elasticlunr_json".
-index_format = "elasticlunr_json"
-
-[link_checker]
-internal_level = "warn"
+truncate_content_length = 0
 
 [extra]
-logo_text = "Philipp is writing"
-logo_home_link = "$HOME"
-copyright = "Philipp Kühn"
-mode = "toggle"
-posted_on = "on"
-read_time = "minute read"
-show_more = "Read more ⟶"
-skin = "lavender"
-# skin = "purple"
+primary_color = "#951169"
+secondary_color = "#732054"
+gradient_rotation = 135 
+meta_separator = "•"
+profile_image = "static/images/profile.png"
+show_cv_intro = true
+show_rss = true
 
-
-post_listing_index_reversed = true
-
-favicon_emoji = "🧑‍💻"
+favicon_emoji = "🚀"
+# favicon = "/favicon.ico"
 
 menu = [
-    { name = "/posts", url = "/posts" },
-    { name = "/now", url = "/now" },
-    { name = "/about", url = "/about" },
+    { name = "/blog", url = "@/blog/_index.md" },
+    { name = "/now", url = "@/now.md" },
+    { name = "/about", url = "@/about.md" },
+    { name = "/cv", url = "@/cv/_index.md" },
 ]
 
 socials = [
-    { name = "github", url = "https://github.com/randomn4me", icon = "github" },
-    { name = "orcid", url = "https://orcid.org/0000-0002-1739-876X", icon = "orcid" },
-    { name = "scholar", url = "https://scholar.google.com/citations?user=yEOvWXAAAAAJ&hl=en", icon = "google-scholar" },
-    { name = "linkedin", url = "https://www.linkedin.com/in/ph-kuehn/", icon = "linkedin" },
+    { name = "GitHub", url = "https://github.com/randomn4me", icon = "fa-brands fa-github" },
+    { name = "LinkedIn", url = "https://linkedin.com/in/ph-kuehn", icon = "fa-brands fa-linkedin" },
+    { name = "ORCiD", url = "https://orcid.org/0000-0002-1739-876X", icon = "fa-brands fa-orcid" },
+    { name = "Email", url = "mailto:blog@audacis.net", icon = "fa-solid fa-envelope" },
 ]
-
-# footer_menu = [
-#     {url = "about", name = "about", trailing_slash = true},
-#     {url = "sitemap.xml", name = "sitemap", trailing_slash = false},
-# ]

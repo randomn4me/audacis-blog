@@ -1,0 +1,195 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.title | default(value=config.title) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <article class="cv-page">
+        <h1>{{ section.title }}</h1>
+
+        {% if section.content %}
+        <div class="cv-intro cv-item">
+            <div style="display: flex; gap: 1.5rem;">
+                <div style="flex-shrink: 0;">
+                    <strong style="color: var(--primary-color); font-size: 1.1rem;">Summary</strong>
+                </div>
+                <div style="flex: 1; font-size: 1.1rem;">
+                    {{ section.content | safe | striptags }}
+                </div>
+            </div>
+        </div>
+        {% endif %}
+
+        {% if section.extra.experience %}
+        <section class="cv-section">
+            <h2>Experience</h2>
+            {% for job in section.extra.experience %}
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">{{ job.title }}</span>
+                    <span class="cv-item-period">{{ job.period }}</span>
+                </div>
+                <div class="cv-item-subtitle">
+                    {% if job.company_url %}
+                    <a href="{{ job.company_url }}" target="_blank" rel="noopener noreferrer">{{ job.company }}</a>
+                    {% else %}
+                    {{ job.company }}
+                    {% endif %}
+                </div>
+                {% if job.description %}
+                <p>{{ job.description }}</p>
+                {% endif %}
+                {% if job.highlights %}
+                <ul>
+                    {% for highlight in job.highlights %}
+                    <li>{{ highlight }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        {% if section.extra.education %}
+        <section class="cv-section">
+            <h2>Education</h2>
+            {% for edu in section.extra.education %}
+            <div class="cv-item">
+                <div class="cv-item-header">
+                    <span class="cv-item-title">{{ edu.degree }}</span>
+                    <span class="cv-item-period">{{ edu.period }}</span>
+                </div>
+                <div class="cv-item-subtitle">{{ edu.institution }}</div>
+                {% if edu.description %}
+                <p>{{ edu.description }}</p>
+                {% endif %}
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        {% if section.extra.skills %}
+        <section class="cv-section">
+            <h2>Skills</h2>
+            {% for skill_group in section.extra.skills %}
+            <div class="cv-item">
+                <div class="cv-item-title">{{ skill_group.category }}</div>
+                <p>{{ skill_group.items | join(sep=", ") }}</p>
+            </div>
+            {% endfor %}
+        </section>
+        {% endif %}
+
+        {% if section.extra.csv_file or section.extra.bibtex_file or section.extra.publications %}
+        {% set publications = false %}
+        {% set is_csv_format = false %}
+        {% if section.extra.csv_file %}
+            {% set csv_data = load_data(path=section.extra.csv_file, format="csv") %}
+            {% if csv_data and csv_data.records and csv_data.records | length > 0 %}
+                {% set_global publications = csv_data.records | sort(attribute="2") | reverse %}
+                {% set_global is_csv_format = true %}
+            {% endif %}
+        {% elif section.extra.bibtex_file %}
+            {% set bibtex_data = load_data(path=section.extra.bibtex_file, format="bibtex") %}
+            {% if bibtex_data and bibtex_data.bibliographies and bibtex_data.bibliographies | length > 0 %}
+                {% set_global publications = bibtex_data.bibliographies | sort(attribute="tags.year") | reverse %}
+            {% endif %}
+        {% endif %}
+        {% if not publications and section.extra.publications %}
+            {% set_global publications = section.extra.publications %}
+        {% endif %}
+
+        {% if publications %}
+        {% set show_count = section.extra.publications_show_count | default(value=5) %}
+        <section class="cv-section">
+            <h2 style="margin-bottom: 0.5rem;">Publications</h2>
+            {% if section.extra.bibtex_file %}
+            <div style="margin-bottom: 1.5rem;">
+                <a href="/{{ section.extra.bibtex_file | replace(from="static/", to="") }}" download="publications.bib" class="download-bib-link">Download BibTeX</a>
+            </div>
+            {% endif %}
+            <div class="publications-list">
+                {% for pub in publications %}
+                <div class="cv-item publication-item{% if loop.index > show_count %} hidden{% endif %}">
+                    {% if is_csv_format %}
+                        {# CSV format - pub is an array, access by index #}
+                        {# Headers: Key(0), Item Type(1), Publication Year(2), Author(3), Title(4), Publication Title(5), ISBN(6), ISSN(7), DOI(8), Url(9) #}
+                        <div class="publication-title">{{ pub.4 }}</div>
+                        <div class="publication-authors">{{ pub.3 }}</div>
+                        <div class="publication-venue">
+                            {% if pub.5 %}
+                            <em>{{ pub.5 }}</em>
+                            {% endif %}
+                            {% if pub.2 %}{% if pub.5 %}, {% endif %}{{ pub.2 }}{% endif %}
+                            {% if pub.8 %}
+                            &nbsp;<a href="https://doi.org/{{ pub.8 }}" target="_blank" rel="noopener noreferrer">[link]</a>
+                            {% elif pub.9 %}
+                            &nbsp;<a href="{{ pub.9 }}" target="_blank" rel="noopener noreferrer">[link]</a>
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        {# BibTeX format #}
+                        {% set tags = pub.tags %}
+                        <div class="publication-title">{{ tags.title }}</div>
+                        <div class="publication-authors">{{ tags.author | default(value=tags.authors) }}</div>
+                        <div class="publication-venue">
+                            {% if tags.booktitle or tags.journal or tags.venue %}
+                            <em>{{ tags.booktitle | default(value=tags.journal) | default(value=tags.venue) }}</em>
+                            {% elif tags.publisher %}
+                            <em>{{ tags.publisher }}</em>
+                            {% endif %}
+                            {% if tags.year %}{% if tags.booktitle or tags.journal or tags.venue or tags.publisher %}, {% endif %}{{ tags.year }}{% endif %}
+                            {% if tags.doi %}
+                            &nbsp;<a href="https://doi.org/{{ tags.doi }}" target="_blank" rel="noopener noreferrer">[link]</a>
+                            {% elif tags.url %}
+                            &nbsp;<a href="{{ tags.url }}" target="_blank" rel="noopener noreferrer">[link]</a>
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+            {% set pub_count = publications | length %}
+            {% if pub_count > show_count %}
+            <button class="show-more-publications" data-total="{{ pub_count }}" data-show-count="{{ show_count }}">
+                Show all {{ pub_count }} publications
+            </button>
+            {% endif %}
+        </section>
+        {% endif %}
+        {% endif %}
+    </article>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const showMoreBtn = document.querySelector('.show-more-publications');
+    if (showMoreBtn) {
+        let isExpanded = false;
+        const total = showMoreBtn.getAttribute('data-total');
+        const showCount = parseInt(showMoreBtn.getAttribute('data-show-count'));
+
+        showMoreBtn.addEventListener('click', function() {
+            const hiddenPubs = document.querySelectorAll('.publication-item.hidden');
+
+            if (!isExpanded) {
+                hiddenPubs.forEach(pub => pub.classList.remove('hidden'));
+                this.textContent = 'Show fewer publications';
+                isExpanded = true;
+            } else {
+                // Re-select and hide items after showCount
+                const allPubs = document.querySelectorAll('.publication-item');
+                allPubs.forEach((pub, index) => {
+                    if (index >= showCount) {
+                        pub.classList.add('hidden');
+                    }
+                });
+                this.textContent = 'Show all ' + total + ' publications';
+                isExpanded = false;
+            }
+        });
+    }
+});
+</script>
+{% endblock %}

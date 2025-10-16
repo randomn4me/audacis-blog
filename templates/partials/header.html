@@ -1,0 +1,44 @@
+<header>
+    <nav>
+        <div class="container">
+            <a href="{{ get_url(path='@/_index.md') }}" class="logo">{{ config.title | default(value="Site Title") }}</a>
+            <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links">
+                {% if config.extra.menu %}
+                    {% for item in config.extra.menu %}
+                    <li>
+                        <a href="{{ get_url(path=item.url) }}" {% if item.icon %}aria-label="{{ item.name }}" title="{{ item.name }}"{% endif %}>
+                            {% if item.icon %}
+                                <i class="{{ item.icon }}"></i>
+                            {% else %}
+                                {{ item.name }}
+                            {% endif %}
+                        </a>
+                    </li>
+                    {% endfor %}
+                {% else %}
+                    <li><a href="{{ get_url(path='@/_index.md') }}">Home</a></li>
+                    <li><a href="{{ get_url(path='@/blog/_index.md') }}">Blog</a></li>
+                    <li><a href="{{ get_url(path='@/lists/_index.md') }}">Lists</a></li>
+                    <li><a href="{{ get_url(path='@/cv/_index.md') }}">CV</a></li>
+                {% endif %}
+                {% if config.build_search_index %}
+                <li class="nav-utility">
+                    <a href="/search" aria-label="Search" title="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                {% endif %}
+                <li class="nav-utility">
+                    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+                        <i class="fa-solid fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>

@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Tag: {{ term.name }} - {{ config.title }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <article class="page-content">
+        <header>
+            <h1>Posts tagged "{{ term.name }}"</h1>
+            <p>{{ term.pages | length }} post(s)</p>
+        </header>
+
+        <div class="blog-list">
+            {% for page in term.pages %}
+            <article class="blog-post">
+                <h2 class="post-title">
+                    <a href="{{ page.permalink }}">{{ page.title }}</a>
+                </h2>
+                <div class="post-meta">
+                    <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
+                    {% if page.taxonomies.tags %}
+                    <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                    <div class="post-tags">
+                        {% for tag in page.taxonomies.tags %}
+                        <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="tag">{{ tag }}</a>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+                {% if page.description %}
+                <p class="post-excerpt">{{ page.description }}</p>
+                {% endif %}
+            </article>
+            {% endfor %}
+        </div>
+    </article>
+</div>
+{% endblock %}

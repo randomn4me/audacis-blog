@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title | default(value=config.title) }}{% endblock %}
+
+{% block content %}
+<div class="container">
+    <article class="list-section">
+        <h1>{{ page.title }}</h1>
+
+        {% if page.content %}
+        <div class="list-intro">
+            {{ page.content | safe }}
+        </div>
+        {% endif %}
+
+        {% if page.extra.items %}
+        {# Collect all unique years and categorize them #}
+        {% set_global all_years = [] %}
+        {% for item in page.extra.items %}
+            {% if item.year %}
+                {% set year_str = item.year | as_str %}
+                {% set_global all_years = all_years | concat(with=year_str) %}
+            {% endif %}
+        {% endfor %}
+        {% set_global all_years = all_years | unique %}
+
+        {# Separate text years and numeric years #}
+        {% set_global text_years = [] %}
+        {% set_global numeric_years = [] %}
+        {% for year in all_years %}
+            {% if year is matching("^[0-9]+$") %}
+                {% set_global numeric_years = numeric_years | concat(with=year) %}
+            {% else %}
+                {% set_global text_years = text_years | concat(with=year) %}
+            {% endif %}
+        {% endfor %}
+
+        {# Sort years #}
+        {% set_global text_years = text_years | sort %}
+        {% set_global numeric_years = numeric_years | sort | reverse %}
+
+        <div class="item-list-container">
+            {# Display text years first (alphabetically) #}
+            {% for year in text_years %}
+                <div class="year-section">
+                    <h2 class="year-heading">{{ year }}</h2>
+                    <div class="item-list">
+                        {% for item in page.extra.items %}
+                            {% if item.year %}
+                                {% set item_year = item.year | as_str %}
+                                {% if item_year == year %}
+                                <div class="list-item-card">
+                                    <div class="item-header{% if item.description %} expandable{% endif %}">
+                                        <h3 class="item-title">
+                                            {% if item.description %}
+                                            <span class="wedge">▶</span>
+                                            {% endif %}
+                                            {{ item.title }}
+                                        </h3>
+                                        {% if item.rating %}
+                                        <div class="item-meta">
+                                            <span class="item-rating">{% for i in range(end=item.rating) %}<i class="fa-solid fa-star"></i>{% endfor %}</span>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    {% if item.description %}
+                                    <div class="item-details" style="display: none;">
+                                        <p class="item-description">{{ item.description | safe }}</p>
+                                        {% if item.link %}
+                                        <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+                                        {% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            {# Display numeric years in descending order #}
+            {% for year in numeric_years %}
+                <div class="year-section">
+                    <h2 class="year-heading">{{ year }}</h2>
+                    <div class="item-list">
+                        {% for item in page.extra.items %}
+                            {% if item.year %}
+                                {% set item_year = item.year | as_str %}
+                                {% if item_year == year %}
+                                <div class="list-item-card">
+                                    <div class="item-header{% if item.description %} expandable{% endif %}">
+                                        <h3 class="item-title">
+                                            {% if item.description %}
+                                            <span class="wedge">▶</span>
+                                            {% endif %}
+                                            {{ item.title }}
+                                        </h3>
+                                        {% if item.rating %}
+                                        <div class="item-meta">
+                                            <span class="item-rating">{% for i in range(end=item.rating) %}<i class="fa-solid fa-star"></i>{% endfor %}</span>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                    {% if item.description %}
+                                    <div class="item-details" style="display: none;">
+                                        <p class="item-description">{{ item.description | safe }}</p>
+                                        {% if item.link %}
+                                        <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+                                        {% endif %}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endfor %}
+
+            {# Display items without year #}
+            {% set_global has_other = false %}
+            {% for item in page.extra.items %}
+                {% if not item.year %}
+                    {% set_global has_other = true %}
+                {% endif %}
+            {% endfor %}
+
+            {% if has_other %}
+                <div class="year-section">
+                    <h2 class="year-heading">{{ page.extra.other_heading | default(value="Other") }}</h2>
+                    <div class="item-list">
+                        {% for item in page.extra.items %}
+                            {% if not item.year %}
+                            <div class="list-item-card">
+                                <div class="item-header{% if item.description %} expandable{% endif %}">
+                                    <h3 class="item-title">
+                                        {% if item.description %}
+                                        <span class="wedge">▶</span>
+                                        {% endif %}
+                                        {{ item.title }}
+                                    </h3>
+                                    {% if item.rating %}
+                                    <div class="item-meta">
+                                        <span class="item-rating">{% for i in range(end=item.rating) %}<i class="fa-solid fa-star"></i>{% endfor %}</span>
+                                    </div>
+                                    {% endif %}
+                                </div>
+                                {% if item.description %}
+                                <div class="item-details" style="display: none;">
+                                    <p class="item-description">{{ item.description | safe }}</p>
+                                    {% if item.link %}
+                                    <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
+                                    {% endif %}
+                                </div>
+                                {% endif %}
+                            </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+        {% endif %}
+    </article>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    // Handle expand/collapse
+    const expandableHeaders = document.querySelectorAll('.item-header.expandable');
+
+    expandableHeaders.forEach(header => {
+        header.addEventListener('click', function(e) {
+            // Don't expand if clicking on a link
+            if (e.target.tagName === 'A' || e.target.closest('a')) {
+                return;
+            }
+
+            const card = this.closest('.list-item-card');
+            const details = card.querySelector('.item-details');
+            const wedge = this.querySelector('.wedge');
+
+            if (details.style.display === 'none') {
+                details.style.display = 'block';
+                wedge.style.transform = 'rotate(90deg)';
+                this.setAttribute('aria-expanded', 'true');
+            } else {
+                details.style.display = 'none';
+                wedge.style.transform = 'rotate(0deg)';
+                this.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+});
+</script>
+{% endblock %}
