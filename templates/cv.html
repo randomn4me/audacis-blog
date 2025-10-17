@@ -115,23 +115,34 @@
                     {% if is_csv_format %}
                         {# CSV format - pub is an array, access by index #}
                         {# Headers: Key(0), Item Type(1), Publication Year(2), Author(3), Title(4), Publication Title(5), ISBN(6), ISSN(7), DOI(8), Url(9) #}
-                        <div class="publication-title">{{ pub.4 }}</div>
+                        <div class="publication-title">
+                            {% if pub.8 %}
+                            <a href="https://doi.org/{{ pub.8 }}" target="_blank" rel="noopener noreferrer">{{ pub.4 }}</a>
+                            {% elif pub.9 %}
+                            <a href="{{ pub.9 }}" target="_blank" rel="noopener noreferrer">{{ pub.4 }}</a>
+                            {% else %}
+                            {{ pub.4 }}
+                            {% endif %}
+                        </div>
                         <div class="publication-authors">{{ pub.3 }}</div>
                         <div class="publication-venue">
                             {% if pub.5 %}
                             <em>{{ pub.5 }}</em>
                             {% endif %}
                             {% if pub.2 %}{% if pub.5 %}, {% endif %}{{ pub.2 }}{% endif %}
-                            {% if pub.8 %}
-                            &nbsp;<a href="https://doi.org/{{ pub.8 }}" target="_blank" rel="noopener noreferrer">[link]</a>
-                            {% elif pub.9 %}
-                            &nbsp;<a href="{{ pub.9 }}" target="_blank" rel="noopener noreferrer">[link]</a>
-                            {% endif %}
                         </div>
                     {% else %}
                         {# BibTeX format #}
                         {% set tags = pub.tags %}
-                        <div class="publication-title">{{ tags.title }}</div>
+                        <div class="publication-title">
+                            {% if tags.doi %}
+                            <a href="https://doi.org/{{ tags.doi }}" target="_blank" rel="noopener noreferrer">{{ tags.title }}</a>
+                            {% elif tags.url %}
+                            <a href="{{ tags.url }}" target="_blank" rel="noopener noreferrer">{{ tags.title }}</a>
+                            {% else %}
+                            {{ tags.title }}
+                            {% endif %}
+                        </div>
                         <div class="publication-authors">{{ tags.author | default(value=tags.authors) }}</div>
                         <div class="publication-venue">
                             {% if tags.booktitle or tags.journal or tags.venue %}
@@ -140,11 +151,6 @@
                             <em>{{ tags.publisher }}</em>
                             {% endif %}
                             {% if tags.year %}{% if tags.booktitle or tags.journal or tags.venue or tags.publisher %}, {% endif %}{{ tags.year }}{% endif %}
-                            {% if tags.doi %}
-                            &nbsp;<a href="https://doi.org/{{ tags.doi }}" target="_blank" rel="noopener noreferrer">[link]</a>
-                            {% elif tags.url %}
-                            &nbsp;<a href="{{ tags.url }}" target="_blank" rel="noopener noreferrer">[link]</a>
-                            {% endif %}
                         </div>
                     {% endif %}
                 </div>

@@ -878,10 +878,20 @@ code {
     .publication-title {
         font-weight: 600;
         margin-bottom: 0.25rem;
+
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--primary-color);
+                text-decoration: none;
+            }
+        }
     }
 
     .publication-authors {
-        color: var(--secondary-color);
+        color: #444;
         font-size: 0.95rem;
         margin-bottom: 0.25rem;
     }
