@@ -40,7 +40,6 @@ favicon_emoji = "🚀"
 menu = [
     { name = "/blog", url = "@/blog/_index.md" },
     { name = "/now", url = "@/now.md" },
-    { name = "/about", url = "@/about.md" },
     { name = "/cv", url = "@/cv/_index.md" },
 ]
 

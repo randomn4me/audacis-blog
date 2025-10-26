@@ -16,9 +16,6 @@
             {% endif %}
         </div>
         {% endif %}
-        <p>&copy; {{ now() | date(format="%Y") }} {{ config.title | default(value="Site Title") }}. All rights reserved.</p>
-        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            <a href="/sitemap.xml" style="color: rgba(255, 255, 255, 0.8); text-decoration: none;" target="_blank">Sitemap</a>
-        </p>
+        <p>&copy; {{ config.author }} {{ now() | date(format="%Y") }} <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span> All rights reserved.</p>
     </div>
 </footer>

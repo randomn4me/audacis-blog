@@ -3,113 +3,60 @@
 {% block title %}{{ section.title | default(value=config.title) }}{% endblock %}
 
 {% block content %}
-<div class="container">
+<div class="container minimalist-home">
     <section class="home-section">
-        <div class="home-intro">
-            <div class="intro-text">
-                <h1>{{ section.title }}</h1>
-                {{ section.content | safe }}
-            </div>
+        <div class="home-header">
             {% if config.extra.profile_image %}
-            <div class="intro-image">
+            <div class="profile-image-container">
                 {% set image = resize_image(path=config.extra.profile_image, width=400, height=400, op="fill", format="webp", quality=85) %}
                 {% set image_png = resize_image(path=config.extra.profile_image, width=400, height=400, op="fill", format="png", quality=85) %}
                 <picture>
                     <source srcset="{{ image.url }}" type="image/webp">
-                    <img src="{{ image_png.url }}" alt="Profile picture" class="profile-picture" width="200" height="200">
+                    <img src="{{ image_png.url }}" alt="{{ config.author }}" class="profile-picture" width="200" height="200">
                 </picture>
+            </div>
+            {% endif %}
+
+            <h1>{{ config.author }}</h1>
+
+            {% if config.extra.socials %}
+            <div class="social-links">
+                {% for social in config.extra.socials %}
+                <a href="{{ social.url }}" aria-label="{{ social.name }}" title="{{ social.name }}">
+                    <i class="{{ social.icon }}"></i>
+                </a>
+                {% endfor %}
             </div>
             {% endif %}
         </div>
 
+        <div class="home-bio">
+            {{ section.content | safe }}
+        </div>
+
         <section class="home-recent-posts">
-            <h2>Recent Blog Posts</h2>
+            <h2>Recent Posts</h2>
             {% set blog_section = get_section(path="blog/_index.md") %}
-            {% set posts_count = config.extra.recent_posts_count | default(value=3) %}
+            {% set posts_count = config.extra.recent_posts_count | default(value=5) %}
             {% set recent_posts = blog_section.pages | slice(end=posts_count) %}
 
-            <div class="blog-table">
+            <ul class="post-list">
                 {% for post in recent_posts %}
-                <div class="blog-table-row">
-                    <div class="blog-table-cell title-cell">
-                        <a href="{{ post.permalink }}">{{ post.title }}</a>
-                    </div>
-                    <div class="blog-table-cell meta-cell">
-                        <div class="date-cell">
-                            <time>{{ post.date | date(format="%B %d, %Y") }}</time>
-                        </div>
-                        {% if post.taxonomies.tags %}
-                        <div class="tags-cell">
-                            {% for tag in post.taxonomies.tags %}
-                            <a href="{{ get_taxonomy_url(kind='tags', name=tag) }}" class="tag">{{ tag }}</a>
-                            {% endfor %}
-                        </div>
-                        {% endif %}
-                    </div>
-                </div>
+                <li class="post-item">
+                    <a href="{{ post.permalink }}">{{ post.title }}</a>
+                    <span class="post-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                    <span class="post-date">{{ post.date | date(format="%B %d, %Y") }}</span>
+                </li>
                 {% endfor %}
-            </div>
+            </ul>
 
             {% if blog_section.pages | length > posts_count %}
-            <div class="show-more-container">
-                <a href="{{ get_url(path='@/blog/_index.md') }}" class="show-more-link">View all blog posts →</a>
-            </div>
+            <p class="view-all">
+                <a href="{{ get_url(path='@/blog/_index.md') }}">View all posts →</a>
+            </p>
             {% endif %}
         </section>
-
-        {% set show_cv = config.extra.show_cv_intro | default(value=true) %}
-        {% if show_cv %}
-        {% set cv_section = get_section(path="cv/_index.md") %}
-        {% if cv_section and cv_section.content %}
-        <section class="home-cv-section">
-            <h2>About Me</h2>
-            {{ cv_section.content | safe }}
-            <a href="{{ get_url(path='@/cv/_index.md') }}" class="cv-link">View full CV →</a>
-        </section>
-        {% endif %}
-        {% endif %}
     </section>
 </div>
 {% endblock %}
 
-{% block extra_js %}
-<script>
-    function glitch(element) {
-        let count = 0;
-        setInterval(() => {
-            // Main element skew
-            const skew = Math.random() * 20 - 10;
-            // element::before
-            const top1 = Math.random() * 100;
-            const btm1 = Math.random() * 100;
-            // element::after
-            const top2 = Math.random() * 100;
-            const btm2 = Math.random() * 100;
-
-            element.style.setProperty('--skew', `${skew}deg`);
-            element.style.setProperty('--t1', `${top1}%`);
-            element.style.setProperty('--b1', `${btm1}%`);
-            element.style.setProperty('--t2', `${top2}%`);
-            element.style.setProperty('--b2', `${btm2}%`);
-            element.style.setProperty('--scale', '1');
-
-            count++;
-
-            if (count % 15 === 0) {
-                const bigSkew = Math.random() * 180 - 90;
-                element.style.setProperty('--skew', `${bigSkew}deg`);
-            }
-
-            if (count % 30 === 0) {
-                const bigScale = 1 + Math.random() / 2;
-                element.style.setProperty('--scale', `${bigScale}`);
-            }
-        }, 200);
-    }
-
-    const profileWrapper = document.querySelector('.intro-image');
-    if (profileWrapper) {
-        glitch(profileWrapper);
-    }
-</script>
-{% endblock %}

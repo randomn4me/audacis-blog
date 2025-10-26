@@ -11,6 +11,14 @@
                 {% if page.date %}
                 <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
                 {% endif %}
+                {% if page.word_count %}
+                <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                <span class="word-count">{{ page.word_count }} words</span>
+                {% endif %}
+                {% if page.reading_time %}
+                <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
+                <span class="reading-time">{{ page.reading_time }} min read</span>
+                {% endif %}
                 {% if page.taxonomies.tags %}
                 <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
                 <div class="post-tags">
