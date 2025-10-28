@@ -636,9 +636,9 @@ code {
 
         h1 {
             font-size: 2rem;
-            margin-bottom: 1.5rem;
+            margin-bottom: 0.5rem;
             margin-top: 0;
-            font-weight: 600;
+            font-weight: 900;
             order: 2;
         }
     }
@@ -664,7 +664,7 @@ code {
         display: flex;
         justify-content: center;
         gap: 1.25rem;
-        margin-bottom: 1rem;
+        margin-bottom: 0;
         order: 3;
 
         a {
