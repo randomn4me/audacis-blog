@@ -498,21 +498,25 @@ code {
     max-width: 800px;
     margin: 0 auto;
 
+    h1 {
+        margin-bottom: 0.5rem;
+    }
+
     .post-meta {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         gap: 0.75rem;
-        margin-bottom: 1rem;
+        margin-bottom: 2rem;
         color: var(--secondary-color);
         font-size: 0.9rem;
+        font-weight: normal;
     }
 
     .meta-separator {
         color: var(--secondary-color);
     }
 
-    .word-count,
     .reading-time {
         color: var(--secondary-color);
     }
@@ -523,24 +527,33 @@ code {
         gap: 0.5rem;
 
         a.tag {
-            display: inline-block;
-            padding: 0.35rem 0.9rem;
-            background: var(--gradient-primary);
-            color: white !important;
-            border-radius: 20px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-decoration: none !important;
-            text-transform: uppercase !important;
-            letter-spacing: 0.5px;
-            transition: all 0.2s;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: opacity 0.2s;
 
             &:hover {
-                filter: brightness(1.1);
-                color: white !important;
-                transform: translateY(-1px);
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-                text-decoration: none !important;
+                text-decoration: underline;
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .content {
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 2rem auto;
+            border-radius: 8px;
+        }
+
+        picture {
+            display: block;
+            margin: 2rem auto;
+
+            img {
+                margin: 0;
             }
         }
     }
