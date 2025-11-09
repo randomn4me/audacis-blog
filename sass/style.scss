@@ -293,6 +293,27 @@ a {
     }
 }
 
+blockquote {
+    margin: 1.5rem 0;
+    padding: 1rem 1.5rem;
+    border-left: 4px solid var(--primary-color);
+    background-color: var(--hover-background);
+    font-style: italic;
+    color: var(--text-color);
+
+    p {
+        margin-bottom: 0.5rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    code {
+        font-style: normal;
+    }
+}
+
 /* Code blocks */
 pre {
     background-color: #2b2b2b;
