@@ -1,5 +1,7 @@
 public
 result
+.DS_Store
+processed_images
 
 # Devenv
 .devenv*
