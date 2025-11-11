@@ -29,7 +29,7 @@ primary_color = "#951169"
 secondary_color = "#732054"
 gradient_rotation = 135
 meta_separator = "•"
-profile_image = "static/images/profile.png"
+profile_image = "img/profile.png"
 show_cv_intro = true
 show_rss = true
 

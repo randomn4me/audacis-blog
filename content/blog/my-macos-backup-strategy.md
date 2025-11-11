@@ -257,8 +257,10 @@ The *System* type seems not to be documented at all (according to [this mailing 
 - **System:** Services run in system/root context (requires root privileges).
 
 The session type `System` is for root services, which I currently do not need.
-As I want to run a `background` backup service, where the GUI is not required but should also run in the GUI session if they are up, I went for the SessionType `Background` (surprise).
-This does not strictly adhere to the requirement of *power management*, such as running only when on a power adapter or Wi-Fi.
+~~As I want to run a `background` backup service, where the GUI is not required but should also run in the GUI session if they are up, I went for the SessionType `Background` (surprise).
+This does not strictly adhere to the requirement of *power management*, such as running only when on a power adapter or Wi-Fi.~~
+**Edit:** The `background` service is a system-wide service and causes problems, when used for user services.
+Hence I removed the full `LimitLoadToSessionType` key.
 
 The third part I wanted to deal with is the non-overlapping service starts.
 I started out with using the following snippet:
@@ -319,10 +321,6 @@ So this is the plist file I ended up with.
     <key>KeepAlive</key>
     <false/>
     
-    <!-- Sessiontype to be bound to -->
-    <key>LimitLoadToSessionType</key>
-    <string>Background</string>
-
     <!-- Process type for better resource management -->
     <key>ProcessType</key>
     <string>Background</string>

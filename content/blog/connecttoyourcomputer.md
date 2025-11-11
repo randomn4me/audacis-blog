@@ -28,7 +28,7 @@ This greatly expands the options available to find what works best for you as an
 And if we consider the fact that our brains are wired to utilize patterns we recognize, switching keyboards and layouts becomes a big hassle.
 Therefore, most people either do not know about other options because they are not exposed to them, or they use what they know due to other obstacles.
 
-!["Full size QWERTY keyboard on table with random stuff."](/img/keyboard-full-size-standard.jpg "Full size QWERTY keyboard on table with random stuff.")
+!["QWERTY ISO-style keyboard on table with mouse and coffee mug."](/img/keyboard-standard.jpg "QWERTY ISO-style keyboard on table with mouse and coffee mug..")
 
 For me, this was definitely the case until a friend introduced me to Bone, an ergonomic ISO layout designed to replace the German QWERTZ layout.
 While he committed to learning Bone because he wasn't touch typing before, I stuck with QWERTZ because I was faster with it and couldn't spare the mental capacity to learn a new layout.
