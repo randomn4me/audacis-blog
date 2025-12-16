@@ -7,7 +7,7 @@ date = 2025-09-12
 tags = ["macos", "backup", "sysadmin", ]
 +++
 
-As outlined in my last [blog post](posts/another-backup-fail), I failed at my backups again[^1], which led me to setting up [`borgmatic`](https://torsion.org/borgmatic/) again.
+As outlined in my last [blog post](blog/another-backup-fail/), I failed at my backups again[^1], which led me to setting up [`borgmatic`](https://torsion.org/borgmatic/) again.
 It is a wrapper for the fantastic tool [borg](https://www.borgbackup.org/), a command-line tool to create incremental backups of your system.
 Like every other power-user tool, `borgmatic` is highly configurable, can back up to different repositories (storage backends) simultaneously, and does automated checks and pruning to keep just the essential bits.
 However, this should not be an advertisement post about this tool.
