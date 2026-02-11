@@ -15,7 +15,9 @@ taxonomies = [
 ]
 
 [markdown]
-highlighting = true
+
+[markdown.highlighting]
+theme = "tokyo-night"
 
 [search]
 index_format = "elasticlunr_json"
