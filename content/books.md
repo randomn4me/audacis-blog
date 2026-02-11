@@ -5,7 +5,7 @@ template = 'list.html'
 [extra]
 other_heading = "Earlier"
 items = [
-  { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, that I got curious.", year = "Currently Reading" },
+  { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, so I got curious.", year = "Currently Reading" },
   { title = "Celsius (Marc Elsberg)", description = "Started but not finished. The book seemed to share a storyline remarkably similar to other works by Marc Elsberg. After successfully predicting the next 50 pages of Celsius (on page 150) with most of it coming true, I decided to stop reading. Now it serves as speedreading training book, just to get finished.", year = "Currently Reading" },
   { title = "How to Win Friends and Influence People", description = "A nice introduction to simple life rules. Sometimes you notice its age because of outdated recommendations about the roles of women and men, but if you adjust it to current standards, I can heartily recommend it.", rating = 5, year = 2026 },
   { title = "The Decision Book: Fifty Models for Strategic Thinking (Mikael Krogerus & Roman Tschäppeler)", description = "An overview over 50 different thinking models. Outlines models on how to improve yourself, on how to understand yourself better, how to understand others better, and how to better work with others. While it might only look like an overview, it might come in handy for future projects. And, I love such books 😬", rating = 5, year = 2025 },
