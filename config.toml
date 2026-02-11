@@ -15,7 +15,7 @@ taxonomies = [
 ]
 
 [markdown]
-highlight_code = true
+highlighting = true
 
 [search]
 index_format = "elasticlunr_json"

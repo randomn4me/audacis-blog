@@ -9,7 +9,7 @@ tags = [ "sysadmin", "nixos", ]
 
 NetCup is a German hosting provider, which offers affordable virtual private servers (VPS) and dedicated servers.
 It offers way more storage than other providers, like Hetzner, which I used before (and still have a server for now).
-This increased storage capacity allows me to run other services, and not having to worry about running out of space (which I did with Hetzner and a [wrong configuration for the Home Manager Garbage Collection](/posts/wrong-homemanager-garbage-collection)).
+This increased storage capacity allows me to run other services, and not having to worry about running out of space (which I did with Hetzner and a [wrong configuration for the Home Manager Garbage Collection](/blog/wrong-homemanager-garbage-collection)).
 
 ## Installing NixOS on Netcup
 
