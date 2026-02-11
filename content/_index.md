@@ -7,13 +7,12 @@ cv_intro = "Software engineer with 5+ years of experience building scalable web 
 recent_posts_count = 3
 +++
 
-I'm a husband and father of *four little humans*, PostDoc at [PEASEC](https://peasec.de), and working on making the world's IT more secure.
+I'm a husband, father of *four little humans*, Manager of the [SFB CROSSING](https://www.crossing.tu-darmstadt.de/crc_1119/index.en.jsp), and working on making the world's IT more secure with [Audax Security](https://audax-security.com).
 
-My research focuses on process optimizations and information retrieval for security experts, but it translates to other domains as well.
-To achieve this goal I use natural language processing, information retrieval, and data mining.
-
-I'm a passionate software engineer interested in web development, distributed systems, and open source. Here you'll find my blog posts, technical writings, and various curated lists.
+My research focuses on process optimizations for security experts.
+To achieve this goal I use natural language processing, knowledge discovery, information retrieval, and data mining.
+You'll find my blog posts, technical writings, and various curated lists on this page.
 
 I'm also interested in automating mundane tasks and Nix&nbsp;([using it for my servers](https://github.com/randomn4me/nix-flakes)).
-If there is some spare time I love to ride my bike (with a strong interest in long distance cycling)&nbsp;🚴
-Besides that, I'm into photography (portraits and nature) 📷, like to [read](/books)&nbsp;📕, play video games, and learn and try new things.
+If there is some spare time I love to ride my bike&nbsp;🚴.
+Besides that, I'm into photography (portraits and nature) 📷, like to [read](/books)&nbsp;📕, and learn and try new things.
