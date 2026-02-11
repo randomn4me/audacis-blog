@@ -37,7 +37,7 @@
         <section class="home-recent-posts">
             <h2>Recent Posts</h2>
             {% set blog_section = get_section(path="blog/_index.md") %}
-            {% set posts_count = config.extra.recent_posts_count | default(value=5) %}
+            {% set posts_count = section.extra.recent_posts_count | default(value=5) %}
             {% set recent_posts = blog_section.pages | slice(end=posts_count) %}
 
             <ul class="post-list">
