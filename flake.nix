@@ -24,7 +24,7 @@
         packages.audacis-blog = import ./nix/package.nix {
           inherit pkgs tabi;
           src = ./.;
-          baseUrl = "https://example.com"; # Must provide a base URL
+          baseUrl = "https://audacis.net";
         };
         packages.default = self.packages.${system}.audacis-blog;
         
