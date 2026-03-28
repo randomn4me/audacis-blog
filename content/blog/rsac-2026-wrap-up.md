@@ -27,15 +27,15 @@ Networking is not a side activity of the PhD.
 It is a core method for understanding whether the problems you are solving actually matter to the people who would use your solutions.
 
 {{ gallery(columns=2, paths=[
-    "static/img/rsac26-expo.jpeg",
     "static/img/rsac26-expo-north.jpeg",
+    "static/img/rsac26-expo.jpeg",
     "static/img/rsac26-expo-cyberpunk.jpeg",
     "static/img/rsac26-nsa.jpeg"
 ], alts=[
-    "RSAC expo floor",
-    "Expo North hall",
+    "RSAC Expo North hall",
+    "RSAC Expo South floor",
     "Cyberpunk-themed booth",
-    "NSA booth"
+    "NSA talk with four former NSA Directors: Keith Alexander, Mike Rogers, Paul M. Nakasone, and Tim Haugh"
 ]) }}
 
 ## The Agentic AI Gap, Seen From the Research Side
