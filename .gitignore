@@ -2,6 +2,7 @@ public
 result
 .DS_Store
 processed_images
+*heic
 
 # Devenv
 .devenv*
