@@ -26,6 +26,18 @@ Talking to CSIRT leads, CTI analysts, and platform engineers surfaces constraint
 Networking is not a side activity of the PhD.
 It is a core method for understanding whether the problems you are solving actually matter to the people who would use your solutions.
 
+{{ gallery(columns=2, paths=[
+    "static/img/rsac26-expo.jpeg",
+    "static/img/rsac26-expo-north.jpeg",
+    "static/img/rsac26-expo-cyberpunk.jpeg",
+    "static/img/rsac26-nsa.jpeg"
+], alts=[
+    "RSAC expo floor",
+    "Expo North hall",
+    "Cyberpunk-themed booth",
+    "NSA booth"
+]) }}
+
 ## The Agentic AI Gap, Seen From the Research Side
 
 Every second booth at RSAC 2026 carried the *agentic AI* label.
@@ -38,6 +50,14 @@ From a research standpoint, that is roughly equivalent to a fixed pipeline with 
 True agentic behavior, where a system reasons about goals, plans multi-step actions, recovers from failures, and adapts its strategy, remains rare in production.
 The gap is not surprising.
 Reliable autonomy in adversarial domains is genuinely hard, and security is one of the most unforgiving environments to get it wrong.
+
+{{ gallery(columns=2, paths=[
+    "static/img/rsac26-robots.jpg",
+    "static/img/rsac26-crowdstrike-books-theater.jpg"
+], alts=[
+    "Robots at RSAC",
+    "CrowdStrike book theater"
+]) }}
 
 But the direction is right.
 The demand signal from practitioners is unmistakable: they want systems that think, not just systems that chain.
@@ -64,4 +84,4 @@ Doing a PhD in applied security without engaging the practitioner community is l
 You might produce something technically sound, but you will not know if it generalizes.
 RSAC made that lesson unavoidable, and I am glad it did.
 
-<!-- TODO: add me -->
+{{ img(path="static/img/rsac26-me.jpg", alt="Me at RSAC 2026") }}
