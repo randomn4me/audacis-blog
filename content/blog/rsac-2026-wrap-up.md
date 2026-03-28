@@ -9,7 +9,7 @@ tags = ["cybersecurity", "rsac", "cti"]
 
 I study cyber threat intelligence for a living.
 I build language models that parse advisories, design knowledge graphs that map vulnerability ecosystems, and write papers about automating what analysts do manually today.
-Until this week, I had never been to RSA Conference.
+Until this week, I had never been to [RSA Conference](https://www.rsaconference.com/).
 
 That gap matters more than I realized.
 
