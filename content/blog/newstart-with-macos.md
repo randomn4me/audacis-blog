@@ -19,7 +19,7 @@ And once in a while I need to do some heavy lifting by compiling code, testing L
 There might be other efficiency tweaks in NixOS, but I don't want to spend an uncertain amount of hours to find the right knob and maybe get 30 minutes.
 Thanks to a colleague I came around this nice graphic from xkcd.
 
-{{ img(path="static/img/is_it_worth_the_time_2x.png", alt="Is It Worth the Time? — How long can you work on making a routine task more efficient before you're spending more time than you save?", source="https://xkcd.com/1205/", source_label="xkcd 1205") }}
+{{ img(path="static/img/is_it_worth_the_time_2x.png", alt="Is It Worth the Time? — How long can you work on making a routine task more efficient before you're spending more time than you save?", source="https://xkcd.com/1205/", source_label="xkcd: Is It Worth the Time?", raw=true) }}
 
 Don't get me wrong!
 I love tweaking my systems.

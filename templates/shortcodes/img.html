@@ -4,15 +4,19 @@
 {% set image_quality = quality | default(value=85) %}
 {% set image_source = source | default(value="") %}
 {% set image_source_label = source_label | default(value="Source") %}
-
-{% set image_webp = resize_image(path=image_path, width=image_width, height=0, op="fit_width", format="webp", quality=image_quality) %}
-{% set image_jpg = resize_image(path=image_path, width=image_width, height=0, op="fit_width", format="jpg", quality=image_quality) %}
+{% set image_raw = raw | default(value=false) %}
 
 <figure style="display: block; width: 80%; margin: 1.5rem auto;">
+    {% if image_raw %}
+    <img src="{{ image_path | replace(from='static', to='') }}" alt="{{ image_alt }}" loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
+    {% else %}
+    {% set image_webp = resize_image(path=image_path, width=image_width, height=0, op="fit_width", format="webp", quality=image_quality) %}
+    {% set image_jpg = resize_image(path=image_path, width=image_width, height=0, op="fit_width", format="jpg", quality=image_quality) %}
     <picture>
         <source srcset="{{ image_webp.url }}" type="image/webp">
         <img src="{{ image_jpg.url }}" alt="{{ image_alt }}" width="{{ image_webp.width }}" height="{{ image_webp.height }}" loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
     </picture>
+    {% endif %}
     {% if image_source %}
     <figcaption style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 0.4rem;">
         <a href="{{ image_source }}" rel="noopener">{{ image_source_label }}</a>
