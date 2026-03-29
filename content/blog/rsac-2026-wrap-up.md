@@ -59,7 +59,12 @@ Reliable autonomy in adversarial domains is genuinely hard, and security is one 
     "CrowdStrike book theater"
 ]) }}
 
-But the direction is right.
+That said, genuinely agentic workflows do exist.
+Penetration testing frameworks that autonomously enumerate attack surfaces, chain exploits, and adapt when a path is blocked come closest to what the term should mean.
+The same applies to forensic triage systems that can reason across disk images, memory dumps, and log timelines without a human scripting every step.
+These are still narrow in scope, but they demonstrate real planning and recovery, not just sequential tool calls.
+
+The direction is right nonetheless.
 The demand signal from practitioners is unmistakable: they want systems that think, not just systems that chain.
 That is a research opportunity as much as a product opportunity, and it is the kind of gap that [our work at Serify](https://serify.eu) is trying to close.
 
