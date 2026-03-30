@@ -7,7 +7,7 @@ cv_intro = "Software engineer with 5+ years of experience building scalable web 
 recent_posts_count = 3
 +++
 
-I'm a husband, father of *four little humans*, Manager of the [SFB CROSSING](https://www.crossing.tu-darmstadt.de/crc_1119/index.en.jsp), and working on making the world's IT more secure with [Audax Security](https://audax-security.com).
+I'm a husband, father of *four little humans*, Manager of the [SFB CROSSING](https://www.crossing.tu-darmstadt.de/crc_1119/index.en.jsp), and working on making the world's IT more secure with [Serify](https://serify.eu).
 
 My research focuses on process optimizations for security experts.
 To achieve this goal I use natural language processing, knowledge discovery, information retrieval, and data mining.
