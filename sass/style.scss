@@ -34,7 +34,12 @@
 }
 
 [data-theme="dark"] {
-    --secondary-color: #aaa;
+    --primary-color: #d98ab8;
+    --primary-color-dark: #c477a5;
+    --primary-color-darker: #b06492;
+    --primary-color-light: #e49dca;
+    --primary-color-lighter: #f0b0dc;
+    --secondary-color: #c4a0b8;
     --background-color: #1a1a1a;
     --text-color: #e0e0e0;
     --link-color: #6ba3ff;

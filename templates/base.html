@@ -34,15 +34,17 @@
         [data-theme="dark"] {
             --text-color: #d0d0d0;
             {% if config.extra.primary_color %}
-            --primary-color: color-mix(in srgb, {{ config.extra.primary_color }} 90%, white);
-            --primary-color-light: color-mix(in srgb, {{ config.extra.primary_color }} 80%, white);
-            --primary-color-lighter: color-mix(in srgb, {{ config.extra.primary_color }} 70%, white);
+            --primary-color: color-mix(in srgb, {{ config.extra.primary_color }} 55%, white);
+            --primary-color-dark: color-mix(in srgb, {{ config.extra.primary_color }} 65%, white);
+            --primary-color-darker: color-mix(in srgb, {{ config.extra.primary_color }} 75%, white);
+            --primary-color-light: color-mix(in srgb, {{ config.extra.primary_color }} 45%, white);
+            --primary-color-lighter: color-mix(in srgb, {{ config.extra.primary_color }} 35%, white);
             {% endif %}
             {% if config.extra.secondary_color %}
-            --secondary-color: color-mix(in srgb, {{ config.extra.secondary_color }} 90%, white);
+            --secondary-color: color-mix(in srgb, {{ config.extra.secondary_color }} 60%, white);
             {% endif %}
             {% if config.extra.primary_color and config.extra.secondary_color %}
-            --gradient-primary: linear-gradient({{ config.extra.gradient_rotation | default(value=135) }}deg, color-mix(in srgb, {{ config.extra.primary_color }} 90%, white), color-mix(in srgb, {{ config.extra.secondary_color }} 90%, white));
+            --gradient-primary: linear-gradient({{ config.extra.gradient_rotation | default(value=135) }}deg, color-mix(in srgb, {{ config.extra.primary_color }} 55%, white), color-mix(in srgb, {{ config.extra.secondary_color }} 55%, white));
             {% endif %}
         }
     </style>
