@@ -126,10 +126,10 @@
                         </div>
                         <div class="publication-authors">{{ pub.3 }}</div>
                         <div class="publication-venue">
-                            {% if pub.5 %}
+                            {%- if pub.5 %}
                             <em>{{ pub.5 }}</em>
-                            {% endif %}
-                            {% if pub.2 %}{% if pub.5 %}, {% endif %}{{ pub.2 }}{% endif %}
+                            {%- endif %}
+                            {%- if pub.2 %}{% if pub.5 %}, {% endif %}{{ pub.2 }}{% endif %}
                         </div>
                     {% else %}
                         {# BibTeX format #}
@@ -145,12 +145,12 @@
                         </div>
                         <div class="publication-authors">{{ tags.author | default(value=tags.authors) }}</div>
                         <div class="publication-venue">
-                            {% if tags.booktitle or tags.journal or tags.venue %}
+                            {%- if tags.booktitle or tags.journal or tags.venue %}
                             <em>{{ tags.booktitle | default(value=tags.journal) | default(value=tags.venue) }}</em>
-                            {% elif tags.publisher %}
+                            {%- elif tags.publisher %}
                             <em>{{ tags.publisher }}</em>
-                            {% endif %}
-                            {% if tags.year %}{% if tags.booktitle or tags.journal or tags.venue or tags.publisher %}, {% endif %}{{ tags.year }}{% endif %}
+                            {%- endif %}
+                            {%- if tags.year %}{% if tags.booktitle or tags.journal or tags.venue or tags.publisher %}, {% endif %}{{ tags.year }}{% endif %}
                         </div>
                     {% endif %}
                 </div>
