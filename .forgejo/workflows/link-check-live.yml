@@ -1,0 +1,19 @@
+name: Link Check (Live)
+
+on:
+  schedule:
+    - cron: "0 8 * * 1"
+
+jobs:
+  link-check-live:
+    runs-on: docker
+    container:
+      image: alpine:latest
+    steps:
+      - name: Install lychee
+        run: |
+          apk add --no-cache curl tar
+          curl -sL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
+
+      - name: Check live site links
+        run: lychee --no-progress https://audacis.net
