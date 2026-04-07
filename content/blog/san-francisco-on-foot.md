@@ -125,7 +125,7 @@ Not better, not worse, just absurdly concentrated.
 
 My hotel sat right on the edge of the Tenderloin.
 Every morning I walked from there to [Moscone Center](https://www.moscone.com/), and every morning that walk was a reminder of how extreme the contrasts in this city are.
-Within a few blocks you move from open drug use and people sleeping on the sidewalk to billion-dollar startup offices and conference venues where the future of cybersecurity is being discussed over $18 coffees.
+Within a few blocks you move from open drug use and people sleeping on the sidewalk to billion-dollar startup offices and conference venues where the future of cybersecurity is being discussed over $8 coffees.
 
 It is difficult to talk about innovation and progress all day without also noticing who is being left behind just outside the door.
 That juxtaposition is jarring, and it stays with you.
