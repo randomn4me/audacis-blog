@@ -40,10 +40,10 @@
                     </div>
                     {% endif %}
                 </div>
-                {% if page.summary %}
-                <p class="post-excerpt">{{ page.summary }}</p>
-                {% elif page.description %}
+                {% if page.description %}
                 <p class="post-excerpt">{{ page.description }}</p>
+                {% elif page.summary %}
+                <p class="post-excerpt">{{ page.summary | striptags }}</p>
                 {% endif %}
             </article>
             {% endfor %}
