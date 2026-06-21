@@ -1,7 +1,7 @@
 +++
 title = "Singapore and the Air-Conditioned City"
 description = "Heat you wear like a coat, a workshop on AI and conflict, and a city that is the inverse of San Francisco in almost every way."
-date = 2026-06-20
+date = 2026-06-03
 
 [taxonomies]
 tags = ["travel", "cybersecurity", "research"]
