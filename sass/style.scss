@@ -566,6 +566,18 @@ code {
     }
 
     .content {
+        hr {
+            border: 0;
+            height: 1px;
+            width: 100%;
+            margin: 3rem auto;
+            background: linear-gradient(to right,
+                transparent,
+                var(--border-color) 20%,
+                var(--border-color) 80%,
+                transparent);
+        }
+
         img {
             max-width: 100%;
             height: auto;
