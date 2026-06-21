@@ -21,7 +21,7 @@ But after what felt like a short while due to the constant workload at work, the
 This was the day, when the realization that I was really going to travel there kicked in.
 
 {{ gallery(columns=1, paths=[
-    "static/img/sf26-flight.jpeg",
+    "img_src/sf26-flight.jpeg",
 ], alts=[
     "Flight from FRA to SFO over Qeqertalik (Greenland)",
 ]) }}
@@ -44,8 +44,8 @@ It is a literal description of how the thing works, and the rattling is the cabl
 One of those moments where the obvious was hiding in plain sight, and you feel a little dumb and a little delighted at the same time.
 
 {{ gallery(columns=2, paths=[
-    "static/img/sf26-cable-car-downtown.jpg",
-    "static/img/sf26-cable-car-russian-hill.jpg"
+    "img_src/sf26-cable-car-downtown.jpg",
+    "img_src/sf26-cable-car-russian-hill.jpg"
 ], alts=[
     "Cable car downtown",
     "Cable car on Russian Hill"
@@ -67,10 +67,10 @@ The event made sense as spectacle before.
 Now it makes sense as a feat of pure athletic absurdity.
 
 {{ gallery(columns=2, paths=[
-    "static/img/sf26-hills.jpg",
-    "static/img/sf26-hills-cars.jpg",
-    "static/img/sf26-hills-sideways.jpg",
-    "static/img/sf26-hills-lombard-street.jpg"
+    "img_src/sf26-hills.jpg",
+    "img_src/sf26-hills-cars.jpg",
+    "img_src/sf26-hills-sideways.jpg",
+    "img_src/sf26-hills-lombard-street.jpg"
 ], alts=[
     "San Francisco hills",
     "Cars parked on a steep hill",
@@ -87,10 +87,10 @@ The entire city laid out below, the Bay Bridge, the Golden Gate, downtown, the o
 You can see why people fall in love with this place.
 
 {{ gallery(columns=2, paths=[
-    "static/img/sf26-twin-peaks-blvrd.jpg",
-    "static/img/sf26-twin-peaks-sutro-tower.jpg",
-    "static/img/sf26-twin-peaks-echium-flowers.jpg",
-    "static/img/sf26-twin-peaks-skyline.jpg"
+    "img_src/sf26-twin-peaks-blvrd.jpg",
+    "img_src/sf26-twin-peaks-sutro-tower.jpg",
+    "img_src/sf26-twin-peaks-echium-flowers.jpg",
+    "img_src/sf26-twin-peaks-skyline.jpg"
 ], alts=[
     "Twin Peaks Boulevard",
     "Sutro Tower from Twin Peaks",
@@ -114,8 +114,8 @@ The sheer concentration of talent, money, and ambition in this tiny corridor is 
 Not better, not worse, just absurdly concentrated.
 
 {{ gallery(columns=2, paths=[
-    "static/img/sf26-downtown-salesforce.jpg",
-    "static/img/sf26-downtown-yerba-buena.jpg"
+    "img_src/sf26-downtown-salesforce.jpg",
+    "img_src/sf26-downtown-yerba-buena.jpg"
 ], alts=[
     "Salesforce Tower and downtown SF",
     "Yerba Buena Gardens"
@@ -132,7 +132,7 @@ That juxtaposition is jarring, and it stays with you.
 I do not have a conclusion here.
 Just the observation that San Francisco does not let you look away, and I think that is worth something.
 
-{{ img(path="static/img/sf26-downtown.jpg", alt="Downtown San Francisco") }}
+{{ img(path="img_src/sf26-downtown.jpg", alt="Downtown San Francisco") }}
 
 ## The Beautiful Parts
 
@@ -150,9 +150,9 @@ And it is also a place that forces you to sit with uncomfortable questions.
 Both things are true at the same time.
 
 {{ gallery(columns=3, paths=[
-    "static/img/sf26-golden-gate-bridge.jpg",
-    "static/img/sf26-fort-point.jpg",
-    "static/img/sf26-bookstore.jpg"
+    "img_src/sf26-golden-gate-bridge.jpg",
+    "img_src/sf26-fort-point.jpg",
+    "img_src/sf26-bookstore.jpg"
 ], alts=[
     "Golden Gate Bridge",
     "Fort Point beneath the Golden Gate",

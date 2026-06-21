@@ -27,10 +27,10 @@ Networking is not a side activity of the PhD.
 It is a core method for understanding whether the problems you are solving actually matter to the people who would use your solutions.
 
 {{ gallery(columns=2, paths=[
-    "static/img/rsac26-expo-north.jpeg",
-    "static/img/rsac26-expo.jpeg",
-    "static/img/rsac26-expo-cyberpunk.jpeg",
-    "static/img/rsac26-nsa.jpeg"
+    "img_src/rsac26-expo-north.jpeg",
+    "img_src/rsac26-expo.jpeg",
+    "img_src/rsac26-expo-cyberpunk.jpeg",
+    "img_src/rsac26-nsa.jpeg"
 ], alts=[
     "RSAC Expo North hall",
     "RSAC Expo South floor",
@@ -52,8 +52,8 @@ The gap is not surprising.
 Reliable autonomy in adversarial domains is genuinely hard, and security is one of the most unforgiving environments to get it wrong.
 
 {{ gallery(columns=2, paths=[
-    "static/img/rsac26-robots.jpg",
-    "static/img/rsac26-crowdstrike-books-theater.jpg"
+    "img_src/rsac26-robots.jpg",
+    "img_src/rsac26-crowdstrike-books-theater.jpg"
 ], alts=[
     "Robots at RSAC",
     "CrowdStrike book theater"
@@ -89,4 +89,4 @@ Doing a PhD in applied security without engaging the practitioner community is l
 You might produce something technically sound, but you will not know if it generalizes.
 RSAC made that lesson unavoidable, and I am glad it did.
 
-{{ img(path="static/img/rsac26-me.jpg", alt="Me at RSAC 2026") }}
+{{ img(path="img_src/rsac26-me.jpg", alt="Me at RSAC 2026") }}
