@@ -6,8 +6,11 @@ name: Link Content Watch
 # against the committed snapshot in .linkwatch/. On drift it files one Forgejo
 # issue and commits the refreshed snapshots so it fires once per change.
 #
+# Shell-only on purpose: the runner has no node in the python container, so JS
+# actions like actions/checkout fail. We clone via git instead.
+#
 # Requires a repo secret LINKWATCH_TOKEN: an access token with issue write +
-# repo content write scope (used to file the issue and push snapshots).
+# repo content write scope (clones, files the issue, pushes snapshots).
 
 on:
   schedule:
@@ -20,19 +23,26 @@ jobs:
     container:
       image: python:3.12-slim
     steps:
-      - name: Install git (needed before checkout + for push)
+      - name: Clone repo
+        env:
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          LINKWATCH_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
         run: |
-          apt-get update
-          apt-get install -y --no-install-recommends git ca-certificates
-
-      - uses: actions/checkout@v4
+          set -e
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends git ca-certificates >/dev/null
+          host="${SERVER_URL#https://}"
+          git clone --depth 1 "https://${OWNER}:${LINKWATCH_TOKEN}@${host}/${REPO}.git" /src
 
       - name: Set up Python env + Chromium
         run: |
-          pip install --no-cache-dir uv
+          set -e
+          pip install --no-cache-dir -q uv
           uv venv /opt/lw
           . /opt/lw/bin/activate
-          uv pip install "kreuzberg==4.9.9" playwright
+          uv pip install -q "kreuzberg==4.9.9" playwright
           playwright install --with-deps chromium
 
       - name: Check link content
@@ -41,16 +51,15 @@ jobs:
           FORGEJO_REPO: ${{ github.repository }}
           FORGEJO_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
         run: |
+          set -e
+          cd /src
           . /opt/lw/bin/activate
           python scripts/linkwatch.py
 
       - name: Commit refreshed snapshots
-        env:
-          SERVER_URL: ${{ github.server_url }}
-          REPO: ${{ github.repository }}
-          OWNER: ${{ github.repository_owner }}
-          LINKWATCH_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
         run: |
+          set -e
+          cd /src
           git config user.name "linkwatch[bot]"
           git config user.email "blog@audacis.net"
           git add .linkwatch
@@ -58,7 +67,5 @@ jobs:
             echo "No snapshot changes."
           else
             git commit -m "chore(linkwatch): update content snapshots"
-            host="${SERVER_URL#https://}"
-            git remote set-url origin "https://${OWNER}:${LINKWATCH_TOKEN}@${host}/${REPO}.git"
             git push origin HEAD:main
           fi
