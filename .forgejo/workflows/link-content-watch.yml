@@ -1,0 +1,64 @@
+name: Link Content Watch
+
+# Detect when the content *behind* a still-working cited link changes.
+# Complements the lychee checks (which only catch broken links). Renders each
+# external URL from content/**/*.md headless, extracts its text, and diffs
+# against the committed snapshot in .linkwatch/. On drift it files one Forgejo
+# issue and commits the refreshed snapshots so it fires once per change.
+#
+# Requires a repo secret LINKWATCH_TOKEN: an access token with issue write +
+# repo content write scope (used to file the issue and push snapshots).
+
+on:
+  schedule:
+    - cron: "0 9 * * 1"   # Mondays 09:00, after the live link check (08:00)
+  workflow_dispatch:
+
+jobs:
+  watch:
+    runs-on: docker
+    container:
+      image: python:3.12-slim
+    steps:
+      - name: Install git (needed before checkout + for push)
+        run: |
+          apt-get update
+          apt-get install -y --no-install-recommends git ca-certificates
+
+      - uses: actions/checkout@v4
+
+      - name: Set up Python env + Chromium
+        run: |
+          pip install --no-cache-dir uv
+          uv venv /opt/lw
+          . /opt/lw/bin/activate
+          uv pip install "kreuzberg==4.9.9" playwright
+          playwright install --with-deps chromium
+
+      - name: Check link content
+        env:
+          FORGEJO_API: ${{ github.server_url }}
+          FORGEJO_REPO: ${{ github.repository }}
+          FORGEJO_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
+        run: |
+          . /opt/lw/bin/activate
+          python scripts/linkwatch.py
+
+      - name: Commit refreshed snapshots
+        env:
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          OWNER: ${{ github.repository_owner }}
+          LINKWATCH_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
+        run: |
+          git config user.name "linkwatch[bot]"
+          git config user.email "blog@audacis.net"
+          git add .linkwatch
+          if git diff --cached --quiet; then
+            echo "No snapshot changes."
+          else
+            git commit -m "chore(linkwatch): update content snapshots"
+            host="${SERVER_URL#https://}"
+            git remote set-url origin "https://${OWNER}:${LINKWATCH_TOKEN}@${host}/${REPO}.git"
+            git push origin HEAD:main
+          fi

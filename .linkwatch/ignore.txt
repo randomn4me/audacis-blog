@@ -1,0 +1,13 @@
+# URLs containing any line below are skipped by scripts/linkwatch.py.
+# Substring match, one pattern per line. Use for placeholders, code-block
+# artifacts, and pages whose content legitimately churns (timestamps, vote
+# counts, ads) so their diffs would be pure noise.
+
+# code-block / placeholder artifacts, not real citations
+apple.com/DTDs/PropertyList
+bestbookstore.com
+
+# churny pages (uncomment to silence once they prove noisy)
+# news.ycombinator.com/item
+# fortune.com
+# adventofcode.com
