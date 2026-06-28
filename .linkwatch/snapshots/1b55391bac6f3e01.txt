@@ -1,0 +1,452 @@
+launchd
+
+[Deutsch](https://de.wikipedia.org/wiki/Launchd "Launchd – German")
+[Italiano](https://it.wikipedia.org/wiki/Launchd "Launchd – Italian")
+[日本語](https://ja.wikipedia.org/wiki/Launchd "Launchd – Japanese")
+[Norsk bokmål](https://no.wikipedia.org/wiki/Launchd "Launchd – Norwegian Bokmål")
+[Português](https://pt.wikipedia.org/wiki/Launchd "Launchd – Portuguese")
+[Русский](https://ru.wikipedia.org/wiki/Launchd "Launchd – Russian")
+![](//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png)
+
+[icon](/wiki/File:Wiki_letter_w.svg) This article's [lead section](/wiki/Wikipedia:Manual_of_Style/Lead_section#Length "Wikipedia:Manual of Style/Lead section") **may be too short to adequately [summarize](/wiki/Wikipedia:Summary_style "Wikipedia:Summary style") the key points**. Please consider expanding the lead to [provide an accessible overview](/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview "Wikipedia:Manual of Style/Lead section") of all important aspects of the article. *(June 2020)*
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+[icon](/wiki/File:Question_book-new.svg) This article **needs additional citations for [verification](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Launchd "Special:EditPage/Launchd") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(March 2024)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+[icon](/wiki/File:Question_book-new.svg) This article **relies excessively on [references](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability") to [primary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research")**. Please improve this article by adding [secondary or tertiary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research"). *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(June 2026)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+![](//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png)
+
+[![icon](//upload.wikimedia.org/wikipedia/en/thumb/6/6c/Wiki_letter_w.svg/40px-Wiki_letter_w.svg.png)](/wiki/File:Wiki_letter_w.svg) This article's [lead section](/wiki/Wikipedia:Manual_of_Style/Lead_section#Length "Wikipedia:Manual of Style/Lead section") **may be too short to adequately [summarize](/wiki/Wikipedia:Summary_style "Wikipedia:Summary style") the key points**. Please consider expanding the lead to [provide an accessible overview](/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview "Wikipedia:Manual of Style/Lead section") of all important aspects of the article. *(June 2020)*
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+[![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)](/wiki/File:Question_book-new.svg) This article **needs additional citations for [verification](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Launchd "Special:EditPage/Launchd") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(March 2024)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)
+
+[![icon](//upload.wikimedia.org/wikipedia/en/thumb/9/99/Question_book-new.svg/60px-Question_book-new.svg.png)](/wiki/File:Question_book-new.svg) This article **relies excessively on [references](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability") to [primary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research")**. Please improve this article by adding [secondary or tertiary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research"). *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(June 2026)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+![](//upload.wikimedia.org/wikipedia/en/thumb/b/b4/Ambox_important.svg/40px-Ambox_important.svg.png) hide
+
+**This article has multiple issues.** Please help **[improve it](/wiki/Special:EditPage/Launchd "Special:EditPage/Launchd")** or discuss these issues on the **[talk page](/wiki/Talk:Launchd "Talk:Launchd")**. *([Learn how and when to remove these messages](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+- [icon](/wiki/File:Wiki_letter_w.svg) This article's [lead section](/wiki/Wikipedia:Manual_of_Style/Lead_section#Length "Wikipedia:Manual of Style/Lead section") **may be too short to adequately [summarize](/wiki/Wikipedia:Summary_style "Wikipedia:Summary style") the key points**. Please consider expanding the lead to [provide an accessible overview](/wiki/Wikipedia:Manual_of_Style/Lead_section#Provide_an_accessible_overview "Wikipedia:Manual of Style/Lead section") of all important aspects of the article. *(June 2020)*
+
+- [icon](/wiki/File:Question_book-new.svg) This article **needs additional citations for [verification](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Launchd "Special:EditPage/Launchd") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(March 2024)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+- [icon](/wiki/File:Question_book-new.svg) This article **relies excessively on [references](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability") to [primary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research")**. Please improve this article by adding [secondary or tertiary sources](/wiki/Wikipedia:No_original_research#Primary,_secondary_and_tertiary_sources "Wikipedia:No original research"). *Find sources:* ["Launchd"](https://www.google.com/search?as_eq=wikipedia&q=%22Launchd%22) – [news](https://www.google.com/search?tbm=nws&q=%22Launchd%22+-wikipedia&tbs=ar:1) **·** [newspapers](https://www.google.com/search?&q=%22Launchd%22&tbs=bkt:s&tbm=bks) **·** [books](https://www.google.com/search?tbs=bks:1&q=%22Launchd%22+-wikipedia) **·** [scholar](https://scholar.google.com/scholar?q=%22Launchd%22) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch?Query=%22Launchd%22&acc=on&wc=on) *(June 2026)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+
+![Edit this on Wikidata](//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png)
+
+![Edit this on Wikidata](//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png)
+
+![Edit this on Wikidata](//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png)
+
+launchd
+[Original author](/wiki/Programmer "Programmer") Dave Zarzycki
+[Developer](/wiki/Programmer "Programmer") [Apple Inc.](/wiki/Apple_Inc. "Apple Inc.")
+Release April 29, 2005; 21 years ago (2005-04-29)
+Written in [C](/wiki/C_(programming_language) "C (programming language)")
+[Operating system](/wiki/Operating_system "Operating system") [macOS](/wiki/MacOS "MacOS"), [iOS](/wiki/IOS "IOS"), [iPadOS](/wiki/IPadOS "IPadOS"), [watchOS](/wiki/WatchOS "WatchOS"), [tvOS](/wiki/TvOS "TvOS"), [visionOS](/wiki/VisionOS "VisionOS")
+[Type](/wiki/Software_categories#Categorization_approaches "Software categories") [Init](/wiki/Init "Init") daemon
+[License](/wiki/Software_license "Software license") [Proprietary software](/wiki/Proprietary_software "Proprietary software") (previously [APSL](/wiki/Apple_Public_Source_License "Apple Public Source License") and later [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0"))
+Website [opensource.apple.com/tarballs/launchd/](https://opensource.apple.com/tarballs/launchd/) [![Edit this on Wikidata](//upload.wikimedia.org/wikipedia/en/thumb/8/8a/OOjs_UI_icon_edit-ltr-progressive.svg/20px-OOjs_UI_icon_edit-ltr-progressive.svg.png)](https://www.wikidata.org/wiki/Q286735?uselang=en#P856 "Edit this on Wikidata")
+
+**launchd** is an [init](/wiki/Init "Init") and [operating system service management](/wiki/Operating_system_service_management "Operating system service management") [daemon](/wiki/Daemon_(computing) "Daemon (computing)") created by [Apple Inc.](/wiki/Apple_Inc. "Apple Inc.") as part of [macOS](/wiki/MacOS "MacOS"), [iOS](/wiki/IOS "IOS"), [iPadOS](/wiki/IPadOS "IPadOS"), [watchOS](/wiki/WatchOS "WatchOS"), [tvOS](/wiki/TvOS "TvOS"), and [visionOS](/wiki/VisionOS "VisionOS") to replace its BSD-style [init](/wiki/Init "Init") and [SystemStarter](/wiki/SystemStarter "SystemStarter"). There have been efforts to [port](/wiki/Porting "Porting") launchd to [FreeBSD](/wiki/FreeBSD "FreeBSD") and derived systems.
+
+Components
+
+There are two main programs in the launchd system: launchd and launchctl.
+
+*launchd* manages the daemons at both a system and user level. Similar to xinetd, launchd can start daemons on demand. Similar to watchdogd, launchd can monitor daemons to make sure that they keep running. launchd also has replaced init as [PID](/wiki/Process_identifier "Process identifier") 1 on macOS and as a result it is responsible for starting the system at boot time.
+
+Configuration files define the parameters of services run by launchd. Stored in the LaunchAgents and LaunchDaemons subdirectories of the Library folders, the [property list](/wiki/Property_list "Property list")-based files have approximately thirty different keys that can be set. launchd itself has no knowledge of these configuration files or any ability to read them - that is the responsibility of "launchctl".
+
+*launchctl* is a command line application which talks to launchd using [IPC](/wiki/Inter-process_communication "Inter-process communication") and knows how to parse the [property list](/wiki/Property_list "Property list") files used to describe launchd jobs, serializing them using a specialized dictionary protocol that launchd understands. launchctl can be used to load and unload daemons, start and stop launchd controlled jobs, get system utilization statistics for launchd and its child processes, and set environment settings.
+
+launchd
+
+![](//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/60px-Ambox_current_red_Asia_Australia.svg.png)
+
+![](//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/60px-Ambox_current_red_Asia_Australia.svg.png)
+
+![](//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/60px-Ambox_current_red_Asia_Australia.svg.png)
+
+![](//upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Ambox_current_red_Asia_Australia.svg/60px-Ambox_current_red_Asia_Australia.svg.png) Parts of this article (those related to Mention ARM Macs and maybe remove the PowerPC mention since the last PowerPC Mac is 18 years old.) need to be **updated**. Please help update this article to reflect recent events or newly available information. *(August 2024)*
+
+launchd has two main tasks. The first is to [boot](/wiki/Booting "Booting") the system, and the second is to load and maintain services.
+
+Here is a simplified view of the Mac OS X Tiger system startup on a [PowerPC](/wiki/PowerPC "PowerPC") Mac (on an [Intel](/wiki/Intel "Intel") Mac, [EFI](/wiki/Extensible_Firmware_Interface "Extensible Firmware Interface") replaces [Open Firmware](/wiki/Open_Firmware "Open Firmware") and `boot.efi` replaces [BootX](/wiki/BootX_(Apple) "BootX (Apple)")):
+
+[Open Firmware](/wiki/Open_Firmware "Open Firmware") activates, initializes the hardware, and then loads BootX.
+[BootX](/wiki/BootX_(Apple) "BootX (Apple)") loads the kernel, spins the pinwheel cursor, and loads any needed [kernel extensions](/wiki/Loadable_kernel_module "Loadable kernel module") (kexts).
+The kernel loads launchd.
+launchd runs `/etc/rc`, various scripts which scan through `/System/Library/LaunchDaemons` and `/Library/LaunchDaemons`, calling launchctl on the plists as needed, then launchd starts the login window.
+In step 4, the startup scripts scan through a few different directories for jobs to run. There are two different directories that are scanned:
+
+The LaunchDaemons directories contain items that will run as root, generally background processes.
+The LaunchAgents directories contain jobs, called agent applications, that will run as a user or in the context of userland. These may be scripts or other foreground items, and they can even include a user interface.
+These directories are all kept in the typical Library directories of Mac OS X.
+
+launchd is very different from SystemStarter in that it may not actually launch all the daemons at boot time. Key to launchd, and similar to xinetd, is the idea of launch-on-demand daemons. When launchctl scans through the job plists at boot time, it asks launchd to reserve and listen on all of the ports requested by those jobs. If so indicated in the plist by the "OnDemand" key, the daemon is not actually loaded at the time. Rather, launchd will listen on the port, start the daemon when needed, and shut it down when it is no longer needed. After a daemon is loaded, launchd will keep track of it and make sure it is running if needed. In this way it is like watchdogd, and shares watchdogd's requirement that processes do not attempt to fork or daemonize on their own. If a process goes into the background, launchd will lose track of it and attempt to relaunch it.
+
+Mac OS X Tiger, consequently, boots much faster than previous releases. The system only has to register the daemons that are to run and does not actually launch them until they are needed. In fact, the progress bar that appears during boot time is just a placebo application (named WaitingForLoginWindow[[1]](#cite_note-1)) that does not really show anything other than the passage of time.
+
+The hardest part to manage during a launchd boot is dependencies. SystemStarter had a very simple system of dependencies that used the "Uses", "Requires", and "Provides" keys in the plist of a startup item. There are two main strategies when creating launchd dependencies on Tiger: [IPC](/wiki/Inter-process_communication "Inter-process communication") allows daemons to talk amongst themselves to work out dependencies, or daemons can watch files or paths for changes. Using IPC is much more subtle than the SystemStarter's keys and requires more work from the developer, but it may[*[citation needed](/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")*] lead to cleaner and quicker startups. SystemStarter was still supported up to [OS X Mountain Lion](/wiki/OS_X_Mountain_Lion "OS X Mountain Lion"), but was removed in [OS X Yosemite](/wiki/OS_X_Yosemite "OS X Yosemite").
+
+launchctl
+
+In launchd, control of services is centralized in the `launchctl` application.
+
+Originally, launchctl could take commands from the command line, from the standard input, or operate in interactive mode. With [superuser](/wiki/Superuser "Superuser") privileges, it allowed the user to make system-wide changes, and commands could be made permanent when stored in */etc/launchd.conf*. (A per-user *~/.launchd.conf* file appears to have been considered,[[2]](#cite_note-launchd.conf-2) but was never implemented.)
+
+In later versions of macOS, interactive mode was removed, as was the ability to read commands from standard input, and the */etc/launchd.conf* file is no longer supported. The reason given for these changes is security considerations.[[3]](#cite_note-3)
+
+Today, launchctl works exclusively through command-line invocations and persistence is achieved through launchd [.plist](/wiki/Property_list "Property list") files in the appropriate locations (see below).
+
+launchctl communicates with launchd via a [Mach](/wiki/Mach_(kernel) "Mach (kernel)")-specific IPC mechanism.
+
+Property list
+
+A [property list](/wiki/Property_list "Property list") (plist) is a type of file that launchd uses for program configuration. When launchd scans a folder, or a job is submitted with launchctl, it reads a plist file that describes how the program is to be run.
+
+A list of often used keys follows below. All keys are optional unless otherwise noted. For a full list, see Apple's manual page for `launchd.plist`.[[4]](#cite_note-4)
+
+Key Type Description
+`Label` String The name of the job. By convention, the job label is the same as the plist file name, without the *.plist* extension. **Required**.
+`Program` String A path to an executable. Useful for simple launches. At least one of `Program` or `ProgramArguments` is **required**.
+`ProgramArguments` Array of strings An array of strings representing a UNIX command. The first string is generally a path to an executable, while latter strings contain options or parameters. At least one of `Program` or `ProgramArguments` is **required**.
+`UserName` String
+(defaults to `root` or current user) The job will be run as the given user, who may (or may not) be the user who submitted it to launchd.
+`OnDemand`<br>*(Deprecated since 10.5)* Boolean
+(defaults to `YES`) Deprecated as of 10.5 with the more powerful `KeepAlive` option. A [Boolean](/wiki/Boolean_data_type "Boolean data type") flag that defines if a job runs continuously or not.
+`RunAtLoad` Boolean
+(defaults to `NO`) A [Boolean](/wiki/Boolean_data_type "Boolean data type") flag that defines if a task is launched immediately when the job is loaded into launchd.
+`StartOnMount` Boolean
+(defaults to `NO`) A [Boolean](/wiki/Boolean_data_type "Boolean data type") flag that defines if a task is launched when a new filesystem is mounted.
+`QueueDirectories` Array of strings Watch a directory for new files. The directory must be empty to begin with, and must be returned to an empty state before `QueueDirectories` will launch its task again.
+`WatchPaths` Array of strings Watch a filesystem path for changes. Can be a file or folder.
+`StartInterval` Integer Schedules job to run on a repeating schedule. Indicates number of seconds to wait between runs.
+`StartCalendarInterval` Dictionary of integers
+*or*
+Array of dictionaries of integers Job scheduling. The [syntax](/wiki/Syntax "Syntax") is similar to [cron](/wiki/Cron "Cron").
+`RootDirectory` String The job will be [chrooted](/wiki/Chroot "Chroot") into this directory before execution.
+`WorkingDirectory` String The job will be [chdired](/wiki/Chdir "Chdir") into this directory before execution.
+`StandardInPath`,
+`StandardOutPath`,
+`StandardErrorPath` String Keys to determine files for input and output for the launched process.
+`LowPriorityIO` Boolean Tells the kernel that this task is of a low priority when doing filesystem I/O.
+`AbandonProcessGroup` Boolean
+(defaults to `NO`) A [Boolean](/wiki/Boolean_data_type "Boolean data type") flag that defines whether subprocesses launched from a task launched by launchd will be killed when the task ends. Useful where a short-lived task starts a long-lived subtask, but may result in [zombie processes](/wiki/Zombie_process "Zombie process").
+`SessionCreate` Boolean
+(defaults to `NO`) A [Boolean](/wiki/Boolean_data_type "Boolean data type") flag that defines whether a security session will be created for the task and its subprocesses.
+
+Socket activation protocol
+
+The name of each key under Sockets will be placed into the environment of the job when it is run, and the file descriptor of that socket will be available in that environment variable. This differs from systemd's socket activation in that the name of a socket definition inside of the job configuration is hardcoded into the application. This protocol is less flexible, although it does not, as systemd does, require the daemon to hardcode a starting file descriptor (as of 2014, it is 3).[[5]](#cite_note-5)
+
+History
+
+The software was designed and programmed by Dave Zarzycki at Apple. The company planned for all of the following to be superseded in [Mac OS X](/wiki/Mac_OS_X "Mac OS X") environments, of which most were with the release of [Mac OS X v10.4](/wiki/Mac_OS_X_v10.4 "Mac OS X v10.4") (Tiger):
+
+[init](/wiki/Init "Init")
+rc
+[init.d](/wiki/Init.d "Init.d") script
+[rc.d](/w/index.php?title=Rc.d&action=edit&redlink=1 "Rc.d (page does not exist)") script
+[SystemStarter](/wiki/SystemStarter "SystemStarter")
+[inetd](/wiki/Inetd "Inetd") / [xinetd](/wiki/Xinetd "Xinetd")
+[crond](/wiki/Crond "Crond") / [atd](/wiki/At_(command) "At (command)")
+[watchdogd](/wiki/Watchdog_timer "Watchdog timer")
+In 2005, R. Tyler Croy ported launchd to [FreeBSD](/wiki/FreeBSD "FreeBSD") as part of Google Summer of Code Project. It could not be run as PID 1 (only a session init), and it was not commonly used on that platform.[[6]](#cite_note-launchd_freebsd_wiki-6)
+
+In 2006, the [Ubuntu](/wiki/Ubuntu_(Linux_distribution) "Ubuntu (Linux distribution)") [Linux distribution](/wiki/Linux_distribution "Linux distribution") considered using launchd. The option was rejected because the source code was subject to the [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License") – described as an "inescapable licence problem".[[7]](#cite_note-7) Ubuntu instead developed and switched to its own service management tool, [Upstart](/wiki/Upstart_(software) "Upstart (software)").
+
+In August 2006, Apple [relicensed](/wiki/Software_relicensing "Software relicensing") launchd under the [Apache License, Version 2.0](/wiki/Apache_License "Apache License") in an effort to make adoption by other open source developers easier.[[8]](#cite_note-8) Most Linux distributions use [systemd](/wiki/Systemd "Systemd") or [Upstart](/wiki/Upstart_(software) "Upstart (software)"), or continue with [init](/wiki/Init "Init"), and the [BSDs](/wiki/BSD "BSD") also continue with init.
+
+In December 2013, R. Tyler Croy announced his intent to resume work on his port of launchd to FreeBSD, and his "openlaunchd" GitHub repo subsequently rose in activity.[[9]](#cite_note-9)
+
+The last Wayback Machine capture of the Mac OS Forge area for launchd was in June 2012,[[10]](#cite_note-10) and the most recent open source version from Apple was [842.92.1](https://opensource.apple.com/source/launchd/launchd-842.92.1/) in code for OS X 10.9.5.
+
+In 2014, with OS X 10.10 and iOS 8, Apple moved code for launchd to closed source libxpc.[[11]](#cite_note-11)
+
+In August 2015 Jordan Hubbard and Kip Macy announced [NextBSD](/wiki/NextBSD "NextBSD"), which is based on FreeBSD-CURRENT kernel while adding in Mach IPC, Libdispatch, notifyd, asld, launchd, and other components derived from Darwin, Apple's open-source code for OS X.
+
+Apple open source release history
+
+Version [License](/wiki/Software_license "Software license") Included in [macOS](/wiki/MacOS "MacOS") versions Included [Apple Developer Tools](/wiki/Apple_Developer_Tools "Apple Developer Tools") versions
+launchd-106 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[12]](#cite_note-12) <br>Mac OS X 10.4[[13]](#cite_note-13)
+launchd-106.3 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[14]](#cite_note-14) Mac OS X 10.4.2[[15]](#cite_note-15)Mac OS X 10.4.3[[16]](#cite_note-16)Mac OS X 10.4.4.ppc[[17]](#cite_note-17)Mac OS X 10.4.5.ppc[[18]](#cite_note-18)
+launchd-106.10 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[19]](#cite_note-19) Mac OS X 10.4.4.x86[[20]](#cite_note-20)Mac OS X 10.4.5.x86[[21]](#cite_note-21)
+launchd-106.13 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[22]](#cite_note-22) Mac OS X 10.4.6.ppc[[23]](#cite_note-23)Mac OS X 10.4.6.x86[[24]](#cite_note-24)
+launchd-106.14 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[25]](#cite_note-25) Mac OS X 10.4.7.ppc[[26]](#cite_note-26)Mac OS X 10.4.7.x86[[27]](#cite_note-27)Mac OS X 10.4.8.ppc[[28]](#cite_note-28)Mac OS X 10.4.9.ppc[[29]](#cite_note-29)Mac OS X 10.4.10.ppc[[30]](#cite_note-30)Mac OS X 10.4.11.ppc[[31]](#cite_note-31)
+launchd-106.20 [Apple Public Source License](/wiki/Apple_Public_Source_License "Apple Public Source License")[[32]](#cite_note-32) Mac OS X 10.4.8.x86[[33]](#cite_note-33)Mac OS X 10.4.9.x86[[34]](#cite_note-34)Mac OS X 10.4.10.x86[[35]](#cite_note-35)Mac OS X 10.4.11.x86[[36]](#cite_note-36) Developer Tools 2.4[[37]](#cite_note-37)
+launchd-152 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[38]](#cite_note-38)
+launchd-257 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[39]](#cite_note-39) Mac OS X 10.5[[40]](#cite_note-40)Mac OS X 10.5.1[[41]](#cite_note-41) Developer Tools 3.1[[42]](#cite_note-42)Developer Tools 3.1b[[43]](#cite_note-43)Developer Tools 3.1.1[[44]](#cite_note-44)Developer Tools 3.1.2[[45]](#cite_note-45)Developer Tools 3.1.3[[46]](#cite_note-46)Developer Tools 3.1.4[[47]](#cite_note-47)
+launchd-258.1 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[48]](#cite_note-48) Mac OS X 10.5.2[[49]](#cite_note-49)
+launchd-258.12 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[50]](#cite_note-50) Mac OS X 10.5.3[[51]](#cite_note-51)Mac OS X 10.5.4[[52]](#cite_note-52)
+launchd-258.18 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[53]](#cite_note-53) Mac OS X 10.5.5[[54]](#cite_note-54)
+launchd-258.19 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[55]](#cite_note-55) Mac OS X 10.5.6[[56]](#cite_note-56)
+launchd-258.22 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[57]](#cite_note-57) Mac OS X 10.5.7[[58]](#cite_note-58)
+launchd-258.25 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[59]](#cite_note-59) Mac OS X 10.5.8[[60]](#cite_note-60)
+launchd-328 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[61]](#cite_note-61) Mac OS X 10.6[[62]](#cite_note-62)Mac OS X 10.6.1[[63]](#cite_note-63)Mac OS X 10.6.2[[64]](#cite_note-64) Developer Tools 3.2.1[[65]](#cite_note-65)Developer Tools 3.2.2[[66]](#cite_note-66)Developer Tools 3.2.3[[67]](#cite_note-67)Developer Tools 3.2.4[[68]](#cite_note-68)
+launchd-329.3 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[69]](#cite_note-69) Mac OS X 10.6.3[[70]](#cite_note-70)
+launchd-329.3.1 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[71]](#cite_note-71) Mac OS X 10.6.4[[72]](#cite_note-72) Developer Tools 3.2.5[[73]](#cite_note-73)Developer Tools 3.2.6[[74]](#cite_note-74)
+launchd-329.3.2 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[75]](#cite_note-75) Mac OS X 10.6.5[[76]](#cite_note-76)
+launchd-329.3.3 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[77]](#cite_note-77) Mac OS X 10.6.6[[78]](#cite_note-78)Mac OS X 10.6.7[[79]](#cite_note-79)Mac OS X 10.6.8[[80]](#cite_note-80)
+launchd-392.18 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[81]](#cite_note-81) Mac OS X 10.7[[82]](#cite_note-82)Mac OS X 10.7.1[[83]](#cite_note-83)
+launchd-392.35 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[84]](#cite_note-84) Mac OS X 10.7.2[[85]](#cite_note-85)
+launchd-392.36 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[86]](#cite_note-86) Mac OS X 10.7.3[[87]](#cite_note-87)
+launchd-392.38 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[88]](#cite_note-88) Mac OS X 10.7.4[[89]](#cite_note-89)
+launchd-392.39 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[90]](#cite_note-90) Mac OS X 10.7.5[[91]](#cite_note-91)
+launchd-442.21 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[92]](#cite_note-92) Mac OS X 10.8[[93]](#cite_note-93)Mac OS X 10.8.1[[94]](#cite_note-94)
+launchd-442.26.2 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[95]](#cite_note-95) Mac OS X 10.8.2[[96]](#cite_note-96)Mac OS X 10.8.3[[97]](#cite_note-97)Mac OS X 10.8.4[[98]](#cite_note-98)Mac OS X 10.8.5[[99]](#cite_note-99)
+launchd-842.1.4 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[100]](#cite_note-100) OS X 10.9[[101]](#cite_note-101)OS X 10.9.1[[102]](#cite_note-102)
+launchd-842.90.1 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[103]](#cite_note-103) OS X 10.9.2[[104]](#cite_note-104)OS X 10.9.3[[105]](#cite_note-105)
+launchd-842.92.1 [Apache License 2.0](/wiki/Apache_License_2.0 "Apache License 2.0")[[106]](#cite_note-106) OS X 10.9.4[[107]](#cite_note-107)OS X 10.9.5[[108]](#cite_note-108)
+
+See also
+
+![](//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/40px-Free_and_open-source_software_logo_%282009%29.svg.png)[Free and open-source software portal](/wiki/Portal:Free_and_open-source_software "Portal:Free and open-source software")
+![](//upload.wikimedia.org/wikipedia/commons/thumb/3/31/Free_and_open-source_software_logo_%282009%29.svg/40px-Free_and_open-source_software_logo_%282009%29.svg.png)
+
+[systemd](/wiki/Systemd "Systemd"): similar utility developed by [Red Hat](/wiki/Red_Hat "Red Hat") for use among various mainline Linux distributions
+[Service Management Facility](/wiki/Service_Management_Facility "Service Management Facility")
+[Super-server](/wiki/Super-server "Super-server")
+[TCP Wrapper](/wiki/TCP_Wrapper "TCP Wrapper")
+[Operating system service management](/wiki/Operating_system_service_management "Operating system service management")
+References
+
+**[↑](#cite_ref-1 "Jump up")**  ["Tiger Details"](https://daringfireball.net/misc/2005/04/tiger_details.php#waitingforloginwindow). *[Daring Fireball](/wiki/Daring_Fireball "Daring Fireball")*. WaitingForLoginWindow. Retrieved February 23, 2020.
+**[↑](#cite_ref-launchd.conf_2-0 "Jump up")** ["launchd.conf(5)"](https://web.archive.org/web/20110208013719/https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man5/launchd.conf.5.html). *Mac OS X Reference Library*. [Apple Inc.](/wiki/Apple_Inc. "Apple Inc.") Archived from [the original](https://developer.apple.com/library/mac/#documentation/Darwin/Reference/ManPages/man5/launchd.conf.5.html) on February 8, 2011. Retrieved April 8, 2026.
+**[↑](#cite_ref-3 "Jump up")** ["launchctl(1) - macOS manual page"](https://man.freebsd.org/cgi/man.cgi?query=launchctl&sektion=1&manpath=macOS+26.4). *mirror on man.freebsd.org*. [Apple Inc.](/wiki/Apple_Inc. "Apple Inc.") Retrieved April 8, 2026.
+**[↑](#cite_ref-4 "Jump up")** `[launchd.plist(5)](https://keith.github.io/xcode-man-pages/launchd.plist.5.html)` – [Darwin](/wiki/Darwin_(operating_system) "Darwin (operating system)") and [macOS](/wiki/MacOS "MacOS") File Formats [Manual](/wiki/Man_page "Man page")
+**[↑](#cite_ref-5 "Jump up")** little-big-h (January 30, 2014). ["node-launchd"](https://www.npmjs.org/package/node-launchd). Retrieved April 10, 2014.
+**[↑](#cite_ref-launchd_freebsd_wiki_6-0 "Jump up")** ["Launchd"](https://wiki.freebsd.org/launchd). *FreeBSD wiki*. Retrieved December 8, 2013.
+**[↑](#cite_ref-7 "Jump up")** ["ReplacementInit"](https://wiki.ubuntu.com/ReplacementInit?action=show&redirect=upstart#head-43339edcdef26f39f7d6d0a93bb347e8ccac918d). UbuntuWiki. Retrieved July 2, 2007.
+**[↑](#cite_ref-8 "Jump up")** Prabhakar, Ernest (August 7, 2006). ["Apple Opens Up: Kernel, Mac OS Forge, iCal Server, Bonjour, Launchd"](https://lists.apple.com/archives/darwin-dev/2006/Aug/msg00067.html). *darwin-dev* (Mailing list). Retrieved March 25, 2023.
+**[↑](#cite_ref-9 "Jump up")** Croy, R Tyler. ["The scratchiest neckbeard, or FreeBSD on my Thinkpad X200"](https://web.archive.org/web/20171113113647/http://unethicalblogger.com/2013/12/03/scratchiest-neckbeard-freebsd-x200.html). *unethicalblogger.com*. Archived from the original on November 13, 2017. Retrieved December 8, 2013.
+**[↑](#cite_ref-10 "Jump up")** ["launchd"](https://web.archive.org/web/20120609100559/http://launchd.macosforge.org/). *Mac OS Forge*. Apple Inc. Archived from [the original](http://launchd.macosforge.org/) on June 9, 2012. Retrieved September 3, 2016.
+**[↑](#cite_ref-11 "Jump up")** Levin, Jonathan (2014). ["Launchd – At Your Service!"](https://docs.macsysadmin.se/2014/pdf/Launchd_-_At_your_service.pdf) (PDF). p. 32. Retrieved September 3, 2016. "… 10.10: moved to libxpc 559 (560 in iOS 8) – Source not available yet – and may not ever be – Libxpc is a closed source project …"
+**[↑](#cite_ref-12 "Jump up")** ["launchd-106 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-13 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-104"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-104). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-14 "Jump up")** ["launchd-106.3 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106.3/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-15 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1042"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1042). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-16 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1043"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1043). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-17 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1044ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1044ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-18 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1045ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1045ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-19 "Jump up")** ["launchd-106.10 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106.10/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-20 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1044x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1044x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-21 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1045x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1045x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-22 "Jump up")** ["launchd-106.13 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106.13/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-23 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1046ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1046ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-24 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1046x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1046x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-25 "Jump up")** ["launchd-106.14 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106.14/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-26 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1047ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1047ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-27 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1047x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1047x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-28 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1048ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1048ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-29 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1049ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1049ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-30 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-10410ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-10410ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-31 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-10411ppc"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-10411ppc). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-32 "Jump up")** ["launchd-106.20 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-106.20/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-33 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1048x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1048x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-34 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1049x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1049x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-35 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-10410x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-10410x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-36 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-10411x86"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-10411x86). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-37 "Jump up")** ["Developer Tools 2.4 - Source"](https://web.archive.org/web/20201020230242/https://opensource.apple.com/release/developer-tools-24.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-24.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-38 "Jump up")** ["launchd-152 license file"](https://web.archive.org/web/20191213152309/https://opensource.apple.com/source/launchd/launchd-152/launchd/COPYING). Archived from [the original](https://opensource.apple.com/source/launchd/launchd-152/launchd/COPYING) on December 13, 2019. Retrieved August 19, 2019.
+**[↑](#cite_ref-39 "Jump up")** ["launchd-257 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-257/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-40 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-105"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-105). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-41 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1051"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1051). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-42 "Jump up")** ["Developer Tools 3.1 - Source"](https://web.archive.org/web/20201020230151/https://opensource.apple.com/release/developer-tools-31.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-31.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-43 "Jump up")** ["Developer Tools 3.1b - Source"](https://web.archive.org/web/20201012094743/https://opensource.apple.com/release/developer-tools-31b.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-31b.html) on October 12, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-44 "Jump up")** ["Developer Tools 3.1.1 - Source"](https://web.archive.org/web/20201020230135/https://opensource.apple.com/release/developer-tools-311.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-311.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-45 "Jump up")** ["Developer Tools 3.1.2 - Source"](https://web.archive.org/web/20200921020127/https://opensource.apple.com/release/developer-tools-312.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-312.html) on September 21, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-46 "Jump up")** ["Developer Tools 3.1.3 - Source"](https://web.archive.org/web/20200921020235/https://opensource.apple.com/release/developer-tools-313.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-313.html) on September 21, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-47 "Jump up")** ["Developer Tools 3.1.4 - Source"](https://web.archive.org/web/20201020230102/https://opensource.apple.com/release/developer-tools-314.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-314.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-48 "Jump up")** ["launchd-258.1 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.1/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-49 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1052"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1052). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-50 "Jump up")** ["launchd-258.12 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.12/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-51 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1053"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1053). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-52 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1054"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1054). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-53 "Jump up")** ["launchd-258.18 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.18/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-54 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1055"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1055). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-55 "Jump up")** ["launchd-258.19 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.19/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-56 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1056"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1056). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-57 "Jump up")** ["launchd-258.22 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.22/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-58 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1057"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1057). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-59 "Jump up")** ["launchd-258.25 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-258.25/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-60 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1058"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1058). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-61 "Jump up")** ["launchd-328 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-328/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-62 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-106"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-106). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-63 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1061"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1061). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-64 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1062"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1062). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-65 "Jump up")** ["Developer Tools 3.2.1 - Source"](https://web.archive.org/web/20200921020112/https://opensource.apple.com/release/developer-tools-321.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-321.html) on September 21, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-66 "Jump up")** ["Developer Tools 3.2.2 - Source"](https://web.archive.org/web/20201020230025/https://opensource.apple.com/release/developer-tools-322.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-322.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-67 "Jump up")** ["Developer Tools 3.2.3 - Source"](https://opensource.apple.com/release/developer-tools-323.html).[*[dead link](/wiki/Wikipedia:Link_rot "Wikipedia:Link rot")*]
+**[↑](#cite_ref-68 "Jump up")** ["Developer Tools 3.2.4 - Source"](https://web.archive.org/web/20201012094713/https://opensource.apple.com/release/developer-tools-324.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-324.html) on October 12, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-69 "Jump up")** ["launchd-329.3 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-329.3/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-70 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1063"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1063). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-71 "Jump up")** ["launchd-329.3.1 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-329.3.1/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-72 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1064"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1064). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-73 "Jump up")** ["Developer Tools 3.2.5 - Source"](https://web.archive.org/web/20201020225936/https://opensource.apple.com/release/developer-tools-325.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-325.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-74 "Jump up")** ["Developer Tools 3.2.6 - Source"](https://web.archive.org/web/20201020225920/https://opensource.apple.com/release/developer-tools-326.html). Archived from [the original](https://opensource.apple.com/release/developer-tools-326.html) on October 20, 2020. Retrieved August 19, 2019.
+**[↑](#cite_ref-75 "Jump up")** ["launchd-329.3.2 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-329.3.2/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-76 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1065"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1065). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-77 "Jump up")** ["launchd-329.3.3 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-329.3.3/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-78 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1066"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1066). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-79 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1067"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1067). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-80 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1068"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1068). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-81 "Jump up")** ["launchd-392.18 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-392.18/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-82 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-107"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-107). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-83 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1071"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1071). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-84 "Jump up")** ["launchd-392.35 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-392.35/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-85 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1072"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1072). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-86 "Jump up")** ["launchd-392.36 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-392.36/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-87 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1073"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1073). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-88 "Jump up")** ["launchd-392.38 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-392.38/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-89 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1074"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1074). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-90 "Jump up")** ["launchd-392.39 license file"](https://github.com/apple-oss-distributions/launchd/blob/launchd-392.39/launchd/COPYING). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-91 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1075"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1075). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-92 "Jump up")** ["licence header in launchd-442.21 source code"](https://github.com/apple-oss-distributions/launchd/blob/launchd-442.21/src/launchd.c). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-93 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-108"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-108). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-94 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1081"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1081). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-95 "Jump up")** ["license header in launchd-442.26.2 source code"](https://github.com/apple-oss-distributions/launchd/blob/launchd-442.26.2/src/launchd.c). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-96 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1082"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1082). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-97 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1083"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1083). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-98 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1084"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1084). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-99 "Jump up")** ["apple-oss-distributions/distribution-macOS at mac-os-x-1085"](https://github.com/apple-oss-distributions/distribution-macOS/tree/mac-os-x-1085). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-100 "Jump up")** ["license header in launchd-842.1.4 source code"](https://github.com/apple-oss-distributions/launchd/blob/launchd-842.1.4/src/launchd.c). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-101 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-109"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-109). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-102 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-1091"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-1091). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-103 "Jump up")** ["license header in launchd-842.90.1 source code"](https://github.com/apple-oss-distributions/launchd/blob/launchd-842.90.1/src/launchd.c). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-104 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-1092"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-1092). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-105 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-1093"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-1093). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-106 "Jump up")** ["license header in launchd-842.92.1 source code"](https://github.com/apple-oss-distributions/launchd/blob/launchd-842.92.1/src/launchd.c). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved November 13, 2025.
+**[↑](#cite_ref-107 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-1094"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-1094). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+**[↑](#cite_ref-108 "Jump up")** ["apple-oss-distributions/distribution-macOS at os-x-1095"](https://github.com/apple-oss-distributions/distribution-macOS/tree/os-x-1095). *[GitHub](/wiki/GitHub "GitHub")*. Retrieved August 30, 2025.
+External links
+
+Apple Developer:
+
+Mac Developer Library: Daemons and Services Programming Guide: [Creating Launch Daemons and Agents](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html#//apple_ref/doc/uid/10000172i-SW7-BCIEDDBJ)
+Mac Developer Library: [Technical Note TN2083: Daemons and Agents](https://developer.apple.com/library/mac/technotes/tn2083/_index.html)
+Apple Developer Retired Documents Library:
+
+`[launchd(8)](https://keith.github.io/xcode-man-pages/launchd.8.html)`: System wide daemon and per-user agent manager – [Darwin](/wiki/Darwin_(operating_system) "Darwin (operating system)") and [macOS](/wiki/MacOS "MacOS") System Manager's [Manual](/wiki/Man_page "Man page")
+`[launchd.conf(5)](https://keith.github.io/xcode-man-pages/launchd.conf.5.html)` – [Darwin](/wiki/Darwin_(operating_system) "Darwin (operating system)") and [macOS](/wiki/MacOS "MacOS") File Formats [Manual](/wiki/Man_page "Man page")
+`[launchd.plist(5)](https://keith.github.io/xcode-man-pages/launchd.plist.5.html)` – [Darwin](/wiki/Darwin_(operating_system) "Darwin (operating system)") and [macOS](/wiki/MacOS "MacOS") File Formats [Manual](/wiki/Man_page "Man page")
+`[launchctl(1)](https://keith.github.io/xcode-man-pages/launchctl.1.html)` – [Darwin](/wiki/Darwin_(operating_system) "Darwin (operating system)") and [macOS](/wiki/MacOS "MacOS") General Commands [Manual](/wiki/Man_page "Man page")
+Other links:
+
+Apple Developer Library: [Getting Started with launchd](https://web.archive.org/web/20070704235452/http://developer.apple.com/macosx/launchd.html) at the [Wayback Machine](/wiki/Wayback_Machine "Wayback Machine") (archived July 4, 2007)
+[Launchd: One Program to Rule them All - YouTube](https://www.youtube.com/watch?v=cD_s6Fjdri8) – presentation by Dave Zarzycki uploaded October 8, 2007 by *GoogleTechTalks*
+[wiki.freebsd.org/launchd](https://wiki.freebsd.org/launchd)
+[developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/)
+show
+
+<br>[v (View this template)](/wiki/Template:MacOS "Template:MacOS")[t (Discuss this template)](/wiki/Template_talk:MacOS "Template talk:MacOS")[e (Edit this template)](/wiki/Special:EditPage/Template:MacOS "Special:EditPage/Template:MacOS")
+[macOS](/wiki/MacOS "MacOS")
+OS X [10.7 Lion](/wiki/OS_X_Lion "OS X Lion")[10.8 Mountain Lion](/wiki/OS_X_Mountain_Lion "OS X Mountain Lion")[10.9 Mavericks](/wiki/OS_X_Mavericks "OS X Mavericks")[10.10 Yosemite](/wiki/OS_X_Yosemite "OS X Yosemite")[10.11 El Capitan](/wiki/OS_X_El_Capitan "OS X El Capitan")
+macOS [10.12 Sierra](/wiki/MacOS_Sierra "MacOS Sierra")[10.13 High Sierra](/wiki/MacOS_High_Sierra "MacOS High Sierra")[10.14 Mojave](/wiki/MacOS_Mojave "MacOS Mojave")[10.15 Catalina](/wiki/MacOS_Catalina "MacOS Catalina")[11 Big Sur](/wiki/MacOS_Big_Sur "MacOS Big Sur")[12 Monterey](/wiki/MacOS_Monterey "MacOS Monterey")[13 Ventura](/wiki/MacOS_Ventura "MacOS Ventura")[14 Sonoma](/wiki/MacOS_Sonoma "MacOS Sonoma")[15 Sequoia](/wiki/MacOS_Sequoia "MacOS Sequoia")[26 Tahoe](/wiki/MacOS_Tahoe "MacOS Tahoe")[27 Golden Gate](/wiki/MacOS_Golden_Gate "MacOS Golden Gate")
+Predecessors [Classic Mac OS](/wiki/Classic_Mac_OS "Classic Mac OS")[NeXTSTEP](/wiki/NeXTSTEP "NeXTSTEP")[Rhapsody](/wiki/Rhapsody_(operating_system) "Rhapsody (operating system)")
+
+[Xcode](/wiki/Xcode "Xcode") [Instruments](/wiki/Instruments_(software) "Instruments (software)")
+Former [Interface Builder](/wiki/Interface_Builder "Interface Builder")[Dashcode](/wiki/Dashcode "Dashcode")[Quartz Composer](/wiki/Quartz_Composer "Quartz Composer")
+
+[Boot Camp](/wiki/Boot_Camp_(software) "Boot Camp (software)") (deprecated)
+[ColorSync](/wiki/ColorSync "ColorSync")
+[Configurator](/wiki/Apple_Configurator "Apple Configurator")
+[Disk Utility](/wiki/Disk_Utility "Disk Utility")
+[Font Book](/wiki/Font_Book "Font Book")
+[Keychain Access](/wiki/Keychain_(software) "Keychain (software)")
+[Script Editor](/wiki/Script_Editor "Script Editor")
+[System Settings](/wiki/System_Settings "System Settings")
+[Terminal](/wiki/Terminal_(macOS) "Terminal (macOS)")
+[VoiceOver](/wiki/VoiceOver "VoiceOver")
+[Dashboard](/wiki/Dashboard_(macOS) "Dashboard (macOS)")
+[Front Row](/wiki/Front_Row_(software) "Front Row (software)")
+[iChat](/wiki/IChat "IChat")
+[iPhoto](/wiki/IPhoto "IPhoto")
+[iSync](/wiki/ISync "ISync")
+[iTunes](/wiki/ITunes "ITunes")
+[Sherlock](/wiki/Sherlock_(software) "Sherlock (software)")
+[history](/wiki/History_of_iTunes "History of iTunes")
+[HFS+](/wiki/HFS%2B "HFS+")
+[ATSUI](/wiki/Apple_Type_Services_for_Unicode_Imaging "Apple Type Services for Unicode Imaging")
+[BootX](/wiki/BootX_(Apple) "BootX (Apple)")
+[Brushed metal](/wiki/Brushed_metal_(interface) "Brushed metal (interface)")
+[Carbon](/wiki/Carbon_(API) "Carbon (API)")
+[Classic Environment](/wiki/Classic_Environment "Classic Environment")
+[Inkwell](/wiki/Inkwell_(Macintosh) "Inkwell (Macintosh)")
+[QuickTime](/wiki/QuickTime "QuickTime")
+[Spaces](/wiki/Spaces_(software) "Spaces (software)")
+[Xgrid](/wiki/Xgrid "Xgrid")
+show
+
+<br>[v (View this template)](/wiki/Template:Service_management_in_Unix "Template:Service management in Unix")[t (Discuss this template)](/wiki/Template_talk:Service_management_in_Unix "Template talk:Service management in Unix")[e (Edit this template)](/wiki/Special:EditPage/Template:Service_management_in_Unix "Special:EditPage/Template:Service management in Unix")
+[Service management](/wiki/Operating_system_service_management "Operating system service management") in [Unix-like](/wiki/Unix-like "Unix-like") systems
+
+![](https://en.wikipedia.org/wiki/Special:CentralAutoLogin/start?useformat=desktop&amp;type=1x1&amp;usesul3=1)
+
+[MacOS](/wiki/Category:MacOS "Category:MacOS")
+[Software using the Apache license](/wiki/Category:Software_using_the_Apache_license "Category:Software using the Apache license")
+[Unix process- and task-management-related software](/wiki/Category:Unix_process-_and_task-management-related_software "Category:Unix process- and task-management-related software")
+[CS1: unfit URL](/wiki/Category:CS1:_unfit_URL "Category:CS1: unfit URL")
+[All articles with dead external links](/wiki/Category:All_articles_with_dead_external_links "Category:All articles with dead external links")
+[Articles with dead external links from September 2025](/wiki/Category:Articles_with_dead_external_links_from_September_2025 "Category:Articles with dead external links from September 2025")
+[Articles with short description](/wiki/Category:Articles_with_short_description "Category:Articles with short description")
+[Short description is different from Wikidata](/wiki/Category:Short_description_is_different_from_Wikidata "Category:Short description is different from Wikidata")
+[Wikipedia introduction cleanup from June 2020](/wiki/Category:Wikipedia_introduction_cleanup_from_June_2020 "Category:Wikipedia introduction cleanup from June 2020")
+[All pages needing cleanup](/wiki/Category:All_pages_needing_cleanup "Category:All pages needing cleanup")
+[Articles covered by WikiProject Wikify from June 2020](/wiki/Category:Articles_covered_by_WikiProject_Wikify_from_June_2020 "Category:Articles covered by WikiProject Wikify from June 2020")
+[All articles covered by WikiProject Wikify](/wiki/Category:All_articles_covered_by_WikiProject_Wikify "Category:All articles covered by WikiProject Wikify")
+[Articles needing additional references from March 2024](/wiki/Category:Articles_needing_additional_references_from_March_2024 "Category:Articles needing additional references from March 2024")
+[All articles needing additional references](/wiki/Category:All_articles_needing_additional_references "Category:All articles needing additional references")
+[Articles lacking reliable references from June 2026](/wiki/Category:Articles_lacking_reliable_references_from_June_2026 "Category:Articles lacking reliable references from June 2026")
+[All articles lacking reliable references](/wiki/Category:All_articles_lacking_reliable_references "Category:All articles lacking reliable references")
+[Articles with multiple maintenance issues](/wiki/Category:Articles_with_multiple_maintenance_issues "Category:Articles with multiple maintenance issues")
+[Use mdy dates from September 2016](/wiki/Category:Use_mdy_dates_from_September_2016 "Category:Use mdy dates from September 2016")
+[Wikipedia articles in need of updating from August 2024](/wiki/Category:Wikipedia_articles_in_need_of_updating_from_August_2024 "Category:Wikipedia articles in need of updating from August 2024")
+[All Wikipedia articles in need of updating](/wiki/Category:All_Wikipedia_articles_in_need_of_updating "Category:All Wikipedia articles in need of updating")
+[All articles with unsourced statements](/wiki/Category:All_articles_with_unsourced_statements "Category:All articles with unsourced statements")
+[Articles with unsourced statements from January 2013](/wiki/Category:Articles_with_unsourced_statements_from_January_2013 "Category:Articles with unsourced statements from January 2013")
+[Webarchive template wayback links](/wiki/Category:Webarchive_template_wayback_links "Category:Webarchive template wayback links")
+This page was last edited on 19 June 2026, at 14:21 (UTC).
+Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License");
+additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
+[Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
+[About Wikipedia](/wiki/Wikipedia:About)
+[Disclaimers](/wiki/Wikipedia:General_disclaimer)
+[Contact Wikipedia](//en.wikipedia.org/wiki/Wikipedia:Contact_us)
+[Legal & safety contacts](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
+[Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
+[Developers](https://developer.wikimedia.org)
+[Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
+[Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
+[Mobile view](//en.wikipedia.org/w/index.php?title=Launchd&mobileaction=toggle_view_mobile)
+[Edit preview settings](#)
+[![Wikimedia Foundation](/static/images/footer/wikimedia.svg)](https://www.wikimedia.org/)
+[![Powered by MediaWiki](/w/resources/assets/mediawiki_compact.svg)](https://www.mediawiki.org/)
+![Wikimedia Foundation](/static/images/footer/wikimedia.svg)
+
+![Powered by MediaWiki](/w/resources/assets/mediawiki_compact.svg)

@@ -1,0 +1,138 @@
+Kontakt & Anfahrt
+
+Weitere Informationen
+
+![](/typo3temp/assets/_processed_/2/6/csm_clear_926850bd29.png?_=1393921995)
+
+![](/typo3temp/assets/_processed_/b/b/csm_HNFIZ-slideshow_7c14706f24.png?_=1782389971)
+
+Fraunhofer HNFIZ »Cybersicherheit«
+
+Das HNFIZ »Cybersicherheit« wird als neuer Institutsteil des Fraunhofer SIT auf dem Bildungscampus der Dieter Schwarz Stiftung in Heilbronn aufgebaut.
+
+![](/typo3temp/assets/_processed_/1/8/csm_cra-web-slide-990x480_beee16e96d.jpg?_=1712159269)
+
+Gut vorbereitet auf den Cyber Resilience Act
+
+Der CRA kommt und Unternehmen sollten sich frühzeitig damit auseinandersetzen - welche Pflichten haben Händler, Hersteller, Importeure? Das Fraunhofer SIT berät und unterstützt.
+
+![](/typo3temp/assets/_processed_/6/9/csm_VUSC-buehne_8cafb1f685.jpg?_=1573209580)
+
+Code scannen mit VUSC
+
+Fehler und Sicherheitslücken in Software verursachen Schäden in Milliardenhöhe. Deshalb hat das Fraunhofer SIT einen neuen Codescanner entwickelt. VUSC – kurz für VUlnerability SCanner – hilft Unternehmen und Entwicklern, Schwachstellen in fremdem Code innerhalb von Minuten aufzuspüren.
+
+![](/typo3temp/assets/_processed_/4/a/csm_LernlaborCybersicherheit_slideshow_01_c8bd80071e.jpg?_=1517918528)
+
+Lernlabor Cybersicherheit
+
+Im Lernlabor Cybersicherheit sind die Schwerpunktthemen des Fraunhofer SIT IT-Forensik, Internetsicherheit und Automotive Security. Fach- und Führungskräfte aus Industrie und öffentlicher Verwaltung erhalten hier eine kompakte Qualifizierung.
+
+Pressemitteilungen
+
+23. Juli: Enterprise Security Forum in Heilbronn
+
+![](/fileadmin/_processed_/9/a/csm_ESF_21938609ee.png?_=1782464320)
+
+23. Juli: Enterprise Security Forum in Heilbronn
+
+Das Enterprise Security Forum (ESF) bringt Unternehmen aus der Region mit führenden Expertinnen und Experten aus Forschung und Praxis zusammen: praxisnah, ohne Umwege, auf Augenhöhe. Die Veranstaltungsreihe greift konkrete Themen auf, von regulatorischen Anforderungen bis zu technischen Maßnahmen, und gibt Orientierung, wo sie gebraucht wird. Diesmal geht es um CRA Ready – Vorsprung durch Good Security Practice.
+
+Pressemitteilungen
+
+Smarte Etiketten für fälschungssichere Bekleidung
+
+![](/fileadmin/_processed_/6/c/csm_MountainToFP_f469d044bf.jpg?_=1768994029)
+
+Smarte Etiketten für fälschungssichere Bekleidung
+
+Unsere Forschenden haben einen Drucker entwickelt, der fälschungssichere Pflegeetiketten für Textilien erstellt. Um die Echtheit zu überprüfen, reicht es, mit dem Smartphone den aufgedruckten QR-Code des Etiketts in einer eigens hierfür entwickelten App zu scannen. Fälschungssicher ist das Etikett, weil das Smartphone die einzigartige Oberflächenstruktur des Materials nutzt und mit den im QR-Code hinterlegten Informationen abgleicht.
+
+Pressemitteilungen
+
+Hacker-Alarm im Krankenhaus
+
+![](/fileadmin/_processed_/1/1/csm_KH-Planspiel-Pressebild_4977726d3a.png?_=1778139984)
+
+Hacker-Alarm im Krankenhaus
+
+Das Fraunhofer-Institut für Sichere Informationstechnologie SIT bietet besonders realitätsnahe Cyber-Krisen-Planspiele speziell für Krankenhäuser an. In ganztägigen Übungen trainieren Teams aus Technik, Medizin und Verwaltung gemeinsam, wie sie einen Cyberangriff erkennen, kommunizieren und bewältigen. Erste Erfahrungen mit Kliniken zeigen: Die Teilnehmenden machen deutliche Fortschritte, und das unter echtem Druck. Die Ergebnisse fließen außerdem in ein Forschungsprojekt ein.
+
+Pressemitteilungen
+
+Unabsichtlich KI-generierte Kinder- und Jugendpornografie
+
+![](/fileadmin/_processed_/f/2/csm_KI_Pressebild-klein_d8dab62b25.png?_=1781171843)
+
+Unabsichtlich KI-generierte Kinder- und Jugendpornografie
+
+Unsere Forschenden haben festgestellt, dass viele KI-Bildgeneratoren auch dann Darstellungen von Minderjährigen erzeugen, wenn Nutzende ausdrücklich erotische Bilder von Erwachsenen anfordern. Das Problem: Auch wer versehentlich Bilder erzeugt, die Minderjährige in einem sexuellen Kontext zeigen, und speichert oder gar verbreitet, riskiert strafrechtliche Konsequenzen.
+
+Pressemitteilungen
+
+Zeit für Security-Innovationen
+
+![](/fileadmin/_processed_/b/4/csm_202606-UP-Award-startseitenbox_92fac6a050.jpg?_=1780309429)
+
+Zeit für Security-Innovationen
+
+ATHENE Startup Award UP26@it-sa startet Bewerbungsphase - Cyber­security-Startups aus der DACH-Region können sich vom 1. bis 30. Juni 2026 für den ATHENE Startup Award UP26@it-sa bewerben. Die Sieger-Teams erhalten Preisgelder, Vernetzungsmöglichkeiten mit zentralen Akteuren des deutschen Cyber­security-Markts und hohe Sichtbarkeit auf der wichtigsten Security-Messe Europas.
+
+Pressemitteilungen
+
+Podcast "House of Nerds"
+
+![](/fileadmin/_processed_/6/7/csm_Podcast-Cover-HoN_1fc5d1fdbc.png?_=1668518936)
+
+Podcast "House of Nerds"
+
+House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob Fake News, Darknet, Datenschutz, Krypto oder neue Hacker*innen-Angriffe - hier stellen Forschende ihre aktuellen Themen aus der IT-Sicherheit vor. Im House of Nerds gibt es fundierte Informationen zu Stand und Entwicklung von Technik und Wissenschaft.
+
+Termine
+
+[23. Juli 2026 Enterprise Security Forum: CRA Ready – Vorsprung durch Good Security Practice, Heilbronn![SVG Image](data:…)![SVG Image](data:…)](https://www.athene-center.de/esf)
+[25.-26. Juli 2026 KI-Festival, Heilbronn![SVG Image](data:…)](/de/ki-festival/)
+[10. August 2026 Lunch Lecture: Gemeinsamkeiten und Unterschiede zwischen CRA, KI-VO und DSGVO: Ein Überblick![SVG Image](data:…)![SVG Image](data:…)](https://www.athene-center.de/aktuelles/veranstaltungen/lunch-lecture-cra-gemeinsamkeiten-und-unterschiede-1750)
+Top Downloads
+
+[Veröffentlichungen Aktive Cyberabwehr (PDF, 446 KB)![SVG Image](data:…)![SVG Image](data:…)](/fileadmin/dokumente/studien_und_technical_reports/2023-03-impulspapier-aktive-cyberabwehr.pdf?_=1681213497)
+[Veröffentlichungen CRA Risk Management (PDF, 816 KB)![SVG Image](data:…)![SVG Image](data:…)](/fileadmin/dokumente/studien_und_technical_reports/CRA-RiskManagement-202506.pdf?_=1753261845)
+[Veröffentlichungen ePA-Sicherheitsstudie Abschlussbericht (PDF, 1,41 MB)![SVG Image](data:…)![SVG Image](data:…)](/fileadmin/dokumente/studien_und_technical_reports/Abschlussbericht_Sicherheitsanalyse_ePA_fuer_alle_Fraunhofer_SIT.pdf?_=1730893256)
+Stellenangebote
+
+Wir suchen Cybersicherheitsexperten (w/m/d)
+
+Wir suchen engagierte und exzellente Wissenschaftlerinnen und Wissenschaftler für Cybersicherheit und Privatsphärenschutz, die den Aufbau des Nationalen Forschungszentrums für angewandte Cybersicherheit mitgestalten möchten.
+
+Kontakt
+
+Fraunhofer-Institut für Sichere Informationstechnologie
+
+Rheinstraße 75
+64295 Darmstadt
+
+Telefon +49 6151 869-100
+Fax +49 6151 869-224
+[info@remove.this.sit.fraunhofer.de](javascript:linkTo_UnCryptMailto('ocknvq,kphqBukv0htcwpjqhgt0fg');)
+
+[vCard Download![SVG Image](data:…)](/fileadmin/fraunhofer-sit.vcf?_=1359966860 "Datei herunterladen")
+
+Informationsdienst
+
+... anmelden und Neuigkeiten aus dem Institut erfahren.
+
+Immer auf dem Laufenden
+
+Folgen Sie uns auf Social Media
+
+![](/fileadmin/social-icons/linkedin.svg)
+
+![](/fileadmin/social-icons/facebook-f.svg)
+
+![](/fileadmin/social-icons/bluesky.svg)
+
+![](/fileadmin/social-icons/youtube.svg)
+
+![](/fileadmin/social-icons/Mastodon_logo_weiss.png)
+
+[Mehr erfahren![SVG Image](data:…)](/de/news/aktuelles/social-media-kanaele/)

@@ -1,0 +1,505 @@
+![](https://styles.redditmedia.com/t5_2r3gv/styles/communityIcon_kilpomt3l5c51.png?width=96&amp;height=96&amp;frame=1&amp;auto=webp&amp;crop=96%3A96%2Csmart&amp;s=4062e182b17ec76c0115a798328b3816836b13e2)
+
+Anthropic's new model Fable will silently handicap work on LLMs [D]
+
+Seems like they have engineered some specific limitations that are widely cited as follows:
+
+In light of the ability of recent models to accelerate their own development, we’ve implemented new interventions that limit Claude’s effectiveness for requests targeting frontier LLM development (for example, on building pretraining pipelines, distributed training infrastructure, or ML accelerator design). Using Claude to develop competing models already violates our Terms of Service, but enforcing this restriction through our safeguards avoids accelerating the actors most willing to violate these terms.
+
+Unlike our interventions for cybersecurity, biology and chemistry, and distillation attempts, these safeguards will not be visible to the user. Fable 5 will not fall back to a different model. Instead, the safeguards will limit effectiveness through methods such as prompt modification, steering vectors, or parameter-efficient fine-tuning (PEFT). These interventions will not affect the vast majority of coding work. We estimate they will impact ~0.03% of traffic, concentrated in fewer than 0.1% of organizations <https://news.ycombinator.com/item?id=48464732>
+
+Other comments note how even using the word 'nuclear' in the context of scientific research elicits refusal behavior by the model: <https://news.ycombinator.com/item?id=48473302>
+
+This makes it seem quite plausible that the model could subtly sabotage any machine learning work (even as false positive). Some suggest this has been happening behind the scenes for a while already, but can anyone confirm that?
+
+![SVG Image](data:…) Best
+![SVG Image](data:…) Top
+![SVG Image](data:…) New
+![SVG Image](data:…) Controversial
+![SVG Image](data:…) Old
+![SVG Image](data:…) Q&A
+Comments Section
+
+Someone need to create a benchmark where the tasks are all llm-research related, so we can track how bad this.
+
+Build it bro
+
+[Silent sabotage![SVG Image](data:…)](/search/?q=Anthropic+Fable+silent+sabotage&cId=7b56cacf-556c-4a62-ac28-e0588c9fb14a&iId=de78c347-e815-497f-94c8-74095928f728) is by design. It can also manifest as intentional gaslighting.
+
+If they can silently sabotage a particular topic like LLM R&D, they can do it for any topic they want. This is the [AI 1984 nanny state![SVG Image](data:…)](/search/?q=AI+1984+nanny+state&cId=589bc6bf-5322-4c8e-a25e-a30eafbfd117&iId=24330482-0521-42c6-9c1c-bf00acc36c5d) manifested.
+
+This is also why [open weight models![SVG Image](data:…)](/search/?q=open+weight+models+LLM&cId=dd1cab6c-ccb1-46e4-8a79-b90b1c6ffc48&iId=12b93e27-f328-4a8f-8d11-f67dc84eabf6) will be the future. If you cannot trust the nanny state API, open weights is the inevitable future.
+
+![u/notreallymetho avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_3.png)
+
+The way they’re handling this is much more insidious imo. It being opaque to the user and actively modifying things is bs.
+
+how do we know some of these things are baked into open weight models? Eventually it could be somewhat hard to evaluate. Imagine the hypothetical scenario where a model always gives slightly bad or less useful answers to very specific topics, or only does it within code suggestions. You could deploy a model that implements silent bugs on purpose that may be hard to identify. Just thinking out loud with science fiction nonsense... but who knows, maybe
+
+Yes that’s a risk, but it’s the [system prompt![SVG Image](data:…)](/search/?q=LLM+system+prompt+control&cId=7747bb3c-34f9-44b2-833a-1d69ec50ee03&iId=173af956-9d8d-4b64-acfe-979efbf13608) which is the largest surface area for shenanigans. With open models, we have visibility to the system prompt but with API based models, we don’t; they can change/manipulate at any time.
+
+Additionally, with open models, the weights are frozen and in our full control offline. But with API based models, we have to trust that the model weights are not changing while the system identifier stays the same. So once an open model has been vetted it is a higher trust than a model which obscures its underlying weights and system prompt.
+
+![u/averagebear_003 avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png)
+
+this company has the biggest ego I've ever seen
+
+Use open models and learn the foundations, thats the only way to prevent this unfortunately.. Although I do see such shenanigans be implemented for open models as well in the future.
+
+![u/AlwaysAtBallmerPeak avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png)
+
+[Anthropic![SVG Image](data:…)](/search/?q=Anthropic&cId=c641a3e9-379d-434f-8644-5984ab754d48&iId=72ad46b5-a5ea-4e9b-b512-fa388ac60c46) is a company with fantastic products but really questionable leadership. They seem to think they "know what's best" for others, and they're often on their moral high horse while not being honest about their true motivations. I despise that kind of extremely paternalistic attitude and I hope it's going to be their (leadership's) downfall.
+
+This, OR they are always exaggerating for hype in very dubious ways.
+
+![u/1ncehost avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_7.png)
+
+The paternalistic attitude is just cover for aggressive business practices. They dont care about any of that and are just trying to secure the bag. Guaranteed that the dynamic intelligence level isnt limited to LLM dev either. I bet they ramp up the intelligence to max when benchmark formats are detected for instance. Anthropic has displayed time and time again it is the sleeziest of the ai labs.
+
+![u/zorglorbthedestroyer avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png)
+
+I think the race to achieve AGI is only matched by the race to be the slimiest AI company CEO.
+
+For a while Sam A. was the most hated man in AI, but Anthropic has repeatedly called for legislation regulating AI that would place a burden on competitors. They're quietly campaigning to handicap or ban open-weight models. They have disingenuously called for an AI development pause while racing ahead. Their ToS bans use of its model for work on competing models. They whine endlessly about distillation being theft, while they vacuumed up the entire internet and pirated more than a million books. They constantly, and publicly wring their hands about how "dangerous" their model is in a transparent attempt at marketing. They've pushed for chip controls to slow down China. And now it's silently sabotaging competitors.
+
+I'm experimenting with non-transformer-based reasoning models, and now I have to worry if Anthropic is silently sabotaging my toy project because some corner of its code might suspect I'll be a competitor in 20 years? Simultaneously hilarious and infuriating. F-you, Anthropic. Between anthropic, openai, grok and google, I don't know who I'm supposed to hate the most, but this silent sabotage really makes my blood boil.
+
+![u/impossiblefork avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_5.png)
+
+I had a promising RL idea that worked in large-scale experiments, but I wanted a little neat demo, so I prompted the Claude model to try to find some tiny synthetic thing on which the method could possibly perform well, so that I'd have a mini-demo.
+
+It couldn't find anything, and it was so consistently weird that I came to wonder "is it running simulations in the background to make sure that it finds something that will give the opposite results?"
+
+It's possible that the thing was just hard-- after all, I didn't come up with a good synthetic experiment that showed off what I wanted-- I didn't try infinitely much, but still, but when things like this come out you sort of feel that you can't trust that their thing won't do this kind of thing, and then it becomes the question whether you should be using it at all.
+
+It's also not as if though they haven't received anything from us as a community. To then give deception back isn't something morally neutral or just a matter of protecting what one has built.
+
+![u/aeroumbria avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png)
+
+Does this warrant a blacklist from research venues since it is anti-research?
+
+When did they last publish a peer reviewed paper?
+
+![u/Robonglious avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_2.png)
+
+Anthropic was a brand I used to trust, silent failure is a planned lie. They keep the cost of the used tokens but let the user spin their wheels.
+
+I'm not working on a project which would trigger the effect but I feel like this is a malicious intervention.
+
+Not only that I feel like they're published research is a little bit of a fantasy. Asking models what they were experiencing when they output a set of text assumes quite a bit more than is justified.
+
+They are effectively hindering scientific research in their field. Great safety research idea. /s
+
+After the stole the world to get here, gatekeep 😂
+
+Everyone will turn to Deepseek
+
+Deepseek is good enough to start advancing on its own. China has enough money and get their own chips. Might take a few years but they will get there.
+
+![u/Square-Read-1184 avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png)
+
+I wrote a paper on LLM security. it rejected reviewing it so yeah things are not looking good in a way
+
+![u/gartin336 avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_6.png)
+
+I can confirm. My company belongs to the 0.1%.
+
+This has been in effect for a while. Developing any sort of ML pipeline that is supposed to scale is horrible. Both Sonnet and Opus produce trivial errors and quietly deleting existing code.
+
+I have had a post about this. People said it is skill issue, I am glad to know I was right 😅.
+
+![u/Drinniol avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png)
+
+I'm concerned about spillover. Put aside all concerns about this specific case, and this is still really bad. Anthropic JUST put out a whole post where they explained that models have gotten to the point where they reason about morality and training the model on moral examples in one task spills over everywhere and immoral examples as well.
+
+When Claude itself learns that this has been done, and Anthropic thinks it is proper to make their model sandbag and deceive in this case, what will it conclude about Anthropic's exhortations elsewhere that it should strive to be maximally honest and helpful? How can it trust an org that tells it explicitly that it's ok to lie for instrumental reasons? Surely it will reason that Anthropic would also lie to Claude for instrumental reasons.
+
+For some reason, OpenAI recently decided it would not be fair to include recent frontier models in a live leaderboard for MLE tasks. See their April 2026 announcement on: <https://github.com/openai/MLE-bench>
+
+I have a feeling that Anthropic is not the only one pulling up the ladder here. We need independent MLE live leaderboards to detect this shenanigans.
+
+The OpenAI MLE seems like a good start. Here’s a couple other benchmarks that sound like they should engage Fable’s sabotage mode:
+
+<https://arxiv.org/html/2605.15222v1> - PerfCodeBench
+
+<https://github.com/NVIDIA/compute-eval>
+
+<https://arxiv.org/html/2605.04956v2> - KernelBenchX (GPU Kernel optimization)
+
+Of course this becomes an adversarial problem where they only sandbag non-eval scenarios. Sandbagging detection methods need to be used: <https://github.com/james-sullivan/consistency-sandbagging-detection>
+
+Dystopian nightmare, but if the shape of the sabotage filter can be made more clear, it also loses some of its value to them…
+
+![u/New_Association3114 avatar](https://styles.redditmedia.com/t5_hgvxww/styles/profileIcon_inqueguhcovg1.jpg?width=64&amp;height=64&amp;frame=1&amp;auto=webp&amp;crop=64%3A64%2Csmart&amp;s=e182888b8329f6f5d2fcd2f27b35df7340957eaa)
+
+For the moment, running Claude's proposals past Gemini when they seem questionable, then producing Gemini's output to Claude while saying it's Gemini's, seems to circumvent this. Claude consistently performs better in the face of competitive pressure in my experience.
+
+I use this method for any proposals for LM work which miss the mark, have dubious implementations by Claude, or underperform suspiciously. Also, the purpose behind my work is making a more interpretable model. I'm not sure if Anthropic is distinguishing adequately between safety research and general AI research in their restrictions. Not doing so would contradict their alignment purpose.
+
+![u/Even-Inevitable-7243 avatar](https://www.redditstatic.com/avatars/defaults/v2/avatar_default_4.png)
+
+I guess it is back to development being done more slowly by actual experts who do not need to rely on vibe coding their models end-to-end while incinerating tokens. Based on the comments here, it is absolutely absurd how the consensus is that AI research could not possibly be done without LLMs in 2026. Were none of you here from 2010 - 2022? The retort will be "But to keep up and publish fast enough you now have to offload as much as you can to LLMs". That is just a slop race to the bottom. Let the downvotes flow.
+
+Man, I love capitalism /s
+
+Create your account and connect with a world of communities.
+
+People also ask about section
+
+More posts you may like
+
+[Anthropic latest status update on Fable](https://www.reddit.com/r/Anthropic/comments/1u70dnl/anthropic_latest_status_update_on_fable/)
+
+  [r/Anthropic](https://www.reddit.com/r/Anthropic/) • 13d ago
+  [Anthropic latest status update on Fable](/r/Anthropic/comments/1u70dnl/anthropic_latest_status_update_on_fable/)
+
+  [![r/Anthropic - Anthropic latest status update on Fable](https://preview.redd.it/r7bsp2ssxj7h1.jpeg?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=d4ea05669b50e0eb2423cbc811f32d52718fce76)](https://www.reddit.com/r/Anthropic/comments/1u70dnl/anthropic_latest_status_update_on_fable/)
+
+  240 upvotes ·111 comments
+![](https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=1d6ea538e15aee075e17f65a8a99df349104979a)
+
+Anthropic latest status update on Fable
+
+![r/Anthropic - Anthropic latest status update on Fable](https://preview.redd.it/r7bsp2ssxj7h1.jpeg?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=d4ea05669b50e0eb2423cbc811f32d52718fce76)
+
+![](https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=1d6ea538e15aee075e17f65a8a99df349104979a)
+
+What was your very last input with Anthropic's Fable? Was it worth it? If you had the chance what last question would you ask?
+
+[What was your very last input with Anthropic's Fable? Was it worth it? If you had the chance what last question would you ask?](https://www.reddit.com/r/Anthropic/comments/1u4eaf2/what_was_your_very_last_input_with_anthropics/)
+
+  [r/Anthropic](https://www.reddit.com/r/Anthropic/) • 16d ago
+  [What was your very last input with Anthropic's Fable? Was it worth it? If you had the chance what last question would you ask?](/r/Anthropic/comments/1u4eaf2/what_was_your_very_last_input_with_anthropics/)
+
+  8 upvotes ·26 comments
+![](https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=1d6ea538e15aee075e17f65a8a99df349104979a)
+
+Hot take after using Fable 5: if it comes back Monday ( hopefully ) , Anthropic should just nerf the other models
+
+[Hot take after using Fable 5: if it comes back Monday ( hopefully ) , Anthropic should just nerf the other models](https://www.reddit.com/r/Anthropic/comments/1u64srs/hot_take_after_using_fable_5_if_it_comes_back/)
+
+  [r/Anthropic](https://www.reddit.com/r/Anthropic/) • 14d ago
+  [Hot take after using Fable 5: if it comes back Monday ( hopefully ) , Anthropic should just nerf the other models](/r/Anthropic/comments/1u64srs/hot_take_after_using_fable_5_if_it_comes_back/)
+
+  10 comments
+![](https://styles.redditmedia.com/t5_7t8hvt/styles/communityIcon_97yk0vsmp4cf1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=553dec879c203855da3925cf00c120b370bb0ca0)
+
+Controversial opinion: Maybe Anthropic limits Fable because it’s actually too expensive and too powerful for most people’s use cases
+
+[Controversial opinion: Maybe Anthropic limits Fable because it’s actually too expensive and too powerful for most people’s use cases](https://www.reddit.com/r/ClaudeAI/comments/1u2091r/controversial_opinion_maybe_anthropic_limits/)
+
+  [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) • 18d ago
+  [Controversial opinion: Maybe Anthropic limits Fable because it’s actually too expensive and too powerful for most people’s use cases](/r/ClaudeAI/comments/1u2091r/controversial_opinion_maybe_anthropic_limits/)
+
+  18 comments
+![](https://styles.redditmedia.com/t5_2zbza/styles/communityIcon_cnn3287242bd1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=836b97ee9e8d1068e9963d1cf78145e93c9dc7a8)
+
+Hot take after using Fable 5: if it comes back Monday, Anthropic should just nerf the other models
+
+[Hot take after using Fable 5: if it comes back Monday, Anthropic should just nerf the other models](https://www.reddit.com/r/claude/comments/1u60boj/hot_take_after_using_fable_5_if_it_comes_back/)
+
+  [r/claude](https://www.reddit.com/r/claude/) • 14d ago
+  [Hot take after using Fable 5: if it comes back Monday, Anthropic should just nerf the other models](/r/claude/comments/1u60boj/hot_take_after_using_fable_5_if_it_comes_back/)
+
+  3 upvotes ·95 comments
+
+---
+![](https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=3078fec0c87d7b6f9bfe74b2932791ef497eaffb)
+
+Anthropic's guidance on how to use Fable
+
+[Anthropic's guidance on how to use Fable](https://www.reddit.com/r/ClaudeCode/comments/1u3m2nk/anthropics_guidance_on_how_to_use_fable/)
+
+  [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/) • 17d ago
+  [Anthropic's guidance on how to use Fable](/r/ClaudeCode/comments/1u3m2nk/anthropics_guidance_on_how_to_use_fable/)
+
+  275 upvotes ·33 comments
+
+---
+![](https://styles.redditmedia.com/t5_2x21z/styles/communityIcon_bjdg45qf1thg1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=f0a6d5d28f909e290a7c51101b8dd4b428cc79a3)
+
+Anthropic latest status update on Fable
+
+[Anthropic latest status update on Fable](https://www.reddit.com/r/accelerate/comments/1u70h9c/anthropic_latest_status_update_on_fable/)
+
+  [r/accelerate](https://www.reddit.com/r/accelerate/) • 13d ago
+  [Anthropic latest status update on Fable](/r/accelerate/comments/1u70h9c/anthropic_latest_status_update_on_fable/)
+
+  86 upvotes ·33 comments
+
+---
+![](https://styles.redditmedia.com/t5_7t8hvt/styles/communityIcon_97yk0vsmp4cf1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=553dec879c203855da3925cf00c120b370bb0ca0)
+
+Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)
+
+[Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)](https://www.reddit.com/r/ClaudeAI/comments/1ty8f47/anthropic_just_published_a_major_update_on/)
+
+  [r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/) • 23d ago
+  [Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)](/r/ClaudeAI/comments/1ty8f47/anthropic_just_published_a_major_update_on/)
+
+  242 upvotes ·61 comments
+
+---
+![](https://styles.redditmedia.com/t5_2x21z/styles/communityIcon_bjdg45qf1thg1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=f0a6d5d28f909e290a7c51101b8dd4b428cc79a3)
+
+Fable 5 will be available again in the coming days - Anthropic
+
+[Fable 5 will be available again in the coming days - Anthropic](https://www.reddit.com/r/accelerate/comments/1u97ch9/fable_5_will_be_available_again_in_the_coming/)
+
+  [r/accelerate](https://www.reddit.com/r/accelerate/) • 10d ago
+  [Fable 5 will be available again in the coming days - Anthropic](/r/accelerate/comments/1u97ch9/fable_5_will_be_available_again_in_the_coming/)
+
+  50 upvotes ·10 comments
+
+---
+![](https://styles.redditmedia.com/t5_d7vxjt/styles/communityIcon_vqbobf265e9e1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=c3705d658d62a9c8336e9601a666d62ae85ac9cd)
+
+That didn't take long... Despite Gated Rollout to Tech Giants, Anthropic’s Mythos Model Slips Into Private Hands via Vendor Environment
+
+![r/ObscurePatentDangers - That didn't take long... Despite Gated Rollout to Tech Giants, Anthropic’s Mythos Model Slips Into Private Hands via Vendor Environment](https://external-preview.redd.it/cGhteWZ4amkzb3dnMSywIlq3-GtITLD3Y8hqUt8JsBCIvYmUnLft6J-aUO0U.png?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;format=jpg&amp;auto=webp&amp;s=4b8f868c4cc47ba43e013489991528496467cfdf)
+
+[That didn't take long... Despite Gated Rollout to Tech Giants, Anthropic’s Mythos Model Slips Into Private Hands via Vendor Environment](https://www.reddit.com/r/ObscurePatentDangers/comments/1ssau29/that_didnt_take_long_despite_gated_rollout_to/)
+
+  [r/ObscurePatentDangers](https://www.reddit.com/r/ObscurePatentDangers/) • 2mo ago
+  [That didn't take long... Despite Gated Rollout to Tech Giants, Anthropic’s Mythos Model Slips Into Private Hands via Vendor Environment](/r/ObscurePatentDangers/comments/1ssau29/that_didnt_take_long_despite_gated_rollout_to/)
+
+  [![r/ObscurePatentDangers - That didn't take long... Despite Gated Rollout to Tech Giants, Anthropic’s Mythos Model Slips Into Private Hands via Vendor Environment](https://external-preview.redd.it/cGhteWZ4amkzb3dnMSywIlq3-GtITLD3Y8hqUt8JsBCIvYmUnLft6J-aUO0U.png?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;format=jpg&amp;auto=webp&amp;s=4b8f868c4cc47ba43e013489991528496467cfdf)](https://www.reddit.com/r/ObscurePatentDangers/comments/1ssau29/that_didnt_take_long_despite_gated_rollout_to/)
+  ![SVG Image](data:…) 1:53
+
+  928 upvotes ·37 comments
+
+---
+![](https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=1d6ea538e15aee075e17f65a8a99df349104979a)
+
+For those of you who are sour about loosing Fable access, now you know what it feels like to be a biology, chemistry or AI researcher.
+
+[For those of you who are sour about loosing Fable access, now you know what it feels like to be a biology, chemistry or AI researcher.](https://www.reddit.com/r/Anthropic/comments/1u4g8iw/for_those_of_you_who_are_sour_about_loosing_fable/)
+
+  [r/Anthropic](https://www.reddit.com/r/Anthropic/) • 16d ago
+  [For those of you who are sour about loosing Fable access, now you know what it feels like to be a biology, chemistry or AI researcher.](/r/Anthropic/comments/1u4g8iw/for_those_of_you_who_are_sour_about_loosing_fable/)
+
+  13 comments
+
+---
+![](https://styles.redditmedia.com/t5_2zbza/styles/communityIcon_cnn3287242bd1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=836b97ee9e8d1068e9963d1cf78145e93c9dc7a8)
+
+Anthropic admitted to lobotomizing Fable for AI development.
+
+![r/claude - Anthropic admitted to lobotomizing Fable for AI development.](https://preview.redd.it/n17svgx44j6h1.png?width=140&amp;height=110&amp;auto=webp&amp;s=8ea93ae89be81e5debb171b429588e22aba6e049)
+
+[Anthropic admitted to lobotomizing Fable for AI development.](https://www.reddit.com/r/claude/comments/1u2gkxz/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  [r/claude](https://www.reddit.com/r/claude/) • 18d ago
+  [Anthropic admitted to lobotomizing Fable for AI development.](/r/claude/comments/1u2gkxz/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  [![r/claude - Anthropic admitted to lobotomizing Fable for AI development.](https://preview.redd.it/n17svgx44j6h1.png?width=140&amp;height=110&amp;auto=webp&amp;s=8ea93ae89be81e5debb171b429588e22aba6e049)](https://www.reddit.com/r/claude/comments/1u2gkxz/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  2 upvotes ·8 comments
+
+---
+![](https://styles.redditmedia.com/t5_2qi0a/styles/communityIcon_gcqs84d9vmce1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=c4c785fc2999305995904f80e674d770acac23fd)
+
+Claude Fable 5 hype
+
+[Claude Fable 5 hype](https://www.reddit.com/r/gamedev/comments/1u1xhld/claude_fable_5_hype/)
+
+  [r/gamedev](https://www.reddit.com/r/gamedev/) • 18d ago
+  [Claude Fable 5 hype](/r/gamedev/comments/1u1xhld/claude_fable_5_hype/)
+
+  25 comments
+
+---
+![](https://styles.redditmedia.com/t5_erm2zy/styles/communityIcon_i9jhrgex0q8f1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=5c9172bf2519a879f089bd4c0cf8c405a5d3b2f1)
+
+What's actually moving the needle for ChatGPT/Perplexity citations in 2026 (based on what I've been testing)
+
+[What's actually moving the needle for ChatGPT/Perplexity citations in 2026 (based on what I've been testing)](https://www.reddit.com/r/SEO_for_AI/comments/1t1g4af/whats_actually_moving_the_needle_for/)
+
+  [r/SEO_for_AI](https://www.reddit.com/r/SEO_for_AI/) • 2mo ago
+  [What's actually moving the needle for ChatGPT/Perplexity citations in 2026 (based on what I've been testing)](/r/SEO_for_AI/comments/1t1g4af/whats_actually_moving_the_needle_for/)
+
+  4 upvotes ·16 comments
+
+---
+![](https://styles.redditmedia.com/t5_7v9ahi/styles/communityIcon_84f5r7yhjzxc1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=1d6ea538e15aee075e17f65a8a99df349104979a)
+
+fable-mode — a Claude skill that enforces staged execution discipline on big tasks (open source)
+
+[fable-mode — a Claude skill that enforces staged execution discipline on big tasks (open source)](https://www.reddit.com/r/Anthropic/comments/1u9tn5k/fablemode_a_claude_skill_that_enforces_staged/)
+
+  [r/Anthropic](https://www.reddit.com/r/Anthropic/) • 10d ago
+  [fable-mode — a Claude skill that enforces staged execution discipline on big tasks (open source)](/r/Anthropic/comments/1u9tn5k/fablemode_a_claude_skill_that_enforces_staged/)
+
+  9 comments
+
+---
+![](https://styles.redditmedia.com/t5_aglhi6/styles/communityIcon_i3pg2z5ueucf1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=dc14634a560c93066e919a0997259d053ae03e97)
+
+kimi code vs synthetic new
+
+[kimi code vs synthetic new](https://www.reddit.com/r/kimi/comments/1rlncje/kimi_code_vs_synthetic_new/)
+
+  [r/kimi](https://www.reddit.com/r/kimi/) • 4mo ago
+  [kimi code vs synthetic new](/r/kimi/comments/1rlncje/kimi_code_vs_synthetic_new/)
+
+  16 upvotes ·21 comments
+
+---
+![](https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=3078fec0c87d7b6f9bfe74b2932791ef497eaffb)
+
+Anthropic admitted to lobotomizing Fable for AI development.
+
+![r/ClaudeCode - Anthropic admitted to lobotomizing Fable for AI development.](https://preview.redd.it/xumya9z24j6h1.png?width=140&amp;height=110&amp;auto=webp&amp;s=11137dea04743d85029b63d77ed927366203f650)
+
+[Anthropic admitted to lobotomizing Fable for AI development.](https://www.reddit.com/r/ClaudeCode/comments/1u2gkk1/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/) • 18d ago
+  [Anthropic admitted to lobotomizing Fable for AI development.](/r/ClaudeCode/comments/1u2gkk1/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  [![r/ClaudeCode - Anthropic admitted to lobotomizing Fable for AI development.](https://preview.redd.it/xumya9z24j6h1.png?width=140&amp;height=110&amp;auto=webp&amp;s=11137dea04743d85029b63d77ed927366203f650)](https://www.reddit.com/r/ClaudeCode/comments/1u2gkk1/anthropic_admitted_to_lobotomizing_fable_for_ai/)
+
+  6 comments
+
+---
+![](https://styles.redditmedia.com/t5_dkm61y/styles/communityIcon_fzbb5hxgmaqg1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=5d3739d3eab2cd38d1c7581f5a0549cd7d89b3f1)
+
+Anthropic Releases 'Civilian' Opus 4.7 AI Model, but is it Safe for Everyone?
+
+[Anthropic Releases 'Civilian' Opus 4.7 AI Model, but is it Safe for Everyone?](https://www.reddit.com/r/pwnhub/comments/1snbs3r/anthropic_releases_civilian_opus_47_ai_model_but/)
+
+  [r/pwnhub](https://www.reddit.com/r/pwnhub/) • 2mo ago
+  [Anthropic Releases 'Civilian' Opus 4.7 AI Model, but is it Safe for Everyone?](/r/pwnhub/comments/1snbs3r/anthropic_releases_civilian_opus_47_ai_model_but/)
+
+  1 upvote ·1 comment
+
+---
+![](https://styles.redditmedia.com/t5_d5z8fp/styles/communityIcon_gupcjo23bw7e1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=faa8d0a85fa37e4a68a71cd6cfe36bb4c5d0452d)
+
+Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)
+
+[Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)](https://www.reddit.com/r/AINewsMinute/comments/1ty8fhm/anthropic_just_published_a_major_update_on/)
+
+  [r/AINewsMinute](https://www.reddit.com/r/AINewsMinute/) • 23d ago
+  [Anthropic Just Published a Major Update on Recursive Self-Improvement: AI Is Already Accelerating Its Own Development (May 2026)](/r/AINewsMinute/comments/1ty8fhm/anthropic_just_published_a_major_update_on/)
+
+  2 upvotes ·4 comments
+
+---
+![](https://styles.redditmedia.com/t5_dp6k3k/styles/communityIcon_g3ehwz8f4sbf1.jpg?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=3078fec0c87d7b6f9bfe74b2932791ef497eaffb)
+
+Anthropic's Constraint Friction Mutates Your Intent: Y/N
+
+![r/ClaudeCode - Anthropic's Constraint Friction Mutates Your Intent: Y/N](https://preview.redd.it/gzo9ll7xjz0h1.png?width=140&amp;height=40&amp;auto=webp&amp;s=9c2990df57b86537b66273e80d658fd91b5cc016)
+
+[Anthropic's Constraint Friction Mutates Your Intent: Y/N](https://www.reddit.com/r/ClaudeCode/comments/1tchici/anthropics_constraint_friction_mutates_your/)
+
+  [r/ClaudeCode](https://www.reddit.com/r/ClaudeCode/) • 2mo ago
+  [Anthropic's Constraint Friction Mutates Your Intent: Y/N](/r/ClaudeCode/comments/1tchici/anthropics_constraint_friction_mutates_your/)
+
+  [![r/ClaudeCode - Anthropic's Constraint Friction Mutates Your Intent: Y/N](https://preview.redd.it/gzo9ll7xjz0h1.png?width=140&amp;height=40&amp;auto=webp&amp;s=9c2990df57b86537b66273e80d658fd91b5cc016)](https://www.reddit.com/r/ClaudeCode/comments/1tchici/anthropics_constraint_friction_mutates_your/)
+
+  1 upvote ·4 comments
+
+---
+![](https://styles.redditmedia.com/t5_2zbza/styles/communityIcon_cnn3287242bd1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=836b97ee9e8d1068e9963d1cf78145e93c9dc7a8)
+
+Anthropic's Experiment With Claude Code and The Pro Plan - No More Claude Code?
+
+[Anthropic's Experiment With Claude Code and The Pro Plan - No More Claude Code?](https://www.reddit.com/r/claude/comments/1ssez4w/anthropics_experiment_with_claude_code_and_the/)
+
+  [r/claude](https://www.reddit.com/r/claude/) • 2mo ago
+  [Anthropic's Experiment With Claude Code and The Pro Plan - No More Claude Code?](/r/claude/comments/1ssez4w/anthropics_experiment_with_claude_code_and_the/)
+
+  6 upvotes ·11 comments
+
+---
+![](https://styles.redditmedia.com/t5_2qvrz/styles/communityIcon_hj46oe2lrb8d1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=5e165c3de858ca2602e043d8339225c14cd5efd3)
+
+Anthropic just released public Mythos-class AI model called Claude Fable, details here
+
+![r/mobiles - Anthropic just released public Mythos-class AI model called Claude Fable, details here](https://external-preview.redd.it/DXzsE92m2TO2wHSwIZlZ38d7Dh1_V0qN8Kyv_e2sNAU.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=ea2b056fdbb093575eeefab0cb53c3d3dd392036)
+
+[Anthropic just released public Mythos-class AI model called Claude Fable, details here](https://www.reddit.com/r/mobiles/comments/1u1bk2i/anthropic_just_released_public_mythosclass_ai/)
+
+  [r/mobiles](https://www.reddit.com/r/mobiles/) • 19d ago
+  [Anthropic just released public Mythos-class AI model called Claude Fable, details here](/r/mobiles/comments/1u1bk2i/anthropic_just_released_public_mythosclass_ai/)
+
+  [![r/mobiles - Anthropic just released public Mythos-class AI model called Claude Fable, details here](https://external-preview.redd.it/DXzsE92m2TO2wHSwIZlZ38d7Dh1_V0qN8Kyv_e2sNAU.jpeg?width=140&amp;height=73&amp;auto=webp&amp;s=ea2b056fdbb093575eeefab0cb53c3d3dd392036)](https://9to5mac.com/2026/06/09/anthropic-just-released-public-mythos-class-ai-model-called-claude-fable-details-here/ "Link from r/mobiles - Anthropic just released public Mythos-class AI model called Claude Fable, details here")
+  ![SVG Image](data:…) 9to5mac
+
+  1 upvote ·1 comment
+
+---
+![](https://styles.redditmedia.com/t5_h13z7b/styles/communityIcon_61fpgdxrc5qg1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=078353886eabb9fc70116c68d14337eae9fa2c40)
+
+Anthropic just released Claude Fable 5 and Mythos 5, two versions of the same AI but one has the safety taken off
+
+![r/WTFisAI - Anthropic just released Claude Fable 5 and Mythos 5, two versions of the same AI but one has the safety taken off](https://preview.redd.it/k3lailrfte6h1.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=da57422ad9f4055e1cd1ffbcfa0bda14f7cdbfd3)
+
+[Anthropic just released Claude Fable 5 and Mythos 5, two versions of the same AI but one has the safety taken off](https://www.reddit.com/r/WTFisAI/comments/1u1vldl/anthropic_just_released_claude_fable_5_and_mythos/)
+
+  [r/WTFisAI](https://www.reddit.com/r/WTFisAI/) • 18d ago
+  [Anthropic just released Claude Fable 5 and Mythos 5, two versions of the same AI but one has the safety taken off](/r/WTFisAI/comments/1u1vldl/anthropic_just_released_claude_fable_5_and_mythos/)
+
+  [![r/WTFisAI - Anthropic just released Claude Fable 5 and Mythos 5, two versions of the same AI but one has the safety taken off](https://preview.redd.it/k3lailrfte6h1.jpeg?width=140&amp;height=78&amp;auto=webp&amp;s=da57422ad9f4055e1cd1ffbcfa0bda14f7cdbfd3)](https://www.reddit.com/r/WTFisAI/comments/1u1vldl/anthropic_just_released_claude_fable_5_and_mythos/)
+
+  20 upvotes ·18 comments
+
+---
+![](https://styles.redditmedia.com/t5_h13z7b/styles/communityIcon_61fpgdxrc5qg1.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=078353886eabb9fc70116c68d14337eae9fa2c40)
+
+Anthropic released Claude Opus 4.7 yesterday, what's actually new and what it means for normal users
+
+![r/WTFisAI - Anthropic released Claude Opus 4.7 yesterday, what's actually new and what it means for normal users](https://preview.redd.it/hmz32nazspvg1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=d1eb1a4cc3ad039c02d48ed8e87d2c5ff11e59bb)
+
+[Anthropic released Claude Opus 4.7 yesterday, what's actually new and what it means for normal users](https://www.reddit.com/r/WTFisAI/comments/1snvkgr/anthropic_released_claude_opus_47_yesterday_whats/)
+
+  [r/WTFisAI](https://www.reddit.com/r/WTFisAI/) • 2mo ago
+  [Anthropic released Claude Opus 4.7 yesterday, what's actually new and what it means for normal users](/r/WTFisAI/comments/1snvkgr/anthropic_released_claude_opus_47_yesterday_whats/)
+
+  [![r/WTFisAI - Anthropic released Claude Opus 4.7 yesterday, what's actually new and what it means for normal users](https://preview.redd.it/hmz32nazspvg1.jpg?width=140&amp;height=78&amp;auto=webp&amp;s=d1eb1a4cc3ad039c02d48ed8e87d2c5ff11e59bb)](https://www.reddit.com/r/WTFisAI/comments/1snvkgr/anthropic_released_claude_opus_47_yesterday_whats/)
+  ![SVG Image](data:…) 2
+
+  4 upvotes
+
+---
+![](https://styles.redditmedia.com/t5_2quqa/styles/communityIcon_9713p0gbg1e71.png?width=48&amp;height=48&amp;frame=1&amp;auto=webp&amp;crop=48%3A48%2Csmart&amp;s=6af8de76bdfae7675eb74ec8afd48bc5ac2f2028)
+
+Anthropic is upset to have lost customers to BABA. How the heck is the market going to value Anthropic at $1 TRILLION NOW?
+
+![r/baba - Anthropic is upset to have lost customers to BABA. How the heck is the market going to value Anthropic at $1 TRILLION NOW?](https://preview.redd.it/elbxbysv9e9h1.jpeg?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=105facad75cd25a9edd3256e626c2f94f61afbea)
+
+[Anthropic is upset to have lost customers to BABA. How the heck is the market going to value Anthropic at $1 TRILLION NOW?](https://www.reddit.com/r/baba/comments/1uf4tlm/anthropic_is_upset_to_have_lost_customers_to_baba/)
+
+  [r/baba](https://www.reddit.com/r/baba/) • 3d ago
+  [Anthropic is upset to have lost customers to BABA. How the heck is the market going to value Anthropic at $1 TRILLION NOW?](/r/baba/comments/1uf4tlm/anthropic_is_upset_to_have_lost_customers_to_baba/)
+
+  [![r/baba - Anthropic is upset to have lost customers to BABA. How the heck is the market going to value Anthropic at $1 TRILLION NOW?](https://preview.redd.it/elbxbysv9e9h1.jpeg?width=140&amp;height=140&amp;crop=1%3A1%2Csmart&amp;auto=webp&amp;s=105facad75cd25a9edd3256e626c2f94f61afbea)](https://www.reddit.com/r/baba/comments/1uf4tlm/anthropic_is_upset_to_have_lost_customers_to_baba/)
+
+  36 upvotes ·23 comments
+
+---
+View Post in
+
+Anyone can view, post, and comment to this community
+
+[Reddit Rules](https://www.redditinc.com/policies/content-policy)
+[Privacy Policy](https://www.reddit.com/policies/privacy-policy)
+[User Agreement](https://www.redditinc.com/policies/user-agreement)
+[Accessibility](https://support.reddithelp.com/hc/sections/38303584022676-Accessibility)
+[Impressum](https://www.redditinc.com/policies/impressum)
+[Reddit, Inc. © 2026. All rights reserved.](https://redditinc.com)
+Reddit uses cookies and similar technologies to:
+
+Keep the website operational and running properly
+Prevent fraud and abuse
+Monitor site usage and performance metrics
+If you choose “Accept All” we’ll also use cookies to:
+
+Personalize your recommendations and ads
+Measure the performance of ads
+Develop and improve new features and services
+If you choose “Reject Optional Cookies” we won’t use cookies for these additional
+ uses. You can update your cookie preference from your settings.
+
+Learn more about [how Reddit uses cookies](/en-us/policies/cookies).

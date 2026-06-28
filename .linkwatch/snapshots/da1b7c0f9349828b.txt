@@ -1,0 +1,456 @@
+Purposes
+Features
+Vendors
+This website uses essential cookies and services to enable core website functionality and provide a seamless user experience. These cookies and services are used to facilitate features such as navigation, remembering user references, and ensuring website security.
+
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+
+We use audience measurement cookies in order to carry out aggregated traffic measurement and generate performance statistics essential for the proper functioning of the site and the provision of its content (for example to measure performance, to detect navigation problems, to optimization technical performance or ergonomics, to estimate server power needed and to analyse content performance). The use of these cookies is strictly limited to measuring the site's audience. These cookies do not allow the tracking of navigation on other websites and the data collected is not combined or shared with third parties. You can refuse the use of this cookie by switching off the slider to the right.
+
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+
+These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools.
+
+Cookies, device or similar online identifiers (e.g. login-based identifiers, randomly assigned identifiers, network based identifiers) together with other information (e.g. browser type and information, language, screen size, supported technologies etc.) can be stored or read on your device to recognise it each time it connects to an app or to a website, for one or several of the purposes presented here.
+
+Most purposes explained in this notice rely on the storage or accessing of information from your device when you use an app or visit a website. For example, a vendor or publisher might need to store a cookie on your device during your first visit on a website, to be able to recognise your device during your next visits (by accessing this cookie each time).
+
+Vendors154 vendor(s)
+
+6sense
+A.Mob
+ADYOULIKE (OpenWeb)
+ADventori
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adex (Virtual Minds)
+Adform
+Advertising presented to you on this service can be based on limited data, such as the website or app you are using, your non-precise location, your device type or which content you are (or have been) interacting with (for example, to limit the number of times an ad is presented to you).
+
+A car manufacturer wants to promote its electric vehicles to environmentally conscious users living in the city after office hours. The advertising is presented on a page with related content (such as an article on climate change actions) after 6:30 p.m. to users whose non-precise location suggests that they are in an urban zone.
+
+A large producer of watercolour paints wants to carry out an online advertising campaign for its latest watercolour range, diversifying its audience to reach as many amateur and professional artists as possible and avoiding showing the ad next to mismatched content (for instance, articles about how to paint your house). The number of times that the ad has been presented to you is detected and limited, to avoid presenting it too often.
+
+Vendors132 vendor(s)
+
+6sense
+A.Mob
+ADYOULIKE (OpenWeb)
+ADventori
+AMA
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adex (Virtual Minds)
+Information about your activity on this service (such as forms you submit, content you look at) can be stored and combined with other information about you (for example, information from your previous activity on this service and other websites or apps) or similar users. This is then used to build or improve a profile about you (that might include possible interests and personal aspects). Your profile can be used (also later) to present advertising that appears more relevant based on your possible interests by this and other entities.
+
+If you read several articles about the best bike accessories to buy, this information could be used to create a profile about your interest in bike accessories. Such a profile may be used or improved later on, on the same or a different website or app to present you with advertising for a particular bike accessory brand. If you also look at a configurator for a vehicle on a luxury car manufacturer website, this information could be combined with your interest in bikes to refine your profile and make an assumption that you are interested in luxury cycling gear.
+
+An apparel company wishes to promote its new line of high-end baby clothes. It gets in touch with an agency that has a network of clients with high income customers (such as high-end supermarkets) and asks the agency to create profiles of young parents or couples who can be assumed to be wealthy and to have a new child, so that these can later be used to present advertising within partner apps based on those profiles.
+
+Vendors123 vendor(s)
+
+6sense
+A.Mob
+ADYOULIKE (OpenWeb)
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adex (Virtual Minds)
+Adform
+Adition (Virtual Minds)
+Advertising presented to you on this service can be based on your advertising profiles, which can reflect your activity on this service or other websites or apps (like the forms you submit, content you look at), possible interests and personal aspects.
+
+An online retailer wants to advertise a limited sale on running shoes. It wants to target advertising to users who previously looked at running shoes on its mobile app. Tracking technologies might be used to recognise that you have previously used the mobile app to consult running shoes, in order to present you with the corresponding advertisement on the app.
+
+A profile created for personalised advertising in relation to a person having searched for bike accessories on a website can be used to present the relevant advertisement for bike accessories on a mobile app of another organisation.
+
+Vendors122 vendor(s)
+
+6sense
+A.Mob
+ADYOULIKE (OpenWeb)
+ADventori
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adex (Virtual Minds)
+Adform
+Information about your activity on this service (for instance, forms you submit, non-advertising content you look at) can be stored and combined with other information about you (such as your previous activity on this service or other websites or apps) or similar users. This is then used to build or improve a profile about you (which might for example include possible interests and personal aspects). Your profile can be used (also later) to present content that appears more relevant based on your possible interests, such as by adapting the order in which content is shown to you, so that it is even easier for you to find content that matches your interests.
+
+You read several articles on how to build a treehouse on a social media platform. This information might be added to a profile to mark your interest in content related to outdoors as well as do-it-yourself guides (with the objective of allowing the personalisation of content, so that for example you are presented with more blog posts and articles on treehouses and wood cabins in the future).
+
+You have viewed three videos on space exploration across different TV apps. An unrelated news platform with which you have had no contact builds a profile based on that viewing behaviour, marking space exploration as a topic of possible interest for other videos.
+
+Vendors43 vendor(s)
+
+Adex (Virtual Minds)
+Adsquare
+Appier
+Audigent
+BeOp
+Bmind (Jakala)
+Commanders Act
+Dentsu
+Dianomi
+Digiteka Technologies
+Content presented to you on this service can be based on your content personalisation profiles, which can reflect your activity on this or other services (for instance, the forms you submit, content you look at), possible interests and personal aspects. This can for example be used to adapt the order in which content is shown to you, so that it is even easier for you to find (non-advertising) content that matches your interests.
+
+You read articles on vegetarian food on a social media platform and then use the cooking app of an unrelated company. The profile built about you on the social media platform will be used to present you vegetarian recipes on the welcome screen of the cooking app.
+
+You have viewed three videos about rowing across different websites. An unrelated video sharing platform will recommend five other videos on rowing that may be of interest to you when you use your TV app, based on a profile built about you when you visited those different websites to watch online videos.
+
+Vendors39 vendor(s)
+
+Adex (Virtual Minds)
+Adsquare
+Appier
+BeOp
+Bmind (Jakala)
+Brand Metrics
+Commanders Act
+Dentsu
+Dianomi
+Digiteka Technologies
+Information regarding which advertising is presented to you and how you interact with it can be used to determine how well an advert has worked for you or other users and whether the goals of the advertising were reached. For instance, whether you saw an ad, whether you clicked on it, whether it led you to buy a product or visit a website, etc. This is very helpful to understand the relevance of advertising campaigns.
+
+You have clicked on an advertisement about a “black Friday” discount by an online shop on the website of a publisher and purchased a product. Your click will be linked to this purchase. Your interaction and that of other users will be measured to know how many clicks on the ad led to a purchase.
+
+You are one of very few to have clicked on an advertisement about an “international appreciation day” discount by an online gift shop within the app of a publisher. The publisher wants to have reports to understand how often a specific ad placement within the app, and notably the “international appreciation day” ad, has been viewed or clicked by you and other users, in order to help the publisher and its partners (such as agencies) optimise ad placements.
+
+Vendors148 vendor(s)
+
+6sense
+A.Mob
+ABCS INSIGHTS
+ADYOULIKE (OpenWeb)
+ADventori
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adelaide
+Information regarding which content is presented to you and how you interact with it can be used to determine whether the (non-advertising) content e.g. reached its intended audience and matched your interests. For instance, whether you read an article, watch a video, listen to a podcast or look at a product description, how long you spent on this service and the web pages you visit etc. This is very helpful to understand the relevance of (non-advertising) content that is shown to you.
+
+You have read a blog post about hiking on a mobile app of a publisher and followed a link to a recommended and related post. Your interactions will be recorded as showing that the initial hiking post was useful to you and that it was successful in interesting you in the related post. This will be measured to know whether to produce more posts on hiking in the future and where to place them on the home screen of the mobile app.
+
+You were presented a video on fashion trends, but you and several other users stopped watching after 30 seconds. This information is then used to evaluate the right length of future videos on fashion trends.
+
+Vendors71 vendor(s)
+
+6sense
+AcuityAds
+Adelaide
+Adex (Virtual Minds)
+Adsquare
+Aniview
+Arrivalist (AirDNA)
+Artefact Deutschland GmbH
+AudienceProject
+BeOp
+Reports can be generated based on the combination of data sets (like user profiles, statistics, market research, analytics data) regarding your interactions and those of other users with advertising or (non-advertising) content to identify common characteristics (for instance, to determine which target audiences are more receptive to an ad campaign or to certain contents).
+
+The owner of an online bookstore wants commercial reporting showing the proportion of visitors who consulted and left its site without buying, or consulted and bought the last celebrity autobiography of the month, as well as the average age and the male/female distribution of each category. Data relating to your navigation on its site and to your personal characteristics is then used and combined with other such data to produce these statistics.
+
+An advertiser wants to better understand the type of audience interacting with its adverts. It calls upon a research institute to compare the characteristics of users who interacted with the ad with typical attributes of users of similar platforms, across different devices. This comparison reveals to the advertiser that its ad audience is mainly accessing the adverts through mobile devices and is likely in the 45-60 age range.
+
+Vendors107 vendor(s)
+
+6sense
+A.Mob
+ABCS INSIGHTS
+Active Agent (Virtual Minds)
+AdElement Media Solutions
+Adara (Rate Gain)
+Adex (Virtual Minds)
+Adition (Virtual Minds)
+Adsquare
+Adventure Media (Ad360)
+Information about your activity on this service, such as your interaction with ads or content, can be very helpful to improve products and services and to build new products and services based on user interactions, the type of audience, etc. This specific purpose does not include the development or improvement of user profiles and identifiers.
+
+A technology platform working with a social media provider notices a growth in mobile app users, and sees based on their profiles that many of them are connecting through mobile connections. It uses a new technology to deliver ads that are formatted for mobile devices and that are low-bandwidth, to improve their performance.
+
+An advertiser is looking for a way to display ads on a new type of consumer device. It collects information regarding the way users interact with this new kind of device to determine whether it can build a new mechanism for displaying advertising on this type of device.
+
+Vendors126 vendor(s)
+
+6sense
+A.Mob
+Active Agent (Virtual Minds)
+AcuityAds
+AdElement Media Solutions
+Adara (Rate Gain)
+Adelaide
+Adex (Virtual Minds)
+Adform
+Adition (Virtual Minds)
+Content presented to you on this service can be based on limited data, such as the website or app you are using, your non-precise location, your device type, or which content you are (or have been) interacting with (for example, to limit the number of times a video or an article is presented to you).
+
+A travel magazine has published an article on its website about the new online courses proposed by a language school, to improve travelling experiences abroad. The school’s blog posts are inserted directly at the bottom of the page, and selected on the basis of your non-precise location (for instance, blog posts explaining the course curriculum for different languages than the language of the country you are situated in).
+
+A sports news mobile app has started a new section of articles covering the most recent football games. Each article includes videos hosted by a separate streaming platform showcasing the highlights of each match. If you fast-forward a video, this information may be used to select a shorter video to play next.
+
+Vendors24 vendor(s)
+
+Adex (Virtual Minds)
+Adsquare
+Airtory Inc
+Aniview
+Appier
+BeOp
+Bmind (Jakala)
+Dentsu
+Epsilon
+Lotame
+We and our partners process data for the following purposes
+
+Essential
+Functional Cookies
+Audience Measurement
+Targeted Advertising
+Performance Cookies
+Social Media Cookies
+Store and/or access information on a device
+Use limited data to select advertising
+Create profiles for personalised advertising
+Use profiles to select personalised advertising
+Create profiles to personalise content
+Use profiles to select personalised content
+Measure advertising performance
+Measure content performance
+Understand audiences through statistics or combinations of data from different sources
+Develop and improve services
+Use limited data to select content
+Measure advertising performance
+Use precise geolocation data
+Actively scan device characteristics for identification
+Newly Deciphered Sabotage Malware May Have Targeted Iran’s Nuclear Program—and Predates Stuxnet
+
+![Photo Illustration of IRAN map with Scissors in front cutting wires](https://media.wired.com/photos/69ea6ad5ba58a984aa33cf3d/master/w_2560%2Cc_limit/Security_MalwareMayHaveTargetedIran'sNuclearProgram_03.jpg)
+
+In the history of [state-sponsored hacking](https://www.wired.com/story/sandworm-kremlin-most-dangerous-hackers/), the spectrum of cyber operations bent on sabotage have ranged from [crude “wiper” attacks](https://www.wired.com/story/ukraine-russia-wiper-malware/) that destroy data on target computers to [the legendary Stuxnet](https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/), a piece of malware the US and Israel first deployed in Iran in 2007 to silently accelerate the spinning of nuclear enrichment centrifuges until they destroyed themselves. Now researchers have discovered another chapter in that decades-long evolution of cybersabotage techniques: a 21-year-old specimen of malware capable of tampering with research and engineering software to undetectably sow mayhem—one that may have been used in Iran, even before Stuxnet.
+
+Vitaly Kamluk and Juan Andrés Guerrero-Saade, two researchers from the cybersecurity firm SentinelOne, on Thursday [revealed](https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/) a breakthrough in the mystery of a piece of malware known as Fast16, a piece of code whose purpose has eluded the cybersecurity world since its existence was first revealed in an NSA leak in 2017. The SentinelOne researchers have now reverse-engineered the Fast16 code, which they say dates back to 2005 and was likely created by either the US government or one of its allies.
+
+Kamluk and Guerrero-Saade have determined that the Fast16 malware was designed to carry out the most subtle form of sabotage ever seen in an in-the-wild malware tool: By automatically spreading across networks and then silently manipulating computation processes in certain software applications that perform high-precision mathematical calculations and simulate physical phenomena, Fast16 can alter the results of those programs to cause failures that range from faulty research results to catastrophic damage to real-world equipment.
+
+“It focuses on making slight alterations to these calculations so that they lead to failures—very subtle ones, perhaps not immediately apparent. Systems might wear out faster, collapse, or crash, and scientific research could yield incorrect conclusions, potentially causing serious harm,” says Kamluk, who along with Guerrero-Saade will present their Fast16 findings at the cybersecurity conference Black Hat Asia in Singapore. “It is a nightmare, to be honest.”
+
+In their analysis of Fast16, Kamluk and Guerrero-Saade found three potential types of physical simulation software that the malware might have been designed to tamper with: Modelo Hidrodinâmico (or MOHID) software created by Portuguese developers for modeling water systems; Chinese construction engineering software known as PKPM; and, perhaps most significantly, the physical simulation software LS-DYNA, an application originally created by scientists who had worked at US Lawrence Livermore National Laboratory, which is now used in modeling everything from collisions between birds and airplanes to the tensile strength of crane components.
+
+Among all those possibilities, Kamluk and Guerrero-Saade point to evidence for one theory in particular: LS-DYNA was also used by Iranian scientists carrying out research that may have contributed to its nuclear weapons program, [according to](https://isis-online.org/uploads/isis-reports/documents/Section_T_review_September_10_2024_final.pdf) the Institute for Science and International Security. That institute also noted that the software can be used for modeling physics problems related to nuclear weapons research such as the interaction of metals in a nuclear weapon and the impact of a ballistic missile's reentry into the Earth's atmosphere on a nuclear warhead.
+
+All of that suggests that Fast16 might have been used in the mid-2000s specifically to subvert Iran's attempt to gain nuclear weapons, perhaps even years before Stuxnet was deployed to achieve the same result through a more direct form of sabotage, as part of a joint program carried out by the NSA and Israel's Unit 8200 hackers known as Olympic Games.
+
+“It's not beyond the pale that what we're looking at is an early predecessor to Olympic Games. It fits the bill, right?” says Guerrero-Saade. “We want to be good, objective researchers, but this is really not a stretch.”
+
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Physics and Math
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Fernanda González
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Space
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Jorge Garay
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Deals
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Louryn Strampe
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Environment
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Aranza Bustamante
+![Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://media.wired.com/photos/6a3d9aa235acf7de1a65dc27/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://media.wired.com/photos/6a3e91c52a254c7dcc47c3d6/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://media.wired.com/photos/6a396b1e518be327f36b3895/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://media.wired.com/photos/6a3ef3589858133e592bac26/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+Regardless of whether that theory holds true, the new analysis of Fast16 rewrites the history of state-sponsored hacking, says Thomas Rid, the director of the Alperovitch Institute for Cybersecurity Studies at Johns Hopkins University. “It means that deceptive sabotage operations have been part of the cyber playbook from much earlier than we thought, perhaps even from the beginning,” says Rid. “And it also looks like they were much stealthier than we understood.”
+
+“Nothing to See Here—Carry On”
+
+The mystery of Fast16 first came to light in April of 2017, after the still-unidentified hacker group known as Shadow Brokers somehow obtained and leaked a vast collection of NSA tools onto the open internet. One of those tools, labeled [Territorial Dispute](https://www.wired.com/story/nsa-leak-reveals-agency-list-enemy-hackers/), appeared to be designed to help NSA operators who were hacking into networks around the world avoid conflicts with other hacking operations. The tool, first analyzed in depth by Hungarian researcher Boldizsár Bencsáth, included a long list of malware specimens, including some that were used by the NSA and other “friendly” agencies, as well as instructions on when to “pull back” to avoid detection by an adversary's intrusion operation.
+
+Among the listed samples was one with a wholly unique label. For the malware referred to as “fast16," the Territorial Dispute tool told NSA operators “NOTHING TO SEE HERE—CARRY ON.” That strange instruction, researchers have speculated in the years since, likely means that Fast16 was the work of the NSA, another agency or contractor within the US intelligence community, or the intelligence agency of an ally—and that NSA hackers shouldn't interfere with it.
+
+Since the ShadowBrokers' leak didn't appear to include any piece of software actually called Fast16, however, everything else about the malware remained unknown. Only in 2019 did Guerrero-Saade find a sample of Fast16 hidden in the archives of VirusTotal, the Google-owned tool that serves as a repository of malware code. Searching for malware samples that included within their code a specific engine for running the Lua programming language—a trait that had appeared previously in multiple highly sophisticated pieces of state-sponsored malware—Guerrero-Saade found an innocuous-looking application called svcmgmt.exe.
+
+On closer examination, Guerrero-Saade discovered it contained a kernel driver—a piece of code designed to run at the deepest, most highly-privileged level of an operating system—called Fast16.sys, which appeared to have been compiled in 2005. (Guerrero-Saade declined to say who had uploaded the code to VirusTotal, because VirusTotal discourages users from trying to identify uploaders.)
+
+Yet in spite of Guerrero-Saade's discovery, it would take seven more years for anyone to determine what Fast16 actually did. Within the relatively small community of cybersecurity researchers interested in 14-year-old malware samples, most assumed at a first glance that it was a type of malware known as a rootkit, which takes the form of a kernel driver to better hide itself on a computer, typically for stealthy spying.
+
+Only three months ago did Guerrero-Saade's colleague at SentinelOne, Kamluk, decide to try reverse-engineering the Fast16 malware as part of an experiment in comparing his own skills to those of AI tools. Just two weeks ago, he made a surprising discovery: Fast16 was *not* a rootkit. (Five different top AI tools incorrectly said that it was.)
+
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Physics and Math
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Fernanda González
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Space
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Jorge Garay
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Deals
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Louryn Strampe
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Environment
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Aranza Bustamante
+![Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://media.wired.com/photos/6a3d9aa235acf7de1a65dc27/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://media.wired.com/photos/6a3e91c52a254c7dcc47c3d6/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://media.wired.com/photos/6a396b1e518be327f36b3895/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://media.wired.com/photos/6a3ef3589858133e592bac26/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+Instead, Kamluk saw that it was a self-spreading piece of code with very different intentions. Using what was referred to within the code as “wormlet” functionality, Fast16 is designed to copy itself to other computers on the network via Windows’ network share feature. It checks for a list of security applications, and if none are present, installs the Fast16.sys kernel driver on the target machine.
+
+That kernel driver then reads the code of applications as they're loaded into the computer's memory, monitoring for a long list of specific patterns—“rules” that allow it to identify when a target application is running. When it detects the target software, it carries out its apparent goal: silently altering the calculations the software is running to imperceptibly corrupt its results.
+
+“This actually had a very significant payload inside, and pretty much everybody who looked at it before had missed it,” says Costin Raiu, a researcher at security consultancy TLP:Black who previously led the team that included Kamluk and Guerrero-Saade at Russian security firm Kaspersky, which did early work analyzing Stuxnet and related malware. “This is designed to be a long-term, very subtle sabotage which probably would be very, very difficult to notice.”
+
+Searching for software that met the criteria of Fast16's “rules” for an intended sabotage target, Kamluk and Guerrero-Saade found their three candidates: the MOHID, PKPM, and LS-DYNA software. As for the “wormlet” feature, they believe that the spreading mechanism was designed so that when a victim double-checks their calculation or simulation results with a different computer in the same lab, that machine, too, will confirm the erroneous result, making the deception all the more difficult to discover or understand.
+
+In terms of other cybersabotage operations, only Stuxnet is remotely in the same class as Fast16, Guerrero-Saade argues. The complexity and sophistication of the malware, too, place it in Stuxnet's realm of high-priority, high-resource state-sponsored hacking. “There are few scenarios where you go through this kind of development effort for a covert operation,” Guerrero-Saade says. “Somebody bent a paradigm in order to slow down or damage or throw off a process that they considered to be of critical importance.”
+
+The Iran Hypothesis
+
+All of that fits the hypothesis that Fast16 might, like Stuxnet, have been aimed at disrupting Iran's ambitions of building a nuclear weapon. TLP:Black's Raiu argues that, beyond a mere possibility, targeting Iran represents the most likely explanation—a “medium-high confidence” theory that Fast16 was “designed as a cyber strike package” that targeted Iran's AMAD nuclear project, a plan by the regime of Ayatollah Khameini to obtain nuclear weapons in the early 2000s.
+
+“This is another dimension of cyberattacks, another way to to wage this cyberwar against Iran's nuclear program,” Raiu says.
+
+In fact, Guerrero-Saade and Kamluk point to a paper published by the Institute for Science and International Security, which collected public evidence of Iranian scientists carrying out research that could contribute to the development of a nuclear weapon. In several of those documented cases, the scientists' research used the LS-DYNA software that Guerrero-Saade and Kamluk found to have been a potential Fast16 target.
+
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Physics and Math
+[Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://www.wired.com/story/venezuelas-powerful-earthquakes-rare-seismic-doublet/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Fernanda González
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Space
+[How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://www.wired.com/story/how-to-see-1997-nc1-asteroid-pass-by-earth-this-weekend/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Jorge Garay
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Deals
+[Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://www.wired.com/story/amazon-prime-day-absolute-best-deals-06-27-2026/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Louryn Strampe
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  Environment
+[Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://www.wired.com/story/why-venezuelas-second-earthquake-so-damaging-to-buildings/#intcid=_wired-right-rail_3d902817-231b-4808-ad92-6c7716c2d9f7_popular4-2)
+
+  By Aranza Bustamante
+![Venezuela’s Powerful Earthquakes Were a Rare ‘Seismic Doublet’](https://media.wired.com/photos/6a3d9aa235acf7de1a65dc27/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![How to See the Giant Asteroid That Will Pass by Earth This Weekend](https://media.wired.com/photos/6a3e91c52a254c7dcc47c3d6/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Last Chance on the 62 Absolute Best Prime Day Deals Before They Slip Away](https://media.wired.com/photos/6a396b1e518be327f36b3895/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+![Why Venezuela’s Second Earthquake Was So Damaging to Buildings](https://media.wired.com/photos/6a3ef3589858133e592bac26/1:1/w_120%2Ch_120%2Cc_limit/undefined)
+
+One study, ISIS's paper notes, used LS-DYNA to compare the properties of two different explosives, PBXN-110 and Octol, that could be used to trigger a nuclear warhead. Octol, the paper notes, was a key component of Iran's AMAD project. Though that research paper comparing explosives' properties was published in 2018, Guerrero-Saade and Kamluk point out that LS-DYNA has been in use for decades, including during the time of the AMAD project.
+
+The researchers note, too, that Fast16 could well have been used more than once against different targets, even in different countries. The malware's code includes evidence of a “version control” system, along with clues that the sample Guerrero-Saade and Kamluk analyzed wasn't the first or only version of the tool. They and Raiu all point out—without drawing any conclusions—that North Korea's nuclear weapons development program also experienced numerous unexplained failures in the same time period. “With this level of development, they didn't make this to run it just one time,” says Guerrero-Saade.
+
+Synopsys, the California-based company that today maintains and sells LS-DYNA, declined WIRED's request for comment. WIRED also reached out to the developers of MOHID and the China Academy of Building Research, which develops PKPM, but didn't receive a response from either organization.
+
+Neither the NSA nor the Office of the Director of National Intelligence responded to WIRED's request for comment.
+
+Hypotheses about its target aside, Kamluk says the existence of a 21-year-old malware specimen capable of nearly undetectable tampering with safety-critical research and engineering represents a deeply disturbing, even paranoia-inducing discovery—one that makes him question his trust in the computers that have assured the safety of everything from trains to airplanes.
+
+“For any kind of disaster or catastrophe where people died in an accident,” Kamluk says, “you don't want to nurture these fears, but it naturally comes up: Was there a cyber angle?”
+
+The fact that Fast16 remained undetected for so long, however, suggests that it was likely used against only a small number of targets to maintain its stealth, says Johns Hopkins' Rid. That should offer anyone unnerved by the discovery of Fast16 some reassurance that their computers can still be trusted, he says—except for those who might actually be the target of a rare and highly sophisticated state-sponsored hacking operation.
+
+For those few potential victims, he says, Fast16 should rightfully induce distrust not just in today's computers, but in everything those machines have calculated, potentially stretching back decades. “If you're a very high-value intelligence target like a nuclear program in a country with potent adversaries, then maybe you can't trust your computers,” Rid says. “And even worse: you could *never* trust them.”
+
+Comments (2)
+
+Comments (2)
+
+Join the WIRED community to add comments.
+
+WC_2026
+DANBERT
+You Might Also Like
+
+**In your inbox:** [Inside WIRED’s newsroom with Katie Drummond](https://www.wired.com/newsletter/weekly?sourceCode=BottomStories)
+Peter Thiel’s [secretive ‘Dialog’ society](https://www.wired.com/story/leak-exposes-members-of-peter-thiels-secretive-dialog-society/)
+**Big Story:** 'Fishtank' is [the OnlyFans of reality TV](https://www.wired.com/story/interactive-violent-gross-inside-fishtank-the-unhinged-future-of-reality-tv/)
+How Apple is making your old iPhone [run faster and live longer](https://www.wired.com/story/how-apple-is-making-your-older-iphone-run-faster-and-stay-alive-longer/)
+**Special edition:** [The future of home](https://www.wired.com/future-of-home/)
+![](https://media.wired.com/photos/65e8363c8aa58009f1f54a9b/1:1/w_90%2Cc_limit/Andy%2520Greenberg.jpg)
+
+[X](https://www.twitter.com/a_greenberg)
+![Let a Discount Robot Mower Do Your Yard Work](https://media.wired.com/photos/6a2aad442915c6817b50fff5/16:9/w_640%2Cc_limit/undefined)
+
+![A Fatal Tesla Crash in Texas Sets Up a Legal Showdown](https://media.wired.com/photos/6a18b8219674f1db52295428/16:9/w_640%2Cc_limit/undefined)
+
+![The 27 Best Prime Day Beauty Deals on Tools and Products We Love](https://media.wired.com/photos/6a342b0819ec74e5dcd4e6ca/16:9/w_640%2Cc_limit/undefined)
+
+![Apple and Audi Alumni Have Made a Luxe EV Based on the Moon Buggy](https://media.wired.com/photos/6a3f04f5576bf7ee5cfb20ec/16:9/w_640%2Cc_limit/undefined)
+
+![Buy It For Life: The Moccamaster Coffee Maker Is $120 Off for Prime Day](https://media.wired.com/photos/6a29bec26f45b6c55c01d0d6/16:9/w_640%2Cc_limit/undefined)
+
+![I Met With China’s Top AI Experts. They’re Freaking Out, Too](https://media.wired.com/photos/6a3af3bc66e0743c653aa81f/16:9/w_640%2Cc_limit/undefined)
+
+![Two Massive Earthquakes Struck Venezuela. Thousands Are Feared Dead](https://media.wired.com/photos/6a30202e9402edb0adc1701d/16:9/w_640%2Cc_limit/undefined)
+
+![Colossal and the US Government Are Creating an Endangered Species ‘BioVault’](https://media.wired.com/photos/6a3e912435a32ef4cd784d63/16:9/w_640%2Cc_limit/undefined)
+
+![British Police Built a Sprawling Crime-Prediction Machine. Some Results Couldn’t Be Trusted](https://media.wired.com/photos/6a1f6447234d4b89dad80277/16:9/w_640%2Cc_limit/undefined)
+
+![World Cup Teams Are in a Race for AI Dominance](https://media.wired.com/photos/6a29f6fdf21b8119853af2d9/16:9/w_640%2Cc_limit/undefined)
+
+![The Best Amazon Prime Day Aerogarden Deal Is 63 Percent Off](https://media.wired.com/photos/6a2fc599a8e3255f0ac3665f/16:9/w_640%2Cc_limit/undefined)
+
+![Your Next TV Is Probably on Sale for Prime Day](https://media.wired.com/photos/6a2a474b0ce2fad63750beac/16:9/w_640%2Cc_limit/undefined)
+
+![WIRED](/verso/static/wired-us/assets/logo-reverse.svg)
+
+© 2026 Condé Nast. All rights reserved. *WIRED* may earn a portion of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. [Ad Choices](http://www.aboutads.info)
+
+Select international site
+
+[Italia](https://www.wired.it/)
+[Japón](https://wired.jp/)
+[Czech Republic & Slovakia](https://www.wired.cz/)
+[Facebook](https://www.facebook.com/wired/)
+[X](https://twitter.com/wired/)
+[Pinterest](https://pinterest.com/wired/)
+[YouTube](https://www.youtube.com/user/wired/)
+[Instagram](https://instagram.com/wired/)
+[Tiktok](https://www.tiktok.com/@wired?lang=en)

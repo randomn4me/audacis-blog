@@ -1,0 +1,245 @@
+Navigation Menu
+
+Search code, repositories, users, issues, pull requests...
+
+Provide feedback
+
+Saved searches
+
+Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+[![SVG Image](data:…) Sponsor](/sponsors/foostan)
+[![SVG Image](data:…)Notifications](/login?return_to=%2Ffoostan%2Fcrkbd)    You must be signed in to change notification settings
+[![SVG Image](data:…)Fork 1.1k](/login?return_to=%2Ffoostan%2Fcrkbd)
+[![SVG Image](data:…) Star 7.5k](/login?return_to=%2Ffoostan%2Fcrkbd)
+foostan/crkbd
+
+Folders and files
+
+![foostan](https://avatars.githubusercontent.com/u/736191?v=4&amp;size=40)
+
+![foostan](https://avatars.githubusercontent.com/u/736191?v=4&amp;size=40)
+
+![foostan](https://avatars.githubusercontent.com/u/736191?v=4&amp;size=40)
+
+Name  Name Last commit message Last commit date
+Latest commit
+
+[![foostan](https://avatars.githubusercontent.com/u/736191?v=4&amp;size=40)](/foostan)[foostan](/foostan/crkbd/commits?author=foostan)
+ [Merge pull request](/foostan/crkbd/commit/63366fb7f51cf2a796462fdd90527e99dd126055) [#294](https://github.com/foostan/crkbd/pull/294) [from lukasdo/patch-1](/foostan/crkbd/commit/63366fb7f51cf2a796462fdd90527e99dd126055)![SVG Image](data:…)
+
+Open commit detailsMay 10, 2025
+ [63366fb](/foostan/crkbd/commit/63366fb7f51cf2a796462fdd90527e99dd126055) · May 10, 2025
+History[![SVG Image](data:…)566 Commits](/foostan/crkbd/commits/main/)
+![SVG Image](data:…)
+
+Open commit details
+[![SVG Image](data:…)](/foostan/crkbd/commits/main/)566 Commits
+![SVG Image](data:…)
+
+[.github](/foostan/crkbd/tree/main/.github ".github")  ![SVG Image](data:…)
+
+[.github](/foostan/crkbd/tree/main/.github ".github") [Delete unnecessary workflow files](/foostan/crkbd/commit/9529328890a13e04b68da8830e94cf1d10397e59 "Delete unnecessary workflow files") Dec 15, 2023
+![SVG Image](data:…)
+
+[cases](/foostan/crkbd/tree/main/cases "cases")  ![SVG Image](data:…)
+
+[cases](/foostan/crkbd/tree/main/cases "cases") [Update for rev4.1.0](/foostan/crkbd/commit/cef7ec845e05212ded771feded82ea91f26e6f6e "Update for rev4.1.0") May 6, 2024
+![SVG Image](data:…)
+
+[docs](/foostan/crkbd/tree/main/docs "docs")  ![SVG Image](data:…)
+
+[docs](/foostan/crkbd/tree/main/docs "docs") [Fix typo in buildguide\_en.md](/foostan/crkbd/commit/755ab698ffe4911fcdf7b206d085c26efee2f182 "Fix typo in buildguide_en.md") Apr 14, 2025
+![SVG Image](data:…)
+
+[pcbs](/foostan/crkbd/tree/main/pcbs "pcbs")  ![SVG Image](data:…)
+
+[pcbs](/foostan/crkbd/tree/main/pcbs "pcbs") [Update for rev4.1.0](/foostan/crkbd/commit/cef7ec845e05212ded771feded82ea91f26e6f6e "Update for rev4.1.0") May 6, 2024
+![SVG Image](data:…)
+
+[plates](/foostan/crkbd/tree/main/plates "plates")  ![SVG Image](data:…)
+
+[plates](/foostan/crkbd/tree/main/plates "plates") [Update pcb plate files](/foostan/crkbd/commit/3bf9327b70363c154fe689c9570b57464f7f08cb "Update pcb plate files") Jan 26, 2024
+![SVG Image](data:…)
+
+[.gitignore](/foostan/crkbd/blob/main/.gitignore ".gitignore")  ![SVG Image](data:…)
+
+[.gitignore](/foostan/crkbd/blob/main/.gitignore ".gitignore") [Fix link to docs/firmware](/foostan/crkbd/commit/a90bb52e002406e6316c61d47cae9ddaa11a28aa "Fix link to docs/firmware") Dec 20, 2024
+![SVG Image](data:…)
+
+[LICENSE\_CC](/foostan/crkbd/blob/main/LICENSE_CC "LICENSE_CC")  ![SVG Image](data:…)
+
+[LICENSE\_CC](/foostan/crkbd/blob/main/LICENSE_CC "LICENSE_CC") [Update LICENSE](/foostan/crkbd/commit/3658b4753affc813d89247ae68bd21b4b35dd7bf "Update LICENSE") Dec 15, 2023
+![SVG Image](data:…)
+
+[LICENSE\_MIT](/foostan/crkbd/blob/main/LICENSE_MIT "LICENSE_MIT")  ![SVG Image](data:…)
+
+[LICENSE\_MIT](/foostan/crkbd/blob/main/LICENSE_MIT "LICENSE_MIT") [Update LICENSE](/foostan/crkbd/commit/3658b4753affc813d89247ae68bd21b4b35dd7bf "Update LICENSE") Dec 15, 2023
+![SVG Image](data:…)
+
+[Makefile](/foostan/crkbd/blob/main/Makefile "Makefile")  ![SVG Image](data:…)
+
+[Makefile](/foostan/crkbd/blob/main/Makefile "Makefile") [Update for rev4.1.0](/foostan/crkbd/commit/cef7ec845e05212ded771feded82ea91f26e6f6e "Update for rev4.1.0") May 6, 2024
+![SVG Image](data:…)
+
+[README.md](/foostan/crkbd/blob/main/README.md "README.md")  ![SVG Image](data:…)
+
+[README.md](/foostan/crkbd/blob/main/README.md "README.md") [Change word caution to notice](/foostan/crkbd/commit/4660ebedf9e950117b8244cbf7221f2fecfa3f23 "Change word caution to notice") Nov 15, 2024
+View all files
+
+Repository files navigation
+
+Corne keyboard
+
+The Corne keyboard is a split keyboard with 3x6 column staggered keys
+and 3 thumb keys, based on [Helix](https://github.com/MakotoKurauchi/helix).
+Crkbd stands for Corne Keyboard.
+
+![v4](https://private-user-images.githubusercontent.com/736191/313449315-bc32e4e8-f737-4516-b92b-55a7cb93a336.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMzEzNDQ5MzE1LWJjMzJlNGU4LWY3MzctNDUxNi1iOTJiLTU1YTdjYjkzYTMzNi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZmIyYjQ0ZWNhMTEyZWE2MmMwYmMwNTVhYmQ5YTdkNjFmZTgxMmRjMmEwYzA2NGQxMmQ1YmRlYjUxZDM2MTBiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.JSLd0wnadMKcmNUslOdWttNIy32RRxa3VJiH8EAxDd8)
+
+[![v4](https://private-user-images.githubusercontent.com/736191/313449315-bc32e4e8-f737-4516-b92b-55a7cb93a336.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMzEzNDQ5MzE1LWJjMzJlNGU4LWY3MzctNDUxNi1iOTJiLTU1YTdjYjkzYTMzNi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZmIyYjQ0ZWNhMTEyZWE2MmMwYmMwNTVhYmQ5YTdkNjFmZTgxMmRjMmEwYzA2NGQxMmQ1YmRlYjUxZDM2MTBiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.JSLd0wnadMKcmNUslOdWttNIy32RRxa3VJiH8EAxDd8)](https://private-user-images.githubusercontent.com/736191/313449315-bc32e4e8-f737-4516-b92b-55a7cb93a336.jpg?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMzEzNDQ5MzE1LWJjMzJlNGU4LWY3MzctNDUxNi1iOTJiLTU1YTdjYjkzYTMzNi5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZmIyYjQ0ZWNhMTEyZWE2MmMwYmMwNTVhYmQ5YTdkNjFmZTgxMmRjMmEwYzA2NGQxMmQ1YmRlYjUxZDM2MTBiJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZqcGVnIn0.JSLd0wnadMKcmNUslOdWttNIy32RRxa3VJiH8EAxDd8)
+
+Latest versions
+
+corne-cherry: for Cherry MX compatible switches
+
+  * v4 Hotswappable ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v4/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v4/buildguide_en.md))
+  * v4 Soldering (will be released)
+corne-chocolate: for Kailh choc v1 and v2 switches
+
+  * v4 Hotswappable ([JP](/foostan/crkbd/blob/main/docs/corne-chocolate/v4/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-chocolate/v4/buildguide_en.md)):
+  * v4 Soldering (will be released)
+v4 Hotswappable ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v4/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v4/buildguide_en.md))
+v4 Soldering (will be released)
+v4 Hotswappable ([JP](/foostan/crkbd/blob/main/docs/corne-chocolate/v4/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-chocolate/v4/buildguide_en.md)):
+v4 Soldering (will be released)
+Old versions
+
+corne-classic: for Cherry MX compatible switches
+  * v1 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-classic/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-classic/buildguide_en.md))
+corne-cherry: for Cherry MX compatible switches
+  * v2 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_en.md))
+  * v2 Hotswappable tilting version: ([tilting, JP](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_tilting_tenting_plate_jp.md)/[tilting, EN](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_tilting_tenting_plate_en.md)):
+  * v3 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v3/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v3/buildguide_en.md))
+corne-chocolate: for Kailh choc v1 switches
+  * v2 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-chocolate/v2/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-chocolate/v2/buildguide_en.md)):
+corne-light: for easy build with a simple PCB
+  * v1 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-light/v1/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-light/v1/buildguide_en.md)):
+  * v2 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-light/v2/buildguide_low_edition_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-light/v2/buildguide_low_edition_en.md)):
+v1 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-classic/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-classic/buildguide_en.md))
+v2 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_en.md))
+v2 Hotswappable tilting version: ([tilting, JP](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_tilting_tenting_plate_jp.md)/[tilting, EN](/foostan/crkbd/blob/main/docs/corne-cherry/v2/buildguide_tilting_tenting_plate_en.md)):
+v3 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-cherry/v3/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-cherry/v3/buildguide_en.md))
+v2 Hotswappable: ([JP](/foostan/crkbd/blob/main/docs/corne-chocolate/v2/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-chocolate/v2/buildguide_en.md)):
+v1 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-light/v1/buildguide_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-light/v1/buildguide_en.md)):
+v2 Soldering: ([JP](/foostan/crkbd/blob/main/docs/corne-light/v2/buildguide_low_edition_jp.md)/[EN](/foostan/crkbd/blob/main/docs/corne-light/v2/buildguide_low_edition_en.md)):
+Notice
+
+There are currently reports of a bug in v4.* caused by electromagnetic interference. Depending on the environment, one or both of the left and right keyboards may stop working. It is known that this is often caused by EMI emitted by mobile phones. If you experience this kind of problem, reconnect the USB, move the EMI-generating device (probably a mobile phone) more than 30 cm away from the keyboard, and observe the situation.
+
+For more details, please see this issue. We look forward to receiving any new information. [#265](https://github.com/foostan/crkbd/issues/265)
+
+Images
+
+Cherry
+
+![corne-cherry](https://private-user-images.githubusercontent.com/736191/290865239-f954ba89-a711-4866-a535-bad0bed937d1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY1MjM5LWY5NTRiYTg5LWE3MTEtNDg2Ni1hNTM1LWJhZDBiZWQ5MzdkMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZDQ2MmJmNWJjZTZhZGM2ZTY0ZTIyNzllOTViMWU5YmVhMzM0ODE2OGU1OTk0NTZiZjgyNzllNDMyNTc5MDhmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.yi5HSVdWaRnJdRqtkXwKVuaoMkYB1qyK3zejhOVe59I)
+
+![image](https://private-user-images.githubusercontent.com/736191/290853756-6a6705d2-40fb-4463-8006-6b7ca97dc0ff.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzNzU2LTZhNjcwNWQyLTQwZmItNDQ2My04MDA2LTZiN2NhOTdkYzBmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZWE4Mzk2ZjU3ZTAwNmE4NTFiOWRlY2RlOGEyZGEwODM3NmM0YTNiMzNhYzBiOTQ3MTMyMDFlOTViMDVjZGZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.CSfEoJFSQOD5SUtwvMP7m4buhWUOmgN32flWOKo6ZVs)
+
+![image](https://private-user-images.githubusercontent.com/736191/290853810-20407f6c-0f2e-41ea-8cd6-17d46d9be0a2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzODEwLTIwNDA3ZjZjLTBmMmUtNDFlYS04Y2Q2LTE3ZDQ2ZDliZTBhMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjM1ZTE3NTYzMWY2ZDY5NGJjOGQwOWFlZDNjOThmYzQ0NjI2MGM1Y2E0MjM1NTRmYzBmZGJiNWJiOWYxNmIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mp8inw3X2f5BmyUbk8SxqFmn1xqUNGhiHIT41Lv2JKY)
+
+[![corne-cherry](https://private-user-images.githubusercontent.com/736191/290865239-f954ba89-a711-4866-a535-bad0bed937d1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY1MjM5LWY5NTRiYTg5LWE3MTEtNDg2Ni1hNTM1LWJhZDBiZWQ5MzdkMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZDQ2MmJmNWJjZTZhZGM2ZTY0ZTIyNzllOTViMWU5YmVhMzM0ODE2OGU1OTk0NTZiZjgyNzllNDMyNTc5MDhmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.yi5HSVdWaRnJdRqtkXwKVuaoMkYB1qyK3zejhOVe59I)](https://private-user-images.githubusercontent.com/736191/290865239-f954ba89-a711-4866-a535-bad0bed937d1.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY1MjM5LWY5NTRiYTg5LWE3MTEtNDg2Ni1hNTM1LWJhZDBiZWQ5MzdkMS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT03ZDQ2MmJmNWJjZTZhZGM2ZTY0ZTIyNzllOTViMWU5YmVhMzM0ODE2OGU1OTk0NTZiZjgyNzllNDMyNTc5MDhmJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.yi5HSVdWaRnJdRqtkXwKVuaoMkYB1qyK3zejhOVe59I) [![image](https://private-user-images.githubusercontent.com/736191/290853756-6a6705d2-40fb-4463-8006-6b7ca97dc0ff.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzNzU2LTZhNjcwNWQyLTQwZmItNDQ2My04MDA2LTZiN2NhOTdkYzBmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZWE4Mzk2ZjU3ZTAwNmE4NTFiOWRlY2RlOGEyZGEwODM3NmM0YTNiMzNhYzBiOTQ3MTMyMDFlOTViMDVjZGZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.CSfEoJFSQOD5SUtwvMP7m4buhWUOmgN32flWOKo6ZVs)](https://private-user-images.githubusercontent.com/736191/290853756-6a6705d2-40fb-4463-8006-6b7ca97dc0ff.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzNzU2LTZhNjcwNWQyLTQwZmItNDQ2My04MDA2LTZiN2NhOTdkYzBmZi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kZWE4Mzk2ZjU3ZTAwNmE4NTFiOWRlY2RlOGEyZGEwODM3NmM0YTNiMzNhYzBiOTQ3MTMyMDFlOTViMDVjZGZhJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.CSfEoJFSQOD5SUtwvMP7m4buhWUOmgN32flWOKo6ZVs) [![image](https://private-user-images.githubusercontent.com/736191/290853810-20407f6c-0f2e-41ea-8cd6-17d46d9be0a2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzODEwLTIwNDA3ZjZjLTBmMmUtNDFlYS04Y2Q2LTE3ZDQ2ZDliZTBhMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjM1ZTE3NTYzMWY2ZDY5NGJjOGQwOWFlZDNjOThmYzQ0NjI2MGM1Y2E0MjM1NTRmYzBmZGJiNWJiOWYxNmIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mp8inw3X2f5BmyUbk8SxqFmn1xqUNGhiHIT41Lv2JKY)](https://private-user-images.githubusercontent.com/736191/290853810-20407f6c-0f2e-41ea-8cd6-17d46d9be0a2.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODUzODEwLTIwNDA3ZjZjLTBmMmUtNDFlYS04Y2Q2LTE3ZDQ2ZDliZTBhMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1hNjM1ZTE3NTYzMWY2ZDY5NGJjOGQwOWFlZDNjOThmYzQ0NjI2MGM1Y2E0MjM1NTRmYzBmZGJiNWJiOWYxNmIxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.mp8inw3X2f5BmyUbk8SxqFmn1xqUNGhiHIT41Lv2JKY)
+
+Chocolate
+
+![corne-chocolate](https://private-user-images.githubusercontent.com/736191/290868216-fb0e6962-76b3-4bd5-8093-83ccc1a17029.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY4MjE2LWZiMGU2OTYyLTc2YjMtNGJkNS04MDkzLTgzY2NjMWExNzAyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YzZjNTI4NTgzZTk0OTZjYmFjYjgzMjUwNjQ4MmMzNzc3Zjk3YmNhNDZhZGQ2MzUwOGQ2OTdjMmM1NTE3MjNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.aT9YkUQInQZZfCigXpGr6QWqFyI9V9iBHchFFuu5CGA)
+
+![image](https://private-user-images.githubusercontent.com/736191/290854177-610f9964-3adf-459b-88ad-9e9f29d5f659.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MTc3LTYxMGY5OTY0LTNhZGYtNDU5Yi04OGFkLTllOWYyOWQ1ZjY1OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDJhYjhmOTJlMzU5ZGE1N2JiNjJkZGI3YzExNjE2ZGU1ZDZhZGM5NzJjOWViYWQyMmZkZDMzMTUyZDZhNmU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bxHWwPmRK87K-sw_tg_4L0dWNII9KFXY51re5aTbaA0)
+
+![image](https://private-user-images.githubusercontent.com/736191/290854349-134db4dd-0c48-4a5f-bf75-97b8e652be22.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MzQ5LTEzNGRiNGRkLTBjNDgtNGE1Zi1iZjc1LTk3YjhlNjUyYmUyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNGYxZTc3YjYxMTI5OGUzYmJiMGIwYzFjNWI5YTUxZjA0YzMzMTgwN2ViYTBjZjkyNjQ1M2Y4NjM3MjIzZjY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.C2CLKJFvREiWFTOrfqahSjyMnWtHEDfyMdmlFGeJ3Dg)
+
+[![corne-chocolate](https://private-user-images.githubusercontent.com/736191/290868216-fb0e6962-76b3-4bd5-8093-83ccc1a17029.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY4MjE2LWZiMGU2OTYyLTc2YjMtNGJkNS04MDkzLTgzY2NjMWExNzAyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YzZjNTI4NTgzZTk0OTZjYmFjYjgzMjUwNjQ4MmMzNzc3Zjk3YmNhNDZhZGQ2MzUwOGQ2OTdjMmM1NTE3MjNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.aT9YkUQInQZZfCigXpGr6QWqFyI9V9iBHchFFuu5CGA)](https://private-user-images.githubusercontent.com/736191/290868216-fb0e6962-76b3-4bd5-8093-83ccc1a17029.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODY4MjE2LWZiMGU2OTYyLTc2YjMtNGJkNS04MDkzLTgzY2NjMWExNzAyOS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05YzZjNTI4NTgzZTk0OTZjYmFjYjgzMjUwNjQ4MmMzNzc3Zjk3YmNhNDZhZGQ2MzUwOGQ2OTdjMmM1NTE3MjNkJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.aT9YkUQInQZZfCigXpGr6QWqFyI9V9iBHchFFuu5CGA) [![image](https://private-user-images.githubusercontent.com/736191/290854177-610f9964-3adf-459b-88ad-9e9f29d5f659.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MTc3LTYxMGY5OTY0LTNhZGYtNDU5Yi04OGFkLTllOWYyOWQ1ZjY1OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDJhYjhmOTJlMzU5ZGE1N2JiNjJkZGI3YzExNjE2ZGU1ZDZhZGM5NzJjOWViYWQyMmZkZDMzMTUyZDZhNmU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bxHWwPmRK87K-sw_tg_4L0dWNII9KFXY51re5aTbaA0)](https://private-user-images.githubusercontent.com/736191/290854177-610f9964-3adf-459b-88ad-9e9f29d5f659.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MTc3LTYxMGY5OTY0LTNhZGYtNDU5Yi04OGFkLTllOWYyOWQ1ZjY1OS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0zMDJhYjhmOTJlMzU5ZGE1N2JiNjJkZGI3YzExNjE2ZGU1ZDZhZGM5NzJjOWViYWQyMmZkZDMzMTUyZDZhNmU5JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.bxHWwPmRK87K-sw_tg_4L0dWNII9KFXY51re5aTbaA0) [![image](https://private-user-images.githubusercontent.com/736191/290854349-134db4dd-0c48-4a5f-bf75-97b8e652be22.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MzQ5LTEzNGRiNGRkLTBjNDgtNGE1Zi1iZjc1LTk3YjhlNjUyYmUyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNGYxZTc3YjYxMTI5OGUzYmJiMGIwYzFjNWI5YTUxZjA0YzMzMTgwN2ViYTBjZjkyNjQ1M2Y4NjM3MjIzZjY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.C2CLKJFvREiWFTOrfqahSjyMnWtHEDfyMdmlFGeJ3Dg)](https://private-user-images.githubusercontent.com/736191/290854349-134db4dd-0c48-4a5f-bf75-97b8e652be22.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwODU0MzQ5LTEzNGRiNGRkLTBjNDgtNGE1Zi1iZjc1LTk3YjhlNjUyYmUyMi5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNGYxZTc3YjYxMTI5OGUzYmJiMGIwYzFjNWI5YTUxZjA0YzMzMTgwN2ViYTBjZjkyNjQ1M2Y4NjM3MjIzZjY4JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.C2CLKJFvREiWFTOrfqahSjyMnWtHEDfyMdmlFGeJ3Dg)
+
+Drawing
+
+![sketche](https://private-user-images.githubusercontent.com/736191/290963885-87ebea53-3c5c-42a1-97b3-f9292e4dacae.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwOTYzODg1LTg3ZWJlYTUzLTNjNWMtNDJhMS05N2IzLWY5MjkyZTRkYWNhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZWUzYjNmNGYzN2I0MjYxN2Q2MWExNWNhYjdkNDg1MWU0NGY4NmUzYWQ4MGQyYmRmNTNmYzA5YmFjMWUwNDY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.JgpxbsJUCp3dKcwbUFn888m5TIeOcceVwE0bJe_Q3NA)
+
+[![sketche](https://private-user-images.githubusercontent.com/736191/290963885-87ebea53-3c5c-42a1-97b3-f9292e4dacae.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwOTYzODg1LTg3ZWJlYTUzLTNjNWMtNDJhMS05N2IzLWY5MjkyZTRkYWNhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZWUzYjNmNGYzN2I0MjYxN2Q2MWExNWNhYjdkNDg1MWU0NGY4NmUzYWQ4MGQyYmRmNTNmYzA5YmFjMWUwNDY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.JgpxbsJUCp3dKcwbUFn888m5TIeOcceVwE0bJe_Q3NA)](https://private-user-images.githubusercontent.com/736191/290963885-87ebea53-3c5c-42a1-97b3-f9292e4dacae.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4OTAsIm5iZiI6MTc4MjY3MDU5MCwicGF0aCI6Ii83MzYxOTEvMjkwOTYzODg1LTg3ZWJlYTUzLTNjNWMtNDJhMS05N2IzLWY5MjkyZTRkYWNhZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjYwNjI4JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI2MDYyOFQxODE2MzBaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1jZWUzYjNmNGYzN2I0MjYxN2Q2MWExNWNhYjdkNDg1MWU0NGY4NmUzYWQ4MGQyYmRmNTNmYzA5YmFjMWUwNDY1JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZyZXNwb25zZS1jb250ZW50LXR5cGU9aW1hZ2UlMkZwbmcifQ.JgpxbsJUCp3dKcwbUFn888m5TIeOcceVwE0bJe_Q3NA)
+
+About
+
+Corne keyboard, a split keyboard with 3x6 column staggered keys and 3 thumb keys.
+
+Topics
+
+Resources
+
+License
+
+Licenses found
+
+Stars
+
+Watchers
+
+Forks
+
+[Releases 9](/foostan/crkbd/releases)
+
+Sponsor this project
+
+![@foostan](https://avatars.githubusercontent.com/u/736191?s=64&amp;v=4)
+
+[Packages](/users/foostan/packages?repo_name=crkbd)
+
+[Contributors 29](/foostan/crkbd/graphs/contributors)
+
+[![@foostan](https://avatars.githubusercontent.com/u/736191?s=64&amp;v=4)](https://github.com/foostan)
+[![@hoijui](https://avatars.githubusercontent.com/u/42907?s=64&amp;v=4)](https://github.com/hoijui)
+[![@jamesottaway](https://avatars.githubusercontent.com/u/19584?s=64&amp;v=4)](https://github.com/jamesottaway)
+[![@Naycon](https://avatars.githubusercontent.com/u/5037505?s=64&amp;v=4)](https://github.com/Naycon)
+[![@waffle87](https://avatars.githubusercontent.com/u/59737601?s=64&amp;v=4)](https://github.com/waffle87)
+[![@ryo1kato](https://avatars.githubusercontent.com/u/185990?s=64&amp;v=4)](https://github.com/ryo1kato)
+[![@simonwjackson](https://avatars.githubusercontent.com/u/189379?s=64&amp;v=4)](https://github.com/simonwjackson)
+[![@ceceba223](https://avatars.githubusercontent.com/u/50899662?s=64&amp;v=4)](https://github.com/ceceba223)
+[![@marby3](https://avatars.githubusercontent.com/u/64513524?s=64&amp;v=4)](https://github.com/marby3)
+[![@sol](https://avatars.githubusercontent.com/u/461132?s=64&amp;v=4)](https://github.com/sol)
+[![@igorhideki](https://avatars.githubusercontent.com/u/7569938?s=64&amp;v=4)](https://github.com/igorhideki)
+[![@paulrobshannon](https://avatars.githubusercontent.com/u/11061502?s=64&amp;v=4)](https://github.com/paulrobshannon)
+[![@carbncl](https://avatars.githubusercontent.com/u/65703892?s=64&amp;v=4)](https://github.com/carbncl)
+[![@yoichiro](https://avatars.githubusercontent.com/u/261787?s=64&amp;v=4)](https://github.com/yoichiro)
+![@foostan](https://avatars.githubusercontent.com/u/736191?s=64&amp;v=4)
+
+![@hoijui](https://avatars.githubusercontent.com/u/42907?s=64&amp;v=4)
+
+![@jamesottaway](https://avatars.githubusercontent.com/u/19584?s=64&amp;v=4)
+
+![@Naycon](https://avatars.githubusercontent.com/u/5037505?s=64&amp;v=4)
+
+![@waffle87](https://avatars.githubusercontent.com/u/59737601?s=64&amp;v=4)
+
+![@ryo1kato](https://avatars.githubusercontent.com/u/185990?s=64&amp;v=4)
+
+![@simonwjackson](https://avatars.githubusercontent.com/u/189379?s=64&amp;v=4)
+
+![@ceceba223](https://avatars.githubusercontent.com/u/50899662?s=64&amp;v=4)
+
+![@marby3](https://avatars.githubusercontent.com/u/64513524?s=64&amp;v=4)
+
+![@sol](https://avatars.githubusercontent.com/u/461132?s=64&amp;v=4)
+
+![@igorhideki](https://avatars.githubusercontent.com/u/7569938?s=64&amp;v=4)
+
+![@paulrobshannon](https://avatars.githubusercontent.com/u/11061502?s=64&amp;v=4)
+
+![@carbncl](https://avatars.githubusercontent.com/u/65703892?s=64&amp;v=4)
+
+![@yoichiro](https://avatars.githubusercontent.com/u/261787?s=64&amp;v=4)
+
+Languages
+
+[![SVG Image](data:…) Makefile 100.0%](/foostan/crkbd/search?l=makefile)
+Footer

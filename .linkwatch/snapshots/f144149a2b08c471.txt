@@ -1,0 +1,9 @@
+![Icon for superuser.com](/favicon.ico)
+
+superuser.com
+
+Performing security verification
+
+This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.
+
+Verification successful. Waiting for superuser.com to respond

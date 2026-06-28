@@ -1,0 +1,111 @@
+Your Sparring Partner for Cybersecurity
+
+We automate manual cybersecurity tasks for security teams. Our agentic pipeline of specialised AI agents collects and analyses unstructured external threat information, reducing workload and delivering actionable intelligence for organisations of any size.
+
+![Serify](/images/logos/logo.svg)
+
+Built for European Sovereignty and Freedom
+
+No vendor lock-in. Open standards. Your choice of deployment and models.
+
+European Cloud Infrastructure
+
+Hosted entirely within the EU on European cloud providers. Full compliance with GDPR, NIS2, DORA, and the Cyber Resilience Act. Data sovereignty guaranteed.
+
+Open Data Formats
+
+Native support for STIX, MISP, and industry-standard formats. Export your data anytime. Integrate seamlessly with existing security tools.
+
+Model-Agnostic Architecture
+
+Bring your own LLM. Use local open-weight models or commercial APIs. Switch providers without platform migration. True flexibility.
+
+Privacy-First & Infrastructure-Aware
+
+No mandatory telemetry or monitoring agents on your systems. Optionally upload your software and hardware inventory so Serify filters incoming threat reports to what is actually relevant to your stack. Privacy by default.
+
+Agentic Multi-Agent Pipeline
+
+Eight specialised AI agents work in parallel to extract IOCs, TTPs, threat actors, CVEs, campaigns, C2 infrastructure, kill-chain phases, and defensive measures. Security analysts spend the majority of their time on manual tasks. We automate around 50% of that workload.
+
+Cybersecurity Knowledge Graph
+
+A continuously updated graph database mapping relationships between threat actors, vulnerabilities, campaigns, and infrastructure. Ask complex correlation queries in natural language. No graph query syntax required.
+
+Flexible Deployment
+
+SaaS for immediate access or on-premise for regulated environments. Hybrid options available. Your infrastructure requirements drive the architecture.
+
+Built for Real-World Security Work
+
+From daily operations to strategic planning: concrete workflows that save analyst hours every day.
+
+Daily Vulnerability Briefing
+
+Start every day with a concise summary of critical and high-severity CVEs published in the last 24 hours, automatically filtered to your technology stack.
+
+"Summarise critical vulnerabilities affecting our Kubernetes and nginx stack published this week, with active exploit availability."
+
+Incident Investigation Support
+
+During active incident response, rapidly contextualise any IOC (IP, domain, or file hash) with associated campaigns, threat actors, and related indicators.
+
+"What do you know about 185.220.101.x? Any links to known ransomware campaigns or recent C2 activity?"
+
+Threat Landscape Analysis
+
+Generate sector-specific threat actor briefings for strategic planning, risk assessments, and board-level reporting without hours of manual research.
+
+"Which threat actors have been most active targeting European financial services in the last 90 days, and what TTPs are they using?"
+
+Vulnerability Prioritisation
+
+Go beyond CVSS scores. Prioritise remediation based on real-world exploit availability, active exploitation in the wild, and relevance to your specific environment.
+
+"Which of these open CVEs have known working exploits and are being actively exploited this quarter?"
+
+EU Regulation Is Driving Structural Demand
+
+Three interconnected EU frameworks are forcing organisations to automate their threat intelligence workflows or fall short on compliance.
+
+Expands mandatory cybersecurity requirements to 100,000–350,000 organisations across 18 sectors. Includes a 24-hour incident reporting obligation for organisations with 50+ employees or €10M+ revenue.
+
+Covers 22,000+ financial institutions with a strict 4-hour reporting requirement for major incidents. Manual detection and classification processes cannot reliably meet this deadline.
+
+The Cyber Resilience Act requires 24-hour disclosure of actively exploited vulnerabilities in digital products, creating direct structural demand for automated vulnerability monitoring.
+
+Serify automates incident detection, classification, triage, and pre-filled reporting workflows that make compliance with these requirements operationally viable.
+
+Supported By
+
+We collaborate with leading institutions in cybersecurity research and practice.
+
+![TU Darmstadt](https://serify.eu/processed_images/tuda.a590aa88971ce915.webp)
+
+![PEASEC](https://serify.eu/processed_images/peasec.501f4f0af53a1817.webp)
+
+![HIGHEST](https://serify.eu/processed_images/logo-highest.c9fe3fb6d8403729.webp)
+
+![MILS](https://serify.eu/processed_images/mils.f3b55ac7cbc95c14.webp)
+
+![hub31](https://serify.eu/processed_images/hub31.2c85215ae7073bb7.webp)
+
+![Futury](https://serify.eu/processed_images/futury.a892c0887795fb75.webp)
+
+Latest News
+
+Updates from Serify: funding, research, and what we're building.
+
+FIRST CTI 2026: The Conference CTI Needed
+
+FIRST CTI 2026: Intelligence That Actually Serves Someone
+
+NIST Is Triaging. Europe Is Not Ready. The Vulnerability Intelligence Gap Just Got Real.
+
+Ready to enhance your security operations?
+
+Join security teams leveraging AI-powered intelligence to protect their organisations, from CSIRTs and SOCs to NIS2-regulated enterprises.
+
+![Serify](/images/logos/logo.svg)
+
+Your Sparring Partner for Cybersecurity

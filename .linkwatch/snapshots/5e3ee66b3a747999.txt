@@ -1,0 +1,330 @@
+Navigation Menu
+
+Search code, repositories, users, issues, pull requests...
+
+Provide feedback
+
+Saved searches
+
+Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+[![SVG Image](data:…)Notifications](/login?return_to=%2Frandomn4me%2Fcrontab-to-launchd)    You must be signed in to change notification settings
+[![SVG Image](data:…)Fork 0](/login?return_to=%2Frandomn4me%2Fcrontab-to-launchd)
+[![SVG Image](data:…) Star 1](/login?return_to=%2Frandomn4me%2Fcrontab-to-launchd)
+randomn4me/crontab-to-launchd
+
+Folders and files
+
+![randomn4me](https://avatars.githubusercontent.com/u/11135892?v=4&amp;size=40)
+
+![randomn4me](https://avatars.githubusercontent.com/u/11135892?v=4&amp;size=40)
+
+![randomn4me](https://avatars.githubusercontent.com/u/11135892?v=4&amp;size=40)
+
+Name  Name Last commit message Last commit date
+Latest commit
+
+[![randomn4me](https://avatars.githubusercontent.com/u/11135892?v=4&amp;size=40)](/randomn4me)[randomn4me](/randomn4me/crontab-to-launchd/commits?author=randomn4me)
+ [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7)![SVG Image](data:…)
+
+Open commit detailsSep 6, 2025
+ [6edbcde](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7) · Sep 6, 2025
+History[![SVG Image](data:…)2 Commits](/randomn4me/crontab-to-launchd/commits/main/)
+![SVG Image](data:…)
+
+Open commit details
+[![SVG Image](data:…)](/randomn4me/crontab-to-launchd/commits/main/)2 Commits
+![SVG Image](data:…)
+
+[src/crontab\_to\_launchd](/randomn4me/crontab-to-launchd/tree/main/src/crontab_to_launchd "This path skips through empty directories")  ![SVG Image](data:…)
+
+[src/crontab\_to\_launchd](/randomn4me/crontab-to-launchd/tree/main/src/crontab_to_launchd "This path skips through empty directories") [refactor: restructure project to use src/ directory layout](/randomn4me/crontab-to-launchd/commit/09bdc603c909af8cef8ab4e4ecb686756961c9eb "refactor: restructure project to use src/ directory layout
+
+- Move Python package from root to src/crontab_to_launchd/
+- Update setup.py with package_dir configuration for src layout
+- Update all utility scripts with correct import paths
+- All 83 tests continue to pass with new structure") Sep 5, 2025
+![SVG Image](data:…)
+
+[tests](/randomn4me/crontab-to-launchd/tree/main/tests "tests")  ![SVG Image](data:…)
+
+[tests](/randomn4me/crontab-to-launchd/tree/main/tests "tests") [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7 "docs: add README and requirements.txt, clean up project
+
+- Add comprehensive README with installation and usage instructions
+- Create requirements.txt for development dependencies
+- Add MIT license file
+- Remove unnecessary utility scripts (examples.py, validate_plist.py, test_real_world_examples.py)
+- Remove documentation files (DEPENDENCIES.md, VALIDATION_SUMMARY.md)
+- Add default Nix app for crontab-to-launchd conversion
+- Add test runner Nix app
+- Clean up project structure") Sep 6, 2025
+![SVG Image](data:…)
+
+[.envrc](/randomn4me/crontab-to-launchd/blob/main/.envrc ".envrc")  ![SVG Image](data:…)
+
+[.envrc](/randomn4me/crontab-to-launchd/blob/main/.envrc ".envrc") [refactor: restructure project to use src/ directory layout](/randomn4me/crontab-to-launchd/commit/09bdc603c909af8cef8ab4e4ecb686756961c9eb "refactor: restructure project to use src/ directory layout
+
+- Move Python package from root to src/crontab_to_launchd/
+- Update setup.py with package_dir configuration for src layout
+- Update all utility scripts with correct import paths
+- All 83 tests continue to pass with new structure") Sep 5, 2025
+![SVG Image](data:…)
+
+[.gitignore](/randomn4me/crontab-to-launchd/blob/main/.gitignore ".gitignore")  ![SVG Image](data:…)
+
+[.gitignore](/randomn4me/crontab-to-launchd/blob/main/.gitignore ".gitignore") [refactor: restructure project to use src/ directory layout](/randomn4me/crontab-to-launchd/commit/09bdc603c909af8cef8ab4e4ecb686756961c9eb "refactor: restructure project to use src/ directory layout
+
+- Move Python package from root to src/crontab_to_launchd/
+- Update setup.py with package_dir configuration for src layout
+- Update all utility scripts with correct import paths
+- All 83 tests continue to pass with new structure") Sep 5, 2025
+![SVG Image](data:…)
+
+[LICENSE.md](/randomn4me/crontab-to-launchd/blob/main/LICENSE.md "LICENSE.md")  ![SVG Image](data:…)
+
+[LICENSE.md](/randomn4me/crontab-to-launchd/blob/main/LICENSE.md "LICENSE.md") [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7 "docs: add README and requirements.txt, clean up project
+
+- Add comprehensive README with installation and usage instructions
+- Create requirements.txt for development dependencies
+- Add MIT license file
+- Remove unnecessary utility scripts (examples.py, validate_plist.py, test_real_world_examples.py)
+- Remove documentation files (DEPENDENCIES.md, VALIDATION_SUMMARY.md)
+- Add default Nix app for crontab-to-launchd conversion
+- Add test runner Nix app
+- Clean up project structure") Sep 6, 2025
+![SVG Image](data:…)
+
+[README.md](/randomn4me/crontab-to-launchd/blob/main/README.md "README.md")  ![SVG Image](data:…)
+
+[README.md](/randomn4me/crontab-to-launchd/blob/main/README.md "README.md") [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7 "docs: add README and requirements.txt, clean up project
+
+- Add comprehensive README with installation and usage instructions
+- Create requirements.txt for development dependencies
+- Add MIT license file
+- Remove unnecessary utility scripts (examples.py, validate_plist.py, test_real_world_examples.py)
+- Remove documentation files (DEPENDENCIES.md, VALIDATION_SUMMARY.md)
+- Add default Nix app for crontab-to-launchd conversion
+- Add test runner Nix app
+- Clean up project structure") Sep 6, 2025
+![SVG Image](data:…)
+
+[flake.lock](/randomn4me/crontab-to-launchd/blob/main/flake.lock "flake.lock")  ![SVG Image](data:…)
+
+[flake.lock](/randomn4me/crontab-to-launchd/blob/main/flake.lock "flake.lock") [refactor: restructure project to use src/ directory layout](/randomn4me/crontab-to-launchd/commit/09bdc603c909af8cef8ab4e4ecb686756961c9eb "refactor: restructure project to use src/ directory layout
+
+- Move Python package from root to src/crontab_to_launchd/
+- Update setup.py with package_dir configuration for src layout
+- Update all utility scripts with correct import paths
+- All 83 tests continue to pass with new structure") Sep 5, 2025
+![SVG Image](data:…)
+
+[flake.nix](/randomn4me/crontab-to-launchd/blob/main/flake.nix "flake.nix")  ![SVG Image](data:…)
+
+[flake.nix](/randomn4me/crontab-to-launchd/blob/main/flake.nix "flake.nix") [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7 "docs: add README and requirements.txt, clean up project
+
+- Add comprehensive README with installation and usage instructions
+- Create requirements.txt for development dependencies
+- Add MIT license file
+- Remove unnecessary utility scripts (examples.py, validate_plist.py, test_real_world_examples.py)
+- Remove documentation files (DEPENDENCIES.md, VALIDATION_SUMMARY.md)
+- Add default Nix app for crontab-to-launchd conversion
+- Add test runner Nix app
+- Clean up project structure") Sep 6, 2025
+![SVG Image](data:…)
+
+[requirements.txt](/randomn4me/crontab-to-launchd/blob/main/requirements.txt "requirements.txt")  ![SVG Image](data:…)
+
+[requirements.txt](/randomn4me/crontab-to-launchd/blob/main/requirements.txt "requirements.txt") [docs: add README and requirements.txt, clean up project](/randomn4me/crontab-to-launchd/commit/6edbcdead61781b33eb472b5efee06dfee5736f7 "docs: add README and requirements.txt, clean up project
+
+- Add comprehensive README with installation and usage instructions
+- Create requirements.txt for development dependencies
+- Add MIT license file
+- Remove unnecessary utility scripts (examples.py, validate_plist.py, test_real_world_examples.py)
+- Remove documentation files (DEPENDENCIES.md, VALIDATION_SUMMARY.md)
+- Add default Nix app for crontab-to-launchd conversion
+- Add test runner Nix app
+- Clean up project structure") Sep 6, 2025
+![SVG Image](data:…)
+
+[setup.py](/randomn4me/crontab-to-launchd/blob/main/setup.py "setup.py")  ![SVG Image](data:…)
+
+[setup.py](/randomn4me/crontab-to-launchd/blob/main/setup.py "setup.py") [refactor: restructure project to use src/ directory layout](/randomn4me/crontab-to-launchd/commit/09bdc603c909af8cef8ab4e4ecb686756961c9eb "refactor: restructure project to use src/ directory layout
+
+- Move Python package from root to src/crontab_to_launchd/
+- Update setup.py with package_dir configuration for src layout
+- Update all utility scripts with correct import paths
+- All 83 tests continue to pass with new structure") Sep 5, 2025
+View all files
+
+Repository files navigation
+
+crontab-to-launchd
+
+Convert crontab expressions to macOS launchd plist format.
+
+Features
+
+Full crontab syntax support (wildcards, ranges, lists, steps)
+Special strings (@reboot, @daily, @weekly, @monthly, @yearly, @annually)
+Environment variable support
+Generates valid launchd plist XML files
+Comprehensive validation with macOS plutil
+Installation
+
+Using Nix
+
+# Run directly
+nix run github:randomn4me/crontab-to-launchd -- "0 2 * * * /usr/bin/backup.sh" com.example.backup
+
+# Install to profile
+nix profile install github:randomn4me/crontab-to-launchd
+
+Using pip
+
+pip install -r requirements.txt
+python -m crontab_to_launchd.main "0 2 * * * /usr/bin/backup.sh" com.example.backup
+
+Usage
+
+Command Line
+
+# Basic usage
+crontab-to-launchd "0 2 * * * /usr/bin/backup.sh" com.example.backup
+
+# Save to file
+crontab-to-launchd "0 2 * * * /usr/bin/backup.sh" com.example.backup -o backup.plist
+
+# Validate only
+crontab-to-launchd "0 2 * * * /usr/bin/backup.sh" com.example.backup -v
+
+# Special strings
+crontab-to-launchd "@daily /usr/bin/daily.sh" com.example.daily
+
+Python API
+
+from crontab_to_launchd.parser import CrontabParser
+from crontab_to_launchd.generator import LaunchdGenerator
+
+# Parse crontab
+parser = CrontabParser()
+entry = parser.parse("0 2 * * * /usr/bin/backup.sh")
+
+# Generate plist
+generator = LaunchdGenerator()
+xml = generator.generate(entry, "com.example.backup")
+print(xml)
+
+Architecture
+
+Core Modules
+
+`parser.py`: Parses crontab expressions into `CrontabEntry` dataclass
+`generator.py`: Converts `CrontabEntry` to launchd plist XML
+`main.py`: CLI interface
+Module Dependencies
+
+parser.py (foundation)
+    ↓
+generator.py (depends on parser.CrontabEntry)
+    ↓
+main.py (CLI, uses both)
+
+Testing
+
+# Run all tests
+nix run .#test
+
+# Or with pytest
+pytest tests/ -v
+
+Test Coverage
+
+**83 total tests** covering:
+  * Crontab parser validation
+  * Launchd XML generation
+  * Field boundary validation
+  * Complex pattern combinations
+  * plutil validation (18 tests)
+  * Real-world examples (28 patterns)
+Crontab parser validation
+Launchd XML generation
+Field boundary validation
+Complex pattern combinations
+plutil validation (18 tests)
+Real-world examples (28 patterns)
+All generated plist files are validated with macOS `plutil -lint` to ensure compatibility with launchd.
+
+Development
+
+Nix Development Shell
+
+nix develop
+
+Provides Python 3, pytest, black, flake8, and all dependencies.
+
+Project Structure
+
+src/crontab_to_launchd/
+├── __init__.py
+├── parser.py       # Crontab parsing
+├── generator.py    # Launchd XML generation
+└── main.py         # CLI entry point
+
+tests/
+├── test_crontab_parser.py
+├── test_launchd_generator.py
+├── test_field_validation.py
+├── test_comprehensive_patterns.py
+└── test_plutil_validation.py
+
+Examples
+
+Every 5 minutes
+
+crontab-to-launchd "*/5 * * * * /path/to/script.sh" com.example.every5min
+
+Daily at 2 AM
+
+crontab-to-launchd "0 2 * * * /path/to/backup.sh" com.example.backup
+
+Weekdays at 9 AM
+
+crontab-to-launchd "0 9 * * 1-5 /path/to/weekday.sh" com.example.weekday
+
+Multiple specific hours
+
+crontab-to-launchd "0 9,12,15,18 * * * /path/to/check.sh" com.example.check
+
+License
+
+MIT
+
+About
+
+Convert crontab expressions to macOS launchd plist format.
+
+Topics
+
+Resources
+
+License
+
+Stars
+
+Watchers
+
+Forks
+
+[Releases](/randomn4me/crontab-to-launchd/releases)
+
+[Packages](/users/randomn4me/packages?repo_name=crontab-to-launchd)
+
+[Contributors](/randomn4me/crontab-to-launchd/graphs/contributors)
+
+Languages
+
+[![SVG Image](data:…) Python 97.5%](/randomn4me/crontab-to-launchd/search?l=python)
+[![SVG Image](data:…) Nix 2.5%](/randomn4me/crontab-to-launchd/search?l=nix)
+Footer

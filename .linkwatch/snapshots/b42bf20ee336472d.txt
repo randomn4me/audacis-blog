@@ -1,0 +1,480 @@
+![](https://peasec.de/wp-content/uploads/2020/04/team-Bayer-Markus-372x500.png)
+
+Research Associate / Post-Doctoral Researcher
+
+**Contact:**
+
+Email: [bayer(at)peasec.tu-darmstadt.de](mailto:bayer@peasec.tu-darmstadt.de)
+[ORCID](https://orcid.org/0000-0002-2040-5609)
+Address: **Technical University of Darmstadt**, Department of Computer Science, Science and Technology for Peace and Security (PEASEC), Pankratiusstraße 2, 64289 Darmstadt, Germany
+EN
+DE
+EN
+
+**Dr. rer. nat. Markus Bayer** is a research associate and post-doctoral researcher at the Chair of Science and Technology for Peace and Security (PEASEC) in the Department of Computer Science at the Technical University of Darmstadt. His doctoral thesis (Dr. rer. nat.), titled **Deep Learning in Textual Low-Data Regimes for Cybersecurity**, explores innovative approaches to applying machine learning models effectively in the cybersecurity domain, even in environments with limited annotated data.
+
+Dr. Bayer specializes in developing cutting-edge techniques such as **active learning**, **data augmentation**, **transfer learning**, and **adversarial training** to enhance the robustness and precision of machine learning models in cybersecurity applications. Early in his research, he recognized the transformative potential of **large language models** like GPT-4 and successfully integrated them into his methodologies, which have had a notable impact on both the academic community and real-world applications.
+
+During his studies (B.Sc. and M.Sc.) in computer science at the Technical University of Darmstadt, Dr. Bayer focused on machine learning and its applications in **peace and security research**. Currently, he contributes his expertise to high-impact projects such as **[CYLENCE](https://peasec.de/projects/cylence/)**, **[CYWARN](https://peasec.de/projects/cywarn/)**, and **[ATHENE](https://www.athene-center.de/)**, where he leverages **deep learning** to extract critical cybersecurity insights and combat **hate speech**.
+
+His overarching goal is to address pressing, practical challenges, such as training deep learning models with minimal data, by conducting **theoretically sound** and **targeted research** that bridges the gap between academia and industry needs.
+
+DE
+
+**Dr. rer. nat. Markus Bayer** ist wissenschaftlicher Mitarbeiter und Post-Doktorand am Lehrstuhl Wissenschaft und Technik für Frieden und Sicherheit (PEASEC) im Fachbereich Informatik der Technischen Universität Darmstadt. In seiner Dissertation (*Dr. rer. nat.*) mit dem Titel **Deep Learning in Textual Low-Data Regimes for Cybersecurity** untersucht er neuartige Ansätze, wie maschinelle Lernmodelle trotz begrenzter annotierter Daten im Bereich der Cybersicherheit effizient eingesetzt werden können.
+
+Dr. Bayer hat sich auf die Entwicklung fortschrittlicher Techniken wie **Active Learning**, **Data Augmentation**, **Transfer Learning** und **Adversarial Training** spezialisiert, um die Robustheit und Genauigkeit maschineller Lernmodelle in der Cybersicherheit zu verbessern. Schon früh erkannte er das transformative Potenzial von **Large Language Models** wie GPT-4 und integrierte diese erfolgreich in seine Methoden, was sowohl in der akademischen Gemeinschaft als auch in der Praxis einen bemerkenswerten Einfluss hatte.
+
+Während seines Informatikstudiums (B.Sc. und M.Sc.) an der Technischen Universität Darmstadt lag Dr. Bayers Fokus auf **maschinellem Lernen** und dessen Anwendung in der **Friedens- und Sicherheitsforschung**. Derzeit bringt er seine Expertise in hochkarätige Projekte wie **[CYLENCE](https://peasec.de/projects/cylence/)**, **[CYWARN](https://peasec.de/projects/cywarn/)**, und **[ATHENE](https://www.athene-center.de/)** ein, in denen er mithilfe von **Deep Learning** wichtige Informationen zur Cybersicherheit gewinnt und **Hate Speech** bekämpft.
+
+Sein übergeordnetes Ziel ist es, drängende praktische Herausforderungen wie das Training von Modellen mit minimalen Daten durch **theoretisch fundierte** und **zielgerichtete Forschung** zu bewältigen und so die Lücke zwischen akademischen Erkenntnissen und den Anforderungen der Industrie zu schließen.
+
+Publications
+
+2026
+
+Active learning is designed to minimize annotation efforts by prioritizing instances that most enhance learning. However, many active learning strategies struggle with a ‘coldstart’ problem, needing substantial initial data to be effective. This limitation reduces their utility in the increasingly relevant fewshot scenarios, where the instance selection has a substantial impact. To address this, we introduce ActiveLLM, a novel active learning approach that leverages Large Language Models such as GPT-4, o1, Llama 3, or Mistral Large for selecting instances. We demonstrate that ActiveLLM significantly enhances the classification performance of BERT classifiers in few-shot scenarios, outperforming traditional active learning methods as well as improving the few-shot learning methods ADAPET, PERFECT, and Set- Fit. Additionally, ActiveLLM can be extended to non-few-shot scenarios, allowing for iterative selections. In this way, ActiveLLM can even help other active learning strategies to overcome their cold-start problem. Our results suggest that ActiveLLM offers a promising solution for improving model performance across various learning setups.
+
+@article{bayerActiveLLMLargeLanguage2026,
+title = {{ActiveLLM}: {Large} {Language} {Model}-based {Active} {Learning} for {Textual} {Few}-{Shot} {Scenarios}},
+volume = {14},
+url = {https://doi.org/10.1162/TACL.a.63},
+doi = {10.1162/TACL.a.63},
+abstract = {Active learning is designed to minimize annotation
+efforts by prioritizing instances that
+most enhance learning. However, many active
+learning strategies struggle with a ‘coldstart’
+problem, needing substantial initial
+data to be effective. This limitation reduces
+their utility in the increasingly relevant fewshot
+scenarios, where the instance selection
+has a substantial impact. To address this, we
+introduce ActiveLLM, a novel active learning
+approach that leverages Large Language
+Models such as GPT-4, o1, Llama 3, or
+Mistral Large for selecting instances. We
+demonstrate that ActiveLLM significantly
+enhances the classification performance of
+BERT classifiers in few-shot scenarios, outperforming
+traditional active learning methods
+as well as improving the few-shot learning
+methods ADAPET, PERFECT, and Set-
+Fit. Additionally, ActiveLLM can be extended
+to non-few-shot scenarios, allowing
+for iterative selections. In this way, ActiveLLM
+can even help other active learning
+strategies to overcome their cold-start problem.
+Our results suggest that ActiveLLM
+offers a promising solution for improving
+model performance across various learning
+setups.},
+journal = {Transactions of the Association for Computational Linguistics (TACL)},
+author = {Bayer, Markus and Lutz, Justin and Reuter, Christian},
+year = {2026},
+keywords = {A-Paper, Projekt-ATHENE-CyAware, Student, Security, UsableSec, Projekt-CYLENCE, Ranking-CORE-A*},
+pages = {1--22},
+}
+
+The dissemination of online hate speech can have serious negative consequences for individuals, online communities, and entire societies. This and the large volume of hateful online content prompted both practitioners’, e.g., in content moderation or law enforcement, and researchers’ interest in machine learning models to automatically classify instances of hate speech. Whereas most scientific works address hate speech classification as a binary task, practice often requires a differentiation into sub-types, e.g., according to target, severity, or legality, which may overlap for individual content. Hence, researchers created datasets and machine learning models that approach hate speech classification in textual data as a multi-label problem. This work presents the first systematic and comprehensive survey of scientific literature on this emerging research landscape in English (N=46). We contribute with a concise overview of 28 datasets suited for training multi-label classification models, revealing significant heterogeneity regarding label-set, size, meta-concept, annotation process, and inter-annotator agreement. Our analysis of 24 publications proposing suitable classification models further establishes inconsistency in evaluation and a preference for architectures based on Bidirectional Encoder Representation from Transformers (BERT) and Recurrent Neural Networks (RNNs). We identify imbalanced training data, reliance on crowdsourcing platforms, small and sparse datasets, and missing methodological alignment as critical open issues and formulate twelve recommendations for research. Whereas transparency, data source diversity, conceptual rigor, label set consolidation, inter-annotator agreement, and model validation on existing datasets warrant more attention, multi-label tasks related to criminal relevance, enhancing robustness through ensembling, and exploring performance gains through large foundation models represent promising avenues for future work.
+
+@article{baumlerSurveyMachineLearning2026,
+title = {A {Survey} of {Machine} {Learning} {Models} and {Datasets} for the {Multi}-label {Classification} of {Textual} {Hate} {Speech} in {English}},
+url = {https://dl.acm.org/doi/10.1145/3820778},
+doi = {10.1145/3820778},
+abstract = {The dissemination of online hate speech can have serious negative consequences for individuals, online communities, and entire societies. This and the large volume of hateful online content prompted both practitioners’, e.g., in content moderation or law enforcement, and researchers’ interest in machine learning models to automatically classify instances of hate speech. Whereas most scientific works address hate speech classification as a binary task, practice often requires a differentiation into sub-types, e.g., according to target, severity, or legality, which may overlap for individual content. Hence, researchers created datasets and machine learning models that approach hate speech classification in textual data as a multi-label problem. This work presents the first systematic and comprehensive survey of scientific literature on this emerging research landscape in English (N=46). We contribute with a concise overview of 28 datasets suited for training multi-label classification models, revealing significant heterogeneity regarding label-set, size, meta-concept, annotation process, and inter-annotator agreement. Our analysis of 24 publications proposing suitable classification models further establishes inconsistency in evaluation and a preference for architectures based on Bidirectional Encoder Representation from Transformers (BERT) and Recurrent Neural Networks (RNNs). We identify imbalanced training data, reliance on crowdsourcing platforms, small and sparse datasets, and missing methodological alignment as critical open issues and formulate twelve recommendations for research. Whereas transparency, data source diversity, conceptual rigor, label set consolidation, inter-annotator agreement, and model validation on existing datasets warrant more attention, multi-label tasks related to criminal relevance, enhancing robustness through ensembling, and exploring performance gains through large foundation models represent promising avenues for future work.},
+journal = {ACM Transactions on Knowledge Discovery from Data (TKDD)},
+author = {Bäumler, Julian and Blöcher, Louis and Frey, Lars-Joel and Chen, Xian and Bayer, Markus and Reuter, Christian},
+year = {2026},
+keywords = {Crisis, HCI, A-Paper, Ranking-ImpactFactor, Student, Projekt-CYLENCE, AuswahlCrisis, Projekt-ATHENE-CYNTRA},
+}
+
+Künstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit algorithmischen Problemlösungsverfahren und der Nachbildung menschlicher Entscheidungs- und Schlussfolgerungsprozesse befasst. Ihre Einsatzfelder sind vielfältig und reichen zunehmend auch in sicherheitsrelevante Bereiche. KI verändert die Dynamik von Information Warfare grundlegend, indem sie die schnelle, skalierbare und realitätsnahe Produktion von Desinformation und Deepfakes ermöglicht. Dies untergräbt das Vertrauen in digitale Inhalte, verstärkt gesellschaftliche Polarisierung und intensiviert Informationskonflikte. Für die Innere Sicherheit entstehen neue Risiken, etwa durch personalisierte Cyberangriffe und täuschend echte Deepfakes. Gleichzeitig bietet KI erhebliche Potenziale für Sicherheitsbehörden, insbesondere bei der Analyse großer Datenmengen und der Unterstützung von Ermittlungen. Ein verantwortungsvoller Einsatz erfordert transparente Systeme, menschliche Letztentscheidung sowie klare rechtliche und organisatorische Rahmenbedingungen.
+
+@techreport{reuter_kunstliche_2026,
+title = {Künstliche {Intelligenz} in der {Inneren} {Sicherheit}: {Stellungnahme} für die schriftliche {Anhörung} der {Enquetekommission} {IV} „{Künstliche} {Intelligenz} – {Für} einen smarten {Staat} in der digitalisierten {Gesellschaft}“ zum {Thema} „{Innere} {Sicherheit}“},
+url = {https://www.landtag.nrw.de/home/dokumente/dokumentensuche/parlamentsdokumente/aktuelle-dokumente.html?formId=searchByItem&dokTyp=ST&wp=18&dokNum=Innere+Sicherheit&_eventId_sendform=},
+abstract = {Künstliche Intelligenz (KI) ist ein Teilgebiet der Informatik, das sich mit algorithmischen Problemlösungsverfahren und der Nachbildung menschlicher Entscheidungs- und Schlussfolgerungsprozesse befasst. Ihre Einsatzfelder sind vielfältig und reichen zunehmend auch in sicherheitsrelevante Bereiche. KI verändert die Dynamik von Information Warfare grundlegend, indem sie die schnelle, skalierbare und realitätsnahe Produktion von Desinformation und Deepfakes ermöglicht. Dies untergräbt das Vertrauen in digitale Inhalte, verstärkt gesellschaftliche Polarisierung und intensiviert Informationskonflikte. Für die Innere Sicherheit entstehen neue Risiken, etwa durch personalisierte Cyberangriffe und täuschend echte Deepfakes. Gleichzeitig bietet KI erhebliche Potenziale für Sicherheitsbehörden, insbesondere bei der Analyse großer Datenmengen und der Unterstützung von Ermittlungen. Ein verantwortungsvoller Einsatz erfordert transparente Systeme, menschliche Letztentscheidung sowie klare rechtliche und organisatorische Rahmenbedingungen.},
+author = {Reuter, Christian and Bayer, Markus and Kuehn, Philipp and Henkel, Markus},
+year = {2026},
+keywords = {Security},
+}
+
+Discourse on social media is produced and governed through distributed cooperative work, yet information operations exploit these sociotechnical systems by combining epistemic disruption (disinformation) with antagonistic boundary enforcement (hate speech). This study examines when and how disinformation and hate speech become intertwined in online discourse, conceptualising echo chambers as escalation and collective alignment processes and identity work as boundary-enforcing othering. Drawing on large social media fact-checking datasets, we develop a scalable method that annotates hate speech with automated detection, validated against human annotations and relates it to disinformation ratings across topical domains. We find a statistically reliable but modest overall coupling between disinformation and hate speech that is strongly topic-contingent: Associations are elevated in discourses on race and ethnicity, while weaker patterns appear in domains such as Covid-19 and entertainment. Analyses of targeting suggest that boundary enforcement can either broaden to additional out-groups or focus on topic-salient targets, depending on topical context and category definitions. We discuss implications for cooperative platform governance, arguing that cross-harm coupling should function as a topic-sensitive triage signal to support coordination between moderation and fact-checking workflows rather than as an automated enforcement rule.
+
+@inproceedings{schneiderDisinformationHateSpeech2026,
+title = {Disinformation and {Hate} {Speech} as {Intertwined} {Online} {Harms}: {A} {Large}-{Scale} {Study} {Using} {Fact}-{Checking} {Data}},
+issn = {510-2591},
+url = {https://dl.eusset.eu/handle/20.500.12015/5539},
+doi = {10.48340/ecscw2026_113},
+abstract = {Discourse on social media is produced and governed through distributed
+cooperative work, yet information operations exploit these sociotechnical systems by
+combining epistemic disruption (disinformation) with antagonistic boundary enforcement
+(hate speech). This study examines when and how disinformation and hate speech become
+intertwined in online discourse, conceptualising echo chambers as escalation and collective
+alignment processes and identity work as boundary-enforcing othering. Drawing on large
+social media fact-checking datasets, we develop a scalable method that annotates hate
+speech with automated detection, validated against human annotations and relates it to
+disinformation ratings across topical domains. We find a statistically reliable but modest
+overall coupling between disinformation and hate speech that is strongly topic-contingent:
+Associations are elevated in discourses on race and ethnicity, while weaker patterns appear in
+domains such as Covid-19 and entertainment. Analyses of targeting suggest that boundary
+enforcement can either broaden to additional out-groups or focus on topic-salient targets,
+depending on topical context and category definitions. We discuss implications for
+cooperative platform governance, arguing that cross-harm coupling should function as a
+topic-sensitive triage signal to support coordination between moderation and fact-checking
+workflows rather than as an automated enforcement rule.},
+booktitle = {Proceedings of the 24th {EUSSET} {Conference} on {Computer}-{Supported} {Cooperative} {Work} ({ECSCW})},
+publisher = {EUSSET},
+author = {Schneider, Franziska and Bäumler, Julian and Bayer, Markus and Surve, Aditya and Reuter, Christian},
+year = {2026},
+keywords = {Crisis, HCI, Ranking-CORE-B, Projekt-ATHENE-CYNTRA},
+}
+
+2025
+
+In today’s fast-paced cybersecurity landscape, professionals are increasingly challenged by the vast volumes of cyber threat data, making it difficult to identify and mitigate threats effectively. Traditional clustering methods help in broadly categorizing threats but fall short when it comes to the fine-grained analysis necessary for precise threat management. Supervised machine learning offers a potential solution, but the rapidly changing nature of cyber threats renders static models ineffective and the creation of new models too labor-intensive. This book addresses these challenges by introducing innovative low-data regime methods that enhance the machine learning process with minimal labeled data. The proposed approach spans four key stages: Data Acquisition: Leveraging active learning with advanced models like GPT-4 to optimize data labeling. Preprocessing: Utilizing GPT-2 and GPT-3 for data augmentation to enrich and diversify datasets. Model Selection: Developing a specialized cybersecurity language model and using multi-level transfer learning. Prediction: Introducing a novel adversarial example generation method, grounded in explainable AI, to improve model accuracy and resilience.
+
+@book{bayerDeepLearningTextual2025,
+address = {Wiesbaden, Germany},
+title = {Deep {Learning} in {Textual} {Low}-{Data} {Regimes} for {Cybersecurity}},
+isbn = {978-3-658-48777-5},
+url = {https://link.springer.com/book/10.1007/978-3-658-48778-2},
+doi = {10.1007/978-3-658-48778-2},
+abstract = {In today's fast-paced cybersecurity landscape, professionals are increasingly challenged by the vast volumes of cyber threat data, making it difficult to identify and mitigate threats effectively. Traditional clustering methods help in broadly categorizing threats but fall short when it comes to the fine-grained analysis necessary for precise threat management. Supervised machine learning offers a potential solution, but the rapidly changing nature of cyber threats renders static models ineffective and the creation of new models too labor-intensive. This book addresses these challenges by introducing innovative low-data regime methods that enhance the machine learning process with minimal labeled data. The proposed approach spans four key stages:
+Data Acquisition: Leveraging active learning with advanced models like GPT-4 to optimize data labeling.
+Preprocessing: Utilizing GPT-2 and GPT-3 for data augmentation to enrich and diversify datasets.
+Model Selection: Developing a specialized cybersecurity language model and using multi-level transfer learning.
+Prediction: Introducing a novel adversarial example generation method, grounded in explainable AI, to improve model accuracy and resilience.},
+publisher = {Springer Vieweg},
+author = {Bayer, Markus},
+year = {2025},
+keywords = {DissPublisher, Projekt-ATHENE-CyAware, Security, Projekt-CYLENCE, Projekt-CYWARN},
+}
+
+In today’s fast-paced cybersecurity landscape, professionals are increasingly challenged by the vast volumes of cyber threat data, making it difficult to identify and mitigate threats effectively. Traditional clustering methods help in broadly categorizing threats but fall short when it comes to the fine-grained analysis necessary for precise threat management. Supervised machine learning offers a potential solution, but the rapidly changing nature of cyber threats renders static models ineffective and the creation of new models too labor-intensive. This book addresses these challenges by introducing innovative low-data regime methods that enhance the machine learning process with minimal labeled data. The proposed approach spans four key stages: Data Acquisition: Leveraging active learning with advanced models like GPT-4 to optimize data labeling. Preprocessing: Utilizing GPT-2 and GPT-3 for data augmentation to enrich and diversify datasets. Model Selection: Developing a specialized cybersecurity language model and using multi-level transfer learning. Prediction: Introducing a novel adversarial example generation method, grounded in explainable AI, to improve model accuracy and resilience.
+
+@book{bayerDeepLearningTextual2025a,
+address = {Darmstadt, Germany},
+title = {Deep {Learning} in {Textual} {Low}-{Data} {Regimes} for {Cybersecurity}},
+url = {https://tuprints.ulb.tu-darmstadt.de/id/eprint/30046},
+abstract = {In today's fast-paced cybersecurity landscape, professionals are increasingly challenged by the vast volumes of cyber threat data, making it difficult to identify and mitigate threats effectively. Traditional clustering methods help in broadly categorizing threats but fall short when it comes to the fine-grained analysis necessary for precise threat management. Supervised machine learning offers a potential solution, but the rapidly changing nature of cyber threats renders static models ineffective and the creation of new models too labor-intensive. This book addresses these challenges by introducing innovative low-data regime methods that enhance the machine learning process with minimal labeled data. The proposed approach spans four key stages:
+Data Acquisition: Leveraging active learning with advanced models like GPT-4 to optimize data labeling.
+Preprocessing: Utilizing GPT-2 and GPT-3 for data augmentation to enrich and diversify datasets.
+Model Selection: Developing a specialized cybersecurity language model and using multi-level transfer learning.
+Prediction: Introducing a novel adversarial example generation method, grounded in explainable AI, to improve model accuracy and resilience.},
+publisher = {Dissertation (Dr. rer. nat.), Department of Computer Science, Technische Universität Darmstadt},
+author = {Bayer, Markus},
+year = {2025},
+note = {urn:nbn:de:tuda-tuprints-300460},
+keywords = {Projekt-ATHENE-CyAware, Security, Projekt-CYLENCE, Projekt-CYWARN, Dissertation},
+}
+
+Public information contains valuable Cyber Threat Intelligence (CTI) that is used to prevent future attacks. While standards exist for sharing this information, much appears in non-standardized news articles or blogs. Monitoring online sources for threats is time-consuming and source selection is uncertain. Current research focuses on extracting Indicators of Compromise from known sources, rarely addressing new source identification. This paper proposes a CTI-focused crawler using multi-armed bandit (MAB) and various crawling strategies. It employs SBERT to identify relevant documents while dynamically adapting its crawling path. Our system ThreatCrawl achieves a harvest rate exceeding 25\% and expands its seed by over 300\% while maintaining topical focus. Additionally, the crawler identifies previously unknown but highly relevant overview pages, datasets, and domains.
+
+@techreport{kuehnBanditHuntDynamic2025,
+address = {arXiv},
+title = {Bandit on the {Hunt}: {Dynamic} {Crawling} for {Cyber} {Threat} {Intelligence}},
+shorttitle = {Bandit on the {Hunt}},
+url = {http://arxiv.org/abs/2504.18375},
+doi = {10.48550/arXiv.2504.18375},
+abstract = {Public information contains valuable Cyber Threat Intelligence (CTI) that is used to prevent future attacks. While standards exist for sharing this information, much appears in non-standardized news articles or blogs. Monitoring online sources for threats is time-consuming and source selection is uncertain. Current research focuses on extracting Indicators of Compromise from known sources, rarely addressing new source identification. This paper proposes a CTI-focused crawler using multi-armed bandit (MAB) and various crawling strategies. It employs SBERT to identify relevant documents while dynamically adapting its crawling path. Our system ThreatCrawl achieves a harvest rate exceeding 25\% and expands its seed by over 300\% while maintaining topical focus. Additionally, the crawler identifies previously unknown but highly relevant overview pages, datasets, and domains.},
+number = {arXiv:2504.18375},
+urldate = {2025-05-20},
+institution = {arXiv},
+author = {Kuehn, Philipp and Nadermahmoodi, Dilara and Bayer, Markus and Reuter, Christian},
+month = apr,
+year = {2025},
+note = {arXiv:2504.18375 [cs]},
+keywords = {Student, Security, UsableSec, Projekt-ATHENE-SecUrban, Projekt-CYWARN},
+}
+
+Computer Security Incident Response Teams (CSIRTs) face increasing challenges processing the growing volume of security-related information. Daily manual analysis of threat reports, security advisories, and vulnerability announcements leads to information overload, contributing to burnout and attrition among security professionals. Clustering such information to cope with the initial information volume and enables security professionals to grasp the current overview of the situation more easily and decide on actions. This work evaluates 196 combinations of clustering algorithms and embedding models across five security-related datasets to identify optimal approaches for automated information consolidation. We demonstrate that clustering can reduce information overload by over 90 \% while maintaining semantic coherence. Our evaluation indicates a minimal need of configuration to successfully cluster information within a reasonable timespan on consumer hardware. The findings suggest that clustering approaches can significantly enhance CSIRT operational efficiency while maintaining analytical integrity. However, complex threat reports require careful parameter tuning to achieve acceptable performance, indicating areas for future optimization (The code is made publicly available at the following URL: https://github.com/PEASEC/reducing-information-overload)
+
+@inproceedings{kuehn_reducing_2025,
+address = {Cham},
+title = {Reducing {Information} {Overload}: {Because} {Even} {Security} {Experts} {Need} to {Blink}},
+isbn = {978-3-032-00633-2},
+shorttitle = {Reducing {Information} {Overload}},
+url = {https://link.springer.com/chapter/10.1007/978-3-032-00633-2_9},
+doi = {10.1007/978-3-032-00633-2_9},
+abstract = {Computer Security Incident Response Teams (CSIRTs) face increasing challenges processing the growing volume of security-related information. Daily manual analysis of threat reports, security advisories, and vulnerability announcements leads to information overload, contributing to burnout and attrition among security professionals. Clustering such information to cope with the initial information volume and enables security professionals to grasp the current overview of the situation more easily and decide on actions. This work evaluates 196 combinations of clustering algorithms and embedding models across five security-related datasets to identify optimal approaches for automated information consolidation. We demonstrate that clustering can reduce information overload by over 90 \% while maintaining semantic coherence. Our evaluation indicates a minimal need of configuration to successfully cluster information within a reasonable timespan on consumer hardware. The findings suggest that clustering approaches can significantly enhance CSIRT operational efficiency while maintaining analytical integrity. However, complex threat reports require careful parameter tuning to achieve acceptable performance, indicating areas for future optimization (The code is made publicly available at the following URL: https://github.com/PEASEC/reducing-information-overload)},
+language = {en},
+booktitle = {International {Conference} on {Availability}, {Reliability} and {Security} ({ARES} 2025)},
+publisher = {Springer Nature Switzerland},
+author = {Kuehn, Philipp and Bayer, Markus and Frey, Tobias and Kerk, Moritz and Reuter, Christian},
+editor = {Coppens, Bart and Volckaert, Bruno and Naessens, Vincent and De Sutter, Bjorn},
+year = {2025},
+keywords = {Projekt-ATHENE-CyAware, Student, Security, UsableSec, Projekt-CYWARN, Ranking-CORE-B},
+pages = {139--155},
+}
+
+2024
+
+The field of cybersecurity is evolving fast. Security professionals are in need of intelligence on past, current and – ideally – on upcoming threats, because attacks are becoming more advanced and are increasingly targeting larger and more complex systems. Since the processing and analysis of such large amounts of information cannot be addressed manually, cybersecurity experts rely on machine learning techniques. In the textual domain, pre-trained language models like BERT have proven to be helpful as they provide a good baseline for further fine-tuning. However, due to the domain-knowledge and the many technical terms in cybersecurity, general language models might miss the gist of textual information. For this reason, we create a high-quality dataset and present a language model specifically tailored to the cybersecurity domain which can serve as a basic building block for cybersecurity systems. The model is compared on 15 tasks: Domain-dependent extrinsic tasks for measuring the performance on specific problems, intrinsic tasks for measuring the performance of the internal representations of the model as well as general tasks from the SuperGLUE benchmark. The results of the intrinsic tasks show that our model improves the internal representation space of domain words compared to the other models. The extrinsic, domain-dependent tasks, consisting of sequence tagging and classification, show that the model performs best in cybersecurity scenarios. In addition, we pay special attention to the choice of hyperparameters against catastrophic forgetting, as pre-trained models tend to forget the original knowledge during further training.
+
+@article{bayerCySecBERTDomainAdaptedLanguage2024,
+title = {{CySecBERT}: {A} {Domain}-{Adapted} {Language} {Model} for the {Cybersecurity} {Domain}},
+volume = {27},
+issn = {2471-2566},
+url = {https://peasec.de/paper/2024/2024_BayerKuehnShanesazReuter_CySecBERT_TOPS.pdf},
+doi = {10.1145/3652594},
+abstract = {The field of cybersecurity is evolving fast. Security professionals are in need of intelligence on past, current and - ideally - on upcoming threats, because attacks are becoming more advanced and are increasingly targeting larger and more complex systems. Since the processing and analysis of such large amounts of information cannot be addressed manually, cybersecurity experts rely on machine learning techniques. In the textual domain, pre-trained language models like BERT have proven to be helpful as they provide a good baseline for further fine-tuning. However, due to the domain-knowledge and the many technical terms in cybersecurity, general language models might miss the gist of textual information. For this reason, we create a high-quality dataset and present a language model specifically tailored to the cybersecurity domain which can serve as a basic building block for cybersecurity systems. The model is compared on 15 tasks: Domain-dependent extrinsic tasks for measuring the performance on specific problems, intrinsic tasks for measuring the performance of the internal representations of the model as well as general tasks from the SuperGLUE benchmark. The results of the intrinsic tasks show that our model improves the internal representation space of domain words compared to the other models. The extrinsic, domain-dependent tasks, consisting of sequence tagging and classification, show that the model performs best in cybersecurity scenarios. In addition, we pay special attention to the choice of hyperparameters against catastrophic forgetting, as pre-trained models tend to forget the original knowledge during further training.},
+number = {2},
+journal = {ACM Transactions on Privacy and Security (TOPS)},
+publisher = {Association for Computing Machinery},
+author = {Bayer, Markus and Kuehn, Philipp and Shanehsaz, Ramin and Reuter, Christian},
+month = apr,
+year = {2024},
+note = {Place: New York, NY, USA},
+keywords = {A-Paper, Ranking-CORE-A, Ranking-ImpactFactor, Projekt-ATHENE-CyAware, Student, Security, UsableSec, Projekt-CYLENCE, Projekt-CYWARN},
+}
+
+Adversarial examples, capable of misleading machine learning models into making erroneous predictions, pose significant risks in safety-critical domains such as crisis informatics, medicine, and autonomous driving. To counter this, we introduce a novel textual adversarial example method that identifies falsely learned word indicators by leveraging explainable AI methods as importance functions on incorrectly predicted instances, thus revealing and understanding the weaknesses of a model. Coupled with adversarial training, this approach guides models to adopt complex decision rules when necessary and simpler ones otherwise, enhancing their robustness. To evaluate the effectiveness of our approach, we conduct a human and a transfer evaluation and propose a novel adversarial training evaluation setting for better robustness assessment. While outperforming current adversarial example and training methods, the results also show our method’s potential in facilitating the development of more resilient transformer models by detecting and rectifying biases and patterns in training data, showing baseline improvements of up to 23 percentage points in accuracy on adversarial tasks. The code of our approach is freely available for further exploration and use.
+
+@inproceedings{bayerXAIAttackUtilizingExplainable2024,
+address = {Torino, Italia},
+title = {{XAI}-{Attack}: {Utilizing} {Explainable} {AI} to {Find} {Incorrectly} {Learned} {Patterns} for {Black}-{Box} {Adversarial} {Example} {Creation}},
+url = {https://aclanthology.org/2024.lrec-main.1542.pdf},
+abstract = {Adversarial examples, capable of misleading machine learning models into making erroneous predictions, pose significant risks in safety-critical domains such as crisis informatics, medicine, and autonomous driving. To counter this, we introduce a novel textual adversarial example method that identifies falsely learned word indicators by leveraging explainable AI methods as importance functions on incorrectly predicted instances, thus revealing and understanding the weaknesses of a model. Coupled with adversarial training, this approach guides models to adopt complex decision rules when necessary and simpler ones otherwise, enhancing their robustness. To evaluate the effectiveness of our approach, we conduct a human and a transfer evaluation and propose a novel adversarial training evaluation setting for better robustness assessment. While outperforming current adversarial example and training methods, the results also show our method's potential in facilitating the development of more resilient transformer models by detecting and rectifying biases and patterns in training data, showing baseline improvements of up to 23 percentage points in accuracy on adversarial tasks. The code of our approach is freely available for further exploration and use.},
+booktitle = {Proceedings of the {Joint} {International} {Conference} on {Computational} {Linguistics}, {Language} {Resources} and {Evaluation} ({LREC}-{COLING})},
+publisher = {ELRA and ICCL},
+author = {Bayer, Markus and Neiczer, Markus and Samsinger, Maximilian and Buchhold, Björn and Reuter, Christian},
+month = may,
+year = {2024},
+keywords = {Ranking-CORE-A, Projekt-ATHENE-CyAware, Security, UsableSec, Projekt-CYLENCE},
+pages = {17725--17738},
+}
+
+Computer Emergency Response Teams (CERTs) have been established in the public sector globally to provide advisory, preventive and reactive cybersecurity services for government agencies, citizens, and businesses. Nevertheless, their responsibility of monitoring, analyzing, and communicating cyber threats and security vulnerabilities have become increasingly challenging due to the growing volume and varying quality of information disseminated through public and social channels. Based on a design case study conducted from 2021 to 2023, this paper combines three iterations of expert interviews (N=25), design workshops (N=4) and cognitive walkthroughs (N=25) to design an automated, cross-platform and real-time cybersecurity dashboard. By adopting the notion of cyber situational awareness, the study further extracts user requirements and design heuristics for enhanced threat intelligence and mission awareness in CERTs, discussing the aspects of source integration, data management, customizable visualization, relationship awareness, information assessment, software integration, (inter-)organizational collaboration, and communication of stakeholder warnings.
+
+@inproceedings{kaufholdWeNotHave2024,
+address = {Honolulu, HI, USA},
+series = {{CHI} '24},
+title = {'{We} {Do} {Not} {Have} the {Capacity} to {Monitor} {All} {Media}': {A} {Design} {Case} {Study} on {Cyber} {Situational} {Awareness} in {Computer} {Emergency} {Response} {Teams}},
+isbn = {979-8-4007-0330-0},
+url = {https://peasec.de/paper/2024/2024_KaufholdRiebeBayerReuter_CertDesignCaseStudy_CHI.pdf},
+doi = {10.1145/3613904.3642368},
+abstract = {Computer Emergency Response Teams (CERTs) have been established in the public sector globally to provide advisory, preventive and reactive cybersecurity services for government agencies, citizens, and businesses. Nevertheless, their responsibility of monitoring, analyzing, and communicating cyber threats and security vulnerabilities have become increasingly challenging due to the growing volume and varying quality of information disseminated through public and social channels. Based on a design case study conducted from 2021 to 2023, this paper combines three iterations of expert interviews (N=25), design workshops (N=4) and cognitive walkthroughs (N=25) to design an automated, cross-platform and real-time cybersecurity dashboard. By adopting the notion of cyber situational awareness, the study further extracts user requirements and design heuristics for enhanced threat intelligence and mission awareness in CERTs, discussing the aspects of source integration, data management, customizable visualization, relationship awareness, information assessment, software integration, (inter-)organizational collaboration, and communication of stakeholder warnings.},
+booktitle = {Proceedings of the {Conference} on {Human} {Factors} in {Computing} {Systems} ({CHI}) ({Best} {Paper} {Award})},
+publisher = {Association for Computing Machinery},
+author = {Kaufhold, Marc-André and Riebe, Thea and Bayer, Markus and Reuter, Christian},
+year = {2024},
+keywords = {HCI, A-Paper, Projekt-ATHENE-CyAware, Security, UsableSec, Projekt-CYLENCE, Projekt-CYWARN, Selected, AuswahlUsableSec, Ranking-CORE-A*, AuswahlKaufhold, HabilitationKaufhold},
+}
+
+2023
+
+A Design Science Artefact for Cyber Threat Detection and Actor Specific Communication
+
+@article{bayerMultiLevelFineTuningData2023,
+title = {Multi-{Level} {Fine}-{Tuning}, {Data} {Augmentation}, and {Few}-{Shot} {Learning} for {Specialized} {Cyber} {Threat} {Intelligence}},
+issn = {0167-4048},
+url = {https://peasec.de/paper/2023/2023_BayerFreyReuter_MultiLevelFineTuningForCyberThreatIntelligence_CS.pdf},
+doi = {10.1016/j.cose.2023.103430},
+abstract = {A Design Science Artefact for Cyber Threat Detection and Actor Specific Communication},
+journal = {Computers \& Security},
+author = {Bayer, Markus and Frey, Tobias and Reuter, Christian},
+year = {2023},
+keywords = {A-Paper, Ranking-ImpactFactor, Student, Security, Projekt-ATHENE, Projekt-CROSSING, Projekt-CYWARN},
+}
+
+Data augmentation, the artificial creation of training data for machine learning by transformations, is a widely studied research field across machine learning disciplines. While it is useful for increasing a model’s generalization capabilities, it can also address many other challenges and problems, from overcoming a limited amount of training data, to regularizing the objective, to limiting the amount data used to protect privacy. Based on a precise description of the goals and applications of data augmentation and a taxonomy for existing works, this survey is concerned with data augmentation methods for textual classification and aims to provide a concise and comprehensive overview for researchers and practitioners. Derived from the taxonomy, we divide more than 100 methods into 12 different groupings and give state-of-the-art references expounding which methods are highly promising by relating them to each other. Finally, research perspectives that may constitute a building block for future work are provided.
+
+@article{bayerSurveyDataAugmentation2023,
+title = {A {Survey} on {Data} {Augmentation} for {Text} {Classification}},
+volume = {55},
+url = {http://www.peasec.de/paper/2023/2023_BayerKaufholdReuter_SurveyDataAugmentationTextClassification_CSUR.pdf},
+doi = {10.1145/3544558},
+abstract = {Data augmentation, the artificial creation of training data for machine learning by transformations, is a widely studied research field across machine learning disciplines. While it is useful for increasing a model's generalization capabilities, it can also address many other challenges and problems, from overcoming a limited amount of training data, to regularizing the objective, to limiting the amount data used to protect privacy. Based on a precise description of the goals and applications of data augmentation and a taxonomy for existing works, this survey is concerned with data augmentation methods for textual classification and aims to provide a concise and comprehensive overview for researchers and practitioners. Derived from the taxonomy, we divide more than 100 methods into 12 different groupings and give state-of-the-art references expounding which methods are highly promising by relating them to each other. Finally, research perspectives that may constitute a building block for future work are provided.},
+number = {7},
+journal = {ACM Computing Surveys (CSUR)},
+author = {Bayer, Markus and Kaufhold, Marc-André and Reuter, Christian},
+year = {2023},
+keywords = {Crisis, Projekt-emergenCITY, A-Paper, Ranking-ImpactFactor, Projekt-ATHENE-SecUrban, Projekt-CYWARN, AuswahlCrisis, Selected, Ranking-CORE-A*, AuswahlKaufhold, HabilitationKaufhold},
+pages = {1--39},
+}
+
+Despite the merits of public and social media in private and professional spaces, citizens and professionals are increasingly exposed to cyberabuse, such as cyberbullying and hate speech. Thus, Law Enforcement Agencies (LEA) are deployed in many countries and organisations to enhance the preventive and reactive capabilities against cyberabuse. However, their tasks are getting more complex by the increasing amount and varying quality of information disseminated into public channels. Adopting the perspectives of Crisis Informatics and safety-critical Human-Computer Interaction (HCI) and based on both a narrative literature review and group discussions, this paper first outlines the research agenda of the CYLENCE project, which seeks to design strategies and tools for cross-media reporting, detection, and treatment of cyberbullying and hatespeech in investigative and law enforcement agencies. Second, it identifies and elaborates seven research challenges with regard to the monitoring, analysis and communication of cyberabuse in LEAs, which serve as a starting point for in-depth research within the project.
+
+@inproceedings{kaufholdCYLENCEStrategiesTools2023,
+address = {Rapperswil, Switzerland},
+title = {{CYLENCE}: {Strategies} and {Tools} for {Cross}-{Media} {Reporting}, {Detection}, and {Treatment} of {Cyberbullying} and {Hatespeech} in {Law} {Enforcement} {Agencies}},
+url = {https://dl.gi.de/items/0e0efe8f-64bf-400c-85f7-02b65f83189d},
+doi = {10.18420/muc2023-mci-ws01-211},
+abstract = {Despite the merits of public and social media in private and professional spaces, citizens and professionals are increasingly exposed to cyberabuse, such as cyberbullying and hate speech. Thus, Law Enforcement Agencies (LEA) are deployed in many countries and organisations to enhance the preventive and reactive capabilities against cyberabuse. However, their tasks are getting more complex by the increasing amount and varying quality of information disseminated into public channels. Adopting the perspectives of Crisis Informatics and safety-critical Human-Computer Interaction (HCI) and based on both a narrative literature review and group discussions, this paper first outlines the research agenda of the CYLENCE project, which seeks to design strategies and tools for cross-media reporting, detection, and treatment of cyberbullying and hatespeech in investigative and law enforcement agencies. Second, it identifies and elaborates seven research challenges with regard to the monitoring, analysis and communication of cyberabuse in LEAs, which serve as a starting point for in-depth research within the project.},
+language = {de},
+booktitle = {Mensch und {Computer} 2023 - {Workshopband}},
+publisher = {Gesellschaft für Informatik e.V.},
+author = {Kaufhold, Marc-André and Bayer, Markus and Bäumler, Julian and Reuter, Christian and Stieglitz, Stefan and Basyurt, Ali Sercan and Mirabaie, Milad and Fuchß, Christoph and Eyilmez, Kaan},
+year = {2023},
+keywords = {HCI, UsableSec, Projekt-CYLENCE},
+}
+
+Publicly available information contains valuable information for Cyber Threat Intelligence (CTI). This can be used to prevent attacks that have already taken place on other systems. Ideally, only the initial attack succeeds and all subsequent ones are detected and stopped. But while there are different standards to exchange this information, a lot of it is shared in articles or blog posts in non-standardized ways. Manually scanning through multiple online portals and news pages to discover new threats and extracting them is a time-consuming task. To automize parts of this scanning process, multiple papers propose extractors that use Natural Language Processing (NLP) to extract Indicators of Compromise (IOCs) from documents. However, while this already solves the problem of extracting the information out of documents, the search for these documents is rarely considered. In this paper, a new focused crawler is proposed called ThreatCrawl, which uses Bidirectional Encoder Representations from Transformers (BERT)-based models to classify documents and adapt its crawling path dynamically. While ThreatCrawl has difficulties to classify the specific type of Open Source Intelligence (OSINT) named in texts, e.g., IOC content, it can successfully find relevant documents and modify its path accordingly. It yields harvest rates of up to 52\%, which are, to the best of our knowledge, better than the current state of the art.
+
+@techreport{kuehnThreatCrawlBERTbasedFocused2023,
+address = {arXiv},
+title = {{ThreatCrawl}: {A} {BERT}-based {Focused} {Crawler} for the {Cybersecurity} {Domain}},
+shorttitle = {{ThreatCrawl}},
+url = {http://arxiv.org/abs/2304.11960},
+abstract = {Publicly available information contains valuable information for Cyber Threat Intelligence (CTI). This can be used to prevent attacks that have already taken place on other systems. Ideally, only the initial attack succeeds and all subsequent ones are detected and stopped. But while there are different standards to exchange this information, a lot of it is shared in articles or blog posts in non-standardized ways. Manually scanning through multiple online portals and news pages to discover new threats and extracting them is a time-consuming task. To automize parts of this scanning process, multiple papers propose extractors that use Natural Language Processing (NLP) to extract Indicators of Compromise (IOCs) from documents. However, while this already solves the problem of extracting the information out of documents, the search for these documents is rarely considered. In this paper, a new focused crawler is proposed called ThreatCrawl, which uses Bidirectional Encoder Representations from Transformers (BERT)-based models to classify documents and adapt its crawling path dynamically. While ThreatCrawl has difficulties to classify the specific type of Open Source Intelligence (OSINT) named in texts, e.g., IOC content, it can successfully find relevant documents and modify its path accordingly. It yields harvest rates of up to 52\%, which are, to the best of our knowledge, better than the current state of the art.},
+number = {arXiv:2304.11960},
+urldate = {2023-04-27},
+institution = {arXiv},
+author = {Kuehn, Philipp and Schmidt, Mike and Bayer, Markus and Reuter, Christian},
+month = apr,
+year = {2023},
+note = {arXiv:2304.11960 [cs]},
+keywords = {Student, Security, UsableSec, Projekt-ATHENE-SecUrban, Projekt-CYWARN},
+}
+
+2022
+
+In many cases of machine learning, research suggests that the development of training data might have a higher relevance than the choice and modelling of classifiers themselves. Thus, data augmentation methods have been developed to improve classifiers by artificially created training data. In NLP, there is the challenge of establishing universal rules for text transformations which provide new linguistic patterns. In this paper, we present and evaluate a text generation method suitable to increase the performance of classifiers for long and short texts. We achieved promising improvements when evaluating short as well as long text tasks with the enhancement by our text generation method. Especially with regard to small data analytics, additive accuracy gains of up to 15.53\% and 3.56\% are achieved within a constructed low data regime, compared to the no augmentation baseline and another data augmentation technique. As the current track of these constructed regimes is not universally applicable, we also show major improvements in several real world low data tasks (up to +4.84 F1-score). Since we are evaluating the method from many perspectives (in total 11 datasets), we also observe situations where the method might not be suitable. We discuss implications and patterns for the successful application of our approach on different types of datasets.
+
+@article{bayerDataAugmentationNatural2022,
+title = {Data {Augmentation} in {Natural} {Language} {Processing}: {A} {Novel} {Text} {Generation} {Approach} for {Long} and {Short} {Text} {Classifiers}},
+url = {https://link.springer.com/article/10.1007/s13042-022-01553-3},
+doi = {10.1007/s13042-022-01553-3},
+abstract = {In many cases of machine learning, research suggests that the development of training data might have a higher relevance than the choice and modelling of classifiers themselves. Thus, data augmentation methods have been developed to improve classifiers by artificially created training data. In NLP, there is the challenge of establishing universal rules for text transformations which provide new linguistic patterns. In this paper, we present and evaluate a text generation method suitable to increase the performance of classifiers for long and short texts. We achieved promising improvements when evaluating short as well as long text tasks with the enhancement by our text generation method. Especially with regard to small data analytics, additive accuracy gains of up to 15.53\% and 3.56\% are achieved within a constructed low data regime, compared to the no augmentation baseline and another data augmentation technique. As the current track of these constructed regimes is not universally applicable, we also show major improvements in several real world low data tasks (up to +4.84 F1-score). Since we are evaluating the method from many perspectives (in total 11 datasets), we also observe situations where the method might not be suitable. We discuss implications and patterns for the successful application of our approach on different types of datasets.},
+journal = {International Journal of Machine Learning and Cybernetics (IJMLC)},
+author = {Bayer, Markus and Kaufhold, Marc-André and Buchhold, Björn and Keller, Marcel and Dallmeyer, Jörg and Reuter, Christian},
+year = {2022},
+keywords = {Projekt-emergenCITY, A-Paper, Ranking-ImpactFactor, Student, Security, Projekt-CYWARN, HabilitationKaufhold},
+}
+
+2021
+
+Past studies in the domains of information systems have analysed the potentials and barriers of social media in emergencies. While information disseminated in social media can lead to valuable insights, emergency services and researchers face the challenge of information overload as data quickly exceeds the manageable amount. We propose an embedding-based clustering approach and a method for the automated labelling of clusters. Given that the clustering quality is highly dependent on embeddings, we evaluate 19 embedding models with respect to time, internal cluster quality, and language invariance. The results show that it may be sensible to use embedding models that were already trained on other crisis datasets. However, one must ensure that the training data generalizes enough, so that the clustering can adapt to new situations. Confirming this, we found out that some embeddings were not able to perform as well on a German dataset as on an English dataset.
+
+@inproceedings{bayerInformationOverloadCrisis2021,
+title = {Information {Overload} in {Crisis} {Management}: {Bilingual} {Evaluation} of {Embedding} {Models} for {Clustering} {Social} {Media} {Posts} in {Emergencies}},
+url = {https://peasec.de/paper/2021/2021_BayerKaufholdReuter_InformationOverloadInCrisisManagementBilingualEvaluation_ECIS.pdf},
+abstract = {Past studies in the domains of information systems have analysed the potentials and barriers of social media in emergencies. While information disseminated in social media can lead to valuable insights, emergency services and researchers face the challenge of information overload as data quickly exceeds the manageable amount. We propose an embedding-based clustering approach and a method for the automated labelling of clusters. Given that the clustering quality is highly dependent on embeddings, we evaluate 19 embedding models with respect to time, internal cluster quality, and language invariance. The results show that it may be sensible to use embedding models that were already trained on other crisis datasets. However, one must ensure that the training data generalizes enough, so that the clustering can adapt to new situations. Confirming this, we found out that some embeddings were not able to perform as well on a German dataset as on an English dataset.},
+booktitle = {Proceedings of the {European} {Conference} on {Information} {Systems} ({ECIS})},
+author = {Bayer, Markus and Kaufhold, Marc-André and Reuter, Christian},
+year = {2021},
+keywords = {Crisis, Projekt-emergenCITY, A-Paper, Ranking-CORE-A, SocialMedia, Projekt-ATHENE-SecUrban, Projekt-CYWARN},
+pages = {1--18},
+}
+
+Social media have an enormous impact on modern life but are prone to the dissemination of false information. In several domains, such as crisis management or political communication, it is of utmost importance to detect false and to promote credible information. Although educational measures might help individuals to detect false information, the sheer volume of social big data, which sometimes need to be anal- ysed under time-critical constraints, calls for automated and (near) real- time assessment methods. Hence, this paper reviews existing approaches before designing and evaluating three deep learning models (MLP, RNN, BERT) for real-time credibility assessment using the example of Twitter posts. While our BERT implementation achieved best results with an accuracy of up to 87.07\% and an F1 score of 0.8764 when using meta- data, text, and user features, MLP and RNN showed lower classification quality but better performance for real-time application. Furthermore, the paper contributes with a novel dataset for credibility assessment.
+
+@inproceedings{kaufholdDesignEvaluationDeep2021,
+address = {Bratislava},
+title = {Design and {Evaluation} of {Deep} {Learning} {Models} for {Real}-{Time} {Credibility} {Assessment} in {Twitter}},
+url = {https://peasec.de/paper/2021/2021_KaufholdBayerHartungReuter_DeepLearningCredibilityAssessmentTwitter_ICANN.pdf},
+doi = {10.1007/978-3-030-86383-8_32},
+abstract = {Social media have an enormous impact on modern life but are prone to the dissemination of false information. In several domains, such as crisis management or political communication, it is of utmost importance to detect false and to promote credible information. Although educational measures might help individuals to detect false information, the sheer volume of social big data, which sometimes need to be anal- ysed under time-critical constraints, calls for automated and (near) real- time assessment methods. Hence, this paper reviews existing approaches before designing and evaluating three deep learning models (MLP, RNN, BERT) for real-time credibility assessment using the example of Twitter posts. While our BERT implementation achieved best results with an accuracy of up to 87.07\% and an F1 score of 0.8764 when using meta- data, text, and user features, MLP and RNN showed lower classification quality but better performance for real-time application. Furthermore, the paper contributes with a novel dataset for credibility assessment.},
+booktitle = {30th {International} {Conference} on {Artificial} {Neural} {Networks} ({ICANN} 2021)},
+author = {Kaufhold, Marc-André and Bayer, Markus and Hartung, Daniel and Reuter, Christian},
+year = {2021},
+keywords = {Student, Security, Projekt-ATHENE-SecUrban, Projekt-CYWARN, Ranking-CORE-B, HabilitationKaufhold},
+pages = {1--13},
+}
+
+Despite the merits of digitisation in private and professional spaces, critical infrastructures and societies are increasingly ex-posed to cyberattacks. Thus, Computer Emergency Response Teams (CERTs) are deployed in many countries and organisations to enhance the preventive and reactive capabilities against cyberattacks. However, their tasks are getting more complex by the increasing amount and varying quality of information dissem-inated into public channels. Adopting the perspectives of Crisis Informatics and safety-critical Human-Computer Interaction (HCI) and based on both a narrative literature review and group discussions, this paper first outlines the research agenda of the CYWARN project, which seeks to design strategies and technolo-gies for cross-platform cyber situational awareness and actor-spe-cific cyber threat communication. Second, it identifies and elabo-rates eight research challenges with regard to the monitoring, analysis and communication of cyber threats in CERTs, which serve as a starting point for in-depth research within the project.
+
+@inproceedings{kaufholdCYWARNStrategyTechnology2021,
+address = {Bonn},
+series = {Mensch und {Computer} 2021 - {Workshopband}},
+title = {{CYWARN}: {Strategy} and {Technology} {Development} for {Cross}-{Platform} {Cyber} {Situational} {Awareness} and {Actor}-{Specific} {Cyber} {Threat} {Communication}},
+url = {https://dl.gi.de/server/api/core/bitstreams/8f470f6b-5050-4fb9-b923-d08cf84c17b7/content},
+doi = {10.18420/muc2021-mci-ws08-263},
+abstract = {Despite the merits of digitisation in private and professional spaces, critical infrastructures and societies are increasingly ex-posed to cyberattacks. Thus, Computer Emergency Response Teams (CERTs) are deployed in many countries and organisations to enhance the preventive and reactive capabilities against cyberattacks. However, their tasks are getting more complex by the increasing amount and varying quality of information dissem-inated into public channels. Adopting the perspectives of Crisis Informatics and safety-critical Human-Computer Interaction (HCI) and based on both a narrative literature review and group discussions, this paper first outlines the research agenda of the CYWARN project, which seeks to design strategies and technolo-gies for cross-platform cyber situational awareness and actor-spe-cific cyber threat communication. Second, it identifies and elabo-rates eight research challenges with regard to the monitoring, analysis and communication of cyber threats in CERTs, which serve as a starting point for in-depth research within the project.},
+booktitle = {Mensch und {Computer} 2018 - {Workshopband}},
+publisher = {Gesellschaft für Informatik},
+author = {Kaufhold, Marc-André and Fromm, Jennifer and Riebe, Thea and Mirbabaie, Milad and Kuehn, Philipp and Basyurt, Ali Sercan and Bayer, Markus and Stöttinger, Marc and Eyilmez, Kaan and Möller, Reinhard and Fuchß, Christoph and Stieglitz, Stefan and Reuter, Christian},
+year = {2021},
+keywords = {Security, Projekt-CYWARN},
+}
+
+Vulnerability databases are one of the main information sources for IT security experts. Hence, the quality of their information is of utmost importance for anyone working in this area. Previous work has shown that machine readable information is either missing, incorrect, or inconsistent with other data sources. In this paper, we introduce a system called Overt Vulnerability source ANAlysis (OVANA), utilizing state-of-the-art machine learning (ML) and natural-language processing (NLP) techniques, which analyzes the information quality (IQ) of vulnerability databases, searches the free-form description for relevant information missing from structured fields, and updates it accordingly. Our paper shows that OVANA is able to improve the IQ of the National Vulnerability Database by 51.23\% based on the indicators of accuracy, completeness, and uniqueness. Moreover, we present information which should be incorporated into the structured fields to increase the uniqueness of vulnerability entries and improve the discriminability of different vulnerability entries. The identified information from OVANA enables a more targeted vulnerability search and provides guidance for IT security experts in finding relevant information in vulnerability descriptions for severity assessment.
+
+@inproceedings{kuehnOVANAApproachAnalyze2021,
+title = {{OVANA}: {An} {Approach} to {Analyze} and {Improve} the {Information} {Quality} of {Vulnerability} {Databases}},
+isbn = {978-1-4503-9051-4},
+url = {https://peasec.de/paper/2021/2021_KuehnBayerWendelbornReuter_OVANAQualityVulnerabilityDatabases_ARES.pdf},
+doi = {10.1145/3465481.3465744},
+abstract = {Vulnerability databases are one of the main information sources for IT security experts. Hence, the quality of their information is of utmost importance for anyone working in this area. Previous work has shown that machine readable information is either missing, incorrect, or inconsistent with other data sources. In this paper, we introduce a system called Overt Vulnerability source ANAlysis (OVANA), utilizing state-of-the-art machine learning (ML) and natural-language processing (NLP) techniques, which analyzes the information quality (IQ) of vulnerability databases, searches the free-form description for relevant information missing from structured fields, and updates it accordingly. Our paper shows that OVANA is able to improve the IQ of the National Vulnerability Database by 51.23\% based on the indicators of accuracy, completeness, and uniqueness. Moreover, we present information which should be incorporated into the structured fields to increase the uniqueness of vulnerability entries and improve the discriminability of different vulnerability entries. The identified information from OVANA enables a more targeted vulnerability search and provides guidance for IT security experts in finding relevant information in vulnerability descriptions for severity assessment.},
+booktitle = {Proceedings of the 16th {International} {Conference} on {Availability}, {Reliability} and {Security} ({ARES} 2021)},
+publisher = {ACM},
+author = {Kuehn, Philipp and Bayer, Markus and Wendelborn, Marc and Reuter, Christian},
+year = {2021},
+keywords = {Peace, Security, Projekt-ATHENE-SecUrban, Projekt-CYWARN, Ranking-CORE-B},
+pages = {1--11},
+}
+
+Receiving relevant information on possible cyber threats, attacks, and data breaches in a timely manner is crucial for early response. The social media platform Twitter hosts an active cyber security community. Their activities are often monitored manually by security experts, such as Computer Emergency Response Teams (CERTs). We thus propose a Twitter-based alert generation system that issues alerts to a system operator as soon as new relevant cyber security related topics emerge. Thereby, our system allows us to monitor user accounts with significantly less workload. Our system applies a supervised classifier, based on active learning, that detects tweets containing relevant information. The results indicate that uncertainty sampling can reduce the amount of manual relevance classification effort and enhance the classifier performance substantially compared to random sampling. Our approach reduces the number of accounts and tweets that are needed for the classifier training, thus making the tool easily and rapidly adaptable to the specific context while also supporting data minimization for Open Source Intelligence (OSINT). Relevant tweets are clustered by a greedy stream clustering algorithm in order to identify significant events. The proposed system is able to work near real-time within the required 15-minutes time frame and detects up to 93.8\% of relevant events with a false alert rate of 14.81\%.
+
+@inproceedings{riebeCySecAlertAlertGeneration2021,
+title = {{CySecAlert}: {An} {Alert} {Generation} {System} for {Cyber} {Security} {Events} {Using} {Open} {Source} {Intelligence} {Data}},
+url = {https://peasec.de/paper/2021/2021_RiebeWirthBayerKuehnKaufholdKnautheGutheReuter_CySecAlertOpenSourceIntelligence_ICICS.pdf},
+doi = {10.1007/978-3-030-86890-1_24},
+abstract = {Receiving relevant information on possible cyber threats, attacks, and data breaches in a timely manner is crucial for early response. The social media platform Twitter hosts an active cyber security community. Their activities are often monitored manually by security experts, such as Computer Emergency Response Teams (CERTs). We thus propose a Twitter-based alert generation system that issues alerts to a system operator as soon as new relevant cyber security related topics emerge. Thereby, our system allows us to monitor user accounts with significantly less workload. Our system applies a supervised classifier, based on active learning, that detects tweets containing relevant information. The results indicate that uncertainty sampling can reduce the amount of manual relevance classification effort and enhance the classifier performance substantially compared to random sampling. Our approach reduces the number of accounts and tweets that are needed for the classifier training, thus making the tool easily and rapidly adaptable to the specific context while also supporting data minimization for Open Source Intelligence (OSINT). Relevant tweets are clustered by a greedy stream clustering algorithm in order to identify significant events. The proposed system is able to work near real-time within the required 15-minutes time frame and detects up to 93.8\% of relevant events with a false alert rate of 14.81\%.},
+booktitle = {Information and {Communications} {Security} ({ICICS})},
+author = {Riebe, Thea and Wirth, Tristan and Bayer, Markus and Kuehn, Philipp and Kaufhold, Marc-André and Knauthe, Volker and Guthe, Stefan and Reuter, Christian},
+year = {2021},
+keywords = {Student, Security, UsableSec, Projekt-ATHENE-SecUrban, Projekt-CYWARN, Ranking-CORE-B},
+pages = {429--446},
+}
+
+2020
+
+The research field of crisis informatics examines, amongst others, the potentials and barriers of social media use during disasters and emergencies. Social media allow emergency services to receive valuable information (e.g., eyewitness reports, pictures, or videos) from social media. However, the vast amount of data generated during large-scale incidents can lead to issue of information overload. Research indicates that supervised machine learning techniques are sui- table for identifying relevant messages and filter out irrelevant messages, thus mitigating in- formation overload. Still, they require a considerable amount of labeled data, clear criteria for relevance classification, a usable interface to facilitate the labeling process and a mechanism to rapidly deploy retrained classifiers. To overcome these issues, we present (1) a system for social media monitoring, analysis and relevance classification, (2) abstract and precise criteria for re- levance classification in social media during disasters and emergencies, (3) the evaluation of a well-performing Random Forest algorithm for relevance classification incorporating metadata from social media into a batch learning approach (e.g., 91.28\%/89.19\% accuracy, 98.3\%/89.6\% precision and 80.4\%/87.5\% recall with a fast training time with feature subset selection on the European floods/BASF SE incident datasets), as well as (4) an approach and preliminary eva- luation for relevance classification including active, incremental and online learning to reduce the amount of required labeled data and to correct misclassifications of the algorithm by feed- back classification. Using the latter approach, we achieved a well-performing classifier based on the European floods dataset by only requiring a quarter of labeled data compared to the tradi- tional batch learning approach. Despite a lesser effect on the BASF SE incident dataset, still a substantial improvement could be determined.
+
+@article{kaufholdRapidRelevanceClassification2020,
+title = {Rapid relevance classification of social media posts in disasters and emergencies: {A} system and evaluation featuring active, incremental and online learning},
+volume = {57},
+url = {https://peasec.de/paper/2020/2020_KaufholdBayerReuter_RapidRelevanceClassification_IPM.pdf},
+doi = {10.1016/j.ipm.2019.102132},
+abstract = {The research field of crisis informatics examines, amongst others, the potentials and barriers of social media use during disasters and emergencies. Social media allow emergency services to receive valuable information (e.g., eyewitness reports, pictures, or videos) from social media. However, the vast amount of data generated during large-scale incidents can lead to issue of information overload. Research indicates that supervised machine learning techniques are sui- table for identifying relevant messages and filter out irrelevant messages, thus mitigating in- formation overload. Still, they require a considerable amount of labeled data, clear criteria for relevance classification, a usable interface to facilitate the labeling process and a mechanism to rapidly deploy retrained classifiers. To overcome these issues, we present (1) a system for social media monitoring, analysis and relevance classification, (2) abstract and precise criteria for re- levance classification in social media during disasters and emergencies, (3) the evaluation of a well-performing Random Forest algorithm for relevance classification incorporating metadata from social media into a batch learning approach (e.g., 91.28\%/89.19\% accuracy, 98.3\%/89.6\% precision and 80.4\%/87.5\% recall with a fast training time with feature subset selection on the European floods/BASF SE incident datasets), as well as (4) an approach and preliminary eva- luation for relevance classification including active, incremental and online learning to reduce the amount of required labeled data and to correct misclassifications of the algorithm by feed- back classification. Using the latter approach, we achieved a well-performing classifier based on the European floods dataset by only requiring a quarter of labeled data compared to the tradi- tional batch learning approach. Despite a lesser effect on the BASF SE incident dataset, still a substantial improvement could be determined.},
+number = {1},
+journal = {Information Processing \& Management (IPM)},
+author = {Kaufhold, Marc-André and Bayer, Markus and Reuter, Christian},
+year = {2020},
+keywords = {Crisis, Projekt-emergenCITY, A-Paper, Ranking-CORE-A, Ranking-ImpactFactor, SocialMedia, Projekt-ATHENE-SecUrban, Ranking-WKWI-B, AuswahlKaufhold},
+pages = {1--32},
+}
+
+2018
+
+Diese Arbeit befasst sich mit der zunehmenden Digitalisierung der kritischen Infrastruktur Ernährungswirtschaft und setzt den Fokus insbesondere auf die dadurch resultierenden in-formationstechnologischen Folgen bezüglich der Angriffs- und Ausfallsicherheit in der Landwirtschaft und von ihr abhängigen Sektoren. In diesem Kontext wird die Modernisie-rungen der Landmaschinen und deren Vernetzung sowie das Cloud-Computing in der Landwirtschaft analysiert und zu treffende Maßnahmen bezüglich einer resilienten Struktur erläutert. In vielen Bereichen wird dabei aufgezeigt, dass das Ausfallrisiko der Produktion zugunsten von Vorteilen wie Ertrags- und Qualitätssteigerung vernachlässigt wird.
+
+@inproceedings{reuterResilienteDigitalisierungKritischen2018,
+address = {Dresden, Germany},
+title = {Resiliente {Digitalisierung} der kritischen {Infrastruktur} {Landwirtschaft} - mobil, dezentral, ausfallsicher},
+url = {https://dl.gi.de/bitstream/handle/20.500.12116/16930/Beitrag_330_final__a.pdf},
+abstract = {Diese Arbeit befasst sich mit der zunehmenden Digitalisierung der kritischen Infrastruktur Ernährungswirtschaft und setzt den Fokus insbesondere auf die dadurch resultierenden in-formationstechnologischen Folgen bezüglich der Angriffs- und Ausfallsicherheit in der Landwirtschaft und von ihr abhängigen Sektoren. In diesem Kontext wird die Modernisie-rungen der Landmaschinen und deren Vernetzung sowie das Cloud-Computing in der Landwirtschaft analysiert und zu treffende Maßnahmen bezüglich einer resilienten Struktur erläutert. In vielen Bereichen wird dabei aufgezeigt, dass das Ausfallrisiko der Produktion zugunsten von Vorteilen wie Ertrags- und Qualitätssteigerung vernachlässigt wird.},
+booktitle = {Mensch und {Computer} 2018 - {Workshopband}},
+publisher = {Gesellschaft für Informatik e.V.},
+author = {Reuter, Christian and Schneider, Wolfgang and Eberz, Daniel and Bayer, Markus and Hartung, Daniel and Kaygusuz, Cemal},
+editor = {Dachselt, Raimund and Weber, Gerhard},
+year = {2018},
+keywords = {Crisis, Student, Projekt-GeoBox, RSF, Infrastructure, Projekt-KontiKat, Projekt-HyServ, Projekt-MAKI},
+pages = {623--632},
+}
+
+News
+
+[Neue Studie “From TikTok to Telegram”: Das hilft wirklich gegen Desinformation](https://peasec.de/2026/neue-studie-gegen-desinformation/)
+[Mensch und KI in der Cybersicherheit – ATHENE-Projekt „Human-AI Collaboration for Cybersecurity“ (HAICC)“ entwickelt neue KI-Methoden für Expertenaufgaben](https://peasec.de/2026/athene-projekt-human-ai-collaboration-for-cybersecurity-haicc/)
+[Leuchtturm naturwissenschaftlicher Verantwortung: Nachruf auf Kathryn Nixdorff](https://peasec.de/2026/leuchtturm-naturwissenschaftlicher-verantwortung-nachruf-auf-kathryn-nixdorff/)
+[Transformationen politischer Gewalt erforschen: Hessisches Forschungszentrum „TraCe“ geht in die zweite Phase](https://peasec.de/2026/trace-geht-in-die-zweite-phase/)
+[emergenCITY Week 2026 Showcases Research on Resilient Digital Cities and Crisis Management](https://peasec.de/2026/emergencity-week-2026/)
+[TU Darmstadt Profile Topic Cybersecurity and Privacy – Christian Reuter and Thomas Schneider elected as new coordination team](https://peasec.de/2026/profile-topic-cybersecurity-and-privacy/)
+Events
+
+[13. Workshop Mensch-Maschine-Interaktion in sicherheitskritischen Systemen: Wer entscheidet im Ernstfall?](https://peasec.de/event/13-workshop-mensch-maschine-interaktion-in-sicherheitskritischen-systemen-wer-entscheidet-im-ernstfall/ "13. Workshop Mensch-Maschine-Interaktion in sicherheitskritischen Systemen: Wer entscheidet im Ernstfall?")
+
+[Hybride Bedrohnungen – Arbeitsgruppe Cyberraum – Studienstiftung des deutschen Volkes, Berlin](https://peasec.de/event/hybride-bedrohnungen-arbeitsgruppe-cyberraum/ "Hybride Bedrohnungen – Arbeitsgruppe Cyberraum – Studienstiftung des deutschen Volkes, Berlin")
+
+[PEASEC-Klausurtagung](https://peasec.de/event/peasec-klausurtagung-3/ "PEASEC-Klausurtagung")
+
+[FiF & ELIZA-Forum 2026: „Desinformation & Demokratie“](https://peasec.de/event/fif-eliza-forum-2026/ "FiF &amp; ELIZA-Forum 2026: „Desinformation &amp; Demokratie“")
+
+[German Pre-CHI 2027](https://peasec.de/event/german-pre-chi-2027/ "German Pre-CHI 2027")
+
+![](https://peasec.de/wp-content/uploads/2021/02/PEASEC-Venn-EN-1024x997.jpg)
+
+![](https://pixel.wp.com/g.gif?v=ext&amp;blog=251179987&amp;post=7007&amp;tz=2&amp;srv=peasec.de&amp;j=1%3A15.9.1&amp;host=peasec.de&amp;ref=&amp;fcp=940&amp;rand=0.7389767602300573)

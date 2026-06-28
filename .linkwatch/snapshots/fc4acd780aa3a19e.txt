@@ -1,0 +1,292 @@
+System and Service Manager
+
+systemd is a suite of basic building blocks for a Linux system. It provides a system and service manager that runs as PID 1 and starts the rest of the system.
+
+systemd provides aggressive parallelization capabilities, uses socket and D-Bus activation for starting services, offers on-demand starting of daemons, keeps track of processes using Linux control groups, maintains mount and automount points, and implements an elaborate transactional dependency-based service control logic.
+
+Other parts include a logging daemon, utilities to control basic system configuration like the hostname, date, locale, maintain a list of logged-in users and running containers and virtual machines, system accounts, runtime directories and settings, and daemons to manage simple network configuration, network time synchronization, log forwarding, and name resolution.
+
+Booting
+
+[Automatic Boot Assessment](/AUTOMATIC_BOOT_ASSESSMENT/)
+[Boot Components & Root File System Discovery](/ROOTFS_DISCOVERY/)
+[Boot Loader Interface](/BOOT_LOADER_INTERFACE/)
+[Factory Reset](/FACTORY_RESET/)
+[Mount Requirements](/MOUNT_REQUIREMENTS/)
+[TPM2 PCR Measurements Made by systemd](/TPM2_PCR_MEASUREMENTS/)
+Concepts
+
+[Credentials](/CREDENTIALS/)
+[Desktop Environment Integration](/DESKTOP_ENVIRONMENTS/)
+[Portable Services Introduction](/PORTABLE_SERVICES/)
+[Porting systemd To New Distributions](/DISTRO_PORTING/)
+[Random Seeds](/RANDOM_SEEDS/)
+[Safely Building Images](/BUILDING_IMAGES/)
+[systemd Coredump Handling](/COREDUMP/)
+Contributing
+
+[Code Quality Tools](/CODE_QUALITY/)
+[Coding Style](/CODING_STYLE/)
+[Contributing](/CONTRIBUTING/)
+[Governance](/GOVERNANCE/)
+[Hacking on systemd](/HACKING/)
+[Notes for Translators](/TRANSLATORS/)
+[Porting to New Architectures](/PORTING_TO_NEW_ARCHITECTURES/)
+[Reporting of Security Vulnerabilities](/SECURITY/)
+[Steps to a Successful Release](/RELEASE/)
+[Testing systemd Using Sanitizers](/TESTING_WITH_SANITIZERS/)
+[Varlink API Style](/VARLINK/)
+[systemd Community Conduct Guidelines](/CODE_OF_CONDUCT/)
+[systemd Repository Architecture](/ARCHITECTURE/)
+Documentation for Developers
+
+[Backports](/BACKPORTS/)
+[Inhibitor Locks](/INHIBITOR_LOCKS/)
+[Journal Message Catalogs](/CATALOG/)
+[Minimal Builds](/MINIMAL_BUILDS/)
+[New Control Group Interfaces](/CONTROL_GROUP_INTERFACE/)
+[Presets](/PRESET/)
+[The Case for the /usr Merge](/THE_CASE_FOR_THE_USR_MERGE/)
+[Writing Desktop Environments](/WRITING_DESKTOP_ENVIRONMENTS/)
+[Writing Display Managers](/WRITING_DISPLAY_MANAGERS/)
+[Writing Network Configuration Managers](/WRITING_NETWORK_CONFIGURATION_MANAGERS/)
+[Writing Resolver Clients](/WRITING_RESOLVER_CLIENTS/)
+[Writing VM and Container Managers](/WRITING_VM_AND_CONTAINER_MANAGERS/)
+[Writing syslog Daemons Which Cooperate Nicely With systemd](/SYSLOG/)
+[systemd File Hierarchy Requirements](/SYSTEMD_FILE_HIERARCHY_REQUIREMENTS/)
+[systemd Optimizations](/OPTIMIZATIONS/)
+[systemd-boot UEFI Boot Manager](/BOOT/)
+Documentation for Developers - external links
+
+[Introduction to systemd in French](https://lea-linux.org/documentations/Systemd)
+[The 30 Biggest Myths about systemd](https://0pointer.de/blog/projects/the-biggest-myths.html)
+Exec directories
+
+[Project IDs for Disk Quotas on Exec Directories](/DISK-QUOTAS-PROJECTIDS/)
+Interfaces
+
+[Appstream Bundle](/APPSTREAM_BUNDLE/)
+[Container Interface](/CONTAINER_INTERFACE/)
+[Control Group APIs and Delegation](/CGROUP_DELEGATION/)
+[File Descriptor Store](/FILE_DESCRIPTOR_STORE/)
+[Initrd Interface](/INITRD_INTERFACE/)
+[Journal Export Formats](/JOURNAL_EXPORT_FORMATS/)
+[Journal File Format](/JOURNAL_FILE_FORMAT/)
+[Known Environment Variables](/ENVIRONMENT/)
+[Locking Block Device Access](/BLOCK_DEVICE_LOCKING/)
+[Native Journal Protocol](/JOURNAL_NATIVE_PROTOCOL/)
+[Password Agents](/PASSWORD_AGENTS/)
+[Portability and Stability](/PORTABILITY_AND_STABILITY/)
+[Resource Pressure Handling](/PRESSURE/)
+[Storage Daemons for the Root File System](/ROOT_STORAGE_DAEMONS/)
+[Using /tmp/ and /var/tmp/ Safely](/TEMPORARY_DIRECTORIES/)
+[VM Interface](/VM_INTERFACE/)
+[What Settings Are Currently Available For Transient Units?](/TRANSIENT-SETTINGS/)
+Manual Pages
+
+[Directives](https://www.freedesktop.org/software/systemd/man/latest/systemd.directives.html)
+[Index](https://www.freedesktop.org/software/systemd/man/latest/)
+Manuals and Documentation for Users and Administrators
+
+[API File Systems](/API_FILE_SYSTEMS/)
+[Booting Without /usr is Broken](/SEPARATE_USR_IS_BROKEN/)
+[Compatibility with SysV](/INCOMPATIBILITIES/)
+[Diagnosing Boot Problems](/DEBUGGING/)
+[Frequently Asked Questions](/FAQ/)
+[My Service Can’t Get Realtime!](/MY_SERVICE_CANT_GET_REALTIME/)
+[Socket Activation with Popular Daemons](/DAEMON_SOCKET_ACTIVATION/)
+[Tips And Tricks](/TIPS_AND_TRICKS/)
+Networking
+
+[Predictable Network Interface Names](/PREDICTABLE_INTERFACE_NAMES/)
+[Running Services After the Network Is Up](/NETWORK_ONLINE/)
+[systemd-resolved and VPNs](/RESOLVED-VPNS/)
+Project
+
+[Brand](https://brand.systemd.io/)
+[GitHub Project Page](https://github.com/systemd/systemd)
+[Issues](https://github.com/systemd/systemd/issues)
+[Mailing List](https://lists.freedesktop.org/mailman/listinfo/systemd-devel)
+[Mastodon](https://mastodon.social/@pid_eins)
+[Pull Requests](https://github.com/systemd/systemd/pulls)
+[Releases](https://github.com/systemd/systemd/releases)
+[mkosi Project - Build Bespoke OS Images](https://mkosi.systemd.io/)
+Publications
+
+[Article in The H](https://www.h-online.com/open/features/Control-Centre-The-systemd-Linux-init-system-1565543.html)
+[Article in The H, Part 2](https://www.h-online.com/open/features/Booting-up-Tools-and-tips-for-systemd-1570630.html)
+[Bê-á-bá do systemd #1 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[Bê-á-bá do systemd #2 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[Bê-á-bá do systemd #3 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[Bê-á-bá do systemd #4 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[Bê-á-bá do systemd #5 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[Bê-á-bá do systemd #6 (Brazilian Portuguese)](https://community.ibm.com/community/user/legacy)
+[RHEL9 docs - Configuring basic system settings - Managing systemd](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/configuring_basic_system_settings/managing-systemd_configuring-basic-system-settings#managing-systemd_configuring-basic-system-settings)
+[RHEL9 docs - Using systemd unit files to customize and optimize your system](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux/9/html/using_systemd_unit_files_to_customize_and_optimize_your_system/index)
+[SUSE White Paper on systemd](https://documentation.suse.com/external-tree/en-us/sles/12-SP4/systemd_in_suse_linux_enterprise_12_white_paper.pdf)
+[Évolutions techniques de systemd (French)](https://linuxfr.org/news/evolutions-techniques-de-systemd)
+Related Packages
+
+[C++ bindings for sd-bus](https://github.com/Kistler-Group/sdbus-cpp/)
+[Erlang bindings for the Journal APIs](https://github.com/systemd/ejournald)
+[Erlang journald backend for Lager](https://github.com/travelping/lager_journald_backend)
+[Experimental Qt bindings](https://github.com/ilpianista/libsystemd-qt)
+[GLib bindings](https://github.com/tcbrindle/systemd-glib)
+[Go Bindings for the Journal API, socket activation and DBUS](https://github.com/coreos/go-systemd)
+[Haskell Journal API](https://hackage.haskell.org/package/libsystemd-journal)
+[Haskell socket activation](https://hackage.haskell.org/package/socket-activation)
+[Lua Bindinds for systemd APIs](https://github.com/daurnimator/lua-systemd)
+[Node.JS bindings for the Journal APIs](https://www.fourkitchens.com/blog/2012/09/25/nodejs-extension-systemd)
+[Node.JS support for systemd Socket Activation](https://www.npmjs.com/package/systemd)
+[Node.JS wrapper for sd_notify](https://www.npmjs.com/package/sd-notify)
+[Node.JS wrapper for sd_notify (repo)](https://github.com/systemd/node-sd-notify)
+[PHP Bindings for the Journal APIs](https://github.com/systemd/php-systemd)
+[Perl bindings for the Journal APIs](https://metacpan.org/release/LKUNDRAK/Log-Journald-0.10)
+[Ruby bindings for the Journal APIs](https://github.com/ledbettj/systemd-journal)
+[Ruby bindings for the systemd D-Bus APIs](https://github.com/nathwill/ruby-dbus-systemd)
+[pystemd](https://github.com/systemd/pystemd)
+[python-systemd](https://www.freedesktop.org/software/systemd/python-systemd/index.html)
+The systemd for Administrators Blog Series
+
+[#01: Verifying Bootup](https://0pointer.de/blog/projects/systemd-for-admins-1.html)
+[#02: Which Service Owns Which Processes?](https://0pointer.de/blog/projects/systemd-for-admins-2.html)
+[#03: How Do I Convert A SysV Init Script Into A systemd Service File?](https://0pointer.de/blog/projects/systemd-for-admins-3.html)
+[#04: Killing Services](https://0pointer.de/blog/projects/systemd-for-admins-4.html)
+[#05: The Three Levels of “Off”](https://0pointer.de/blog/projects/three-levels-of-off)
+[#06: Changing Roots](https://0pointer.de/blog/projects/changing-roots.html)
+[#07: The Blame Game](https://0pointer.de/blog/projects/blame-game.html)
+[#08: The New Configuration Files](https://0pointer.de/blog/projects/the-new-configuration-files)
+[#09: On /etc/sysconfig and /etc/default](https://0pointer.de/blog/projects/on-etc-sysinit.html)
+[#10: Instantiated Services](https://0pointer.de/blog/projects/instances.html)
+[#11: Converting inetd Services](https://0pointer.de/blog/projects/inetd.html)
+[#12: Securing Your Services](https://0pointer.de/blog/projects/security.html)
+[#13: Log and Service Status](https://0pointer.de/blog/projects/systemctl-journal.html)
+[#14: The Self-Explanatory Boot](https://0pointer.de/blog/projects/self-documented-boot.html)
+[#15: Watchdogs](https://0pointer.de/blog/projects/watchdog.html)
+[#16: Gettys on Serial Consoles (and Elsewhere)](https://0pointer.de/blog/projects/serial-console.html)
+[#17: Using the Journal](https://0pointer.de/blog/projects/journalctl.html)
+[#18: Managing Resources](https://0pointer.de/blog/projects/resources.html)
+[#19: Detecting Virtualization](https://0pointer.de/blog/projects/detect-virt.html)
+[#20: Socket Activated Internet Services and OS Containers](https://0pointer.de/blog/projects/socket-activated-containers.html)
+[#21: Container Integration](https://0pointer.net/blog/systemd-for-administrators-part-xxi.html)
+[A Russian translation](https://wiki.opennet.ru/Systemd_%D0%B4%D0%BB%D1%8F_%D0%B0%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BE%D0%B2)
+[A more complete Russian translation (PDF)](http://www2.kangran.su/~nnz/pub/s4a/s4a_latest.pdf)
+The systemd for Developers Series
+
+[#1: Socket Activation](https://0pointer.de/blog/projects/socket-activation.html)
+[#2: Socket Activation (Part 2)](https://0pointer.de/blog/projects/socket-activation2.html)
+[#3: Logging to the Journal](https://0pointer.de/blog/projects/journal-submit.html)
+The various distributions
+
+[Arch Linux bugtracker](https://gitlab.archlinux.org/archlinux/packaging/packages/systemd/-/issues)
+[Arch Linux packages](https://www.archlinux.org/packages/core/x86_64/systemd/)
+[Arch Linux wiki](https://wiki.archlinux.org/index.php/Systemd)
+[Debian bugtracker](https://bugs.debian.org/cgi-bin/pkgreport.cgi?ordering=normal;archive=0;src=systemd)
+[Debian packages](https://packages.debian.org/systemd)
+[Debian wiki](https://wiki.debian.org/systemd)
+[Fedora bugtracker](https://bugzilla.redhat.com/buglist.cgi?list_id=565273&classification=Fedora&query_format=advanced&bug_status=NEW&bug_status=ASSIGNED&bug_status=MODIFIED&bug_status=ON_DEV&bug_status=ON_QA&bug_status=VERIFIED&bug_status=RELEASE_PENDING&bug_status=POST&component=systemd&product=Fedora)
+[Fedora packages](https://packages.fedoraproject.org/pkgs/systemd/systemd/)
+[Fedora sources](https://src.fedoraproject.org/rpms/systemd)
+[Gentoo bugtracker](https://bugs.gentoo.org/buglist.cgi?quicksearch=systemd)
+[Gentoo packages](https://packages.gentoo.org/package/sys-apps/systemd)
+[Gentoo wiki](https://wiki.gentoo.org/wiki/Systemd)
+[Mageia bugtracker](https://bugs.mageia.org/buglist.cgi?field0-0-0=cf_rpmpkg&query_format=advanced&bug_status=NEW&bug_status=UNCONFIRMED&bug_status=ASSIGNED&bug_status=REOPENED&type0-0-0=substring&value0-0-0=systemd&component=RPM%20Packages&product=Mageia)
+[Mageia wiki](https://wiki.mageia.org/en/Features/Systemd)
+[Ubuntu packages](https://launchpad.net/ubuntu/+source/systemd)
+[Ubuntu wiki](https://wiki.ubuntu.com/systemd)
+[openSUSE bugtracker](https://bugzilla.opensuse.org/buglist.cgi?bug_status=UNCONFIRMED&bug_status=NEW&bug_status=ASSIGNED&bug_status=NEEDINFO&bug_status=REOPENED&classification=openSUSE&field0-0-0=product&field0-0-1=component&field0-0-2=short_desc&field0-0-3=status_whiteboard&known_name=systemd&query_based_on=systemd&query_format=advanced&short_desc=systemd&short_desc_type=allwordssubstr&type0-0-0=substring&type0-0-1=substring&type0-0-2=substring&type0-0-3=substring&value0-0-0=systemd&value0-0-1=systemd&value0-0-2=systemd&value0-0-3=systemd)
+[openSUSE instructions](https://en.opensuse.org/SDB:Systemd)
+[openSUSE packages](https://build.opensuse.org/package/show/Base:System/systemd)
+Users, Groups and Home Directories
+
+[Converting Existing Users to systemd-homed](/CONVERTING_TO_HOMED/)
+[Home Directories](/HOME_DIRECTORY/)
+[JSON Group Records](/GROUP_RECORD/)
+[JSON User Records](/USER_RECORD/)
+[Pax Controla Groupiana](/PAX_CONTROL_GROUPS/)
+[User Record Blob Directories](/USER_RECORD_BLOB_DIRS/)
+[User/Group Name Syntax](/USER_NAMES/)
+[User/Group Record Lookup API via Varlink](/USER_GROUP_API/)
+[Users, Groups, UIDs and GIDs on systemd Systems](/UIDS-GIDS/)
+[systemd-homed and JSON User/Group Record Support in Desktop Environments](/USERDB_AND_DESKTOPS/)
+Videos for Users and Administrators
+
+[Interview about systemd at golem.de (German)](https://video.golem.de/oss/4823/interview-mit-lennart-poettering-entwickler-systemd.html)
+[Presentation about kdbus at linux.conf.au 2014](https://mirror.linux.org.au/pub/linux.conf.au/2014/Friday/104-D-Bus_in_the_kernel_-_Lennart_Poettering.mp4)
+[Presentation about recent developments at Devconf 2013](https://www.youtube.com/watch?v=_rrpjYD373A)
+[Presentation about systemd at FOSDEM 2011](https://www.youtube.com/watch?v=TyMLi8QF6sw)
+[Presentation about systemd at FOSDEM 2013](https://ftp.fau.de/fosdem/2013/maintracks/Janson/systemd,_Two_Years_Later.webm)
+[Presentation about systemd at FOSDEM 2013 (Slides)](https://0pointer.de/public/systemd-fosdem2013.pdf)
+[Presentation about systemd at FOSS.in 2012](https://www.youtube.com/watch?v=_2aa34Uzr3c)
+[Presentation about systemd at OSEC Barcamp 2012](https://www.youtube.com/watch?v=9UnEV9SPuw8)
+[Presentation about systemd at OSworld 2014 (systemd cheat-sheet) (Polish)](https://www.youtube.com/watch?v=tU3HJVUPMyw)
+[Presentation about systemd at linux.conf.au 2011](https://www.youtube.com/watch?v=9XRj8ii91D0)
+[Presentation about systemd at linux.conf.au 2011 (Slides)](https://0pointer.de/public/systemd-lca2011.pdf)
+[Presentation about systemd at the Red Hat Summit 2013](https://access.redhat.com/videos/403833)
+[Presentation about the journal at Devconf 2013](https://www.youtube.com/watch?v=i4CACB7paLc)
+See also
+
+[Introductory blog story](https://0pointer.de/blog/projects/systemd.html)
+[Three](https://0pointer.de/blog/projects/systemd-update.html) [status](https://0pointer.de/blog/projects/systemd-update-2.html) [updates](https://0pointer.de/blog/projects/systemd-update-3.html)
+The [Wikipedia article](https://en.wikipedia.org/wiki/systemd)
+Welcome to Fedora 20 (Heisenbug)!
+
+[  OK  ] Reached target Remote File Systems.
+[  OK  ] Listening on Delayed Shutdown Socket.
+[  OK  ] Listening on /dev/initctl Compatibility Named Pipe.
+[  OK  ] Reached target Paths.
+[  OK  ] Reached target Encrypted Volumes.
+[  OK  ] Listening on Journal Socket.
+         Mounting Huge Pages File System...
+         Mounting POSIX Message Queue File System...
+         Mounting Debug File System...
+         Starting Journal Service...
+[  OK  ] Started Journal Service.
+         Mounting Configuration File System...
+         Mounting FUSE Control File System...
+[  OK  ] Created slice Root Slice.
+[  OK  ] Created slice User and Session Slice.
+[  OK  ] Created slice System Slice.
+[  OK  ] Reached target Slices.
+[  OK  ] Reached target Swap.
+         Mounting Temporary Directory...
+[  OK  ] Reached target Local File Systems (Pre).
+         Starting Load Random Seed...
+         Starting Load/Save Random Seed...
+[  OK  ] Mounted Huge Pages File System.
+[  OK  ] Mounted POSIX Message Queue File System.
+[  OK  ] Mounted Debug File System.
+[  OK  ] Mounted Configuration File System.
+[  OK  ] Mounted FUSE Control File System.
+[  OK  ] Mounted Temporary Directory.
+[  OK  ] Started Load Random Seed.
+[  OK  ] Started Load/Save Random Seed.
+[  OK  ] Reached target Local File Systems.
+         Starting Recreate Volatile Files and Directories...
+         Starting Trigger Flushing of Journal to Persistent Storage...
+[  OK  ] Started Recreate Volatile Files and Directories.
+         Starting Record System Reboot/Shutdown in UTMP...
+[  OK  ] Started Trigger Flushing of Journal to Persistent Storage.
+[  OK  ] Started Record System Reboot/Shutdown in UTMP.
+[  OK  ] Reached target System Initialization.
+[  OK  ] Reached target Timers.
+[  OK  ] Listening on D-Bus System Message Bus Socket.
+[  OK  ] Reached target Sockets.
+[  OK  ] Reached target Basic System.
+         Starting Permit User Sessions...
+         Starting D-Bus System Message Bus...
+[  OK  ] Started D-Bus System Message Bus.
+         Starting Login Service...
+         Starting Cleanup of Temporary Directories...
+[  OK  ] Started Permit User Sessions.
+[  OK  ] Started Cleanup of Temporary Directories.
+         Starting Console Getty...
+[  OK  ] Started Console Getty.
+[  OK  ] Reached target Login Prompts.
+[  OK  ] Started Login Service.
+[  OK  ] Reached target Multi-User System.
+
+Fedora release 20 (Heisenbug)
+Kernel 3.9.2-200.fc18.x86_64 on an x86_64 (console)
+
+fedora login:

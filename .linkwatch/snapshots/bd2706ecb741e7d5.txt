@@ -1,0 +1,493 @@
+Navigation Menu
+
+Search code, repositories, users, issues, pull requests...
+
+Provide feedback
+
+Saved searches
+
+Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+![SVG Image](data:…) Sponsor
+
+  # Sponsor nix-community/disko
+  ![SVG Image](data:…)
+
+  ##### GitHub Sponsors
+[Learn more about Sponsors](/sponsors)
+
+  [![@nix-community](https://avatars.githubusercontent.com/u/33221035?s=80&amp;v=4)](/nix-community)
+      [nix-community](/nix-community)
+
+    [nix-community](/nix-community)
+
+[![SVG Image](data:…) Sponsor](/sponsors/nix-community)
+##### External links
+
+  ![open_collective](https://github.githubassets.com/assets/open_collective-0a706523753d.svg)
+  [opencollective.com/**nix-community**](https://opencollective.com/nix-community)
+      [Learn more about funding links in repositories](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository).
+
+    [Report abuse](/contact/report-abuse?report=nix-community%2Fdisko+%28Repository+Funding+Links%29)
+[![SVG Image](data:…)Notifications](/login?return_to=%2Fnix-community%2Fdisko)    You must be signed in to change notification settings
+[![SVG Image](data:…)Fork 307](/login?return_to=%2Fnix-community%2Fdisko)
+[![SVG Image](data:…) Star 3.1k](/login?return_to=%2Fnix-community%2Fdisko)
+Sponsor nix-community/disko
+
+GitHub Sponsors
+
+![@nix-community](https://avatars.githubusercontent.com/u/33221035?s=80&amp;v=4)
+
+External links
+
+![open_collective](https://github.githubassets.com/assets/open_collective-0a706523753d.svg)
+
+nix-community/disko
+
+Folders and files
+
+![github-actions[bot]](https://avatars.githubusercontent.com/in/15368?v=4&amp;size=40)
+
+![github-actions[bot]](https://avatars.githubusercontent.com/in/15368?v=4&amp;size=40)
+
+![github-actions[bot]](https://avatars.githubusercontent.com/in/15368?v=4&amp;size=40)
+
+Name  Name Last commit message Last commit date
+Latest commit
+
+[![github-actions[bot]](https://avatars.githubusercontent.com/in/15368?v=4&amp;size=40)](/apps/github-actions)[github-actions[bot]](/nix-community/disko/commits?author=github-actions%5Bbot%5D)
+ [flake: update inputs (](/nix-community/disko/commit/ff8702b4de27f72b4c78573dfb89ec74e36abdf1)[#1271](https://github.com/nix-community/disko/pull/1271)[)](/nix-community/disko/commit/ff8702b4de27f72b4c78573dfb89ec74e36abdf1)![SVG Image](data:…)
+
+Open commit details![SVG Image](data:…)
+
+successJun 11, 2026
+ [ff8702b](/nix-community/disko/commit/ff8702b4de27f72b4c78573dfb89ec74e36abdf1) · Jun 11, 2026
+History[![SVG Image](data:…)1,392 Commits](/nix-community/disko/commits/master/)
+![SVG Image](data:…)
+
+Open commit details
+[![SVG Image](data:…)](/nix-community/disko/commits/master/)1,392 Commits
+![SVG Image](data:…)
+
+[.github](/nix-community/disko/tree/master/.github ".github")  ![SVG Image](data:…)
+
+[.github](/nix-community/disko/tree/master/.github ".github") [build(deps): bump peter-evans/create-pull-request from 7 to 8](/nix-community/disko/commit/5abb5af1de3b82ab321b48ec2e21e8c3e92f68b7 "build(deps): bump peter-evans/create-pull-request from 7 to 8
+
+Bumps [peter-evans/create-pull-request](https://github.com/peter-evans/create-pull-request) from 7 to 8.
+- [Release notes](https://github.com/peter-evans/create-pull-request/releases)
+- [Commits](https://github.com/peter-evans/create-pull-request/compare/v7...v8)
+
+---
+updated-dependencies:
+- dependency-name: peter-evans/create-pull-request
+ dependency-version: '8'
+ dependency-type: direct:production
+ update-type: version-update:semver-major
+...
+
+Signed-off-by: dependabot[bot] &lt;support@github.com&gt;") Feb 23, 2026
+![SVG Image](data:…)
+
+[disk-deactivate](/nix-community/disko/tree/master/disk-deactivate "disk-deactivate")  ![SVG Image](data:…)
+
+[disk-deactivate](/nix-community/disko/tree/master/disk-deactivate "disk-deactivate") [disk-deactivate: wipe raid arrays before stopping them](/nix-community/disko/commit/669ca49ae4b1355e569db99dd3182d48c98979d9 "disk-deactivate: wipe raid arrays before stopping them
+
+Previously, the `disk-deactivate` script stopped mdadm arrays before
+wiping the underlying physical disks. This caused filesystems with
+backup superblocks (like BTRFS at 64 MiB and 256 GiB offsets) to
+survive the wipe, as the backups were striped across the physical
+disks and missed by `wipefs` on the raw block devices.
+
+When the array was reassembled during reprovisioning, the filesystem
+superblocks realigned. `disko` would detect the old filesystem via
+`blkid` and silently skip the `mkfs` step, leaving stale data intact.
+
+This commit adds a `wipefs --all` command against the assembled RAID
+device *before* stopping it, ensuring all filesystem signatures and
+backup superblocks are cleanly destroyed.") Apr 8, 2026
+![SVG Image](data:…)
+
+[docs](/nix-community/disko/tree/master/docs "docs")  ![SVG Image](data:…)
+
+[docs](/nix-community/disko/tree/master/docs "docs") [docs: fix typo in table to gpt guide](/nix-community/disko/commit/f1bcd0707b02c333526b54d2aa88981c6a8df7e6 "docs: fix typo in table to gpt guide") Mar 5, 2026
+![SVG Image](data:…)
+
+[example](/nix-community/disko/tree/master/example "example")  ![SVG Image](data:…)
+
+[example](/nix-community/disko/tree/master/example "example") [feat: add FIDO2 & recovery support for LUKS](/nix-community/disko/commit/b02541f2d0767361b855be341b4b1349c88d4b17 "feat: add FIDO2 &amp; recovery support for LUKS
+
+This introduces what has been described in
+https://0pointer.net/blog/unlocking-luks2-volumes-with-tpm2-fido2-pkcs11-security-hardware-on-systemd-248.html.
+
+That is: support for FIDO2 and recovery passphrases and their boot
+mechanism.
+
+Testing is hard right now because of canokey-qemu being broken and U2F
+is not a valid replacement for FIDO2…
+
+I tried to keep as much as possible the previous behavior and make it
+possible to mix FIDO2 and normal passphrases or key files without any
+problem.
+
+PIV support is out of scope for this change but can easily be added.
+
+Signed-off-by: Raito Bezarius &lt;masterancpp@gmail.com&gt;") Apr 19, 2026
+![SVG Image](data:…)
+
+[lib](/nix-community/disko/tree/master/lib "lib")  ![SVG Image](data:…)
+
+[lib](/nix-community/disko/tree/master/lib "lib") [Fix(test); Add idempotent unmounting to tests of example configuration](/nix-community/disko/commit/8ff2716d01dd00c25abff97da485dca4282e5ff1 "Fix(test); Add idempotent unmounting to tests of example configuration") May 29, 2026
+![SVG Image](data:…)
+
+[scripts](/nix-community/disko/tree/master/scripts "scripts")  ![SVG Image](data:…)
+
+[scripts](/nix-community/disko/tree/master/scripts "scripts") [fix: correct uncommitted spelling in release script](/nix-community/disko/commit/089cf54ff388fe00f99485159894197fd1bc8077 "fix: correct uncommitted spelling in release script") Mar 5, 2026
+![SVG Image](data:…)
+
+[tests](/nix-community/disko/tree/master/tests "tests")  ![SVG Image](data:…)
+
+[tests](/nix-community/disko/tree/master/tests "tests") [luks: add test for FIDO2](/nix-community/disko/commit/a1b9822f032747189a83688253043f563619d7ce "luks: add test for FIDO2") May 25, 2026
+![SVG Image](data:…)
+
+[.envrc](/nix-community/disko/blob/master/.envrc ".envrc")  ![SVG Image](data:…)
+
+[.envrc](/nix-community/disko/blob/master/.envrc ".envrc") [setup treefmt](/nix-community/disko/commit/c23ac2891c78e89766e58a1c075d903db53baf6f "setup treefmt") Feb 15, 2025
+![SVG Image](data:…)
+
+[.git-blame-ignore-revs](/nix-community/disko/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs")  ![SVG Image](data:…)
+
+[.git-blame-ignore-revs](/nix-community/disko/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs") [add .git-blame-ignore-revs](/nix-community/disko/commit/7dcd5cda34cba135e4851b92bae6deb859af3884 "add .git-blame-ignore-revs") Feb 15, 2025
+![SVG Image](data:…)
+
+[.gitignore](/nix-community/disko/blob/master/.gitignore ".gitignore")  ![SVG Image](data:…)
+
+[.gitignore](/nix-community/disko/blob/master/.gitignore ".gitignore") [Make bcachefs subvolumes boot-time mount tests pass + more tests](/nix-community/disko/commit/7b636423586635985f91bd2f0f0cb0511c340627 "Make bcachefs subvolumes boot-time mount tests pass + more tests") May 4, 2025
+![SVG Image](data:…)
+
+[CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")  ![SVG Image](data:…)
+
+[CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md "CONTRIBUTING.md") [CONTRIBUTING.md: add documentation on how to run tests](/nix-community/disko/commit/17d08c65c241b1d65b3ddf79e3fac1ddc870b0f6 "CONTRIBUTING.md: add documentation on how to run tests") Jun 6, 2025
+![SVG Image](data:…)
+
+[LICENSE](/nix-community/disko/blob/master/LICENSE "LICENSE")  ![SVG Image](data:…)
+
+[LICENSE](/nix-community/disko/blob/master/LICENSE "LICENSE") [List all copyright years](/nix-community/disko/commit/2cb47338ec8d4fc120a72a4fd21177e56f36ccee "List all copyright years") Feb 15, 2024
+![SVG Image](data:…)
+
+[README.md](/nix-community/disko/blob/master/README.md "README.md")  ![SVG Image](data:…)
+
+[README.md](/nix-community/disko/blob/master/README.md "README.md") [fix: Apply umask=0077 to /boot partition in all examples](/nix-community/disko/commit/5be012e91700ee3549fa2da481207ac715667652 "fix: Apply umask=0077 to /boot partition in all examples") Jan 6, 2025
+![SVG Image](data:…)
+
+[cli.nix](/nix-community/disko/blob/master/cli.nix "cli.nix")  ![SVG Image](data:…)
+
+[cli.nix](/nix-community/disko/blob/master/cli.nix "cli.nix") [fix: flakes support on disko standalone cli](/nix-community/disko/commit/da6109c917b48abc1f76dd5c9bf3901c8c80f662 "fix: flakes support on disko standalone cli") Jul 4, 2025
+![SVG Image](data:…)
+
+[default.nix](/nix-community/disko/blob/master/default.nix "default.nix")  ![SVG Image](data:…)
+
+[default.nix](/nix-community/disko/blob/master/default.nix "default.nix") [treewide: format all files](/nix-community/disko/commit/ff2d853a8451a802786878e70324a4781d40d62d "treewide: format all files") Feb 15, 2025
+![SVG Image](data:…)
+
+[disko](/nix-community/disko/blob/master/disko "disko")  ![SVG Image](data:…)
+
+[disko](/nix-community/disko/blob/master/disko "disko") [only use nom if we write to a terminal](/nix-community/disko/commit/df522e787fdffc4f32ed3e1fca9ed0968a384d62 "only use nom if we write to a terminal") May 20, 2025
+![SVG Image](data:…)
+
+[disko-install](/nix-community/disko/blob/master/disko-install "disko-install")  ![SVG Image](data:…)
+
+[disko-install](/nix-community/disko/blob/master/disko-install "disko-install") [disko-install: resolve symlinks in mount point path](/nix-community/disko/commit/6b172212b632093b7b04397f55a4365f3712ecca "disko-install: resolve symlinks in mount point path
+
+Nix refuses to operate when the store path or its parent directories
+contain symlinks. On some systems /mnt can be a symlink, causing
+disko-install to fail with:
+
+ error: the path '&quot;/mnt&quot;' is a symlink; this is not allowed for the
+ Nix store and its parent directories
+
+Use realpath to resolve symlinks before passing the mount point to
+nix-store and nixos-install commands.") Dec 19, 2025
+![SVG Image](data:…)
+
+[doc.nix](/nix-community/disko/blob/master/doc.nix "doc.nix")  ![SVG Image](data:…)
+
+[doc.nix](/nix-community/disko/blob/master/doc.nix "doc.nix") [treewide: format all files](/nix-community/disko/commit/ff2d853a8451a802786878e70324a4781d40d62d "treewide: format all files") Feb 15, 2025
+![SVG Image](data:…)
+
+[flake-module.nix](/nix-community/disko/blob/master/flake-module.nix "flake-module.nix")  ![SVG Image](data:…)
+
+[flake-module.nix](/nix-community/disko/blob/master/flake-module.nix "flake-module.nix") [feat: add flake-parts module](/nix-community/disko/commit/146f45bee02b8bd88812cfce6ffc0f933788875a "feat: add flake-parts module") Sep 10, 2025
+![SVG Image](data:…)
+
+[flake.lock](/nix-community/disko/blob/master/flake.lock "flake.lock")  ![SVG Image](data:…)
+
+[flake.lock](/nix-community/disko/blob/master/flake.lock "flake.lock") [[create-pull-request] automated change](/nix-community/disko/commit/bb8b1838a7a9142a05f5e368c8f5811158834513 "[create-pull-request] automated change") Jun 11, 2026
+![SVG Image](data:…)
+
+[flake.nix](/nix-community/disko/blob/master/flake.nix "flake.nix")  ![SVG Image](data:…)
+
+[flake.nix](/nix-community/disko/blob/master/flake.nix "flake.nix") [devShells: expose disko CLI](/nix-community/disko/commit/a6a0a068c27441441c9fb556a79e87b0e3b7fe08 "devShells: expose disko CLI") May 17, 2026
+![SVG Image](data:…)
+
+[install-cli.nix](/nix-community/disko/blob/master/install-cli.nix "install-cli.nix")  ![SVG Image](data:…)
+
+[install-cli.nix](/nix-community/disko/blob/master/install-cli.nix "install-cli.nix") [treewide: format all files](/nix-community/disko/commit/ff2d853a8451a802786878e70324a4781d40d62d "treewide: format all files") Feb 15, 2025
+![SVG Image](data:…)
+
+[module.nix](/nix-community/disko/blob/master/module.nix "module.nix")  ![SVG Image](data:…)
+
+[module.nix](/nix-community/disko/blob/master/module.nix "module.nix") [disko-images: add copyNixStoreThreads option for configurable paralle…](/nix-community/disko/commit/8e68aa819d6a9964c8ac45172e68b943b597c52a "disko-images: add copyNixStoreThreads option for configurable parallelism
+
+Allow users to override the automatic thread count detection for nix
+store copying. The default &quot;auto&quot; behavior remains unchanged (min of
+nproc and 8), but users can now specify a fixed thread count for
+environments where the automatic detection isn't optimal.") Dec 9, 2025
+![SVG Image](data:…)
+
+[package.nix](/nix-community/disko/blob/master/package.nix "package.nix")  ![SVG Image](data:…)
+
+[package.nix](/nix-community/disko/blob/master/package.nix "package.nix") [disko-install: switch to xcp](/nix-community/disko/commit/49c1bc1b348aff130cf7d018b4c0d060c9397344 "disko-install: switch to xcp") Aug 25, 2025
+![SVG Image](data:…)
+
+[statix.toml](/nix-community/disko/blob/master/statix.toml "statix.toml")  ![SVG Image](data:…)
+
+[statix.toml](/nix-community/disko/blob/master/statix.toml "statix.toml") [style: Disable `inherit` pattern check in statix](/nix-community/disko/commit/4ba81813190c86288f58b82e55868ce4d5f55789 "style: Disable `inherit` pattern check in statix
+
+As discussed in [this
+comment](https://github.com/nix-community/disko/pull/143#discussion_r1097912402),
+as a blanket rule converting everything possible to `inherit` like
+statements can hurt readability.
+
+Add config file for statix to disable these checks and fixes, then rerun
+the autofix with these options.") Feb 7, 2023
+![SVG Image](data:…)
+
+[treefmt.toml](/nix-community/disko/blob/master/treefmt.toml "treefmt.toml")  ![SVG Image](data:…)
+
+[treefmt.toml](/nix-community/disko/blob/master/treefmt.toml "treefmt.toml") [setup treefmt](/nix-community/disko/commit/c23ac2891c78e89766e58a1c075d903db53baf6f "setup treefmt") Feb 15, 2025
+![SVG Image](data:…)
+
+[version.nix](/nix-community/disko/blob/master/version.nix "version.nix")  ![SVG Image](data:…)
+
+[version.nix](/nix-community/disko/blob/master/version.nix "version.nix") [release: reset released flag](/nix-community/disko/commit/9c1eaf1e0943c00812d67b21679e8969ff80a910 "release: reset released flag") Jan 20, 2026
+View all files
+
+Repository files navigation
+
+disko - Declarative disk partitioning
+
+![Project logo](/nix-community/disko/raw/master/docs/logo.png)
+
+[![Project logo](/nix-community/disko/raw/master/docs/logo.png "")](/nix-community/disko/blob/master/docs/logo.png)
+
+[Documentation Index](/nix-community/disko/blob/master/docs/INDEX.md)
+
+NixOS is a Linux distribution where everything is described as code, with one
+exception: during installation, the disk partitioning and formatting are manual
+steps. **disko** aims to correct this sad 🤡 omission.
+
+This is especially useful for unattended installations, re-installation after a
+system crash or for setting up more than one identical server.
+
+Overview
+
+**disko** can either be used after booting from a NixOS installer, or in
+conjunction with [nixos-anywhere](https://github.com/numtide/nixos-anywhere) if
+you're installing remotely.
+
+Before using **disko**, the specifications of the disks, partitions, type of
+formatting and the mount points must be defined in a Nix configuration. You can
+find [examples](/nix-community/disko/blob/master/example) of typical configurations in the Nix community
+repository, and use one of these as the basis of your own configuration.
+
+You can keep your configuration and re-use it for other installations, or for a
+system rebuild.
+
+**disko** is flexible, in that it supports most of the common formatting and
+partitioning options, including:
+
+Disk layouts: GPT, MBR, and mixed.
+Partition tools: LVM, mdadm, LUKS, and more.
+Filesystems: ext4, btrfs, ZFS, bcachefs, tmpfs, and others.
+It can work with these in various configurations and orders, and supports
+recursive layouts.
+
+How to use disko
+
+Disko doesn't require installation: it can be run directly from nix-community
+repository. The [Quickstart Guide](/nix-community/disko/blob/master/docs/quickstart.md) documents how to run
+Disko in its simplest form when installing NixOS. Alternatively, you can also
+use the new [disko-install](/nix-community/disko/blob/master/docs/disko-install.md) tool, which combines `disko` and `nixos-install` into one step.
+
+For information on other use cases, including upgrading from an older version of **disko**, using **disko** without NixOS and downloading the module, see the [How To Guide](/nix-community/disko/blob/master/docs/HowTo.md)
+
+For more detailed options, such as command line switches, see the [Reference Guide](/nix-community/disko/blob/master/docs/reference.md)
+
+To access sample configurations for commonly-used disk layouts, refer to the [examples](/nix-community/disko/blob/master/example) provided.
+
+Disko can be also used to create [disk images](/nix-community/disko/blob/master/docs/disko-images.md).
+
+Sample Configuration and CLI command
+
+A simple disko configuration may look like this:
+
+{
+  disko.devices = {
+    disk = {
+      my-disk = {
+        device = "/dev/sda";
+        type = "disk";
+        content = {
+          type = "gpt";
+          partitions = {
+            ESP = {
+              type = "EF00";
+              size = "500M";
+              content = {
+                type = "filesystem";
+                format = "vfat";
+                mountpoint = "/boot";
+                mountOptions = [ "umask=0077" ];
+              };
+            };
+            root = {
+              size = "100%";
+              content = {
+                type = "filesystem";
+                format = "ext4";
+                mountpoint = "/";
+              };
+            };
+          };
+        };
+      };
+    };
+  };
+}
+
+If you'd saved this configuration in /tmp/disk-config.nix, and wanted to create
+a disk named /dev/sda, you would run the following command to partition, format
+and mount the disk.
+
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount /tmp/disk-config.nix
+
+Related Tools
+
+This tool is used by [nixos-anywhere](https://github.com/numtide/nixos-anywhere), which carries out a
+fully-automated remote install of NixOS.
+
+We also acknowledge <https://github.com/NixOS/nixpart>, the conceptual ancestor of
+this project.
+
+Licensing and Contribution details
+
+This software is provided free under the [MIT Licence](https://opensource.org/licenses/MIT).
+
+If you want to contribute, check out [CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md).
+
+Get in touch
+
+We have a public matrix channel at [disko](https://matrix.to/#/#disko:nixos.org).
+
+![Untitledpng](https://camo.githubusercontent.com/a07f26275c39bbf53fe1d810116da5ee1d216fcbea6783fc969ae43083aeb243/68747470733a2f2f636f6461686f737465642e696f2f646f63732f364643494d54524d30702f626c6f62732f626c2d736753756e61585957582f3037376633663964376437366436613232386139333761666130363538323932353834646564623562383532613863613337306236633631646162623738373262376636313765363033663137393339323864633534313063373462336537376166323161383965343335666137316136383161383638643231666431663539396464313061363437646438353565313430343339373966316466373935366636376333323630633034343265323462333436363233303732303462383365613334646539323964)
+
+This project is supported by [Numtide](https://numtide.com/). [![Untitledpng](https://camo.githubusercontent.com/a07f26275c39bbf53fe1d810116da5ee1d216fcbea6783fc969ae43083aeb243/68747470733a2f2f636f6461686f737465642e696f2f646f63732f364643494d54524d30702f626c6f62732f626c2d736753756e61585957582f3037376633663964376437366436613232386139333761666130363538323932353834646564623562383532613863613337306236633631646162623738373262376636313765363033663137393339323864633534313063373462336537376166323161383965343335666137316136383161383638643231666431663539396464313061363437646438353565313430343339373966316466373935366636376333323630633034343265323462333436363233303732303462383365613334646539323964)](https://camo.githubusercontent.com/a07f26275c39bbf53fe1d810116da5ee1d216fcbea6783fc969ae43083aeb243/68747470733a2f2f636f6461686f737465642e696f2f646f63732f364643494d54524d30702f626c6f62732f626c2d736753756e61585957582f3037376633663964376437366436613232386139333761666130363538323932353834646564623562383532613863613337306236633631646162623738373262376636313765363033663137393339323864633534313063373462336537376166323161383965343335666137316136383161383638643231666431663539396464313061363437646438353565313430343339373966316466373935366636376333323630633034343265323462333436363233303732303462383365613334646539323964)
+
+We are a team of independent freelancers that love open source. We help our
+customers make their project lifecycles more efficient by:
+
+Providing and supporting useful tools such as this one
+Building and deploying infrastructure, and offering dedicated DevOps support
+Building their in-house Nix skills, and integrating Nix with their workflows
+Developing additional features and tools
+Carrying out custom research and development.
+[Contact us](https://numtide.com/contact) if you have a project in mind, or if
+you need help with any of our supported tools, including this one. We'd love to
+hear from you.
+
+About
+
+Declarative disk partitioning and formatting using nix [maintainers=[@Lassulus](https://github.com/Lassulus) [@Enzime](https://github.com/Enzime) [@iFreilicht](https://github.com/iFreilicht) [@Mic92](https://github.com/Mic92) [@phaer](https://github.com/phaer)]
+
+Topics
+
+Resources
+
+License
+
+Code of conduct
+
+Contributing
+
+Security policy
+
+Stars
+
+Watchers
+
+Forks
+
+[Releases 15](/nix-community/disko/releases)
+
+Sponsor this project
+
+[![@nix-community](https://avatars.githubusercontent.com/u/33221035?s=64&amp;v=4)](/nix-community) [**nix-community** Nix community projects](/nix-community)        [![SVG Image](data:…)](/sponsors/nix-community)
+![@nix-community](https://avatars.githubusercontent.com/u/33221035?s=64&amp;v=4)
+
+![open_collective](https://github.githubassets.com/assets/open_collective-0a706523753d.svg) [opencollective.com/**nix-community**](https://opencollective.com/nix-community)
+![open_collective](https://github.githubassets.com/assets/open_collective-0a706523753d.svg)
+
+[Packages](/orgs/nix-community/packages?repo_name=disko)
+
+[Contributors 144](/nix-community/disko/graphs/contributors)
+
+[![@Mic92](https://avatars.githubusercontent.com/u/96200?s=64&amp;v=4)](https://github.com/Mic92)
+[![@Lassulus](https://avatars.githubusercontent.com/u/621759?s=64&amp;v=4)](https://github.com/Lassulus)
+[![@github-actions[bot]](https://avatars.githubusercontent.com/in/15368?s=64&amp;v=4)](https://github.com/apps/github-actions)
+[![@bors[bot]](https://avatars.githubusercontent.com/in/1847?s=64&amp;v=4)](https://github.com/apps/bors)
+[![@iFreilicht](https://avatars.githubusercontent.com/u/9742635?s=64&amp;v=4)](https://github.com/iFreilicht)
+[![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)](https://github.com/Enzime)
+[![@phaer](https://avatars.githubusercontent.com/u/101753?s=64&amp;v=4)](https://github.com/phaer)
+[![@dependabot[bot]](https://avatars.githubusercontent.com/in/29110?s=64&amp;v=4)](https://github.com/apps/dependabot)
+[![@blaggacao](https://avatars.githubusercontent.com/u/7548295?s=64&amp;v=4)](https://github.com/blaggacao)
+[![@MatthewCroughan](https://avatars.githubusercontent.com/u/26458780?s=64&amp;v=4)](https://github.com/MatthewCroughan)
+[![@lilyinstarlight](https://avatars.githubusercontent.com/u/298109?s=64&amp;v=4)](https://github.com/lilyinstarlight)
+[![@Bert-Proesmans](https://avatars.githubusercontent.com/u/2027877?s=64&amp;v=4)](https://github.com/Bert-Proesmans)
+[![@dmadisetti](https://avatars.githubusercontent.com/u/2689338?s=64&amp;v=4)](https://github.com/dmadisetti)
+[![@nothingnesses](https://avatars.githubusercontent.com/u/18732253?s=64&amp;v=4)](https://github.com/nothingnesses)
+![@Mic92](https://avatars.githubusercontent.com/u/96200?s=64&amp;v=4)
+
+![@Lassulus](https://avatars.githubusercontent.com/u/621759?s=64&amp;v=4)
+
+![@github-actions[bot]](https://avatars.githubusercontent.com/in/15368?s=64&amp;v=4)
+
+![@bors[bot]](https://avatars.githubusercontent.com/in/1847?s=64&amp;v=4)
+
+![@iFreilicht](https://avatars.githubusercontent.com/u/9742635?s=64&amp;v=4)
+
+![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)
+
+![@phaer](https://avatars.githubusercontent.com/u/101753?s=64&amp;v=4)
+
+![@dependabot[bot]](https://avatars.githubusercontent.com/in/29110?s=64&amp;v=4)
+
+![@blaggacao](https://avatars.githubusercontent.com/u/7548295?s=64&amp;v=4)
+
+![@MatthewCroughan](https://avatars.githubusercontent.com/u/26458780?s=64&amp;v=4)
+
+![@lilyinstarlight](https://avatars.githubusercontent.com/u/298109?s=64&amp;v=4)
+
+![@Bert-Proesmans](https://avatars.githubusercontent.com/u/2027877?s=64&amp;v=4)
+
+![@dmadisetti](https://avatars.githubusercontent.com/u/2689338?s=64&amp;v=4)
+
+![@nothingnesses](https://avatars.githubusercontent.com/u/18732253?s=64&amp;v=4)
+
+Languages
+
+[![SVG Image](data:…) Nix 95.3%](/nix-community/disko/search?l=nix)
+[![SVG Image](data:…) Shell 3.9%](/nix-community/disko/search?l=shell)
+[![SVG Image](data:…) jq 0.8%](/nix-community/disko/search?l=jq)
+Footer

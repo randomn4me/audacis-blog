@@ -1,0 +1,433 @@
+Navigation Menu
+
+Search code, repositories, users, issues, pull requests...
+
+Provide feedback
+
+Saved searches
+
+Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+![SVG Image](data:…) Sponsor
+
+  # Sponsor nix-darwin/nix-darwin
+  ![SVG Image](data:…)
+
+  ##### GitHub Sponsors
+[Learn more about Sponsors](/sponsors)
+
+  [![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=80&amp;v=4)](/emilazy)
+      [emilazy](/emilazy)
+
+    [emilazy](/emilazy)
+
+  [![SVG Image](data:…) Sponsor](/sponsors/emilazy)
+
+  [![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=80&amp;v=4)](/Enzime)
+      [Enzime](/Enzime)
+
+    [Enzime](/Enzime)
+
+  [![SVG Image](data:…) Sponsor](/sponsors/Enzime)
+      [Learn more about funding links in repositories](https://docs.github.com/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/displaying-a-sponsor-button-in-your-repository).
+
+    [Report abuse](/contact/report-abuse?report=nix-darwin%2Fnix-darwin+%28Repository+Funding+Links%29)
+[![SVG Image](data:…)Notifications](/login?return_to=%2Fnix-darwin%2Fnix-darwin)    You must be signed in to change notification settings
+[![SVG Image](data:…)Fork 636](/login?return_to=%2Fnix-darwin%2Fnix-darwin)
+[![SVG Image](data:…) Star 5.6k](/login?return_to=%2Fnix-darwin%2Fnix-darwin)
+Sponsor nix-darwin/nix-darwin
+
+GitHub Sponsors
+
+![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=80&amp;v=4)
+
+![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=80&amp;v=4)
+
+nix-darwin/nix-darwin
+
+Folders and files
+
+![Samasaur1](https://avatars.githubusercontent.com/u/30577766?v=4&amp;size=40)
+
+![Samasaur1](https://avatars.githubusercontent.com/u/30577766?v=4&amp;size=40)
+
+![Samasaur1](https://avatars.githubusercontent.com/u/30577766?v=4&amp;size=40)
+
+Name  Name Last commit message Last commit date
+Latest commit
+
+[![Samasaur1](https://avatars.githubusercontent.com/u/30577766?v=4&amp;size=40)](/Samasaur1)[Samasaur1](/nix-darwin/nix-darwin/commits?author=Samasaur1)
+ [homebrew: pass extraEnv to cleanup checks (](/nix-darwin/nix-darwin/commit/a1fa429e945becaf60468600daf649be4ba0350c)[#1804](https://github.com/nix-darwin/nix-darwin/pull/1804)[)](/nix-darwin/nix-darwin/commit/a1fa429e945becaf60468600daf649be4ba0350c)![SVG Image](data:…)
+
+successJun 18, 2026
+ [a1fa429](/nix-darwin/nix-darwin/commit/a1fa429e945becaf60468600daf649be4ba0350c) · Jun 18, 2026
+History[![SVG Image](data:…)2,388 Commits](/nix-darwin/nix-darwin/commits/master/)
+![SVG Image](data:…)
+
+Open commit details
+[![SVG Image](data:…)](/nix-darwin/nix-darwin/commits/master/)2,388 Commits
+![SVG Image](data:…)
+
+[.github](/nix-darwin/nix-darwin/tree/master/.github ".github")  ![SVG Image](data:…)
+
+[.github](/nix-darwin/nix-darwin/tree/master/.github ".github") [ci: bump macOS version (13 -> 14)](/nix-darwin/nix-darwin/commit/585cd058e88f7f280ced3a9e3cb868f1b4f198f5 "ci: bump macOS version (13 -&gt; 14)
+
+The runners from macOS 14 on default to aarch64, so this will also
+transition us away from x86_64") Aug 15, 2025
+![SVG Image](data:…)
+
+[doc](/nix-darwin/nix-darwin/tree/master/doc "doc")  ![SVG Image](data:…)
+
+[doc](/nix-darwin/nix-darwin/tree/master/doc "doc") [etc: support Lix 2.95.1 (](/nix-darwin/nix-darwin/commit/06648f4902343228ce2de79f291dd5a58ee12146 "etc: support Lix 2.95.1 (#1731)")[#1731](https://github.com/nix-darwin/nix-darwin/pull/1731)[)](/nix-darwin/nix-darwin/commit/06648f4902343228ce2de79f291dd5a58ee12146 "etc: support Lix 2.95.1 (#1731)") Apr 1, 2026
+![SVG Image](data:…)
+
+[modules](/nix-darwin/nix-darwin/tree/master/modules "modules")  ![SVG Image](data:…)
+
+[modules](/nix-darwin/nix-darwin/tree/master/modules "modules") [homebrew: use brewBundleCmd also for system.checks](/nix-darwin/nix-darwin/commit/d8a6661f78281431f182f222c7df96e2c9480fc5 "homebrew: use brewBundleCmd also for system.checks") Jun 18, 2026
+![SVG Image](data:…)
+
+[pkgs](/nix-darwin/nix-darwin/tree/master/pkgs "pkgs")  ![SVG Image](data:…)
+
+[pkgs](/nix-darwin/nix-darwin/tree/master/pkgs "pkgs") [darwin-rebuild: support --log-format](/nix-darwin/nix-darwin/commit/1e2d8fbb375432a32b19bd9af8759b3f86f00541 "darwin-rebuild: support --log-format") Apr 21, 2026
+![SVG Image](data:…)
+
+[scripts](/nix-darwin/nix-darwin/tree/master/scripts "scripts")  ![SVG Image](data:…)
+
+[scripts](/nix-darwin/nix-darwin/tree/master/scripts "scripts") [scripts/release: init](/nix-darwin/nix-darwin/commit/8073b91aa3bcd8041a70501c4ffcd59002e4a30a "scripts/release: init
+
+This script has not yet been tested in its entirety, but the file
+editing operations were used for #1781 and #1782") May 26, 2026
+![SVG Image](data:…)
+
+[tests](/nix-darwin/nix-darwin/tree/master/tests "tests")  ![SVG Image](data:…)
+
+[tests](/nix-darwin/nix-darwin/tree/master/tests "tests") [homebrew: use brewBundleCmd also for system.checks](/nix-darwin/nix-darwin/commit/d8a6661f78281431f182f222c7df96e2c9480fc5 "homebrew: use brewBundleCmd also for system.checks") Jun 18, 2026
+![SVG Image](data:…)
+
+[.git-blame-ignore-revs](/nix-darwin/nix-darwin/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs")  ![SVG Image](data:…)
+
+[.git-blame-ignore-revs](/nix-darwin/nix-darwin/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs") [git-blame-ignore-revs: add `nixpkgs` module formatting commit](/nix-darwin/nix-darwin/commit/5084b33265f1c14551af63e61ec8bb75fec3ccbc "git-blame-ignore-revs: add `nixpkgs` module formatting commit") Feb 3, 2025
+![SVG Image](data:…)
+
+[.gitignore](/nix-darwin/nix-darwin/blob/master/.gitignore ".gitignore")  ![SVG Image](data:…)
+
+[.gitignore](/nix-darwin/nix-darwin/blob/master/.gitignore ".gitignore") [chore: ignore .DS\_Store](/nix-darwin/nix-darwin/commit/7d5e904fb2b5fe616fbfde2bc723d5e6ad56838b "chore: ignore .DS_Store") Nov 13, 2025
+![SVG Image](data:…)
+
+[CHANGELOG](/nix-darwin/nix-darwin/blob/master/CHANGELOG "CHANGELOG")  ![SVG Image](data:…)
+
+[CHANGELOG](/nix-darwin/nix-darwin/blob/master/CHANGELOG "CHANGELOG") [Fix typo](/nix-darwin/nix-darwin/commit/ace757665e84f690eb7c70ee1e0b2d4898b5696d "Fix typo") Jun 11, 2026
+![SVG Image](data:…)
+
+[LICENSE](/nix-darwin/nix-darwin/blob/master/LICENSE "LICENSE")  ![SVG Image](data:…)
+
+[LICENSE](/nix-darwin/nix-darwin/blob/master/LICENSE "LICENSE") [add license](/nix-darwin/nix-darwin/commit/a1ccb21e3e946502be6bc1241611d79a7afcbc64 "add license") Jul 19, 2017
+![SVG Image](data:…)
+
+[README.md](/nix-darwin/nix-darwin/blob/master/README.md "README.md")  ![SVG Image](data:…)
+
+[README.md](/nix-darwin/nix-darwin/blob/master/README.md "README.md") [version: bump to 26.11](/nix-darwin/nix-darwin/commit/82325d90a1692b6f74862f9f557f468b6c01febb "version: bump to 26.11") May 25, 2026
+![SVG Image](data:…)
+
+[default.nix](/nix-darwin/nix-darwin/blob/master/default.nix "default.nix")  ![SVG Image](data:…)
+
+[default.nix](/nix-darwin/nix-darwin/blob/master/default.nix "default.nix") [default: expose all the `darwin-*` commands](/nix-darwin/nix-darwin/commit/095ba5502c83c5fd8173a1b0dbc99a0e1be7e42d "default: expose all the `darwin-*` commands
+
+Change `uninstaller` to `darwin-uninstaller` to match flake attribute") Nov 21, 2024
+![SVG Image](data:…)
+
+[eval-config.nix](/nix-darwin/nix-darwin/blob/master/eval-config.nix "eval-config.nix")  ![SVG Image](data:…)
+
+[eval-config.nix](/nix-darwin/nix-darwin/blob/master/eval-config.nix "eval-config.nix") [treewide: point to the new GitHub organization](/nix-darwin/nix-darwin/commit/ce5a3b9db91ee65f2e969442884baac64b4b41f3 "treewide: point to the new GitHub organization") Mar 27, 2025
+![SVG Image](data:…)
+
+[flake-module.nix](/nix-darwin/nix-darwin/blob/master/flake-module.nix "flake-module.nix")  ![SVG Image](data:…)
+
+[flake-module.nix](/nix-darwin/nix-darwin/blob/master/flake-module.nix "flake-module.nix") [Add flake-parts module](/nix-darwin/nix-darwin/commit/3ab1648f501cc7f2b42b60b2218ccfa10a4280d0 "Add flake-parts module") Jan 6, 2026
+![SVG Image](data:…)
+
+[flake.lock](/nix-darwin/nix-darwin/blob/master/flake.lock "flake.lock")  ![SVG Image](data:…)
+
+[flake.lock](/nix-darwin/nix-darwin/blob/master/flake.lock "flake.lock") [flake.lock: update nixpkgs](/nix-darwin/nix-darwin/commit/818b88b75f149a0082bd29feb7720e5c7d40ba86 "flake.lock: update nixpkgs") Jun 11, 2026
+![SVG Image](data:…)
+
+[flake.nix](/nix-darwin/nix-darwin/blob/master/flake.nix "flake.nix")  ![SVG Image](data:…)
+
+[flake.nix](/nix-darwin/nix-darwin/blob/master/flake.nix "flake.nix") [Add flake-parts module](/nix-darwin/nix-darwin/commit/3ab1648f501cc7f2b42b60b2218ccfa10a4280d0 "Add flake-parts module") Jan 6, 2026
+![SVG Image](data:…)
+
+[release.nix](/nix-darwin/nix-darwin/blob/master/release.nix "release.nix")  ![SVG Image](data:…)
+
+[release.nix](/nix-darwin/nix-darwin/blob/master/release.nix "release.nix") [nixpkgs.config: Add allowUnfreePackages option](/nix-darwin/nix-darwin/commit/a0a51c56f0de06d48b862eaacf0b5f9a847a35fa "nixpkgs.config: Add allowUnfreePackages option
+
+Also make sure it merges correctly and verify with a test.
+
+This was added in nixpkgs some time ago and is quite a nice addition as
+it merges additively (in contrast to allowUnfreePredicate) thus allowing
+to localize allowUnfreePackage specifications to all the locations in
+your local config where unfree packages are added.") Apr 1, 2026
+![SVG Image](data:…)
+
+[version.json](/nix-darwin/nix-darwin/blob/master/version.json "version.json")  ![SVG Image](data:…)
+
+[version.json](/nix-darwin/nix-darwin/blob/master/version.json "version.json") [version: bump to 26.11](/nix-darwin/nix-darwin/commit/82325d90a1692b6f74862f9f557f468b6c01febb "version: bump to 26.11") May 25, 2026
+View all files
+
+Repository files navigation
+
+![logo](https://private-user-images.githubusercontent.com/18535642/428120998-0e1a77ac-6739-4153-bd24-abd3a5e143f5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4NTAsIm5iZiI6MTc4MjY3MDU1MCwicGF0aCI6Ii8xODUzNTY0Mi80MjgxMjA5OTgtMGUxYTc3YWMtNjczOS00MTUzLWJkMjQtYWJkM2E1ZTE0M2Y1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA2MjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNjI4VDE4MTU1MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE0OWQzYWJjNWNlZjU3ZWVkODRmMzU0NzlkZmYzOWMxYTMyZDRmNzU0ZjZmOThlYzA1YTBiNzBhNTc0ZDc4Y2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.TWgz8NLnWUUUXU_3GWyI2Lz_RVjb2ptLRHX5njtBPNA)
+
+[![logo](https://private-user-images.githubusercontent.com/18535642/428120998-0e1a77ac-6739-4153-bd24-abd3a5e143f5.png?jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3ODI2NzA4NTAsIm5iZiI6MTc4MjY3MDU1MCwicGF0aCI6Ii8xODUzNTY0Mi80MjgxMjA5OTgtMGUxYTc3YWMtNjczOS00MTUzLWJkMjQtYWJkM2E1ZTE0M2Y1LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNjA2MjglMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjYwNjI4VDE4MTU1MFomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWE0OWQzYWJjNWNlZjU3ZWVkODRmMzU0NzlkZmYzOWMxYTMyZDRmNzU0ZjZmOThlYzA1YTBiNzBhNTc0ZDc4Y2YmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JnJlc3BvbnNlLWNvbnRlbnQtdHlwZT1pbWFnZSUyRnBuZyJ9.TWgz8NLnWUUUXU_3GWyI2Lz_RVjb2ptLRHX5njtBPNA)](https://github.com/nix-darwin/nix-darwin)
+
+nix-darwin
+
+![Test](https://github.com/nix-darwin/nix-darwin/actions/workflows/test.yml/badge.svg)
+
+[![Test](https://github.com/nix-darwin/nix-darwin/actions/workflows/test.yml/badge.svg)](https://github.com/nix-darwin/nix-darwin/actions/workflows/test.yml)
+
+Nix modules for darwin, `/etc/nixos/configuration.nix` for macOS.
+
+This project aims to bring the convenience of a declarative system approach to macOS.
+nix-darwin is built up around [Nixpkgs](https://github.com/NixOS/nixpkgs), quite similar to [NixOS](https://nixos.org/).
+
+Prerequisites
+
+The only prerequisite is a Nix implementation; both Nix and Lix are supported.
+
+As the official Nix installer does not include an automated uninstaller, and manual uninstallation on macOS is a complex process, we recommend using the [Lix installer](https://lix.systems/install/#on-any-other-linuxmacos-system), which supports both flake-based and channel-based setups.
+
+The installer you use doesn't affect which Nix interpreter your system will use later on. nix-darwin manages the Nix installation by default and will default to upstream Nix. If you wish to use Lix instead of Nix, set `nix.package = pkgs.lix` in your configuration.
+
+Getting started
+
+Despite being an experimental feature in Nix currently, nix-darwin recommends that beginners use flakes to manage their nix-darwin configurations.
+
+Step 1. Creating `flake.nix`
+
+If you don't have an existing `configuration.nix`, you can run the following commands to generate a basic `flake.nix` inside `/etc/nix-darwin`:
+
+sudo mkdir -p /etc/nix-darwin
+sudo chown $(id -nu):$(id -ng) /etc/nix-darwin
+cd /etc/nix-darwin
+
+# To use Nixpkgs unstable:
+nix flake init -t nix-darwin/master
+# To use Nixpkgs 26.05:
+nix flake init -t nix-darwin/nix-darwin-26.05
+
+sed -i '' "s/simple/$(scutil --get LocalHostName)/" flake.nix
+
+Make sure to check if `nixpkgs.hostPlatform` is set to either `x86_64-darwin` for Intel or `aarch64-darwin` for Apple Silicon.
+
+Add the following to `flake.nix` in the same folder as `configuration.nix`:
+
+{
+  description = "John's darwin system";
+
+  inputs = {
+    # Use `github:NixOS/nixpkgs/nixpkgs-26.05-darwin` to use Nixpkgs 26.05.
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+    # Use `github:nix-darwin/nix-darwin/nix-darwin-26.05` to use Nixpkgs 26.05.
+    nix-darwin.url = "github:nix-darwin/nix-darwin/master";
+    nix-darwin.inputs.nixpkgs.follows = "nixpkgs";
+  };
+
+  outputs = inputs@{ self, nix-darwin, nixpkgs }: {
+    darwinConfigurations."Johns-MacBook" = nix-darwin.lib.darwinSystem {
+      modules = [ ./configuration.nix ];
+    };
+  };
+}
+
+Make sure to replace `Johns-MacBook` with your hostname which you can find by running `scutil --get LocalHostName`.
+
+Make sure to set `nixpkgs.hostPlatform` in your `configuration.nix` to either `x86_64-darwin` (Intel) or `aarch64-darwin` (Apple Silicon).
+
+Step 2. Installing `nix-darwin`
+
+Unlike NixOS, `nix-darwin` does not have an installer, you can just run `darwin-rebuild switch` to install nix-darwin. As `darwin-rebuild` won't be installed in your `PATH` yet, you can use the following command:
+
+# To use Nixpkgs unstable:
+sudo nix run nix-darwin/master#darwin-rebuild -- switch
+# To use Nixpkgs 26.05:
+sudo nix run nix-darwin/nix-darwin-26.05#darwin-rebuild -- switch
+
+Step 3. Using `nix-darwin`
+
+After installing, you can run `darwin-rebuild` to apply changes to your system:
+
+sudo darwin-rebuild switch
+
+Using flake inputs
+
+Inputs from the flake can also be passed into `darwinSystem`. These inputs are then
+accessible as an argument `inputs`, similar to `pkgs` and `lib`, inside the configuration.
+
+# in flake.nix
+nix-darwin.lib.darwinSystem {
+  modules = [ ./configuration.nix ];
+  specialArgs = { inherit inputs; };
+}
+
+# in configuration.nix
+{ pkgs, lib, inputs }:
+# inputs.self, inputs.nix-darwin, and inputs.nixpkgs can be accessed here
+
+Step 1. Creating `configuration.nix`
+
+Copy the [simple](/nix-darwin/nix-darwin/blob/master/modules/examples/simple.nix) example to `/etc/nix-darwin/configuration.nix`.
+
+Step 2. Adding `nix-darwin` channel
+
+# If you use Nixpkgs unstable (the default):
+sudo nix-channel --add https://github.com/nix-darwin/nix-darwin/archive/master.tar.gz darwin
+# If you use Nixpkgs 26.05:
+sudo nix-channel --add https://github.com/nix-darwin/nix-darwin/archive/nix-darwin-26.05.tar.gz darwin
+
+sudo nix-channel --update
+
+Step 3. Installing `nix-darwin`
+
+To install `nix-darwin`, you can just run `darwin-rebuild switch` to install nix-darwin. As `darwin-rebuild` won't be installed in your `PATH` yet, you can use the following command:
+
+nix-build '<darwin>' -A darwin-rebuild
+sudo ./result/bin/darwin-rebuild switch -I darwin-config=/etc/nix-darwin/configuration.nix
+
+Step 4. Using `nix-darwin`
+
+After installing, you can run `darwin-rebuild` to apply changes to your system:
+
+sudo darwin-rebuild switch
+
+Step 5. Updating `nix-darwin`
+
+You can update Nixpkgs and `nix-darwin` using the following command:
+
+sudo nix-channel --update
+
+Documentation
+
+The reference documentation is available:
+
+Online: [nix-darwin reference](https://nix-darwin.github.io/nix-darwin/manual/index.html)
+Locally in your browser via the `darwin-help` command
+As a manual page via `man 5 configuration.nix`
+Uninstalling
+
+To run the latest version of the uninstaller, you can run the following command:
+
+sudo nix --extra-experimental-features "nix-command flakes" run nix-darwin#darwin-uninstaller
+
+If that command doesn't work for you, you can try the locally installed uninstaller:
+
+sudo darwin-uninstaller
+
+Tests
+
+There are basic tests that run sanity checks for some of the modules,
+you can run them like this:
+
+# run all tests
+nix-build release.nix -A tests
+# or just a subset
+nix-build release.nix -A tests.environment-path
+
+Contributing
+
+Let's make Nix on macOS awesome!
+
+Don't hesitate to contribute modules or open an issue.
+
+To build your configuration with local changes you can run this. This
+flag can also be used to override darwin-config or nixpkgs, for more
+information on the `-I` flag look at the nix-build [manpage](https://nixos.org/manual/nix/stable/command-ref/nix-build.html).
+
+sudo darwin-rebuild switch -I darwin=.
+
+If you're adding a module, please add yourself to `meta.maintainers`, for example
+
+meta.maintainers = [
+  lib.maintainers.alice or "alice"
+];
+
+options.services.alicebot = # ...
+
+The `or` operator takes care of graceful degradation when `lib` from Nixpkgs
+goes out of sync.
+
+Feel free to contact us on Matrix if you have questions:
+
+**User support:** [#macos:nixos.org](https://matrix.to/#/#macos:nixos.org)
+**Development discussion:** [#nix-darwin-dev:nixos.org](https://matrix.to/#/#nix-darwin-dev:nixos.org)
+About
+
+Manage your macOS using Nix
+
+Topics
+
+Resources
+
+License
+
+Stars
+
+Watchers
+
+Forks
+
+Sponsor this project
+
+[![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=64&amp;v=4)](/emilazy) [**emilazy** Emily](/emilazy)        [![SVG Image](data:…)](/sponsors/emilazy)
+[![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)](/Enzime) [**Enzime** Michael Hoang](/Enzime)        [![SVG Image](data:…)](/sponsors/Enzime)
+![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=64&amp;v=4)
+
+![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)
+
+[Contributors 284](/nix-darwin/nix-darwin/graphs/contributors)
+
+[![@LnL7](https://avatars.githubusercontent.com/u/689294?s=64&amp;v=4)](https://github.com/LnL7)
+[![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)](https://github.com/Enzime)
+[![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=64&amp;v=4)](https://github.com/emilazy)
+[![@domenkozar](https://avatars.githubusercontent.com/u/126339?s=64&amp;v=4)](https://github.com/domenkozar)
+[![@malob](https://avatars.githubusercontent.com/u/2914269?s=64&amp;v=4)](https://github.com/malob)
+[![@Samasaur1](https://avatars.githubusercontent.com/u/30577766?s=64&amp;v=4)](https://github.com/Samasaur1)
+[![@peel](https://avatars.githubusercontent.com/u/505401?s=64&amp;v=4)](https://github.com/peel)
+[![@roberth](https://avatars.githubusercontent.com/u/496447?s=64&amp;v=4)](https://github.com/roberth)
+[![@marsam](https://avatars.githubusercontent.com/u/65531?s=64&amp;v=4)](https://github.com/marsam)
+[![@cmacrae](https://avatars.githubusercontent.com/u/3392199?s=64&amp;v=4)](https://github.com/cmacrae)
+[![@lockejan](https://avatars.githubusercontent.com/u/25434434?s=64&amp;v=4)](https://github.com/lockejan)
+[![@zowoq](https://avatars.githubusercontent.com/u/59103226?s=64&amp;v=4)](https://github.com/zowoq)
+[![@kalbasit](https://avatars.githubusercontent.com/u/87115?s=64&amp;v=4)](https://github.com/kalbasit)
+![@LnL7](https://avatars.githubusercontent.com/u/689294?s=64&amp;v=4)
+
+![@Enzime](https://avatars.githubusercontent.com/u/10492681?s=64&amp;v=4)
+
+![@emilazy](https://avatars.githubusercontent.com/u/18535642?s=64&amp;v=4)
+
+![@domenkozar](https://avatars.githubusercontent.com/u/126339?s=64&amp;v=4)
+
+![@malob](https://avatars.githubusercontent.com/u/2914269?s=64&amp;v=4)
+
+![@Samasaur1](https://avatars.githubusercontent.com/u/30577766?s=64&amp;v=4)
+
+![@peel](https://avatars.githubusercontent.com/u/505401?s=64&amp;v=4)
+
+![@roberth](https://avatars.githubusercontent.com/u/496447?s=64&amp;v=4)
+
+![@marsam](https://avatars.githubusercontent.com/u/65531?s=64&amp;v=4)
+
+![@cmacrae](https://avatars.githubusercontent.com/u/3392199?s=64&amp;v=4)
+
+![@lockejan](https://avatars.githubusercontent.com/u/25434434?s=64&amp;v=4)
+
+![@zowoq](https://avatars.githubusercontent.com/u/59103226?s=64&amp;v=4)
+
+![@kalbasit](https://avatars.githubusercontent.com/u/87115?s=64&amp;v=4)
+
+Languages
+
+[![SVG Image](data:…) Nix 97.0%](/nix-darwin/nix-darwin/search?l=nix)
+[![SVG Image](data:…) Shell 3.0%](/nix-darwin/nix-darwin/search?l=shell)
+Footer
