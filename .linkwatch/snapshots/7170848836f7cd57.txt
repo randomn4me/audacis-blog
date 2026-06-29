@@ -1,9 +1,0 @@
-![Icon for dl.acm.org](/favicon.ico)
-
-dl.acm.org
-
-Performing security verification
-
-This website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.
-
-Verification successful. Waiting for dl.acm.org to respond

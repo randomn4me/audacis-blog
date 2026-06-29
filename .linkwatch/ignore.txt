@@ -7,7 +7,7 @@
 apple.com/DTDs/PropertyList
 bestbookstore.com
 
-# churny pages (uncomment to silence once they prove noisy)
-# news.ycombinator.com/item
-# fortune.com
-# adventofcode.com
+# churny pages whose content legitimately changes every fetch
+adventofcode.com   # animated JS calendar + per-load var
+fortune.com        # news chrome: rotating related articles / ads
+# news.ycombinator.com/item   # uncomment if HN item pages prove noisy

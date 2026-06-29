@@ -76,9 +76,9 @@ def load_ignore() -> list[str]:
     if not IGNORE_FILE.exists():
         return []
     out = []
-    for line in IGNORE_FILE.read_text(encoding="utf-8").splitlines():
-        line = line.strip()
-        if line and not line.startswith("#"):
+    for raw in IGNORE_FILE.read_text(encoding="utf-8").splitlines():
+        line = raw.split("#", 1)[0].strip()  # drop full-line and inline comments
+        if line:
             out.append(line)
     return out
 
@@ -93,13 +93,20 @@ def snapshot_path(url: str) -> Path:
 
 
 def normalise(text: str) -> str:
-    """Stabilise extracted text: strip trailing space, collapse blank runs.
+    """Stabilise extracted text: strip per-request noise, collapse blank runs.
 
-    Inline base64 `data:` URIs (e.g. arXiv's SVG icons) reorder their
-    attributes per request, so their payload differs every fetch though the
-    page is unchanged. Collapse them to a constant token to kill that noise.
+    Pages vary between fetches without their content changing. Three classes
+    dominate and would otherwise fire false drift:
+    - base64 `data:` URIs (e.g. arXiv SVGs) reorder attributes per request;
+    - image targets are often signed/CDN URLs (GitHub's githubusercontent
+      links carry an expiring `?jwt=...&X-Amz-Signature=...`) that regenerate
+      every fetch, while the alt text is stable;
+    - URL query strings hold signatures, cache-busters and session tokens.
+    Collapse all three; keep alt text and the URL path (the meaningful parts).
     """
     text = re.sub(r"data:[^\s)]+", "data:…", text)
+    text = re.sub(r"!\[([^\]]*)\]\([^)]*\)", r"![\1]", text)
+    text = re.sub(r"(https?://[^\s)\]]+?)\?[^\s)\]]*", r"\1", text)
     lines = text.replace("\r\n", "\n").replace("\r", "\n").split("\n")
     out: list[str] = []
     blank = 0
