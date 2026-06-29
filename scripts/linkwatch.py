@@ -30,6 +30,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.request
 from pathlib import Path
@@ -43,6 +44,7 @@ STATE = ROOT / ".linkwatch"
 SNAPSHOTS = STATE / "snapshots"
 IGNORE_FILE = STATE / "ignore.txt"
 URLS_FILE = STATE / "urls.json"
+CHECKED_FILE = STATE / "checked.json"  # sha -> last-checked epoch, drives rotation
 
 OWN_DOMAIN = "audacis.net"
 NAV_TIMEOUT_MS = 20_000
@@ -50,6 +52,10 @@ SETTLE_MS = 800
 # We only extract text, so skip heavy assets: far faster page loads (the run
 # must finish inside the runner's ~6m job cap) and no signed image-URL noise.
 SKIP_RESOURCES = {"image", "media", "font"}
+# The runner kills the job at ~6m. Stop rendering before then and let the
+# workflow commit the progress made; pages not reached this run are picked up
+# next run (we process least-recently-checked first), so coverage converges.
+RENDER_BUDGET_S = 180
 USER_AGENT = "linkwatch/1 (+https://audacis.net; content-drift monitor)"
 MAX_DIFF_LINES = 80  # truncate per-URL diffs so issues stay readable
 MAX_CONTENT_CHARS = 16_000  # cap embedded full-text so issues stay manageable
@@ -220,11 +226,16 @@ def main() -> None:
     SNAPSHOTS.mkdir(parents=True, exist_ok=True)
     ignore = load_ignore()
     links = [u for u in extract_links() if not is_ignored(u, ignore)]
+    checked = json.loads(CHECKED_FILE.read_text()) if CHECKED_FILE.exists() else {}
+    # Least-recently-checked first (never-checked = 0 = first). A budget-truncated
+    # run advances the frontier instead of redoing the head, so coverage converges.
+    links.sort(key=lambda u: checked.get(snapshot_path(u).stem, 0))
     print(f"Watching {len(links)} external link(s).")
 
     current_shas = {snapshot_path(u).stem for u in links}
     changes: list[dict] = []
     new_baselines = 0
+    processed = 0
 
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--no-sandbox"])
@@ -235,11 +246,18 @@ def main() -> None:
             if route.request.resource_type in SKIP_RESOURCES
             else route.continue_(),
         )
+        start = time.time()
         for url in links:
+            if time.time() - start > RENDER_BUDGET_S:
+                print(f"  … budget reached; {len(links) - processed} link(s) "
+                      f"deferred to next run")
+                break
+            processed += 1
             text = fetch_text(page, url)
             if text is None:
                 continue
             snap = snapshot_path(url)
+            checked[snap.stem] = int(time.time())
             if not snap.exists():
                 snap.write_text(text, encoding="utf-8")
                 new_baselines += 1
@@ -262,10 +280,13 @@ def main() -> None:
             snap.unlink()
             print(f"  - pruned stale snapshot: {snap.name}")
 
-    URLS_FILE.write_text(json.dumps(links, indent=2) + "\n", encoding="utf-8")
+    URLS_FILE.write_text(json.dumps(sorted(links), indent=2) + "\n", encoding="utf-8")
+    checked = {s: t for s, t in checked.items() if s in current_shas}
+    CHECKED_FILE.write_text(json.dumps(checked, indent=0) + "\n", encoding="utf-8")
 
     print(
-        f"\nDone. {new_baselines} new baseline(s), {len(changes)} change(s)."
+        f"\nDone. checked {processed}/{len(links)}, "
+        f"{new_baselines} new baseline(s), {len(changes)} change(s)."
     )
     if changes:
         file_issue(*render_issue(changes))
