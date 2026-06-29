@@ -20,6 +20,7 @@ on:
 jobs:
   watch:
     runs-on: docker
+    timeout-minutes: 30   # rendering ~68 pages headless overruns the default cap
     container:
       image: python:3.12-slim
     steps:
