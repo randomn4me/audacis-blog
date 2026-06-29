@@ -1,19 +1,73 @@
 name: Link Check (Live)
 
+# Weekly liveness check of the live site's homepage links. lychee can't file
+# anything itself, so rather than failing into a red run nobody reads, this
+# upserts a single tracking issue when links break and closes it when they
+# recover. LinkedIn's bot-block (999) and rate limits (429) are accepted so
+# they don't masquerade as breakage.
+#
+# Needs the LINKWATCH_TOKEN secret (issue write) to manage the tracking issue.
+
 on:
   schedule:
     - cron: "0 8 * * 1"
+  workflow_dispatch:
 
 jobs:
   link-check-live:
     runs-on: docker
     container:
-      image: alpine:latest
+      image: node:20-bookworm-slim
     steps:
       - name: Install lychee
         run: |
-          apk add --no-cache curl tar
-          curl -sL https://github.com/lycheeverse/lychee/releases/latest/download/lychee-x86_64-unknown-linux-musl.tar.gz | tar xz -C /usr/local/bin
+          set -e
+          apt-get update -qq
+          apt-get install -y -qq --no-install-recommends curl tar ca-certificates >/dev/null
+          # Runner is arm64; pick the binary by arch and install by name since
+          # the arm64 tarball nests it in a subdir.
+          case "$(uname -m)" in
+            aarch64) LARCH=aarch64-unknown-linux-musl ;;
+            x86_64)  LARCH=x86_64-unknown-linux-musl ;;
+            *) echo "unsupported arch: $(uname -m)"; exit 1 ;;
+          esac
+          tmp=$(mktemp -d)
+          curl -sL "https://github.com/lycheeverse/lychee/releases/latest/download/lychee-${LARCH}.tar.gz" | tar xz -C "$tmp"
+          install -m 0755 "$(find "$tmp" -type f -name lychee | head -1)" /usr/local/bin/lychee
+          rm -rf "$tmp"
 
-      - name: Check live site links
-        run: lychee --no-progress https://audacis.net
+      - name: Check live site
+        run: |
+          set +e
+          lychee --no-progress --accept '200..=299,429,999' https://audacis.net/ > /tmp/lychee.txt 2>&1
+          echo $? > /tmp/lychee.exit
+          cat /tmp/lychee.txt
+
+      - name: Report via tracking issue
+        env:
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          TOK: ${{ secrets.LINKWATCH_TOKEN }}
+        run: |
+          node -e '
+            const fs=require("fs");
+            const api=process.env.SERVER_URL+"/api/v1/repos/"+process.env.REPO;
+            const H={"content-type":"application/json","authorization":"token "+process.env.TOK};
+            const TITLE="Broken links on the live site";
+            const exit=parseInt((fs.readFileSync("/tmp/lychee.exit","utf8")||"0").trim(),10);
+            const report=fs.readFileSync("/tmp/lychee.txt","utf8").slice(-50000);
+            const stamp=new Date().toISOString().slice(0,10);
+            (async()=>{
+              const r=await fetch(api+"/issues?state=open&limit=50",{headers:H});
+              const list=await r.json();
+              const existing=Array.isArray(list)?list.find(i=>!i.pull_request&&i.title===TITLE):null;
+              if(exit!==0){
+                const body="lychee found broken links on https://audacis.net/ (checked "+stamp+").\n\n```\n"+report+"\n```";
+                if(existing){await fetch(api+"/issues/"+existing.number,{method:"PATCH",headers:H,body:JSON.stringify({body})});console.log("updated #"+existing.number);}
+                else{const c=await(await fetch(api+"/issues",{method:"POST",headers:H,body:JSON.stringify({title:TITLE,body})})).json();console.log("created #"+c.number);}
+              }else{
+                if(existing){await fetch(api+"/issues/"+existing.number,{method:"PATCH",headers:H,body:JSON.stringify({state:"closed"})});console.log("closed #"+existing.number+" (healthy)");}
+                else console.log("healthy, no issue");
+              }
+            })().catch(e=>{console.error(e);process.exit(1);});
+          '
