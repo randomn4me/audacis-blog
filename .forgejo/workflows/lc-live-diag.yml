@@ -1,7 +1,8 @@
 name: lc-live-diag
 
-# Temporary: mirror link-check-live with timing + xtrace, publish the captured
-# log to an issue. Delete after diagnosing.
+# Temporary: bounded mirror of link-check-live with -vv + timing, publishes the
+# captured log to an issue. Every command is time-bounded so Publish always
+# runs. Delete after diagnosing.
 
 on:
   workflow_dispatch:
@@ -17,22 +18,19 @@ jobs:
           exec > /tmp/d.log 2>&1
           set -x
           set +e
-          date +%T
-          apt-get update -qq
-          apt-get install -y -qq --no-install-recommends curl tar ca-certificates >/dev/null
-          case "$(uname -m)" in
-            aarch64) LARCH=aarch64-unknown-linux-musl ;;
-            x86_64)  LARCH=x86_64-unknown-linux-musl ;;
-          esac
-          tmp=$(mktemp -d)
-          curl -sL "https://github.com/lycheeverse/lychee/releases/latest/download/lychee-${LARCH}.tar.gz" | tar xz -C "$tmp"
-          install -m 0755 "$(find "$tmp" -type f -name lychee | head -1)" /usr/local/bin/lychee
-          date +%T; echo "lychee installed"
-          lychee --version
-          date +%T; echo "running lychee"
-          timeout 120 lychee --no-progress --accept '200..=299,429,999' https://audacis.net/
-          echo "LYCHEE_EXIT=$?"
-          date +%T; echo "done"
+          date +%T; echo "apt start"
+          timeout 90 apt-get update -qq
+          timeout 90 apt-get install -y -qq --no-install-recommends curl tar ca-certificates >/dev/null
+          date +%T; echo "apt done"
+          mkdir -p /tmp/l
+          timeout 60 bash -c 'curl -sL "https://github.com/lycheeverse/lychee/releases/latest/download/lychee-aarch64-unknown-linux-musl.tar.gz" | tar xz -C /tmp/l'
+          echo "dl_exit=$?"
+          install -m 0755 "$(find /tmp/l -type f -name lychee | head -1)" /usr/local/bin/lychee
+          date +%T; lychee --version
+          date +%T; echo "crawl start"
+          timeout --kill-after=10s 60s lychee --no-progress --max-retries 1 --timeout 15 --max-concurrency 8 --accept '200..=299,403,429,999' -vv https://audacis.net/
+          echo "lychee_exit=$?"
+          date +%T; echo "crawl end"
 
       - name: Publish
         if: always()
