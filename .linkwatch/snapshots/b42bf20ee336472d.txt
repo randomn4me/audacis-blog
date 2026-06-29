@@ -477,4 +477,4 @@ Events
 
 ![](https://peasec.de/wp-content/uploads/2021/02/PEASEC-Venn-EN-1024x997.jpg)
 
-![](https://pixel.wp.com/g.gif?v=ext&amp;blog=251179987&amp;post=7007&amp;tz=2&amp;srv=peasec.de&amp;j=1%3A15.9.1&amp;host=peasec.de&amp;ref=&amp;fcp=940&amp;rand=0.7389767602300573)
+![](https://pixel.wp.com/g.gif?v=ext&amp;blog=251179987&amp;post=7007&amp;tz=2&amp;srv=peasec.de&amp;j=1%3A15.9.1&amp;host=peasec.de&amp;ref=&amp;fcp=860&amp;rand=0.3659503744412571)

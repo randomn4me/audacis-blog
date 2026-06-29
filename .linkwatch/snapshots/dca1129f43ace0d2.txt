@@ -33,7 +33,7 @@ To see all available qualifiers, see our [documentation](https://docs.github.com
     [Report abuse](/contact/report-abuse?report=tmux%2Ftmux+%28Repository+Funding+Links%29)
 [![SVG Image](data:…)Notifications](/login?return_to=%2Ftmux%2Ftmux)    You must be signed in to change notification settings
 [![SVG Image](data:…)Fork 2.7k](/login?return_to=%2Ftmux%2Ftmux)
-[![SVG Image](data:…) Star 47.2k](/login?return_to=%2Ftmux%2Ftmux)
+[![SVG Image](data:…) Star 47.3k](/login?return_to=%2Ftmux%2Ftmux)
 Sponsor tmux/tmux
 
 GitHub Sponsors
