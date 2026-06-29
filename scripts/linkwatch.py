@@ -45,8 +45,11 @@ IGNORE_FILE = STATE / "ignore.txt"
 URLS_FILE = STATE / "urls.json"
 
 OWN_DOMAIN = "audacis.net"
-NAV_TIMEOUT_MS = 30_000
-SETTLE_MS = 2_000
+NAV_TIMEOUT_MS = 20_000
+SETTLE_MS = 800
+# We only extract text, so skip heavy assets: far faster page loads (the run
+# must finish inside the runner's ~6m job cap) and no signed image-URL noise.
+SKIP_RESOURCES = {"image", "media", "font"}
 USER_AGENT = "linkwatch/1 (+https://audacis.net; content-drift monitor)"
 MAX_DIFF_LINES = 80  # truncate per-URL diffs so issues stay readable
 MAX_CONTENT_CHARS = 16_000  # cap embedded full-text so issues stay manageable
@@ -226,6 +229,12 @@ def main() -> None:
     with sync_playwright() as p:
         browser = p.chromium.launch(args=["--no-sandbox"])
         page = browser.new_page(user_agent=USER_AGENT)
+        page.route(
+            "**/*",
+            lambda route: route.abort()
+            if route.request.resource_type in SKIP_RESOURCES
+            else route.continue_(),
+        )
         for url in links:
             text = fetch_text(page, url)
             if text is None:
