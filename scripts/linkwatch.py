@@ -29,6 +29,7 @@ import hashlib
 import json
 import os
 import re
+import signal
 import sys
 import time
 import urllib.error
@@ -46,8 +47,21 @@ URLS_FILE = STATE / "urls.json"
 CHECKED_FILE = STATE / "checked.json"  # sha -> last-checked epoch, drives rotation
 
 OWN_DOMAIN = "audacis.net"
-HTTP_TIMEOUT = 15  # hard per-request cap (socket level), so a fetch never hangs
+HTTP_TIMEOUT = 15  # socket-level per-op timeout
 MAX_BYTES = 5_000_000  # ignore the tail of huge responses
+# Socket timeouts miss DNS stalls and slow-trickle responses, which on the
+# runner hang a fetch past the budget and get the whole job killed. SIGALRM is
+# a hard wall-clock backstop per fetch (Unix only; urllib is signal-interruptible).
+HARD_FETCH_S = 25
+_HAS_ALARM = hasattr(signal, "SIGALRM")
+
+
+class FetchTimeout(Exception):
+    pass
+
+
+def _on_alarm(signum, frame):
+    raise FetchTimeout(f"fetch exceeded {HARD_FETCH_S}s")
 # The runner kills the job at ~6m. Stop fetching before then and let the
 # workflow commit the progress made; pages not reached this run are picked up
 # next run (we process least-recently-checked first), so coverage converges.
@@ -134,6 +148,8 @@ def fetch_text(url: str) -> str | None:
     hang, and no browser to install. kreuzberg extracts text from HTML or PDF
     by the response content type.
     """
+    if _HAS_ALARM:
+        signal.alarm(HARD_FETCH_S)
     try:
         req = urllib.request.Request(
             url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"}
@@ -142,9 +158,12 @@ def fetch_text(url: str) -> str | None:
             mime = "application/pdf" if "pdf" in resp.headers.get_content_type() else "text/html"
             data = resp.read(MAX_BYTES)
         return normalise(extract_bytes_sync(data, mime).content)
-    except Exception as exc:  # noqa: BLE001 - report and move on, lychee owns 404s
+    except Exception as exc:  # noqa: BLE001 - incl. FetchTimeout; lychee owns 404s
         print(f"  ! fetch failed: {url}\n    {type(exc).__name__}: {exc}")
         return None
+    finally:
+        if _HAS_ALARM:
+            signal.alarm(0)
 
 
 def make_diff(old: str, new: str, url: str) -> tuple[float, str]:
@@ -228,6 +247,8 @@ def main() -> None:
     new_baselines = 0
     processed = 0
 
+    if _HAS_ALARM:
+        signal.signal(signal.SIGALRM, _on_alarm)
     start = time.time()
     for url in links:
         if time.time() - start > RENDER_BUDGET_S:
