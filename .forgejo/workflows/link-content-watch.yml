@@ -1,8 +1,8 @@
 name: Link Content Watch
 
 # Detect when the content *behind* a still-working cited link changes.
-# Complements the lychee checks (which only catch broken links). Renders each
-# external URL from content/**/*.md headless, extracts its text, and diffs
+# Complements the lychee checks (which only catch broken links). Fetches each
+# external URL from content/**/*.md over HTTP, extracts its text, and diffs
 # against the committed snapshot in .linkwatch/. On drift it files one Forgejo
 # issue and commits the refreshed snapshots so it fires once per change.
 #
@@ -37,14 +37,13 @@ jobs:
           host="${SERVER_URL#https://}"
           git clone --depth 1 "https://${OWNER}:${LINKWATCH_TOKEN}@${host}/${REPO}.git" /src
 
-      - name: Set up Python env + Chromium
+      - name: Set up Python env
         run: |
           set -e
           pip install --no-cache-dir -q uv
           uv venv /opt/lw
           . /opt/lw/bin/activate
-          uv pip install -q "kreuzberg==4.9.9" playwright
-          playwright install --with-deps chromium
+          uv pip install -q "kreuzberg==4.9.9"
 
       - name: Check link content
         env:

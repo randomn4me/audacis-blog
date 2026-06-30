@@ -4,13 +4,13 @@
 Complements the lychee link-check workflows: lychee tells you a link is *broken*
 (404), linkwatch tells you the page behind a still-working link *changed*.
 
-Flow: collect every external URL from content/**/*.md, fetch each (PDFs by
-download, everything else rendered headless via Playwright/Chromium so JS
-resolves), extract readable text with kreuzberg, normalise it, and compare
-against the committed snapshot in .linkwatch/snapshots/. On any text difference
-it opens one Forgejo issue listing the changed URLs with diffs. The workflow
-then commits the rewritten snapshots, so the next run only fires on *further*
-drift.
+Flow: collect every external URL from content/**/*.md, fetch each over plain
+HTTP with a hard timeout, extract readable text with kreuzberg (HTML or PDF by
+content type), normalise it, and compare against the committed snapshot in
+.linkwatch/snapshots/. On any text difference it opens one Forgejo issue listing
+the changed URLs with diffs. The workflow then commits the rewritten snapshots,
+so the next run only fires on *further* drift. No JS rendering: server-rendered
+HTML is what most cited pages serve, and it can't hang the run.
 
 Exact text comparison is the trigger (a one-word edit fires); the reported
 SequenceMatcher ratio only labels how big the change is. URLs matching a line in
@@ -36,7 +36,6 @@ import urllib.request
 from pathlib import Path
 
 from kreuzberg import extract_bytes_sync
-from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 CONTENT = ROOT / "content"
@@ -47,12 +46,9 @@ URLS_FILE = STATE / "urls.json"
 CHECKED_FILE = STATE / "checked.json"  # sha -> last-checked epoch, drives rotation
 
 OWN_DOMAIN = "audacis.net"
-NAV_TIMEOUT_MS = 20_000
-SETTLE_MS = 800
-# We only extract text, so skip heavy assets: far faster page loads (the run
-# must finish inside the runner's ~6m job cap) and no signed image-URL noise.
-SKIP_RESOURCES = {"image", "media", "font"}
-# The runner kills the job at ~6m. Stop rendering before then and let the
+HTTP_TIMEOUT = 15  # hard per-request cap (socket level), so a fetch never hangs
+MAX_BYTES = 5_000_000  # ignore the tail of huge responses
+# The runner kills the job at ~6m. Stop fetching before then and let the
 # workflow commit the progress made; pages not reached this run are picked up
 # next run (we process least-recently-checked first), so coverage converges.
 RENDER_BUDGET_S = 180
@@ -131,26 +127,21 @@ def normalise(text: str) -> str:
     return "\n".join(out).strip() + "\n"
 
 
-def fetch_pdf(url: str) -> str:
-    req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
-    with urllib.request.urlopen(req, timeout=60) as resp:
-        data = resp.read()
-    return normalise(extract_bytes_sync(data, "application/pdf").content)
+def fetch_text(url: str) -> str | None:
+    """Fetched, extracted, normalised text, or None if the fetch failed.
 
-
-def fetch_html(page, url: str) -> str:
-    page.goto(url, wait_until="domcontentloaded", timeout=NAV_TIMEOUT_MS)
-    page.wait_for_timeout(SETTLE_MS)  # let hydration / late JS settle
-    html = page.content().encode("utf-8")
-    return normalise(extract_bytes_sync(html, "text/html").content)
-
-
-def fetch_text(page, url: str) -> str | None:
-    """Rendered, extracted, normalised text, or None if the fetch failed."""
+    Plain HTTP with a hard socket timeout (no JS rendering): bounded, can't
+    hang, and no browser to install. kreuzberg extracts text from HTML or PDF
+    by the response content type.
+    """
     try:
-        if url.lower().split("?")[0].endswith(".pdf") or "/pdf/" in url.lower():
-            return fetch_pdf(url)
-        return fetch_html(page, url)
+        req = urllib.request.Request(
+            url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"}
+        )
+        with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
+            mime = "application/pdf" if "pdf" in resp.headers.get_content_type() else "text/html"
+            data = resp.read(MAX_BYTES)
+        return normalise(extract_bytes_sync(data, mime).content)
     except Exception as exc:  # noqa: BLE001 - report and move on, lychee owns 404s
         print(f"  ! fetch failed: {url}\n    {type(exc).__name__}: {exc}")
         return None
@@ -237,42 +228,32 @@ def main() -> None:
     new_baselines = 0
     processed = 0
 
-    with sync_playwright() as p:
-        browser = p.chromium.launch(args=["--no-sandbox"])
-        page = browser.new_page(user_agent=USER_AGENT)
-        page.route(
-            "**/*",
-            lambda route: route.abort()
-            if route.request.resource_type in SKIP_RESOURCES
-            else route.continue_(),
-        )
-        start = time.time()
-        for url in links:
-            if time.time() - start > RENDER_BUDGET_S:
-                print(f"  … budget reached; {len(links) - processed} link(s) "
-                      f"deferred to next run")
-                break
-            processed += 1
-            text = fetch_text(page, url)
-            if text is None:
-                continue
-            snap = snapshot_path(url)
-            checked[snap.stem] = int(time.time())
-            if not snap.exists():
-                snap.write_text(text, encoding="utf-8")
-                new_baselines += 1
-                print(f"  + baseline: {url}")
-                continue
-            old = snap.read_text(encoding="utf-8")
-            if old == text:
-                continue
-            ratio, diff = make_diff(old, text, url)
-            changes.append(
-                {"url": url, "ratio": ratio, "diff": diff, "content": text}
-            )
+    start = time.time()
+    for url in links:
+        if time.time() - start > RENDER_BUDGET_S:
+            print(f"  … budget reached; {len(links) - processed} link(s) "
+                  f"deferred to next run")
+            break
+        processed += 1
+        text = fetch_text(url)
+        if text is None:
+            continue
+        snap = snapshot_path(url)
+        checked[snap.stem] = int(time.time())
+        if not snap.exists():
             snap.write_text(text, encoding="utf-8")
-            print(f"  ~ changed ({round(ratio * 100)}% similar): {url}")
-        browser.close()
+            new_baselines += 1
+            print(f"  + baseline: {url}")
+            continue
+        old = snap.read_text(encoding="utf-8")
+        if old == text:
+            continue
+        ratio, diff = make_diff(old, text, url)
+        changes.append(
+            {"url": url, "ratio": ratio, "diff": diff, "content": text}
+        )
+        snap.write_text(text, encoding="utf-8")
+        print(f"  ~ changed ({round(ratio * 100)}% similar): {url}")
 
     # Prune snapshots for links no longer cited anywhere.
     for snap in SNAPSHOTS.glob("*.txt"):
