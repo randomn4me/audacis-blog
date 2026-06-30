@@ -51,10 +51,31 @@ jobs:
           FORGEJO_REPO: ${{ github.repository }}
           FORGEJO_TOKEN: ${{ secrets.LINKWATCH_TOKEN }}
         run: |
-          set -e
           cd /src
           . /opt/lw/bin/activate
-          python scripts/linkwatch.py
+          # OS-level timeout: kills the process even if a native (kreuzberg)
+          # call hangs past the in-script budget. Per-URL snapshots already
+          # written persist for the commit step.
+          timeout --kill-after=15s 200s python scripts/linkwatch.py > /tmp/lw.log 2>&1
+          echo "script exit: $?" >> /tmp/lw.log
+          tail -40 /tmp/lw.log
+
+      - name: Report run log (temporary diagnostic)
+        if: always()
+        env:
+          SERVER_URL: ${{ github.server_url }}
+          REPO: ${{ github.repository }}
+          TOK: ${{ secrets.LINKWATCH_TOKEN }}
+        run: |
+          python3 - <<'PY'
+          import os, json, urllib.request
+          log = open('/tmp/lw.log').read()[-12000:]
+          api = os.environ['SERVER_URL'] + '/api/v1/repos/' + os.environ['REPO'] + '/issues'
+          data = json.dumps({'title': 'lw run log', 'body': '```\n' + log + '\n```'}).encode()
+          req = urllib.request.Request(api, data=data, method='POST', headers={
+              'content-type': 'application/json', 'authorization': 'token ' + os.environ['TOK']})
+          print('posted', urllib.request.urlopen(req, timeout=30).status)
+          PY
 
       - name: Commit refreshed snapshots
         run: |
