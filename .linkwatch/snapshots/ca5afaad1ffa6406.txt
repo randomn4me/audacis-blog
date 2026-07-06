@@ -1,0 +1,559 @@
+![]
+
+![]
+
+[https://news.ycombinator.com](https://news.ycombinator.com) **[Hacker News](news)**[new](newest) \| [past](front) \| [comments](newcomments) \| <ask> \| <show> \| <jobs> \| <submit> [login](login?goto=item%3Fid%3D48473302)
+
+ [vote?id=48473302&how=up&goto=item%3Fid%3D48473302](vote?id=48473302&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48473302) \| [parent](item?id=48463808) \| [context](item?id=48463808#48473302) \| [favorite](fave?id=48473302&auth=9220d78bb4ccdb2bb1ac03ff5b883ec937ccf75e) \| on: [Claude Fable 5](item?id=48463808 "Claude Fable 5")
+I genuinely can't use Fable.
+I'm a medical physicist. I use the word nuclear a lot. Opus is fine (well, 99% of the time - I've certainly hit the CBRN filters a few times and even been invited to email anthropic about the false positives).<br>Fable has literally refused to work on any of my problems (even those about fluid dynamics!) and just tells me that I'm violating anthropic's AUP. I've reached out to their support and don't expect to hear anything sensible back. One thing I do look forward to though is OpenAI offering an equivalent model but with less safeguards...
+
+![]
+
+![]
+
+ [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+ [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+
+![]
+
+![]
+
+ [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+
+![]
+
+![]
+
+ [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+
+![]
+
+![]
+
+ [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+
+![]
+
+![]
+
+ [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+
+![]
+
+![]
+
+ [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+
+![]
+
+![]
+
+ [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+
+![]
+
+![]
+
+ [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+
+![]
+
+![]
+
+ [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+
+![]
+
+![]
+
+ [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+
+![]
+
+![]
+
+ [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+ [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+
+![]
+
+![]
+
+ [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+
+![]
+
+![]
+
+ [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+
+![]
+
+![]
+
+ [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+
+![]
+
+![]
+
+ [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+
+![]
+
+![]
+
+ [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+
+![]
+
+![]
+
+ [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+
+![]
+
+![]
+
+ [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+
+![]
+
+![]
+
+ [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+
+![]
+
+![]
+
+ [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+
+- [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+- [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+- [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+- [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+- [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+- [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+- [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+- [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+- [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+- [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+- [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+
+![]
+
+![]
+
+![]
+
+[![]](https://news.ycombinator.com) **[Hacker News](news)**[new](newest) \| [past](front) \| [comments](newcomments) \| <ask> \| <show> \| <jobs> \| <submit> [login](login?goto=item%3Fid%3D48473302)
+
+ [vote?id=48473302&how=up&goto=item%3Fid%3D48473302](vote?id=48473302&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48473302) \| [parent](item?id=48463808) \| [context](item?id=48463808#48473302) \| [favorite](fave?id=48473302&auth=9220d78bb4ccdb2bb1ac03ff5b883ec937ccf75e) \| on: [Claude Fable 5](item?id=48463808 "Claude Fable 5")
+
+I genuinely can't use Fable.
+I'm a medical physicist. I use the word nuclear a lot. Opus is fine (well, 99% of the time - I've certainly hit the CBRN filters a few times and even been invited to email anthropic about the false positives).<br>Fable has literally refused to work on any of my problems (even those about fluid dynamics!) and just tells me that I'm violating anthropic's AUP. I've reached out to their support and don't expect to hear anything sensible back. One thing I do look forward to though is OpenAI offering an equivalent model but with less safeguards...
+
+![]
+
+![]
+
+ [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+ [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+
+![]
+
+![]
+
+ [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+
+![]
+
+![]
+
+ [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+
+![]
+
+![]
+
+ [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+
+![]
+
+![]
+
+ [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+
+![]
+
+![]
+
+ [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+
+![]
+
+![]
+
+ [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+
+![]
+
+![]
+
+ [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+
+![]
+
+![]
+
+ [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+
+![]
+
+![]
+
+ [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+
+![]
+
+![]
+
+![] [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.
+<br>
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+![]
+
+Thanks for reaching out to Anthropic Support.
+
+   We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+![] [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>
+
+```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334>
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers>
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+
+This is incredibly cool. Thanks for the detailed explanations!
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+
+Thank you!
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+
+Why don't you (or your company!) just apply for Mythos?
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.
+<br>
+
+![]
+
+![]
+
+![] [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.
+<br>
+
+- [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+- [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+- [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+- [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+- [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+- [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+- [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+- [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+- [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+- [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+- [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+
+![]
+
+- [https://news.ycombinator.com](https://news.ycombinator.com) **[Hacker News](news)**[new](newest) \| [past](front) \| [comments](newcomments) \| <ask> \| <show> \| <jobs> \| <submit> [login](login?goto=item%3Fid%3D48473302)
+
+- [vote?id=48473302&how=up&goto=item%3Fid%3D48473302](vote?id=48473302&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48473302) \| [parent](item?id=48463808) \| [context](item?id=48463808#48473302) \| [favorite](fave?id=48473302&auth=9220d78bb4ccdb2bb1ac03ff5b883ec937ccf75e) \| on: [Claude Fable 5](item?id=48463808 "Claude Fable 5")
+I genuinely can't use Fable.
+I'm a medical physicist. I use the word nuclear a lot. Opus is fine (well, 99% of the time - I've certainly hit the CBRN filters a few times and even been invited to email anthropic about the false positives).<br>Fable has literally refused to work on any of my problems (even those about fluid dynamics!) and just tells me that I'm violating anthropic's AUP. I've reached out to their support and don't expect to hear anything sensible back. One thing I do look forward to though is OpenAI offering an equivalent model but with less safeguards...
+
+- [vote?id=48474411&how=up&goto=item%3Fid%3D48473302](vote?id=48474411&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48474411) \| [next](#48482530) [[–]](javascript:void(0))
+That's highly frustrating. How much were you using Opus for your work ? I'm curious about the use and realized benefits of 2026 LLMs in medicine.<br>I dearly wish you could leverage the latest models to enhance your research.<br>
+- [vote?id=48474666&how=up&goto=item%3Fid%3D48473302](vote?id=48474666&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48474666) \| [parent](#48474411) \| [next](#48482530) [[–]](javascript:void(0))
+Honestly for a "side project" Opus has been fantastic for me writing a hybrid simulation framework that prior to large scale code generation would have been a matter of years (and writing a grant, assembling a team, etc – in order to do it "properly"). I've had a bit of help with a grad student and I hacking together on a project that is basically "please merge the following GPL codebases and different areas of physics into one coherent environment". I've given Opus validated codes in disparate languages (julia, python, C) and asked for aspects of various algorithms as an extension module to a large chunk of C and C++ code that is a monte carlo simulator that has been around since 2004.<br>A bit more context if you care: it's a meso-scale, physiological simulation environment of "particles" that carry nuclear spin, can move in 3D space, and (should they interact with each other or their environment) undergo chemical kinetics. The idea is to simulate molecules within e.g. organs or blood vessels within a person in an MRI scanner, with the motion of the particles dominated by the Navier Stokes equations, but here solved in a Lagrangian (rather than Eulerian) framework by smoothed particle hydrodynamics.<br>The fact that particles carry nuclear spin means that we can solve the (semiclassical) Bloch equations and by using a python plugin module import exactly the physical MRI scanner would do (in pulseq format) and be able to predict what signal the machine would record – e.g. there's a whole world of cardiac or neurological flow imaging work done in the context of nasty diseases like stroke or myocardial infarction – which has a bunch of physical artefacts behind it. I'm trying to make a simulation framework that can take in realistic patient geometries and act as a 'data generating process' because if we do it right the various physical artefacts that the machine records are reproduced, surprisingly accurately. Of course you also know the ground truth of where the particles are. I'm specifically interested in a weird technique (which I did my PhD in and you can read an article all about here: [0]) called dynamic nuclear polarisation, where specific spin states of molecules such as [1-13C]pyruvate are injected essentially out of thermodynamic equilibrium and act as short-lived tracers of metabolism – again highly altered in disease. The signal we record is a strong function of the physics of what you told the machine to do, the spatial constraints and environment of the patient's body, and the chemical kinetics of the patients' biochemistry (the latter two are usually what we're interested in).<br>Getting them to do chemistry as well as act as a "simple" tracer is more involved, because in the Lagrangian framework the number of particles is ≈ the spatial resolution of your simulation. That's fine if you're simulating water, but if you're simulating something that reacts concentration is not scale invariant (if you want to keep the interpretability of the rate constants). I've worked out an analytic set of scaling rules around this and fortunately for my application environments and length scales "it just works", completely by luck.<br>I've used Claude to port various SPH algorithms and boundary condition handling ideas (which are absolutely critical and highly not obvious – we have leaky walls in some places, and e.g. LCR / circuit theory models of the microcirculation to plug in) and it's been a godsend. But I'm running into its limitations constantly. It both confidently makes shit up, claims it is mathematically justified and when the resulting simulation explodes says "I apologise; I lied above" (!) or "I apologise; I am wrong" and I periodically have to yell at it to try to do something more productive.<br>The real hope is that this simulation environment would be both generally useful for basically anyone doing flow MRI, and help our basic scientific understanding of what we're measuring (the technique is in many hospitals!) but also be able to produce meaningful synthetic training data for image reconstruction algorithms later on. It'll end up permissively licensed (all of the "starting" codebases have compatible OSS licenses, and we're releasing our contributions similarly).<br>I really hoped that Fable would be better at this sort of work. Occasionally, relating to my work DNP [1], I have need to talk about proper nuclear physics and I have seen Opus's chat interface write a wall of text (e.g. talking about photonuclear reactions and cross section differences in millibarn) and then just delete it all. Support have told me that yes, I've hit the nuclear filter and, well, tough shit, basically.<br>I wrote a version of the above to them yesterday, and just got the most boilerplate response that I've yet to test:<br>```
+Thanks for reaching out to Anthropic Support.
+
+ We're sorry to hear of the issue that you're running into with accessing Fable 5. I'm happy to say the issue has now been resolved and you should be able to access the model within Claude.
+
+I'll close this case out for now, but please feel free to reach back out to us here if you have any follow up questions or concerns or if you're still in need of assistance. We'll be happy to help.
+
+```
+
+which doesn't fill me with hope...<br>[0] [https://physicsworld.com/a/dynamic-nuclear-polarization-how-...](https://physicsworld.com/a/dynamic-nuclear-polarization-how-a-technique-from-particle-physics-is-transforming-medical-imaging/) [an "accessible" article]
+[1] <https://www.science.org/doi/pdf/10.1126/sciadv.adz4334><br>
+- [vote?id=48475446&how=up&goto=item%3Fid%3D48473302](vote?id=48475446&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [25 days ago](item?id=48475446) \| [root](#48474411) \| [parent](#48474666) \| [next](#48477468) [[–]](javascript:void(0))
+I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>>"it just works", completely by luck
+What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>
+- [vote?id=48476285&how=up&goto=item%3Fid%3D48473302](vote?id=48476285&how=up&goto=item%3Fid%3D48473302) [azalemeth](user?id=azalemeth) [25 days ago](item?id=48476285) \| [root](#48474411) \| [parent](#48475446) \| [next](#48477468) [[–]](javascript:void(0))
+> I saw 'medical physicist' and wondered what you do. Thank you for 'a bit more context', I care! Very interesting stuff. Did you attend medical school + a physics program?<br>That's a whole separate long answer. I'm not a qualified doctor (and nor would I claim to be), but after a masters' degree in particle physics I moved into an explicitly interdisciplinary training programme that led to a doctorate and at other places in the country I did it in, a separate MPhil. During that initial year I spent a fair amount of time in the dissection room, learning anatomy, as well as most of the first three years (the foundational, preclinical part) of a medical degree combined into one (which contained lots of molecular biology, frankly). My final doctorate was between the departments of condensed matter physics (nominally my awarding institution), biochemistry, radiation oncology, and "the department of physiology anatomy and genetics", which is basically preclinical medicine. The people I work with are 50/50 recovering engineers or physicists, and qualified clinical medics who are trying to learn things like perturbation theory in their time off…<br>>"it just works", completely by luck What does your validation function look like for this? Whenever stuff "just works" for me I get a little nervous until I determine why.<br>Ah. I do know why: the relevant Damköhler numbers [0] are either very small (chemistry is much quicker than flow) or large (flow is much quicker than chemistry). So the approximations I am building in are justified and an awkward middle region is excluded; we also are only interested in small concentrations in a carrier fluid (e.g. blood, lymph) where the presence or absence of the species in question does not change its rheology.<br>I am lucky because we have evolved this way. If our circulatory system and its approach to metabolism was more similar to e.g. a reacting polymer foam ("can of expanding foam") which completely consumes its reactants as it goes, this implicit Lagrangian approach would likely not work.<br>[0] <https://en.wikipedia.org/wiki/Damk%C3%B6hler_numbers><br>
+- [vote?id=48479627&how=up&goto=item%3Fid%3D48473302](vote?id=48479627&how=up&goto=item%3Fid%3D48473302) [agumonkey](user?id=agumonkey) [25 days ago](item?id=48479627) \| [root](#48474411) \| [parent](#48476285) \| [next](#48478211) [[–]](javascript:void(0))
+Funny, I've been interested in mathematical rheology modeling (especially hemorheology). Do you know places journals or books to read to get in touch with the field ? (Note: I'm just a dev, few numerical analysis skills)<br>
+- [vote?id=48478211&how=up&goto=item%3Fid%3D48473302](vote?id=48478211&how=up&goto=item%3Fid%3D48473302) [shnock](user?id=shnock) [25 days ago](item?id=48478211) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48479627) \| [next](#48485881) [[–]](javascript:void(0))
+This is incredibly cool. Thanks for the detailed explanations!<br>
+- [vote?id=48485881&how=up&goto=item%3Fid%3D48473302](vote?id=48485881&how=up&goto=item%3Fid%3D48473302) [boppo1](user?id=boppo1) [24 days ago](item?id=48485881) \| [root](#48474411) \| [parent](#48476285) \| [prev](#48478211) \| [next](#48477468) [[–]](javascript:void(0))
+Thank you!<br>
+- [vote?id=48477468&how=up&goto=item%3Fid%3D48473302](vote?id=48477468&how=up&goto=item%3Fid%3D48473302) [solenoid0937](user?id=solenoid0937) [25 days ago](item?id=48477468) \| [root](#48474411) \| [parent](#48474666) \| [prev](#48475446) \| [next](#48482530) [[–]](javascript:void(0))
+Why don't you (or your company!) just apply for Mythos?<br>
+- [vote?id=48482530&how=up&goto=item%3Fid%3D48473302](vote?id=48482530&how=up&goto=item%3Fid%3D48473302) [fellowniusmonk](user?id=fellowniusmonk) [25 days ago](item?id=48482530) \| [prev](#48474411) \| [next](#48483233) [[–]](javascript:void(0))
+I have a philosophy pre-print about "empirical ontologies" I use for testing new models reasoning abilities, and it also degrades, there is no way around it and it always refuses.<br>It's not that the model is complete trash, it's that anthropics new approach to forcing epistemic crisis will make any model behind it complete trash.<br>
+- [vote?id=48483233&how=up&goto=item%3Fid%3D48473302](vote?id=48483233&how=up&goto=item%3Fid%3D48473302) [conception](user?id=conception) [25 days ago](item?id=48483233) \| [prev](#48482530) \| [next](#48482435) [[–]](javascript:void(0))
+They’ve mentioned that they will have the ability to access less guarded models with a verification program in the future. I suspect these guard rails will have options to move past them shortly here in the future.<br>
+- [vote?id=48482435&how=up&goto=item%3Fid%3D48473302](vote?id=48482435&how=up&goto=item%3Fid%3D48473302) [kylenessen](user?id=kylenessen) [25 days ago](item?id=48482435) \| [prev](#48483233) [[–]](javascript:void(0))
+I had Fable apply some edits to my monarch butterfly paper and kept getting bumped to Opus. Im not exactly sure why, but I suspect it happened when it ran my analysis scripts to double check my numbers.<br>
+![]
+
+[Guidelines](newsguidelines.html) \| [FAQ](newsfaq.html) \| [Lists](lists) \| [API](https://github.com/HackerNews/API) \| [Security](security.html) \| [Legal](https://www.ycombinator.com/legal/) \| [Apply to YC](https://www.ycombinator.com/apply/) \| [Contact](mailto:hn@ycombinator.com)

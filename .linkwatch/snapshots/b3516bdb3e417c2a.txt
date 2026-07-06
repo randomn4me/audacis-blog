@@ -1,0 +1,4 @@
+nix-darwin
+
+nix-darwin is a declarative configuration system for macOS, based
+ on Nix. See the [GitHub repository](https://github.com/nix-darwin/nix-darwin#readme) for more information.

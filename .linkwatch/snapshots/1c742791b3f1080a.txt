@@ -1,0 +1,128 @@
+Collaborative Research Center CROSSING
+
+The goal of CROSSING is to provide cryptography-based security solutions enabling trust in new and next generation computing environments. The solutions will meet the efficiency and security requirements of the new environments and have sound implementations. They will be easy to use for developers, administrators, and end users of IT, even if they are not cryptography experts. CROSSING researchers from complementary areas such as cryptography, quantum physics, system and software engineering will achieve this goal in a collaborative effort.
+
+![CROSSING DFG Logo kurz]
+
+Quick access
+
+Research
+
+[Project Areas](../research_crossing/project_areas/index.en.jsp)
+[CogniCrypt](../research_crossing/cognicrypt/index.en.jsp)
+[Software & Tools](../research_crossing/software_tools/index.en.jsp)
+[Publications](../research_crossing/publ/index.en.jsp)
+People
+
+[Principal Investigators](people_crossing/principal_investigators/index.en.jsp)
+[Scientific Advisory Board](people_crossing/scientific_advisory_board/index.en.jsp)
+[Directorate](people_crossing/directorate/index.en.jsp)
+Outreach
+
+[Feature Stories](../outreach/feature_stories/index.en.jsp)
+[Videos](../outreach/videos/index.en.jsp)
+[Female Student Travel Award](../outreach/female_student_travel_award/fsta.en.jsp)
+[Female Student Mentoring](../outreach/female_student_mentoring_and_networking/index.en.jsp)
+![]
+
+Prof. Marc Fischlin, CROSSING Spokesperson
+
+“Cryptography needs to evolve constantly in order to address today's and tomorrow's challenges. CROSSING is a key contributor to these developments, offering a great environment to set standards for future solutions.”
+
+[Next Level Security - learn more about our unique collaborative project in the CROSSING brochure. (PDF file) (opens in new tab)](/media/crossing/documents/190829_tud_crossing_broschuere_rz_02_korr_web.pdf "PDF-File, 1663kB")
+
+Project Areas
+
+[Solutions](../research_crossing/project_areas/solutions/index.en.jsp)
+[Primitives](../research_crossing/project_areas/primitives/index.en.jsp)
+[Engineering](../research_crossing/project_areas/engineering/index.en.jsp)
+[Transfer](../research_crossing/project_areas/transfer_1/index.en.jsp)
+Latest Top Research Publications
+
+Three apers accepted at CRYPTO 2026
+
+Five papers accepted at USENIX Security
+
+Papers accepted in Transactions on Computers (TC)
+
+[Three apers accepted at CRYPTO 2026 Success for CROSSING researchers](../news_events/crossing_details_335936.en.jsp)
+[Five papers accepted at USENIX Security Success for CROSSING researchers](../news_events/crossing_details_335872.en.jsp)
+[Papers accepted in Transactions on Computers (TC) Success for CROSSING researchers](../news_events/crossing_details_332096.en.jsp)
+Three apers accepted at CRYPTO 2026
+
+Five papers accepted at USENIX Security
+
+Papers accepted in Transactions on Computers (TC)
+
+News
+
+Kryptographie für das Quantenzeitalter
+
+Making Chip Designs Invisible to AI
+
+CROSSING News / accepted papers
+
+CROSSING News / accepted papers
+
+Three apers accepted at CRYPTO 2026
+
+[Picture: Klaus Mai Picture: Klaus Mai June 30, 2026 Kryptographie für das Quantenzeitalter Sonderforschungsbereich CROSSING zieht nach zwölf Jahren Bilanz](../news_events/crossing_details_336128.en.jsp)
+[June 30, 2026 Making Chip Designs Invisible to AI Professor Ahmad-Reza Sadeghi Receives ERC Proof-of-Concept Grant](../news_events/crossing_details_336256.en.jsp)
+[CROSSING News / accepted papers CROSSING News / accepted papers June 25, 2026 Three apers accepted at CRYPTO 2026 Success for CROSSING researchers](../news_events/crossing_details_335936.en.jsp)
+Kryptographie für das Quantenzeitalter
+
+Making Chip Designs Invisible to AI
+
+CROSSING News / accepted papers
+
+CROSSING News / accepted papers
+
+Three apers accepted at CRYPTO 2026
+
+Events
+
+Currently no entries available.
+
+CROSSING: Cryptography-based security solutions – enabling trust in new and next generation computing environments
+
+Watch the CROSSING video
+
+or visit our [YouTube Channel](https://www.youtube.com/channel/UCNKzeZzhIMOhWm9eqlP15kw)!
+
+Contact
+
+CROSSING Office
+
+Contact us at:
+
+![Kontaktbild]
+
+administration@crossing.tu-...
+
+work +49 6151 16-25555
+
+Work  S2|20 102  Pankratiusstraße 2  64289 Darmstadt
+
+**Recommended external content**
+
+We have selected external content from YouTube for you and would like to show it to you right here.
+To do this, you must reveal it with one click.
+You can hide the external content at any time with another click.
+
+I agree to external content from YouTube being shown to me.
+This may result in personal data being transmitted to third-party platforms.
+You can find more information in our [Privacy Policy](https://www.tu-darmstadt.de/datenschutzerklaerung).
+
+We would like to customise the information and usability of this website to your preferences and needs.
+To this end, we use so-called cookies. Please choose which cookies you would like to enable when visiting our webpages.
+Some of these cookies are required to load and correctly display this website on your device.
+These are strictly necessary or essential cookies and cannot be deselected.
+The preferences cookie saves your language setting and preferred search engine, while the statistics cookie regulates
+how the open-source statistical software “Matomo” analyses your visits to and activities on our website.
+For more information about cookies we use, please refer to our [privacy policy](https://www.tu-darmstadt.de/datenschutzerklaerung).
+
+[Legal note](../impressum.en.jsp)
+
+![]
+
+![]

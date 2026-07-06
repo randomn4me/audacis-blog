@@ -1,0 +1,114 @@
+nicht erreichbar
+
+News
+
+[Erstes Treffen der Emacs user group](/2026/2026-06-09-emacs-meetup/)
+
+Am <2026-06-29 Mon 19:00> findet der erste Termin unserer Meetup-Reihe zum Thema [Emacs](https://www.gnu.org/software/emacs/), dem besseren Betriebssystem (mit Editor).
+
+Wir bereden Emacs, Emacs’ Lisp-Dialekt Elisp, die zahlreichen Pakete für Emacs sowie unsere liebsten Hacks in und um Emacs.
+
+[Weiterlesen >](/2026/2026-06-09-emacs-meetup/)
+
+[Digital Independence Day – Wir laden dich ein!](/2026/2026-01-19-diday-darmstadt/)
+
+**Der nächste DI.DAY findet am 05.07. um 14 Uhr im Café Glaskasten statt. Dieses Mal geht es um Alternativen zu Big-Tech Suchmaschinen, die unseren Datenschutz respektieren.**
+
+Das Internet sollte ein Ort von Vielfalt und Freiheit sein – für jeden, überall.
+Doch heute wird es zunehmend von wenigen großen Akteuren geprägt.
+Wir glauben: Es geht auch anders.
+
+Lokale Hilfe für lokale Alternativen
+
+Der CCC Darmstadt lädt dich ein zu einer Informationsveranstaltung, die dir zeigt, wie du deine digitale Unabhängigkeit zurückgewinnen kannst und warum wir das brauchen. Erfahre, welche europäischen und offenen Technologien es gibt – und wie du sie ganz praktisch im Alltag nutzen kannst.
+
+[Weiterlesen >](/2026/2026-01-19-diday-darmstadt/)
+
+[Offenes Chaos: Freitag wird zum Member-Only-Day](/2026/freitag-member-only/)
+
+Liebe Chaot:innen,
+
+der Chaos Computer Club Darmstadt lebt von der Vielfalt seiner Mitglieder und
+dem regen Austausch mit Gästen. In den letzten Wochen haben wir festgestellt,
+dass unsere beiden offenen Tage – Dienstag und Freitag – unterschiedlich gut
+funktionieren. Freitags konnten wir leider nicht immer verlässlich garantieren,
+dass genügend Mitglieder vor Ort sind, um den Space zu öffnen und Gäste
+angemessen zu betreuen. Gleichzeitig haben wir bemerkt, dass uns manchmal die
+Zeit fehlt, um uns intensiv mit vereinsinternen Projekten und dem Austausch
+untereinander zu beschäftigen.
+
+[Weiterlesen >](/2026/freitag-member-only/)
+
+[Winterpause](/2025/winterpause/)
+
+Wir verabschieden uns in die Winterpause. Das nächste offene Treffen findet am 6. Januar 2026 statt.
+
+Wir wünschen entspannte Feiertage und einen guten Rutsch!
+
+[Weiterlesen >](/2025/winterpause/)
+
+[39C3: Congress Everywhere](/2025/39c3-congress-everywhere/)
+
+**tl;dr:** Die [Anmeldung](https://nuudel.digitalcourage.de/cccda-everywhere-2025) für den Congress Everywhere läuft bis
+zum 19. Dezember 2025.
+
+Wir veranstalten zwischen den Jahren das gewohnte Congress Everywhere in unseren
+Vereinsräumen. Jeden Tag ab 11 Uhr, öffnen wir den Space und streamen das
+Vortragsprogramm des 39C3 in zwei Räumen.
+
+[Weiterlesen >](/2025/39c3-congress-everywhere/)
+
+[Pause der regelmäßigen Treffen des CTF-Teams 'Wizards Of Dos'](/2025/wod-hiatus/)
+
+Aufgrund fehlender Kapazitäten in der Orga finden bis auf Weiteres keine regelmäßigen Treffen des CTF-Teams mehr statt. Interessierte werden eingeladen stattdessen an einem Dienstag zum Offenen Chaos den Hackspace und andere Interessierte kennenzulernen.
+Alternativ könnt ihr euch auch vorher über den dedizierten [Wizards Of Dos Discord](https://discord.gg/NnE9XYunyA) absprechen, um euch vor Ort zu treffen.
+
+[Weiterlesen >](/2025/wod-hiatus/)
+
+[Wizards Of Dos Sommerpause](/2025/wod-sommerpause/)
+
+Das Wizards of Dos Team macht im September Sommerpause und es finden enstprechend keine wöchtentlichen Treffen statt. Ab Oktober geht es wieder regulär weiter.
+
+[Weiterlesen >](/2025/wod-sommerpause/)
+
+[Kanidm Meetup](/2025/kanidm-2025/)
+
+Liebe Connaisseure der geregelten Login-Flows,
+
+in der Woche vom 26.05.2025 wird uns einer der Entwickler von [Kanidm](https://kanidm.com), einer FOSS IDM Lösung, für vier Tage (bis zum 29.05.2025) besuchen.
+
+Ein erstes Treffen ist am 26.05.2025 ab 17 Uhr in unseren Räumen in der Wilhelminenstr. 17 in Darmstadt geplant.
+
+Hier besteht besteht die Möglichkeit sich mit [Firstyear](https://fy.blackhats.net.au/), dem Entwickler, sowie dem überregionalen deutschprachigen Nuzterkreis auszutauschen.
+Es besteht jederzeit die Möglichkeit auf vielen Wegen zu [Kanidm](https://github.com/kanidm/kanidm) zu contributen, wir werden aber auch über Deployments und Konfigurationen,
+sowie Identity Management, Authentication und Authorization im Allgemein diskutieren.
+
+[Weiterlesen >](/2025/kanidm-2025/)
+
+[Home Assistant Community Day 2025](/2025/home-assistant-community-day-2025/)
+
+Liebe katzenkloautomatisierende Dashboard-Fanatiker*innen,
+
+am 24.05.2025 findet der erste, weltweite Home Assistant Community Day statt. Zu diesem Anlass lädt der CCC Darmstadt von 12 bis 16 Uhr zum Austausch von Erfahrungen, Showcases eurer eigenen Kreationen und gemütlichem Beisammensein unter Gleichgesinnten in seine Räume der Wilhelminenstraße in Darmstadt ein.
+
+Die Registrierung erfolgt über eine von Home Assistant zur zentralen Organisation genutzten Plattform namens “Luma”: <https://lu.ma/pee46vsb>
+
+Die Teilnehmerzahl ist begrenzt. Bitte registriert euer Interesse auch, wenn das Event bereits voll ist. Luma verwaltet eine Warteliste und ihr rückt bei Absagen anderer Interessenten automatisch nach. Außerdem erfahrt ihr so per E-Mail von Updates zum Community Day.
+
+[Weiterlesen >](/2025/home-assistant-community-day-2025/)
+
+[Einladung: 20 Jahre CCC Darmstadt](/2025/einladung-20-jahre-ccc-darmstadt/)
+
+Liebe Chaot:innen,
+
+vor 20 Jahren fanden sich einige Hacker:innen zusammen, um einen Raum in Darmstadt zu gründen, an dem gemeinsam gehackt und sich ausgetauscht werden kann. Aus dieser Idee entstand der Chaos Darmstadt e.V.
+
+Über die Jahre wurde aus der Trollhöhle die W17 und aus dem Chaos Darmstadt wurde der CCC Darmstadt. Nun sind wir mittlerweile 20 Jahre alt und das möchten wir mit Euch feiern.
+
+Am 25.04.2025 ab 19 Uhr laden wir Euch herzlich zur CCC Darmstadt Jubiläumsparty in unseren Hackspace in der Wilhelminenstraße 17 in 64283 Darmstadt ein. Für das leibliche Wohl sowie Getränke ist gesorgt.
+
+[Weiterlesen >](/2025/einladung-20-jahre-ccc-darmstadt/)
+
+![Darmstädter Skyline]
+
+[RSS-Feed](/feed.xml) [Impressum](/impressum/)

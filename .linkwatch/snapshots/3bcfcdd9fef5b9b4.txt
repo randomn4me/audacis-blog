@@ -1,0 +1,30 @@
+Navigation Menu
+
+Search code, repositories, users, issues, pull requests...
+
+Provide feedback
+
+Saved searches
+
+Use saved searches to filter your results more quickly
+
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+
+[![SVG Image]Notifications](/login?return_to=%2Frandomn4me%2Fnix-flakes)    You must be signed in to change notification settings
+[![SVG Image]Fork 0](/login?return_to=%2Frandomn4me%2Fnix-flakes)
+[![SVG Image] Star 0](/login?return_to=%2Frandomn4me%2Fnix-flakes)
+SVG ImageFilesSVG ImageExpand file tree
+
+default.nix
+
+Latest commit
+
+History
+
+default.nix
+
+File metadata and controls
+
+Code
+Blame
+Footer
