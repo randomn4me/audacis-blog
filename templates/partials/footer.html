@@ -16,6 +16,6 @@
             {% endif %}
         </div>
         {% endif %}
-        <p>&copy; {{ config.author }} {{ now() | date(format="%Y") }} <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span> All rights reserved.</p>
+        <p>&copy; {{ config.author }} {{ now() | date(format="%Y") }} <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span> All rights reserved <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span> <a href="{{ get_url(path='@/impressum.md') }}">Impressum</a></p>
     </div>
 </footer>

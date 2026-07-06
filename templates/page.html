@@ -11,7 +11,7 @@
                 {% if page.date %}
                 <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
                 {% endif %}
-                {% if page.reading_time %}
+                {% if page.reading_time and page.date %}
                 <span class="meta-separator">{{ config.extra.meta_separator | default(value="•") }}</span>
                 <span class="reading-time">{{ page.reading_time }} min read</span>
                 {% endif %}
