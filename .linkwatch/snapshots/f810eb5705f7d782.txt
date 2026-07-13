@@ -18,10 +18,6 @@ Welcome to San Francisco!
 
 Featured Events
 
-AI Engineer World’s Fair 2026
-
-![Moscone]
-
 AMD Advancing AI
 
 ![Moscone]
@@ -29,6 +25,10 @@ AMD Advancing AI
 Pokémon World Championships 2026
 
 ![Placeholder floorplan]
+
+Salesforce Dreamforce 2026
+
+![S Exter Howard rendering Homepage Fallback Image 2]
 
 ![Clipboard Icon]
 

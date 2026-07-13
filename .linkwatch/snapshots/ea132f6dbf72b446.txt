@@ -164,6 +164,7 @@ The Project
 [Reproducible Builds Status](https://reproducible.nixos.org/)
 [Security](/community/teams/security)
 [Branding](/branding)
+[Surveys](/surveys)
 [Summer of Nix](https://github.com/ngi-nix/summer-of-nix)
 [Devices](/devices)
 Get in Touch

@@ -44,7 +44,7 @@ netcup Enterprise
     + [Extensions for Managed Server](/en/professional/managed-server/managed-private-server-extensions)
 
   * [Managed Cloud Cluster](/en/professional/managed-server/managed-cloud-cluster)
-[DEALS 10](/en/deals)
+[DEALS 4](/en/deals)
 [Support](https://helpcenter.netcup.com/en/support)
 [About us](/en/about-netcup)
 [CCP Login](https://www.customercontrolpanel.de/)
@@ -92,7 +92,7 @@ Managed Server >
 [Server](/en/server)
 [Domains](/en/domain/buy-register-domain)
 [Software](/en/software)
-[DEALS10](/en/deals)
+[DEALS4](/en/deals)
 ![]
 
 Domain-Special &
@@ -124,33 +124,13 @@ Which domain will take the title? At netcup, the top country domains are going h
 
 ![icon clock]
 
-All (10)
+All (4)
 Webhosting
 Root server
 VPS
-Domains (10)
+Domains (4)
 Other
 .eu Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
-.ch Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
-.co domain
 
 ![]
 
@@ -180,47 +160,7 @@ DNS management included
 Redundant name servers
 For new and existing customers
 Permanent price
-.no Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
-.be Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
 .es Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
-.pt Domain
-
-![]
-
-DNSSEC, API
-0 € setup fee
-DNS management included
-Redundant name servers
-For new and existing customers
-Permanent price
-.us Domain
 
 ![]
 
@@ -250,7 +190,27 @@ DNS management included
 Redundant name servers
 For new and existing customers
 Permanent price
+.ch Domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
 .nl domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
+.co domain
 
 ![]
 
@@ -301,6 +261,46 @@ Redundant name servers
 For new and existing customers
 Permanent price
 .hr Domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
+.no Domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
+.be Domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
+.pt Domain
+
+![]
+
+DNSSEC, API
+0 € setup fee
+DNS management included
+Redundant name servers
+For new and existing customers
+Permanent price
+.us Domain
 
 ![]
 

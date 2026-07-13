@@ -84,9 +84,9 @@ House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob
 
 Termine
 
-[23. Juli 2026 Enterprise Security Forum: CRA Ready – Vorsprung durch Good Security Practice, Heilbronn![SVG Image]![SVG Image]](https://www.athene-center.de/esf)
 [25.-26. Juli 2026 KI-Festival, Heilbronn![SVG Image]](/de/ki-festival/)
 [10. August 2026 Lunch Lecture: Gemeinsamkeiten und Unterschiede zwischen CRA, KI-VO und DSGVO: Ein Überblick![SVG Image]![SVG Image]](https://www.athene-center.de/aktuelles/veranstaltungen/lunch-lecture-cra-gemeinsamkeiten-und-unterschiede-1750)
+[24.-27. August 2026 ARES CyResTrust International Workshop on Applied Trust and Cyber Resilience, Linköping, Schweden![SVG Image]![SVG Image]](https://www.ares-conference.eu/cyrestrust)
 Top Downloads
 
 [Veröffentlichungen Aktive Cyberabwehr (PDF, 446 KB)![SVG Image]![SVG Image]](/fileadmin/dokumente/studien_und_technical_reports/2023-03-impulspapier-aktive-cyberabwehr.pdf?_=1681213497)

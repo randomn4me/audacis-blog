@@ -13,23 +13,23 @@ Code golf
 
 ![icon]
 
-[![icon]](/wiki/File:Question_book-new.svg) This article **needs [more citations](/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](/wiki/Special:EditPage/Code_golf "Special:EditPage/Code golf") by [adding citations to reliable sources](/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Code golf"](https://www.google.com/search) – [news](https://www.google.com/search) **·** [newspapers](https://www.google.com/search) **·** [books](https://www.google.com/search) **·** [scholar](https://scholar.google.com/scholar) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch) *(September 2021)* *([Learn how and when to remove this message](/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+[![icon]](//en.wikipedia.org/wiki/File:Question_book-new.svg) This article **needs [more citations](//en.wikipedia.org/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](//en.wikipedia.org/wiki/Special:EditPage/Code_golf "Special:EditPage/Code golf") by [adding citations to reliable sources](//en.wikipedia.org/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and [removed](//en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence "Wikipedia:Verifiability"). *Find sources:* ["Code golf"](https://www.google.com/search) – [news](https://www.google.com/search) **·** [newspapers](https://www.google.com/search) **·** [books](https://www.google.com/search) **·** [scholar](https://scholar.google.com/scholar) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch) *(September 2021)* *([Learn how and when to remove this message](//en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
 
-**Code golf** is a type of recreational [computer programming](/wiki/Computer_programming "Computer programming") [competition](/wiki/Competition "Competition") in which participants strive to achieve the shortest possible [source code](/wiki/Source_code "Source code") that solves a certain problem.[[1]](#cite_note-1)[[2]](#cite_note-2) Code golf challenges and tournaments may also be named with the programming language used (for example, *[Perl](/wiki/Perl "Perl") golf*).
+**Code golf** is a type of recreational [computer programming](//en.wikipedia.org/wiki/Computer_programming "Computer programming") [competition](//en.wikipedia.org/wiki/Competition "Competition") in which participants strive to achieve the shortest possible [source code](//en.wikipedia.org/wiki/Source_code "Source code") that solves a certain problem.[[1]](#cite_note-1)[[2]](#cite_note-2) Code golf challenges and tournaments may also be named with the programming language used (for example, *[Perl](//en.wikipedia.org/wiki/Perl "Perl") golf*).
 
 Etymology
 
-The term "code golf" is derived from the similarity of its goal with that of conventional [golf](/wiki/Golf "Golf"), where participants seek to achieve the lowest possible score, rather than the highest, as is the standard in most sports and game scoring systems. While conventional golf players try to minimize the number of club strokes needed to complete the course, code golfers strive to reduce the number of characters necessary (or keystrokes, to extend the metaphor) to write the program.
+The term "code golf" is derived from the similarity of its goal with that of conventional [golf](//en.wikipedia.org/wiki/Golf "Golf"), where participants seek to achieve the lowest possible score, rather than the highest, as is the standard in most sports and game scoring systems. While conventional golf players try to minimize the number of club strokes needed to complete the course, code golfers strive to reduce the number of characters necessary (or keystrokes, to extend the metaphor) to write the program.
 
 History
 
-The length of the shortest possible program that produces a given output (in any fixed programming language) is known as the [Kolmogorov complexity](/wiki/Kolmogorov_complexity "Kolmogorov complexity") of the output, and its mathematical study dates to the work of [Andrey Kolmogorov](/wiki/Andrey_Kolmogorov "Andrey Kolmogorov") in 1963. Code golf, however, can be more general than this, as it often specifies a general input-output transformation that must be performed rather than asking for a single output with no input.
+The length of the shortest possible program that produces a given output (in any fixed programming language) is known as the [Kolmogorov complexity](//en.wikipedia.org/wiki/Kolmogorov_complexity "Kolmogorov complexity") of the output, and its mathematical study dates to the work of [Andrey Kolmogorov](//en.wikipedia.org/wiki/Andrey_Kolmogorov "Andrey Kolmogorov") in 1963. Code golf, however, can be more general than this, as it often specifies a general input-output transformation that must be performed rather than asking for a single output with no input.
 
-Whilst the term "code golf" was apparently first used in 1999 with [Perl](/wiki/Perl "Perl"),[[3]](#cite_note-perl-golf-coined-3) and later popularised through the use of Perl to write a program that performed [RSA](/wiki/RSA_(algorithm) "RSA (algorithm)") encryption,[[4]](#cite_note-rsa-4) a similar informal competition is known to have been popular with earlier [APL](/wiki/APL_(programming_language) "APL (programming language)") hackers. The challenging nature of aggressively optimizing for program size has itself long been recognized; for example, a 1962 coding manual for [Regnecentralen's](/wiki/Regnecentralen "Regnecentralen") GIER computer notes that "it is a time-consuming sport to code with the least possible number of instructions" and recommends against it for practical programming.[[5]](#cite_note-GIER-5) Today the term has grown to cover a wide variety of languages, which has even triggered the creation of dedicated golfing languages.
+Whilst the term "code golf" was apparently first used in 1999 with [Perl](//en.wikipedia.org/wiki/Perl "Perl"),[[3]](#cite_note-perl-golf-coined-3) and later popularised through the use of Perl to write a program that performed [RSA](//en.wikipedia.org/wiki/RSA_(algorithm) "RSA (algorithm)") encryption,[[4]](#cite_note-rsa-4) a similar informal competition is known to have been popular with earlier [APL](//en.wikipedia.org/wiki/APL_(programming_language) "APL (programming language)") hackers. The challenging nature of aggressively optimizing for program size has itself long been recognized; for example, a 1962 coding manual for [Regnecentralen's](//en.wikipedia.org/wiki/Regnecentralen "Regnecentralen") GIER computer notes that "it is a time-consuming sport to code with the least possible number of instructions" and recommends against it for practical programming.[[5]](#cite_note-GIER-5) Today the term has grown to cover a wide variety of languages, which has even triggered the creation of dedicated golfing languages.
 
 Dedicated golfing languages
 
-Several new programming languages have been created specifically for the practice of code golf. These languages sacrifice readability for extreme brevity, and often provide [high-level](/wiki/High-level_programming_language "High-level programming language") functions with single-character names, which makes them unsuitable in production environments where maintainability has higher importance than code size.
+Several new programming languages have been created specifically for the practice of code golf. These languages sacrifice readability for extreme brevity, and often provide [high-level](//en.wikipedia.org/wiki/High-level_programming_language "High-level programming language") functions with single-character names, which makes them unsuitable in production environments where maintainability has higher importance than code size.
 
 History
 
@@ -37,29 +37,29 @@ The first recorded dedicated golfing language is GolfScript,[[6]](#cite_note-6) 
 
 In 2014, CJam, heavily inspired by GolfScript, released.[[7]](#cite_note-7)
 
-in 2015, motivated by CJam and APL, and inspired by [J](/wiki/J_(programming_language) "J (programming language)"), Jelly released, and would position itself as a dominant contender for tersest language for many years.
+in 2015, motivated by CJam and APL, and inspired by [J](//en.wikipedia.org/wiki/J_(programming_language) "J (programming language)"), Jelly released, and would position itself as a dominant contender for tersest language for many years.
 
-Since 2015, many dedicated golfing languages have been released. Notable examples include Japt, Pyth, 05AB1E, Charcoal and Vyxal.[*[citation needed](/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")*]
+Since 2015, many dedicated golfing languages have been released. Notable examples include Japt, Pyth, 05AB1E, Charcoal and Vyxal.[*[citation needed](//en.wikipedia.org/wiki/Wikipedia:Citation_needed "Wikipedia:Citation needed")*]
 
 Design
 
-Some golfing languages, such as Japt and Pyth, are transpiled to conventional programming languages[[8]](#cite_note-8) (here, [JavaScript](/wiki/JavaScript "JavaScript") and [Python](/wiki/Python_(programming_language) "Python (programming language)") respectively). This makes the languages easier to learn, and guarantees a solid foundation for the design and performance of the language. This also simplifies the creation of web interpreters, which allow users to use the language without downloading anything.
+Some golfing languages, such as Japt and Pyth, are transpiled to conventional programming languages[[8]](#cite_note-8) (here, [JavaScript](//en.wikipedia.org/wiki/JavaScript "JavaScript") and [Python](//en.wikipedia.org/wiki/Python_(programming_language) "Python (programming language)") respectively). This makes the languages easier to learn, and guarantees a solid foundation for the design and performance of the language. This also simplifies the creation of web interpreters, which allow users to use the language without downloading anything.
 
-Many modern golfing languages, being inspired by or related to golfscript, are [stack-based](/wiki/Stack-based "Stack-based") and [concatenative](/wiki/Concatenative_programming_language "Concatenative programming language"), but several languages inspired by Jelly, itself [tacit](/wiki/Tacit_programming "Tacit programming") and [functional](/wiki/Functional_programming "Functional programming"), instead follow its footsteps. Other paradigms, such as [pattern matching](/wiki/Pattern_matching "Pattern matching") languages, also appear in less notable quantities.
+Many modern golfing languages, being inspired by or related to golfscript, are [stack-based](//en.wikipedia.org/wiki/Stack-based "Stack-based") and [concatenative](//en.wikipedia.org/wiki/Concatenative_programming_language "Concatenative programming language"), but several languages inspired by Jelly, itself [tacit](//en.wikipedia.org/wiki/Tacit_programming "Tacit programming") and [functional](//en.wikipedia.org/wiki/Functional_programming "Functional programming"), instead follow its footsteps. Other paradigms, such as [pattern matching](//en.wikipedia.org/wiki/Pattern_matching "Pattern matching") languages, also appear in less notable quantities.
 
-Most golfing languages are high-level, and almost all shorten symbols to a single character. In modern implementations, such as in Vyxal, the languages leverage [single-byte character sets](/wiki/Single-byte_character_set "Single-byte character set") to make all commands printable, which further reduces readability due to the variety of symbols, especially with the incompatibility of [code comments](/wiki/Code_comment "Code comment") with the goal of code golf.
+Most golfing languages are high-level, and almost all shorten symbols to a single character. In modern implementations, such as in Vyxal, the languages leverage [single-byte character sets](//en.wikipedia.org/wiki/Single-byte_character_set "Single-byte character set") to make all commands printable, which further reduces readability due to the variety of symbols, especially with the incompatibility of [code comments](//en.wikipedia.org/wiki/Code_comment "Code comment") with the goal of code golf.
 
-Golfing languages almost always make heavy use of operator [overloading](/wiki/Overloading_(programming) "Overloading (programming)"), and most include easily-accessible forms of [text compression](/wiki/Text_compression "Text compression"). In most languages, closing parenthesizes and other syntactic structures is optional at the end of the program. As a general design principle, dedicated golfing languages are heavily implicit, and most are [tacit](/wiki/Tacit_programming "Tacit programming").
+Golfing languages almost always make heavy use of operator [overloading](//en.wikipedia.org/wiki/Overloading_(programming) "Overloading (programming)"), and most include easily-accessible forms of [text compression](//en.wikipedia.org/wiki/Text_compression "Text compression"). In most languages, closing parenthesizes and other syntactic structures is optional at the end of the program. As a general design principle, dedicated golfing languages are heavily implicit, and most are [tacit](//en.wikipedia.org/wiki/Tacit_programming "Tacit programming").
 
 Examples
 
-An example of GolfScript code to print 1000 digits of [pi](/wiki/Pi "Pi"):[[9]](#cite_note-9)
+An example of GolfScript code to print 1000 digits of [pi](//en.wikipedia.org/wiki/Pi "Pi"):[[9]](#cite_note-9)
 
 ;''
 6666,-2%{2+.2/@*\/10.3??2*+}*
 `1000<~\;
 
-An example of Vyxal 3 code for [Fizz buzz](/wiki/Fizz_buzz "Fizz buzz"), annotated with an explanation:[[10]](#cite_note-10)
+An example of Vyxal 3 code for [Fizz buzz](//en.wikipedia.org/wiki/Fizz_buzz "Fizz buzz"), annotated with an explanation:[[10]](#cite_note-10)
 
 ⑤ƛ35f≛kF½•∨,­⁡​‎‎⁪⁡⁪⁠⁪⁡⁪‏⁠‎⁪⁡⁪⁠⁪⁢⁪‏‏​⁡⁠⁡‌⁢​‎‎⁪⁡⁪⁠⁪⁣⁪‏⁠‎⁪⁡⁪⁠⁪⁤⁪‏⁠‎⁪⁡⁪⁠⁪⁢⁡⁪‏‏​⁡⁠⁡‌⁣​‎‎⁪⁡⁪⁠⁪⁢⁢⁪‏‏​⁡⁠⁡‌⁤​‎‎⁪⁡⁪⁠⁪⁢⁣⁪‏⁠‎⁪⁡⁪⁠⁪⁢⁤⁪‏⁠‎⁪⁡⁪⁠⁪⁣⁡⁪‏‏​⁡⁠⁡‌⁢⁡​‎‎⁪⁡⁪⁠⁪⁣⁢⁪‏‏​⁡⁠⁡‌⁢⁢​‎‎⁪⁡⁪⁠⁪⁣⁣⁪‏‏​⁡⁠⁡‌⁢⁣​‎‎⁪⁡⁪⁠⁪⁣⁤⁪‏‏​⁡⁠⁡‌­
 ⑤ƛ           ## ‎⁡map over 1..100
@@ -72,7 +72,7 @@ An example of Vyxal 3 code for [Fizz buzz](/wiki/Fizz_buzz "Fizz buzz"), annotat
 
 Types of code golf
 
-Some code golf questions, such as those posed on general programming sites, may not require implementation in a specific [programming language](/wiki/Programming_language "Programming language"). However, this limits the style of problems that it is possible for the problem designers to pose (for example, by limiting the use of certain language features). In addition, the creation of such "open" questions has resulted in the design of code golf specific programming language dialects such as REBMU (a dialect of [REBOL](/wiki/REBOL "REBOL")). Both online and live competitions may also include time limits.
+Some code golf questions, such as those posed on general programming sites, may not require implementation in a specific [programming language](//en.wikipedia.org/wiki/Programming_language "Programming language"). However, this limits the style of problems that it is possible for the problem designers to pose (for example, by limiting the use of certain language features). In addition, the creation of such "open" questions has resulted in the design of code golf specific programming language dialects such as REBMU (a dialect of [REBOL](//en.wikipedia.org/wiki/REBOL "REBOL")). Both online and live competitions may also include time limits.
 
 Practical applications
 
@@ -82,34 +82,34 @@ Practical applications
 
 ![[icon]](//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png)
 
-[![[icon]](//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png)](/wiki/File:Wiki_letter_w_cropped.svg) This section **needs expansion**. You can help by [adding missing information](https://en.wikipedia.org/w/index.php). *(May 2025)*
+[![[icon]](//upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Wiki_letter_w_cropped.svg/20px-Wiki_letter_w_cropped.svg.png)](//en.wikipedia.org/wiki/File:Wiki_letter_w_cropped.svg) This section **needs expansion**. You can help by [adding missing information](https://en.wikipedia.org/w/index.php). *(May 2025)*
 
-In 2019, cryptography researchers Xavier Bonnetain, Léo Perrin and Shizhu Tian used code golf and the closely linked concept of [Kolmogorov complexity](/wiki/Kolmogorov_complexity "Kolmogorov complexity") to show that the [S-box](/wiki/S-box "S-box") used in the [Streebog](/wiki/Streebog "Streebog") and [Kuznyechik](/wiki/Kuznyechik "Kuznyechik") cryptography algorithms was significantly less random than its creators claimed it was.[[11]](#cite_note-11)
+In 2019, cryptography researchers Xavier Bonnetain, Léo Perrin and Shizhu Tian used code golf and the closely linked concept of [Kolmogorov complexity](//en.wikipedia.org/wiki/Kolmogorov_complexity "Kolmogorov complexity") to show that the [S-box](//en.wikipedia.org/wiki/S-box "S-box") used in the [Streebog](//en.wikipedia.org/wiki/Streebog "Streebog") and [Kuznyechik](//en.wikipedia.org/wiki/Kuznyechik "Kuznyechik") cryptography algorithms was significantly less random than its creators claimed it was.[[11]](#cite_note-11)
 
 See also
 
-[![icon]](/wiki/File:Octicons-terminal.svg)[Computer programming portal](/wiki/Portal:Computer_programming "Portal:Computer programming")
+[![icon]](//en.wikipedia.org/wiki/File:Octicons-terminal.svg)[Computer programming portal](//en.wikipedia.org/wiki/Portal:Computer_programming "Portal:Computer programming")
 ![icon]
 
-[Code poetry](/wiki/Code_poetry "Code poetry")
-[Data compression](/wiki/Data_compression "Data compression")
-[Minification (programming)](/wiki/Minification_(programming) "Minification (programming)")
-[Obfuscation (software)](/wiki/Obfuscation_(software) "Obfuscation (software)")
-[Perl pastimes](/wiki/Perl#Community "Perl")
-[Kolmogorov complexity](/wiki/Kolmogorov_complexity "Kolmogorov complexity")
+[Code poetry](//en.wikipedia.org/wiki/Code_poetry "Code poetry")
+[Data compression](//en.wikipedia.org/wiki/Data_compression "Data compression")
+[Minification (programming)](//en.wikipedia.org/wiki/Minification_(programming) "Minification (programming)")
+[Obfuscation (software)](//en.wikipedia.org/wiki/Obfuscation_(software) "Obfuscation (software)")
+[Perl pastimes](//en.wikipedia.org/wiki/Perl#Community "Perl")
+[Kolmogorov complexity](//en.wikipedia.org/wiki/Kolmogorov_complexity "Kolmogorov complexity")
 References
 
-**[↑](#cite_ref-1)** Code Golf Stack Exchange. [About code-golf](https://codegolf.stackexchange.com/tags/code-golf/info). Retrieved 2021-12-21.
-**[↑](#cite_ref-2)**  ["Introduction to Code-golf | ASSIST Software Romania"](https://assist-software.net/blog/introduction-code-golf). Retrieved 2023-03-23.
-**[↑](#cite_ref-perl-golf-coined_3-0)** Greg Bacon (1999-05-28). ["Re: Incrementing a value in a slice"](https://groups.google.com/group/comp.lang.perl.misc/msg/7b97c434492c8d20). [Newsgroup](/wiki/Usenet_newsgroup "Usenet newsgroup"): [comp.lang.perl.misc](news:comp.lang.perl.misc). [Usenet:](/wiki/Usenet_(identifier) "Usenet (identifier)") [7imnti$mjh$1@info2.uah.edu](news:7imnti$mjh$1@info2.uah.edu). Retrieved 2011-07-12.
-**[↑](#cite_ref-rsa_4-0)** Back, Adam. ["RSA in 5 lines of perl"](http://www.cypherspace.org/rsa/pureperl.html). Retrieved 2011-01-10.
-**[↑](#cite_ref-GIER_5-0)** Andersen, Christian; Gram, Christian (1962). [*Lærebog i Kodning for GIER*](https://datamuseum.dk/w/images/b/be/LaerebogI.pdf) (PDF). Vol. 1 (3 ed.). Copenhagen: Regnecentralen. p. 104. Retrieved 2020-05-16.
-**[↑](#cite_ref-6)** ["Timeline of golfing languages - Esolang"](https://esolangs.org/wiki/Timeline_of_golfing_languages). *esolangs.org*. Retrieved 2026-01-02.
-**[↑](#cite_ref-7)** ["CJam"](https://sourceforge.net/projects/cjam/). *SourceForge*. 2016-10-01. Retrieved 2026-01-02.
-**[↑](#cite_ref-8)** ["japt/README.md at master · ETHproductions/japt"](https://github.com/ETHproductions/japt/blob/master/README.md). *GitHub*. Retrieved 2026-01-02.
-**[↑](#cite_ref-9)** ["GolfScript Examples"](https://www.golfscript.com/golfscript/examples.html). Retrieved 2023-03-23.
-**[↑](#cite_ref-10)** ["1, 2, Fizz, 4, Buzz"](https://codegolf.stackexchange.com/questions/58615/1-2-fizz-4-buzz/278392#278392). *Code Golf Stack Exchange*. Retrieved 2026-01-02.
-**[↑](#cite_ref-11)** Bonnetain, Xavier; Perrin, Léo; Tian, Shizhu (2019), ["Anomalies and Vector Space Search: Tools for S-Box Analysis"](https://doi.org/10.1007/978-3-030-34578-5_8), *Lecture Notes in Computer Science*, Cham: Springer International Publishing, pp. 196–223, [doi](/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-030-34578-5_8](https://doi.org/10.1007%2F978-3-030-34578-5_8), [ISBN](/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-030-34577-8](/wiki/Special:BookSources/978-3-030-34577-8 "Special:BookSources/978-3-030-34577-8"), retrieved 2025-05-12
+[↑](#cite_ref-1) Code Golf Stack Exchange. [About code-golf](https://codegolf.stackexchange.com/tags/code-golf/info). Retrieved 2021-12-21.
+[↑](#cite_ref-2)  ["Introduction to Code-golf | ASSIST Software Romania"](https://assist-software.net/blog/introduction-code-golf). Retrieved 2023-03-23.
+[↑](#cite_ref-perl-golf-coined_3-0) Greg Bacon (1999-05-28). ["Re: Incrementing a value in a slice"](https://groups.google.com/group/comp.lang.perl.misc/msg/7b97c434492c8d20). [Newsgroup](//en.wikipedia.org/wiki/Usenet_newsgroup "Usenet newsgroup"): [comp.lang.perl.misc](news:comp.lang.perl.misc). [Usenet:](//en.wikipedia.org/wiki/Usenet_(identifier) "Usenet (identifier)") [7imnti$mjh$1@info2.uah.edu](news:7imnti$mjh$1@info2.uah.edu). Retrieved 2011-07-12.
+[↑](#cite_ref-rsa_4-0) Back, Adam. ["RSA in 5 lines of perl"](http://www.cypherspace.org/rsa/pureperl.html). Retrieved 2011-01-10.
+[↑](#cite_ref-GIER_5-0) Andersen, Christian; Gram, Christian (1962). [*Lærebog i Kodning for GIER*](https://datamuseum.dk/w/images/b/be/LaerebogI.pdf) (PDF). Vol. 1 (3 ed.). Copenhagen: Regnecentralen. p. 104. Retrieved 2020-05-16.
+[↑](#cite_ref-6) ["Timeline of golfing languages - Esolang"](https://esolangs.org/wiki/Timeline_of_golfing_languages). *esolangs.org*. Retrieved 2026-01-02.
+[↑](#cite_ref-7) ["CJam"](https://sourceforge.net/projects/cjam/). *SourceForge*. 2016-10-01. Retrieved 2026-01-02.
+[↑](#cite_ref-8) ["japt/README.md at master · ETHproductions/japt"](https://github.com/ETHproductions/japt/blob/master/README.md). *GitHub*. Retrieved 2026-01-02.
+[↑](#cite_ref-9) ["GolfScript Examples"](https://www.golfscript.com/golfscript/examples.html). Retrieved 2023-03-23.
+[↑](#cite_ref-10) ["1, 2, Fizz, 4, Buzz"](https://codegolf.stackexchange.com/questions/58615/1-2-fizz-4-buzz/278392#278392). *Code Golf Stack Exchange*. Retrieved 2026-01-02.
+[↑](#cite_ref-11) Bonnetain, Xavier; Perrin, Léo; Tian, Shizhu (2019), ["Anomalies and Vector Space Search: Tools for S-Box Analysis"](https://doi.org/10.1007/978-3-030-34578-5_8), *Lecture Notes in Computer Science*, Cham: Springer International Publishing, pp. 196–223, [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-030-34578-5_8](https://doi.org/10.1007%2F978-3-030-34578-5_8), [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-030-34577-8](//en.wikipedia.org/wiki/Special:BookSources/978-3-030-34577-8 "Special:BookSources/978-3-030-34577-8"), retrieved 2025-05-12
 External links
 
 [CodeGolf.StackExchange.com: Questions and answers on programming puzzles and code golf](https://codegolf.stackexchange.com)
@@ -128,6 +128,7 @@ External links
 [Articles to be expanded from May 2025](/wiki/Category:Articles_to_be_expanded_from_May_2025 "Category:Articles to be expanded from May 2025")
 [All articles to be expanded](/wiki/Category:All_articles_to_be_expanded "Category:All articles to be expanded")
 This page was last edited on 22 June 2026, at 17:53 (UTC).
+Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
 Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License");
 additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
 [Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)

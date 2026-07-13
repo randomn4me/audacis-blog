@@ -12,7 +12,6 @@
 <Kontakt>
 [Anmeldung](Anmeldung_-2)
 [Login](i.php)
-[Stellenausschreibung Allgemein](Stellenausschreibung_Allgemein)
 Herzlich Willkommen   bei der uniKITA Darmstadt e.V.
 
 Verein für Kinderbetreuung an den Darmstädter Hochschulen
@@ -42,11 +41,11 @@ Stellenausschreibungen
 ![]
 
 [![]](Verein_fuer_Kinderbetreuung_an_den_Darmstaedter_Hochschulen)
-[Der Verein](Der_Verein)[Krabbelgruppe Wirbelwind](Krabbelgruppe_Wirbelwind)[Krabbelgruppe Grashüpfer](Krabbelgruppe_Grashuepfer)[Krabbelgruppe Marienkäfer](Krabbelgruppe_Marienkaefer)[Waldkindergarten Lichtwiesel](Waldkindergarten_Lichtwiesel)[Waldkindergarten Waldhörnchen](Waldkindergarten_Waldhoernchen)[Unterstützung](Spendenaufruf)<Presse><Links><Kontakt>[Anmeldung](Anmeldung_-2)[Login](i.php)[Stellenausschreibung Allgemein](Stellenausschreibung_Allgemein) Herzlich Willkommen bei der uniKITA Darmstadt e.V.Verein für Kinderbetreuung an den Darmstädter Hochschulen
+[Der Verein](Der_Verein)[Krabbelgruppe Wirbelwind](Krabbelgruppe_Wirbelwind)[Krabbelgruppe Grashüpfer](Krabbelgruppe_Grashuepfer)[Krabbelgruppe Marienkäfer](Krabbelgruppe_Marienkaefer)[Waldkindergarten Lichtwiesel](Waldkindergarten_Lichtwiesel)[Waldkindergarten Waldhörnchen](Waldkindergarten_Waldhoernchen)[Unterstützung](Spendenaufruf)<Presse><Links><Kontakt>[Anmeldung](Anmeldung_-2)[Login](i.php) Herzlich Willkommen bei der uniKITA Darmstadt e.V.Verein für Kinderbetreuung an den Darmstädter Hochschulen
 
 | ![] |
 | ---------------------------- |
 
 Aktualisiert 2025.09.19 14:00:35 Login<br>[uniKITA intern](i.php)SucheAktuellesStellenausschreibungen
-<br>**Unterstütze unser Kita-Team als Übungsleiter\*in (m/w/d)** [**[Ausschreibung]**](Stellenausschreibung_Wirbelwind)
+<br>**Unterstütze unser Kita-Team als Übungsleiter\*in (m/w/d)** [**[Ausschreibung]**](Stellenausschreibung_Waldhoernchen)
 <br>**Ergänzungskraft/pädagogische Hilfskraft (m/w/d) für unsere Krippe „Wirbelwinde“)** [**[Ausschreibung]**](Stellenausschreibung_Wirbelwind_-2)

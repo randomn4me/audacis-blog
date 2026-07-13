@@ -11,8 +11,8 @@ Use saved searches to filter your results more quickly
 To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
 
 [![SVG Image]Notifications](/login?return_to=%2Ftmux%2Ftmux)    You must be signed in to change notification settings
-[![SVG Image]Fork 2.7k](/login?return_to=%2Ftmux%2Ftmux)
-[![SVG Image] Star 47.4k](/login?return_to=%2Ftmux%2Ftmux)
+[![SVG Image]Fork 2.8k](/login?return_to=%2Ftmux%2Ftmux)
+[![SVG Image] Star 47.7k](/login?return_to=%2Ftmux%2Ftmux)
 Home
 
 ![]

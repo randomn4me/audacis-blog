@@ -11,7 +11,7 @@ Use saved searches to filter your results more quickly
 To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
 
 [![SVG Image]Notifications](/login?return_to=%2Fnix-community%2Fdisko)    You must be signed in to change notification settings
-[![SVG Image]Fork 309](/login?return_to=%2Fnix-community%2Fdisko)
+[![SVG Image]Fork 314](/login?return_to=%2Fnix-community%2Fdisko)
 [![SVG Image] Star 3.2k](/login?return_to=%2Fnix-community%2Fdisko)
 nix-community/disko
 
@@ -324,49 +324,7 @@ Sponsor this project
 
 [Packages](/orgs/nix-community/packages?repo_name=disko)
 
-[Contributors 144](/nix-community/disko/graphs/contributors)
-
-[![@Mic92]](https://github.com/Mic92)
-[![@Lassulus]](https://github.com/Lassulus)
-[![@github-actions[bot]](https://avatars.githubusercontent.com/in/15368)](https://github.com/apps/github-actions)
-[![@bors[bot]](https://avatars.githubusercontent.com/in/1847)](https://github.com/apps/bors)
-[![@iFreilicht]](https://github.com/iFreilicht)
-[![@Enzime]](https://github.com/Enzime)
-[![@phaer]](https://github.com/phaer)
-[![@dependabot[bot]](https://avatars.githubusercontent.com/in/29110)](https://github.com/apps/dependabot)
-[![@blaggacao]](https://github.com/blaggacao)
-[![@MatthewCroughan]](https://github.com/MatthewCroughan)
-[![@lilyinstarlight]](https://github.com/lilyinstarlight)
-[![@Bert-Proesmans]](https://github.com/Bert-Proesmans)
-[![@dmadisetti]](https://github.com/dmadisetti)
-[![@nothingnesses]](https://github.com/nothingnesses)
-![@Mic92]
-
-![@Lassulus]
-
-![@github-actions[bot]](https://avatars.githubusercontent.com/in/15368)
-
-![@bors[bot]](https://avatars.githubusercontent.com/in/1847)
-
-![@iFreilicht]
-
-![@Enzime]
-
-![@phaer]
-
-![@dependabot[bot]](https://avatars.githubusercontent.com/in/29110)
-
-![@blaggacao]
-
-![@MatthewCroughan]
-
-![@lilyinstarlight]
-
-![@Bert-Proesmans]
-
-![@dmadisetti]
-
-![@nothingnesses]
+[Contributors](/nix-community/disko/graphs/contributors)
 
 Languages
 

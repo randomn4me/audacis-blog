@@ -21,7 +21,7 @@ Homomorphic encryption
 
 ![icon]
 
-[![icon]](//en.wikipedia.org/wiki/File:Question_book-new.svg) This article **needs [more citations](//en.wikipedia.org/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](//en.wikipedia.org/wiki/Special:EditPage/Homomorphic_encryption "Special:EditPage/Homomorphic encryption") by [adding citations to reliable sources](//en.wikipedia.org/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and removed. *Find sources:* ["Homomorphic encryption"](https://www.google.com/search) – [news](https://www.google.com/search) **·** [newspapers](https://www.google.com/search) **·** [books](https://www.google.com/search) **·** [scholar](https://scholar.google.com/scholar) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch) *(February 2025)* *([Learn how and when to remove this message](//en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
+[![icon]](//en.wikipedia.org/wiki/File:Question_book-new.svg) This article **needs [more citations](//en.wikipedia.org/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](//en.wikipedia.org/wiki/Special:EditPage/Homomorphic_encryption "Special:EditPage/Homomorphic encryption") by [adding citations to reliable sources](//en.wikipedia.org/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and [removed](//en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence "Wikipedia:Verifiability"). *Find sources:* ["Homomorphic encryption"](https://www.google.com/search) – [news](https://www.google.com/search) **·** [newspapers](https://www.google.com/search) **·** [books](https://www.google.com/search) **·** [scholar](https://scholar.google.com/scholar) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch) *(February 2025)* *([Learn how and when to remove this message](//en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
 
 General
 Derived from Various assumptions, including [learning with errors](//en.wikipedia.org/wiki/Learning_with_errors "Learning with errors"), [Ring learning with errors](//en.wikipedia.org/wiki/Ring_learning_with_errors "Ring learning with errors") or even [RSA](//en.wikipedia.org/wiki/RSA_(cryptosystem) "RSA (cryptosystem)") (multiplicative) and others
@@ -344,7 +344,6 @@ See also
 [Format-preserving encryption](//en.wikipedia.org/wiki/Format-preserving_encryption "Format-preserving encryption") – Method in cryptography
 [Homomorphic secret sharing](//en.wikipedia.org/wiki/Homomorphic_secret_sharing "Homomorphic secret sharing")
 [Homomorphic signatures for network coding](//en.wikipedia.org/wiki/Homomorphic_signatures_for_network_coding "Homomorphic signatures for network coding")
-[Polymorphic code](//en.wikipedia.org/wiki/Polymorphic_code "Polymorphic code") – Self-modifying program code designed to defeat anti-virus programs or reverse engineering
 [Private biometrics](//en.wikipedia.org/wiki/Private_biometrics "Private biometrics")
 [Private set intersection](//en.wikipedia.org/wiki/Private_set_intersection "Private set intersection") – Secure multiparty computation cryptographic technique
 [Searchable symmetric encryption](//en.wikipedia.org/wiki/Searchable_symmetric_encryption "Searchable symmetric encryption") – System allowing searching of encrypted documents
@@ -447,7 +446,7 @@ A [list of homomorphic encryption implementations](https://github.com/jonaschn/a
 [Short description is different from Wikidata](/wiki/Category:Short_description_is_different_from_Wikidata "Category:Short description is different from Wikidata")
 [CS1: long volume value](/wiki/Category:CS1:_long_volume_value "Category:CS1: long volume value")
 [CS1 maint: multiple names: authors list](/wiki/Category:CS1_maint:_multiple_names:_authors_list "Category:CS1 maint: multiple names: authors list")
-This page was last edited on 4 July 2026, at 01:12 (UTC).
+This page was last edited on 13 July 2026, at 03:33 (UTC).
 Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
 Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License");
 additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.

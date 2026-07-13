@@ -42,8 +42,6 @@ Start with [`:help nvim-from-vim`](/doc/user/nvim/#nvim-from-vim) if you already
 
 ![Greptile, The AI Code Reviewer]
 
-![Multi-Engine SERP API. Free trial, no credit card.]
-
 ![SerpApi: Scrape search engine results with a simple API]
 
 News
