@@ -1,16 +1,29 @@
-![]
+Marlon May
+                Machine Learning Group, Computer Science Department, TU Darmstadt.
+                    Hochschulstrasse 1, Room S1|03 076, 64289 Darmstadt, Germany
 
-![]
+                Deutsches Forschungszentrum für KI, TU Darmstadt.
+Landwehrstraße 50A, S4 | 23, 1. OG, 64293 Darmstadt, Germany
+marlon (dot) may (swirly thingy) dfki (dot) de
+            Landwehrstraße 50A, S4 | 23, 1. OG, 64293 Darmstadt, Germany
+marlon (dot) may (swirly thingy) dfki (dot) de
+                Mission. My research focuses on the safety of AI systems, especially agent-based systems.
+                As large language models increasingly power real-world applications, their outputs carry ever greater consequence for individuals and society.
+                Ensuring that such models are both reliable and aligned with human intent is therefore the central challenge of my work.
 
-![]
-
-2025 - now: Ph.D. student at the German Research Center for Artificial Intelligence [(DFKI)](https://www.dfki.de/en/web),
- [Research Department for Foundations of Systems AI (SAINT)](https://www.dfki.de/en/web/research/research-departments/foundations-of-systems-ai), Darmstadt Germany.
-2023 - 2025: M.Sc. in AI & ML at TU Darmstadt, Germany
-2020 - 2023: B.Sc. in Computer Science at Philipps-University Marburg, Germany
-
+        Timeline.
+| 2025 - now: | Ph.D. student at the German Research Center for Artificial Intelligence (DFKI), Research Department for Foundations of Systems AI (SAINT), Darmstadt Germany. |
+| 2023 - 2025: | M.Sc. in AI & ML at TU Darmstadt, Germany |
+| 2020 - 2023: | B.Sc. in Computer Science at Philipps-University Marburg, Germany |
 Publications
-
 Selected publications from AIML Lab projects. Use the search and filters to explore recent work.
+            Outputs
+            –
 
-Enable JavaScript to view publications.
+            Latest Year
+            –
+
+            Top Type
+            –
+
+        Loading publications…

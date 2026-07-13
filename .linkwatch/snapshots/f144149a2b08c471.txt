@@ -1,135 +1,26 @@
-Stack Exchange Network
-
-Stack Exchange network consists of 184 Q&A communities including [Stack Overflow](https://stackoverflow.com), the largest, most trusted online community for developers to learn, share their knowledge, and build their careers.
-
-**Stack Internal**
-
-Knowledge at work
-
-Bring the best of human thought and AI automation together at your work.
-
-[How to disable the Option-Space key combination for non-breaking spaces?](/questions/78245/how-to-disable-the-option-space-key-combination-for-non-breaking-spaces)
-
 How to disable the annoying Option-Space key combination for non-breaking spaces?
-
 This is very very annoying in Eclipse or the terminal as I often type the non-breaking space instead of a regular one.
-
-[macos](/questions/tagged/macos "show questions tagged 'macos'")
-[mac](/questions/tagged/mac "show questions tagged 'mac'")
-[keyboard-shortcuts](/questions/tagged/keyboard-shortcuts "show questions tagged 'keyboard-shortcuts'")
-![Arjan's user avatar]
-
-![Malax's user avatar]
-
-3
-
-  FWIW, It's referred to as the option key rather than the alt key on a Mac.
-
-  Chealion
-– [Chealion](/users/1339/chealion "26,407 reputation")
-  2009-12-04 07:04:04 +00:00 Commented Dec 4, 2009 at 7:04
-1
-
-  Is it possible to make the Terminal display nbsp as a reverse character or some sort, so you would instantly see it when you mistype? Because some times you actually *do* want to type a nbsp.
-
-  forthrin
-– [forthrin](/users/106050/forthrin "2,337 reputation")
-  2018-03-24 09:12:43 +00:00 Commented Mar 24, 2018 at 9:12
-11 Answers 11
-
-Make your `~/Library/KeyBindings/DefaultKeyBinding.dict` file look like this (if it doesn’t exist create it, if there are already bindings in it just add the one from below):
-
+How to disable the annoying Option-Space key combination for non-breaking spaces?
+This is very very annoying in Eclipse or the terminal as I often type the non-breaking space instead of a regular one.
+Make your ~/Library/KeyBindings/DefaultKeyBinding.dict file look like this (if it doesn’t exist create it, if there are already bindings in it just add the one from below):
 {
 "~ " = ("insertText:", " ");
 }
-
 What does this do? Every time you press Option-Space instead of inserting a non breaking space OS X now inserts a regular space. Problem fixed.
-
 You need restart the device to apply this change.
+DefaultKeyBinding.dict file.
 
-![DonPaulie's user avatar]
-
-![Martin S.'s user avatar]
-
-I couldn't get this work on OSX 10.7 :(
-
-  Eemeli Kantola
-– [Eemeli Kantola](/users/15422/eemeli-kantola "153 reputation")
-  2012-09-17 08:43:34 +00:00 Commented Sep 17, 2012 at 8:43
-4
-
-  @EemeliKantola It still works for me, but you have to reopen applications to apply the changes. Terminal, Xcode, and many cross-platform applications don't support DefaultKeyBinding.dict.
-
-  Lri
-– [Lri](/users/69039/lri "42,832 reputation")
-  2012-09-25 12:23:39 +00:00 Commented Sep 25, 2012 at 12:23
-2
-
-  @LauriRanta Terminal seems to support the `DefaultKeyBinding.dict` file.
-
-  Ragnar123
-– [Ragnar123](/users/60518/ragnar123 "101 reputation")
-  2014-01-24 15:36:06 +00:00 Commented Jan 24, 2014 at 15:36
-This works on Yosemite 10.10.2. I've created the directory and the file from scratch. Thanks a bunch!
-
-  Petr Cibulka
-– [Petr Cibulka](/users/273789/petr-cibulka "203 reputation")
-  2015-04-06 02:11:15 +00:00 Commented Apr 6, 2015 at 2:11 ![SVG Image]
-1
-
-  Also worked for me on El Capitan, OS X 10.11. Thanks!
-
-  n2o
-– [n2o](/users/329322/n2o "121 reputation")
-  2015-10-13 14:08:49 +00:00 Commented Oct 13, 2015 at 14:08
-I use iTerm2 for most of my work and the mapping can be added in the "Keys" preference pane, by adding a new key combination in Preferences -> Keys -> the plus button. Note when adding the key make sure to put a single space in the lower box as shown.
-
-![screencap of adding the keyboard shortcut]
-
-![screencap of adding the keyboard shortcut]
-
-![Simon Walker's user avatar]
-
-Very good solution! Heck, I'm still getting valuable information from a four year old post. :-)
-
-  Malax
-– [Malax](/users/20031/malax "1,115 reputation")
-  2013-11-26 14:12:56 +00:00 Commented Nov 26, 2013 at 14:12
-1
-
-  You make my day!
-
-  Mmm
-– [Mmm](/users/176978/mmm "101 reputation")
-  2014-03-17 13:23:49 +00:00 Commented Mar 17, 2014 at 13:23 ![SVG Image]
+                I use iTerm2 for most of my work and the mapping can be added in the "Keys" preference pane, by adding a new key combination in Preferences -> Keys -> the plus button. Note when adding the key make sure to put a single space in the lower box as shown.
 As mentioned in the comments, the solution provided by Martin does not work in some applications, most importantly (for me) in my editor, Sublime Text 2.
-
-So for all of you who are troubled by none breaking spaces in your code, you can add the following custom keybinding into your user keymap (`"Sublime Text 2 > Preferences > Key Bindings - User"`):
-
+So for all of you who are troubled by none breaking spaces in your code, you can add the following custom keybinding into your user keymap ("Sublime Text 2 > Preferences > Key Bindings - User"):
 { "keys": ["alt+space"], "command": "insert_snippet", "args": {"contents": " " } }
-
 This will insert a regular space instead of a non-breaking one.
-
-![fresskoma's user avatar]
-
 I also could not get the KeyBindings fix to work. Similar to the Sublime answer, I ended up configuring my editor (VS Code) to insert a normal space by adding
-
 { "key": "alt+space", "command": "type",
                       "when": "editorTextFocus",
                       "args": { "text": " " } }
-
-to my global `keybindings.json` (`Preferences: Open Keyboard Shortcuts File` in the command palette).
-
-![user2361830's user avatar]
-
-You could also create a custom keyboard layout with Ukelele (see <https://superuser.com/a/515151>) or use [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/):
-
-![]
-
-![]
-
-<https://github.com/tekezo/KeyRemap4MacBook/blob/master/src/core/server/Resources/include/checkbox/standards/space.xml>
-
+to my global keybindings.json (Preferences: Open Keyboard Shortcuts File in the command palette).
+You could also create a custom keyboard layout with Ukelele (see https://superuser.com/a/515151) or use KeyRemap4MacBook:
 <item>
   <name>Non-Breaking Space to Normal Space</name>
   <appendix>(Option+Space to Space)</appendix>
@@ -142,49 +33,17 @@ You could also create a custom keyboard layout with Ukelele (see <https://superu
     KeyCode::SPACE,
   </autogen>
 </item>
-
-![Community's user avatar]
-
-![Lri's user avatar]
-
 Using OSX Sierra (10.12.6), and resolved this very easy by using Karabiner-Elements:
-
-<https://github.com/tekezo/Karabiner-Elements>
-
+https://github.com/tekezo/Karabiner-Elements
 Once opened, go to "Complex Modifications" > "Add Rule" > "Import more rules from the Internet", and download the "Disable alt+spacebar (nonbreaking space)" rule. Add it, and you're done!
+Enable button after download ;)
 
-![Terje Andersen's user avatar]
-
-Year 2023, Macos 13 Ventura, only this option working. Don't forget to click to `Enable` button after download ;)
-
-  kodmanyagha
-– [kodmanyagha](/users/221370/kodmanyagha "111 reputation")
-  2023-07-13 13:58:38 +00:00 Commented Jul 13, 2023 at 13:58 ![SVG Image]
-A possible global solution is to set `alt`-`space` to something else like Show Notification Center in System Preferences > Keyboard > Shortcuts > Mission Control.
-
-![enter image description here]
-
-![enter image description here]
-
-![Burgi's user avatar]
-
-![Ari P's user avatar]
-
-To improve this answer: Set any Shortcut in this Menu to alt-space and then disable the Shortcut by unchecking the Checkbox in this row. This disables the Nonbreaking Space behaviour AND frees up this key combination to be used by any other tool like BetterTouchTool or Alfred! This is actually the simplest solution using built in "System Preferences" and still works with Big Sur 11.3
-
-  Lukas Zech
-– [Lukas Zech](/users/364103/lukas-zech "111 reputation")
-  2021-05-27 11:54:55 +00:00 Commented May 27, 2021 at 11:54 ![SVG Image]
-Since this is the answer that Google shows you when searching for "How to disable non-breaking spaces in Sublime Text" ([see x3ro's answer](https://superuser.com/a/530439/48741)) I thought I'd post the answer for Sublime Text on Linux. Add this to your key bindings:
-
+                A possible global solution is to set alt-space to something else like Show Notification Center in System Preferences > Keyboard > Shortcuts > Mission Control.
+Since this is the answer that Google shows you when searching for "How to disable non-breaking spaces in Sublime Text" (see x3ro's answer) I thought I'd post the answer for Sublime Text on Linux. Add this to your key bindings:
 { "keys": [" "], "command": "insert_snippet", "args": { "contents": " " } }
-
 Go to "Preferences" → "Key bindings - User" to edit your key bindings.
-
-Note that the space in `"keys": [" "]` is a non-breaking space.
-
+Note that the space in "keys": [" "] is a non-breaking space.
 Also note that this key binding also affects widgets, like the search box. In other words, you can no longer type non-breaking spaces into your search box, which could be a problem. To disable non-breaking spaces just in the text editor, use this key binding instead:
-
 {
     "keys": [" "],
     "command": "insert_snippet", "args": { "contents": " " },
@@ -192,94 +51,14 @@ Also note that this key binding also affects widgets, like the search box. In ot
         { "key": "setting.is_widget", "operand": false }
     ]
 }
-
-![Community's user avatar]
-
-![Hubro's user avatar]
-
-For me the the KeyBindings fix didn't work. I use Coda2 as an editor.
-I managed to get the replacement to work with BetterTouchTool though.
-
-BetterTouchTool:
-"Keyboard > Add New Shortcut" then type "alt + space" in "Keyboard Shortcut" and "Space" in "Trigger other Keyboard Shortcut"
-
-![Sean Grünböck's user avatar]
-
-Thanks!, bettertouchtool has a solution to all problems :p
-
-  Steven B.
-– [Steven B.](/users/672376/steven-b "101 reputation")
-  2018-04-16 10:23:39 +00:00 Commented Apr 16, 2018 at 10:23
-On Sublime Text 4113 on Mac OS Big Sur, this [answer](https://superuser.com/a/530439) doesn't work.
-
+For me the the KeyBindings fix didn't work. I use Coda2 as an editor. I managed to get the replacement to work with BetterTouchTool though.
+BetterTouchTool: "Keyboard > Add New Shortcut" then type "alt + space" in "Keyboard Shortcut" and "Space" in "Trigger other Keyboard Shortcut"
+On Sublime Text 4113 on Mac OS Big Sur, this answer doesn't work.
 Here is the correct keymap:
-
-`{ "keys": ["alt+space"], "command": "insert", "args": {"characters": " "} },`
-
-![lepix's user avatar]
-
+{ "keys": ["alt+space"], "command": "insert", "args": {"characters": " "} },
 My DefaultKeyBinding.dict contains following:
-
 {
   "~ " = ("insertText:", " ");
   "~\U0022"  = ("insertText:", "\U0022");
 }
-
 where last line replaces ” with " which in my case was another often happening mis-spelling.. It simply inserts " when option was down when writing double quotes.
-
-![osku's user avatar]
-
-You must [log in](/users/login?ssrc=question_page&returnurl=https%3a%2f%2fsuperuser.com%2fquestions%2f78245) to answer this question.
-
-Start asking to get answers
-
-Find the answer to your question by asking.
-
-Explore related questions
-
-[macos](/questions/tagged/macos "show questions tagged 'macos'")
-[mac](/questions/tagged/mac "show questions tagged 'mac'")
-[keyboard-shortcuts](/questions/tagged/keyboard-shortcuts "show questions tagged 'keyboard-shortcuts'")
-See similar questions with these tags.
-
-The Overflow Blog
-![SVG Image]
-
-  [Building more than just an agent...](https://stackoverflow.blog/2026/07/10/building-more-than-just-an-agent-harness/ "Building more than just an agent harness​​​​‌﻿‍﻿​‍​‍‌‍﻿﻿‌﻿​‍‌‍‍‌‌‍‌﻿‌‍‍‌‌‍﻿‍​‍​‍​﻿‍‍​‍​‍‌﻿​﻿‌‍​‌‌‍﻿‍‌‍‍‌‌﻿‌​‌﻿‍‌​‍﻿‍‌‍‍‌‌‍﻿﻿​‍​‍​‍﻿​​‍​‍‌‍‍​‌﻿​‍‌‍‌‌‌‍‌‍​‍​‍​﻿‍‍​‍​‍‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​﻿‍‍​‍﻿﻿​‍﻿﻿‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍﻿﻿‌‍‍‌‌‍﻿‍‌﻿‌​‌‍‌‌‌‍﻿‍‌﻿‌​​‍﻿﻿‌‍‌‌‌‍‌​‌‍‍‌‌﻿‌​​‍﻿﻿‌‍﻿‌‌‍﻿﻿‌‍‌​‌‍‌‌​﻿﻿‌‌﻿​​‌﻿​‍‌‍‌‌‌﻿​﻿‌‍‌‌‌‍﻿‍‌﻿‌​‌‍​‌‌﻿‌​‌‍‍‌‌‍﻿﻿‌‍﻿‍​﻿‍﻿‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿​﻿‌‍​‍‌‍​‍​﻿​‍​‍﻿‌​﻿‌​‌‍‌‍​﻿‌‍​﻿‍‌​‍﻿‌‌‍​‌‌‍‌‌‌‍​‍‌‍‌‌​‍﻿‌‌‍‌​​﻿​﻿​﻿​‌‌‍‌​​﻿​‌​﻿‍‌​﻿‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌​​﻿‌​​﻿‍﻿‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​﻿‍﻿‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​﻿﻿﻿‌‍​‍‌‍​‌‌﻿​﻿‌‍‌‌‌‌‌‌‌﻿​‍‌‍﻿​​﻿﻿‌‌‍‍​‌﻿‌​‌﻿‌​‌﻿​​‌﻿​﻿​‍‌‌​﻿​﻿‌​​‌​‍‌‌​﻿​‍‌​‌‍​‍‌‌​﻿​‍‌​‌‍‌‍​﻿‌‍﻿‌‌﻿​﻿​‍﻿‍‌﻿​﻿‌﻿‌​‌‍​‌‌‍​﻿‌‍‍﻿‌‍﻿﻿‌﻿‌‍‌‍‌‌‌﻿​‍‌‍‌‍‌‍﻿​‌‍﻿﻿‌﻿‌﻿​‍﻿‍‌‍​﻿‌‍﻿﻿​‍‌‍‌‍‍‌‌‍‌​​﻿﻿‌‌‍‌​​﻿‌‌​﻿​﻿‌‍‌‍​﻿‍‌​﻿​﻿​﻿‌‌​﻿‍​​‍﻿‌​﻿​﻿‌‍​‍‌‍​‍​﻿​‍​‍﻿‌​﻿‌​‌‍‌‍​﻿‌‍​﻿‍‌​‍﻿‌‌‍​‌‌‍‌‌‌‍​‍‌‍‌‌​‍﻿‌‌‍‌​​﻿​﻿​﻿​‌‌‍‌​​﻿​‌​﻿‍‌​﻿‌‌​﻿​‍​﻿​‍‌‍​﻿‌‍‌​​﻿‌​​‍‌‍‌﻿‌​‌﻿‍‌‌﻿​​‌‍‌‌​﻿﻿‌‌‍​‍‌‍﻿​‌‍﻿﻿‌‍‌﻿‌‌​​‌‍﻿﻿‌﻿​﻿‌﻿‌​​‍‌‍‌﻿​​‌‍​‌‌﻿‌​‌‍‍​​﻿﻿‌‌﻿‌​‌‍‍‌‌﻿‌​‌‍﻿​‌‍‌‌​‍‌‍‌﻿​​‌‍‌‌‌﻿​‍‌﻿​﻿‌﻿​​‌‍‌‌‌‍​﻿‌﻿‌​‌‍‍‌‌﻿‌‍‌‍‌‌​﻿﻿‌‌﻿​​‌﻿‌‌‌‍​‍‌‍﻿​‌‍‍‌‌﻿​﻿‌‍‍​‌‍‌‌‌‍‌​​‍​‍‌﻿﻿‌")
-Featured on Meta
-[Partnering with Communities to Modernize Policies & Norms](https://meta.stackexchange.com/questions/418826/partnering-with-communities-to-modernize-policies-norms)
-Linked
-
-Related
-
-[Hot Network Questions](https://stackexchange.com/questions)
-
-[Why can't Lean 4 use logical conditions in universal binders as the index-in-bounds proof?](https://proofassistants.stackexchange.com/questions/6591/why-cant-lean-4-use-logical-conditions-in-universal-binders-as-the-index-in-bou)
-[Is "local realism" just a repetition of the old discussion about the relativity of physical properties?](https://philosophy.stackexchange.com/questions/139686/is-local-realism-just-a-repetition-of-the-old-discussion-about-the-relativity)
-[Is there a video recording of Preskill's 2017 Quantum Computing for Business keynote address, where he coins NISQ?](https://quantumcomputing.stackexchange.com/questions/46364/is-there-a-video-recording-of-preskills-2017-quantum-computing-for-business-key)
-[Does the Newton Shell Theorem apply to inside an ellipsoid?](https://physics.stackexchange.com/questions/874126/does-the-newton-shell-theorem-apply-to-inside-an-ellipsoid)
-[Why is formic acid stronger than acetic acid?](https://chemistry.stackexchange.com/questions/195716/why-is-formic-acid-stronger-than-acetic-acid)
-[How did Krem know kryptonite was Kara's weakness in Supergirl?](https://scifi.stackexchange.com/questions/305198/how-did-krem-know-kryptonite-was-karas-weakness-in-supergirl)
-[Inverter H bridge with 2 Half bridge drivers using SPWM (Sinusoidal Pulse Width Modulation)](https://electronics.stackexchange.com/questions/770646/inverter-h-bridge-with-2-half-bridge-drivers-using-spwm-sinusoidal-pulse-width)
-[Recovering a set from the set of 28 sums of two of its elements](https://puzzling.stackexchange.com/questions/138825/recovering-a-set-from-the-set-of-28-sums-of-two-of-its-elements)
-[Is there a speed at which no elevator trim is required? Is it Best L/D or Best Range Speed?](https://aviation.stackexchange.com/questions/115405/is-there-a-speed-at-which-no-elevator-trim-is-required-is-it-best-l-d-or-best-r)
-[Controlling what appears in front in a 3d pgfplot](https://tex.stackexchange.com/questions/764630/controlling-what-appears-in-front-in-a-3d-pgfplot)
-[How can I know which airports have removed the 100ml liquid rule?](https://travel.stackexchange.com/questions/204025/how-can-i-know-which-airports-have-removed-the-100ml-liquid-rule)
-[Can a space station between the Sun and Mercury have a free-floating solar shield?](https://worldbuilding.stackexchange.com/questions/273995/can-a-space-station-between-the-sun-and-mercury-have-a-free-floating-solar-shiel)
-[Can an AES-128 key safely share 128-bits with a 160-bit ECC private key?](https://crypto.stackexchange.com/questions/119771/can-an-aes-128-key-safely-share-128-bits-with-a-160-bit-ecc-private-key)
-[What exactly do we obtain from a concrete formal proof?](https://math.stackexchange.com/questions/5143437/what-exactly-do-we-obtain-from-a-concrete-formal-proof)
-[How to put into lexicographic order using a newly ordered alphabet?](https://mathematica.stackexchange.com/questions/319710/how-to-put-into-lexicographic-order-using-a-newly-ordered-alphabet)
-[Nesting tikzcd (specifically) within tikzpicture](https://tex.stackexchange.com/questions/764598/nesting-tikzcd-specifically-within-tikzpicture)
-[PATH not being set correctly for SSH session on MacOS](https://apple.stackexchange.com/questions/486737/path-not-being-set-correctly-for-ssh-session-on-macos)
-[Truss Hanger Squeak — Missing Fasteners or Connector Defect?](https://diy.stackexchange.com/questions/331319/truss-hanger-squeak-missing-fasteners-or-connector-defect)
-[Does proton have electronic degeneracy?](https://physics.stackexchange.com/questions/874145/does-proton-have-electronic-degeneracy)
-[Can real-analytic curve germs be separated by harmonic functions](https://mathoverflow.net/questions/513122/can-real-analytic-curve-germs-be-separated-by-harmonic-functions)
-[In a statically typed language should `alias(null, null)` be `true` or a compile-time error?](https://langdev.stackexchange.com/questions/4805/in-a-statically-typed-language-should-aliasnull-null-be-true-or-a-compile)
-[Clarifying the boundary between small-signal and large-signal metrics (Slew Rate, Rise Time, Bandwidth, FPBW)](https://electronics.stackexchange.com/questions/770628/clarifying-the-boundary-between-small-signal-and-large-signal-metrics-slew-rate)
-[When and how a word can be treated as a keyword?](https://rpg.stackexchange.com/questions/219620/when-and-how-a-word-can-be-treated-as-a-keyword)
-[Algebraic space with equivalence relation being closed immersion](https://mathoverflow.net/questions/513181/algebraic-space-with-equivalence-relation-being-closed-immersion)
-Subscribe to RSS
-
-To subscribe to this RSS feed, copy and paste this URL into your RSS reader.
-
-![]

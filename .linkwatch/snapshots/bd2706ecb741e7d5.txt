@@ -1,224 +1,23 @@
-Navigation Menu
-
-Search code, repositories, users, issues, pull requests...
-
-Provide feedback
-
-Saved searches
-
-Use saved searches to filter your results more quickly
-
-To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
-
-[![SVG Image]Notifications](/login?return_to=%2Fnix-community%2Fdisko)    You must be signed in to change notification settings
-[![SVG Image]Fork 314](/login?return_to=%2Fnix-community%2Fdisko)
-[![SVG Image] Star 3.2k](/login?return_to=%2Fnix-community%2Fdisko)
-nix-community/disko
-
-Folders and files
-
-Name  Name Last commit message Last commit date
-Latest commit
-
-History[![SVG Image]1,392 Commits](/nix-community/disko/commits/master/)
-
-[![SVG Image]](/nix-community/disko/commits/master/)1,392 Commits
-![SVG Image]
-
-[.github](/nix-community/disko/tree/master/.github ".github")  ![SVG Image]
-
-[.github](/nix-community/disko/tree/master/.github ".github")
-![SVG Image]
-
-[disk-deactivate](/nix-community/disko/tree/master/disk-deactivate "disk-deactivate")  ![SVG Image]
-
-[disk-deactivate](/nix-community/disko/tree/master/disk-deactivate "disk-deactivate")
-![SVG Image]
-
-[docs](/nix-community/disko/tree/master/docs "docs")  ![SVG Image]
-
-[docs](/nix-community/disko/tree/master/docs "docs")
-![SVG Image]
-
-[example](/nix-community/disko/tree/master/example "example")  ![SVG Image]
-
-[example](/nix-community/disko/tree/master/example "example")
-![SVG Image]
-
-[lib](/nix-community/disko/tree/master/lib "lib")  ![SVG Image]
-
-[lib](/nix-community/disko/tree/master/lib "lib")
-![SVG Image]
-
-[scripts](/nix-community/disko/tree/master/scripts "scripts")  ![SVG Image]
-
-[scripts](/nix-community/disko/tree/master/scripts "scripts")
-![SVG Image]
-
-[tests](/nix-community/disko/tree/master/tests "tests")  ![SVG Image]
-
-[tests](/nix-community/disko/tree/master/tests "tests")
-![SVG Image]
-
-[.envrc](/nix-community/disko/blob/master/.envrc ".envrc")  ![SVG Image]
-
-[.envrc](/nix-community/disko/blob/master/.envrc ".envrc")
-![SVG Image]
-
-[.git-blame-ignore-revs](/nix-community/disko/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs")  ![SVG Image]
-
-[.git-blame-ignore-revs](/nix-community/disko/blob/master/.git-blame-ignore-revs ".git-blame-ignore-revs")
-![SVG Image]
-
-[.gitignore](/nix-community/disko/blob/master/.gitignore ".gitignore")  ![SVG Image]
-
-[.gitignore](/nix-community/disko/blob/master/.gitignore ".gitignore")
-![SVG Image]
-
-[CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")  ![SVG Image]
-
-[CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md "CONTRIBUTING.md")
-![SVG Image]
-
-[LICENSE](/nix-community/disko/blob/master/LICENSE "LICENSE")  ![SVG Image]
-
-[LICENSE](/nix-community/disko/blob/master/LICENSE "LICENSE")
-![SVG Image]
-
-[README.md](/nix-community/disko/blob/master/README.md "README.md")  ![SVG Image]
-
-[README.md](/nix-community/disko/blob/master/README.md "README.md")
-![SVG Image]
-
-[cli.nix](/nix-community/disko/blob/master/cli.nix "cli.nix")  ![SVG Image]
-
-[cli.nix](/nix-community/disko/blob/master/cli.nix "cli.nix")
-![SVG Image]
-
-[default.nix](/nix-community/disko/blob/master/default.nix "default.nix")  ![SVG Image]
-
-[default.nix](/nix-community/disko/blob/master/default.nix "default.nix")
-![SVG Image]
-
-[disko](/nix-community/disko/blob/master/disko "disko")  ![SVG Image]
-
-[disko](/nix-community/disko/blob/master/disko "disko")
-![SVG Image]
-
-[disko-install](/nix-community/disko/blob/master/disko-install "disko-install")  ![SVG Image]
-
-[disko-install](/nix-community/disko/blob/master/disko-install "disko-install")
-![SVG Image]
-
-[doc.nix](/nix-community/disko/blob/master/doc.nix "doc.nix")  ![SVG Image]
-
-[doc.nix](/nix-community/disko/blob/master/doc.nix "doc.nix")
-![SVG Image]
-
-[flake-module.nix](/nix-community/disko/blob/master/flake-module.nix "flake-module.nix")  ![SVG Image]
-
-[flake-module.nix](/nix-community/disko/blob/master/flake-module.nix "flake-module.nix")
-![SVG Image]
-
-[flake.lock](/nix-community/disko/blob/master/flake.lock "flake.lock")  ![SVG Image]
-
-[flake.lock](/nix-community/disko/blob/master/flake.lock "flake.lock")
-![SVG Image]
-
-[flake.nix](/nix-community/disko/blob/master/flake.nix "flake.nix")  ![SVG Image]
-
-[flake.nix](/nix-community/disko/blob/master/flake.nix "flake.nix")
-![SVG Image]
-
-[install-cli.nix](/nix-community/disko/blob/master/install-cli.nix "install-cli.nix")  ![SVG Image]
-
-[install-cli.nix](/nix-community/disko/blob/master/install-cli.nix "install-cli.nix")
-![SVG Image]
-
-[module.nix](/nix-community/disko/blob/master/module.nix "module.nix")  ![SVG Image]
-
-[module.nix](/nix-community/disko/blob/master/module.nix "module.nix")
-![SVG Image]
-
-[package.nix](/nix-community/disko/blob/master/package.nix "package.nix")  ![SVG Image]
-
-[package.nix](/nix-community/disko/blob/master/package.nix "package.nix")
-![SVG Image]
-
-[statix.toml](/nix-community/disko/blob/master/statix.toml "statix.toml")  ![SVG Image]
-
-[statix.toml](/nix-community/disko/blob/master/statix.toml "statix.toml")
-![SVG Image]
-
-[treefmt.toml](/nix-community/disko/blob/master/treefmt.toml "treefmt.toml")  ![SVG Image]
-
-[treefmt.toml](/nix-community/disko/blob/master/treefmt.toml "treefmt.toml")
-![SVG Image]
-
-[version.nix](/nix-community/disko/blob/master/version.nix "version.nix")  ![SVG Image]
-
-[version.nix](/nix-community/disko/blob/master/version.nix "version.nix")
-View all files
-
-Repository files navigation
-
-disko - Declarative disk partitioning
-
-![Project logo]
-
-[![Project logo]](/nix-community/disko/blob/master/docs/logo.png)
-
-[Documentation Index](/nix-community/disko/blob/master/docs/INDEX.md)
-
-NixOS is a Linux distribution where everything is described as code, with one
-exception: during installation, the disk partitioning and formatting are manual
-steps. **disko** aims to correct this sad 🤡 omission.
-
-This is especially useful for unattended installations, re-installation after a
-system crash or for setting up more than one identical server.
-
-Overview
-
-**disko** can either be used after booting from a NixOS installer, or in
-conjunction with [nixos-anywhere](https://github.com/numtide/nixos-anywhere) if
-you're installing remotely.
-
-Before using **disko**, the specifications of the disks, partitions, type of
-formatting and the mount points must be defined in a Nix configuration. You can
-find [examples](/nix-community/disko/blob/master/example) of typical configurations in the Nix community
-repository, and use one of these as the basis of your own configuration.
-
-You can keep your configuration and re-use it for other installations, or for a
-system rebuild.
-
-**disko** is flexible, in that it supports most of the common formatting and
-partitioning options, including:
-
-Disk layouts: GPT, MBR, and mixed.
-Partition tools: LVM, mdadm, LUKS, and more.
-Filesystems: ext4, btrfs, ZFS, bcachefs, tmpfs, and others.
-It can work with these in various configurations and orders, and supports
-recursive layouts.
-
-How to use disko
-
+NixOS is a Linux distribution where everything is described as code, with one exception: during installation, the disk partitioning and formatting are manual steps. disko aims to correct this sad 🤡 omission.
+This is especially useful for unattended installations, re-installation after a system crash or for setting up more than one identical server.
+disko can either be used after booting from a NixOS installer, or in conjunction with nixos-anywhere if you're installing remotely.
+Before using disko, the specifications of the disks, partitions, type of formatting and the mount points must be defined in a Nix configuration. You can find examples of typical configurations in the Nix community repository, and use one of these as the basis of your own configuration.
+You can keep your configuration and re-use it for other installations, or for a system rebuild.
+disko is flexible, in that it supports most of the common formatting and partitioning options, including:
+- Disk layouts: GPT, MBR, and mixed.
+- Partition tools: LVM, mdadm, LUKS, and more.
+- Filesystems: ext4, btrfs, ZFS, bcachefs, tmpfs, and others.
+It can work with these in various configurations and orders, and supports recursive layouts.
 Disko doesn't require installation: it can be run directly from nix-community
-repository. The [Quickstart Guide](/nix-community/disko/blob/master/docs/quickstart.md) documents how to run
+repository. The Quickstart Guide documents how to run
 Disko in its simplest form when installing NixOS. Alternatively, you can also
-use the new [disko-install](/nix-community/disko/blob/master/docs/disko-install.md) tool, which combines `disko` and `nixos-install` into one step.
-
-For information on other use cases, including upgrading from an older version of **disko**, using **disko** without NixOS and downloading the module, see the [How To Guide](/nix-community/disko/blob/master/docs/HowTo.md)
-
-For more detailed options, such as command line switches, see the [Reference Guide](/nix-community/disko/blob/master/docs/reference.md)
-
-To access sample configurations for commonly-used disk layouts, refer to the [examples](/nix-community/disko/blob/master/example) provided.
-
-Disko can be also used to create [disk images](/nix-community/disko/blob/master/docs/disko-images.md).
-
-Sample Configuration and CLI command
-
+use the new disko-install tool, which combines
+disko and nixos-install into one step.
+For information on other use cases, including upgrading from an older version of disko, using disko without NixOS and downloading the module, see the How To Guide
+For more detailed options, such as command line switches, see the Reference Guide
+To access sample configurations for commonly-used disk layouts, refer to the examples provided.
+Disko can be also used to create disk images.
 A simple disko configuration may look like this:
-
 {
   disko.devices = {
     disk = {
@@ -251,84 +50,17 @@ A simple disko configuration may look like this:
       };
     };
   };
-}
-
-If you'd saved this configuration in /tmp/disk-config.nix, and wanted to create
-a disk named /dev/sda, you would run the following command to partition, format
-and mount the disk.
-
-sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount /tmp/disk-config.nix
-
-Related Tools
-
-This tool is used by [nixos-anywhere](https://github.com/numtide/nixos-anywhere), which carries out a
-fully-automated remote install of NixOS.
-
-We also acknowledge <https://github.com/NixOS/nixpart>, the conceptual ancestor of
-this project.
-
-Licensing and Contribution details
-
-This software is provided free under the [MIT Licence](https://opensource.org/licenses/MIT).
-
-If you want to contribute, check out [CONTRIBUTING.md](/nix-community/disko/blob/master/CONTRIBUTING.md).
-
-Get in touch
-
-We have a public matrix channel at [disko](https://matrix.to/#/#disko:nixos.org).
-
-![Untitledpng]
-
-This project is supported by [Numtide](https://numtide.com/). [![Untitledpng]](https://camo.githubusercontent.com/a07f26275c39bbf53fe1d810116da5ee1d216fcbea6783fc969ae43083aeb243/68747470733a2f2f636f6461686f737465642e696f2f646f63732f364643494d54524d30702f626c6f62732f626c2d736753756e61585957582f3037376633663964376437366436613232386139333761666130363538323932353834646564623562383532613863613337306236633631646162623738373262376636313765363033663137393339323864633534313063373462336537376166323161383965343335666137316136383161383638643231666431663539396464313061363437646438353565313430343339373966316466373935366636376333323630633034343265323462333436363233303732303462383365613334646539323964)
-
-We are a team of independent freelancers that love open source. We help our
-customers make their project lifecycles more efficient by:
-
-Providing and supporting useful tools such as this one
-Building and deploying infrastructure, and offering dedicated DevOps support
-Building their in-house Nix skills, and integrating Nix with their workflows
-Developing additional features and tools
-Carrying out custom research and development.
-[Contact us](https://numtide.com/contact) if you have a project in mind, or if
-you need help with any of our supported tools, including this one. We'd love to
-hear from you.
-
-About
-
-Declarative disk partitioning and formatting using nix [maintainers=[@Lassulus](https://github.com/Lassulus) [@Enzime](https://github.com/Enzime) [@iFreilicht](https://github.com/iFreilicht) [@Mic92](https://github.com/Mic92) [@phaer](https://github.com/phaer)]
-
-Topics
-
-Resources
-
-License
-
-Code of conduct
-
-Contributing
-
-Security policy
-
-Stars
-
-Watchers
-
-Forks
-
-[Releases 15](/nix-community/disko/releases)
-
-Sponsor this project
-
-![open_collective] [opencollective.com/**nix-community**](https://opencollective.com/nix-community)
-![open_collective]
-
-[Packages](/orgs/nix-community/packages?repo_name=disko)
-
-[Contributors](/nix-community/disko/graphs/contributors)
-
-Languages
-
-[![SVG Image] Nix 95.3%](/nix-community/disko/search?l=nix)
-[![SVG Image] Shell 3.9%](/nix-community/disko/search?l=shell)
-[![SVG Image] jq 0.8%](/nix-community/disko/search?l=jq)
-Footer
+}If you'd saved this configuration in /tmp/disk-config.nix, and wanted to create a disk named /dev/sda, you would run the following command to partition, format and mount the disk.
+sudo nix --experimental-features "nix-command flakes" run github:nix-community/disko/latest -- --mode destroy,format,mount /tmp/disk-config.nixThis tool is used by nixos-anywhere, which carries out a fully-automated remote install of NixOS.
+We also acknowledge https://github.com/NixOS/nixpart, the conceptual ancestor of this project.
+This software is provided free under the MIT Licence.
+If you want to contribute, check out CONTRIBUTING.md.
+We have a public matrix channel at disko.
+This project is supported by Numtide.
+We are a team of independent freelancers that love open source. We help our customers make their project lifecycles more efficient by:
+- Providing and supporting useful tools such as this one
+- Building and deploying infrastructure, and offering dedicated DevOps support
+- Building their in-house Nix skills, and integrating Nix with their workflows
+- Developing additional features and tools
+- Carrying out custom research and development.
+Contact us if you have a project in mind, or if you need help with any of our supported tools, including this one. We'd love to hear from you.

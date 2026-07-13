@@ -1,64 +1,13 @@
-launchd-dev@lists.macosforge.org
-
-Discussion:
-
- [launchd-dev] Launchd "System" session type
-
- Jeremy Reichman
-
- 2013-07-18 15:53:10 UTC
-
-Permalink
-
- The launchd man page for OS X 10.8 describes five session contexts: Aqua, LoginWindow, Background, StandardIO and System. The "System" context appears to be new since OS X 10.7. It is not described in TechNote 2038 and I could not find more about it in any of the launchd man pages.
-
-If it were to be described in that TechNote's "Table 1: Types of launchd agent," how might the "System" session type be explained?
-
---
-Jeremy
-
- Quinn &quot;The Eskimo!&quot;
-
- 2013-07-19 07:41:29 UTC
-
-Permalink
-
-Post by Jeremy Reichman
-The launchd man page for OS X 10.8 describes five session contexts: Aqua, LoginWindow, Background, StandardIO and System. The "System" context appears to be new since OS X 10.7.
-
-The "System" context isn't new, it's just a name for a context that's always existed, namely that context that daemons run in (jobs managed by the 'root' launchd). The other contexts all apply to agents, that is, to jobs being managed by one of the per-user launchd's.
-
-Share and Enjoy
---
-Quinn "The Eskimo!" <http://www.apple.com/developer/>
-Apple Developer Relations, Developer Technical Support, Core OS/Hardware
-
- Quinn &quot;The Eskimo!&quot;
-
- 2013-07-23 08:56:46 UTC
-
-Permalink
-
 Perhaps a better question: Where are these documented,
-
 Some of this stuff is documented in the "Daemons and Services Programming Guide".
-
 <https://developer.apple.com/library/mac/#documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/Introduction.html%23//apple_ref/doc/uid/10000172i>
-
 But probably the best reference is Technote 2083 "Daemons and Agents".
-
 <https://developer.apple.com/library/mac/#technotes/tn2083/_index.html>
-
 why does the man page for "launchctl" list them but not define them, nor reference the file/tech document where they are defined?
-
 You should feel free to file a bug against the man page requesting that.
-
 <http://developer.apple.com/bugreporter/>
-
 But actually understanding -- and being able to predict -- what is actually happening/what will happen (including why I see launchd running jobs for people not logged on, usually mdworker), that's still beyond me.
-
-In the general case, launchd is a highly dynamic system, which makes predicting its behaviour somewhat tricky. For example, consider gssd. It's on-demand trigger is:
-
+In the general case, launchd is a highly dynamic system, which makes predicting its behaviour somewhat tricky. For example, consider gssd.  It's on-demand trigger is:
 <dict>
 <key>com.apple.gssd</key>
 <dict>
@@ -66,42 +15,11 @@ In the general case, launchd is a highly dynamic system, which makes predicting 
 <integer>19</integer>
 </dict>
 </dict>
-
-which means it launches when other code either a) messages a Mach port registered as "com.apple.gssd" in the Mach bootstrap namespace, or b) messages the HOST_GSSD_PORT Mach special port. Both of these can be done by any process on the system, and the latter can be done by kernel code as well (such as the SMB VFS plug-in). From a launchd perspective it's hard to predict--and, in the bigger picture, it just doesn't matter--when other components of the system will do this.
-
-In the specific case of mdworker, all the mdworker jobs are carefully managed by the Spotlight infrastructure, and the details of that management are not clearly visible to you (note that all the mdworker jobs have a single "MachService" on-demand trigger, which isn't very enlightening). Spotlight starts an particular flavour of mdworker when it has work for that flavour to do; launchd is involved in the mechanics of starting and tracking the job, but not the decision about which job to start when.
-
+which means it launches when other code either a) messages a Mach port registered as "com.apple.gssd" in the Mach bootstrap namespace, or b) messages the HOST_GSSD_PORT Mach special port.  Both of these can be done by any process on the system, and the latter can be done by kernel code as well (such as the SMB VFS plug-in).  From a launchd perspective it's hard to predict--and, in the bigger picture, it just doesn't matter--when other components of the system will do this.
+In the specific case of mdworker, all the mdworker jobs are carefully managed by the Spotlight infrastructure, and the details of that management are not clearly visible to you (note that all the mdworker jobs have a single "MachService" on-demand trigger, which isn't very enlightening).  Spotlight starts an particular flavour of mdworker when it has work for that flavour to do; launchd is involved in the mechanics of starting and tracking the job, but not the decision about which job to start when.
 (and, I just realized, this list is launchd-dev; is there a launchd-users list?)
-
 No, but this is a perfectly reasonable place to just such things IMO.
-
 Share and Enjoy
 --
-Quinn "The Eskimo!" <http://www.apple.com/developer/>
+Quinn "The Eskimo!"                    <http://www.apple.com/developer/>
 Apple Developer Relations, Developer Technical Support, Core OS/Hardware
-
-2 Replies
-
-114 Views
-
-Permalink to this page
-
-Disable enhanced parsing
-
-Thread Navigation
-
- Jeremy Reichman
-
- 2013-07-18 15:53:10 UTC
-
- Quinn &quot;The Eskimo!&quot;
-
- 2013-07-19 07:41:29 UTC
-
- Quinn &quot;The Eskimo!&quot;
-
- 2013-07-23 08:56:46 UTC
-
-about - legalese
-
-Loading...

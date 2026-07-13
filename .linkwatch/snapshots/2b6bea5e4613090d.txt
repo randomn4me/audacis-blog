@@ -1,351 +1,89 @@
-borgmatic
+-
+              How-to guides- 📥 Install borgmatic
+- 📋 Set up backups
+- 🗂️ Make per-application backups
+- 🔒 Provide your passwords
+- ☁️ Make backups redundant
+- 📏 Deal with very large backups
+- 🔎 Inspect your backups
+- 🚨 Monitor your backups
+- 📤 Extract a backup
+- 🗄️ Backup your databases
+- 📸 Snapshot your filesystems
+- 🧹 Add preparation and cleanup steps
+- 💾 Backup to a removable drive/server
+- 🔧 Run arbitrary Borg commands
+- 💥 Customize warnings/errors
+- 📦 Upgrade borgmatic/Borg
+- 🏗️ Develop on borgmatic
 
-It's your data. Keep it that way.
+-
+              Reference guides- ⚙️ Configuration
+- 💻 Command-line
+- 🐍 Source code
 
-How-to guides
-Reference guides
-[📥 Install borgmatic](https://torsion.org/borgmatic/how-to/install-borgmatic/)
-[📋 Set up backups](https://torsion.org/borgmatic/how-to/set-up-backups/)
-[🗂️ Make per-application backups](https://torsion.org/borgmatic/how-to/make-per-application-backups/)
-[🔒 Provide your passwords](https://torsion.org/borgmatic/how-to/provide-your-passwords/)
-[☁️ Make backups redundant](https://torsion.org/borgmatic/how-to/make-backups-redundant/)
-[📏 Deal with very large backups](https://torsion.org/borgmatic/how-to/deal-with-very-large-backups/)
-[🔎 Inspect your backups](https://torsion.org/borgmatic/how-to/inspect-your-backups/)
-[🚨 Monitor your backups](https://torsion.org/borgmatic/how-to/monitor-your-backups/)
-[📤 Extract a backup](https://torsion.org/borgmatic/how-to/extract-a-backup/)
-[🗄️ Backup your databases](https://torsion.org/borgmatic/how-to/backup-your-databases/)
-[📸 Snapshot your filesystems](https://torsion.org/borgmatic/how-to/snapshot-your-filesystems/)
-[🧹 Add preparation and cleanup steps](https://torsion.org/borgmatic/how-to/add-preparation-and-cleanup-steps-to-backups/)
-[💾 Backup to a removable drive/server](https://torsion.org/borgmatic/how-to/backup-to-a-removable-drive-or-an-intermittent-server/)
-[🔧 Run arbitrary Borg commands](https://torsion.org/borgmatic/how-to/run-arbitrary-borg-commands/)
-[💥 Customize warnings/errors](https://torsion.org/borgmatic/how-to/customize-warnings-and-errors/)
-[📦 Upgrade borgmatic/Borg](https://torsion.org/borgmatic/how-to/upgrade/)
-[🏗️ Develop on borgmatic](https://torsion.org/borgmatic/how-to/develop-on-borgmatic/)
-[⚙️ Configuration](https://torsion.org/borgmatic/reference/configuration/)
-[💻 Command-line](https://torsion.org/borgmatic/reference/command-line/)
-[🐍 Source code](https://torsion.org/borgmatic/reference/source-code/)
-[📛 Archive name format](https://torsion.org/borgmatic/reference/configuration/archive-name-format/)
-[🪝 Command hooks](https://torsion.org/borgmatic/reference/configuration/command-hooks/)
-[✅ Consistency checks](https://torsion.org/borgmatic/reference/configuration/consistency-checks/)
-[🟰 Constants](https://torsion.org/borgmatic/reference/configuration/constants/)
-[🔒 Credentials](https://torsion.org/borgmatic/reference/configuration/credentials/)
-[🗄️ Data sources](https://torsion.org/borgmatic/reference/configuration/data-sources/)
-[💲 Environment variables](https://torsion.org/borgmatic/reference/configuration/environment-variables/)
-[❗ Includes](https://torsion.org/borgmatic/reference/configuration/includes/)
-[🚨 Monitoring](https://torsion.org/borgmatic/reference/configuration/monitoring/)
-[⛔ Patterns and excludes](https://torsion.org/borgmatic/reference/configuration/patterns-and-excludes/)
-[🗃️ Repositories](https://torsion.org/borgmatic/reference/configuration/repositories/)
-[📁 Runtime directory](https://torsion.org/borgmatic/reference/configuration/runtime-directory/)
-[Container](https://torsion.org/borgmatic/reference/configuration/credentials/container/)
-[File](https://torsion.org/borgmatic/reference/configuration/credentials/file/)
-[KeePassXC](https://torsion.org/borgmatic/reference/configuration/credentials/keepassxc/)
-[systemd](https://torsion.org/borgmatic/reference/configuration/credentials/systemd/)
-[Btrfs](https://torsion.org/borgmatic/reference/configuration/data-sources/btrfs/)
-[LVM](https://torsion.org/borgmatic/reference/configuration/data-sources/lvm/)
-[MariaDB](https://torsion.org/borgmatic/reference/configuration/data-sources/mariadb/)
-[MongoDB](https://torsion.org/borgmatic/reference/configuration/data-sources/mongodb/)
-[MySQL](https://torsion.org/borgmatic/reference/configuration/data-sources/mysql/)
-[PostgreSQL](https://torsion.org/borgmatic/reference/configuration/data-sources/postgresql/)
-[SQLite](https://torsion.org/borgmatic/reference/configuration/data-sources/sqlite/)
-[ZFS](https://torsion.org/borgmatic/reference/configuration/data-sources/zfs/)
-[Apprise](https://torsion.org/borgmatic/reference/configuration/monitoring/apprise/)
-[Cronhub](https://torsion.org/borgmatic/reference/configuration/monitoring/cronhub/)
-[Cronitor](https://torsion.org/borgmatic/reference/configuration/monitoring/cronitor/)
-[Healthchecks](https://torsion.org/borgmatic/reference/configuration/monitoring/healthchecks/)
-[Loki](https://torsion.org/borgmatic/reference/configuration/monitoring/loki/)
-[ntfy](https://torsion.org/borgmatic/reference/configuration/monitoring/ntfy/)
-[PagerDuty](https://torsion.org/borgmatic/reference/configuration/monitoring/pagerduty/)
-[Pushover](https://torsion.org/borgmatic/reference/configuration/monitoring/pushover/)
-[Sentry](https://torsion.org/borgmatic/reference/configuration/monitoring/sentry/)
-[Uptime Kuma](https://torsion.org/borgmatic/reference/configuration/monitoring/uptime-kuma/)
-[Zabbix](https://torsion.org/borgmatic/reference/configuration/monitoring/zabbix/)
-[🪵 Logging](https://torsion.org/borgmatic/reference/command-line/logging/)
-[🎬 Actions](https://torsion.org/borgmatic/reference/command-line/actions/)
-[➡️ Autocompletion](https://torsion.org/borgmatic/reference/command-line/autocompletion/)
-[🔄 Overrides](https://torsion.org/borgmatic/reference/command-line/overrides/)
-[borg](https://torsion.org/borgmatic/reference/command-line/actions/borg/)
-[break-lock](https://torsion.org/borgmatic/reference/command-line/actions/break-lock/)
-[browse](https://torsion.org/borgmatic/reference/command-line/actions/browse/)
-[check](https://torsion.org/borgmatic/reference/command-line/actions/check/)
-[compact](https://torsion.org/borgmatic/reference/command-line/actions/compact/)
-[config bootstrap](https://torsion.org/borgmatic/reference/command-line/actions/config-bootstrap/)
-[config generate](https://torsion.org/borgmatic/reference/command-line/actions/config-generate/)
-[config show](https://torsion.org/borgmatic/reference/command-line/actions/config-show/)
-[config validate](https://torsion.org/borgmatic/reference/command-line/actions/config-validate/)
-[config](https://torsion.org/borgmatic/reference/command-line/actions/config/)
-[create](https://torsion.org/borgmatic/reference/command-line/actions/create/)
-[delete](https://torsion.org/borgmatic/reference/command-line/actions/delete/)
-[diff](https://torsion.org/borgmatic/reference/command-line/actions/diff/)
-[export-tar](https://torsion.org/borgmatic/reference/command-line/actions/export-tar/)
-[extract](https://torsion.org/borgmatic/reference/command-line/actions/extract/)
-[info](https://torsion.org/borgmatic/reference/command-line/actions/info/)
-[key change-passphrase](https://torsion.org/borgmatic/reference/command-line/actions/key-change-passphrase/)
-[key export](https://torsion.org/borgmatic/reference/command-line/actions/key-export/)
-[key import](https://torsion.org/borgmatic/reference/command-line/actions/key-import/)
-[list](https://torsion.org/borgmatic/reference/command-line/actions/list/)
-[mount](https://torsion.org/borgmatic/reference/command-line/actions/mount/)
-[prune](https://torsion.org/borgmatic/reference/command-line/actions/prune/)
-[recreate](https://torsion.org/borgmatic/reference/command-line/actions/recreate/)
-[repo-create](https://torsion.org/borgmatic/reference/command-line/actions/repo-create/)
-[repo-delete](https://torsion.org/borgmatic/reference/command-line/actions/repo-delete/)
-[repo-info](https://torsion.org/borgmatic/reference/command-line/actions/repo-info/)
-[repo-list](https://torsion.org/borgmatic/reference/command-line/actions/repo-list/)
-[restore](https://torsion.org/borgmatic/reference/command-line/actions/restore/)
-[transfer](https://torsion.org/borgmatic/reference/command-line/actions/transfer/)
-[umount](https://torsion.org/borgmatic/reference/command-line/actions/umount/)
-[bash](https://torsion.org/borgmatic/reference/command-line/autocompletion/bash/)
-[fish](https://torsion.org/borgmatic/reference/command-line/autocompletion/fish/)
-![borgmatic logo]
-
-borgmatic is simple, configuration-driven backup software for servers and
-workstations. Protect your files with client-side encryption. Backup your
-databases too. Monitor it all with integrated third-party services.
-
-The canonical home of borgmatic is at [https://torsion.org/borgmatic/](https://torsion.org/borgmatic)
-
+borgmatic is simple, configuration-driven backup software for servers and workstations. Protect your files with client-side encryption. Backup your databases too. Monitor it all with integrated third-party services.
+The canonical home of borgmatic is at https://torsion.org/borgmatic/
 Here's an example configuration file:
-
 # List of source directories to backup.
 source_directories:
     - /home
     - /etc
-
 # Paths of local or remote repositories to backup to.
 repositories:
     - path: ssh://k8pDxu32@k8pDxu32.repo.borgbase.com/./repo
       label: borgbase
     - path: /var/lib/backups/local.borg
       label: local
-
 # Retention policy for how many backups to keep.
 keep_daily: 7
 keep_weekly: 4
 keep_monthly: 6
-
 # List of checks to run to validate your backups.
 checks:
     - name: repository
     - name: archives
       frequency: 2 weeks
-
 # Custom preparation scripts to run.
 commands:
     - before: action
       when: [create]
       run: [prepare-for-backup.sh]
-
 # Databases to dump and include in backups.
 postgresql_databases:
     - name: users
-
 # Third-party services to notify you if backups aren't happening.
 healthchecks:
-    ping_url: https://hc-ping.com/be067061-cf96-4412-8eae-62b0c50d6a8c
-
-borgmatic is powered by [Borg Backup](https://www.borgbackup.org/).
-
-[Integrations](#integrations)
-
-[Data](#data)
-
-![PostgreSQL]
-
-![MySQL]
-
-![MariaDB]
-
-![MongoDB]
-
-![SQLite]
-
-![OpenZFS]
-
-![Btrfs]
-
-![LVM]
-
-![rclone]
-
-![BorgBase]
-
-[![PostgreSQL]](https://www.postgresql.org/) [![MySQL]](https://www.mysql.com/) [![MariaDB]](https://mariadb.com/) [![MongoDB]](https://www.mongodb.com/) [![SQLite]](https://sqlite.org/) [![OpenZFS]](https://openzfs.org/) [![Btrfs]](https://btrfs.readthedocs.io/) [![LVM]](https://sourceware.org/lvm2/) [![rclone]](https://rclone.org) [![BorgBase]](https://www.borgbase.com/)
-
-[Monitoring](#monitoring)
-
-![Healthchecks]
-
-![Uptime Kuma]
-
-![Cronitor]
-
-![Cronhub]
-
-![PagerDuty]
-
-![Pushover]
-
-![ntfy]
-
-![Loki]
-
-![Apprise]
-
-![Zabbix]
-
-![Sentry]
-
-[![Healthchecks]](https://healthchecks.io/) [![Uptime Kuma]](https://uptime.kuma.pet/) [![Cronitor]](https://cronitor.io/) [![Cronhub]](https://cronhub.io/) [![PagerDuty]](https://www.pagerduty.com/) [![Pushover]](https://www.pushover.net/) [![ntfy]](https://ntfy.sh/) [![Loki]](https://grafana.com/oss/loki/) [![Apprise]](https://github.com/caronc/apprise/wiki) [![Zabbix]](https://www.zabbix.com/) [![Sentry]](https://sentry.io/)
-
-[Credentials](#credentials)
-
-![Sentry]
-
-![Docker]
-
-![Podman]
-
-![Podman]
-
-[![Sentry]](https://systemd.io/) [![Docker]](https://www.docker.com/) [![Podman]](https://podman.io/) [![Podman]](https://keepassxc.org/)
-
-[Getting started](#getting-started)
-
-Your first steps are to [install](https://torsion.org/borgmatic/how-to/install-borgmatic/) and [configure borgmatic](https://torsion.org/borgmatic/how-to/set-up-backups/).
-
-For additional documentation, check out the links on the top/left
-for [borgmatic how-to and reference guides](https://torsion.org/borgmatic/#documentation).
-
-[Hosting providers](#hosting-providers)
-
-Need somewhere to store your encrypted off-site backups? The following hosting
-provider includes specific support for Borg/borgmatic—and funds borgmatic
-development and hosting when you use this referral links to sign up:
-
-[BorgBase](https://www.borgbase.com/): Borg hosting service with support for monitoring, 2FA, and append-only repos
-Additionally, Hetzner and rsync.net have compatible storage offerings, but do
-not fund borgmatic development or hosting.
-
-[Support and contributing](#support-and-contributing)
-
-[Issues](#issues)
-
-Are you experiencing an issue with borgmatic? Or do you have an idea for a
-feature enhancement? Head on over to our [issue tracker](https://projects.torsion.org/borgmatic-collective/borgmatic/issues).
-In order to create a new issue or add a comment, you'll need to [register](https://projects.torsion.org/user/sign_up) first. If you prefer to use an existing GitHub account, you can skip account
-creation and [login directly](https://projects.torsion.org/user/login).
-
-Also see the [security policy](https://torsion.org/borgmatic/security-policy/) for any security
-issues.
-
-[Social](#social)
-
-Follow [borgmatic on Mastodon](https://floss.social/@borgmatic).
-
-[Chat](#chat)
-
-To chat with borgmatic developers or users, check out the `#borgmatic` IRC channel on Libera Chat, either via [web chat](https://web.libera.chat/#borgmatic) or a native [IRC client](ircs://irc.libera.chat:6697). If you don't get a response
+    ping_url: https://hc-ping.com/be067061-cf96-4412-8eae-62b0c50d6a8cborgmatic is powered by Borg Backup.
+Integrations
+Data
+Monitoring
+Credentials
+Getting started
+Your first steps are to install and configure borgmatic.
+For additional documentation, check out the links on the top/left for borgmatic how-to and reference guides.
+Hosting providers
+Need somewhere to store your encrypted off-site backups? The following hosting provider includes specific support for Borg/borgmatic—and funds borgmatic development and hosting when you use this referral links to sign up:
+- BorgBase: Borg hosting service with support for monitoring, 2FA, and append-only repos
+Additionally, Hetzner and rsync.net have compatible storage offerings, but do not fund borgmatic development or hosting.
+Support and contributing
+Issues
+Are you experiencing an issue with borgmatic? Or do you have an idea for a feature enhancement? Head on over to our issue tracker. In order to create a new issue or add a comment, you'll need to register first. If you prefer to use an existing GitHub account, you can skip account creation and login directly.
+Also see the security policy for any security issues.
+Social
+Follow borgmatic on Mastodon.
+Chat
+To chat with borgmatic developers or users, check out the #borgmatic
+IRC channel on Libera Chat, either via web chat or a native IRC client. If you don't get a response
 right away, please hang around a while—or file a ticket instead.
-
-[Other](#other)
-
-Other questions or comments? Contact <witten@torsion.org>.
-
-[Contributing](#contributing)
-
-borgmatic [source code is available](https://projects.torsion.org/borgmatic-collective/borgmatic) and also
-has a read-only mirror on [GitHub](https://github.com/borgmatic-collective/borgmatic) for convenience.
-
-borgmatic is licensed under the GNU General Public License version 3 or any
-later version.
-
-If you'd like to contribute to borgmatic development, please feel free to submit
-a [pull request](https://projects.torsion.org/borgmatic-collective/borgmatic/pulls) or
-open an [issue](https://projects.torsion.org/borgmatic-collective/borgmatic/issues) to
-discuss your idea. Note that you'll need to [register](https://projects.torsion.org/user/sign_up) first. In general, contributions are very welcome. We don't bite!
-
-Also, please check out the [borgmatic development how-to](https://torsion.org/borgmatic/how-to/develop-on-borgmatic/) for
-info on cloning source code, running tests, etc.
-
-[Recent contributors](#recent-contributors)
-
-Thanks to all borgmatic contributors! There are multiple ways to contribute to
-this project, so the following includes those who have fixed bugs, contributed
-features, *or* filed tickets.
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-![]
-
-[![]](https://projects.torsion.org/zewt) [![]](https://projects.torsion.org/MatiasG19) [![]](https://projects.torsion.org/cegredev) [![]](https://projects.torsion.org/solverz) [![]](https://projects.torsion.org/lwatsondev) [![]](https://projects.torsion.org/witten) [![]](https://projects.torsion.org/Totara) [![]](https://projects.torsion.org/quietquark) [![]](https://projects.torsion.org/Zugschlus) [![]](https://projects.torsion.org/swazynski) [![]](https://projects.torsion.org/lingfish) [![]](https://projects.torsion.org/liri) [![]](https://projects.torsion.org/elhananjair) [![]](https://projects.torsion.org/agross) [![]](https://projects.torsion.org/dan) [![]](https://projects.torsion.org/pckroon) [![]](https://projects.torsion.org/3rd3) [![]](https://projects.torsion.org/Vaderf) [![]](https://projects.torsion.org/Geend) [![]](https://projects.torsion.org/sten) [![]](https://projects.torsion.org/siriobalmelli) [![]](https://projects.torsion.org/nachfuellbar) [![]](https://projects.torsion.org/mondjef) [![]](https://projects.torsion.org/maxhamon) [![]](https://projects.torsion.org/smartinventure) [![]](https://projects.torsion.org/slantsh) [![]](https://projects.torsion.org/monomycelium) [![]](https://projects.torsion.org/jucor) [![]](https://projects.torsion.org/SimonPilkington) [![]](https://projects.torsion.org/Unicorn) [![]](https://projects.torsion.org/jacksonchen666) [![]](https://projects.torsion.org/real-or-random) [![]](https://projects.torsion.org/dododedodonl) [![]](https://projects.torsion.org/StefanSchoof) [![]](https://projects.torsion.org/fruworg) [![]](https://projects.torsion.org/carmenbianca)
-
+Other
+Other questions or comments? Contact witten@torsion.org.
+Contributing
+borgmatic source code is available and also has a read-only mirror on GitHub for convenience.
+borgmatic is licensed under the GNU General Public License version 3 or any later version.
+If you'd like to contribute to borgmatic development, please feel free to submit a pull request or open an issue to discuss your idea. Note that you'll need to register first. In general, contributions are very welcome. We don't bite!
+Also, please check out the borgmatic development how-to for info on cloning source code, running tests, etc.
+Recent contributors
+Thanks to all borgmatic contributors! There are multiple ways to contribute to this project, so the following includes those who have fixed bugs, contributed features, or filed tickets.
 Improve this documentation
-
-Have an idea on how to make this documentation even better? Use our [issue tracker](https://torsion.org/borgmatic/#support-and-contributing) to send your feedback!
+Have an idea on how to make this documentation even better? Use our issue tracker to send your feedback!

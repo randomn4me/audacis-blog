@@ -11,3 +11,9 @@ bestbookstore.com
 adventofcode.com   # animated JS calendar + per-load var
 fortune.com        # news chrome: rotating related articles / ads
 # news.ycombinator.com/item   # uncomment if HN item pages prove noisy
+
+# pages whose *body* is a live list or counter, so main-content extraction
+# cannot strip the churn: the counter is the content
+projecteuler.net        # "N registered members" ticks every fetch
+netcup.com/en/deals     # deal count and deal list rotate
+reproducible-builds.org # homepage rolls a "recent monthly reports" list

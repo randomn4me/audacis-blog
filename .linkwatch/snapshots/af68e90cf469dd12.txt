@@ -1,52 +1,31 @@
-![Hugging Face's logo]
-
----
-[Log In](/login)
-[Sign Up](/join)
-![]
-
-[/markusbayer](/markusbayer)  [markusbayer](/markusbayer)  / [CySecBERT](/markusbayer/CySecBERT) SVG Image    SVG Image  like  21
-
-[SVG Image](#model-card-for-model-id) Model Card for Model ID
-
-CySecBERT is a domain-adapted version of the BERT model tailored for cybersecurity tasks.
-It is based on a [Cybersecurity Dataset](https://github.com/PEASEC/cybersecurity_dataset) consisting of 4.3 million entries of Twitter, Blogs, Paper, and CVEs related to the cybersecurity domain.
-
-[SVG Image](#model-details) Model Details
-
-**Developed by:** Markus Bayer, Philipp Kuehn, Ramin Shanehsaz, and Christian Reuter
-**Model type:** BERT-base
-**Language(s) (NLP):** English
-**Finetuned from model:** bert-base-uncased.
-[SVG Image](#model-sources) Model Sources
-
-**Repository:** <https://github.com/PEASEC/CySecBERT>
-**Paper:** <https://dl.acm.org/doi/abs/10.1145/3652594> and <https://arxiv.org/abs/2212.02974>
-[SVG Image](#bias-risks-limitations-and-recommendations) Bias, Risks, Limitations, and Recommendations
-
-We would like to emphasise that we did not explicitly focus on and analyse social biases in the data or the resulting model.
-While this may not be so damaging for most application contexts, there are certainly applications that depend heavily on these biases, and including any kind of discrimination can have serious consequences.
-As authors, we would like to express our warnings regarding the use of the model in such contexts.
-Nonetheless, we aim for an open source mentality, observing the great impact it can have, and therefore transfer the thinking to the user of the model, drawing on the many previous discussions in the open source community.
-
-[SVG Image](#training-details) Training Details
-
-[SVG Image](#training-data) Training Data
-
-See <https://github.com/PEASEC/cybersecurity_dataset>
-
-[SVG Image](#training-procedure) Training Procedure
-
+Instructions to use markusbayer/CySecBERT with libraries, inference providers, notebooks, and local apps. Follow these links to get started.
+- Libraries
+-  Transformers How to use markusbayer/CySecBERT with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline("fill-mask", model="markusbayer/CySecBERT")# Load model directly from transformers import AutoTokenizer, AutoModelForMaskedLM tokenizer = AutoTokenizer.from_pretrained("markusbayer/CySecBERT") model = AutoModelForMaskedLM.from_pretrained("markusbayer/CySecBERT")
+- Inference
+- Notebooks
+- Google Colab
+- Kaggle
+Model Card for Model ID
+CySecBERT is a domain-adapted version of the BERT model tailored for cybersecurity tasks. It is based on a Cybersecurity Dataset consisting of 4.3 million entries of Twitter, Blogs, Paper, and CVEs related to the cybersecurity domain.
+Model Details
+- Developed by: Markus Bayer, Philipp Kuehn, Ramin Shanehsaz, and Christian Reuter
+- Model type: BERT-base
+- Language(s) (NLP): English
+- Finetuned from model: bert-base-uncased.
+Model Sources
+- Repository: https://github.com/PEASEC/CySecBERT
+- Paper: https://dl.acm.org/doi/abs/10.1145/3652594 and https://arxiv.org/abs/2212.02974
+Bias, Risks, Limitations, and Recommendations
+We would like to emphasise that we did not explicitly focus on and analyse social biases in the data or the resulting model. While this may not be so damaging for most application contexts, there are certainly applications that depend heavily on these biases, and including any kind of discrimination can have serious consequences. As authors, we would like to express our warnings regarding the use of the model in such contexts. Nonetheless, we aim for an open source mentality, observing the great impact it can have, and therefore transfer the thinking to the user of the model, drawing on the many previous discussions in the open source community.
+Training Details
+Training Data
+See https://github.com/PEASEC/cybersecurity_dataset
+Training Procedure
 We have specifically trained CySecBERT not to be affected too much by catastrophic forgetting. More details can be found in the paper.
-
-[SVG Image](#evaluation) Evaluation
-
+Evaluation
 We have performed many different cybersecurity and general evaluations. The details can be found in the paper.
-
-[SVG Image](#citation) Citation
-
-**BibTeX:**
-
+Citation
+BibTeX:
 @article{10.1145/3652594,
 author = {Bayer, Markus and Kuehn, Philipp and Shanehsaz, Ramin and Reuter, Christian},
 title = {CySecBERT: A Domain-Adapted Language Model for the Cybersecurity Domain},
@@ -65,9 +44,7 @@ articleno = {18},
 numpages = {20},
 keywords = {Language model, cybersecurity BERT, cybersecurity dataset}
 }
-
 or
-
 @misc{https://doi.org/10.48550/arxiv.2212.02974,
   doi = {10.48550/ARXIV.2212.02974},
   url = {https://arxiv.org/abs/2212.02974},
@@ -78,21 +55,8 @@ or
   year = {2022},
   copyright = {arXiv.org perpetual, non-exclusive license}
 }
-
-[SVG Image](#model-card-authors) Model Card Authors
-
+Model Card Authors
 Markus Bayer
-
-[SVG Image](#model-card-contact) Model Card Contact
-
-<bayer@peasec.tu-darmstadt.de>
-
-Files info
-
-SVG Image Model tree for markusbayer/CySecBERT [SVG Image](/docs/hub/model-cards#specifying-a-base-model)
-
-SVG Image Spaces using markusbayer/CySecBERT 2
-
-SVG Image Paper for markusbayer/CySecBERT
-
-CySecBERT: A Domain-Adapted Language Model for the Cybersecurity Domain
+Model Card Contact
+- Downloads last month
+- 1,601

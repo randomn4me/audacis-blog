@@ -1,467 +1,200 @@
 Homomorphic encryption
-
-[العربية](https://ar.wikipedia.org/wiki/%D8%AA%D8%B9%D9%85%D9%8A%D8%A9_%D9%85%D8%AA%D8%B4%D8%A7%D9%83%D9%84%D8%A9 "تعمية متشاكلة – Arabic")
-[Català](https://ca.wikipedia.org/wiki/Encriptaci%C3%B3_homom%C3%B2rfica "Encriptació homomòrfica – Catalan")
-[Čeština](https://cs.wikipedia.org/wiki/Homomorfn%C3%AD_%C5%A1ifrov%C3%A1n%C3%AD "Homomorfní šifrování – Czech")
-[Deutsch](https://de.wikipedia.org/wiki/Homomorphe_Verschl%C3%BCsselung "Homomorphe Verschlüsselung – German")
-[Español](https://es.wikipedia.org/wiki/Cifrado_homom%C3%B3rfico "Cifrado homomórfico – Spanish")
-[فارسی](https://fa.wikipedia.org/wiki/%D8%B1%D9%85%D8%B2%D9%86%DA%AF%D8%A7%D8%B1%DB%8C_%D9%87%D9%85%E2%80%8C%D8%B1%DB%8C%D8%AE%D8%AA%DB%8C "رمزنگاری هم‌ریختی – Persian")
-[Français](https://fr.wikipedia.org/wiki/Chiffrement_homomorphe "Chiffrement homomorphe – French")
-[עברית](https://he.wikipedia.org/wiki/%D7%94%D7%A6%D7%A4%D7%A0%D7%94_%D7%94%D7%95%D7%9E%D7%95%D7%9E%D7%95%D7%A8%D7%A4%D7%99%D7%AA "הצפנה הומומורפית – Hebrew")
-[Italiano](https://it.wikipedia.org/wiki/Crittografia_omomorfica "Crittografia omomorfica – Italian")
-[日本語](https://ja.wikipedia.org/wiki/%E6%BA%96%E5%90%8C%E5%9E%8B%E6%9A%97%E5%8F%B7 "準同型暗号 – Japanese")
-[한국어](https://ko.wikipedia.org/wiki/%EB%8F%99%ED%98%95%EC%95%94%ED%98%B8 "동형암호 – Korean")
-[Nederlands](https://nl.wikipedia.org/wiki/Homomorfe_encryptie "Homomorfe encryptie – Dutch")
-[Polski](https://pl.wikipedia.org/wiki/Szyfrowanie_homomorficzne "Szyfrowanie homomorficzne – Polish")
-[Português](https://pt.wikipedia.org/wiki/Encripta%C3%A7%C3%A3o_homom%C3%B3rfica "Encriptação homomórfica – Portuguese")
-[Русский](https://ru.wikipedia.org/wiki/%D0%93%D0%BE%D0%BC%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%BE%D0%B5_%D1%88%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5 "Гомоморфное шифрование – Russian")
-[Українська](https://uk.wikipedia.org/wiki/%D0%93%D0%BE%D0%BC%D0%BE%D0%BC%D0%BE%D1%80%D1%84%D0%BD%D0%B5_%D1%88%D0%B8%D1%84%D1%80%D1%83%D0%B2%D0%B0%D0%BD%D0%BD%D1%8F "Гомоморфне шифрування – Ukrainian")
-[中文](https://zh.wikipedia.org/wiki/%E5%90%8C%E6%80%81%E5%8A%A0%E5%AF%86 "同态加密 – Chinese")
-![icon]
-
-![icon]
-
-[![icon]](//en.wikipedia.org/wiki/File:Question_book-new.svg) This article **needs [more citations](//en.wikipedia.org/wiki/Wikipedia:Verifiability "Wikipedia:Verifiability")**. Please help [improve this article](//en.wikipedia.org/wiki/Special:EditPage/Homomorphic_encryption "Special:EditPage/Homomorphic encryption") by [adding citations to reliable sources](//en.wikipedia.org/wiki/Help:Referencing_for_beginners "Help:Referencing for beginners"). Unsourced material may be challenged and [removed](//en.wikipedia.org/wiki/Wikipedia:Verifiability#Burden_of_evidence "Wikipedia:Verifiability"). *Find sources:* ["Homomorphic encryption"](https://www.google.com/search) – [news](https://www.google.com/search) **·** [newspapers](https://www.google.com/search) **·** [books](https://www.google.com/search) **·** [scholar](https://scholar.google.com/scholar) **·** [JSTOR](https://www.jstor.org/action/doBasicSearch) *(February 2025)* *([Learn how and when to remove this message](//en.wikipedia.org/wiki/Help:Maintenance_template_removal "Help:Maintenance template removal"))*
-
-General
-Derived from Various assumptions, including [learning with errors](//en.wikipedia.org/wiki/Learning_with_errors "Learning with errors"), [Ring learning with errors](//en.wikipedia.org/wiki/Ring_learning_with_errors "Ring learning with errors") or even [RSA](//en.wikipedia.org/wiki/RSA_(cryptosystem) "RSA (cryptosystem)") (multiplicative) and others
-Related to [Functional encryption](//en.wikipedia.org/wiki/Functional_encryption "Functional encryption")
-
-**Homomorphic encryption** is a form of [encryption](//en.wikipedia.org/wiki/Encryption "Encryption") that allows computations to be performed on encrypted data without first having to decrypt it.[[1]](#cite_note-1) The resulting computations are left in an encrypted form which, when decrypted, result in an output that is identical to that of the operations performed on the unencrypted data. Homomorphic encryption can be used for privacy-preserving outsourced [storage](//en.wikipedia.org/wiki/Cloud_storage "Cloud storage") and [computation](//en.wikipedia.org/wiki/Cloud_computing "Cloud computing"). This allows data to be encrypted and outsourced to commercial cloud environments for processing, all while encrypted.
-
+| This article needs more citations.  (February 2025) |
+| General | |
+|---|---|
+| Derived from | Various assumptions, including learning with errors, Ring learning with errors or even RSA (multiplicative) and others |
+| Related to | Functional encryption |
+Homomorphic encryption is a form of encryption that allows computations to be performed on encrypted data without first having to decrypt it.[1] The resulting computations are left in an encrypted form which, when decrypted, result in an output that is identical to that of the operations performed on the unencrypted data. Homomorphic encryption can be used for privacy-preserving outsourced storage and computation. This allows data to be encrypted and outsourced to commercial cloud environments for processing, all while encrypted.
 As an example of a practical application of homomorphic encryption: encrypted photographs can be scanned for points of interest, without revealing the contents of a photo. However, observation of side-channels can see a photograph being sent to a point-of-interest lookup service, revealing the fact that photographs were taken.
-
-Thus, homomorphic encryption eliminates the need for processing data in the clear, thereby preventing attacks that would enable an attacker to access that data while it is being processed, using [privilege escalation](//en.wikipedia.org/wiki/Privilege_escalation "Privilege escalation").[[2]](#cite_note-2)
-
-For sensitive data, such as healthcare information, homomorphic encryption can be used to enable new services by removing privacy barriers inhibiting [data sharing](//en.wikipedia.org/wiki/Data_sharing "Data sharing") or increasing security to existing services. For example, [predictive analytics](//en.wikipedia.org/wiki/Predictive_analytics "Predictive analytics") in healthcare can be hard to apply via a third-party service provider due to [medical data privacy](//en.wikipedia.org/wiki/Medical_privacy "Medical privacy") concerns. But if the predictive-analytics service provider could operate on encrypted data instead, without having the decryption keys, these privacy concerns are diminished. Moreover, even if the service provider's system is compromised, the data would remain secure.[[3]](#cite_note-3)
-
+Thus, homomorphic encryption eliminates the need for processing data in the clear, thereby preventing attacks that would enable an attacker to access that data while it is being processed, using privilege escalation.[2]
+For sensitive data, such as healthcare information, homomorphic encryption can be used to enable new services by removing privacy barriers inhibiting data sharing or increasing security to existing services. For example, predictive analytics in healthcare can be hard to apply via a third-party service provider due to medical data privacy concerns. But if the predictive-analytics service provider could operate on encrypted data instead, without having the decryption keys, these privacy concerns are diminished. Moreover, even if the service provider's system is compromised, the data would remain secure.[3]
 Characteristics
-
-Homomorphic encryption is a form of [encryption](//en.wikipedia.org/wiki/Encryption "Encryption") with an additional evaluation capability for computing over encrypted data without access to the [secret key](//en.wikipedia.org/wiki/Key_(cryptography) "Key (cryptography)"). The result of such a computation remains encrypted. Homomorphic encryption can be viewed as an extension of [public-key cryptography](//en.wikipedia.org/wiki/Public-key_cryptography "Public-key cryptography"), because ciphertexts can be manipulated algebraically to produce an encrypted result corresponding to operations on the underlying plaintexts.[[4]](#cite_note-4) *Homomorphic* refers to [homomorphism](//en.wikipedia.org/wiki/Homomorphism "Homomorphism") in algebra: the encryption and decryption functions can be thought of as homomorphisms between [plaintext](//en.wikipedia.org/wiki/Plaintext "Plaintext") and ciphertext spaces.
-
-Homomorphic encryption includes multiple types of encryption schemes that can perform different classes of computations over encrypted data.[[5]](#cite_note-ABG15-5) The computations are represented as either Boolean or arithmetic circuits. Some common types of homomorphic encryption are *partially* homomorphic, *somewhat* homomorphic, *leveled* *fully* homomorphic, and *fully* homomorphic encryption:
-
-*Partially homomorphic encryption* encompasses schemes that support the evaluation of circuits consisting of only one type of gate, e.g., addition or multiplication.
-*Somewhat homomorphic encryption* schemes can evaluate two types of gates, but only for a subset of circuits.
-*Leveled fully homomorphic encryption* supports the evaluation of arbitrary circuits composed of multiple types of gates of bounded (pre-determined) depth.
-*Fully homomorphic encryption* (FHE) allows the evaluation of arbitrary circuits composed of multiple types of gates of unbounded depth and is the strongest notion of homomorphic encryption.
-For the majority of homomorphic encryption schemes, the multiplicative depth of circuits is the main practical limitation in performing computations over encrypted data. Homomorphic encryption schemes are inherently [malleable](//en.wikipedia.org/wiki/Malleability_(cryptography) "Malleability (cryptography)"). In terms of malleability, homomorphic encryption schemes have weaker security properties than non-homomorphic schemes.
-
-A cryptosystem that supports *arbitrary computation* on ciphertexts is known as fully homomorphic encryption (FHE). Such a scheme enables the construction of programs for any desirable functionality, which can be run on encrypted inputs to produce an encryption of the result. Since such a program need never decrypt its inputs, it can be run by an untrusted party without revealing its inputs and internal state. Fully homomorphic cryptosystems have great practical implications in the outsourcing of private computations, for instance, in the context of [cloud computing](//en.wikipedia.org/wiki/Cloud_computing "Cloud computing").[[6]](#cite_note-6)
-
+[edit]Homomorphic encryption is a form of encryption with an additional evaluation capability for computing over encrypted data without access to the secret key. The result of such a computation remains encrypted. Homomorphic encryption can be viewed as an extension of public-key cryptography, because ciphertexts can be manipulated algebraically to produce an encrypted result corresponding to operations on the underlying plaintexts.[4] Homomorphic refers to homomorphism in algebra: the encryption and decryption functions can be thought of as homomorphisms between plaintext and ciphertext spaces.
+Homomorphic encryption includes multiple types of encryption schemes that can perform different classes of computations over encrypted data.[5] The computations are represented as either Boolean or arithmetic circuits. Some common types of homomorphic encryption are partially homomorphic, somewhat homomorphic, leveled fully homomorphic, and fully homomorphic encryption:
+- Partially homomorphic encryption encompasses schemes that support the evaluation of circuits consisting of only one type of gate, e.g., addition or multiplication.
+- Somewhat homomorphic encryption schemes can evaluate two types of gates, but only for a subset of circuits.
+- Leveled fully homomorphic encryption supports the evaluation of arbitrary circuits composed of multiple types of gates of bounded (pre-determined) depth.
+- Fully homomorphic encryption (FHE) allows the evaluation of arbitrary circuits composed of multiple types of gates of unbounded depth and is the strongest notion of homomorphic encryption.
+For the majority of homomorphic encryption schemes, the multiplicative depth of circuits is the main practical limitation in performing computations over encrypted data. Homomorphic encryption schemes are inherently malleable. In terms of malleability, homomorphic encryption schemes have weaker security properties than non-homomorphic schemes.
+A cryptosystem that supports arbitrary computation on ciphertexts is known as fully homomorphic encryption (FHE). Such a scheme enables the construction of programs for any desirable functionality, which can be run on encrypted inputs to produce an encryption of the result. Since such a program need never decrypt its inputs, it can be run by an untrusted party without revealing its inputs and internal state. Fully homomorphic cryptosystems have great practical implications in the outsourcing of private computations, for instance, in the context of cloud computing.[6]
 History
-
-Homomorphic encryption schemes have been developed using different approaches. Specifically, fully homomorphic encryption schemes are often grouped into generations corresponding to the underlying approach.[[7]](#cite_note-7)
-
+[edit]Homomorphic encryption schemes have been developed using different approaches. Specifically, fully homomorphic encryption schemes are often grouped into generations corresponding to the underlying approach.[7]
 Predecessors
-
-The problem of constructing a fully homomorphic encryption scheme was first proposed in 1978, within a year of publishing of the RSA scheme.[[8]](#cite_note-8) For more than 30 years, it was unclear whether a solution existed. During that period, partial results included the following schemes:
-
-[RSA](//en.wikipedia.org/wiki/RSA_cryptosystem "RSA cryptosystem") cryptosystem (unbounded number of modular multiplications)
-[ElGamal cryptosystem](//en.wikipedia.org/wiki/ElGamal_encryption "ElGamal encryption") (unbounded number of modular multiplications)
-[Goldwasser–Micali cryptosystem](//en.wikipedia.org/wiki/Goldwasser–Micali_cryptosystem "Goldwasser–Micali cryptosystem") (unbounded number of [exclusive or](//en.wikipedia.org/wiki/Exclusive_or "Exclusive or") operations)
-[Benaloh cryptosystem](//en.wikipedia.org/wiki/Benaloh_cryptosystem "Benaloh cryptosystem") (unbounded number of modular additions)
-[Paillier cryptosystem](//en.wikipedia.org/wiki/Paillier_cryptosystem "Paillier cryptosystem") (unbounded number of modular additions)
-Sander-Young-Yung system (after more than 20 years solved the problem for logarithmic depth circuits)[[9]](#cite_note-9)
-Boneh–Goh–Nissim cryptosystem (unlimited number of addition operations but at most one multiplication)[[10]](#cite_note-10)
-Ishai-Paskin cryptosystem (polynomial-size [branching programs](//en.wikipedia.org/wiki/Branching_programs "Branching programs"))[[11]](#cite_note-11)
+[edit]The problem of constructing a fully homomorphic encryption scheme was first proposed in 1978, within a year of publishing of the RSA scheme.[8] For more than 30 years, it was unclear whether a solution existed. During that period, partial results included the following schemes:
+- RSA cryptosystem (unbounded number of modular multiplications)
+- ElGamal cryptosystem (unbounded number of modular multiplications)
+- Goldwasser–Micali cryptosystem (unbounded number of exclusive or operations)
+- Benaloh cryptosystem (unbounded number of modular additions)
+- Paillier cryptosystem (unbounded number of modular additions)
+- Sander-Young-Yung system (after more than 20 years solved the problem for logarithmic depth circuits)[9]
+- Boneh–Goh–Nissim cryptosystem (unlimited number of addition operations but at most one multiplication)[10]
+- Ishai-Paskin cryptosystem (polynomial-size branching programs)[11]
 First generation
-
-[Craig Gentry](//en.wikipedia.org/wiki/Craig_Gentry_(computer_scientist) "Craig Gentry (computer scientist)"), using [lattice-based cryptography](//en.wikipedia.org/wiki/Lattice-based_cryptography "Lattice-based cryptography"), described the first plausible construction for a fully homomorphic encryption scheme in 2009.[[12]](#cite_note-12) Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it is possible to construct circuits for performing arbitrary computation. The construction starts from a *somewhat homomorphic* encryption scheme, which is limited to evaluating low-degree polynomials over encrypted data; it is limited because each ciphertext is noisy in some sense, and this noise grows as one adds and multiplies ciphertexts, until ultimately the noise makes the resulting ciphertext indecipherable.
-
-Gentry then shows how to slightly modify this scheme to make it *bootstrappable*, i.e., capable of evaluating its own decryption circuit and then at least one more operation. Finally, he shows that any bootstrappable somewhat homomorphic encryption scheme can be converted into a fully homomorphic encryption through a recursive self-embedding. For Gentry's "noisy" scheme, the bootstrapping procedure effectively "refreshes" the ciphertext by applying to it the decryption procedure homomorphically, thereby obtaining a new ciphertext that encrypts the same value as before but has lower noise. By "refreshing" the ciphertext periodically whenever the noise grows too large, it is possible to compute an arbitrary number of additions and multiplications without increasing the noise too much.
-
-Gentry based the security of his scheme on the assumed hardness of two problems: certain worst-case problems over [ideal lattices](//en.wikipedia.org/wiki/Ideal_lattice_cryptography "Ideal lattice cryptography"), and the sparse (or low-weight) [subset sum problem](//en.wikipedia.org/wiki/Subset_sum_problem "Subset sum problem"). Gentry's Ph.D. thesis[[13]](#cite_note-13) provides additional details. The Gentry-Halevi implementation of Gentry's original cryptosystem reported a timing of about 30 minutes per basic bit operation.[[14]](#cite_note-GH11-14) Extensive design and implementation work in subsequent years have improved upon these early implementations by many orders of magnitude runtime performance.
-
-In 2010, Marten van Dijk, [Craig Gentry](//en.wikipedia.org/wiki/Craig_Gentry_(computer_scientist) "Craig Gentry (computer scientist)"), [Shai Halevi](//en.wikipedia.org/wiki/Shai_Halevi "Shai Halevi") and Vinod Vaikuntanathan presented a second fully homomorphic encryption scheme,[[15]](#cite_note-15) which uses many of the tools of Gentry's construction, but which does not require [ideal lattices](//en.wikipedia.org/wiki/Ideal_lattice_cryptography "Ideal lattice cryptography"). Instead, they show that the somewhat homomorphic component of Gentry's ideal lattice-based scheme can be replaced with a very simple somewhat homomorphic scheme that uses integers. The scheme is therefore conceptually simpler than Gentry's ideal lattice scheme, but has similar properties with regards to homomorphic operations and efficiency. The somewhat homomorphic component in the work of Van Dijk et al. is similar to an encryption scheme proposed by Levieil and [Naccache](//en.wikipedia.org/wiki/David_Naccache "David Naccache") in 2008,[[16]](#cite_note-16) and also to one that was proposed by [Bram Cohen](//en.wikipedia.org/wiki/Bram_Cohen "Bram Cohen") in 1998.[[17]](#cite_note-17)
-
-[Cohen's method](//en.wikipedia.org/wiki/Cohen's_cryptosystem "Cohen's cryptosystem") is not even additively homomorphic, however. The Levieil–Naccache scheme supports only additions, but it can be modified to also support a small number of multiplications. Many refinements and optimizations of the scheme of Van Dijk et al. were proposed in a sequence of works by Jean-Sébastien Coron, Tancrède Lepoint, Avradip Mandal, [David Naccache](//en.wikipedia.org/wiki/David_Naccache "David Naccache"), and Mehdi Tibouchi.[[18]](#cite_note-CNT12-18)[[19]](#cite_note-CMNT11-19)[[20]](#cite_note-CLT13-20)[[21]](#cite_note-CLT14-21) Some of these works included also implementations of the resulting schemes.
-
+[edit]Craig Gentry, using lattice-based cryptography, described the first plausible construction for a fully homomorphic encryption scheme in 2009.[12] Gentry's scheme supports both addition and multiplication operations on ciphertexts, from which it is possible to construct circuits for performing arbitrary computation. The construction starts from a somewhat homomorphic encryption scheme, which is limited to evaluating low-degree polynomials over encrypted data; it is limited because each ciphertext is noisy in some sense, and this noise grows as one adds and multiplies ciphertexts, until ultimately the noise makes the resulting ciphertext indecipherable.
+Gentry then shows how to slightly modify this scheme to make it bootstrappable, i.e., capable of evaluating its own decryption circuit and then at least one more operation. Finally, he shows that any bootstrappable somewhat homomorphic encryption scheme can be converted into a fully homomorphic encryption through a recursive self-embedding. For Gentry's "noisy" scheme, the bootstrapping procedure effectively "refreshes" the ciphertext by applying to it the decryption procedure homomorphically, thereby obtaining a new ciphertext that encrypts the same value as before but has lower noise. By "refreshing" the ciphertext periodically whenever the noise grows too large, it is possible to compute an arbitrary number of additions and multiplications without increasing the noise too much.
+Gentry based the security of his scheme on the assumed hardness of two problems: certain worst-case problems over ideal lattices, and the sparse (or low-weight) subset sum problem. Gentry's Ph.D. thesis[13] provides additional details. The Gentry-Halevi implementation of Gentry's original cryptosystem reported a timing of about 30 minutes per basic bit operation.[14] Extensive design and implementation work in subsequent years have improved upon these early implementations by many orders of magnitude runtime performance.
+In 2010, Marten van Dijk, Craig Gentry, Shai Halevi and Vinod Vaikuntanathan presented a second fully homomorphic encryption scheme,[15] which uses many of the tools of Gentry's construction, but which does not require ideal lattices. Instead, they show that the somewhat homomorphic component of Gentry's ideal lattice-based scheme can be replaced with a very simple somewhat homomorphic scheme that uses integers. The scheme is therefore conceptually simpler than Gentry's ideal lattice scheme, but has similar properties with regards to homomorphic operations and efficiency. The somewhat homomorphic component in the work of Van Dijk et al. is similar to an encryption scheme proposed by Levieil and Naccache in 2008,[16] and also to one that was proposed by Bram Cohen in 1998.[17]
+Cohen's method is not even additively homomorphic, however. The Levieil–Naccache scheme supports only additions, but it can be modified to also support a small number of multiplications. Many refinements and optimizations of the scheme of Van Dijk et al. were proposed in a sequence of works by Jean-Sébastien Coron, Tancrède Lepoint, Avradip Mandal, David Naccache, and Mehdi Tibouchi.[18][19][20][21] Some of these works included also implementations of the resulting schemes.
 Second generation
-
-The homomorphic cryptosystems of this generation are derived from techniques that were developed starting in 2011–2012 by [Zvika Brakerski](//en.wikipedia.org/wiki/Zvika_Brakerski "Zvika Brakerski"), [Craig Gentry](//en.wikipedia.org/wiki/Craig_Gentry_(computer_scientist) "Craig Gentry (computer scientist)"), [Vinod Vaikuntanathan](//en.wikipedia.org/wiki/Vinod_Vaikuntanathan "Vinod Vaikuntanathan"), and others. These innovations led to the development of much more efficient somewhat and fully homomorphic cryptosystems. These include:
-
-The Brakerski-Gentry-Vaikuntanathan (BGV, 2011) scheme,[[22]](#cite_note-BGV12-22) building on techniques of Brakerski-Vaikuntanathan;[[23]](#cite_note-BV11b-23)
-The [NTRU](//en.wikipedia.org/wiki/NTRU "NTRU")-based scheme by Lopez-Alt, Tromer, and Vaikuntanathan (LTV, 2012);[[24]](#cite_note-LTV12-24)
-The Brakerski/Fan-Vercauteren (BFV, 2012) scheme,[[25]](#cite_note-FV12-25) building on Brakerski's *scale-invariant* cryptosystem;[[26]](#cite_note-Bra12-26)
-The [NTRU](//en.wikipedia.org/wiki/NTRU "NTRU")-based scheme by Bos, Lauter, Loftus, and Naehrig (BLLN, 2013),[[27]](#cite_note-BLLN13-27) building on LTV and Brakerski's scale-invariant cryptosystem;[[26]](#cite_note-Bra12-26)
-The security of most of these schemes is based on the hardness of the [(Ring) Learning With Errors](//en.wikipedia.org/wiki/Ring_learning_with_errors "Ring learning with errors") (RLWE) problem, except for the LTV and BLLN schemes that rely on an *overstretched*[[28]](#cite_note-ABD16-28) variant of the [NTRU](//en.wikipedia.org/wiki/NTRU "NTRU") [computational problem](//en.wikipedia.org/wiki/Computational_problem "Computational problem"). This NTRU variant was subsequently shown vulnerable to subfield lattice attacks,[[29]](#cite_note-CJL16-29)[[28]](#cite_note-ABD16-28) which is why these two schemes are no longer used in practice.
-
+[edit]The homomorphic cryptosystems of this generation are derived from techniques that were developed starting in 2011–2012 by Zvika Brakerski, Craig Gentry, Vinod Vaikuntanathan, and others. These innovations led to the development of much more efficient somewhat and fully homomorphic cryptosystems. These include:
+- The Brakerski-Gentry-Vaikuntanathan (BGV, 2011) scheme,[22] building on techniques of Brakerski-Vaikuntanathan;[23]
+- The NTRU-based scheme by Lopez-Alt, Tromer, and Vaikuntanathan (LTV, 2012);[24]
+- The Brakerski/Fan-Vercauteren (BFV, 2012) scheme,[25] building on Brakerski's scale-invariant cryptosystem;[26]
+- The NTRU-based scheme by Bos, Lauter, Loftus, and Naehrig (BLLN, 2013),[27] building on LTV and Brakerski's scale-invariant cryptosystem;[26]
+The security of most of these schemes is based on the hardness of the (Ring) Learning With Errors (RLWE) problem, except for the LTV and BLLN schemes that rely on an overstretched[28] variant of the NTRU computational problem. This NTRU variant was subsequently shown vulnerable to subfield lattice attacks,[29][28] which is why these two schemes are no longer used in practice.
 All the second-generation cryptosystems still follow the basic blueprint of Gentry's original construction, namely they first construct a somewhat homomorphic cryptosystem and then convert it to a fully homomorphic cryptosystem using bootstrapping.
-
-![{\displaystyle T}]
-
-![{\displaystyle k}]
-
-![{\displaystyle T\cdot \mathrm {polylog} (k)}]
-
-A distinguishing characteristic of the second-generation cryptosystems is that they all feature a much slower growth of the noise during the homomorphic computations. Additional optimizations by [Craig Gentry](//en.wikipedia.org/wiki/Craig_Gentry_(computer_scientist) "Craig Gentry (computer scientist)"), [Shai Halevi](//en.wikipedia.org/wiki/Shai_Halevi "Shai Halevi"), and [Nigel Smart](//en.wikipedia.org/wiki/Nigel_Smart_(cryptographer) "Nigel Smart (cryptographer)") resulted in cryptosystems with nearly optimal asymptotic complexity: Performing <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle T}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>T</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle T}</annotation>
-  </semantics>
-</math> --> T
-
-    {\displaystyle T}![{\displaystyle T}] operations on data encrypted with [security parameter](//en.wikipedia.org/wiki/Security_parameter "Security parameter") <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle k}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>k</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle k}</annotation>
-  </semantics>
-</math> --> k
-
-    {\displaystyle k}![{\displaystyle k}] has complexity of only <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle T\cdot \mathrm {polylog} (k)}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>T</mi>
-        <mo>⋅</mo>
-        <mrow class="MJX-TeXAtom-ORD">
-          <mi mathvariant="normal">p</mi>
-          <mi mathvariant="normal">o</mi>
-          <mi mathvariant="normal">l</mi>
-          <mi mathvariant="normal">y</mi>
-          <mi mathvariant="normal">l</mi>
-          <mi mathvariant="normal">o</mi>
-          <mi mathvariant="normal">g</mi>
-        </mrow>
-        <mo stretchy="false">(</mo>
-        <mi>k</mi>
-        <mo stretchy="false">)</mo>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle T\cdot \mathrm {polylog} (k)}</annotation>
-  </semantics>
-</math> --> T
-        ⋅
-
-          p
-          o
-          l
-          y
-          l
-          o
-          g
-
-        (
-        k
-        )
-
-    {\displaystyle T\cdot \mathrm {polylog} (k)}![{\displaystyle T\cdot \mathrm {polylog} (k)}].[[30]](#cite_note-GHS12a-30)[[31]](#cite_note-GHS12b-31)[[32]](#cite_note-GHS12c-32) These optimizations build on the Smart-Vercauteren techniques that enable packing of many plaintext values in a single ciphertext and operating on all these plaintext values in a [SIMD](//en.wikipedia.org/wiki/SIMD "SIMD") fashion.[[33]](#cite_note-SV11-33) Many of the advances in these second-generation cryptosystems were also ported to the cryptosystem over the integers.[[20]](#cite_note-CLT13-20)[[21]](#cite_note-CLT14-21)
-
+A distinguishing characteristic of the second-generation cryptosystems is that they all feature a much slower growth of the noise during the homomorphic computations. Additional optimizations by Craig Gentry, Shai Halevi, and Nigel Smart resulted in cryptosystems with nearly optimal asymptotic complexity: Performing operations on data encrypted with security parameter has complexity of only .[30][31][32] These optimizations build on the Smart-Vercauteren techniques that enable packing of many plaintext values in a single ciphertext and operating on all these plaintext values in a SIMD fashion.[33] Many of the advances in these second-generation cryptosystems were also ported to the cryptosystem over the integers.[20][21]
 Another distinguishing feature of second-generation schemes is that they are efficient enough for many applications even without invoking bootstrapping, instead operating in the leveled FHE mode.
-
 Third generation
-
-In 2013, [Craig Gentry](//en.wikipedia.org/wiki/Craig_Gentry_(computer_scientist) "Craig Gentry (computer scientist)"), [Amit Sahai](//en.wikipedia.org/wiki/Amit_Sahai "Amit Sahai"), and [Brent Waters](//en.wikipedia.org/wiki/Brent_Waters "Brent Waters") (GSW) proposed a new technique for building FHE schemes that avoids an expensive "relinearization" step in homomorphic multiplication.[[34]](#cite_note-GSW13-34) Zvika Brakerski and Vinod Vaikuntanathan observed that for certain types of circuits, the GSW cryptosystem features an even slower growth rate of noise, and hence better efficiency and stronger security.[[35]](#cite_note-35) Jacob Alperin-Sheriff and Chris Peikert then described a very efficient bootstrapping technique based on this observation.[[36]](#cite_note-AP14-36)
-
-These techniques were further improved to develop efficient ring variants of the GSW cryptosystem: FHEW (2014)[[37]](#cite_note-FHEW-37) and TFHE (2016).[[38]](#cite_note-TFHE-38) The FHEW scheme was the first to show that by refreshing the ciphertexts after every single operation, it is possible to reduce the bootstrapping time to a fraction of a second. FHEW introduced a new method to compute Boolean gates on encrypted data that greatly simplifies bootstrapping and implemented a variant of the bootstrapping procedure.[[36]](#cite_note-AP14-36) The efficiency of FHEW was further improved by the TFHE scheme, which implements a ring variant of the bootstrapping procedure[[39]](#cite_note-GINX16-39) using a method similar to the one in FHEW.
-
+[edit]In 2013, Craig Gentry, Amit Sahai, and Brent Waters (GSW) proposed a new technique for building FHE schemes that avoids an expensive "relinearization" step in homomorphic multiplication.[34] Zvika Brakerski and Vinod Vaikuntanathan observed that for certain types of circuits, the GSW cryptosystem features an even slower growth rate of noise, and hence better efficiency and stronger security.[35] Jacob Alperin-Sheriff and Chris Peikert then described a very efficient bootstrapping technique based on this observation.[36]
+These techniques were further improved to develop efficient ring variants of the GSW cryptosystem: FHEW (2014)[37] and TFHE (2016).[38] The FHEW scheme was the first to show that by refreshing the ciphertexts after every single operation, it is possible to reduce the bootstrapping time to a fraction of a second. FHEW introduced a new method to compute Boolean gates on encrypted data that greatly simplifies bootstrapping and implemented a variant of the bootstrapping procedure.[36] The efficiency of FHEW was further improved by the TFHE scheme, which implements a ring variant of the bootstrapping procedure[39] using a method similar to the one in FHEW.
 Fourth generation
-
-In 2016, [Jung Hee Cheon](//en.wikipedia.org/wiki/Jung_Hee_Cheon "Jung Hee Cheon"), Andrey Kim, Miran Kim, and Yongsoo Song (CKKS)[[40]](#cite_note-CKKS17-40) proposed an approximate homomorphic encryption scheme that supports a special kind of [fixed-point arithmetic](//en.wikipedia.org/wiki/Fixed-point_arithmetic "Fixed-point arithmetic") that is commonly referred to as [block floating point](//en.wikipedia.org/wiki/Block_floating_point "Block floating point") arithmetic. The CKKS scheme includes an efficient rescaling operation that scales down an encrypted message after a multiplication. For comparison, such rescaling requires bootstrapping in the BGV and BFV schemes. The rescaling operation makes CKKS scheme the most efficient method for evaluating polynomial approximations, and is the preferred approach for implementing [privacy-preserving machine learning applications](https://www.youtube.com/watch). The scheme introduces several approximation errors, both nondeterministic and deterministic, that require special handling in practice.[[41]](#cite_note-HPS-41)
-
-A 2020 article by Baiyu Li and Daniele Micciancio discusses passive attacks against CKKS, suggesting that the standard IND-CPA definition may not be sufficient in scenarios where decryption results are shared.[[42]](#cite_note-42) The authors apply the attack to four modern homomorphic encryption libraries (HEAAN, SEAL, HElib and PALISADE) and report that it is possible to recover the secret key from decryption results in several parameter configurations. The authors also propose mitigation strategies for these attacks, and include a Responsible Disclosure in the paper suggesting that the homomorphic encryption libraries already implemented mitigations for the attacks before the article became publicly available. Further information on the mitigation strategies implemented in the homomorphic encryption libraries has also been published.[[43]](#cite_note-43)[[44]](#cite_note-CKKSsec-44)
-
+[edit]In 2016, Jung Hee Cheon, Andrey Kim, Miran Kim, and Yongsoo Song (CKKS)[40] proposed an approximate homomorphic encryption scheme that supports a special kind of fixed-point arithmetic that is commonly referred to as block floating point arithmetic. The CKKS scheme includes an efficient rescaling operation that scales down an encrypted message after a multiplication. For comparison, such rescaling requires bootstrapping in the BGV and BFV schemes. The rescaling operation makes CKKS scheme the most efficient method for evaluating polynomial approximations, and is the preferred approach for implementing privacy-preserving machine learning applications. The scheme introduces several approximation errors, both nondeterministic and deterministic, that require special handling in practice.[41]
+A 2020 article by Baiyu Li and Daniele Micciancio discusses passive attacks against CKKS, suggesting that the standard IND-CPA definition may not be sufficient in scenarios where decryption results are shared.[42] The authors apply the attack to four modern homomorphic encryption libraries (HEAAN, SEAL, HElib and PALISADE) and report that it is possible to recover the secret key from decryption results in several parameter configurations. The authors also propose mitigation strategies for these attacks, and include a Responsible Disclosure in the paper suggesting that the homomorphic encryption libraries already implemented mitigations for the attacks before the article became publicly available. Further information on the mitigation strategies implemented in the homomorphic encryption libraries has also been published.[43][44]
 Partially homomorphic cryptosystems
-
-![{\displaystyle {\mathcal {E}}(x)}]
-
-![{\displaystyle x}]
-
-In the following examples, the notation <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle {\mathcal {E}}(x)}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mrow class="MJX-TeXAtom-ORD">
-          <mrow class="MJX-TeXAtom-ORD">
-            <mi mathvariant="script" class="MJX-tex-caligraphic">E</mi>
-          </mrow>
-        </mrow>
-        <mo stretchy="false">(</mo>
-        <mi>x</mi>
-        <mo stretchy="false">)</mo>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle {\mathcal {E}}(x)}</annotation>
-  </semantics>
-</math> --> E
-
-        (
-        x
-        )
-
-    {\displaystyle {\mathcal {E}}(x)}![{\displaystyle {\mathcal {E}}(x)}] is used to denote the encryption of the message <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle x}">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mi>x</mi>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle x}</annotation>
-  </semantics>
-</math> --> x
-
-    {\displaystyle x}![{\displaystyle x}].
-
-![{\displaystyle n}]
-
-![{\displaystyle e}]
-
-![{\displaystyle m}]
-
-![{\displaystyle {\mathcal {E}}(m)=m^{e}\;{\bmod {\;}}n}]
-
-![{\displaystyle {\begin{aligned}{\mathcal {E}}(m_{1})\cdot {\mathcal {E}}(m_{2})&amp;=m_{1}^{e}m_{2}^{e}\;{\bmod {\;}}n\\[6pt]&amp;=(m_{1}m_{2})^{e}\;{\bmod {\;}}n\\[6pt]&amp;={\mathcal {E}}(m_{1}\cdot m_{2})\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/b479619754ae20442f010bf9e92d87fddbe4a1f2)
-
-![{\displaystyle G}]
-
-![{\displaystyle q}]
-
-![{\displaystyle g}]
-
-![{\displaystyle (G,q,g,h)}]
-
-![{\displaystyle h=g^{x}}]
-
-![{\displaystyle x}]
-
-![{\displaystyle m}]
-
-![{\displaystyle {\mathcal {E}}(m)=(g^{r},m\cdot h^{r})}]
-
-![{\displaystyle r\in \{0,\ldots ,q-1\}}]
-
-![{\displaystyle {\begin{aligned}{\mathcal {E}}(m_{1})\cdot {\mathcal {E}}(m_{2})&amp;=(g^{r_{1}},m_{1}\cdot h^{r_{1}})(g^{r_{2}},m_{2}\cdot h^{r_{2}})\\[6pt]&amp;=(g^{r_{1}+r_{2}},(m_{1}\cdot m_{2})h^{r_{1}+r_{2}})\\[6pt]&amp;={\mathcal {E}}(m_{1}\cdot m_{2}).\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/d5acfc0dcbb284acddb7026142d95f1db401460b)
-
-![{\displaystyle n}]
-
-![{\displaystyle x}]
-
-![{\displaystyle b}]
-
-![{\displaystyle {\mathcal {E}}(b)=x^{b}r^{2}\;{\bmod {\;}}n}]
-
-![{\displaystyle r\in \{0,\ldots ,n-1\}}]
-
-![{\displaystyle {\begin{aligned}{\mathcal {E}}(b_{1})\cdot {\mathcal {E}}(b_{2})&amp;=x^{b_{1}}r_{1}^{2}x^{b_{2}}r_{2}^{2}\;{\bmod {\;}}n\\[6pt]&amp;=x^{b_{1}+b_{2}}(r_{1}r_{2})^{2}\;{\bmod {\;}}n\\[6pt]&amp;={\mathcal {E}}(b_{1}\oplus b_{2}).\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/2c19183995cf7aa6efe69e2253e3fedd114fa8b0)
-
-![{\displaystyle \oplus }]
-
-where <!-- MathML: <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="{\displaystyle \oplus }">
-  <semantics>
-    <mrow class="MJX-TeXAtom-ORD">
-      <mstyle displaystyle="true" scriptlevel="0">
-        <mo>⊕</mo>
-      </mstyle>
-    </mrow>
-    <annotation encoding="application/x-tex">{\displaystyle \oplus }</annotation>
-  </semantics>
-</math> --> ⊕
-
-    {\displaystyle \oplus }![{\displaystyle \oplus }] denotes addition modulo 2, (i.e., [exclusive-or](//en.wikipedia.org/wiki/Exclusive_disjunction "Exclusive disjunction")).
-
-![{\displaystyle n}]
-
-![{\displaystyle g}]
-
-![{\displaystyle c}]
-
-![{\displaystyle m}]
-
-![{\displaystyle {\mathcal {E}}(m)=g^{m}r^{c}\;{\bmod {\;}}n}]
-
-![{\displaystyle r\in \{0,\ldots ,n-1\}}]
-
-![{\displaystyle {\begin{aligned}{\mathcal {E}}(m_{1})\cdot {\mathcal {E}}(m_{2})&amp;=(g^{m_{1}}r_{1}^{c})(g^{m_{2}}r_{2}^{c})\;{\bmod {\;}}n\\[6pt]&amp;=g^{m_{1}+m_{2}}(r_{1}r_{2})^{c}\;{\bmod {\;}}n\\[6pt]&amp;={\mathcal {E}}(m_{1}+m_{2}\;{\bmod {\;}}c).\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/8574e9e6d3262b187ccb0a5076a6ea1f44c29950)
-
-![{\displaystyle n}]
-
-![{\displaystyle g}]
-
-![{\displaystyle m}]
-
-![{\displaystyle {\mathcal {E}}(m)=g^{m}r^{n}\;{\bmod {\;}}n^{2}}]
-
-![{\displaystyle r\in \{0,\ldots ,n-1\}}]
-
-![{\displaystyle {\begin{aligned}{\mathcal {E}}(m_{1})\cdot {\mathcal {E}}(m_{2})&amp;=(g^{m_{1}}r_{1}^{n})(g^{m_{2}}r_{2}^{n})\;{\bmod {\;}}n^{2}\\[6pt]&amp;=g^{m_{1}+m_{2}}(r_{1}r_{2})^{n}\;{\bmod {\;}}n^{2}\\[6pt]&amp;={\mathcal {E}}(m_{1}+m_{2}).\end{aligned}}}](https://wikimedia.org/api/rest_v1/media/math/render/svg/197397f99f3b0e28da319905da0cfb51c8ff62d9)
-
-[Okamoto–Uchiyama cryptosystem](//en.wikipedia.org/wiki/Okamoto–Uchiyama_cryptosystem "Okamoto–Uchiyama cryptosystem")
-[Naccache–Stern cryptosystem](//en.wikipedia.org/wiki/Naccache–Stern_cryptosystem "Naccache–Stern cryptosystem")
-[Damgård–Jurik cryptosystem](//en.wikipedia.org/wiki/Damgård–Jurik_cryptosystem "Damgård–Jurik cryptosystem")
-Sander–Young–Yung encryption scheme[[45]](#cite_note-SYY-45)
-Boneh–Goh–Nissim cryptosystem[[46]](#cite_note-BGN-46)
-Ishai–Paskin cryptosystem
-Joye-Libert cryptosystem[[47]](#cite_note-BHJL17-47)
-Castagnos–Laguillaumie cryptosystem[[48]](#cite_note-48)
+[edit]In the following examples, the notation is used to denote the encryption of the message .
+- Unpadded RSA
+- If the RSA public key has modulus and encryption exponent , then the encryption of a message is given by . The homomorphic property is then
+- ElGamal
+- In the ElGamal cryptosystem, in a cyclic group of order with generator , if the public key is , where , and is the secret key, then the encryption of a message is , for some random . The homomorphic property is then
+- Goldwasser–Micali
+- In the Goldwasser–Micali cryptosystem, if the public key is the modulus and quadratic non-residue , then the encryption of a bit is , for some random . The homomorphic property is then
+where denotes addition modulo 2, (i.e., exclusive-or).
+- Benaloh
+- In the Benaloh cryptosystem, if the public key is the modulus and the base with a blocksize of , then the encryption of a message is , for some random . The homomorphic property is then
+- Paillier
+- In the Paillier cryptosystem, if the public key is the modulus and the base , then the encryption of a message is , for some random . The homomorphic property is then
+- Other partially homomorphic cryptosystems
+- Okamoto–Uchiyama cryptosystem
+- Naccache–Stern cryptosystem
+- Damgård–Jurik cryptosystem
+- Sander–Young–Yung encryption scheme[45]
+- Boneh–Goh–Nissim cryptosystem[46]
+- Ishai–Paskin cryptosystem
+- Joye-Libert cryptosystem[47]
+- Castagnos–Laguillaumie cryptosystem[48]
 Implementations
-
-There are several open-source implementations of partially, somewhat and fully homomorphic encryption schemes. Second-generation and fourth-generation FHE scheme implementations typically operate in the leveled FHE mode (though bootstrapping is still available in some libraries) and support efficient [SIMD](//en.wikipedia.org/wiki/SIMD "SIMD")-like packing of data; they are typically used to compute on encrypted integers or real/complex numbers.[[49]](#cite_note-49) Third-generation FHE scheme implementations often bootstrap after each operation but have limited support for packing; they were initially used to compute Boolean circuits over encrypted bits, but have been extended to support integer arithmetics and univariate function evaluation.[[50]](#cite_note-50) The choice of using a second-generation vs. third-generation vs fourth-generation scheme depends on the input data types and the desired computation.
-
-Library Language [RSA](//en.wikipedia.org/wiki/RSA_cryptosystem "RSA cryptosystem") [ElGamal](//en.wikipedia.org/wiki/ElGamal_encryption "ElGamal encryption") [Exponential ElGamal](//en.wikipedia.org/wiki/ElGamal_encryption "ElGamal encryption") Elliptic Curve ElGamal [Paillier](//en.wikipedia.org/wiki/Paillier_cryptosystem "Paillier cryptosystem") [Damgård–Jurik](//en.wikipedia.org/wiki/Damgård–Jurik_cryptosystem "Damgård–Jurik cryptosystem") [Okamoto–Uchiyama](//en.wikipedia.org/wiki/Okamoto–Uchiyama_cryptosystem "Okamoto–Uchiyama cryptosystem") [Benaloh](//en.wikipedia.org/wiki/Benaloh_cryptosystem "Benaloh cryptosystem") [Naccache–Stern](//en.wikipedia.org/wiki/Naccache–Stern_cryptosystem "Naccache–Stern cryptosystem") [Goldwasser–Micali](//en.wikipedia.org/wiki/Goldwasser–Micali_cryptosystem "Goldwasser–Micali cryptosystem") Sander–Young–Yung Boneh–Goh–Nissim Ishai–Paskin Joye-Libert Castagnos–Laguillaumie Notes
-LightPHE[[51]](#cite_note-LightPHE-github-51) Python Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes Yes No No No
-
-Name Developer BGV[[22]](#cite_note-BGV12-22) CKKS[[40]](#cite_note-CKKS17-40) BFV[[25]](#cite_note-FV12-25) FHEW[[37]](#cite_note-FHEW-37) CKKS Bootstrapping[[52]](#cite_note-CHK+18-52) TFHE[[38]](#cite_note-TFHE-38) Description
-[HElib](//en.wikipedia.org/wiki/HElib "HElib")[[53]](#cite_note-HElib-53) [IBM](//en.wikipedia.org/wiki/IBM "IBM") Yes Yes No No No No BGV scheme with the GHS optimizations.
-[Microsoft SEAL](//en.wikipedia.org/wiki/Microsoft_SEAL "Microsoft SEAL")[[54]](#cite_note-SEAL-54) [Microsoft](//en.wikipedia.org/wiki/Microsoft "Microsoft") Yes Yes Yes No No No
-[OpenFHE](//en.wikipedia.org/wiki/OpenFHE "OpenFHE") [Duality Technologies](//en.wikipedia.org/wiki/Duality_Technologies?action=edit&redlink=1 "Duality Technologies (page does not exist)"), [Samsung Advanced Institute of Technology](//en.wikipedia.org/wiki/Samsung_Advanced_Institute_of_Technology "Samsung Advanced Institute of Technology") [[kr](https://kr.wikipedia.org/wiki/Samsung%20Advanced%20Institute%20of%20Technology "kr:Samsung Advanced Institute of Technology")], [Intel](//en.wikipedia.org/wiki/Intel "Intel"), [MIT](//en.wikipedia.org/wiki/MIT "MIT"), [University of California, San Diego](//en.wikipedia.org/wiki/University_of_California,_San_Diego "University of California, San Diego") and others. Yes Yes Yes Yes Yes Yes Successor to [PALISADE](//en.wikipedia.org/wiki/PALISADE_(software) "PALISADE (software)").
-[PALISADE](//en.wikipedia.org/wiki/PALISADE_(software) "PALISADE (software)")[[55]](#cite_note-PALISADE-55) [New Jersey Institute of Technology](//en.wikipedia.org/wiki/New_Jersey_Institute_of_Technology "New Jersey Institute of Technology"), Duality Technologies, [Raytheon BBN Technologies](//en.wikipedia.org/wiki/Raytheon_BBN_Technologies "Raytheon BBN Technologies"), [MIT](//en.wikipedia.org/wiki/MIT "MIT"), [University of California, San Diego](//en.wikipedia.org/wiki/University_of_California,_San_Diego "University of California, San Diego") and others. Yes Yes Yes Yes No Yes General-purpose lattice cryptography library. Predecessor of [OpenFHE](//en.wikipedia.org/wiki/OpenFHE "OpenFHE").
-[HEAAN](//en.wikipedia.org/wiki/HEAAN "HEAAN")[[56]](#cite_note-HEAAN-56) CryptoLab No Yes No No Yes No
-FHEW[[37]](#cite_note-FHEW-37) Leo Ducas and Daniele Micciancio No No No Yes No No
-TFHE[[38]](#cite_note-TFHE-38) Ilaria Chillotti, Nicolas Gama, Mariya Georgieva and Malika Izabachene No No No No No Yes
-FV-NFLlib[[57]](#cite_note-FVNFLlib-57) CryptoExperts No No Yes No No No
-NuFHE[[58]](#cite_note-NuFHE-58) NuCypher No No No No No Yes Provides a GPU implementation of TFHE.
-REDcuFHE[[59]](#cite_note-REDcuFHE-59) TwC Group No No No No No Yes A multi-GPU implementation of TFHE.
-Lattigo[[60]](#cite_note-Lattigo-60) EPFL-LDS, Tune Insight Yes Yes Yes No Yes[[61]](#cite_note-BOSSUAT+21-61) No Implementation in [Go](//en.wikipedia.org/wiki/Go_(language) "Go (language)") along with their [distributed](//en.wikipedia.org/wiki/Distributed_key_generation "Distributed key generation") variants[[62]](#cite_note-MOUCHET+20-62) enabling [Secure multi-party computation](//en.wikipedia.org/wiki/Secure_multi-party_computation "Secure multi-party computation").
-TFHE-rs[[63]](#cite_note-TFHE-rs-63) Zama No No No No No Yes Rust implementation of TFHE-extended. Supporting Boolean, integer operation and univariate function evaluation (via Programmable Bootstrapping[[64]](#cite_note-64)).
-Liberate.FHE[[65]](#cite_note-Liberate.FHE-65) Desilo No Yes No No No No A multi-GPU implementation of CKKS.
-
-Name Developer FHEW[[37]](#cite_note-FHEW-37) TFHE HElib SEAL PALISADE Lattigo Description
-Concrete[[66]](#cite_note-Concrete-66) Zama No Yes No No No No TFHE-extended compiler with a Python Frontend.[[67]](#cite_note-ConcretePython-67)
-E3[[68]](#cite_note-E3-68) MoMA Lab at NYU Abu Dhabi Yes Yes Yes Yes Yes No
-SHEEP[[69]](#cite_note-SHEEP-69) Alan Turing Institute No Yes Yes Yes Yes No
-T2[[70]](#cite_note-T2-70) TwC Group No Yes Yes Yes Yes Yes
-HELM[[71]](#cite_note-HELM-71) TwC Group No Yes No No No No
-Juliet[[72]](#cite_note-Juliet-72) TwC Group No Yes No No No No
-PEEV[[73]](#cite_note-73) TwC Group No No No Yes No No Verifiable encrypted computations based on Rinocchio ZKP and BGV homomorphic Encryption.
-
+[edit]There are several open-source implementations of partially, somewhat and fully homomorphic encryption schemes. Second-generation and fourth-generation FHE scheme implementations typically operate in the leveled FHE mode (though bootstrapping is still available in some libraries) and support efficient SIMD-like packing of data; they are typically used to compute on encrypted integers or real/complex numbers.[49] Third-generation FHE scheme implementations often bootstrap after each operation but have limited support for packing; they were initially used to compute Boolean circuits over encrypted bits, but have been extended to support integer arithmetics and univariate function evaluation.[50] The choice of using a second-generation vs. third-generation vs fourth-generation scheme depends on the input data types and the desired computation.
+| Library | Language | RSA | ElGamal | Exponential ElGamal | Elliptic Curve ElGamal | Paillier | Damgård–Jurik | Okamoto–Uchiyama | Benaloh | Naccache–Stern | Goldwasser–Micali | Sander–Young–Yung | Boneh–Goh–Nissim | Ishai–Paskin | Joye-Libert | Castagnos–Laguillaumie | Notes |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| LightPHE[51] | Python | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No |
+| Name | Developer | BGV[22] | CKKS[40] | BFV[25] | FHEW[37] | CKKS Bootstrapping[52] | TFHE[38] | Description |
+|---|---|---|---|---|---|---|---|---|
+| HElib[53] | IBM | Yes | Yes | No | No | No | No | BGV scheme with the GHS optimizations. |
+| Microsoft SEAL[54] | Microsoft | Yes | Yes | Yes | No | No | No | |
+| OpenFHE | Duality Technologies, Samsung Advanced Institute of Technology, Intel, MIT, University of California, San Diego and others. | Yes | Yes | Yes | Yes | Yes | Yes | Successor to PALISADE. |
+| PALISADE[55] | New Jersey Institute of Technology, Duality Technologies, Raytheon BBN Technologies, MIT, University of California, San Diego and others. | Yes | Yes | Yes | Yes | No | Yes | General-purpose lattice cryptography library. Predecessor of OpenFHE. |
+| HEAAN[56] | CryptoLab | No | Yes | No | No | Yes | No | |
+| FHEW[37] | Leo Ducas and Daniele Micciancio | No | No | No | Yes | No | No | |
+| TFHE[38] | Ilaria Chillotti, Nicolas Gama, Mariya Georgieva and Malika Izabachene | No | No | No | No | No | Yes | |
+| FV-NFLlib[57] | CryptoExperts | No | No | Yes | No | No | No | |
+| NuFHE[58] | NuCypher | No | No | No | No | No | Yes | Provides a GPU implementation of TFHE. |
+| REDcuFHE[59] | TwC Group | No | No | No | No | No | Yes | A multi-GPU implementation of TFHE. |
+| Lattigo[60] | EPFL-LDS, Tune Insight | Yes | Yes | Yes | No | Yes[61] | No | Implementation in Go along with their distributed variants[62] enabling Secure multi-party computation. |
+| TFHE-rs[63] | Zama | No | No | No | No | No | Yes | Rust implementation of TFHE-extended. Supporting Boolean, integer operation and univariate function evaluation (via Programmable Bootstrapping[64]). |
+| Liberate.FHE[65] | Desilo | No | Yes | No | No | No | No | A multi-GPU implementation of CKKS. |
+| Name | Developer | FHEW[37] | TFHE | HElib | SEAL | PALISADE | Lattigo | Description |
+|---|---|---|---|---|---|---|---|---|
+| Concrete[66] | Zama | No | Yes | No | No | No | No | TFHE-extended compiler with a Python Frontend.[67] |
+| E3[68] | MoMA Lab at NYU Abu Dhabi | Yes | Yes | Yes | Yes | Yes | No | |
+| SHEEP[69] | Alan Turing Institute | No | Yes | Yes | Yes | Yes | No | |
+| T2[70] | TwC Group | No | Yes | Yes | Yes | Yes | Yes | |
+| HELM[71] | TwC Group | No | Yes | No | No | No | No | |
+| Juliet[72] | TwC Group | No | Yes | No | No | No | No | |
+| PEEV[73] | TwC Group | No | No | No | Yes | No | No | Verifiable encrypted computations based on Rinocchio ZKP and BGV homomorphic Encryption. |
 Standardization
-
-In 2017, researchers from [IBM](//en.wikipedia.org/wiki/IBM "IBM"), [Microsoft](//en.wikipedia.org/wiki/Microsoft "Microsoft"), [Intel](//en.wikipedia.org/wiki/Intel "Intel"), the [NIST](//en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology "National Institute of Standards and Technology"), and others formed the open Homomorphic Encryption Standardization Consortium, which maintains a community security [Homomorphic Encryption Standard](//en.wikipedia.org/wiki/Homomorphic_Encryption_Standard?action=edit&redlink=1 "Homomorphic Encryption Standard (page does not exist)").[[74]](#cite_note-74)[[75]](#cite_note-75)[[76]](#cite_note-76)
-
+[edit]In 2017, researchers from IBM, Microsoft, Intel, the NIST, and others formed the open Homomorphic Encryption Standardization Consortium, which maintains a community security Homomorphic Encryption Standard.[74][75][76]
 See also
-
-[Client-side encryption](//en.wikipedia.org/wiki/Client-side_encryption "Client-side encryption") – Type of encryption
-[Confidential computing](//en.wikipedia.org/wiki/Confidential_computing "Confidential computing") – Privacy-enhancing computing technique
-[Format-preserving encryption](//en.wikipedia.org/wiki/Format-preserving_encryption "Format-preserving encryption") – Method in cryptography
-[Homomorphic secret sharing](//en.wikipedia.org/wiki/Homomorphic_secret_sharing "Homomorphic secret sharing")
-[Homomorphic signatures for network coding](//en.wikipedia.org/wiki/Homomorphic_signatures_for_network_coding "Homomorphic signatures for network coding")
-[Private biometrics](//en.wikipedia.org/wiki/Private_biometrics "Private biometrics")
-[Private set intersection](//en.wikipedia.org/wiki/Private_set_intersection "Private set intersection") – Secure multiparty computation cryptographic technique
-[Searchable symmetric encryption](//en.wikipedia.org/wiki/Searchable_symmetric_encryption "Searchable symmetric encryption") – System allowing searching of encrypted documents
-[Secure multi-party computation](//en.wikipedia.org/wiki/Secure_multi-party_computation "Secure multi-party computation") – Subfield of cryptography
-[Verifiable computing using a fully homomorphic scheme](//en.wikipedia.org/wiki/Verifiable_computing "Verifiable computing")
+[edit]- Client-side encryption – Type of encryption
+- Confidential computing – Privacy-enhancing computing technique
+- Format-preserving encryption – Method in cryptography
+- Homomorphic secret sharing
+- Homomorphic signatures for network coding
+- Private biometrics
+- Private set intersection – Secure multiparty computation cryptographic technique
+- Searchable symmetric encryption – System allowing searching of encrypted documents
+- Secure multi-party computation – Subfield of cryptography
+- Verifiable computing using a fully homomorphic scheme
 References
-
-[↑](#cite_ref-1)  Technology, Massachusetts Institute of. ["Researchers develop innovative method for secure operations on encrypted data without decryption"](https://techxplore.com/news/2025-03-method-encrypted-decryption.html). *techxplore.com*. Retrieved 2025-04-01.
-[↑](#cite_ref-2) Sellers, Andrew. ["Council Post: Everything You Wanted To Know About Homomorphic Encryption (But Were Afraid To Ask)"](https://www.forbes.com/sites/forbestechcouncil/2021/04/14/everything-you-wanted-to-know-about-homomorphic-encryption-but-were-afraid-to-ask/). *Forbes*. Retrieved 2023-08-18.
-[↑](#cite_ref-3) Munjal, Kundan; Bhatia, Rekha (2022). ["A systematic review of homomorphic encryption and its contributions in healthcare industry"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9062639). *Complex & Intelligent Systems*. **9** (4): 3759–3786. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/s40747-022-00756-z](https://doi.org/10.1007%2Fs40747-022-00756-z). [PMC](//en.wikipedia.org/wiki/PMC_(identifier) "PMC (identifier)") [9062639](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9062639). [PMID](//en.wikipedia.org/wiki/PMID_(identifier) "PMID (identifier)") [35531323](https://pubmed.ncbi.nlm.nih.gov/35531323).
-[↑](#cite_ref-4) ["The State of Homomorphic Encryption"](https://uwspace.uwaterloo.ca/bitstreams/e5e926e8-3f17-487f-8eb5-19fd5ca4e6ee/download). *University of Waterloo Repository*. Retrieved 13 March 2026.
-[↑](#cite_ref-ABG15_5-0) Armknecht, Frederik; Boyd, Colin; Gjøsteen, Kristian; Jäschke, Angela; Reuter, Christian; Strand, Martin (2015). ["A Guide to Fully Homomorphic Encryption"](https://eprint.iacr.org/2015/1192). *Cryptology ePrint Archive*.
-[↑](#cite_ref-6) Daniele Micciancio (2010-03-01). ["A First Glimpse of Cryptography's Holy Grail"](http://cacm.acm.org/magazines/2010/3/76275-a-first-glimpse-of-cryptographys-holy-grail/fulltext). [Association for Computing Machinery](//en.wikipedia.org/wiki/Association_for_Computing_Machinery "Association for Computing Machinery"). p. 96. Retrieved 2010-03-17.
-[↑](#cite_ref-7) Vinod Vaikuntanathan. ["Homomorphic Encryption References"](https://people.csail.mit.edu/vinodv/FHE/FHE-refs.html).
-[↑](#cite_ref-8) R. L. Rivest, L. Adleman, and M. L. Dertouzos. On data banks and privacy homomorphisms. In *Foundations of Secure Computation*, 1978.
-[↑](#cite_ref-9) Sander, Tomas; Young, Adam L.; Yung, Moti (1999). "Non-interactive cryptocomputing for NC/Sup 1/". *40th Annual Symposium on Foundations of Computer Science (Cat. No.99CB37039)*. pp. 554–566. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1109/SFFCS.1999.814630](https://doi.org/10.1109%2FSFFCS.1999.814630). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-0-7695-0409-4](//en.wikipedia.org/wiki/Special:BookSources/978-0-7695-0409-4 "Special:BookSources/978-0-7695-0409-4"). [S2CID](//en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [1976588](https://api.semanticscholar.org/CorpusID:1976588).
-[↑](#cite_ref-10) D. Boneh, E. Goh, and K. Nissim. Evaluating 2-DNF Formulas on Ciphertexts. In *Theory of Cryptography Conference*, 2005.
-[↑](#cite_ref-11) Y. Ishai and A. Paskin. Evaluating branching programs on encrypted data. In *Theory of Cryptography Conference*, 2007.
-[↑](#cite_ref-12) Gentry, Craig (2009). "Fully homomorphic encryption using ideal lattices". *Proceedings of the forty-first annual ACM symposium on Theory of computing*. pp. 169–178. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1145/1536414.1536440](https://doi.org/10.1145%2F1536414.1536440). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-1-60558-506-2](//en.wikipedia.org/wiki/Special:BookSources/978-1-60558-506-2 "Special:BookSources/978-1-60558-506-2").
-[↑](#cite_ref-13) Craig Gentry. [*A Fully Homomorphic Encryption Scheme*](http://crypto.stanford.edu/craig/) (PDF) (PhD Thesis). Stanford University.
-[↑](#cite_ref-GH11_14-0) Gentry, Craig; Halevi, Shai (2010). ["Implementing Gentry's Fully-Homomorphic Encryption Scheme"](http://eprint.iacr.org/2010/520). *Advances in Cryptology – EUROCRYPT 2011*. Lecture Notes in Computer Science. Vol. 6632. pp. 129–148. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-20465-4_9](https://doi.org/10.1007%2F978-3-642-20465-4_9). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-20464-7](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-20464-7 "Special:BookSources/978-3-642-20464-7").
-[↑](#cite_ref-15) Van Dijk, Marten; Gentry, Craig; Halevi, Shai; Vinod, Vaikuntanathan (2009). ["Fully Homomorphic Encryption over the Integers"](http://eprint.iacr.org/2009/616). *Advances in Cryptology – EUROCRYPT 2010*. Lecture Notes in Computer Science. Vol. 6110. pp. 24–43. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-13190-5_2](https://doi.org/10.1007%2F978-3-642-13190-5_2). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-13189-9](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-13189-9 "Special:BookSources/978-3-642-13189-9").
-[↑](#cite_ref-16) Levieil, Eric; [Naccache, David](//en.wikipedia.org/wiki/David_Naccache "David Naccache") (2008). ["Cryptographic Test Correction"](https://www.iacr.org/archive/pkc2008/49390088/49390088.pdf) (PDF). *Public Key Cryptography – PKC 2008*. Lecture Notes in Computer Science. Vol. 4939. pp. 85–100. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-540-78440-1_6](https://doi.org/10.1007%2F978-3-540-78440-1_6). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-540-78439-5](//en.wikipedia.org/wiki/Special:BookSources/978-3-540-78439-5 "Special:BookSources/978-3-540-78439-5").
-[↑](#cite_ref-17) [Cohen, Bram](//en.wikipedia.org/wiki/Bram_Cohen "Bram Cohen"). ["Simple Public Key Encryption"](https://web.archive.org/web/20111007060226/http://bramcohen.com/simple_public_key.html). Archived from [the original](http://bramcohen.com/simple_public_key.html) on 2011-10-07.
-[↑](#cite_ref-CNT12_18-0) Coron, Jean-Sébastien; Naccache, David; Tibouchi, Mehdi (2011). ["Public Key Compression and Modulus Switching for Fully Homomorphic Encryption over the Integers"](https://orbilu.uni.lu/handle/10993/12395). *Advances in Cryptology – EUROCRYPT 2012*. Lecture Notes in Computer Science. Vol. 7237. pp. 446–464. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-29011-4_27](https://doi.org/10.1007%2F978-3-642-29011-4_27). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-29010-7](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-29010-7 "Special:BookSources/978-3-642-29010-7").
-[↑](#cite_ref-CMNT11_19-0) Coron, Jean-Sébastien; Mandal, Avradip; Naccache, David; Tibouchi, Mehdi (2011). "Fully Homomorphic Encryption over the Integers with Shorter Public Keys". In Rogaway, P. (ed.). [*Advances in Cryptology – CRYPTO 2011*](http://eprint.iacr.org/2011/441). Lecture Notes in Computer Science. Vol. 6841. pp. 487–504. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-22792-9_28](https://doi.org/10.1007%2F978-3-642-22792-9_28). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-22791-2](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-22791-2 "Special:BookSources/978-3-642-22791-2").
-[1](#cite_ref-CLT13_20-0) [2](#cite_ref-CLT13_20-1) Coron, Jean-Sébastien; Lepoint, Tancrède; Tibouchi, Mehdi (2013). ["Batch Fully Homomorphic Encryption over the Integers"](http://eprint.iacr.org/2013/036). *Advances in Cryptology – EUROCRYPT 2013*. Lecture Notes in Computer Science. Vol. 7881. pp. 315–335. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-38348-9_20](https://doi.org/10.1007%2F978-3-642-38348-9_20). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-38347-2](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-38347-2 "Special:BookSources/978-3-642-38347-2").
-[1](#cite_ref-CLT14_21-0) [2](#cite_ref-CLT14_21-1) Coron, Jean-Sébastien; Lepoint, Tancrède; Tibouchi, Mehdi (2014). ["Scale-Invariant Fully Homomorphic Encryption over the Integers"](http://eprint.iacr.org/2014/032). *Public-Key Cryptography – PKC 2014*. Lecture Notes in Computer Science. Vol. 8383. pp. 311–328. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-642-54631-0_18](https://doi.org/10.1007%2F978-3-642-54631-0_18). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-642-54630-3](//en.wikipedia.org/wiki/Special:BookSources/978-3-642-54630-3 "Special:BookSources/978-3-642-54630-3").
-[1](#cite_ref-BGV12_22-0) [2](#cite_ref-BGV12_22-1) Z. Brakerski, C. Gentry, and V. Vaikuntanathan. [Fully Homomorphic Encryption without Bootstrapping](http://eprint.iacr.org/2011/277), In *ITCS 2012*
-[↑](#cite_ref-BV11b_23-0) Z. Brakerski and V. Vaikuntanathan. [Efficient Fully Homomorphic Encryption from (Standard) LWE](http://eprint.iacr.org/2011/344). In *FOCS 2011* (IEEE)
-[↑](#cite_ref-LTV12_24-0) A. Lopez-Alt, E. Tromer, and V. Vaikuntanathan. [On-the-Fly Multiparty Computation on the Cloud via Multikey Fully Homomorphic Encryption](https://eprint.iacr.org/2013/094). In *STOC 2012* (ACM)
-[1](#cite_ref-FV12_25-0) [2](#cite_ref-FV12_25-1) Fan, Junfeng; Vercauteren, Frederik (2012). ["Somewhat Practical Fully Homomorphic Encryption"](https://eprint.iacr.org/2012/144). *Cryptology ePrint Archive*.
-[1](#cite_ref-Bra12_26-0) [2](#cite_ref-Bra12_26-1) Z. Brakerski. [Fully Homomorphic Encryption without Modulus Switching from Classical GapSVP](http://eprint.iacr.org/2012/078), In *CRYPTO 2012* (Springer)
-[↑](#cite_ref-BLLN13_27-0) J. Bos, K. Lauter, J. Loftus, and M. Naehrig. [Improved Security for a Ring-Based Fully Homomorphic Encryption Scheme](https://eprint.iacr.org/2013/075). In *IMACC 2013* (Springer)
-[1](#cite_ref-ABD16_28-0) [2](#cite_ref-ABD16_28-1) M. Albrecht, S. Bai, and L. Ducas. [A subfield lattice attack on overstretched NTRU assumptions](https://eprint.iacr.org/2016/127), In *CRYPTO 2016* (Springer)
-[↑](#cite_ref-CJL16_29-0) Cheon, J. H.; Jeong, J; Lee, C. (2016). ["An algorithm for NTRU problems and cryptanalysis of the GGH multilinear map without a low-level encoding of zero"](https://doi.org/10.1112%2FS1461157016000371). *LMS Journal of Computation and Mathematics*. **19** (1): 255–266. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1112/S1461157016000371](https://doi.org/10.1112%2FS1461157016000371).
-[↑](#cite_ref-GHS12a_30-0) C. Gentry, S. Halevi, and N. P. Smart. [Fully Homomorphic Encryption with Polylog Overhead](http://eprint.iacr.org/2011/566). In *EUROCRYPT 2012* (Springer)
-[↑](#cite_ref-GHS12b_31-0) C. Gentry, S. Halevi, and N. P. Smart. [Better Bootstrapping in Fully Homomorphic Encryption](http://eprint.iacr.org/2011/680). In *PKC 2012* (SpringeR)
-[↑](#cite_ref-GHS12c_32-0) C. Gentry, S. Halevi, and N. P. Smart. [Homomorphic Evaluation of the AES Circuit](http://eprint.iacr.org/2012/099). In *CRYPTO 2012* (Springer)
-[↑](#cite_ref-SV11_33-0) Smart, Nigel P.; Vercauteren, Frederik (2014). ["Fully Homomorphic SIMD Operations"](http://eprint.iacr.org/2011/133). *Designs, Codes and Cryptography*. **71** (1): 57–81. [CiteSeerX](//en.wikipedia.org/wiki/CiteSeerX_(identifier) "CiteSeerX (identifier)") [10.1.1.294.4088](https://citeseerx.ist.psu.edu/viewdoc/summary). [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/s10623-012-9720-4](https://doi.org/10.1007%2Fs10623-012-9720-4). [hdl](//en.wikipedia.org/wiki/Hdl_(identifier) "Hdl (identifier)"):[1983/caaadb2e-a720-4daf-8016-5d7764b27a9f](https://hdl.handle.net/1983%2Fcaaadb2e-a720-4daf-8016-5d7764b27a9f). [S2CID](//en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [11202438](https://api.semanticscholar.org/CorpusID:11202438).
-[↑](#cite_ref-GSW13_34-0) C. Gentry, A. Sahai, and B. Waters. [Homomorphic Encryption from Learning with Errors: Conceptually-Simpler, Asymptotically-Faster, Attribute-Based](http://eprint.iacr.org/2013/340). In *CRYPTO 2013* (Springer)
-[↑](#cite_ref-35) Z. Brakerski and V. Vaikuntanathan. [Lattice-Based FHE as Secure as PKE](http://eprint.iacr.org/2013/541). In *ITCS 2014*
-[1](#cite_ref-AP14_36-0) [2](#cite_ref-AP14_36-1) J. Alperin-Sheriff and C. Peikert. [Faster Bootstrapping with Polynomial Error](http://eprint.iacr.org/2014/094). In *CRYPTO 2014* (Springer)
-[1](#cite_ref-FHEW_37-0) [2](#cite_ref-FHEW_37-1) [3](#cite_ref-FHEW_37-2) [4](#cite_ref-FHEW_37-3) Leo Ducas; Daniele Micciancio. ["FHEW: A Fully Homomorphic Encryption library"](https://github.com/lducas/FHEW). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 31 December 2014.
-[1](#cite_ref-TFHE_38-0) [2](#cite_ref-TFHE_38-1) [3](#cite_ref-TFHE_38-2) Ilaria Chillotti; Nicolas Gama; Mariya Georgieva; Malika Izabachene. ["Faster Fully Homomorphic Encryption: Bootstrapping in less than 0.1 Seconds"](https://tfhe.github.io/tfhe). Retrieved 31 December 2016.
-[↑](#cite_ref-GINX16_39-0) N. Gama, M. Izabachène, P.Q. Nguyen, and X. Xie [Structural Lattice Reduction: Generalized Worst-Case to Average-Case Reductions and Homomorphic Cryptosystems](https://eprint.iacr.org/2014/283). In *EUROCRYPT 2016* (Springer)
-[1](#cite_ref-CKKS17_40-0) [2](#cite_ref-CKKS17_40-1) Cheon, Jung Hee; Kim, Andrey; Kim, Miran; Song, Yongsoo (2017). "Homomorphic encryption for arithmetic of approximate numbers". *Takagi T., Peyrin T. (eds) Advances in Cryptology – ASIACRYPT 2017*. ASIACRYPT 2017. Lecture Notes in Computer Science. Vol. 10624. Springer, Cham. pp. 409–437. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-319-70694-8_15](https://doi.org/10.1007%2F978-3-319-70694-8_15). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-319-70693-1](//en.wikipedia.org/wiki/Special:BookSources/978-3-319-70693-1 "Special:BookSources/978-3-319-70693-1").
-[↑](#cite_ref-HPS_41-0) Kim A., Papadimitriou A., Polyakov Y. [Approximate Homomorphic Encryption with Reduced Approximation Error](https://eprint.iacr.org/2020/1118), In *CT-RSA 2022* (Springer)
-[↑](#cite_ref-42) Li, Baily; Micciancio, Daniele (2020). ["On the Security of Homomorphic Encryption on Approximate Numbers"](https://eprint.iacr.org/2020/1533.pdf) (PDF). *IACR ePrint Archive 2020/1533*.
-[↑](#cite_ref-43) Cheon, Jung Hee; Hong, Seungwan; Kim, Duhyeong (2020). ["Remark on the Security of CKKS Scheme in Practice"](https://eprint.iacr.org/2020/1581.pdf) (PDF). *IACR ePrint Archive 2020/1581*.
-[↑](#cite_ref-CKKSsec_44-0) ["Security of CKKS"](https://palisade-crypto.org/security-of-ckks). Retrieved 10 March 2021.
-[↑](#cite_ref-SYY_45-0) Sander, Tomas; Young, Adam L.; Yung, Moti (1999). "Non-interactive cryptocomputing for NC". *Proceedings of the 40th Annual Symposium on Foundations of Computer Science (FOCS)*. IEEE: 554–567.
-[↑](#cite_ref-BGN_46-0) Boneh, Dan; Goh, Eu-Jin; Nissim, Kobbi (2005). "Evaluating 2-DNF formulas on ciphertexts". *Theory of Cryptography Conference (TCC)*. LNCS 3378. Springer: 325–341.
-[↑](#cite_ref-BHJL17_47-0) Benhamouda, Fabrice; Herranz, Javier; Joye, Marc; Libert, Benoît (2017). ["Efficient cryptosystems from 2*k*-th power residue symbols"](https://link.springer.com/content/pdf/10.1007/s00145-016-9229-5.pdf) (PDF). *Journal of Cryptology*. **30** (2): 519–549. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/s00145-016-9229-5](https://doi.org/10.1007%2Fs00145-016-9229-5). [hdl](//en.wikipedia.org/wiki/Hdl_(identifier) "Hdl (identifier)"):[2117/103661](https://hdl.handle.net/2117%2F103661). [S2CID](//en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [62063](https://api.semanticscholar.org/CorpusID:62063).
-[↑](#cite_ref-48) Castagnos, Guilhem; Laguillaumie, Fabien (2015). ["Linearly Homomorphic Encryption from DDH"](https://eprint.iacr.org/2015/047.pdf) (PDF). In Nyberg, Kaisa (ed.). *Topics in Cryptology – CT-RSA 2015, The Cryptographer's Track at the RSA Conference 2015, San Francisco, CA, USA, April 20–24, 2015. Proceedings*. Lecture Notes in Computer Science. Vol. 9048. Springer. pp. 487–505. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-319-16715-2_26](https://doi.org/10.1007%2F978-3-319-16715-2_26). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-319-16714-5](//en.wikipedia.org/wiki/Special:BookSources/978-3-319-16714-5 "Special:BookSources/978-3-319-16714-5").
-[↑](#cite_ref-49) Hong, Cheng (2025). ["Recent advances of privacy‑preserving machine learning based on (Fully) Homomorphic Encryption"](https://sands.edpsciences.org/articles/sands/pdf/2025/01/sands20240021.pdf) (PDF). *Security and Safety (S&S)*. **4** 2024012. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1051/sands/2024012](https://doi.org/10.1051%2Fsands%2F2024012). Retrieved 1 April 2026.
-[↑](#cite_ref-50) ["Title of the document (HAL preprint)"](https://hal.science/tel-01918263v1/file/main.pdf) (PDF). *HAL Open Archive*. Retrieved 1 April 2026.
-[↑](#cite_ref-LightPHE-github_51-0) Sefik Ilkin Serengil. ["LightPHE: A Lightweight Partially Homomorphic Encryption Library for Python"](https://github.com/serengil/LightPHE). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 15 April 2026.
-[↑](#cite_ref-CHK+18_52-0) Jung Hee Cheon, Kyoohyung Han, Andrey Kim, Miran Kim and Yongsoo Song. [Bootstrapping for Approximate Homomorphic Encryption](https://eprint.iacr.org/2018/153). In *EUROCRYPT 2018 (Springer)*.
-[↑](#cite_ref-HElib_53-0) Shai Halevi; Victor Shoup. ["HElib: An Implementation of homomorphic encryption"](https://github.com/homenc/HElib). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 31 December 2014.
-[↑](#cite_ref-SEAL_54-0) Microsoft Research. ["Microsoft SEAL"](https://www.microsoft.com/en-us/research/project/microsoft-seal). *[Microsoft](//en.wikipedia.org/wiki/Microsoft "Microsoft")*. Retrieved 20 February 2019.
-[↑](#cite_ref-PALISADE_55-0) ["PALISADE Lattice Cryptography Library"](http://palisade-crypto.org). Retrieved 1 January 2019.
-[↑](#cite_ref-HEAAN_56-0) Jung Hee Cheon; Kyoohyung Han; Andrey Kim; Miran Kim; Yongsoo Song. ["Homomorphic Encryption for Arithmetic of Approximate Numbers"](https://github.com/snucrypto/HEAAN). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 15 May 2016.
-[↑](#cite_ref-FVNFLlib_57-0) Crypto Experts. ["FV-NFLlib"](https://github.com/CryptoExperts/FV-NFLlib). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 1 November 2019.
-[↑](#cite_ref-NuFHE_58-0) NuCypher. ["A GPU implementation of fully homomorphic encryption on torus"](https://github.com/nucypher/nufhe). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 1 November 2019.
-[↑](#cite_ref-REDcuFHE_59-0) Trustworthy Computing (TwC) Group. ["A Multi-GPU Implementation of the CGGI Cryptosystem"](https://github.com/TrustworthyComputing/REDcuFHE). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 7 March 2023.
-[↑](#cite_ref-Lattigo_60-0) EPFL-LDS. ["Lattigo v3.0.5"](https://github.com/tuneinsight/lattigo). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 13 September 2022.
-[↑](#cite_ref-BOSSUAT+21_61-0) Jean-Philippe Bossuat, Christian Mouchet, Juan Troncoso-Pastoriza and Jean-Pierre Hubaux. [Efficient Bootstrapping for Approximate Homomorphic Encryption with Non-Sparse Keys](https://eprint.iacr.org/2020/1203). In *EUROCRYPT 2021 (Springer)*.
-[↑](#cite_ref-MOUCHET+20_62-0) Christian Mouchet, Juan Troncoso-Pastoriza, Jean-Philippe Bossuat and Jean-Pierre Hubaux. [Multiparty Homomorphic Encryption from Ring-Learning-With-Errors](https://eprint.iacr.org/2020/304).
-[↑](#cite_ref-TFHE-rs_63-0) Zama (15 June 2023). ["TFHE-rs"](https://github.com/zama-ai/tfhe-rs). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*.
-[↑](#cite_ref-64) Chillotti, Ilaria; Joye, Marc; Paillier, Pascal (2021). ["Programmable Bootstrapping Enables Efficient Homomorphic Inference of Deep Neural Networks"](https://eprint.iacr.org/2021/091.pdf) (PDF). *Cyber Security Cryptography and Machine Learning*. Lecture Notes in Computer Science. Vol. 12716. pp. 1–19. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-030-78086-9_1](https://doi.org/10.1007%2F978-3-030-78086-9_1). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-030-78085-2](//en.wikipedia.org/wiki/Special:BookSources/978-3-030-78085-2 "Special:BookSources/978-3-030-78085-2"). [S2CID](//en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [231732347](https://api.semanticscholar.org/CorpusID:231732347). Retrieved 17 November 2022.
-[↑](#cite_ref-Liberate.FHE_65-0) Desilo. ["Liberate.FHE"](https://github.com/Desilo/liberate-fhe). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 7 March 2024.
-[↑](#cite_ref-Concrete_66-0) Zama. ["Concrete"](https://github.com/zama-ai/concrete). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 20 May 2022.
-[↑](#cite_ref-ConcretePython_67-0) Zama (15 June 2023). ["Concrete Python"](https://pypi.org/project/concrete-python/). *[Pypi](//en.wikipedia.org/wiki/Pypi "Pypi")*.
-[↑](#cite_ref-E3_68-0) MoMA Lab, New York University Abu Dhabi (2019-07-24). ["Encrypt-Everything-Everywhere (E3)"](https://github.com/momalab/e3). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 27 July 2019.
-[↑](#cite_ref-SHEEP_69-0) Alan Turing Institute, London, UK (2019-11-01). ["SHEEP, a Homomorphic Encryption Evaluation Platform"](https://github.com/alan-turing-institute/SHEEP). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 1 November 2019.`{{[cite web](//en.wikipedia.org/wiki/Template:Cite_web "Template:Cite web")}}`: CS1 maint: multiple names: authors list ([link](//en.wikipedia.org/wiki/Category:CS1_maint:_multiple_names:_authors_list "Category:CS1 maint: multiple names: authors list"))
-[↑](#cite_ref-T2_70-0) Trustworthy Computing (TwC) Group (2023-03-02). ["T2: A cross compiler and standardized benchmarks for FHE computation"](https://github.com/TrustworthyComputing/T2-FHE-Compiler-and-Benchmarks). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 3 February 2023.
-[↑](#cite_ref-HELM_71-0) Trustworthy Computing (TwC) Group (2024-07-29). ["HELM: Navigating Homomorphic Evaluation through Gates and Lookups"](https://github.com/TrustworthyComputing/helm). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 29 July 2024.
-[↑](#cite_ref-Juliet_72-0) Trustworthy Computing (TwC) Group (2024-06-25). ["Juliet: A Configurable Processor for Computing on Encrypted Data"](https://github.com/TrustworthyComputing/Juliet). *[GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")*. Retrieved 25 June 2024.
-[↑](#cite_ref-73) TrustworthyComputing (2024-07-18), [*TrustworthyComputing/PEEV-verifiableFHE*](https://github.com/TrustworthyComputing/PEEV-verifiableFHE), retrieved 2024-07-18
-[↑](#cite_ref-74) ["Homomorphic Encryption Standardization Workshop"](https://www.microsoft.com/en-us/research/event/homomorphic-encryption-standardization-workshop/). Microsoft. 2017-07-13. Retrieved 2022-05-12.
-[↑](#cite_ref-75) ["Intel, Microsoft Research and Duality Technologies Convene AI Community for Privacy Standards"](https://newsroom.intel.com/news/intel-microsoft-research-duality-technologies-convene-ai-community-privacy-standards/). Intel Newsroom. 2019-08-16. Retrieved 2022-05-12.
-[↑](#cite_ref-76) ["Intel, Microsoft join DARPA effort to accelerate fully homomorphic encryption"](https://www.csoonline.com/article/3610752/intel-microsoft-join-darpa-effort-to-accelerate-fully-homomorphic-encryption.html). 8 March 2021.
+[edit]- ↑ Technology, Massachusetts Institute of. "Researchers develop innovative method for secure operations on encrypted data without decryption". techxplore.com. Retrieved 2025-04-01.
+- ↑ Sellers, Andrew. "Council Post: Everything You Wanted To Know About Homomorphic Encryption (But Were Afraid To Ask)". Forbes. Retrieved 2023-08-18.
+- ↑ Munjal, Kundan; Bhatia, Rekha (2022). "A systematic review of homomorphic encryption and its contributions in healthcare industry". Complex & Intelligent Systems. 9 (4): 3759–3786. doi:10.1007/s40747-022-00756-z. PMC 9062639. PMID 35531323.
+- ↑ "The State of Homomorphic Encryption". University of Waterloo Repository. Retrieved 13 March 2026.
+- ↑ Armknecht, Frederik; Boyd, Colin; Gjøsteen, Kristian; Jäschke, Angela; Reuter, Christian; Strand, Martin (2015). "A Guide to Fully Homomorphic Encryption". Cryptology ePrint Archive.
+- ↑ Daniele Micciancio (2010-03-01). "A First Glimpse of Cryptography's Holy Grail". Association for Computing Machinery. p. 96. Retrieved 2010-03-17.
+- ↑ Vinod Vaikuntanathan. "Homomorphic Encryption References".
+- ↑ R. L. Rivest, L. Adleman, and M. L. Dertouzos. On data banks and privacy homomorphisms. In Foundations of Secure Computation, 1978.
+- ↑ Sander, Tomas; Young, Adam L.; Yung, Moti (1999). "Non-interactive cryptocomputing for NC/Sup 1/". 40th Annual Symposium on Foundations of Computer Science (Cat. No.99CB37039). pp. 554–566. doi:10.1109/SFFCS.1999.814630. ISBN 978-0-7695-0409-4. S2CID 1976588.
+- ↑ D. Boneh, E. Goh, and K. Nissim. Evaluating 2-DNF Formulas on Ciphertexts. In Theory of Cryptography Conference, 2005.
+- ↑ Y. Ishai and A. Paskin. Evaluating branching programs on encrypted data. In Theory of Cryptography Conference, 2007.
+- ↑ Gentry, Craig (2009). "Fully homomorphic encryption using ideal lattices". Proceedings of the forty-first annual ACM symposium on Theory of computing. pp. 169–178. doi:10.1145/1536414.1536440. ISBN 978-1-60558-506-2.
+- ↑ Craig Gentry. A Fully Homomorphic Encryption Scheme (PDF) (PhD Thesis). Stanford University.
+- ↑ Gentry, Craig; Halevi, Shai (2010). "Implementing Gentry's Fully-Homomorphic Encryption Scheme". Advances in Cryptology – EUROCRYPT 2011. Lecture Notes in Computer Science. Vol. 6632. pp. 129–148. doi:10.1007/978-3-642-20465-4_9. ISBN 978-3-642-20464-7.
+- ↑ Van Dijk, Marten; Gentry, Craig; Halevi, Shai; Vinod, Vaikuntanathan (2009). "Fully Homomorphic Encryption over the Integers". Advances in Cryptology – EUROCRYPT 2010. Lecture Notes in Computer Science. Vol. 6110. pp. 24–43. doi:10.1007/978-3-642-13190-5_2. ISBN 978-3-642-13189-9.
+- ↑ Levieil, Eric; Naccache, David (2008). "Cryptographic Test Correction" (PDF). Public Key Cryptography – PKC 2008. Lecture Notes in Computer Science. Vol. 4939. pp. 85–100. doi:10.1007/978-3-540-78440-1_6. ISBN 978-3-540-78439-5.
+- ↑ Cohen, Bram. "Simple Public Key Encryption". Archived from the original on 2011-10-07.
+- ↑ Coron, Jean-Sébastien; Naccache, David; Tibouchi, Mehdi (2011). "Public Key Compression and Modulus Switching for Fully Homomorphic Encryption over the Integers". Advances in Cryptology – EUROCRYPT 2012. Lecture Notes in Computer Science. Vol. 7237. pp. 446–464. doi:10.1007/978-3-642-29011-4_27. ISBN 978-3-642-29010-7.
+- ↑ Coron, Jean-Sébastien; Mandal, Avradip; Naccache, David; Tibouchi, Mehdi (2011). "Fully Homomorphic Encryption over the Integers with Shorter Public Keys". In Rogaway, P. (ed.). Advances in Cryptology – CRYPTO 2011. Lecture Notes in Computer Science. Vol. 6841. pp. 487–504. doi:10.1007/978-3-642-22792-9_28. ISBN 978-3-642-22791-2.
+- 1 2 Coron, Jean-Sébastien; Lepoint, Tancrède; Tibouchi, Mehdi (2013). "Batch Fully Homomorphic Encryption over the Integers". Advances in Cryptology – EUROCRYPT 2013. Lecture Notes in Computer Science. Vol. 7881. pp. 315–335. doi:10.1007/978-3-642-38348-9_20. ISBN 978-3-642-38347-2.
+- 1 2 Coron, Jean-Sébastien; Lepoint, Tancrède; Tibouchi, Mehdi (2014). "Scale-Invariant Fully Homomorphic Encryption over the Integers". Public-Key Cryptography – PKC 2014. Lecture Notes in Computer Science. Vol. 8383. pp. 311–328. doi:10.1007/978-3-642-54631-0_18. ISBN 978-3-642-54630-3.
+- 1 2 Z. Brakerski, C. Gentry, and V. Vaikuntanathan. Fully Homomorphic Encryption without Bootstrapping, In ITCS 2012
+- ↑ Z. Brakerski and V. Vaikuntanathan. Efficient Fully Homomorphic Encryption from (Standard) LWE. In FOCS 2011 (IEEE)
+- ↑ A. Lopez-Alt, E. Tromer, and V. Vaikuntanathan. On-the-Fly Multiparty Computation on the Cloud via Multikey Fully Homomorphic Encryption. In STOC 2012 (ACM)
+- 1 2 Fan, Junfeng; Vercauteren, Frederik (2012). "Somewhat Practical Fully Homomorphic Encryption". Cryptology ePrint Archive.
+- 1 2 Z. Brakerski. Fully Homomorphic Encryption without Modulus Switching from Classical GapSVP, In CRYPTO 2012 (Springer)
+- ↑ J. Bos, K. Lauter, J. Loftus, and M. Naehrig. Improved Security for a Ring-Based Fully Homomorphic Encryption Scheme. In IMACC 2013 (Springer)
+- 1 2 M. Albrecht, S. Bai, and L. Ducas. A subfield lattice attack on overstretched NTRU assumptions, In CRYPTO 2016 (Springer)
+- ↑ Cheon, J. H.; Jeong, J; Lee, C. (2016). "An algorithm for NTRU problems and cryptanalysis of the GGH multilinear map without a low-level encoding of zero". LMS Journal of Computation and Mathematics. 19 (1): 255–266. doi:10.1112/S1461157016000371.
+- ↑ C. Gentry, S. Halevi, and N. P. Smart. Fully Homomorphic Encryption with Polylog Overhead. In EUROCRYPT 2012 (Springer)
+- ↑ C. Gentry, S. Halevi, and N. P. Smart. Better Bootstrapping in Fully Homomorphic Encryption. In PKC 2012 (SpringeR)
+- ↑ C. Gentry, S. Halevi, and N. P. Smart. Homomorphic Evaluation of the AES Circuit. In CRYPTO 2012 (Springer)
+- ↑ Smart, Nigel P.; Vercauteren, Frederik (2014). "Fully Homomorphic SIMD Operations". Designs, Codes and Cryptography. 71 (1): 57–81. CiteSeerX 10.1.1.294.4088. doi:10.1007/s10623-012-9720-4. hdl:1983/caaadb2e-a720-4daf-8016-5d7764b27a9f. S2CID 11202438.
+- ↑ C. Gentry, A. Sahai, and B. Waters. Homomorphic Encryption from Learning with Errors: Conceptually-Simpler, Asymptotically-Faster, Attribute-Based. In CRYPTO 2013 (Springer)
+- ↑ Z. Brakerski and V. Vaikuntanathan. Lattice-Based FHE as Secure as PKE. In ITCS 2014
+- 1 2 J. Alperin-Sheriff and C. Peikert. Faster Bootstrapping with Polynomial Error. In CRYPTO 2014 (Springer)
+- 1 2 3 4 Leo Ducas; Daniele Micciancio. "FHEW: A Fully Homomorphic Encryption library". GitHub. Retrieved 31 December 2014.
+- 1 2 3 Ilaria Chillotti; Nicolas Gama; Mariya Georgieva; Malika Izabachene. "Faster Fully Homomorphic Encryption: Bootstrapping in less than 0.1 Seconds". Retrieved 31 December 2016.
+- ↑ N. Gama, M. Izabachène, P.Q. Nguyen, and X. Xie Structural Lattice Reduction: Generalized Worst-Case to Average-Case Reductions and Homomorphic Cryptosystems. In EUROCRYPT 2016 (Springer)
+- 1 2 Cheon, Jung Hee; Kim, Andrey; Kim, Miran; Song, Yongsoo (2017). "Homomorphic encryption for arithmetic of approximate numbers". Takagi T., Peyrin T. (eds) Advances in Cryptology – ASIACRYPT 2017. ASIACRYPT 2017. Lecture Notes in Computer Science. Vol. 10624. Springer, Cham. pp. 409–437. doi:10.1007/978-3-319-70694-8_15. ISBN 978-3-319-70693-1.
+- ↑ Kim A., Papadimitriou A., Polyakov Y. Approximate Homomorphic Encryption with Reduced Approximation Error, In CT-RSA 2022 (Springer)
+- ↑ Li, Baily; Micciancio, Daniele (2020). "On the Security of Homomorphic Encryption on Approximate Numbers" (PDF). IACR ePrint Archive 2020/1533.
+- ↑ Cheon, Jung Hee; Hong, Seungwan; Kim, Duhyeong (2020). "Remark on the Security of CKKS Scheme in Practice" (PDF). IACR ePrint Archive 2020/1581.
+- ↑ "Security of CKKS". Retrieved 10 March 2021.
+- ↑ Sander, Tomas; Young, Adam L.; Yung, Moti (1999). "Non-interactive cryptocomputing for NC". Proceedings of the 40th Annual Symposium on Foundations of Computer Science (FOCS). IEEE: 554–567.
+- ↑ Boneh, Dan; Goh, Eu-Jin; Nissim, Kobbi (2005). "Evaluating 2-DNF formulas on ciphertexts". Theory of Cryptography Conference (TCC). LNCS 3378. Springer: 325–341.
+- ↑ Benhamouda, Fabrice; Herranz, Javier; Joye, Marc; Libert, Benoît (2017). "Efficient cryptosystems from 2k-th power residue symbols" (PDF). Journal of Cryptology. 30 (2): 519–549. doi:10.1007/s00145-016-9229-5. hdl:2117/103661. S2CID 62063.
+- ↑ Castagnos, Guilhem; Laguillaumie, Fabien (2015). "Linearly Homomorphic Encryption from DDH" (PDF). In Nyberg, Kaisa (ed.). Topics in Cryptology – CT-RSA 2015, The Cryptographer's Track at the RSA Conference 2015, San Francisco, CA, USA, April 20–24, 2015. Proceedings. Lecture Notes in Computer Science. Vol. 9048. Springer. pp. 487–505. doi:10.1007/978-3-319-16715-2_26. ISBN 978-3-319-16714-5.
+- ↑ Hong, Cheng (2025). "Recent advances of privacy‑preserving machine learning based on (Fully) Homomorphic Encryption" (PDF). Security and Safety (S&S). 4 2024012. doi:10.1051/sands/2024012. Retrieved 1 April 2026.
+- ↑ "Title of the document (HAL preprint)" (PDF). HAL Open Archive. Retrieved 1 April 2026.
+- ↑ Sefik Ilkin Serengil. "LightPHE: A Lightweight Partially Homomorphic Encryption Library for Python". GitHub. Retrieved 15 April 2026.
+- ↑ Jung Hee Cheon, Kyoohyung Han, Andrey Kim, Miran Kim and Yongsoo Song. Bootstrapping for Approximate Homomorphic Encryption. In EUROCRYPT 2018 (Springer).
+- ↑ Shai Halevi; Victor Shoup. "HElib: An Implementation of homomorphic encryption". GitHub. Retrieved 31 December 2014.
+- ↑ Microsoft Research. "Microsoft SEAL". Microsoft. Retrieved 20 February 2019.
+- ↑ "PALISADE Lattice Cryptography Library". Retrieved 1 January 2019.
+- ↑ Jung Hee Cheon; Kyoohyung Han; Andrey Kim; Miran Kim; Yongsoo Song. "Homomorphic Encryption for Arithmetic of Approximate Numbers". GitHub. Retrieved 15 May 2016.
+- ↑ Crypto Experts. "FV-NFLlib". GitHub. Retrieved 1 November 2019.
+- ↑ NuCypher. "A GPU implementation of fully homomorphic encryption on torus". GitHub. Retrieved 1 November 2019.
+- ↑ Trustworthy Computing (TwC) Group. "A Multi-GPU Implementation of the CGGI Cryptosystem". GitHub. Retrieved 7 March 2023.
+- ↑ EPFL-LDS. "Lattigo v3.0.5". GitHub. Retrieved 13 September 2022.
+- ↑ Jean-Philippe Bossuat, Christian Mouchet, Juan Troncoso-Pastoriza and Jean-Pierre Hubaux. Efficient Bootstrapping for Approximate Homomorphic Encryption with Non-Sparse Keys. In EUROCRYPT 2021 (Springer).
+- ↑ Christian Mouchet, Juan Troncoso-Pastoriza, Jean-Philippe Bossuat and Jean-Pierre Hubaux. Multiparty Homomorphic Encryption from Ring-Learning-With-Errors.
+- ↑ Zama (15 June 2023). "TFHE-rs". GitHub.
+- ↑ Chillotti, Ilaria; Joye, Marc; Paillier, Pascal (2021). "Programmable Bootstrapping Enables Efficient Homomorphic Inference of Deep Neural Networks" (PDF). Cyber Security Cryptography and Machine Learning. Lecture Notes in Computer Science. Vol. 12716. pp. 1–19. doi:10.1007/978-3-030-78086-9_1. ISBN 978-3-030-78085-2. S2CID 231732347. Retrieved 17 November 2022.
+- ↑ Desilo. "Liberate.FHE". GitHub. Retrieved 7 March 2024.
+- ↑ Zama. "Concrete". GitHub. Retrieved 20 May 2022.
+- ↑ Zama (15 June 2023). "Concrete Python". Pypi.
+- ↑ MoMA Lab, New York University Abu Dhabi (2019-07-24). "Encrypt-Everything-Everywhere (E3)". GitHub. Retrieved 27 July 2019.
+- ↑ Alan Turing Institute, London, UK (2019-11-01). "SHEEP, a Homomorphic Encryption Evaluation Platform". GitHub. Retrieved 1 November 2019.{{cite web}}: CS1 maint: multiple names: authors list (link)
+- ↑ Trustworthy Computing (TwC) Group (2023-03-02). "T2: A cross compiler and standardized benchmarks for FHE computation". GitHub. Retrieved 3 February 2023.
+- ↑ Trustworthy Computing (TwC) Group (2024-07-29). "HELM: Navigating Homomorphic Evaluation through Gates and Lookups". GitHub. Retrieved 29 July 2024.
+- ↑ Trustworthy Computing (TwC) Group (2024-06-25). "Juliet: A Configurable Processor for Computing on Encrypted Data". GitHub. Retrieved 25 June 2024.
+- ↑ TrustworthyComputing (2024-07-18), TrustworthyComputing/PEEV-verifiableFHE, retrieved 2024-07-18
+- ↑ "Homomorphic Encryption Standardization Workshop". Microsoft. 2017-07-13. Retrieved 2022-05-12.
+- ↑ "Intel, Microsoft Research and Duality Technologies Convene AI Community for Privacy Standards". Intel Newsroom. 2019-08-16. Retrieved 2022-05-12.
+- ↑ "Intel, Microsoft join DARPA effort to accelerate fully homomorphic encryption". 8 March 2021.
 External links
-
-[FHE.org Community (conference, meetup and discussion group)](https://fhe.org)
-[Daniele Micciancio's FHE references](http://cseweb.ucsd.edu/~daniele/LatticeLinks/FHE.html)
-[Vinod Vaikuntanathan's FHE references](https://people.csail.mit.edu/vinodv/FHE/FHE-refs.html)
-["Alice and Bob in Cipherspace"](https://www.americanscientist.org/article/alice-and-bob-in-cipherspace). *American Scientist*. September 2012. Retrieved 2018-05-08.
-A [list of homomorphic encryption implementations](https://github.com/jonaschn/awesome-he) maintained on [GitHub](//en.wikipedia.org/wiki/GitHub "GitHub")
-![]
-
-[Homomorphic encryption](/wiki/Category:Homomorphic_encryption "Category:Homomorphic encryption")
-[Cryptographic primitives](/wiki/Category:Cryptographic_primitives "Category:Cryptographic primitives")
-[Public-key cryptography](/wiki/Category:Public-key_cryptography "Category:Public-key cryptography")
-[Information privacy](/wiki/Category:Information_privacy "Category:Information privacy")
-[Articles needing additional references from February 2025](/wiki/Category:Articles_needing_additional_references_from_February_2025 "Category:Articles needing additional references from February 2025")
-[All articles needing additional references](/wiki/Category:All_articles_needing_additional_references "Category:All articles needing additional references")
-[Articles with short description](/wiki/Category:Articles_with_short_description "Category:Articles with short description")
-[Short description is different from Wikidata](/wiki/Category:Short_description_is_different_from_Wikidata "Category:Short description is different from Wikidata")
-[CS1: long volume value](/wiki/Category:CS1:_long_volume_value "Category:CS1: long volume value")
-[CS1 maint: multiple names: authors list](/wiki/Category:CS1_maint:_multiple_names:_authors_list "Category:CS1 maint: multiple names: authors list")
-This page was last edited on 13 July 2026, at 03:33 (UTC).
-Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
-Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License");
-additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
-[Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
-[About Wikipedia](/wiki/Wikipedia:About)
-[Disclaimers](/wiki/Wikipedia:General_disclaimer)
-[Contact Wikipedia](//en.wikipedia.org/wiki/Wikipedia:Contact_us)
-[Legal & safety contacts](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
-[Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
-[Developers](https://developer.wikimedia.org)
-[Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
-[Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
-[Mobile view](//en.wikipedia.org/w/index.php?title=Homomorphic_encryption&mobileaction=toggle_view_mobile)
-[![Wikimedia Foundation]](https://www.wikimedia.org/)
-[![Powered by MediaWiki]](https://www.mediawiki.org/)
-![Wikimedia Foundation]
-
-![Powered by MediaWiki]
+[edit]- FHE.org Community (conference, meetup and discussion group)
+- Daniele Micciancio's FHE references
+- Vinod Vaikuntanathan's FHE references
+- "Alice and Bob in Cipherspace". American Scientist. September 2012. Retrieved 2018-05-08.
+- A list of homomorphic encryption implementations maintained on GitHub

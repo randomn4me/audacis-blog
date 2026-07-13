@@ -1,30 +1,17 @@
-… …
-QR code linking to https://gohugo.io/
-
-![QR code linking to https://gohugo.io/]
-
-![Hugo Logo]
-
-The world’s fastest framework for building websites
-
 Open source
-
-Hugo is open source and free to use. It is distributed under the
-Apache 2.0 License.
-
-![]
-
+Hugo is open source and free to use. It is distributed under the Apache 2.0 License.
+- Popular.
+- Hugo has 88,943 stars on GitHub as of July 12, 2026. Join the crowd and hit the Star button.
+- Active.
+- Hugo has a large and active community. If you have questions or need help, you can ask in the Hugo forums.
+- Frequent releases.
+- Hugo has a fast release cycle. The project is actively maintained and new features are added regularly.
 Hugo Sponsors
-
-![Hugo Logo]
-
-[@GoHugoIO](https://fosstodon.org/@gohugoio)
-[@spf13](https://twitter.com/spf13)
-[@bepsays](https://twitter.com/bepsays)
-[File an issue](https://github.com/gohugoio/hugo/issues/new)
-[Get help](https://discourse.gohugo.io/)
-[Find a theme](https://themes.gohugo.io/)
-Hugo Sponsors
-
-The Hugo logos are copyright © Steve Francia 2013–2026. The
-Hugo Gopher is based on an original work by Renée French.
+- Optimized for speed
+- Written in Go, optimized for speed and designed for flexibility. With its advanced templating system and fast asset pipelines, Hugo renders a large site in seconds, often less.
+- Flexible framework
+- With its multilingual support, and powerful taxonomy system, Hugo is widely used to create documentation sites, landing pages, corporate, government, nonprofit, education, news, event, and project sites.
+- Fast assets pipeline
+- Image processing (convert, resize, crop, rotate, adjust colors, apply filters, overlay text and images, and extract EXIF data), JavaScript bundling (tree shake, code splitting), Sass processing, great TailwindCSS support.
+- Embedded web server
+- Use Hugo's embedded web server during development to instantly see changes to content, structure, behavior, and presentation.

@@ -5,12 +5,18 @@ Complements the lychee link-check workflows: lychee tells you a link is *broken*
 (404), linkwatch tells you the page behind a still-working link *changed*.
 
 Flow: collect every external URL from content/**/*.md, fetch each over plain
-HTTP with a hard timeout, extract readable text with kreuzberg (HTML or PDF by
-content type), normalise it, and compare against the committed snapshot in
+HTTP with a hard timeout, extract the *main content* (trafilatura for HTML,
+kreuzberg for PDF), normalise it, and compare against the committed snapshot in
 .linkwatch/snapshots/. On any text difference it opens one Forgejo issue listing
 the changed URLs with diffs. The workflow then commits the rewritten snapshots,
 so the next run only fires on *further* drift. No JS rendering: server-rendered
 HTML is what most cited pages serve, and it can't hang the run.
+
+Main content, not whole page: extracting everything meant star counters, ad
+rails, related-article carousels and nav churned every week and buried real
+drift. Body-only extraction keeps the diff to what the citation actually rests
+on. Pages that defeat it (JS-built docs, login walls) fall back to whole-page
+kreuzberg text, which is noisier but better than an empty snapshot.
 
 Exact text comparison is the trigger (a one-word edit fires); the reported
 SequenceMatcher ratio only labels how big the change is. URLs matching a line in
@@ -36,6 +42,7 @@ import urllib.error
 import urllib.request
 from pathlib import Path
 
+import trafilatura
 from kreuzberg import extract_bytes_sync
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -69,6 +76,9 @@ RENDER_BUDGET_S = 180
 USER_AGENT = "linkwatch/1 (+https://audacis.net; content-drift monitor)"
 MAX_DIFF_LINES = 80  # truncate per-URL diffs so issues stay readable
 MAX_CONTENT_CHARS = 16_000  # cap embedded full-text so issues stay manageable
+# Below this, treat main-content extraction as failed and fall back to
+# whole-page text: a nav-only shell extracts to a handful of chars.
+MIN_MAIN_CHARS = 200
 
 # Inline-link target `](url)`, autolink `<url>`, and bare url. Trailing
 # punctuation that markdown/prose tends to glue on is stripped afterwards.
@@ -114,6 +124,9 @@ def snapshot_path(url: str) -> Path:
 def normalise(text: str) -> str:
     """Stabilise extracted text: strip per-request noise, collapse blank runs.
 
+    Mostly load-bearing for the kreuzberg fallback path, which emits markdown;
+    trafilatura returns plain text with no link or image targets to churn.
+
     Pages vary between fetches without their content changing. Three classes
     dominate and would otherwise fire false drift:
     - base64 `data:` URIs (e.g. arXiv SVGs) reorder attributes per request;
@@ -141,12 +154,28 @@ def normalise(text: str) -> str:
     return "\n".join(out).strip() + "\n"
 
 
+def extract(data: bytes, is_pdf: bool) -> str:
+    """Main-content text: trafilatura for HTML, kreuzberg for PDF.
+
+    trafilatura returns the article body and drops nav, ads, sidebars and
+    counters. It gives up on pages whose body is built by JS or hidden behind a
+    wall; there we fall back to kreuzberg's whole-page text.
+    """
+    if is_pdf:
+        return extract_bytes_sync(data, "application/pdf").content
+    main = trafilatura.extract(
+        data.decode("utf-8", "ignore"), include_comments=False, include_tables=True
+    )
+    if main and len(main) >= MIN_MAIN_CHARS:
+        return main
+    return extract_bytes_sync(data, "text/html").content
+
+
 def fetch_text(url: str) -> str | None:
     """Fetched, extracted, normalised text, or None if the fetch failed.
 
     Plain HTTP with a hard socket timeout (no JS rendering): bounded, can't
-    hang, and no browser to install. kreuzberg extracts text from HTML or PDF
-    by the response content type.
+    hang, and no browser to install.
     """
     if _HAS_ALARM:
         signal.alarm(HARD_FETCH_S)
@@ -155,9 +184,9 @@ def fetch_text(url: str) -> str | None:
             url, headers={"User-Agent": USER_AGENT, "Accept": "*/*"}
         )
         with urllib.request.urlopen(req, timeout=HTTP_TIMEOUT) as resp:
-            mime = "application/pdf" if "pdf" in resp.headers.get_content_type() else "text/html"
+            is_pdf = "pdf" in resp.headers.get_content_type()
             data = resp.read(MAX_BYTES)
-        return normalise(extract_bytes_sync(data, mime).content)
+        return normalise(extract(data, is_pdf))
     except Exception as exc:  # noqa: BLE001 - incl. FetchTimeout; lychee owns 404s
         print(f"  ! fetch failed: {url}\n    {type(exc).__name__}: {exc}")
         return None

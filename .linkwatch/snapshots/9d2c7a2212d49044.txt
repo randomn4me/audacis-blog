@@ -1,513 +1,121 @@
 LaTeX
-
-[Aragonés](https://an.wikipedia.org/wiki/LaTeX "LaTeX – Aragonese")
-[العربية](https://ar.wikipedia.org/wiki/%D9%84%D8%A7%D8%AA%D8%AE "لاتخ – Arabic")
-[Boarisch](https://bar.wikipedia.org/wiki/LaTeX "LaTeX – Bavarian")
-[Български](https://bg.wikipedia.org/wiki/LaTeX "LaTeX – Bulgarian")
-[বাংলা](https://bn.wikipedia.org/wiki/%E0%A6%B2%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%9F%E0%A7%87%E0%A6%95 "ল্যাটেক – Bangla")
-[Brezhoneg](https://br.wikipedia.org/wiki/LaTeX "LaTeX – Breton")
-[Bosanski](https://bs.wikipedia.org/wiki/LaTeX "LaTeX – Bosnian")
-[Català](https://ca.wikipedia.org/wiki/LaTeX "LaTeX – Catalan")
-[Čeština](https://cs.wikipedia.org/wiki/LaTeX "LaTeX – Czech")
-[Dansk](https://da.wikipedia.org/wiki/LaTeX "LaTeX – Danish")
-[Deutsch](https://de.wikipedia.org/wiki/LaTeX "LaTeX – German")
-[Ελληνικά](https://el.wikipedia.org/wiki/LaTeX "LaTeX – Greek")
-[Esperanto](https://eo.wikipedia.org/wiki/LaTeX "LaTeX – Esperanto")
-[Español](https://es.wikipedia.org/wiki/LaTeX "LaTeX – Spanish")
-[Eesti](https://et.wikipedia.org/wiki/LaTeX "LaTeX – Estonian")
-[Euskara](https://eu.wikipedia.org/wiki/LaTeX "LaTeX – Basque")
-[فارسی](https://fa.wikipedia.org/wiki/%D9%84%D8%A7%D8%AA%D8%AE "لاتخ – Persian")
-[Suomi](https://fi.wikipedia.org/wiki/LaTeX "LaTeX – Finnish")
-[Français](https://fr.wikipedia.org/wiki/LaTeX "LaTeX – French")
-[Galego](https://gl.wikipedia.org/wiki/LaTeX "LaTeX – Galician")
-[עברית](https://he.wikipedia.org/wiki/LaTeX "LaTeX – Hebrew")
-[हिन्दी](https://hi.wikipedia.org/wiki/%E0%A4%B2%E0%A4%BE%E0%A4%9F%E0%A5%87%E0%A4%95 "लाटेक – Hindi")
-[Hrvatski](https://hr.wikipedia.org/wiki/LaTeX "LaTeX – Croatian")
-[Magyar](https://hu.wikipedia.org/wiki/LaTeX "LaTeX – Hungarian")
-[Հայերեն](https://hy.wikipedia.org/wiki/LaTeX "LaTeX – Armenian")
-[Interlingua](https://ia.wikipedia.org/wiki/LaTeX "LaTeX – Interlingua")
-[Bahasa Indonesia](https://id.wikipedia.org/wiki/LaTeX "LaTeX – Indonesian")
-[Íslenska](https://is.wikipedia.org/wiki/LaTeX "LaTeX – Icelandic")
-[Italiano](https://it.wikipedia.org/wiki/LaTeX "LaTeX – Italian")
-[日本語](https://ja.wikipedia.org/wiki/LaTeX "LaTeX – Japanese")
-[Қазақша](https://kk.wikipedia.org/wiki/LaTeX "LaTeX – Kazakh")
-[한국어](https://ko.wikipedia.org/wiki/LaTeX "LaTeX – Korean")
-[Latviešu](https://lv.wikipedia.org/wiki/LaTeX "LaTeX – Latvian")
-[മലയാളം](https://ml.wikipedia.org/wiki/%E0%B4%B2%E0%B4%BE%E0%B4%9F%E0%B5%86%E0%B4%95%E0%B5%8D%E0%B4%95%E0%B5%8D "ലാടെക്ക് – Malayalam")
-[Монгол](https://mn.wikipedia.org/wiki/LaTeX "LaTeX – Mongolian")
-[Bahasa Melayu](https://ms.wikipedia.org/wiki/LaTeX "LaTeX – Malay")
-[Nederlands](https://nl.wikipedia.org/wiki/LaTeX "LaTeX – Dutch")
-[Norsk bokmål](https://no.wikipedia.org/wiki/LaTeX "LaTeX – Norwegian Bokmål")
-[Occitan](https://oc.wikipedia.org/wiki/LaTeX "LaTeX – Occitan")
-[Polski](https://pl.wikipedia.org/wiki/LaTeX "LaTeX – Polish")
-[پنجابی](https://pnb.wikipedia.org/wiki/%D9%84%D8%A7%D9%B9%DB%8C%DA%A9 "لاٹیک – Western Punjabi")
-[Português](https://pt.wikipedia.org/wiki/LaTeX "LaTeX – Portuguese")
-[Runa Simi](https://qu.wikipedia.org/wiki/LaTeX "LaTeX – Quechua")
-[Română](https://ro.wikipedia.org/wiki/LaTeX "LaTeX – Romanian")
-[Русский](https://ru.wikipedia.org/wiki/LaTeX "LaTeX – Russian")
-[Scots](https://sco.wikipedia.org/wiki/LaTeX "LaTeX – Scots")
-[Srpskohrvatski / српскохрватски](https://sh.wikipedia.org/wiki/LaTeX "LaTeX – Serbo-Croatian")
-[Simple English](https://simple.wikipedia.org/wiki/LaTeX "LaTeX – Simple English")
-[Slovenčina](https://sk.wikipedia.org/wiki/LaTeX "LaTeX – Slovak")
-[Shqip](https://sq.wikipedia.org/wiki/LaTeX "LaTeX – Albanian")
-[Српски / srpski](https://sr.wikipedia.org/wiki/LaTeX "LaTeX – Serbian")
-[Svenska](https://sv.wikipedia.org/wiki/Latex_(typs%C3%A4ttningssystem) "Latex (typsättningssystem) – Swedish")
-[Тоҷикӣ](https://tg.wikipedia.org/wiki/LaTeX "LaTeX – Tajik")
-[ไทย](https://th.wikipedia.org/wiki/%E0%B8%A5%E0%B8%B2%E0%B9%80%E0%B8%97%E0%B8%81%E0%B8%8B%E0%B9%8C "ลาเทกซ์ – Thai")
-[Türkçe](https://tr.wikipedia.org/wiki/LaTeX "LaTeX – Turkish")
-[ئۇيغۇرچە / Uyghurche](https://ug.wikipedia.org/wiki/Latex "Latex – Uyghur")
-[Українська](https://uk.wikipedia.org/wiki/LaTeX "LaTeX – Ukrainian")
-[اردو](https://ur.wikipedia.org/wiki/%D9%84%D8%A7%D9%B9%DB%8C%DA%A9 "لاٹیک – Urdu")
-[Oʻzbekcha / ўзбекча](https://uz.wikipedia.org/wiki/LaTeX "LaTeX – Uzbek")
-[Vèneto](https://vec.wikipedia.org/wiki/LaTeX "LaTeX – Venetian")
-[Tiếng Việt](https://vi.wikipedia.org/wiki/LaTeX "LaTeX – Vietnamese")
-[Walon](https://wa.wikipedia.org/wiki/Latex "Latex – Walloon")
-[吴语](https://wuu.wikipedia.org/wiki/LaTeX "LaTeX – Wu")
-[文言](https://zh-classical.wikipedia.org/wiki/%E8%98%AD%E6%B0%8F%E8%81%9A%E7%8F%8D "蘭氏聚珍 – Literary Chinese")
-[閩南語 / Bân-lâm-gí](https://zh-min-nan.wikipedia.org/wiki/LaTeX "LaTeX – Minnan")
-[粵語](https://zh-yue.wikipedia.org/wiki/LaTeX "LaTeX – Cantonese")
-[中文](https://zh.wikipedia.org/wiki/LaTeX "LaTeX – Chinese")
-![]
-
-![Edit this on Wikidata]
-
-![Edit this at Wikidata]
-
-![]
-
-![Edit this on Wikidata]
-
-![Edit this at Wikidata]
-
-![]
-
-![Edit this on Wikidata]
-
-![Edit this at Wikidata]
-
-LaTeX
-[![]](//en.wikipedia.org/wiki/File:LaTeX_project_logo_bird.svg)
-The LaTeX Project logo
-[Original author](//en.wikipedia.org/wiki/Programmer "Programmer") [Leslie Lamport](//en.wikipedia.org/wiki/Leslie_Lamport "Leslie Lamport")
-Release 1984; 42 years ago (1984)
-
-[Stable release](//en.wikipedia.org/wiki/Software_release_life_cycle "Software release life cycle") November 2024 LaTeX release[[1]](#cite_note-wikidata-8849cc4b0fcde530cecd7519fcbfbb0cfcc35855-v20-1) [![Edit this on Wikidata]](https://www.wikidata.org/wiki/Q5310 "Edit this on Wikidata")
- / 1 November 2024; 20 months ago (1 November 2024)
-
-[Type](//en.wikipedia.org/wiki/Software_categories#Categorization_approaches "Software categories") [Typesetting](//en.wikipedia.org/wiki/Typesetting "Typesetting")
-[License](//en.wikipedia.org/wiki/Software_license "Software license") [LaTeX Project Public License](//en.wikipedia.org/wiki/LaTeX_Project_Public_License "LaTeX Project Public License") (LPPL)
-Website [www.latex-project.org](https://www.latex-project.org)
-[Repository](//en.wikipedia.org/wiki/Repository_(version_control) "Repository (version control)") <br>[github.com/latex3/latex2e](https://github.com/latex3/latex2e) [![Edit this at Wikidata]](https://www.wikidata.org/wiki/Q5310#P1324 "Edit this at Wikidata")
-
-**LaTeX** ([/ˈlɑːtɛx/](//en.wikipedia.org/wiki/Help:IPA/English "Help:IPA/English") [*LAH-tekh*](//en.wikipedia.org/wiki/Help:Pronunciation_respelling_key "Help:Pronunciation respelling key") or [/ˈleɪtɛx/](//en.wikipedia.org/wiki/Help:IPA/English "Help:IPA/English") [*LAY-tekh*](//en.wikipedia.org/wiki/Help:Pronunciation_respelling_key "Help:Pronunciation respelling key"), to rhyme with "blech"[[2]](#cite_note-2)), often stylized as  **LaTeX**, is a [software system](//en.wikipedia.org/wiki/Software_system "Software system") for [typesetting](//en.wikipedia.org/wiki/Typesetting "Typesetting") documents,[[3]](#cite_note-Lamport1986-3) based on the [TeX](//en.wikipedia.org/wiki/TeX "TeX") typesetting system. LaTeX provides a high-level, descriptive markup language to use TeX more easily: TeX handles the document layout, while LaTeX handles the content side for document processing. Because the plain TeX formatting commands are elementary, it provides authors with ready-made commands for formatting and layout requirements such as chapter headings, footnotes, cross-references and bibliographies.
-
-LaTeX was originally written in the early 1980s by [Leslie Lamport](//en.wikipedia.org/wiki/Leslie_Lamport "Leslie Lamport") at [SRI International](//en.wikipedia.org/wiki/SRI_International "SRI International").[[4]](#cite_note-4) The current version is LaTeX2e, first released in 1994 and incrementally updated since 2015. This update policy replaced earlier plans for a separate release of LaTeX3, which had been in development since 1989.[[5]](#cite_note-Latex3planning-5) LaTeX is [free software](//en.wikipedia.org/wiki/Free_software "Free software") and is distributed under the [LaTeX Project Public License (LPPL)](//en.wikipedia.org/wiki/LaTeX_Project_Public_License "LaTeX Project Public License").[[6]](#cite_note-6)
-
-Like TeX, LaTeX started as a writing tool for mathematicians and computer scientists, but from early in its development, it has also been taken up by scholars who needed to write documents that include complex math expressions. For non-Latin scripts such as [Arabic](//en.wikipedia.org/wiki/Arabic_script "Arabic script"), [Devanagari](//en.wikipedia.org/wiki/Devanagari "Devanagari"), and Chinese, special packages and compilers are needed to support [UTF-8](//en.wikipedia.org/wiki/UTF-8 "UTF-8") encoding.[[7]](#cite_note-7)[[8]](#cite_note-8)[[9]](#cite_note-9)
-
+| LaTeX | |
+|---|---|
+| Original author | Leslie Lamport |
+| Release | 1984 |
+| Stable release | |
+| Type | Typesetting |
+| License | LaTeX Project Public License (LPPL) |
+| Website | www |
+| Repository | |
+LaTeX (/ˈlɑːtɛx/ LAH-tekh or /ˈleɪtɛx/ LAY-tekh, to rhyme with "blech"[2]), often stylized as LaTeX, is a software system for typesetting documents,[3] based on the TeX typesetting system. LaTeX provides a high-level, descriptive markup language to use TeX more easily: TeX handles the document layout, while LaTeX handles the content side for document processing. Because the plain TeX formatting commands are elementary, it provides authors with ready-made commands for formatting and layout requirements such as chapter headings, footnotes, cross-references and bibliographies.
+LaTeX was originally written in the early 1980s by Leslie Lamport at SRI International.[4] The current version is LaTeX2e, first released in 1994 and incrementally updated since 2015. This update policy replaced earlier plans for a separate release of LaTeX3, which had been in development since 1989.[5] LaTeX is free software and is distributed under the LaTeX Project Public License (LPPL).[6]
+Like TeX, LaTeX started as a writing tool for mathematicians and computer scientists, but from early in its development, it has also been taken up by scholars who needed to write documents that include complex math expressions. For non-Latin scripts such as Arabic, Devanagari, and Chinese, special packages and compilers are needed to support UTF-8 encoding.[7][8][9]
 History
-
-In the early 1980s, Leslie Lamport was working at SRI, where he needed to write TeX macros for his own use. He thought that with a little extra effort, he could make a general package usable by others. Having done so, he released versions of his LaTeX macros in 1984 and 1985. Peter Gordon, an editor at [Addison-Wesley](//en.wikipedia.org/wiki/Addison-Wesley "Addison-Wesley"), convinced Lamport to write a LaTeX user's manual for publication. Lamport was initially skeptical that anyone would pay money for it,[[10]](#cite_note-Lamport2018-10) but it came out in 1986[[3]](#cite_note-Lamport1986-3) and sold hundreds of thousands of copies.[[10]](#cite_note-Lamport2018-10) On 21 August 1989, at a TeX Users Group (TUG) meeting at Stanford, Lamport agreed to turn over maintenance and development of LaTeX to Frank Mittelbach. Mittelbach, along with Chris Rowley and Rainer Schöpf, formed the LaTeX3 team; in 1994, they released LaTeX2e, the current standard version. LaTeX3 has been discontinued as a separate format; since 2018, it has been a programming layer within LaTeX2e.[[5]](#cite_note-Latex3planning-5)
-
+[edit]In the early 1980s, Leslie Lamport was working at SRI, where he needed to write TeX macros for his own use. He thought that with a little extra effort, he could make a general package usable by others. Having done so, he released versions of his LaTeX macros in 1984 and 1985. Peter Gordon, an editor at Addison-Wesley, convinced Lamport to write a LaTeX user's manual for publication. Lamport was initially skeptical that anyone would pay money for it,[10] but it came out in 1986[3] and sold hundreds of thousands of copies.[10] On 21 August 1989, at a TeX Users Group (TUG) meeting at Stanford, Lamport agreed to turn over maintenance and development of LaTeX to Frank Mittelbach. Mittelbach, along with Chris Rowley and Rainer Schöpf, formed the LaTeX3 team; in 1994, they released LaTeX2e, the current standard version. LaTeX3 has been discontinued as a separate format; since 2018, it has been a programming layer within LaTeX2e.[5]
 Typesetting system
-
-LaTeX attempts to follow the design philosophy of [separating presentation from content](//en.wikipedia.org/wiki/Separation_of_content_and_presentation "Separation of content and presentation"), so that authors can focus on the content of what they are writing without attending simultaneously to its visual appearance. In preparing a LaTeX document, the author specifies the logical structure using commands such as *chapter*, *section*, *table*, *figure*, etc., and lets the LaTeX system handle the formatting and layout of these structures. As a result, it encourages the separation of the layout from the content – while still allowing manual typesetting adjustments whenever needed. This concept is similar to the mechanism by which many [word processors](//en.wikipedia.org/wiki/Word_processor "Word processor") allow styles to be defined globally for an entire document, or the use of [Cascading Style Sheets](//en.wikipedia.org/wiki/Cascading_Style_Sheets "Cascading Style Sheets") in styling HyperText Markup Language ([HTML](//en.wikipedia.org/wiki/HTML "HTML")) documents.
-
-The LaTeX system is a [markup language](//en.wikipedia.org/wiki/Markup_language "Markup language") that handles typesetting and rendering,[[11]](#cite_note-11) and can be arbitrarily extended by using the underlying [macro language](//en.wikipedia.org/wiki/Macro_language "Macro language") to develop custom macros such as new environments and commands. Such macros are often collected into *packages,* which could then be made available to address some specific typesetting needs such as the formatting of complex mathematical expressions or graphics (e.g., the use of the `align` environment provided by the `amsmath` package to produce aligned equations).
-
-To create a document in LaTeX, a user first creates a file, such as `document.tex`, typically using a [text editor](//en.wikipedia.org/wiki/Text_editor "Text editor").[[12]](#cite_note-12) The user then gives their `document.tex` file as input to the TeX program (with the LaTeX macros loaded), which prompts TeX to write out a file suitable for onscreen viewing or printing.[[13]](#cite_note-13) This write-format-preview cycle is one of the chief ways in which working with LaTeX differs from the [What-You-See-Is-What-You-Get](//en.wikipedia.org/wiki/WYSIWYG "WYSIWYG") (WYSIWYG) style of document editing. It is similar to the code-compile-execute cycle known to computer programmers. Today, many LaTeX-aware editing programs make this cycle a simple matter through the pressing of a single key while showing the output preview on the screen beside the input window. Some online LaTeX editors even automatically refresh the preview,[[14]](#cite_note-14)[[15]](#cite_note-15)[[16]](#cite_note-16)[[17]](#cite_note-17)[[18]](#cite_note-18) while other online tools provide incremental editing in-place, mixed in with the preview in a single window.[[19]](#cite_note-19)
-
+[edit]LaTeX attempts to follow the design philosophy of separating presentation from content, so that authors can focus on the content of what they are writing without attending simultaneously to its visual appearance. In preparing a LaTeX document, the author specifies the logical structure using commands such as chapter, section, table, figure, etc., and lets the LaTeX system handle the formatting and layout of these structures. As a result, it encourages the separation of the layout from the content – while still allowing manual typesetting adjustments whenever needed. This concept is similar to the mechanism by which many word processors allow styles to be defined globally for an entire document, or the use of Cascading Style Sheets in styling HyperText Markup Language (HTML) documents.
+The LaTeX system is a markup language that handles typesetting and rendering,[11] and can be arbitrarily extended by using the underlying macro language to develop custom macros such as new environments and commands. Such macros are often collected into packages, which could then be made available to address some specific typesetting needs such as the formatting of complex mathematical expressions or graphics (e.g., the use of the align environment provided by the amsmath package to produce aligned equations).
+To create a document in LaTeX, a user first creates a file, such as document.tex, typically using a text editor.[12] The user then gives their document.tex file as input to the TeX program (with the LaTeX macros loaded), which prompts TeX to write out a file suitable for onscreen viewing or printing.[13] This write-format-preview cycle is one of the chief ways in which working with LaTeX differs from the What-You-See-Is-What-You-Get (WYSIWYG) style of document editing. It is similar to the code-compile-execute cycle known to computer programmers. Today, many LaTeX-aware editing programs make this cycle a simple matter through the pressing of a single key while showing the output preview on the screen beside the input window. Some online LaTeX editors even automatically refresh the preview,[14][15][16][17][18] while other online tools provide incremental editing in-place, mixed in with the preview in a single window.[19]
 Pronunciation and typography
-
-![]
-
-The characters 'T', 'E', and 'X' in the name come from the [Greek](//en.wikipedia.org/wiki/Greek_alphabet "Greek alphabet") [capital letters](//en.wikipedia.org/wiki/Capital_letter "Capital letter") [tau](//en.wikipedia.org/wiki/Tau "Tau"), [epsilon](//en.wikipedia.org/wiki/Epsilon "Epsilon"), and [chi](//en.wikipedia.org/wiki/Chi_(letter) "Chi (letter)"), as the name of [TeX](//en.wikipedia.org/wiki/TeX "TeX") derives from the [Ancient Greek](//en.wikipedia.org/wiki/Ancient_Greek_language "Ancient Greek language"): τέχνη ('skill', 'art', 'technique'); for this reason, TeX's creator [Donald Knuth](//en.wikipedia.org/wiki/Donald_Knuth "Donald Knuth") promotes its pronunciation as [/tɛx/](//en.wikipedia.org/wiki/Help:IPA/English "Help:IPA/English") ([*tekh*](//en.wikipedia.org/wiki/Help:Pronunciation_respelling_key "Help:Pronunciation respelling key"))[[20]](#cite_note-20) (that is, with a [voiceless velar fricative](//en.wikipedia.org/wiki/Voiceless_velar_fricative "Voiceless velar fricative") as in Modern Greek, or the 'ch' in '[loch](//en.wikipedia.org/wiki/Loch "Loch")'). Lamport remarks that "TeX is usually pronounced *tech*, making *lah*-tech, lah-*tech*, and *lay*-tech the logical choices; but language is not always logical, so *lay-tecks* is also possible."[[21]](#cite_note-21)
-
-The name is printed in running text with a typographical [logo](//en.wikipedia.org/wiki/Logo "Logo"): LaTeX. In media where the logo cannot be precisely reproduced in running text, the word is typically given the unique capitalization LaTeX. Alternatively, the TeX, LaTeX,[[22]](#cite_note-22) and [XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX")[[23]](#cite_note-23) logos can also be rendered via pure [CSS](//en.wikipedia.org/wiki/CSS "CSS") and [XHTML](//en.wikipedia.org/wiki/XHTML "XHTML") for use in graphical [web browsers](//en.wikipedia.org/wiki/Web_browser "Web browser") – by following the specifications of the internal `\LaTeX` macro.[[24]](#cite_note-24)
-
+[edit]The characters 'T', 'E', and 'X' in the name come from the Greek capital letters tau, epsilon, and chi, as the name of TeX derives from the Ancient Greek: τέχνη ('skill', 'art', 'technique'); for this reason, TeX's creator Donald Knuth promotes its pronunciation as /tɛx/ (tekh)[20] (that is, with a voiceless velar fricative as in Modern Greek, or the 'ch' in 'loch'). Lamport remarks that "TeX is usually pronounced tech, making lah-tech, lah-tech, and lay-tech the logical choices; but language is not always logical, so lay-tecks is also possible."[21]
+The name is printed in running text with a typographical logo: LaTeX. In media where the logo cannot be precisely reproduced in running text, the word is typically given the unique capitalization LaTeX. Alternatively, the TeX, LaTeX,[22] and XeTeX[23] logos can also be rendered via pure CSS and XHTML for use in graphical web browsers – by following the specifications of the internal \LaTeX macro.[24]
 Example
-
-The example below shows the input to LaTeX and the corresponding output from the system:
-
-\documentclass{article} % Starts an article
-\usepackage{amsmath} % Imports amsmath
-\title{\LaTeX} % Title
-
-\begin{document} % Begins a document
-  \maketitle
-  \LaTeX{} is a document preparation system for
-  the \TeX{} typesetting program. It offers
-  programmable desktop publishing features and
-  extensive facilities for automating most
-  aspects of typesetting and desktop publishing,
-  including numbering and cross-referencing,
-  tables and figures, page layout,
-  bibliographies, and much more. \LaTeX{} was
-  originally written in 1984 by Leslie Lamport
-  and has become the dominant method for using
-  \TeX; few people write in plain \TeX{} anymore.
-  The current version is \LaTeXe.
-
-  % This is a comment, not shown in final output.
-  % The following shows typesetting power of LaTeX:
-  \begin{align}
-    E_0 &= mc^2 \\
-    E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
-  \end{align}
-\end{document}
-
-![]
-
-\documentclass{article} % Starts an article
-\usepackage{amsmath} % Imports amsmath
-\title{\LaTeX} % Title
-
-\begin{document} % Begins a document
-  \maketitle
-  \LaTeX{} is a document preparation system for
-  the \TeX{} typesetting program. It offers
-  programmable desktop publishing features and
-  extensive facilities for automating most
-  aspects of typesetting and desktop publishing,
-  including numbering and cross-referencing,
-  tables and figures, page layout,
-  bibliographies, and much more. \LaTeX{} was
-  originally written in 1984 by Leslie Lamport
-  and has become the dominant method for using
-  \TeX; few people write in plain \TeX{} anymore.
-  The current version is \LaTeXe.
-
-  % This is a comment, not shown in final output.
-  % The following shows typesetting power of LaTeX:
-  \begin{align}
-    E_0 &= mc^2 \\
-    E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
-  \end{align}
-\end{document}
-
-![]
-
-\documentclass{article} % Starts an article
-\usepackage{amsmath} % Imports amsmath
-\title{\LaTeX} % Title
-
-\begin{document} % Begins a document
-  \maketitle
-  \LaTeX{} is a document preparation system for
-  the \TeX{} typesetting program. It offers
-  programmable desktop publishing features and
-  extensive facilities for automating most
-  aspects of typesetting and desktop publishing,
-  including numbering and cross-referencing,
-  tables and figures, page layout,
-  bibliographies, and much more. \LaTeX{} was
-  originally written in 1984 by Leslie Lamport
-  and has become the dominant method for using
-  \TeX; few people write in plain \TeX{} anymore.
-  The current version is \LaTeXe.
-
-  % This is a comment, not shown in final output.
-  % The following shows typesetting power of LaTeX:
-  \begin{align}
-    E_0 &= mc^2 \\
-    E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
-  \end{align}
-\end{document}
-
-![]
-
-Input Output
-```
-\documentclass{article} % Starts an article
-\usepackage{amsmath} % Imports amsmath
-\title{\LaTeX} % Title
-
-\begin{document} % Begins a document
- \maketitle
- \LaTeX{} is a document preparation system for
- the \TeX{} typesetting program. It offers
- programmable desktop publishing features and
- extensive facilities for automating most
- aspects of typesetting and desktop publishing,
- including numbering and cross-referencing,
- tables and figures, page layout,
- bibliographies, and much more. \LaTeX{} was
- originally written in 1984 by Leslie Lamport
- and has become the dominant method for using
- \TeX; few people write in plain \TeX{} anymore.
- The current version is \LaTeXe.
-
- % This is a comment, not shown in final output.
- % The following shows typesetting power of LaTeX:
- \begin{align}
- E_0 &= mc^2 \\
- E &= \frac{mc^2}{\sqrt{1-\frac{v^2}{c^2}}}
- \end{align}
-\end{document}
-
-``` [![]](//en.wikipedia.org/wiki/File:LaTeX_example.svg)
-
+[edit]The example below shows the input to LaTeX and the corresponding output from the system:
 Related software
-
-![]
-
-As a macro package, LaTeX provides a set of macros for TeX to interpret. There are many other macro packages for TeX, including Plain TeX, [AMSTeX](//en.wikipedia.org/wiki/AMSTeX "AMSTeX"), [Chemfig](//en.wikipedia.org/wiki/Chemfig "Chemfig"), chemmacros,[[25]](#cite_note-25) [PSTricks](//en.wikipedia.org/wiki/PSTricks "PSTricks"), [PSfrag](//en.wikipedia.org/wiki/PSfrag "PSfrag"), and [ConTeXt](//en.wikipedia.org/wiki/ConTeXt "ConTeXt").
-
-When TeX "compiles" a document, it follows (from the user's point of view) the following processing sequence: Macros → TeX → Driver → Output. Different implementations of each of these steps are typically available in TeX distributions. Traditional TeX will output a [DVI](//en.wikipedia.org/wiki/DVI_(file_format) "DVI (file format)") file, which is usually converted to a [PostScript](//en.wikipedia.org/wiki/PostScript "PostScript") file. In 2000, Hàn Thế Thành and others wrote an implementation of TeX called [pdfTeX](//en.wikipedia.org/wiki/PdfTeX "PdfTeX"), which also outputs to [PDF](//en.wikipedia.org/wiki/PDF "PDF") and takes advantage of features available in that format.[[26]](#cite_note-26) The [XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX") engine developed by Jonathan Kew, on the other hand, merges modern font technologies and Unicode with TeX.[[27]](#cite_note-27) [LuaTeX](//en.wikipedia.org/wiki/LuaTeX "LuaTeX") is an extended version of pdfTeX using Lua as an embedded scripting language.[[28]](#cite_note-luatex-28)
-
+[edit]As a macro package, LaTeX provides a set of macros for TeX to interpret. There are many other macro packages for TeX, including Plain TeX, AMSTeX, Chemfig, chemmacros,[25] PSTricks, PSfrag, and ConTeXt.
+When TeX "compiles" a document, it follows (from the user's point of view) the following processing sequence: Macros → TeX → Driver → Output. Different implementations of each of these steps are typically available in TeX distributions. Traditional TeX will output a DVI file, which is usually converted to a PostScript file. In 2000, Hàn Thế Thành and others wrote an implementation of TeX called pdfTeX, which also outputs to PDF and takes advantage of features available in that format.[26] The XeTeX engine developed by Jonathan Kew, on the other hand, merges modern font technologies and Unicode with TeX.[27] LuaTeX is an extended version of pdfTeX using Lua as an embedded scripting language.[28]
 Compatibility and converters
+[edit]LaTeX documents (*.tex) can be opened with any text editor. They consist of plain text and contain no hidden formatting codes or binary information. TeX documents can also be shared by rendering the LaTeX file to other formats such as OpenDocument, XML, or class (*.cls) files. LaTeX can also (and commonly is) rendered to PDF files using the LaTeX extension pdfLaTeX. LaTeX files containing Unicode text can be processed into PDFs with the inputenc package, or by the TeX extensions XeLaTeX and LuaLaTeX.
+- TeX4ht is a converter that can translate TeX and LaTeX documents to HTML and certain XML formats. It is now included preconfigured with all TeX distributions.
+- HeVeA is a converter written in OCaml that converts LaTeX documents to HTML5. This way, documents such as scientific papers, primarily typeset for printing, can be placed on the World Wide Web for online viewing. It is licensed under the Q Public License.[29]
+- LaTeX2HTML is a converter written in Perl that converts LaTeX documents to HTML. It is licensed under GPL v2.[30] The latest updates are available from Comprehensive TeX Archive Network (CTAN).[31]
+- LaTeX2RTF is a converter written in C that converts LaTeX documents to RTF. It is licensed under GPL v2 or later.[32]
+- LaTeXML is a converter written in Perl that converts LaTeX documents into a variety of XML-based formats, including HTML5 (with MathML), ePub ebooks, JATS, and TEI. It was developed at the National Institute of Standards and Technology by US Federal Government employees and is therefore in the public domain. It is available for free.[33]
+- Pandoc is a "universal document converter" able to transform LaTeX (as well as other formats) into many different file formats, including HTML5, ePub, OpenDocument (*.odt), Microsoft Office Open XML (*.docx), and even text with MediaWiki markup as used in Wikipedia. It is licensed under GPL v2.[34]
+LaTeX has become the de facto standard to typeset mathematical expression in scientific documents.[35][36] Hence, there are several conversion tools focusing on mathematical LaTeX expressions, such as converters to MathML or Computer Algebra System.
+- MathJax is a JavaScript library for converting LaTeX to MathML, picture formats including SVG and PNG, or HTML for embedding within a webpage.
+- The Wikimedia Foundation uses MathJax to build Mathoid, a web service that uses Node.js to render math that is used in Wikipedia.[37]
 
-LaTeX documents (`*.tex`) can be opened with any text editor. They consist of plain text and contain no hidden formatting codes or [binary](//en.wikipedia.org/wiki/Binary_file "Binary file") information. TeX documents can also be shared by rendering the LaTeX file to other formats such as [OpenDocument](//en.wikipedia.org/wiki/OpenDocument "OpenDocument"), [XML](//en.wikipedia.org/wiki/XML "XML"), or class (`*.cls`) files. LaTeX can also (and commonly is) rendered to PDF files using the LaTeX extension pdfLaTeX. LaTeX files containing [Unicode](//en.wikipedia.org/wiki/Unicode "Unicode") text can be processed into PDFs with the `inputenc` package, or by the TeX extensions XeLaTeX and LuaLaTeX.
-
-[TeX4ht](//en.wikipedia.org/wiki/TeX4ht "TeX4ht") is a converter that can translate TeX and LaTeX documents to HTML and certain XML formats. It is now included preconfigured with all TeX distributions.
-HeVeA is a converter written in [OCaml](//en.wikipedia.org/wiki/OCaml "OCaml") that converts LaTeX documents to [HTML5](//en.wikipedia.org/wiki/HTML5 "HTML5"). This way, documents such as scientific papers, primarily typeset for printing, can be placed on the [World Wide Web](//en.wikipedia.org/wiki/World_Wide_Web "World Wide Web") for online viewing. It is licensed under the [Q Public License](//en.wikipedia.org/wiki/Q_Public_License "Q Public License").[[29]](#cite_note-29)
-LaTeX2HTML is a converter written in [Perl](//en.wikipedia.org/wiki/Perl "Perl") that converts LaTeX documents to HTML. It is licensed under [GPL](//en.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License") v2.[[30]](#cite_note-30) The latest updates are available from Comprehensive TeX Archive Network ([CTAN](//en.wikipedia.org/wiki/CTAN "CTAN")).[[31]](#cite_note-31)
-LaTeX2RTF is a converter written in [C](//en.wikipedia.org/wiki/C_(programming_language) "C (programming language)") that converts LaTeX documents to [RTF](//en.wikipedia.org/wiki/Rich_Text_Format "Rich Text Format"). It is licensed under GPL v2 or later.[[32]](#cite_note-32)
-[LaTeXML](//en.wikipedia.org/wiki/LaTeXML "LaTeXML") is a converter written in Perl that converts LaTeX documents into a variety of XML-based formats, including HTML5 (with [MathML](//en.wikipedia.org/wiki/MathML "MathML")), [ePub](//en.wikipedia.org/wiki/EPub "EPub") ebooks, [JATS](//en.wikipedia.org/wiki/Journal_Article_Tag_Suite "Journal Article Tag Suite"), and [TEI](//en.wikipedia.org/wiki/Text_Encoding_Initiative "Text Encoding Initiative"). It was developed at the [National Institute of Standards and Technology](//en.wikipedia.org/wiki/National_Institute_of_Standards_and_Technology "National Institute of Standards and Technology") by [US Federal Government employees and is therefore in the public domain](//en.wikipedia.org/wiki/Copyright_status_of_works_by_the_federal_government_of_the_United_States "Copyright status of works by the federal government of the United States"). It is available for free.[[33]](#cite_note-33)
-[Pandoc](//en.wikipedia.org/wiki/Pandoc "Pandoc") is a "universal document converter" able to transform LaTeX (as well as other formats) into many different file formats, including HTML5, ePub, OpenDocument (`*.odt`), Microsoft [Office Open XML](//en.wikipedia.org/wiki/Office_Open_XML "Office Open XML") (`*.docx`), and even text with [MediaWiki markup](//en.wikipedia.org/wiki/MediaWiki#Markup "MediaWiki") as used in [Wikipedia](//en.wikipedia.org/wiki/Wikipedia "Wikipedia"). It is licensed under GPL v2.[[34]](#cite_note-34)
-LaTeX has become the [de facto standard](//en.wikipedia.org/wiki/De_facto_standard "De facto standard") to typeset mathematical expression in scientific documents.[[35]](#cite_note-Gaudeul2006-35)[[36]](#cite_note-36) Hence, there are several conversion tools focusing on mathematical LaTeX expressions, such as converters to MathML or [Computer Algebra System](//en.wikipedia.org/wiki/Computer_Algebra_System "Computer Algebra System").
-
-[MathJax](//en.wikipedia.org/wiki/MathJax "MathJax") is a [JavaScript](//en.wikipedia.org/wiki/JavaScript "JavaScript") library for converting LaTeX to MathML, picture formats including [SVG](//en.wikipedia.org/wiki/Scalable_Vector_Graphics "Scalable Vector Graphics") and [PNG](//en.wikipedia.org/wiki/Portable_Network_Graphics "Portable Network Graphics"), or HTML for embedding within a webpage.
-[KaTeX](//en.wikipedia.org/wiki/KaTeX "KaTeX") is a JavaScript library for converting LaTeX to HTML and MathML. It is developed by [Khan Academy](//en.wikipedia.org/wiki/Khan_Academy "Khan Academy"), and is among the fastest LaTeX to HTML converters.[[38]](#cite_note-38)
-The [Wikimedia Foundation](//en.wikipedia.org/wiki/Wikimedia_Foundation "Wikimedia Foundation") uses MathJax to build Mathoid, a [web service](//en.wikipedia.org/wiki/Web_service "Web service") that uses [Node.js](//en.wikipedia.org/wiki/Node.js "Node.js") to render math that is used in Wikipedia.[[37]](#cite_note-37)
+- KaTeX is a JavaScript library for converting LaTeX to HTML and MathML. It is developed by Khan Academy, and is among the fastest LaTeX to HTML converters.[38]
 Licensing
-
-LaTeX is typically distributed along with plain [TeX](//en.wikipedia.org/wiki/TeX "TeX") under a [free software licence](//en.wikipedia.org/wiki/Free_software_license "Free software license"): the [LaTeX Project Public License](//en.wikipedia.org/wiki/LaTeX_Project_Public_License "LaTeX Project Public License") (LPPL).[[39]](#cite_note-39) The LPPL is not [compatible](//en.wikipedia.org/wiki/License_compatibility "License compatibility") with the [GNU General Public License](//en.wikipedia.org/wiki/GNU_General_Public_License "GNU General Public License"), as it requires that modified files must be clearly differentiable from their originals (usually by changing the filename); this was done to ensure that files that depend on other files will produce the expected behavior and avoid [dependency hell](//en.wikipedia.org/wiki/Dependency_hell "Dependency hell"). The LPPL is [Debian Free Software Guidelines](//en.wikipedia.org/wiki/Debian_Free_Software_Guidelines "Debian Free Software Guidelines") (DFSG) compliant as of version 1.3. As [free software](//en.wikipedia.org/wiki/Free_software "Free software"), LaTeX is available on most operating systems.
-
+[edit]LaTeX is typically distributed along with plain TeX under a free software licence: the LaTeX Project Public License (LPPL).[39] The LPPL is not compatible with the GNU General Public License, as it requires that modified files must be clearly differentiable from their originals (usually by changing the filename); this was done to ensure that files that depend on other files will produce the expected behavior and avoid dependency hell. The LPPL is Debian Free Software Guidelines (DFSG) compliant as of version 1.3. As free software, LaTeX is available on most operating systems.
 Versions
-
-LaTeX
-[Filename extension](//en.wikipedia.org/wiki/Filename_extension "Filename extension") .tex
-[Internet media type](//en.wikipedia.org/wiki/Media_type "Media type") [application/x-latex](//en.wikipedia.org/wiki/Media_type#Unregistered_tree "Media type")
-Initial release 1994; 32 years ago (1994)
-[Latest release](//en.wikipedia.org/wiki/Software_release_life_cycle "Software release life cycle") LaTeX2e
-1994; 32 years ago (1994)
-Type of format [Document file format](//en.wikipedia.org/wiki/Document_file_format "Document file format")
-
-LaTeX2e is the current version of LaTeX, since it replaced LaTeX 2.09 in 1994.[[40]](#cite_note-:1-40) As of 2020[[update]](https://en.wikipedia.org/w/index.php), LaTeX3, which started in the early 1990s, is under a long-term development project.[[5]](#cite_note-Latex3planning-5) Planned features include improved syntax (separation of content from styling), [hyperlink](//en.wikipedia.org/wiki/Hyperlink "Hyperlink") support, a new user interface, access to arbitrary fonts and a new documentation.[[41]](#cite_note-41) Some LaTeX3 features are available in LaTeX2e using packages,[[42]](#cite_note-42) and by 2020 many features have been enabled in LaTeX2e by default for a gradual transition.[[5]](#cite_note-Latex3planning-5)
-
-There are many commercial implementations of the entire TeX system. System vendors may add extra features like added [typefaces](//en.wikipedia.org/wiki/Typeface "Typeface") and [telephone support](//en.wikipedia.org/wiki/Help_desk "Help desk"). [LyX](//en.wikipedia.org/wiki/LyX "LyX") is a [free software](//en.wikipedia.org/wiki/Free_software "Free software"), [WYSIWYM](//en.wikipedia.org/wiki/WYSIWYM "WYSIWYM") visual document processor that uses LaTeX for a back-end.[[43]](#cite_note-43) [TeXmacs](//en.wikipedia.org/wiki/TeXmacs "TeXmacs") is a free, [WYSIWYG](//en.wikipedia.org/wiki/WYSIWYG "WYSIWYG") editor with similar functionalities as LaTeX, but with a different typesetting engine.[[44]](#cite_note-44) Other WYSIWYG editors that produce LaTeX include [Scientific Word](//en.wikipedia.org/wiki/Scientific_Word "Scientific Word") on Windows and [macOS](//en.wikipedia.org/wiki/MacOS "MacOS").
-
+[edit]| LaTeX | |
+|---|---|
+| Filename extension |
+.tex |
+| Internet media type | |
+| Initial release | 1994 |
+| Latest release | LaTeX2e 1994 |
+| Type of format | Document file format |
+LaTeX2e is the current version of LaTeX, since it replaced LaTeX 2.09 in 1994.[40] As of 2020[update], LaTeX3, which started in the early 1990s, is under a long-term development project.[5] Planned features include improved syntax (separation of content from styling), hyperlink support, a new user interface, access to arbitrary fonts and a new documentation.[41] Some LaTeX3 features are available in LaTeX2e using packages,[42] and by 2020 many features have been enabled in LaTeX2e by default for a gradual transition.[5]
+There are many commercial implementations of the entire TeX system. System vendors may add extra features like added typefaces and telephone support. LyX is a free software, WYSIWYM visual document processor that uses LaTeX for a back-end.[43] TeXmacs is a free, WYSIWYG editor with similar functionalities as LaTeX, but with a different typesetting engine.[44] Other WYSIWYG editors that produce LaTeX include Scientific Word on Windows and macOS.
 Many community-supported TeX distributions are available.
-
 Adoption
-
-LaTeX is widely used in academia for the communication and publication of scientific documents and technical note-taking in many fields, owing partially to its support for complex mathematical notation.[[45]](#cite_note-45)[[35]](#cite_note-Gaudeul2006-35) It also has a prominent role in the preparation and publication of books and articles that contain complex [multilingual materials](//en.wikipedia.org/wiki/Multilingualism "Multilingualism"), such as Arabic and Greek.[[46]](#cite_note-46) LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX [macro](//en.wikipedia.org/wiki/Macro_(computer_science) "Macro (computer science)") language.
-
-LaTeX can be used as a standalone document preparation system or as an intermediate format. In the latter role, for example, it is sometimes used as part of a pipeline for translating [DocBook](//en.wikipedia.org/wiki/DocBook "DocBook") and other [XML](//en.wikipedia.org/wiki/XML "XML")-based formats for PDF. The typesetting system offers programmable [desktop publishing](//en.wikipedia.org/wiki/Desktop_publishing "Desktop publishing") features and extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing of tables and figures, chapter and section headings, graphics, page layout, indexing and [bibliographies](//en.wikipedia.org/wiki/Bibliography "Bibliography").
-
+[edit]LaTeX is widely used in academia for the communication and publication of scientific documents and technical note-taking in many fields, owing partially to its support for complex mathematical notation.[45][35] It also has a prominent role in the preparation and publication of books and articles that contain complex multilingual materials, such as Arabic and Greek.[46] LaTeX uses the TeX typesetting program for formatting its output, and is itself written in the TeX macro language.
+LaTeX can be used as a standalone document preparation system or as an intermediate format. In the latter role, for example, it is sometimes used as part of a pipeline for translating DocBook and other XML-based formats for PDF. The typesetting system offers programmable desktop publishing features and extensive facilities for automating most aspects of typesetting and desktop publishing, including numbering and cross-referencing of tables and figures, chapter and section headings, graphics, page layout, indexing and bibliographies.
 See also
-
-![][Free and open-source software portal](//en.wikipedia.org/wiki/Portal:Free_and_open-source_software "Portal:Free and open-source software")
-![]
-
-[BibTeX](//en.wikipedia.org/wiki/BibTeX "BibTeX") – Reference management software for formatting lists of references
-[Comparison of TeX editors](//en.wikipedia.org/wiki/Comparison_of_TeX_editors "Comparison of TeX editors")
-[Formula editor](//en.wikipedia.org/wiki/Formula_editor "Formula editor") – Computer program used to typeset mathematical works or formulae
-[KaTeX](//en.wikipedia.org/wiki/KaTeX "KaTeX") – JavaScript library for displaying math notation
-[List of document markup languages](//en.wikipedia.org/wiki/List_of_document_markup_languages "List of document markup languages") and [List of markdown editors](//en.wikipedia.org/wiki/Markdown#Markdown_editors "Markdown")
-[List of TeX extensions](//en.wikipedia.org/wiki/List_of_TeX_extensions "List of TeX extensions") – Extensions for the TeX typesetting system
-[LyX](//en.wikipedia.org/wiki/LyX "LyX") – Document processing software
-[MathJax](//en.wikipedia.org/wiki/MathJax "MathJax") – System to format mathematics on the web
-[xdvi](//en.wikipedia.org/wiki/Xdvi "Xdvi") – Open Source Computer Program
+[edit]- BibTeX – Reference management software for formatting lists of references
+- Comparison of TeX editors
+- Formula editor – Computer program used to typeset mathematical works or formulae
+- KaTeX – JavaScript library for displaying math notation
+- List of document markup languages and List of markdown editors
+- List of TeX extensions – Extensions for the TeX typesetting system
+- LyX – Document processing software
+- MathJax – System to format mathematics on the web
+- xdvi – Open Source Computer Program
 References
-
-[↑](#cite_ref-wikidata-8849cc4b0fcde530cecd7519fcbfbb0cfcc35855-v20_1-0)  ["LaTeX2e Release Newsletter"](https://www.latex-project.org/news/2024/11/01/issue40-of-latex2e-released/). Retrieved 27 November 2024.
-[↑](#cite_ref-2) ["An introduction to LaTeX"](https://latex-project.org/intro.html). *LaTeX project*. [Archived](https://web.archive.org/web/20151031003337/http://www.latex-project.org/intro.html) from the original on 31 October 2015. Retrieved 18 April 2016.
-[1](#cite_ref-Lamport1986_3-0) [2](#cite_ref-Lamport1986_3-1) Lamport, Leslie (1986). *LATEX: a document preparation system*. Addison-Wesley Pub. Co. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [0-201-15790-X](//en.wikipedia.org/wiki/Special:BookSources/0-201-15790-X "Special:BookSources/0-201-15790-X"). [OCLC](//en.wikipedia.org/wiki/OCLC_(identifier) "OCLC (identifier)") [12550262](https://search.worldcat.org/oclc/12550262).
-[↑](#cite_ref-4) Leslie Lamport (April 23, 2007). ["The Writings of Leslie Lamport: LaTeX: A Document Preparation System"](https://research.microsoft.com/users/lamport/pubs/pubs.html#latex). *Leslie Lamport's Home Page*. [Archived](https://web.archive.org/web/20121105060525/http://research.microsoft.com/users/lamport/pubs/pubs.html#latex) from the original on 2012-11-05. Retrieved 2007-04-27.
-[1](#cite_ref-Latex3planning_5-0) [2](#cite_ref-Latex3planning_5-1) [3](#cite_ref-Latex3planning_5-2) [4](#cite_ref-Latex3planning_5-3) ["Quo vadis LaTeX(3) Team — A look back and at the upcoming years"](https://www.latex-project.org/publications/2020-FMi-TUB-tb128mitt-quovadis.pdf) (PDF). *www.latex-project.org*. [Archived](https://web.archive.org/web/20230609191151/https://www.latex-project.org/publications/2020-FMi-TUB-tb128mitt-quovadis.pdf) (PDF) from the original on 2023-06-09. Retrieved 2023-06-09.
-[↑](#cite_ref-6) ["LaTeX - A document preparation system"](https://www.latex-project.org/). *www.latex-project.org*. [Archived](https://web.archive.org/web/20110304190326/http://www.latex-project.org/) from the original on 2011-03-04. Retrieved 2019-07-20.
-[↑](#cite_ref-7) ["Multilingual typesetting on Overleaf using babel and fontspec"](https://www.overleaf.com/learn/latex/Multilingual_typesetting_on_Overleaf_using_babel_and_fontspec). Retrieved 2022-04-09.
-[↑](#cite_ref-8) ["Babel: The multilingual framework to localize LaTeX, LuaLaTeX, XeLaTeX"](https://latex3.github.io/babel/). [Archived](https://web.archive.org/web/20241109203746/https://latex3.github.io/babel/) from the original on 2024-11-09. Retrieved 2024-11-09.
-[↑](#cite_ref-9) ["Chinese"](https://www.overleaf.com/learn/latex/Chinese). *www.overleaf.com*. [Archived](https://web.archive.org/web/20201204210408/https://www.overleaf.com/learn/latex/Chinese) from the original on 2020-12-04. Retrieved 2020-12-30.
-[1](#cite_ref-Lamport2018_10-0) [2](#cite_ref-Lamport2018_10-1) Lamport, Leslie (2024-04-29). ["My Writings"](http://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.pdf) (PDF). pp. 48–49. [Archived](https://web.archive.org/web/20240609192724/https://research.microsoft.com/en-us/um/people/lamport/pubs/pubs.pdf) (PDF) from the original on 2024-06-09. Retrieved 2024-06-09.
-[↑](#cite_ref-11) The design of LaTeX owes something to earlier markup systems such as [Scribe](//en.wikipedia.org/wiki/Scribe_(markup_language) "Scribe (markup language)").
-[↑](#cite_ref-12) Van Dyke, Jackson. ["Getting started with LaTeX and Vim"](https://web.ma.utexas.edu/users/vandyke/notes/getting_started_latex_vim/getting_started.pdf) (PDF). [Archived](https://web.archive.org/web/20240121121125/https://web.ma.utexas.edu/users/vandyke/notes/getting_started_latex_vim/getting_started.pdf) (PDF) from the original on 21 January 2024. Retrieved 21 February 2024.
-[↑](#cite_ref-13) PDF output is common, but TeX can output other formats such as DVI ("Device independent" format).
-[↑](#cite_ref-14) ["Online LaTeX Compiler"](https://onlinelatexcompiler.blogspot.com/2026/02/online-latex-compi.html). [Archived](https://web.archive.org/web/20260511175028/https://onlinelatexcompiler.blogspot.com/2026/02/online-latex-compi.html) from the original on 2026-05-11. Retrieved 2026-02-04.
-[↑](#cite_ref-15) ["SciScribe"](https://sciscribe.dev/). [Archived](https://web.archive.org/web/20260511175040/https://sciscribe.dev/) from the original on 2026-05-11. Retrieved 2026-05-18.
-[↑](#cite_ref-16) ["Overleaf"](https://www.overleaf.com/). [Archived](https://web.archive.org/web/20171203191939/https://www.overleaf.com/) from the original on 2017-12-03. Retrieved 2016-06-21.
-[↑](#cite_ref-17) ["Seeveeze"](https://web.archive.org/web/20151208171339/https://www.seeveeze.com/). Archived from [the original](https://www.seeveeze.com/) on 2015-12-08. Retrieved 2015-12-27.
-[↑](#cite_ref-18) ["LaTeX Base"](https://latexbase.com/). [Archived](https://web.archive.org/web/20230629180843/https://latexbase.com/) from the original on 2023-06-29. Retrieved 2017-09-19.
-[↑](#cite_ref-19) ["Authorea"](https://www.authorea.com/). [Archived](https://web.archive.org/web/20170628034821/https://www.authorea.com/) from the original on 2017-06-28. Retrieved 2017-06-28.
-[↑](#cite_ref-20) Donald E. Knuth, *The TeXbook*, Addison–Wesley, Boston, 1986, p. 1.
-[↑](#cite_ref-21) Lamport (1994), p 5
-[↑](#cite_ref-22) O'Connor, Edward. ["TeX and LaTeX logo POSHlets"](https://web.archive.org/web/20071011230511/http://edward.oconnor.cx/2007/08/tex-poshlet). Archived from [the original](http://edward.oconnor.cx/2007/08/tex-poshlet) on 2007-10-11. Retrieved 2008-04-21.
-[↑](#cite_ref-23) Taraborelli, Dario. ["CSS-driven TeX logos"](https://web.archive.org/web/20170901040149/http://nitens.org/taraborelli/texlogo). Archived from [the original](http://nitens.org/taraborelli/texlogo) on 2017-09-01. Retrieved 2008-04-21.
-[↑](#cite_ref-24) Walden, David (2005-07-15). ["Travels in TeX Land: A Macro, Three Software Packages, and the Trouble with TeX"](https://www.tug.org/pracjourn/2005-3/walden-travels/). *The PracTeX Journal* (3). [Archived](https://web.archive.org/web/20080704200634/http://www.tug.org/pracjourn/2005-3/walden-travels/) from the original on 2008-07-04. Retrieved 2008-04-21.
-[↑](#cite_ref-25) ["Chemmacros - Comprehensive support for typesetting chemistry documents"](https://web.archive.org/web/20240726200742/https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/chemmacros/chemmacros-manual.pdf) (PDF). Archived from [the original](https://ctan.math.washington.edu/tex-archive/macros/latex/contrib/chemmacros/chemmacros-manual.pdf) (PDF) on 2024-07-26.
-[↑](#cite_ref-26) ["pdfTeX - TeX Users Group"](https://www.tug.org/applications/pdftex/). *www.tug.org*. [Archived](https://web.archive.org/web/20190720044047/https://www.tug.org/applications/pdftex/) from the original on 2019-07-20. Retrieved 2019-07-20.
-[↑](#cite_ref-27) ["XeTeX - TeX Users Group"](http://www.tug.org/xetex/). *www.tug.org*. Retrieved 2019-07-20.
-[↑](#cite_ref-luatex_28-0) ["LuaTeX"](https://www.luatex.org/). [Archived](https://web.archive.org/web/20230707013741/http://www.luatex.org/) from the original on 2023-07-07. Retrieved 2023-07-18.
-[↑](#cite_ref-29) Website <http://hevea.inria.fr/> [Archived](https://web.archive.org/web/20170602194708/http://hevea.inria.fr/) 2017-06-02 at the [Wayback Machine](//en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine")
-[↑](#cite_ref-30) According to LICENSE file in the [source repository](https://github.com/latex2html/latex2html/) [Archived](https://web.archive.org/web/20191120105555/https://github.com/latex2html/latex2html/) 2019-11-20 at the [Wayback Machine](//en.wikipedia.org/wiki/Wayback_Machine "Wayback Machine").
-[↑](#cite_ref-31) ["CTAN: Package latex2html"](https://ctan.org/pkg/latex2html). *ctan.org*. [Archived](https://web.archive.org/web/20240901165423/https://ctan.org/pkg/latex2html) from the original on 2024-09-01. Retrieved 2024-09-01.
-[↑](#cite_ref-32) ["CTAN: /tex-archive/support/latex2rtf"](https://ctan.org/tex-archive/support/latex2rtf). *ctan.org*. [Archived](https://web.archive.org/web/20240901165423/https://ctan.org/tex-archive/support/latex2rtf) from the original on 2024-09-01. Retrieved 2024-09-01.
-[↑](#cite_ref-33) ["LaTeXML A LaTeX to XML/HTML/MathML Converter"](https://dlmf.nist.gov/LaTeXML/). *dlmf.nist.gov*. [Archived](https://web.archive.org/web/20180819011145/https://dlmf.nist.gov/LaTeXML/) from the original on 2018-08-19. Retrieved 2018-08-18.
-[↑](#cite_ref-34) ["Pandoc - About pandoc"](http://pandoc.org/). *pandoc.org*. [Archived](https://web.archive.org/web/20180119064928/http://www.pandoc.org/) from the original on 2018-01-19. Retrieved 2018-01-17.
-[1](#cite_ref-Gaudeul2006_35-0) [2](#cite_ref-Gaudeul2006_35-1) Alexia Gaudeul (June 2007). ["Do Open Source Developers Respond to Competition?: The (La)TeX Case Study"](https://doi.org/10.2202%2F1446-9022.1119). *Review of Network Economics*. **6** (2). [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.2202/1446-9022.1119](https://doi.org/10.2202%2F1446-9022.1119). [S2CID](//en.wikipedia.org/wiki/S2CID_(identifier) "S2CID (identifier)") [201097782](https://api.semanticscholar.org/CorpusID:201097782).
-[↑](#cite_ref-36) Knauff, Markus; Nejasmic, Jelica (December 19, 2019). ["An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development"](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4272305). *PLOS ONE*. **9** (12) e115069. [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1371/journal.pone.0115069](https://doi.org/10.1371%2Fjournal.pone.0115069). [PMC](//en.wikipedia.org/wiki/PMC_(identifier) "PMC (identifier)") [4272305](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4272305). [PMID](//en.wikipedia.org/wiki/PMID_(identifier) "PMID (identifier)") [25526083](https://pubmed.ncbi.nlm.nih.gov/25526083).
-[↑](#cite_ref-37) Schubotz, Moritz; Wicke, Gabriel (2014). "Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia". *Intelligent Computer Mathematics – International Conference*. CICM. Lecture Notes in Computer Science. Vol. 8543. Springer. pp. 224–235. [arXiv](//en.wikipedia.org/wiki/ArXiv_(identifier) "ArXiv (identifier)"):[1404.6179](https://arxiv.org/abs/1404.6179). [doi](//en.wikipedia.org/wiki/Doi_(identifier) "Doi (identifier)"):[10.1007/978-3-319-08434-3_17](https://doi.org/10.1007%2F978-3-319-08434-3_17). [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-3-319-08433-6](//en.wikipedia.org/wiki/Special:BookSources/978-3-319-08433-6 "Special:BookSources/978-3-319-08433-6").
-[↑](#cite_ref-38) ["KaTeX – The fastest math typesetting library for the web"](https://katex.org/). *katex.org*. [Archived](https://web.archive.org/web/20210417000629/https://katex.org/) from the original on 2021-04-17. Retrieved 2021-04-19.
-[↑](#cite_ref-39) ["The LaTeX project public license"](https://www.latex-project.org/lppl/). *www.latex-project.org*. [Archived](https://web.archive.org/web/20190713145611/https://www.latex-project.org/lppl/) from the original on 2019-07-13. Retrieved 2019-07-20.
-[↑](#cite_ref-:1_40-0) Scavo, Tom. ["TeX, LaTeX, and AMS-LaTeX"](https://web.archive.org/web/19981203013048/http://web.syr.edu/~trscavo/latex/latex-history.html). Archived from [the original](http://web.syr.edu/~trscavo/latex/latex-history.html) on 3 December 1998. Retrieved 6 September 2018.
-[↑](#cite_ref-41) Frank Mittelbach, Chris Rowley (January 12, 1999). ["The LaTeX3 Project"](https://www.latex-project.org/guides/ltx3info.pdf) (PDF). [Archived](https://web.archive.org/web/20070808083522/http://www.latex-project.org/guides/ltx3info.pdf) (PDF) from the original on 2007-08-08. Retrieved 2007-07-30.
-[↑](#cite_ref-42) Wright, Joseph. ["Why is LaTeX3 taking so long to come out?"](https://tex.stackexchange.com/a/986/). *TeX - LaTeX Stack Exchange*.
-[↑](#cite_ref-43) ["LyX: What is LyX?"](https://www.lyx.org/WhatIsLyX). *www.lyx.org*. [Archived](https://web.archive.org/web/20190720044044/https://www.lyx.org/WhatIsLyX) from the original on 2019-07-20. Retrieved 2019-07-20.
-[↑](#cite_ref-44) ["Welcome to GNU TeXmacs (FSF GNU project)"](https://www.texmacs.org/tmweb/home/welcome.en.html). *www.texmacs.org*. [Archived](https://web.archive.org/web/20190720044046/https://www.texmacs.org/tmweb/home/welcome.en.html) from the original on 2019-07-20. Retrieved 2019-07-20.
-[↑](#cite_ref-45) ["What are TeX, LaTeX and friends?"](https://www.ctan.org/what_is_tex.html). [Archived](https://web.archive.org/web/20071011063439/http://ctan.org/what_is_tex.html) from the original on 2007-10-11. Retrieved 2007-10-09.
-[↑](#cite_ref-46) Markin, Pablo (1 November 2017). ["LaTeX, Open Source Software, Facilitates the Adoption of Open Access by Authors, Repositories and Journals"](https://web.archive.org/web/20201109001132/https://openscience.com/latex-open-source-software-facilitates-the-adoption-of-open-access-by-authors-repositories-and-journals/). *OpenScience*. Archived from [the original](http://openscience.com/latex-open-source-software-facilitates-the-adoption-of-open-access-by-authors-repositories-and-journals/) on 9 November 2020. Retrieved 5 November 2017.
+[edit]- ↑ "LaTeX2e Release Newsletter". Retrieved 27 November 2024.
+- ↑ "An introduction to LaTeX". LaTeX project. Archived from the original on 31 October 2015. Retrieved 18 April 2016.
+- 1 2 Lamport, Leslie (1986). LATEX: a document preparation system. Addison-Wesley Pub. Co. ISBN 0-201-15790-X. OCLC 12550262.
+- ↑ Leslie Lamport (April 23, 2007). "The Writings of Leslie Lamport: LaTeX: A Document Preparation System". Leslie Lamport's Home Page. Archived from the original on 2012-11-05. Retrieved 2007-04-27.
+- 1 2 3 4 "Quo vadis LaTeX(3) Team — A look back and at the upcoming years" (PDF). www.latex-project.org. Archived (PDF) from the original on 2023-06-09. Retrieved 2023-06-09.
+- ↑ "LaTeX - A document preparation system". www.latex-project.org. Archived from the original on 2011-03-04. Retrieved 2019-07-20.
+- ↑ "Multilingual typesetting on Overleaf using babel and fontspec". Retrieved 2022-04-09.
+- ↑ "Babel: The multilingual framework to localize LaTeX, LuaLaTeX, XeLaTeX". Archived from the original on 2024-11-09. Retrieved 2024-11-09.
+- ↑ "Chinese". www.overleaf.com. Archived from the original on 2020-12-04. Retrieved 2020-12-30.
+- 1 2 Lamport, Leslie (2024-04-29). "My Writings" (PDF). pp. 48–49. Archived (PDF) from the original on 2024-06-09. Retrieved 2024-06-09.
+- ↑ The design of LaTeX owes something to earlier markup systems such as Scribe.
+- ↑ Van Dyke, Jackson. "Getting started with LaTeX and Vim" (PDF). Archived (PDF) from the original on 21 January 2024. Retrieved 21 February 2024.
+- ↑ PDF output is common, but TeX can output other formats such as DVI ("Device independent" format).
+- ↑ "Online LaTeX Compiler". Archived from the original on 2026-05-11. Retrieved 2026-02-04.
+- ↑ "SciScribe". Archived from the original on 2026-05-11. Retrieved 2026-05-18.
+- ↑ "Overleaf". Archived from the original on 2017-12-03. Retrieved 2016-06-21.
+- ↑ "Seeveeze". Archived from the original on 2015-12-08. Retrieved 2015-12-27.
+- ↑ "LaTeX Base". Archived from the original on 2023-06-29. Retrieved 2017-09-19.
+- ↑ "Authorea". Archived from the original on 2017-06-28. Retrieved 2017-06-28.
+- ↑ Donald E. Knuth, The TeXbook, Addison–Wesley, Boston, 1986, p. 1.
+- ↑ Lamport (1994), p 5
+- ↑ O'Connor, Edward. "TeX and LaTeX logo POSHlets". Archived from the original on 2007-10-11. Retrieved 2008-04-21.
+- ↑ Taraborelli, Dario. "CSS-driven TeX logos". Archived from the original on 2017-09-01. Retrieved 2008-04-21.
+- ↑ Walden, David (2005-07-15). "Travels in TeX Land: A Macro, Three Software Packages, and the Trouble with TeX". The PracTeX Journal (3). Archived from the original on 2008-07-04. Retrieved 2008-04-21.
+- ↑ "Chemmacros - Comprehensive support for typesetting chemistry documents" (PDF). Archived from the original (PDF) on 2024-07-26.
+- ↑ "pdfTeX - TeX Users Group". www.tug.org. Archived from the original on 2019-07-20. Retrieved 2019-07-20.
+- ↑ "XeTeX - TeX Users Group". www.tug.org. Retrieved 2019-07-20.
+- ↑ "LuaTeX". Archived from the original on 2023-07-07. Retrieved 2023-07-18.
+- ↑ Website http://hevea.inria.fr/ Archived 2017-06-02 at the Wayback Machine
+- ↑ According to LICENSE file in the source repository Archived 2019-11-20 at the Wayback Machine.
+- ↑ "CTAN: Package latex2html". ctan.org. Archived from the original on 2024-09-01. Retrieved 2024-09-01.
+- ↑ "CTAN: /tex-archive/support/latex2rtf". ctan.org. Archived from the original on 2024-09-01. Retrieved 2024-09-01.
+- ↑ "LaTeXML A LaTeX to XML/HTML/MathML Converter". dlmf.nist.gov. Archived from the original on 2018-08-19. Retrieved 2018-08-18.
+- ↑ "Pandoc - About pandoc". pandoc.org. Archived from the original on 2018-01-19. Retrieved 2018-01-17.
+- 1 2 Alexia Gaudeul (June 2007). "Do Open Source Developers Respond to Competition?: The (La)TeX Case Study". Review of Network Economics. 6 (2). doi:10.2202/1446-9022.1119. S2CID 201097782.
+- ↑ Knauff, Markus; Nejasmic, Jelica (December 19, 2019). "An Efficiency Comparison of Document Preparation Systems Used in Academic Research and Development". PLOS ONE. 9 (12) e115069. doi:10.1371/journal.pone.0115069. PMC 4272305. PMID 25526083.
+- ↑ Schubotz, Moritz; Wicke, Gabriel (2014). "Mathoid: Robust, Scalable, Fast and Accessible Math Rendering for Wikipedia". Intelligent Computer Mathematics – International Conference. CICM. Lecture Notes in Computer Science. Vol. 8543. Springer. pp. 224–235. arXiv:1404.6179. doi:10.1007/978-3-319-08434-3_17. ISBN 978-3-319-08433-6.
+- ↑ "KaTeX – The fastest math typesetting library for the web". katex.org. Archived from the original on 2021-04-17. Retrieved 2021-04-19.
+- ↑ "The LaTeX project public license". www.latex-project.org. Archived from the original on 2019-07-13. Retrieved 2019-07-20.
+- ↑ Scavo, Tom. "TeX, LaTeX, and AMS-LaTeX". Archived from the original on 3 December 1998. Retrieved 6 September 2018.
+- ↑ Frank Mittelbach, Chris Rowley (January 12, 1999). "The LaTeX3 Project" (PDF). Archived (PDF) from the original on 2007-08-08. Retrieved 2007-07-30.
+- ↑ Wright, Joseph. "Why is LaTeX3 taking so long to come out?". TeX - LaTeX Stack Exchange.
+- ↑ "LyX: What is LyX?". www.lyx.org. Archived from the original on 2019-07-20. Retrieved 2019-07-20.
+- ↑ "Welcome to GNU TeXmacs (FSF GNU project)". www.texmacs.org. Archived from the original on 2019-07-20. Retrieved 2019-07-20.
+- ↑ "What are TeX, LaTeX and friends?". Archived from the original on 2007-10-11. Retrieved 2007-10-09.
+- ↑ Markin, Pablo (1 November 2017). "LaTeX, Open Source Software, Facilitates the Adoption of Open Access by Authors, Repositories and Journals". OpenScience. Archived from the original on 9 November 2020. Retrieved 5 November 2017.
 Further reading
-
-Flynn, Peter (2017) [2002]. [*Formatting Information: A Beginner's Guide to LaTeX*](http://latex.silmaril.ie/formattinginformation/) (7th online ed.). Cork: Silmaril. p. 193.
-Griffiths, David F.; Highman, David S. (1997). *Learning LaTeX*. Philadelphia: Society for Industrial and Applied Mathematics. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [0-89871-383-8](//en.wikipedia.org/wiki/Special:BookSources/0-89871-383-8 "Special:BookSources/0-89871-383-8").
-Kopka, Helmut; Daly, Patrick W. (2003). *Guide to LaTeX* (4th ed.). Addison-Wesley Professional. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [0-321-17385-6](//en.wikipedia.org/wiki/Special:BookSources/0-321-17385-6 "Special:BookSources/0-321-17385-6").
-[Lamport, Leslie](//en.wikipedia.org/wiki/Leslie_Lamport "Leslie Lamport") (1994). *LaTeX: A document preparation system: User's guide and reference*. illustrations by Duane Bibby (2nd ed.). Reading, Mass: Addison-Wesley Professional. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [0-201-52983-1](//en.wikipedia.org/wiki/Special:BookSources/0-201-52983-1 "Special:BookSources/0-201-52983-1").
-Oetiker, Tobias (2021-03-09). ["The not so Short Introduction to LaTeX"](https://mirrors.ctan.org/info/lshort/english/lshort.pdf) (PDF). *ctan.org*. Retrieved 2025-10-14.
-Mittelbach, Frank; Fischer, Ulrike (2023). *The LaTeX Companion* (3rd ed.). Addison-Wesley. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-0-13-465894-0](//en.wikipedia.org/wiki/Special:BookSources/978-0-13-465894-0 "Special:BookSources/978-0-13-465894-0"). Vol II: Mittelbach, Frank; Fischer, Ulrike (2023). *The LaTeX Companion* (3rd ed.). Addison-Wesley. [ISBN](//en.wikipedia.org/wiki/ISBN_(identifier) "ISBN (identifier)") [978-0-201-36300-5](//en.wikipedia.org/wiki/Special:BookSources/978-0-201-36300-5 "Special:BookSources/978-0-201-36300-5").
-External links
-
-[![Wiktionary logo]](//en.wikipedia.org/wiki/File:Wiktionary-logo-en-v2.svg)[Definitions](https://en.wiktionary.org/wiki/LaTeX "wikt:LaTeX") from Wiktionary
-[![Wikimedia Commons logo]](//en.wikipedia.org/wiki/File:Commons-logo.svg)[Media](https://commons.wikimedia.org/wiki/LaTeX "c:LaTeX") from Commons
-[![Wikibooks logo]](//en.wikipedia.org/wiki/File:Wikibooks-logo.svg)[Textbooks](https://en.wikibooks.org/wiki/LaTeX "b:LaTeX") from Wikibooks
-[![Wikiversity logo]](//en.wikipedia.org/wiki/File:Wikiversity_logo_2017.svg)[Resources](https://en.wikiversity.org/wiki/LaTeX "v:LaTeX") from Wikiversity
-![][Data](https://www.wikidata.org/wiki/Q5310 "d:Q5310") from Wikidata
-![Wiktionary logo]
-
-![Wikimedia Commons logo]
-
-![Wikibooks logo]
-
-![Wikiversity logo]
-
-![]
-
-[Official website](https://www.latex-project.org/) [![Edit this at Wikidata]](https://www.wikidata.org/wiki/Q5310#P856 "Edit this at Wikidata")
-![Edit this at Wikidata]
-
-Active [LuaTeX](//en.wikipedia.org/wiki/LuaTeX "LuaTeX")[pdfTeX](//en.wikipedia.org/wiki/PdfTeX "PdfTeX")[XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX")[upTeX](//en.wikipedia.org/wiki/UpTeX?action=edit&redlink=1 "UpTeX (page does not exist)")
-Deprecated [Aleph](//en.wikipedia.org/wiki/Omega_(TeX)#Aleph_and_LuaTeX "Omega (TeX)")[ε-TeX](//en.wikipedia.org/wiki/TeX_Live "TeX Live")[NTS](//en.wikipedia.org/wiki/New_Typesetting_System "New Typesetting System")[Omega](//en.wikipedia.org/wiki/Omega_(TeX) "Omega (TeX)")
-
-Active [MiKTeX](//en.wikipedia.org/wiki/MiKTeX "MiKTeX")[TeX Live](//en.wikipedia.org/wiki/TeX_Live "TeX Live")<br> [MacTeX](//en.wikipedia.org/wiki/MacTeX "MacTeX") [W32TeX](//en.wikipedia.org/wiki/W32TeX?action=edit&redlink=1 "W32TeX (page does not exist)")
-[TeXPortal](//en.wikipedia.org/wiki/TeXPortal?action=edit&redlink=1 "TeXPortal (page does not exist)")[TinyTeX](//en.wikipedia.org/wiki/TinyTeX?action=edit&redlink=1 "TinyTeX (page does not exist)")
-Deprecated [AmigaTeX](//en.wikipedia.org/wiki/AmigaTeX "AmigaTeX")[fpTeX](//en.wikipedia.org/wiki/FpTeX?action=edit&redlink=1 "FpTeX (page does not exist)")[gwTeX](//en.wikipedia.org/wiki/GwTeX?action=edit&redlink=1 "GwTeX (page does not exist)")[OzTeX](//en.wikipedia.org/wiki/OzTeX?action=edit&redlink=1 "OzTeX (page does not exist)")[PasTeX](//en.wikipedia.org/wiki/PasTeX?action=edit&redlink=1 "PasTeX (page does not exist)")[teTeX](//en.wikipedia.org/wiki/TeTeX "TeTeX")
-
-Active [LuaTeX](//en.wikipedia.org/wiki/LuaTeX "LuaTeX")[pdfTeX](//en.wikipedia.org/wiki/PdfTeX "PdfTeX")[XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX")[upTeX](//en.wikipedia.org/wiki/UpTeX?action=edit&redlink=1 "UpTeX (page does not exist)")
-Deprecated [Aleph](//en.wikipedia.org/wiki/Omega_(TeX)#Aleph_and_LuaTeX "Omega (TeX)")[ε-TeX](//en.wikipedia.org/wiki/TeX_Live "TeX Live")[NTS](//en.wikipedia.org/wiki/New_Typesetting_System "New Typesetting System")[Omega](//en.wikipedia.org/wiki/Omega_(TeX) "Omega (TeX)")
-
-Active [MiKTeX](//en.wikipedia.org/wiki/MiKTeX "MiKTeX")[TeX Live](//en.wikipedia.org/wiki/TeX_Live "TeX Live")<br> [MacTeX](//en.wikipedia.org/wiki/MacTeX "MacTeX") [W32TeX](//en.wikipedia.org/wiki/W32TeX?action=edit&redlink=1 "W32TeX (page does not exist)")
-[TeXPortal](//en.wikipedia.org/wiki/TeXPortal?action=edit&redlink=1 "TeXPortal (page does not exist)")[TinyTeX](//en.wikipedia.org/wiki/TinyTeX?action=edit&redlink=1 "TinyTeX (page does not exist)")
-Deprecated [AmigaTeX](//en.wikipedia.org/wiki/AmigaTeX "AmigaTeX")[fpTeX](//en.wikipedia.org/wiki/FpTeX?action=edit&redlink=1 "FpTeX (page does not exist)")[gwTeX](//en.wikipedia.org/wiki/GwTeX?action=edit&redlink=1 "GwTeX (page does not exist)")[OzTeX](//en.wikipedia.org/wiki/OzTeX?action=edit&redlink=1 "OzTeX (page does not exist)")[PasTeX](//en.wikipedia.org/wiki/PasTeX?action=edit&redlink=1 "PasTeX (page does not exist)")[teTeX](//en.wikipedia.org/wiki/TeTeX "TeTeX")
-
-Active [LuaTeX](//en.wikipedia.org/wiki/LuaTeX "LuaTeX")[pdfTeX](//en.wikipedia.org/wiki/PdfTeX "PdfTeX")[XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX")[upTeX](//en.wikipedia.org/wiki/UpTeX?action=edit&redlink=1 "UpTeX (page does not exist)")
-Deprecated [Aleph](//en.wikipedia.org/wiki/Omega_(TeX)#Aleph_and_LuaTeX "Omega (TeX)")[ε-TeX](//en.wikipedia.org/wiki/TeX_Live "TeX Live")[NTS](//en.wikipedia.org/wiki/New_Typesetting_System "New Typesetting System")[Omega](//en.wikipedia.org/wiki/Omega_(TeX) "Omega (TeX)")
-
-Active [MiKTeX](//en.wikipedia.org/wiki/MiKTeX "MiKTeX")[TeX Live](//en.wikipedia.org/wiki/TeX_Live "TeX Live")<br> [MacTeX](//en.wikipedia.org/wiki/MacTeX "MacTeX") [W32TeX](//en.wikipedia.org/wiki/W32TeX?action=edit&redlink=1 "W32TeX (page does not exist)")
-[TeXPortal](//en.wikipedia.org/wiki/TeXPortal?action=edit&redlink=1 "TeXPortal (page does not exist)")[TinyTeX](//en.wikipedia.org/wiki/TinyTeX?action=edit&redlink=1 "TinyTeX (page does not exist)")
-Deprecated [AmigaTeX](//en.wikipedia.org/wiki/AmigaTeX "AmigaTeX")[fpTeX](//en.wikipedia.org/wiki/FpTeX?action=edit&redlink=1 "FpTeX (page does not exist)")[gwTeX](//en.wikipedia.org/wiki/GwTeX?action=edit&redlink=1 "GwTeX (page does not exist)")[OzTeX](//en.wikipedia.org/wiki/OzTeX?action=edit&redlink=1 "OzTeX (page does not exist)")[PasTeX](//en.wikipedia.org/wiki/PasTeX?action=edit&redlink=1 "PasTeX (page does not exist)")[teTeX](//en.wikipedia.org/wiki/TeTeX "TeTeX")
-
-<br>[v (View this template)](//en.wikipedia.org/wiki/Template:TeX_navbox "Template:TeX navbox")[t (Discuss this template)](//en.wikipedia.org/wiki/Template_talk:TeX_navbox "Template talk:TeX navbox")[e (Edit this template)](//en.wikipedia.org/wiki/Special:EditPage/Template:TeX_navbox "Special:EditPage/Template:TeX navbox")
-[TeX](//en.wikipedia.org/wiki/TeX "TeX")
-Macro packages [AMS-TeX](//en.wikipedia.org/wiki/AMS-LaTeX "AMS-LaTeX")[ArabTeX](//en.wikipedia.org/wiki/ArabTeX "ArabTeX")[CircuiTikZ](//en.wikipedia.org/wiki/CircuiTikZ "CircuiTikZ")[ConTeXt](//en.wikipedia.org/wiki/ConTeXt "ConTeXt")[LaTeX](//en.wikipedia.org/wiki/LaTeX)[MusiXTeX](//en.wikipedia.org/wiki/MusiXTeX "MusiXTeX")[Plain TeX](//en.wikipedia.org/wiki/TeX "TeX")[OpTeX](//en.wikipedia.org/wiki/OpTeX?action=edit&redlink=1 "OpTeX (page does not exist)")[PSTricks](//en.wikipedia.org/wiki/PSTricks "PSTricks")[TikZ](//en.wikipedia.org/wiki/PGF/TikZ "PGF/TikZ")[TIPA](//en.wikipedia.org/wiki/TIPA_(software) "TIPA (software)")[XyMTeX](//en.wikipedia.org/wiki/XyMTeX "XyMTeX")
-Alternative TeX engines | Active | [LuaTeX](//en.wikipedia.org/wiki/LuaTeX "LuaTeX")[pdfTeX](//en.wikipedia.org/wiki/PdfTeX "PdfTeX")[XeTeX](//en.wikipedia.org/wiki/XeTeX "XeTeX")[upTeX](//en.wikipedia.org/wiki/UpTeX?action=edit&redlink=1 "UpTeX (page does not exist)") |
-| ---------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Deprecated | [Aleph](//en.wikipedia.org/wiki/Omega_(TeX)#Aleph_and_LuaTeX "Omega (TeX)")[ε-TeX](//en.wikipedia.org/wiki/TeX_Live "TeX Live")[NTS](//en.wikipedia.org/wiki/New_Typesetting_System "New Typesetting System")[Omega](//en.wikipedia.org/wiki/Omega_(TeX) "Omega (TeX)") |
-Distributions | Active | [MiKTeX](//en.wikipedia.org/wiki/MiKTeX "MiKTeX")[TeX Live](//en.wikipedia.org/wiki/TeX_Live "TeX Live")<br> [MacTeX](//en.wikipedia.org/wiki/MacTeX "MacTeX") [W32TeX](//en.wikipedia.org/wiki/W32TeX?action=edit&redlink=1 "W32TeX (page does not exist)") [TeXPortal](//en.wikipedia.org/wiki/TeXPortal?action=edit&redlink=1 "TeXPortal (page does not exist)")[TinyTeX](//en.wikipedia.org/wiki/TinyTeX?action=edit&redlink=1 "TinyTeX (page does not exist)") |
-| ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Deprecated | [AmigaTeX](//en.wikipedia.org/wiki/AmigaTeX "AmigaTeX")[fpTeX](//en.wikipedia.org/wiki/FpTeX?action=edit&redlink=1 "FpTeX (page does not exist)")[gwTeX](//en.wikipedia.org/wiki/GwTeX?action=edit&redlink=1 "GwTeX (page does not exist)")[OzTeX](//en.wikipedia.org/wiki/OzTeX?action=edit&redlink=1 "OzTeX (page does not exist)")[PasTeX](//en.wikipedia.org/wiki/PasTeX?action=edit&redlink=1 "PasTeX (page does not exist)")[teTeX](//en.wikipedia.org/wiki/TeTeX "TeTeX") |
-Community [CTAN](//en.wikipedia.org/wiki/CTAN "CTAN")[DANTE](//en.wikipedia.org/wiki/Deutschsprachige_Anwendervereinigung_TeX "Deutschsprachige Anwendervereinigung TeX")*[TUGboat](//en.wikipedia.org/wiki/TUGboat "TUGboat")**[The PracTeX Journal](//en.wikipedia.org/wiki/The_PracTeX_Journal "The PracTeX Journal")*
-Related [BibTeX](//en.wikipedia.org/wiki/BibTeX "BibTeX")[DVI](//en.wikipedia.org/wiki/Device_independent_file_format "Device independent file format")[Computer Modern](//en.wikipedia.org/wiki/Computer_Modern "Computer Modern")[Metafont](//en.wikipedia.org/wiki/Metafont "Metafont")[MetaPost](//en.wikipedia.org/wiki/MetaPost "MetaPost")[WEB](//en.wikipedia.org/wiki/Web_(programming_system) "Web (programming system)")[CWEB](//en.wikipedia.org/wiki/CWEB "CWEB")[TeX Directory Structure](//en.wikipedia.org/wiki/TeX_Directory_Structure "TeX Directory Structure")[TeX font metric](//en.wikipedia.org/wiki/TeX_font_metric "TeX font metric")[Texinfo](//en.wikipedia.org/wiki/Texinfo "Texinfo")
-[extensions](//en.wikipedia.org/wiki/List_of_TeX_extensions "List of TeX extensions")
-
-[v (View this template)](//en.wikipedia.org/wiki/Template:LaTeX_navbox "Template:LaTeX navbox")[t (Discuss this template)](//en.wikipedia.org/wiki/Template_talk:LaTeX_navbox "Template talk:LaTeX navbox")[e (Edit this template)](//en.wikipedia.org/wiki/Special:EditPage/Template:LaTeX_navbox "Special:EditPage/Template:LaTeX navbox")
-[LaTeX](//en.wikipedia.org/wiki/LaTeX)
-Classes [AMS-LaTeX](//en.wikipedia.org/wiki/AMS-LaTeX "AMS-LaTeX")[Beamer](//en.wikipedia.org/wiki/Beamer_(LaTeX) "Beamer (LaTeX)")[Powerdot](//en.wikipedia.org/wiki/Powerdot "Powerdot")[Biber](//en.wikipedia.org/wiki/Biber_(LaTeX) "Biber (LaTeX)")[AMSRefs](//en.wikipedia.org/wiki/AMSRefs "AMSRefs")
-Macro packages [PGF/TikZ](//en.wikipedia.org/wiki/PGF/TikZ "PGF/TikZ")[PSfrag](//en.wikipedia.org/wiki/PSfrag "PSfrag")[REVTeX](//en.wikipedia.org/wiki/REVTeX "REVTeX")
-LaTeX integration [knitr](//en.wikipedia.org/wiki/Knitr "Knitr")[Pandoc](//en.wikipedia.org/wiki/Pandoc "Pandoc")[Sweave](//en.wikipedia.org/wiki/Sweave "Sweave")
-Conversion tools [LaTeX2HTML](//en.wikipedia.org/wiki/LaTeX2HTML "LaTeX2HTML")[LaTeX2RTF](//en.wikipedia.org/wiki/LaTeX2RTF "LaTeX2RTF")[LaTeXML](//en.wikipedia.org/wiki/LaTeXML "LaTeXML")
-Related [LaTeX Project Public License](//en.wikipedia.org/wiki/LaTeX_Project_Public_License "LaTeX Project Public License")
-
-[Devices](//en.wikipedia.org/wiki/E-reader "E-reader") [Amazon Kindle](//en.wikipedia.org/wiki/Amazon_Kindle "Amazon Kindle")[Barnes & Noble Nook](//en.wikipedia.org/wiki/Barnes_&_Noble_Nook "Barnes &amp; Noble Nook")[Bookeen](//en.wikipedia.org/wiki/Bookeen "Bookeen")[Elonex ebook](//en.wikipedia.org/wiki/Elonex_ebook "Elonex ebook")[enTourage eDGe](//en.wikipedia.org/wiki/EnTourage_eDGe "EnTourage eDGe")[Hanlin eReader](//en.wikipedia.org/wiki/Hanlin_eReader "Hanlin eReader")[iPad](//en.wikipedia.org/wiki/IPad "IPad")[iRiver Story](//en.wikipedia.org/wiki/IRiver_Story "IRiver Story")[Kobo eReader](//en.wikipedia.org/wiki/Kobo_eReader "Kobo eReader")[Onyx Boox](//en.wikipedia.org/wiki/Onyx_Boox "Onyx Boox")[Plastic Logic Reader](//en.wikipedia.org/wiki/Plastic_Logic "Plastic Logic")[PocketBook eReader](//en.wikipedia.org/wiki/PocketBook_International "PocketBook International")[Rocket eBook](//en.wikipedia.org/wiki/Rocket_eBook "Rocket eBook")[SoftBook](//en.wikipedia.org/wiki/SoftBook "SoftBook")[Smartphones](//en.wikipedia.org/wiki/Smartphone "Smartphone")[Tablets](//en.wikipedia.org/wiki/Tablet_computer "Tablet computer")
-Software [Adobe Acrobat](//en.wikipedia.org/wiki/Adobe_Acrobat "Adobe Acrobat")[Adobe Digital Editions](//en.wikipedia.org/wiki/Adobe_Digital_Editions "Adobe Digital Editions")[Aldiko](//en.wikipedia.org/wiki/Aldiko "Aldiko")[Apple Books](//en.wikipedia.org/wiki/Apple_Books "Apple Books") (iBooks)[Aquafadas](//en.wikipedia.org/wiki/Rakuten_Aquafadas "Rakuten Aquafadas")[Blio](//en.wikipedia.org/wiki/Blio "Blio")[Bluefire Reader](//en.wikipedia.org/wiki/Bluefire_Reader "Bluefire Reader")[Calibre](//en.wikipedia.org/wiki/Calibre_(software) "Calibre (software)")[FBReader](//en.wikipedia.org/wiki/FBReader "FBReader")[Foliate](//en.wikipedia.org/wiki/Foliate_(software) "Foliate (software)")[Google Play Books](//en.wikipedia.org/wiki/Google_Play_Books "Google Play Books")[Kindle app](//en.wikipedia.org/wiki/Kindle_app "Kindle app")[Kitabu](//en.wikipedia.org/wiki/Kitabu "Kitabu")[Kobo](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Lector](//en.wikipedia.org/wiki/Lector_(software) "Lector (software)")[Lektz](//en.wikipedia.org/wiki/Lektz "Lektz")[Lucifox](//en.wikipedia.org/wiki/Lucifox "Lucifox")[Microsoft Reader](//en.wikipedia.org/wiki/Microsoft_Reader "Microsoft Reader")[MuPDF](//en.wikipedia.org/wiki/MuPDF "MuPDF")[Okular](//en.wikipedia.org/wiki/Okular "Okular")[OverDrive Media Console](//en.wikipedia.org/wiki/OverDrive_Media_Console "OverDrive Media Console")[Snapplify](//en.wikipedia.org/wiki/Snapplify "Snapplify")[STDU Viewer](//en.wikipedia.org/wiki/STDU_Viewer "STDU Viewer")[Sumatra PDF](//en.wikipedia.org/wiki/Sumatra_PDF "Sumatra PDF")
-
-Commercial [Apple Books Store](//en.wikipedia.org/wiki/Apple_Books "Apple Books")[Amazon Kindle Store](//en.wikipedia.org/wiki/Kindle_Store "Kindle Store")[Baen Free Library](//en.wikipedia.org/wiki/Baen_Free_Library "Baen Free Library")[Barnes & Noble](//en.wikipedia.org/wiki/Barnes_&_Noble "Barnes &amp; Noble")[Booktrack](//en.wikipedia.org/wiki/Booktrack "Booktrack")[BookWalker](//en.wikipedia.org/wiki/BookWalker "BookWalker")[Feedbooks](//en.wikipedia.org/wiki/Feedbooks "Feedbooks")[Google](//en.wikipedia.org/wiki/Google "Google")<br> [Google Play](//en.wikipedia.org/wiki/Google_Play "Google Play") [Google Books](//en.wikipedia.org/wiki/Google_Books "Google Books")
-[Jarir.com](//en.wikipedia.org/wiki/Jarir_Bookstore "Jarir Bookstore")[Kobo Bookstore](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Rokomari](//en.wikipedia.org/wiki/Rokomari.com "Rokomari.com")[Sony Reader Store](//en.wikipedia.org/wiki/Sony_Reader "Sony Reader")[Smashwords](//en.wikipedia.org/wiki/Smashwords "Smashwords")
-Noncommercial [Aozora Bunko](//en.wikipedia.org/wiki/Aozora_Bunko "Aozora Bunko")[Faded Page](//en.wikipedia.org/wiki/Faded_Page "Faded Page")[HathiTrust](//en.wikipedia.org/wiki/HathiTrust "HathiTrust")[Internet Archive](//en.wikipedia.org/wiki/Internet_Archive "Internet Archive")[Project Gutenberg](//en.wikipedia.org/wiki/Project_Gutenberg "Project Gutenberg")<br> [Australia](//en.wikipedia.org/wiki/Project_Gutenberg_Australia "Project Gutenberg Australia") [Canada](//en.wikipedia.org/wiki/Project_Gutenberg_Canada "Project Gutenberg Canada")
-[Standard Ebooks](//en.wikipedia.org/wiki/Standard_Ebooks "Standard Ebooks")[Wikisource](//en.wikipedia.org/wiki/Wikisource "Wikisource")
-
-[Devices](//en.wikipedia.org/wiki/E-reader "E-reader") [Amazon Kindle](//en.wikipedia.org/wiki/Amazon_Kindle "Amazon Kindle")[Barnes & Noble Nook](//en.wikipedia.org/wiki/Barnes_&_Noble_Nook "Barnes &amp; Noble Nook")[Bookeen](//en.wikipedia.org/wiki/Bookeen "Bookeen")[Elonex ebook](//en.wikipedia.org/wiki/Elonex_ebook "Elonex ebook")[enTourage eDGe](//en.wikipedia.org/wiki/EnTourage_eDGe "EnTourage eDGe")[Hanlin eReader](//en.wikipedia.org/wiki/Hanlin_eReader "Hanlin eReader")[iPad](//en.wikipedia.org/wiki/IPad "IPad")[iRiver Story](//en.wikipedia.org/wiki/IRiver_Story "IRiver Story")[Kobo eReader](//en.wikipedia.org/wiki/Kobo_eReader "Kobo eReader")[Onyx Boox](//en.wikipedia.org/wiki/Onyx_Boox "Onyx Boox")[Plastic Logic Reader](//en.wikipedia.org/wiki/Plastic_Logic "Plastic Logic")[PocketBook eReader](//en.wikipedia.org/wiki/PocketBook_International "PocketBook International")[Rocket eBook](//en.wikipedia.org/wiki/Rocket_eBook "Rocket eBook")[SoftBook](//en.wikipedia.org/wiki/SoftBook "SoftBook")[Smartphones](//en.wikipedia.org/wiki/Smartphone "Smartphone")[Tablets](//en.wikipedia.org/wiki/Tablet_computer "Tablet computer")
-Software [Adobe Acrobat](//en.wikipedia.org/wiki/Adobe_Acrobat "Adobe Acrobat")[Adobe Digital Editions](//en.wikipedia.org/wiki/Adobe_Digital_Editions "Adobe Digital Editions")[Aldiko](//en.wikipedia.org/wiki/Aldiko "Aldiko")[Apple Books](//en.wikipedia.org/wiki/Apple_Books "Apple Books") (iBooks)[Aquafadas](//en.wikipedia.org/wiki/Rakuten_Aquafadas "Rakuten Aquafadas")[Blio](//en.wikipedia.org/wiki/Blio "Blio")[Bluefire Reader](//en.wikipedia.org/wiki/Bluefire_Reader "Bluefire Reader")[Calibre](//en.wikipedia.org/wiki/Calibre_(software) "Calibre (software)")[FBReader](//en.wikipedia.org/wiki/FBReader "FBReader")[Foliate](//en.wikipedia.org/wiki/Foliate_(software) "Foliate (software)")[Google Play Books](//en.wikipedia.org/wiki/Google_Play_Books "Google Play Books")[Kindle app](//en.wikipedia.org/wiki/Kindle_app "Kindle app")[Kitabu](//en.wikipedia.org/wiki/Kitabu "Kitabu")[Kobo](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Lector](//en.wikipedia.org/wiki/Lector_(software) "Lector (software)")[Lektz](//en.wikipedia.org/wiki/Lektz "Lektz")[Lucifox](//en.wikipedia.org/wiki/Lucifox "Lucifox")[Microsoft Reader](//en.wikipedia.org/wiki/Microsoft_Reader "Microsoft Reader")[MuPDF](//en.wikipedia.org/wiki/MuPDF "MuPDF")[Okular](//en.wikipedia.org/wiki/Okular "Okular")[OverDrive Media Console](//en.wikipedia.org/wiki/OverDrive_Media_Console "OverDrive Media Console")[Snapplify](//en.wikipedia.org/wiki/Snapplify "Snapplify")[STDU Viewer](//en.wikipedia.org/wiki/STDU_Viewer "STDU Viewer")[Sumatra PDF](//en.wikipedia.org/wiki/Sumatra_PDF "Sumatra PDF")
-
-Commercial [Apple Books Store](//en.wikipedia.org/wiki/Apple_Books "Apple Books")[Amazon Kindle Store](//en.wikipedia.org/wiki/Kindle_Store "Kindle Store")[Baen Free Library](//en.wikipedia.org/wiki/Baen_Free_Library "Baen Free Library")[Barnes & Noble](//en.wikipedia.org/wiki/Barnes_&_Noble "Barnes &amp; Noble")[Booktrack](//en.wikipedia.org/wiki/Booktrack "Booktrack")[BookWalker](//en.wikipedia.org/wiki/BookWalker "BookWalker")[Feedbooks](//en.wikipedia.org/wiki/Feedbooks "Feedbooks")[Google](//en.wikipedia.org/wiki/Google "Google")<br> [Google Play](//en.wikipedia.org/wiki/Google_Play "Google Play") [Google Books](//en.wikipedia.org/wiki/Google_Books "Google Books")
-[Jarir.com](//en.wikipedia.org/wiki/Jarir_Bookstore "Jarir Bookstore")[Kobo Bookstore](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Rokomari](//en.wikipedia.org/wiki/Rokomari.com "Rokomari.com")[Sony Reader Store](//en.wikipedia.org/wiki/Sony_Reader "Sony Reader")[Smashwords](//en.wikipedia.org/wiki/Smashwords "Smashwords")
-Noncommercial [Aozora Bunko](//en.wikipedia.org/wiki/Aozora_Bunko "Aozora Bunko")[Faded Page](//en.wikipedia.org/wiki/Faded_Page "Faded Page")[HathiTrust](//en.wikipedia.org/wiki/HathiTrust "HathiTrust")[Internet Archive](//en.wikipedia.org/wiki/Internet_Archive "Internet Archive")[Project Gutenberg](//en.wikipedia.org/wiki/Project_Gutenberg "Project Gutenberg")<br> [Australia](//en.wikipedia.org/wiki/Project_Gutenberg_Australia "Project Gutenberg Australia") [Canada](//en.wikipedia.org/wiki/Project_Gutenberg_Canada "Project Gutenberg Canada")
-[Standard Ebooks](//en.wikipedia.org/wiki/Standard_Ebooks "Standard Ebooks")[Wikisource](//en.wikipedia.org/wiki/Wikisource "Wikisource")
-
-[Devices](//en.wikipedia.org/wiki/E-reader "E-reader") [Amazon Kindle](//en.wikipedia.org/wiki/Amazon_Kindle "Amazon Kindle")[Barnes & Noble Nook](//en.wikipedia.org/wiki/Barnes_&_Noble_Nook "Barnes &amp; Noble Nook")[Bookeen](//en.wikipedia.org/wiki/Bookeen "Bookeen")[Elonex ebook](//en.wikipedia.org/wiki/Elonex_ebook "Elonex ebook")[enTourage eDGe](//en.wikipedia.org/wiki/EnTourage_eDGe "EnTourage eDGe")[Hanlin eReader](//en.wikipedia.org/wiki/Hanlin_eReader "Hanlin eReader")[iPad](//en.wikipedia.org/wiki/IPad "IPad")[iRiver Story](//en.wikipedia.org/wiki/IRiver_Story "IRiver Story")[Kobo eReader](//en.wikipedia.org/wiki/Kobo_eReader "Kobo eReader")[Onyx Boox](//en.wikipedia.org/wiki/Onyx_Boox "Onyx Boox")[Plastic Logic Reader](//en.wikipedia.org/wiki/Plastic_Logic "Plastic Logic")[PocketBook eReader](//en.wikipedia.org/wiki/PocketBook_International "PocketBook International")[Rocket eBook](//en.wikipedia.org/wiki/Rocket_eBook "Rocket eBook")[SoftBook](//en.wikipedia.org/wiki/SoftBook "SoftBook")[Smartphones](//en.wikipedia.org/wiki/Smartphone "Smartphone")[Tablets](//en.wikipedia.org/wiki/Tablet_computer "Tablet computer")
-Software [Adobe Acrobat](//en.wikipedia.org/wiki/Adobe_Acrobat "Adobe Acrobat")[Adobe Digital Editions](//en.wikipedia.org/wiki/Adobe_Digital_Editions "Adobe Digital Editions")[Aldiko](//en.wikipedia.org/wiki/Aldiko "Aldiko")[Apple Books](//en.wikipedia.org/wiki/Apple_Books "Apple Books") (iBooks)[Aquafadas](//en.wikipedia.org/wiki/Rakuten_Aquafadas "Rakuten Aquafadas")[Blio](//en.wikipedia.org/wiki/Blio "Blio")[Bluefire Reader](//en.wikipedia.org/wiki/Bluefire_Reader "Bluefire Reader")[Calibre](//en.wikipedia.org/wiki/Calibre_(software) "Calibre (software)")[FBReader](//en.wikipedia.org/wiki/FBReader "FBReader")[Foliate](//en.wikipedia.org/wiki/Foliate_(software) "Foliate (software)")[Google Play Books](//en.wikipedia.org/wiki/Google_Play_Books "Google Play Books")[Kindle app](//en.wikipedia.org/wiki/Kindle_app "Kindle app")[Kitabu](//en.wikipedia.org/wiki/Kitabu "Kitabu")[Kobo](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Lector](//en.wikipedia.org/wiki/Lector_(software) "Lector (software)")[Lektz](//en.wikipedia.org/wiki/Lektz "Lektz")[Lucifox](//en.wikipedia.org/wiki/Lucifox "Lucifox")[Microsoft Reader](//en.wikipedia.org/wiki/Microsoft_Reader "Microsoft Reader")[MuPDF](//en.wikipedia.org/wiki/MuPDF "MuPDF")[Okular](//en.wikipedia.org/wiki/Okular "Okular")[OverDrive Media Console](//en.wikipedia.org/wiki/OverDrive_Media_Console "OverDrive Media Console")[Snapplify](//en.wikipedia.org/wiki/Snapplify "Snapplify")[STDU Viewer](//en.wikipedia.org/wiki/STDU_Viewer "STDU Viewer")[Sumatra PDF](//en.wikipedia.org/wiki/Sumatra_PDF "Sumatra PDF")
-
-Commercial [Apple Books Store](//en.wikipedia.org/wiki/Apple_Books "Apple Books")[Amazon Kindle Store](//en.wikipedia.org/wiki/Kindle_Store "Kindle Store")[Baen Free Library](//en.wikipedia.org/wiki/Baen_Free_Library "Baen Free Library")[Barnes & Noble](//en.wikipedia.org/wiki/Barnes_&_Noble "Barnes &amp; Noble")[Booktrack](//en.wikipedia.org/wiki/Booktrack "Booktrack")[BookWalker](//en.wikipedia.org/wiki/BookWalker "BookWalker")[Feedbooks](//en.wikipedia.org/wiki/Feedbooks "Feedbooks")[Google](//en.wikipedia.org/wiki/Google "Google")<br> [Google Play](//en.wikipedia.org/wiki/Google_Play "Google Play") [Google Books](//en.wikipedia.org/wiki/Google_Books "Google Books")
-[Jarir.com](//en.wikipedia.org/wiki/Jarir_Bookstore "Jarir Bookstore")[Kobo Bookstore](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Rokomari](//en.wikipedia.org/wiki/Rokomari.com "Rokomari.com")[Sony Reader Store](//en.wikipedia.org/wiki/Sony_Reader "Sony Reader")[Smashwords](//en.wikipedia.org/wiki/Smashwords "Smashwords")
-Noncommercial [Aozora Bunko](//en.wikipedia.org/wiki/Aozora_Bunko "Aozora Bunko")[Faded Page](//en.wikipedia.org/wiki/Faded_Page "Faded Page")[HathiTrust](//en.wikipedia.org/wiki/HathiTrust "HathiTrust")[Internet Archive](//en.wikipedia.org/wiki/Internet_Archive "Internet Archive")[Project Gutenberg](//en.wikipedia.org/wiki/Project_Gutenberg "Project Gutenberg")<br> [Australia](//en.wikipedia.org/wiki/Project_Gutenberg_Australia "Project Gutenberg Australia") [Canada](//en.wikipedia.org/wiki/Project_Gutenberg_Canada "Project Gutenberg Canada")
-[Standard Ebooks](//en.wikipedia.org/wiki/Standard_Ebooks "Standard Ebooks")[Wikisource](//en.wikipedia.org/wiki/Wikisource "Wikisource")
-
-[v (View this template)](//en.wikipedia.org/wiki/Template:Ebooks "Template:Ebooks")[t (Discuss this template)](//en.wikipedia.org/wiki/Template_talk:Ebooks "Template talk:Ebooks")[e (Edit this template)](//en.wikipedia.org/wiki/Special:EditPage/Template:Ebooks "Special:EditPage/Template:Ebooks")
-[Ebooks](//en.wikipedia.org/wiki/Ebook "Ebook")
-[Formats](//en.wikipedia.org/wiki/Comparison_of_e-book_formats "Comparison of e-book formats") [ePub](//en.wikipedia.org/wiki/EPUB "EPUB")[FictionBook](//en.wikipedia.org/wiki/FictionBook "FictionBook")[CBR/CBZ](//en.wikipedia.org/wiki/Comic_book_archive "Comic book archive")[Kindle File Format](//en.wikipedia.org/wiki/Kindle_File_Format "Kindle File Format")[Mobipocket](//en.wikipedia.org/wiki/Mobipocket "Mobipocket")[PDF](//en.wikipedia.org/wiki/PDF "PDF")[Plain text](//en.wikipedia.org/wiki/Text_file "Text file")[IBA](//en.wikipedia.org/wiki/IBooks_Author "IBooks Author")
-Reading | [Devices](//en.wikipedia.org/wiki/E-reader "E-reader") | [Amazon Kindle](//en.wikipedia.org/wiki/Amazon_Kindle "Amazon Kindle")[Barnes & Noble Nook](//en.wikipedia.org/wiki/Barnes_&_Noble_Nook "Barnes &amp; Noble Nook")[Bookeen](//en.wikipedia.org/wiki/Bookeen "Bookeen")[Elonex ebook](//en.wikipedia.org/wiki/Elonex_ebook "Elonex ebook")[enTourage eDGe](//en.wikipedia.org/wiki/EnTourage_eDGe "EnTourage eDGe")[Hanlin eReader](//en.wikipedia.org/wiki/Hanlin_eReader "Hanlin eReader")[iPad](//en.wikipedia.org/wiki/IPad "IPad")[iRiver Story](//en.wikipedia.org/wiki/IRiver_Story "IRiver Story")[Kobo eReader](//en.wikipedia.org/wiki/Kobo_eReader "Kobo eReader")[Onyx Boox](//en.wikipedia.org/wiki/Onyx_Boox "Onyx Boox")[Plastic Logic Reader](//en.wikipedia.org/wiki/Plastic_Logic "Plastic Logic")[PocketBook eReader](//en.wikipedia.org/wiki/PocketBook_International "PocketBook International")[Rocket eBook](//en.wikipedia.org/wiki/Rocket_eBook "Rocket eBook")[SoftBook](//en.wikipedia.org/wiki/SoftBook "SoftBook")[Smartphones](//en.wikipedia.org/wiki/Smartphone "Smartphone")[Tablets](//en.wikipedia.org/wiki/Tablet_computer "Tablet computer") |
-| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Software | [Adobe Acrobat](//en.wikipedia.org/wiki/Adobe_Acrobat "Adobe Acrobat")[Adobe Digital Editions](//en.wikipedia.org/wiki/Adobe_Digital_Editions "Adobe Digital Editions")[Aldiko](//en.wikipedia.org/wiki/Aldiko "Aldiko")[Apple Books](//en.wikipedia.org/wiki/Apple_Books "Apple Books") (iBooks)[Aquafadas](//en.wikipedia.org/wiki/Rakuten_Aquafadas "Rakuten Aquafadas")[Blio](//en.wikipedia.org/wiki/Blio "Blio")[Bluefire Reader](//en.wikipedia.org/wiki/Bluefire_Reader "Bluefire Reader")[Calibre](//en.wikipedia.org/wiki/Calibre_(software) "Calibre (software)")[FBReader](//en.wikipedia.org/wiki/FBReader "FBReader")[Foliate](//en.wikipedia.org/wiki/Foliate_(software) "Foliate (software)")[Google Play Books](//en.wikipedia.org/wiki/Google_Play_Books "Google Play Books")[Kindle app](//en.wikipedia.org/wiki/Kindle_app "Kindle app")[Kitabu](//en.wikipedia.org/wiki/Kitabu "Kitabu")[Kobo](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Lector](//en.wikipedia.org/wiki/Lector_(software) "Lector (software)")[Lektz](//en.wikipedia.org/wiki/Lektz "Lektz")[Lucifox](//en.wikipedia.org/wiki/Lucifox "Lucifox")[Microsoft Reader](//en.wikipedia.org/wiki/Microsoft_Reader "Microsoft Reader")[MuPDF](//en.wikipedia.org/wiki/MuPDF "MuPDF")[Okular](//en.wikipedia.org/wiki/Okular "Okular")[OverDrive Media Console](//en.wikipedia.org/wiki/OverDrive_Media_Console "OverDrive Media Console")[Snapplify](//en.wikipedia.org/wiki/Snapplify "Snapplify")[STDU Viewer](//en.wikipedia.org/wiki/STDU_Viewer "STDU Viewer")[Sumatra PDF](//en.wikipedia.org/wiki/Sumatra_PDF "Sumatra PDF") |
-Editing [ABBYY FineReader](//en.wikipedia.org/wiki/ABBYY_FineReader "ABBYY FineReader")[AbiWord](//en.wikipedia.org/wiki/AbiWord "AbiWord")[Adobe InDesign](//en.wikipedia.org/wiki/Adobe_InDesign "Adobe InDesign")[Adobe RoboHelp](//en.wikipedia.org/wiki/Adobe_RoboHelp "Adobe RoboHelp")[Aquafadas](//en.wikipedia.org/wiki/Rakuten_Aquafadas "Rakuten Aquafadas")[Atlantis Word Processor](//en.wikipedia.org/wiki/Atlantis_Word_Processor "Atlantis Word Processor")[Booktype](//en.wikipedia.org/wiki/Booktype "Booktype")[Calibre](//en.wikipedia.org/wiki/Calibre_(software) "Calibre (software)")[Calligra Author](//en.wikipedia.org/wiki/Calligra "Calligra")[Collabora Online](//en.wikipedia.org/wiki/Collabora_Online "Collabora Online")[eXeLearning](//en.wikipedia.org/wiki/EXeLearning "EXeLearning")[HelpNDoc](//en.wikipedia.org/wiki/HelpNDoc "HelpNDoc")[iBooks Author](//en.wikipedia.org/wiki/IBooks_Author "IBooks Author")[iStudio Publisher](//en.wikipedia.org/wiki/IStudio_Publisher "IStudio Publisher")[LaTeX](//en.wikipedia.org/wiki/LaTeX)[LibreOffice](//en.wikipedia.org/wiki/LibreOffice "LibreOffice")[Oxygen XML Editor](//en.wikipedia.org/wiki/Oxygen_XML_Editor "Oxygen XML Editor")[PagePlus](//en.wikipedia.org/wiki/PagePlus "PagePlus")[Pages](//en.wikipedia.org/wiki/Pages_(word_processor) "Pages (word processor)")[QuarkXPress](//en.wikipedia.org/wiki/QuarkXPress "QuarkXPress")[Scrivener](//en.wikipedia.org/wiki/Scrivener_(software) "Scrivener (software)")[Sigil](//en.wikipedia.org/wiki/Sigil_(application) "Sigil (application)")[Writer2epub](//en.wikipedia.org/wiki/Writer2epub "Writer2epub")
-[Vendors](//en.wikipedia.org/wiki/Category:Ebook_suppliers "Category:Ebook suppliers") | Commercial | [Apple Books Store](//en.wikipedia.org/wiki/Apple_Books "Apple Books")[Amazon Kindle Store](//en.wikipedia.org/wiki/Kindle_Store "Kindle Store")[Baen Free Library](//en.wikipedia.org/wiki/Baen_Free_Library "Baen Free Library")[Barnes & Noble](//en.wikipedia.org/wiki/Barnes_&_Noble "Barnes &amp; Noble")[Booktrack](//en.wikipedia.org/wiki/Booktrack "Booktrack")[BookWalker](//en.wikipedia.org/wiki/BookWalker "BookWalker")[Feedbooks](//en.wikipedia.org/wiki/Feedbooks "Feedbooks")[Google](//en.wikipedia.org/wiki/Google "Google")<br> [Google Play](//en.wikipedia.org/wiki/Google_Play "Google Play") [Google Books](//en.wikipedia.org/wiki/Google_Books "Google Books") [Jarir.com](//en.wikipedia.org/wiki/Jarir_Bookstore "Jarir Bookstore")[Kobo Bookstore](//en.wikipedia.org/wiki/Kobo_Inc. "Kobo Inc.")[Rokomari](//en.wikipedia.org/wiki/Rokomari.com "Rokomari.com")[Sony Reader Store](//en.wikipedia.org/wiki/Sony_Reader "Sony Reader")[Smashwords](//en.wikipedia.org/wiki/Smashwords "Smashwords") |
-| ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Noncommercial | [Aozora Bunko](//en.wikipedia.org/wiki/Aozora_Bunko "Aozora Bunko")[Faded Page](//en.wikipedia.org/wiki/Faded_Page "Faded Page")[HathiTrust](//en.wikipedia.org/wiki/HathiTrust "HathiTrust")[Internet Archive](//en.wikipedia.org/wiki/Internet_Archive "Internet Archive")[Project Gutenberg](//en.wikipedia.org/wiki/Project_Gutenberg "Project Gutenberg")<br> [Australia](//en.wikipedia.org/wiki/Project_Gutenberg_Australia "Project Gutenberg Australia") [Canada](//en.wikipedia.org/wiki/Project_Gutenberg_Canada "Project Gutenberg Canada") [Standard Ebooks](//en.wikipedia.org/wiki/Standard_Ebooks "Standard Ebooks")[Wikisource](//en.wikipedia.org/wiki/Wikisource "Wikisource") |
-Related [Academic journal publishing reform](//en.wikipedia.org/wiki/Academic_journal_publishing_reform "Academic journal publishing reform")[Books](//en.wikipedia.org/wiki/Book "Book")[Braille e-book](//en.wikipedia.org/wiki/Braille_e-book "Braille e-book")[Comparison of ebook readers](//en.wikipedia.org/wiki/Comparison_of_e-readers "Comparison of e-readers")[Comparison of iOS ebook reader software](//en.wikipedia.org/wiki/Comparison_of_iOS_e-reader_software "Comparison of iOS e-reader software")[Comparison of Android ebook reader software](//en.wikipedia.org/wiki/Comparison_of_Android_e-reader_software "Comparison of Android e-reader software")[E-book lending](//en.wikipedia.org/wiki/E-book_lending "E-book lending")[Electronic publishing](//en.wikipedia.org/wiki/Electronic_publishing "Electronic publishing")[iBooks Author Conference](//en.wikipedia.org/wiki/IBooks_Author_Conference "IBooks Author Conference")[International Digital Publishing Forum](//en.wikipedia.org/wiki/International_Digital_Publishing_Forum "International Digital Publishing Forum")[Kindle single](//en.wikipedia.org/wiki/Kindle_single "Kindle single")[OPDS](//en.wikipedia.org/wiki/Open_Publication_Distribution_System "Open Publication Distribution System")[Reflowable document](//en.wikipedia.org/wiki/Reflowable_document "Reflowable document")[Self-publishing](//en.wikipedia.org/wiki/Self-publishing "Self-publishing")[Semantic publishing](//en.wikipedia.org/wiki/Semantic_publishing "Semantic publishing")[Timeline of ebooks](//en.wikipedia.org/wiki/Timeline_of_ebooks "Timeline of ebooks")
-
-![Edit this at Wikidata]
-
-![Edit this at Wikidata]
-
-![Edit this at Wikidata]
-
-[Authority control databases](//en.wikipedia.org/wiki/Help:Authority_control "Help:Authority control") [![Edit this at Wikidata]](https://www.wikidata.org/wiki/Q5310#identifiers "Edit this at Wikidata")
-International [VIAF](https://viaf.org/viaf/181932361)[GND](https://d-nb.info/gnd/4192618-3)
-National [United States](https://id.loc.gov/authorities/n92088870)[Czech Republic](https://aleph.nkp.cz/F/)[Israel](https://www.nli.org.il/en/authorities/987007588658305171)
-
-![]
-
-[1983 software](/wiki/Category:1983_software "Category:1983 software")
-[Declarative markup languages](/wiki/Category:Declarative_markup_languages "Category:Declarative markup languages")
-[Free TeX software](/wiki/Category:Free_TeX_software "Category:Free TeX software")
-[Free text editors](/wiki/Category:Free_text_editors "Category:Free text editors")
-[Free typesetting software](/wiki/Category:Free_typesetting_software "Category:Free typesetting software")
-[Typography software](/wiki/Category:Typography_software "Category:Typography software")
-[Open formats](/wiki/Category:Open_formats "Category:Open formats")
-[Software using the LaTeX Project Public License](/wiki/Category:Software_using_the_LaTeX_Project_Public_License "Category:Software using the LaTeX Project Public License")
-[SRI International software](/wiki/Category:SRI_International_software "Category:SRI International software")
-[Formula editors](/wiki/Category:Formula_editors "Category:Formula editors")
-[Articles with short description](/wiki/Category:Articles_with_short_description "Category:Articles with short description")
-[Short description is different from Wikidata](/wiki/Category:Short_description_is_different_from_Wikidata "Category:Short description is different from Wikidata")
-[Articles containing Ancient Greek (to 1453)-language text](/wiki/Category:Articles_containing_Ancient_Greek_(to_1453)-language_text "Category:Articles containing Ancient Greek (to 1453)-language text")
-[Webarchive template wayback links](/wiki/Category:Webarchive_template_wayback_links "Category:Webarchive template wayback links")
-[Articles containing potentially dated statements from 2020](/wiki/Category:Articles_containing_potentially_dated_statements_from_2020 "Category:Articles containing potentially dated statements from 2020")
-[All articles containing potentially dated statements](/wiki/Category:All_articles_containing_potentially_dated_statements "Category:All articles containing potentially dated statements")
-This page was last edited on 6 July 2026, at 06:35 (UTC).
-Page was rendered with [Parsoid](https://www.mediawiki.org/wiki/Special:MyLanguage/Parsoid "mw:Special:MyLanguage/Parsoid").
-Text is available under the [Creative Commons Attribution-ShareAlike 4.0 License](/wiki/Wikipedia:Text_of_the_Creative_Commons_Attribution-ShareAlike_4.0_International_License "Wikipedia:Text of the Creative Commons Attribution-ShareAlike 4.0 International License");
-additional terms may apply. By using this site, you agree to the [Terms of Use](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use "foundation:Special:MyLanguage/Policy:Terms of Use") and [Privacy Policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy "foundation:Special:MyLanguage/Policy:Privacy policy"). Wikipedia® is a registered trademark of the [Wikimedia Foundation, Inc.](https://wikimediafoundation.org/), a non-profit organization.
-[Privacy policy](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy)
-[About Wikipedia](/wiki/Wikipedia:About)
-[Disclaimers](/wiki/Wikipedia:General_disclaimer)
-[Contact Wikipedia](//en.wikipedia.org/wiki/Wikipedia:Contact_us)
-[Legal & safety contacts](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Legal:Wikimedia_Foundation_Legal_and_Safety_Contact_Information)
-[Code of Conduct](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Universal_Code_of_Conduct)
-[Developers](https://developer.wikimedia.org)
-[Statistics](https://stats.wikimedia.org/#/en.wikipedia.org)
-[Cookie statement](https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Cookie_statement)
-[Mobile view](//en.wikipedia.org/w/index.php?title=LaTeX&mobileaction=toggle_view_mobile)
-[![Wikimedia Foundation]](https://www.wikimedia.org/)
-[![Powered by MediaWiki]](https://www.mediawiki.org/)
-![Wikimedia Foundation]
-
-![Powered by MediaWiki]
+[edit]- Flynn, Peter (2017) [2002]. Formatting Information: A Beginner's Guide to LaTeX (7th online ed.). Cork: Silmaril. p. 193.
+- Griffiths, David F.; Highman, David S. (1997). Learning LaTeX. Philadelphia: Society for Industrial and Applied Mathematics. ISBN 0-89871-383-8.
+- Kopka, Helmut; Daly, Patrick W. (2003). Guide to LaTeX (4th ed.). Addison-Wesley Professional. ISBN 0-321-17385-6.
+- Lamport, Leslie (1994). LaTeX: A document preparation system: User's guide and reference. illustrations by Duane Bibby (2nd ed.). Reading, Mass: Addison-Wesley Professional. ISBN 0-201-52983-1.
+- Oetiker, Tobias (2021-03-09). "The not so Short Introduction to LaTeX" (PDF). ctan.org. Retrieved 2025-10-14.
+- Mittelbach, Frank; Fischer, Ulrike (2023). The LaTeX Companion (3rd ed.). Addison-Wesley. ISBN 978-0-13-465894-0. Vol II: Mittelbach, Frank; Fischer, Ulrike (2023). The LaTeX Companion (3rd ed.). Addison-Wesley. ISBN 978-0-201-36300-5.

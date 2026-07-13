@@ -1,92 +1,49 @@
 isync: free IMAP and MailDir mailbox synchronizer
-
-**isync** is a command line application which synchronizes mailboxes;
-currently [Maildir](http://cr.yp.to/proto/maildir.html) and [IMAP4](https://tools.ietf.org/html/rfc3501) mailboxes are
+isync is a command line application which synchronizes mailboxes;
+currently Maildir and
+IMAP4 mailboxes are
 supported.
-New messages, message deletions and flag changes can be propagated both ways. **isync** is suitable for use in IMAP-disconnected mode.
-
+New messages, message deletions and flag changes can be propagated both ways.
+isync is suitable for use in IMAP-disconnected mode.
 Synchronization is based on unique message identifiers (UIDs), so no
 identification conflicts can occur (as opposed to some other mail
 synchronizers).
 Synchronization state is kept in one local text file per mailbox pair;
 multiple replicas of a mailbox can be maintained.
-
-**isync** is free software in the sense of the [GNU GPL v2](http://www.gnu.org/licenses/gpl2.html).
-
+isync is free software in the sense of the
+GNU GPL v2.
 Features
+- Fine-grained selection of synchronization operations to perform
+- Synchronizes single mailboxes or entire mailbox collections
+- Partial mirrors possible: keep only the latest messages locally
+- Trash functionality: backup messages before removing them
+- IMAP features:
+- TLS/SSL via IMAPS and STARTTLS for encryption
+- SASL for authentication
+- Pipelining for maximum speed
 
-Fine-grained selection of synchronization operations to perform
-Synchronizes single mailboxes or entire mailbox collections
-Partial mirrors possible: keep only the latest messages locally
-Trash functionality: backup messages before removing them
-IMAP features:
-  * TLS/SSL via IMAPS and STARTTLS for encryption
-  * SASL for authentication
-  * Pipelining for maximum speed
-TLS/SSL via IMAPS and STARTTLS for encryption
-SASL for authentication
-Pipelining for maximum speed
 Compatibility
-
+isync should work fairly well with any IMAP4 compliant server;
+particularily efficient with those that support the UIDPLUS and LITERAL+
+extensions.
+Some servers require workarounds; see the README file for details.
 Usage
-
-[mbsync manual page](mbsync.html)
+While isync is the project name, mbsync is the current executable name;
+this change was necessary to enable a transition period after massive changes
+in the user interface.
 Download
-
-[Git repository](https://sourceforge.net/p/isync/isync/ci/master/tree/)
-[Releases](https://sourceforge.net/projects/isync/files/isync/)
 Links
-
-[IMAP Connection](http://www.imap.org)
-IMAP documentation
-  * [IMAP4rev1 specification](https://tools.ietf.org/html/rfc3501)
-  * [IMAP4 Namespace Extension](https://tools.ietf.org/html/rfc2342)
-  * [IMAP4 UIDPLUS Extension](https://tools.ietf.org/html/rfc4315)
-  * [IMAP4 LITERAL+ Extension](https://tools.ietf.org/html/rfc2088)
-  * [IMAP4 COMPRESS Extension](https://tools.ietf.org/html/rfc4978)
-  * [IMAP4 MOVE Extension](https://tools.ietf.org/html/rfc6851)
-  * [Simple Authentication and Security Layer (SASL)](https://tools.ietf.org/html/rfc4422)
-    + [IMAP Extension for SASL Initial Client Response](https://tools.ietf.org/html/rfc4959)
-    + [The PLAIN SASL Mechanism](https://tools.ietf.org/html/rfc4616)
-    + [IMAP4 Authentication Mechanisms](https://tools.ietf.org/html/rfc1731)
-  * [Using TLS with IMAP, POP3 and ACAP](https://tools.ietf.org/html/rfc2595)
-  * [IMAP4 Implementation Recommendations](https://tools.ietf.org/html/rfc2683)
-  * [Synchronization operations for disconnected IMAP4 clients](https://tools.ietf.org/html/rfc4549)
-Other mailbox synchronizers
-  * [mailsync](http://mailsync.sourceforge.net/) is also written in C, but uses UW c-client instead of homegrown drivers,
+- IMAP Connection
+- IMAP documentation
+- Other mailbox synchronizers
+- mailsync
+is also written in C, but uses UW c-client instead of homegrown drivers,
 so it supports more mailbox formats directly, but is also much slower
 (no parallelized operation)
-  * [offlineIMAP](https://www.offlineimap.org/) is written in Python
-[IMAP4rev1 specification](https://tools.ietf.org/html/rfc3501)
-[IMAP4 Namespace Extension](https://tools.ietf.org/html/rfc2342)
-[IMAP4 UIDPLUS Extension](https://tools.ietf.org/html/rfc4315)
-[IMAP4 LITERAL+ Extension](https://tools.ietf.org/html/rfc2088)
-[IMAP4 COMPRESS Extension](https://tools.ietf.org/html/rfc4978)
-[IMAP4 MOVE Extension](https://tools.ietf.org/html/rfc6851)
-[Simple Authentication and Security Layer (SASL)](https://tools.ietf.org/html/rfc4422)
-    + [IMAP Extension for SASL Initial Client Response](https://tools.ietf.org/html/rfc4959)
-    + [The PLAIN SASL Mechanism](https://tools.ietf.org/html/rfc4616)
-    + [IMAP4 Authentication Mechanisms](https://tools.ietf.org/html/rfc1731)
-[Using TLS with IMAP, POP3 and ACAP](https://tools.ietf.org/html/rfc2595)
-[IMAP4 Implementation Recommendations](https://tools.ietf.org/html/rfc2683)
-[Synchronization operations for disconnected IMAP4 clients](https://tools.ietf.org/html/rfc4549)
-[IMAP Extension for SASL Initial Client Response](https://tools.ietf.org/html/rfc4959)
-[The PLAIN SASL Mechanism](https://tools.ietf.org/html/rfc4616)
-[IMAP4 Authentication Mechanisms](https://tools.ietf.org/html/rfc1731)
-[mailsync](http://mailsync.sourceforge.net/) is also written in C, but uses UW c-client instead of homegrown drivers,
-so it supports more mailbox formats directly, but is also much slower
-(no parallelized operation)
-[offlineIMAP](https://www.offlineimap.org/) is written in Python
-![SourceForge Logo]
+- offlineIMAP
+is written in Python
 
-![SourceForge Logo]
-
-![SourceForge Logo]
-
-Last update: Thu Jul 29 18:44:54 CEST 2021. Hosted by
-[![SourceForge Logo]](http://sourceforge.net/)
-
-Please use the [mailing list](https://lists.sourceforge.net/lists/listinfo/isync-devel) for feedback.
-
-| Last update: Thu Jul 29 18:44:54 CEST 2021. | Hosted by [![SourceForge Logo]](http://sourceforge.net/) |  |
-| ------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | --- |
+Please use the mailing list for feedback.
+| Last update: Thu Jul 29 18:44:54 CEST 2021. |
+Hosted by
+ |  |

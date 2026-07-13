@@ -1,117 +1,22 @@
-hyperextensible Vim-based text editor
-
-[Install Now](/doc/install/) [Get Plugins](https://neovimcraft.com/)
-
-Features
-
-Extensible
-
-API is first-class: [discoverable](/doc/user/api/#api-mapping),
-[versioned](/doc/user/api/#api-contract),
-[documented](/doc/user/api/#api-global).
-[MessagePack](http://msgpack.org/) structured communication enables
-extensions in any language.
-Remote plugins run as co-processes, safely and asynchronously.
-[GUIs](#guis), IDEs, web browsers can `--embed` Neovim as an editor or script
-host.
-Create [Lua plugins](/doc/user/lua-plugin/#lua-plugin-new) easily.
-Your config can live in `init.lua`!
-AST-producing [parsing engine](https://tree-sitter.github.io/) enables
-fast, accurate syntax highlighting, code navigation, refactoring, text
-objects, and motions.
-Usable
-
-Strong [defaults](/doc/user/vim_diff/#nvim-defaults) including a
-unique, minimalist colorscheme.
-Builtin [LSP client](/doc/user/lsp/) for semantic code inspection
-and refactoring (go-to definition, “find references”, format, …).
-Client-server architecture enables [:connect, :detach, :restart](https://www.youtube.com/watch) (like tmux, but works everywhere). Attach multiple UIs to any Nvim session.
-No “Press ENTER” messages (Nvim 0.12 “ui2” feature).
-Works the same everywhere: one build-type, one command.
-Modern terminal features such as cursor styling, focus events,
-bracketed paste.
-Builtin [:terminal](https://www.youtube.com/watch) set
-the standard for “TTY as a basic component”.
-Drop-in Vim
-
-Fully compatible with Vim’s editing model and Vimscript v1.
-Start with [`:help nvim-from-vim`](/doc/user/nvim/#nvim-from-vim) if you already use Vim. If not, try `:Tutor`.
-[Sponsors](/sponsors/)
-
-![CodeRabbit cuts code review time and bugs in half. Works on PRs, IDE, and CLI.]
-
-![Greptile, The AI Code Reviewer]
-
-![SerpApi: Scrape search engine results with a simple API]
-
-News
-
-[Google Summer of Code 2026](/news/2026/02/) 2026.02
-[Neovim 0.11](/news/2025/03/) 2025.03
-
-[More…](/news/archive/)
-
-Impressions
-
-“Neovim is exactly what it claims to be. It fixes every issue I have
-with Vim.” [—Geoff Greer](http://geoff.greer.fm/2015/01/15/why-neovim-is-better-than-vim/)
-
-“Full-screen Neovim looks cool as hell!” [—DHH](https://x.com/dhh/status/1764465909316583659)
-
-“A nice looking website, that’s one thing Neovim did right.” [—Bram Moolenaar](https://www.binpress.com/vim-creator-bram-moolenaar-interview/)
-
-Intro
-
-Chat
-
-[Follow @Neovim on X](https://x.com/Neovim),
-[Mastodon](https://hachyderm.io/@neovim),
-[Bluesky](https://bsky.app/profile/neovim.io)
-Discuss the project in [GitHub Discussions](https://github.com/neovim/neovim/discussions), or chat in
-[#neovim:matrix.org](https://matrix.to/#/#neovim:matrix.org) or
-#neovim on `irc.libera.chat`.
-Contribute code, report bugs and request features at
-[GitHub](https://github.com/neovim/neovim).
-Ask usage and configuration questions at [GitHub Discussions](https://github.com/neovim/neovim/discussions) or
-[vi.stackexchange.com](https://vi.stackexchange.com).
-FAQ
-
-**What is the project status?**
-The current [stable release](https://github.com/neovim/neovim/releases/latest) version is `0.12` ([RSS](https://github.com/neovim/neovim/tags.atom)). See the [roadmap](/roadmap/) for progress and plans.
-
-**Is Neovim trying to turn Vim into an IDE?**
-With 30% less source-code than Vim, the [vision](/charter/) of Neovim is to
+--embed Neovim as an editor or script
+host.init.lua!:help nvim-from-vim
+if you already use Vim. If not, try :Tutor.| Google Summer of Code 2026 | 2026.02 |
+| Neovim 0.11 | 2025.03 |
+“Neovim is exactly what it claims to be. It fixes every issue I have with Vim.” —Geoff Greer
+“Full-screen Neovim looks cool as hell!” —DHH
+“A nice looking website, that’s one thing Neovim did right.” —Bram Moolenaar
+irc.libera.chat.What is the project status?
+The current stable release
+version is 0.12 (RSS). See the
+roadmap for progress and plans.
+Is Neovim trying to turn Vim into an IDE?
+With 30% less source-code than Vim, the vision of Neovim is to
 enable new applications without compromising Vim’s traditional roles.
-
-**Will Neovim deprecate Vimscript?**
-No. Lua is built-in, but Vimscript is supported with the [world’s most advanced Vimscript engine](/doc/user/api/#nvim_parse_expression()).
-
-**Which plugins does Neovim support?**
-Vim 8.x plugins and [much more](https://github.com/neovim/neovim/wiki/Related-projects).
-
-GUIs
-
+Will Neovim deprecate Vimscript?
+No. Lua is built-in, but Vimscript is supported with the world’s most advanced
+Vimscript engine.
+Which plugins does Neovim support?
+Vim 8.x plugins and much
+more.
 Neovim UIs are “inverted plugins”. Here are some popular ones:
-
-[Firenvim](https://github.com/glacambre/firenvim) (Nvim in your web
-browser!)
-[vscode-neovim](https://github.com/vscode-neovim/vscode-neovim) (Nvim
-in VSCode!)
-[Neovide](https://neovide.dev/)
-[Goneovim](https://github.com/akiyosi/goneovim)
-[GNvim (GTK4)](https://github.com/vhakulinen/gnvim)
-[FVim](https://github.com/yatli/fvim)
-[Nvy](https://github.com/RMichelsen/Nvy)
-[Neovim Qt (Qt5)](https://github.com/equalsraf/neovim-qt)
-[VimR (macOS)](https://github.com/qvacua/vimr)
-[More…](https://github.com/neovim/neovim/wiki/Related-projects#gui)
-The work continues...
-
-[Become a Sponsor](/sponsors/)
-
-![Bitcoin logo]
-
-View at [Blockchain.com](https://www.blockchain.com/btc/address/1Evu6wPrzjsjrNPdCYbHy3HT6ry2EzXFyQ).
-
-[Neovim-logos.zip](/logos/neovim-logos.zip) (1.1 MB)
-Neovim logo by [Jason Long](http://x.com/jasonlong), [CC BY 3.0](http://creativecommons.org/licenses/by/3.0/).
+View at Blockchain.com.

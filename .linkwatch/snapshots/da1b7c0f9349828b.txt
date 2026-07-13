@@ -1,119 +1,33 @@
-Newly Deciphered Sabotage Malware May Have Targeted Iran’s Nuclear Program—and Predates Stuxnet
-
-![Photo Illustration of IRAN map with Scissors in front cutting wires]
-
-In the history of [state-sponsored hacking](https://www.wired.com/story/sandworm-kremlin-most-dangerous-hackers/), the spectrum of cyber operations bent on sabotage have ranged from [crude “wiper” attacks](https://www.wired.com/story/ukraine-russia-wiper-malware/) that destroy data on target computers to [the legendary Stuxnet](https://www.wired.com/2014/11/countdown-to-zero-day-stuxnet/), a piece of malware the US and Israel first deployed in Iran in 2007 to silently accelerate the spinning of nuclear enrichment centrifuges until they destroyed themselves. Now researchers have discovered another chapter in that decades-long evolution of cybersabotage techniques: a 21-year-old specimen of malware capable of tampering with research and engineering software to undetectably sow mayhem—one that may have been used in Iran, even before Stuxnet.
-
-Vitaly Kamluk and Juan Andrés Guerrero-Saade, two researchers from the cybersecurity firm SentinelOne, on Thursday [revealed](https://www.sentinelone.com/labs/fast16-mystery-shadowbrokers-reference-reveals-high-precision-software-sabotage-5-years-before-stuxnet/) a breakthrough in the mystery of a piece of malware known as Fast16, a piece of code whose purpose has eluded the cybersecurity world since its existence was first revealed in an NSA leak in 2017. The SentinelOne researchers have now reverse-engineered the Fast16 code, which they say dates back to 2005 and was likely created by either the US government or one of its allies.
-
+In the history of state-sponsored hacking, the spectrum of cyber operations bent on sabotage have ranged from crude “wiper” attacks that destroy data on target computers to the legendary Stuxnet, a piece of malware the US and Israel first deployed in Iran in 2007 to silently accelerate the spinning of nuclear enrichment centrifuges until they destroyed themselves. Now researchers have discovered another chapter in that decades-long evolution of cybersabotage techniques: a 21-year-old specimen of malware capable of tampering with research and engineering software to undetectably sow mayhem—one that may have been used in Iran, even before Stuxnet.
+Vitaly Kamluk and Juan Andrés Guerrero-Saade, two researchers from the cybersecurity firm SentinelOne, on Thursday revealed a breakthrough in the mystery of a piece of malware known as Fast16, a piece of code whose purpose has eluded the cybersecurity world since its existence was first revealed in an NSA leak in 2017. The SentinelOne researchers have now reverse-engineered the Fast16 code, which they say dates back to 2005 and was likely created by either the US government or one of its allies.
 Kamluk and Guerrero-Saade have determined that the Fast16 malware was designed to carry out the most subtle form of sabotage ever seen in an in-the-wild malware tool: By automatically spreading across networks and then silently manipulating computation processes in certain software applications that perform high-precision mathematical calculations and simulate physical phenomena, Fast16 can alter the results of those programs to cause failures that range from faulty research results to catastrophic damage to real-world equipment.
-
 “It focuses on making slight alterations to these calculations so that they lead to failures—very subtle ones, perhaps not immediately apparent. Systems might wear out faster, collapse, or crash, and scientific research could yield incorrect conclusions, potentially causing serious harm,” says Kamluk, who along with Guerrero-Saade will present their Fast16 findings at the cybersecurity conference Black Hat Asia in Singapore. “It is a nightmare, to be honest.”
-
 In their analysis of Fast16, Kamluk and Guerrero-Saade found three potential types of physical simulation software that the malware might have been designed to tamper with: Modelo Hidrodinâmico (or MOHID) software created by Portuguese developers for modeling water systems; Chinese construction engineering software known as PKPM; and, perhaps most significantly, the physical simulation software LS-DYNA, an application originally created by scientists who had worked at US Lawrence Livermore National Laboratory, which is now used in modeling everything from collisions between birds and airplanes to the tensile strength of crane components.
-
-Among all those possibilities, Kamluk and Guerrero-Saade point to evidence for one theory in particular: LS-DYNA was also used by Iranian scientists carrying out research that may have contributed to its nuclear weapons program, [according to](https://isis-online.org/uploads/isis-reports/documents/Section_T_review_September_10_2024_final.pdf) the Institute for Science and International Security. That institute also noted that the software can be used for modeling physics problems related to nuclear weapons research such as the interaction of metals in a nuclear weapon and the impact of a ballistic missile's reentry into the Earth's atmosphere on a nuclear warhead.
-
+Among all those possibilities, Kamluk and Guerrero-Saade point to evidence for one theory in particular: LS-DYNA was also used by Iranian scientists carrying out research that may have contributed to its nuclear weapons program, according to the Institute for Science and International Security. That institute also noted that the software can be used for modeling physics problems related to nuclear weapons research such as the interaction of metals in a nuclear weapon and the impact of a ballistic missile's reentry into the Earth's atmosphere on a nuclear warhead.
 All of that suggests that Fast16 might have been used in the mid-2000s specifically to subvert Iran's attempt to gain nuclear weapons, perhaps even years before Stuxnet was deployed to achieve the same result through a more direct form of sabotage, as part of a joint program carried out by the NSA and Israel's Unit 8200 hackers known as Olympic Games.
-
 “It's not beyond the pale that what we're looking at is an early predecessor to Olympic Games. It fits the bill, right?” says Guerrero-Saade. “We want to be good, objective researchers, but this is really not a stretch.”
-
 Regardless of whether that theory holds true, the new analysis of Fast16 rewrites the history of state-sponsored hacking, says Thomas Rid, the director of the Alperovitch Institute for Cybersecurity Studies at Johns Hopkins University. “It means that deceptive sabotage operations have been part of the cyber playbook from much earlier than we thought, perhaps even from the beginning,” says Rid. “And it also looks like they were much stealthier than we understood.”
-
 “Nothing to See Here—Carry On”
-
-The mystery of Fast16 first came to light in April of 2017, after the still-unidentified hacker group known as Shadow Brokers somehow obtained and leaked a vast collection of NSA tools onto the open internet. One of those tools, labeled [Territorial Dispute](https://www.wired.com/story/nsa-leak-reveals-agency-list-enemy-hackers/), appeared to be designed to help NSA operators who were hacking into networks around the world avoid conflicts with other hacking operations. The tool, first analyzed in depth by Hungarian researcher Boldizsár Bencsáth, included a long list of malware specimens, including some that were used by the NSA and other “friendly” agencies, as well as instructions on when to “pull back” to avoid detection by an adversary's intrusion operation.
-
+The mystery of Fast16 first came to light in April of 2017, after the still-unidentified hacker group known as Shadow Brokers somehow obtained and leaked a vast collection of NSA tools onto the open internet. One of those tools, labeled Territorial Dispute, appeared to be designed to help NSA operators who were hacking into networks around the world avoid conflicts with other hacking operations. The tool, first analyzed in depth by Hungarian researcher Boldizsár Bencsáth, included a long list of malware specimens, including some that were used by the NSA and other “friendly” agencies, as well as instructions on when to “pull back” to avoid detection by an adversary's intrusion operation.
 Among the listed samples was one with a wholly unique label. For the malware referred to as “fast16," the Territorial Dispute tool told NSA operators “NOTHING TO SEE HERE—CARRY ON.” That strange instruction, researchers have speculated in the years since, likely means that Fast16 was the work of the NSA, another agency or contractor within the US intelligence community, or the intelligence agency of an ally—and that NSA hackers shouldn't interfere with it.
-
 Since the ShadowBrokers' leak didn't appear to include any piece of software actually called Fast16, however, everything else about the malware remained unknown. Only in 2019 did Guerrero-Saade find a sample of Fast16 hidden in the archives of VirusTotal, the Google-owned tool that serves as a repository of malware code. Searching for malware samples that included within their code a specific engine for running the Lua programming language—a trait that had appeared previously in multiple highly sophisticated pieces of state-sponsored malware—Guerrero-Saade found an innocuous-looking application called svcmgmt.exe.
-
 On closer examination, Guerrero-Saade discovered it contained a kernel driver—a piece of code designed to run at the deepest, most highly-privileged level of an operating system—called Fast16.sys, which appeared to have been compiled in 2005. (Guerrero-Saade declined to say who had uploaded the code to VirusTotal, because VirusTotal discourages users from trying to identify uploaders.)
-
 Yet in spite of Guerrero-Saade's discovery, it would take seven more years for anyone to determine what Fast16 actually did. Within the relatively small community of cybersecurity researchers interested in 14-year-old malware samples, most assumed at a first glance that it was a type of malware known as a rootkit, which takes the form of a kernel driver to better hide itself on a computer, typically for stealthy spying.
-
-Only three months ago did Guerrero-Saade's colleague at SentinelOne, Kamluk, decide to try reverse-engineering the Fast16 malware as part of an experiment in comparing his own skills to those of AI tools. Just two weeks ago, he made a surprising discovery: Fast16 was *not* a rootkit. (Five different top AI tools incorrectly said that it was.)
-
+Only three months ago did Guerrero-Saade's colleague at SentinelOne, Kamluk, decide to try reverse-engineering the Fast16 malware as part of an experiment in comparing his own skills to those of AI tools. Just two weeks ago, he made a surprising discovery: Fast16 was not a rootkit. (Five different top AI tools incorrectly said that it was.)
 Instead, Kamluk saw that it was a self-spreading piece of code with very different intentions. Using what was referred to within the code as “wormlet” functionality, Fast16 is designed to copy itself to other computers on the network via Windows’ network share feature. It checks for a list of security applications, and if none are present, installs the Fast16.sys kernel driver on the target machine.
-
 That kernel driver then reads the code of applications as they're loaded into the computer's memory, monitoring for a long list of specific patterns—“rules” that allow it to identify when a target application is running. When it detects the target software, it carries out its apparent goal: silently altering the calculations the software is running to imperceptibly corrupt its results.
-
 “This actually had a very significant payload inside, and pretty much everybody who looked at it before had missed it,” says Costin Raiu, a researcher at security consultancy TLP:Black who previously led the team that included Kamluk and Guerrero-Saade at Russian security firm Kaspersky, which did early work analyzing Stuxnet and related malware. “This is designed to be a long-term, very subtle sabotage which probably would be very, very difficult to notice.”
-
 Searching for software that met the criteria of Fast16's “rules” for an intended sabotage target, Kamluk and Guerrero-Saade found their three candidates: the MOHID, PKPM, and LS-DYNA software. As for the “wormlet” feature, they believe that the spreading mechanism was designed so that when a victim double-checks their calculation or simulation results with a different computer in the same lab, that machine, too, will confirm the erroneous result, making the deception all the more difficult to discover or understand.
-
 In terms of other cybersabotage operations, only Stuxnet is remotely in the same class as Fast16, Guerrero-Saade argues. The complexity and sophistication of the malware, too, place it in Stuxnet's realm of high-priority, high-resource state-sponsored hacking. “There are few scenarios where you go through this kind of development effort for a covert operation,” Guerrero-Saade says. “Somebody bent a paradigm in order to slow down or damage or throw off a process that they considered to be of critical importance.”
-
 The Iran Hypothesis
-
 All of that fits the hypothesis that Fast16 might, like Stuxnet, have been aimed at disrupting Iran's ambitions of building a nuclear weapon. TLP:Black's Raiu argues that, beyond a mere possibility, targeting Iran represents the most likely explanation—a “medium-high confidence” theory that Fast16 was “designed as a cyber strike package” that targeted Iran's AMAD nuclear project, a plan by the regime of Ayatollah Khameini to obtain nuclear weapons in the early 2000s.
-
 “This is another dimension of cyberattacks, another way to to wage this cyberwar against Iran's nuclear program,” Raiu says.
-
 In fact, Guerrero-Saade and Kamluk point to a paper published by the Institute for Science and International Security, which collected public evidence of Iranian scientists carrying out research that could contribute to the development of a nuclear weapon. In several of those documented cases, the scientists' research used the LS-DYNA software that Guerrero-Saade and Kamluk found to have been a potential Fast16 target.
-
 One study, ISIS's paper notes, used LS-DYNA to compare the properties of two different explosives, PBXN-110 and Octol, that could be used to trigger a nuclear warhead. Octol, the paper notes, was a key component of Iran's AMAD project. Though that research paper comparing explosives' properties was published in 2018, Guerrero-Saade and Kamluk point out that LS-DYNA has been in use for decades, including during the time of the AMAD project.
-
 The researchers note, too, that Fast16 could well have been used more than once against different targets, even in different countries. The malware's code includes evidence of a “version control” system, along with clues that the sample Guerrero-Saade and Kamluk analyzed wasn't the first or only version of the tool. They and Raiu all point out—without drawing any conclusions—that North Korea's nuclear weapons development program also experienced numerous unexplained failures in the same time period. “With this level of development, they didn't make this to run it just one time,” says Guerrero-Saade.
-
 Synopsys, the California-based company that today maintains and sells LS-DYNA, declined WIRED's request for comment. WIRED also reached out to the developers of MOHID and the China Academy of Building Research, which develops PKPM, but didn't receive a response from either organization.
-
 Neither the NSA nor the Office of the Director of National Intelligence responded to WIRED's request for comment.
-
 Hypotheses about its target aside, Kamluk says the existence of a 21-year-old malware specimen capable of nearly undetectable tampering with safety-critical research and engineering represents a deeply disturbing, even paranoia-inducing discovery—one that makes him question his trust in the computers that have assured the safety of everything from trains to airplanes.
-
 “For any kind of disaster or catastrophe where people died in an accident,” Kamluk says, “you don't want to nurture these fears, but it naturally comes up: Was there a cyber angle?”
-
 The fact that Fast16 remained undetected for so long, however, suggests that it was likely used against only a small number of targets to maintain its stealth, says Johns Hopkins' Rid. That should offer anyone unnerved by the discovery of Fast16 some reassurance that their computers can still be trusted, he says—except for those who might actually be the target of a rare and highly sophisticated state-sponsored hacking operation.
-
-For those few potential victims, he says, Fast16 should rightfully induce distrust not just in today's computers, but in everything those machines have calculated, potentially stretching back decades. “If you're a very high-value intelligence target like a nuclear program in a country with potent adversaries, then maybe you can't trust your computers,” Rid says. “And even worse: you could *never* trust them.”
-
-Comments
-
-You Might Also Like
-
-**In your inbox:** [Inside WIRED’s newsroom with Katie Drummond](https://www.wired.com/newsletter/weekly)
-Trump [mocked Zuckerberg and Bezos](https://www.wired.com/story/trump-mocked-mark-zuckerberg-and-jeff-bezos-by-showing-off-fawning-texts/) by showing off fawning texts
-**Big Story:** I found Jesus [at a drone show](https://www.wired.com/story/i-found-jesus-at-a-drone-show/)
-Apple is making your older [iPhone run faster and stay alive longer](https://www.wired.com/story/how-apple-is-making-your-older-iphone-run-faster-and-stay-alive-longer/)
-**WIRED event:** [PepsiCo’s once-in-a-generation transformation](https://condenast.zoom.us/webinar/register/WN_y__J3PadQKCoRdk7IK-RDA#/registration)
-![]
-
-[X](https://www.twitter.com/a_greenberg)
-![What Happens if China Hacks the US Water Supply? I Went to a Secret War Game to Find Out]
-
-![A Crypto Scam Targeted a Gay OnlyFans Star. Then His X Feed Was Flooded With ‘MAGA Propaganda’]
-
-![LastPass Users Had Their Data Stolen—Again]
-
-![The Pentagon Is Looking Into the Dialog Data Exposure for Unmasking National Security Officials]
-
-![Dialog Claims It Was Hacked. A Misconfigured Website Left Its Members Exposed]
-
-![EU Politicians Investigated Pegasus Spyware. Then It Ended Up on One of Their Phones]
-
-![OpenAI Launches Full-Scale Effort to Patch Open-Source Bugs as It Takes on Anthropic’s Mythos]
-
-![Apple’s Hide My Email Service Fails to Hide Your Email]
-
-![OnlyFans Models Are Accidentally Making Hacked Government Websites Disappear]
-
-![Hackers Claim to Leak Stolen Madison Square Garden Data]
-
-![‘Dangerous’ AI Models Are Coming No Matter What]
-
-![WIRED]
-
-© 2026 Condé Nast. All rights reserved. *WIRED* may earn a portion of sales from products that are purchased through our site as part of our Affiliate Partnerships with retailers. The material on this site may not be reproduced, distributed, transmitted, cached or otherwise used, except with the prior written permission of Condé Nast. [Ad Choices](http://www.aboutads.info)
-
-Select international site
-
-[Italia](https://www.wired.it/)
-[Japón](https://wired.jp/)
-[Czech Republic & Slovakia](https://www.wired.cz/)
-[Facebook](https://www.facebook.com/wired/)
-[X](https://twitter.com/wired/)
-[Pinterest](https://pinterest.com/wired/)
-[YouTube](https://www.youtube.com/user/wired/)
-[Instagram](https://instagram.com/wired/)
-[Tiktok](https://www.tiktok.com/@wired)
+For those few potential victims, he says, Fast16 should rightfully induce distrust not just in today's computers, but in everything those machines have calculated, potentially stretching back decades. “If you're a very high-value intelligence target like a nuclear program in a country with potent adversaries, then maybe you can't trust your computers,” Rid says. “And even worse: you could never trust them.”
