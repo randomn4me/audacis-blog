@@ -6,16 +6,22 @@ template = 'list.html'
 other_heading = "Earlier"
 items = [
   { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, so I got curious.", year = "Currently Reading" },
+  { title = "Dune Messiah (Frank Herbert)", description = "I want to finish it before the next Dune movie comes out in December.", year = "Currently Reading" },
+  { title = "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses (Eric Ries)", description = "It has been on my reading list for a while, and my former research group just gifted me a copy.", year = "Currently Reading" },
+
   { title = "Capitalism and Crises: How to Fix Them (Colin Mayer)", description = "A great book to get into the current problems of the economic system, exemplified through the UK and US. It touches on purposeful business and the different roles and responsibilities of stakeholders, shareholders, the financial sector, and governments - and the interplay between them.", rating = 4, year = 2026 },
   { title = "How to Win Friends and Influence People", description = "A nice introduction to simple life rules. Sometimes you notice its age because of outdated recommendations about the roles of women and men, but if you adjust it to current standards, I can heartily recommend it.", rating = 5, year = 2026 },
-  { title = "Celsius (Marc Elsberg)", description = "The storyline felt remarkably similar to other Elsberg works, so I used it to train for a speedreading course. The book turned out the way as expected but had a plot twist in the end.", rating = 3, year = 2026 },
+  { title = "Celsius (Marc Elsberg)", description = "The storyline felt remarkably similar to other Elsberg works, so I used it to train for a speedreading course. The book turned out the way I expected, but it had a plot twist at the end.", rating = 3, year = 2026 },
+
   { title = "The Decision Book: Fifty Models for Strategic Thinking (Mikael Krogerus & Roman Tschäppeler)", description = "An overview over 50 different thinking models. Outlines models on how to improve yourself, on how to understand yourself better, how to understand others better, and how to better work with others. While it might only look like an overview, it might come in handy for future projects. And, I love such books 😬", rating = 5, year = 2025 },
   { title = "Martin Luther King (Claudia Mocek)", description = "Really nice read to get an introduction into the life of Martin Luther King. Since his life was not part of my school's curriculum, I learned a great deal in a short time, and as always, when reading about U.S. history, I am astonished by the amount of violence that shaped this country. However, Europe also contributed to the cruelty of this world for a long time, but it seems to be largely under control since WWII - at least on that scale. What makes me curious is the fact that owning and carrying guns seems normal in this country, while having high numbers of firearm deaths over the years is surprising <a href=\"https://www.statista.com/statistics/258913/number-of-firearm-deaths-in-the-united-states/\" target=\"_blank\" rel=\"noopener noreferrer\">[Reference]</a>.", rating = 4, year = 2025 },
-  { title = "The Art of Attack (Maxie Reynolds)", description = "A classic social engineering book is worth reading for those interested in the subject. However, if you've already read a comparable title, such as \"Social Engineering: The Science of Human Hacking\" by Christopher Hadnagy, and are already satisfied, what you know, you may choose to skip this one.", rating = 3, year = 2025 },
+  { title = "The Art of Attack (Maxie Reynolds)", description = "A classic social engineering book, worth reading for anyone interested in the subject. However, if you have already read a comparable title, such as \"Social Engineering: The Science of Human Hacking\" by Christopher Hadnagy, and are satisfied with what you know, you can skip this one.", rating = 3, year = 2025 },
   { title = "The Every (Dave Eggers)", rating = 4, year = 2025 },
+
   { title = "Dune (Frank Herbert)", rating = 5, year = 2024 },
   { title = "Getting Things Done: The Art of Stress-Free Productivity (David Allen)", rating = 4, year = 2024 },
   { title = "How to Take Smart Notes (Sönke Ahrens)", rating = 4, year = 2024 },
+
   { title = "Blackout (Marc Elsberg)" },
   { title = "Borne (Jeff VanderMeer)" },
   { title = "Der Schwarm (Frank Schätzing)" },
