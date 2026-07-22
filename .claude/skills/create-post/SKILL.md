@@ -94,7 +94,21 @@ What the reading copy needs:
 
 Keep the artifact in sync with the markdown. Every edit to the post is an edit to both, or the reading copy quietly starts lying.
 
-If the post is going to be shared, a block at the bottom holding the share text plus a copy button saves a round trip. Assemble the copied string from the paragraphs so it lands as plain text with blank lines between them, and keep tag suggestions outside the copyable area.
+### The share block
+
+End the artifact with a LinkedIn version of the post and a **Copy text** button, so posting is one click rather than a round trip.
+
+- Keep it to roughly 150 words. LinkedIn truncates past that, and the hook has to survive the fold.
+- Lead with the single most surprising concrete fact, not with context.
+- Plain text only. LinkedIn strips italics and markdown, so use straight quotes for titles.
+- End with the canonical post URL, `https://audacis.net/blog/SLUG/`.
+- Assemble the copied string from the individual paragraphs in JS so it lands with blank lines between them, rather than copying rendered HTML.
+
+**Name the people the post actually leans on**, inside the body text, so Philipp can turn them into tags. Paper authors, whoever is quoted, whoever did the work. Naming them in the running text is what makes a tag possible; a name bolted on afterwards reads as reach-chasing and should be left out.
+
+Only name people the text genuinely uses. Someone who appears in the blog post but not in the short version does not belong in the short version.
+
+Below the copyable block, outside it so it never lands in the paste, list the candidates with their affiliations, plus any organisations worth tagging. Say plainly that you have not checked whether these people have profiles, and that Philipp should confirm each handle. Tagging the wrong account is worse than tagging nobody.
 
 ## After Writing
 
