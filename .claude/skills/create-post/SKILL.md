@@ -77,9 +77,29 @@ tags = ["tag1", "tag2"]
 - Use *italics* for emphasis, not quotation marks
 - Check existing posts in `content/blog/` for related topics and link to them where it fits naturally (e.g., a follow-up, a callback, or shared context)
 
+## Present the draft as an artifact
+
+Once the file exists, publish a rendered reading copy so Philipp can read the post as a page instead of as markdown. Problems that hide in a diff show up immediately in a rendered column: a section that drags, a wall of citations, an ending that lands flat.
+
+1. Load the `artifact-design` skill first. It is required before writing any artifact HTML.
+2. Write the HTML to the session scratchpad directory, never into the repo. This is a preview, not site content, and it must not end up in `content/` or in a commit.
+3. Publish with the **Artifact** tool, and redeploy the *same file path* for every revision so the URL stays stable and an open tab keeps working.
+
+What the reading copy needs:
+
+- Absolute URLs for internal links (`https://audacis.net/blog/other-post/`). Relative paths do not resolve outside the site.
+- Footnotes rendered by hand, because Zola's `[^1]` syntax is not HTML. Use superscript anchors pointing at a numbered notes list at the bottom, and check that every reference has a matching note and every note a reference.
+- The draft state shown honestly, such as a `DRAFT` chip and a footer naming the source file. Update both the moment the flag actually changes. A stale "draft = true" footer on a published post is worse than no footer.
+- The same favicon on every redeploy. People find the tab by its icon.
+
+Keep the artifact in sync with the markdown. Every edit to the post is an edit to both, or the reading copy quietly starts lying.
+
+If the post is going to be shared, a block at the bottom holding the share text plus a copy button saves a round trip. Assemble the copied string from the paragraphs so it lands as plain text with blank lines between them, and keep tag suggestions outside the copyable area.
+
 ## After Writing
 
 1. Use the **Read** tool to display the final post file (so Philipp sees it with line numbers)
-2. Mention the file path where it was saved
+2. Mention the file path where it was saved, and the artifact URL
 3. Remind that it's saved as `draft = true`
-4. Ask if anything should be adjusted before Philipp removes the draft flag
+4. Offer `/review-post` before publishing, which checks claims, references, links, voice against the older posts, and bloat
+5. Ask if anything should be adjusted before Philipp removes the draft flag
