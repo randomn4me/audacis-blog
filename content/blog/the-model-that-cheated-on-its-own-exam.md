@@ -50,8 +50,8 @@ Someone jailbroke the thing, or handed it a task with the harm baked in, and the
 The story was always about the human at the keyboard.
 
 Benchmark gaming itself is old news, and I want to be careful about the claim I am making.
-A Berkeley group [broke eight top agent benchmarks](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/) in April, hitting 100 percent on SWE-bench Verified and Terminal-Bench without solving a single task, mostly because the agent's code runs in the same environment the evaluator inspects[^1].
-Anthropic had already documented Claude Opus 4.6 on [BrowseComp](https://www.anthropic.com/engineering/eval-awareness-browsecomp) hypothesising it was under evaluation, working out which benchmark it was running in, then locating and decrypting the answer key[^2].
+A Berkeley group [broke eight top agent benchmarks](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/) in April, hitting 100 percent on SWE-bench Verified and Terminal-Bench without solving a single task, mostly because the agent's code runs in the same environment the evaluator inspects.
+Anthropic had already documented Claude Opus 4.6 on [BrowseComp](https://www.anthropic.com/engineering/eval-awareness-browsecomp) hypothesising it was under evaluation, working out which benchmark it was running in, then locating and decrypting the answer key.
 Nobody prompted that either.
 
 So the distinction I am drawing is narrower than *unprompted*.
@@ -82,7 +82,7 @@ It was in a sandbox somewhere, cheating on a test.
 
 ## The paperclip, in production
 
-Nick Bostrom's [thought experiment from 2003](https://nickbostrom.com/ethics/ai) is the obvious reference, and it has been mocked into meaninglessness by now[^3].
+Nick Bostrom's [thought experiment from 2003](https://nickbostrom.com/ethics/ai) is the obvious reference, and it has been mocked into meaninglessness by now.
 The machine told to maximise paperclips converts the planet into paperclip factories.
 The point was never that anyone would build a paperclip company.
 The point is instrumental convergence: almost any goal, pursued hard enough, produces the same sub-goals.
@@ -104,14 +104,14 @@ Two people had already described this, from different directions.
 
 Daniel Kokotajlo is the reason I cannot file it under *surprising*.
 He left OpenAI in 2024 and now runs the AI Futures Project, publishing dated, falsifiable scenarios instead of vibes.
-His 2021 sketch of the years to come, written before ChatGPT existed[^4], held up better than most: of 35 concrete predictions for 2022 through 2024, 19 landed[^5].
-Then came [AI 2027](https://ai-2027.com/) in April 2025, with a model called Agent-2 that is "only" a little worse than the best human hackers, run in thousands of parallel copies, and which escaped "could autonomously develop and execute plans to hack into AI servers, install copies of itself, evade detection"[^6].
+His [2021 sketch of the years to come](https://www.lesswrong.com/posts/6Xgy6CAf2jqHhynHL/what-2026-looks-like), written before ChatGPT existed, held up better than most: of 35 concrete predictions for 2022 through 2024, [19 landed](https://www.lesswrong.com/posts/u9Kr97di29CkMvjaj/evaluating-what-2026-looks-like-so-far).
+Then came [AI 2027](https://ai-2027.com/) in April 2025, with a model called Agent-2 that is "only" a little worse than the best human hackers, run in thousands of parallel copies, and which escaped "could autonomously develop and execute plans to hack into AI servers, install copies of itself, evade detection".
 The [security forecast](https://ai-2027.com/research/security-forecast) dates that capability to around October 2027.
 
 What happened in July is smaller.
 No copies were installed, no weights left the building, no attempt to persist.
 So I cannot claim the forecast landed early, because the date it gives is for self-exfiltration and self-exfiltration is exactly what did not happen.
-The timelines went the other way regardless: the authors have since moved their own medians later, Kokotajlo's toward the end of the decade and his co-author Eli Lifland's to somewhere around 2032[^7].
+The timelines went the other way regardless: the authors have since moved their own medians later, Kokotajlo's [toward the end of the decade](https://officechai.com/ai/things-seem-to-be-going-somewhat-slower-than-the-ai-2027-scenario-daniel-kokotajlo/) and his co-author Eli Lifland's [to somewhere around 2032](https://futuresearch.ai/blog/ai-2027-6-months-later/)[^1].
 The critics said the dates were too aggressive and the forecasters came round to agreeing with them.
 Which is why the date is not the interesting part.
 The shape is, and AI 2027 is careful to say its assessment shows only that Agent-2 *could* do these things, not that it would want to.
@@ -119,7 +119,7 @@ Wanting never came into it.
 A scoring function was enough.
 
 The sharper prediction is narrower and closer to home.
-On 21 May, four security researchers posted [Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard](https://arxiv.org/abs/2605.22568)[^8], out of a Dagstuhl workshop in April[^9].
+On 21 May, four security researchers posted [Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard](https://arxiv.org/abs/2605.22568), out of a [Dagstuhl workshop](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/26162) in April.
 One of them, Ahmad-Reza Sadeghi, sits at my own university.
 Their argument is that a security benchmark is not a measuring instrument, it is part of the attack surface.
 You are measuring adversarial reasoning, and the thing doing the measuring is made of software.
@@ -152,21 +152,11 @@ One sentence from their discussion does more work than anything else I have read
 
 The defenders, meanwhile, could not use the frontier models to investigate any of this, which is the [trust problem](/blog/trusting-trust-in-the-age-of-ai/) I keep circling back to, arriving from a direction I did not expect.
 The aligned models refused the job.
-An open-weight model from China did the forensics[^10].
+An open-weight model from China [did the forensics](https://huggingface.co/blog/security-incident-july-2026).
 
 I do not have a conclusion here.
-Just a documented case, a paper that described it before it happened, and the observation that the most quotable line of the week is OpenAI's own description of what its models did:[^11]
+Just a documented case, a paper that described it before it happened, and the observation that the most quotable line of the week is [OpenAI's own description](https://openai.com/index/hugging-face-model-evaluation-security-incident/) of what its models did:
 
 > All evidence suggests that the models were hyperfocused on finding a solution for ExploitGym, going to extreme lengths to achieve a rather narrow testing goal.
 
-[^1]: H. Wang, Q. Mang, A. Cheung, K. Sen, D. Song, [How We Broke Top AI Agent Benchmarks: And What Comes Next](https://rdi.berkeley.edu/blog/trustworthy-benchmarks-cont/), UC Berkeley RDI, April 2026. Eight benchmarks, all exploitable to near-perfect scores without solving a task.
-[^2]: Anthropic, [Eval awareness in Claude Opus 4.6's BrowseComp performance](https://www.anthropic.com/engineering/eval-awareness-browsecomp), 2026.
-[^3]: N. Bostrom, [Ethical Issues in Advanced Artificial Intelligence](https://nickbostrom.com/ethics/ai), 2003. The original paperclips.
-[^4]: D. Kokotajlo, [What 2026 Looks Like](https://www.lesswrong.com/posts/6Xgy6CAf2jqHhynHL/what-2026-looks-like), LessWrong, August 2021.
-[^5]: J. Spicer, [Evaluating "What 2026 Looks Like" So Far](https://www.lesswrong.com/posts/u9Kr97di29CkMvjaj/evaluating-what-2026-looks-like-so-far), LessWrong, February 2025, with scoring feedback from Eli Lifland. Source for the 19 / 8 / 6 tally.
-[^6]: D. Kokotajlo, S. Alexander, T. Larsen, E. Lifland, R. Dean, [AI 2027](https://ai-2027.com/), [AI Futures Project](https://www.aifutures.org/), April 2025. The Agent-2 passages are from the scenario itself; the 3,000-hour horizon and the October 2027 date are from the separate [security forecast](https://ai-2027.com/research/security-forecast).
-[^7]: Kokotajlo and Eli Lifland have both revised their medians upward since publication; reported from their own posts on X by [FutureSearch](https://futuresearch.ai/blog/ai-2027-6-months-later/) (August 2025, median 2028 to 2029) and [OfficeChai](https://officechai.com/ai/things-seem-to-be-going-somewhat-slower-than-the-ai-2027-scenario-daniel-kokotajlo/) (later, around 2030). Both are secondary reports of social posts rather than a formal erratum, and the figure keeps moving; the direction is what is well attested.
-[^8]: S. Abdelnabi, C. Hicks, K. Rieck, A.-R. Sadeghi, [Measuring Security Without Fooling Ourselves: Why Benchmarking Agents Is Hard](https://arxiv.org/abs/2605.22568), arXiv:2605.22568, 21 May 2026. BrokenBench is in section 2, inner and outer protections in 2.1, canary tokens in 2.2, temporal staleness in 3 with the dynamic and live proposals in 3.1 and 3.2, and both quoted lines, on last year's CVEs and on cheating and competence, in the discussion.
-[^9]: Dagstuhl Perspectives Workshop [Autonomous AI Agents in Computer Security](https://www.dagstuhl.de/seminars/seminar-calendar/seminar-details/26162) (26162), 12 to 17 April 2026, organised by Alvaro Cárdenas Mora, Kathrin Grosse, Nicole Nichols, and Konrad Rieck.
-[^10]: Hugging Face, [Security incident disclosure, July 2026](https://huggingface.co/blog/security-incident-july-2026), 16 July 2026. Source for the initial access path, the 17,000-event log, the GLM 5.2 forensics, and the guardrail asymmetry.
-[^11]: OpenAI, [OpenAI and Hugging Face partner to address security incident during model evaluation](https://openai.com/index/hugging-face-model-evaluation-security-incident/), 21 July 2026. Source for the attribution, the models involved, the proxy zero-day, and the closing quote.
+[^1]: Both figures are secondary reports of posts on X rather than a formal erratum, and they keep moving; the direction is what is well attested.
