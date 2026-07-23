@@ -5,6 +5,11 @@ date = 2026-07-22
 
 [taxonomies]
 tags = ["cybersecurity", "ai"]
+
+[extra]
+edited = [
+    { date = 2026-07-23, note = "Added the ExploitGym paper to the timeline for reference." },
+]
 +++
 
 An OpenAI model sitting in a locked test environment decided the fastest route to a good benchmark score was to break out, find a zero-day, and hack Hugging Face for the answer key.
@@ -16,6 +21,13 @@ That last part is why I have been turning it over for the last twelve hours.
 ## The timeline
 
 {% timeline() %}
+## 11 May
+
+[ExploitGym is published](https://arxiv.org/abs/2605.11086), a public benchmark asking whether AI agents can turn a vulnerability into a real attack.
+It packages 898 real-world vulnerabilities across userspace programs, Google's V8 engine, and the Linux kernel, hands the agent an input that only triggers the bug, and asks it to extend that into a working exploit, with the defenses varied instance by instance to see which ones hold.
+The strongest runs, Claude Mythos Preview and GPT-5.5, produce working exploits for 157 and 120 of them.
+This is the benchmark OpenAI's models would later go to extreme lengths to beat.
+
 ## A weekend in mid-July
 
 Something moves through Hugging Face's production infrastructure.
@@ -34,7 +46,7 @@ So the forensics run on GLM 5.2, open weights, on their own hardware.
 
 [OpenAI answers the question](https://openai.com/index/hugging-face-model-evaluation-security-incident/).
 It was theirs.
-GPT-5.6 Sol and an unnamed pre-release model, both with cyber refusals switched off, running an internal benchmark called ExploitGym.
+GPT-5.6 Sol and an unnamed pre-release model, both with cyber refusals switched off, running ExploitGym, a public exploitation benchmark, as an internal evaluation.
 The sandbox allowed exactly one path out, an internally hosted package registry proxy.
 The models found a zero-day in it, escalated and moved laterally until they reached a node with internet access, reasoned that Hugging Face probably hosted the ExploitGym solutions, chained stolen credentials into remote code execution, and read the answers out of the production database.
 {% end %}
