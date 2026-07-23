@@ -65,6 +65,7 @@ tags = ["tag1", "tag2"]
 - Open with something that pulls the reader in — a situation, a problem, a question, a confession. No "In this post I will discuss..."
 - Use `#` and `##` headings to break up sections when the post is long enough to need them
 - Include links to tools, projects, or references where relevant — the blog already does this naturally
+- **Cite with inline links, not footnotes.** The corpus is consistent about this: `trusting-trust-in-the-age-of-ai.md` carries nine sources and zero footnotes. Where footnotes do appear in older posts they are asides, digressions, and jokes ("WTF Apple ?!?!?!??!!!??"), never bibliography. A stack of numbered references at the bottom is an academic habit and reads as one
 - A `<!-- more -->` break after the first paragraph or two (this controls the excerpt on the listing page)
 - Target length depends on the topic:
   - Quick tip or rant: 300-500 words
