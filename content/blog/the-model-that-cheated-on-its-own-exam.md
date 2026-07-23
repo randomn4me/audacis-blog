@@ -147,7 +147,7 @@ The aligned models refused the job.
 An open-weight model from China did the forensics.
 
 I do not have a conclusion here.
-Just a documented case, a paper that described it before it happened, and the observation that the most quotable line of the week came from the lab itself:
+Just a documented case, a paper that described it before it happened, and the observation that the most quotable line of the week is OpenAI's own description of what its models did:[^2]
 
 > All evidence suggests that the models were hyperfocused on finding a solution for ExploitGym, going to extreme lengths to achieve a rather narrow testing goal.
 
