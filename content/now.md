@@ -7,6 +7,7 @@ date = 2026-07-23
 
 Working on different projects, including:
 - Supervising a handful of theses in CTI and knowledge engineering
+- Updating our [CySecBERT model](https://huggingface.co/markusbayer/CySecBERT)
 - Sourcing the team for AGOS, the project that turns into [Serify](https://serify.eu)
 - Building an MVP for our product
 - Working out whether patents are something we should file for any of it
