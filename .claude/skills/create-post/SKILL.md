@@ -98,7 +98,9 @@ Each `## ` heading is the stamp, the lines under it are the event. The stamp car
 
 Use it for a genuine sequence, three or four events, where the order is the point. A single dated fact is a sentence, not a timeline, and a timeline used as decoration reads as one.
 
-Zola renders shortcode bodies through the `markdown` filter instead of the page's own pass, so the shortcode rewrites `[^1]` references into Zola's footnote markup itself. Write footnotes normally and check the built page: every reference should land on its definition, and no literal `[^` should survive. See `templates/shortcodes/timeline.html` and the timeline styles in `sass/style.scss`.
+**No footnotes inside the timeline.** Zola renders shortcode bodies through the `markdown` filter rather than the page's own pass, so a `[^1]` in there is invisible to the pass that numbers footnotes. The definition is then treated as unreferenced and sorted to the end, which silently shifts the printed number of *every* footnote in the post while the anchors keep working. Cite with an inline link, which a timeline entry usually wants anyway, or put the footnote in the prose around the timeline.
+
+Zola numbers footnotes by order of first reference, not by the order the definitions are written in. Keep the definition block in reference order and the two agree. See `templates/shortcodes/timeline.html` and the timeline styles in `sass/style.scss`.
 
 ## Present the draft as an artifact
 
