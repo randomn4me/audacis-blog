@@ -29,6 +29,14 @@
         <div class="content">
             {{ page.content | safe }}
         </div>
+
+        {% if page.extra.edited %}
+        <footer class="post-edits">
+            {% for edit in page.extra.edited %}
+            <p class="post-edit"><time datetime="{{ edit.date }}">Edited {{ edit.date | date(format="%B %d, %Y") }}</time>: {{ edit.note }}</p>
+            {% endfor %}
+        </footer>
+        {% endif %}
     </article>
 </div>
 {% endblock %}

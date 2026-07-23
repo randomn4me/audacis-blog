@@ -557,6 +557,22 @@ code {
         color: var(--secondary-color);
     }
 
+    .post-edits {
+        margin-top: 3rem;
+        padding-top: 1rem;
+        border-top: 1px solid var(--border-color);
+        color: var(--secondary-color);
+        font-size: 0.9rem;
+
+        .post-edit {
+            margin: 0.25rem 0;
+
+            time {
+                font-style: italic;
+            }
+        }
+    }
+
     .post-tags {
         display: flex;
         flex-wrap: wrap;
