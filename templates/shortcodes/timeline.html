@@ -1,0 +1,28 @@
+{#-
+  Vertical timeline. The body is markdown, split into events by `## ` headings,
+  where the heading text becomes the date stamp:
+
+      {% timeline() %}
+      ## 16 July
+
+      Something [happened](https://example.com)[^1].
+      {% end %}
+
+  Shortcode bodies are rendered by the `markdown` filter rather than by the
+  page's own pass, so footnote references have to be rewritten into the markup
+  Zola would have produced. The definitions stay in the page and still render.
+-#}
+{%- set events = body | trim | split(pat="## ") -%}
+<ol class="timeline">
+{%- for event in events -%}
+{%- if event | trim != "" -%}
+{%- set lines = event | trim | split(pat="\n") -%}
+{%- set stamp = lines | first | trim -%}
+{%- set_global text = lines | slice(start=1) | join(sep="\n") | trim -%}
+{%- for i in range(start=1, end=51) -%}
+{%- set_global text = text | replace(from="[^" ~ i ~ "]", to='<sup class="footnote-reference"><a href="#' ~ i ~ '">' ~ i ~ '</a></sup>') -%}
+{%- endfor -%}
+<li><span class="timeline-stamp">{{ stamp }}</span>{{ text | markdown | safe }}</li>
+{%- endif -%}
+{%- endfor -%}
+</ol>

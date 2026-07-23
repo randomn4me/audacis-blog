@@ -1288,6 +1288,58 @@ code {
     }
 }
 
+/* Timeline */
+.timeline {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 1.75rem;
+    border-left: 2px solid var(--border-color);
+
+    li {
+        position: relative;
+        margin-bottom: 1.75rem;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: calc(-1.75rem - 5px);
+            top: 0.45rem;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--primary-color);
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.timeline-stamp {
+    display: block;
+    margin-bottom: 0.35rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.85rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+@media (max-width: 480px) {
+    .timeline {
+        padding-left: 1.25rem;
+    }
+
+    .timeline li::before {
+        left: calc(-1.25rem - 5px);
+    }
+}
+
 /* Footnotes */
 .footnote-definition {
     display: flex;

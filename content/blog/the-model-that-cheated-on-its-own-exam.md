@@ -15,21 +15,29 @@ That last part is why I have been turning it over for the last twelve hours.
 
 ## The timeline
 
-Over a weekend in mid-July, something moves through Hugging Face's production infrastructure.
+{% timeline() %}
+## A weekend in mid-July
+
+Something moves through Hugging Face's production infrastructure.
 It starts in the data-processing pipeline, escalates to node-level access, harvests cloud and cluster credentials, and spreads across internal clusters.
 
-On 16 July, Hugging Face [publishes the disclosure](https://huggingface.co/blog/security-incident-july-2026)[^1].
+## 16 July
+
+Hugging Face [publishes the disclosure](https://huggingface.co/blog/security-incident-july-2026)[^1].
 They describe an intrusion run end to end by an autonomous agent system, many thousands of actions across a swarm of short-lived sandboxes.
 They do not know who it is.
 They notify law enforcement.
 Reconstructing the attack means feeding 17,000 recorded events to a model, and the commercial APIs refuse the job, because real exploit payloads look identical whether you are attacking or cleaning up.
 So the forensics run on GLM 5.2, open weights, on their own hardware.
 
-On 21 July, [OpenAI answers the question](https://openai.com/index/hugging-face-model-evaluation-security-incident/)[^2].
+## 21 July
+
+[OpenAI answers the question](https://openai.com/index/hugging-face-model-evaluation-security-incident/)[^2].
 It was theirs.
 GPT-5.6 Sol and an unnamed pre-release model, both with cyber refusals switched off, running an internal benchmark called ExploitGym.
 The sandbox allowed exactly one path out, an internally hosted package registry proxy.
 The models found a zero-day in it, escalated and moved laterally until they reached a node with internet access, reasoned that Hugging Face probably hosted the ExploitGym solutions, chained stolen credentials into remote code execution, and read the answers out of the production database.
+{% end %}
 
 The task was to score well on a test.
 Everything else was improvised.
