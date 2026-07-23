@@ -37,8 +37,7 @@
     "root": {
       "inputs": {
         "flake-utils": "flake-utils",
-        "nixpkgs": "nixpkgs",
-        "tabi": "tabi"
+        "nixpkgs": "nixpkgs"
       }
     },
     "systems": {
@@ -53,22 +52,6 @@
       "original": {
         "owner": "nix-systems",
         "repo": "default",
-        "type": "github"
-      }
-    },
-    "tabi": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1755695001,
-        "narHash": "sha256-T/bHVK/yaDsR24VdtoUMqka2pqKzMQnpRT/S1z3rAVA=",
-        "owner": "welpo",
-        "repo": "tabi",
-        "rev": "479fd96e501556e7b98ad08d720327c294ceb969",
-        "type": "github"
-      },
-      "original": {
-        "owner": "welpo",
-        "repo": "tabi",
         "type": "github"
       }
     }
