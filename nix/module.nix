@@ -7,7 +7,6 @@ let
   # Build the blog with the correct base URL
   buildBlog = baseUrl: import ./package.nix {
     inherit pkgs baseUrl;
-    tabi = self.inputs.tabi;
     src = self;
   };
   

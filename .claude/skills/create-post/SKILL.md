@@ -77,6 +77,29 @@ tags = ["tag1", "tag2"]
 - Use *italics* for emphasis, not quotation marks
 - Check existing posts in `content/blog/` for related topics and link to them where it fits naturally (e.g., a follow-up, a callback, or shared context)
 
+## Timeline sections
+
+When a post walks through dated events, use the `timeline` shortcode rather than a run of "On 16 July, ..." paragraphs. It renders a vertical rail with a dot and a date stamp per event, in the site's own colours.
+
+```
+{% timeline() %}
+## A weekend in mid-July
+
+Something moves through the production infrastructure.
+One sentence per line, as everywhere else.
+
+## 16 July
+
+The disclosure [goes up](https://example.com)[^1].
+{% end %}
+```
+
+Each `## ` heading is the stamp, the lines under it are the event. The stamp carries the date, so the prose should not repeat it: write *Hugging Face publishes the disclosure*, not *On 16 July, Hugging Face publishes the disclosure*.
+
+Use it for a genuine sequence, three or four events, where the order is the point. A single dated fact is a sentence, not a timeline, and a timeline used as decoration reads as one.
+
+Zola renders shortcode bodies through the `markdown` filter instead of the page's own pass, so the shortcode rewrites `[^1]` references into Zola's footnote markup itself. Write footnotes normally and check the built page: every reference should land on its definition, and no literal `[^` should survive. See `templates/shortcodes/timeline.html` and the timeline styles in `sass/style.scss`.
+
 ## Present the draft as an artifact
 
 Once the file exists, publish a rendered reading copy so Philipp can read the post as a page instead of as markdown. Problems that hide in a diff show up immediately in a rendered column: a section that drags, a wall of citations, an ending that lands flat.

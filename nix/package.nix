@@ -1,4 +1,4 @@
-{ pkgs, src, tabi, baseUrl }:
+{ pkgs, src, baseUrl }:
 
 pkgs.stdenv.mkDerivation {
   pname = "audacis-blog";
@@ -7,11 +7,7 @@ pkgs.stdenv.mkDerivation {
   nativeBuildInputs = [ pkgs.zola ];
   buildPhase = ''
     runHook preBuild
-    
-    mkdir -p themes/tabi
-    cp -r ${tabi}/* themes/tabi/
-    chmod -R u+w themes/
-    
+
     # Override base_url in config.toml for the build
     sed -i 's|base_url = .*|base_url = "${baseUrl}"|' config.toml
     

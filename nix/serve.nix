@@ -1,4 +1,4 @@
-{ pkgs, src, tabi }:
+{ pkgs, src }:
 
 pkgs.writeShellScriptBin "serve-blog" ''
   # Serve on 0.0.0.0 to allow both localhost and 127.0.0.1 access
