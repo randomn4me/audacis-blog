@@ -4,6 +4,13 @@ Das Fraunhofer-Institut für Sichere Informationstechnologie SIT bietet besonder
 Unsere Forschenden haben festgestellt, dass viele KI-Bildgeneratoren auch dann Darstellungen von Minderjährigen erzeugen, wenn Nutzende ausdrücklich erotische Bilder von Erwachsenen anfordern. Das Problem: Auch wer versehentlich Bilder erzeugt, die Minderjährige in einem sexuellen Kontext zeigen, und speichert oder gar verbreitet, riskiert strafrechtliche Konsequenzen.
 Die Bewerbungsfrist für den ATHENE Startup Award UP26@it-sa ist bis verlängert. Cybersecurity-Startups aus der DACH-Region können sich noch bis zum 12. Juli 2026 für den ATHENE Startup Award UP26@it-sa bewerben. Die Sieger-Teams erhalten Preisgelder, Vernetzungsmöglichkeiten mit zentralen Akteuren des deutschen Cybersecurity-Markts und hohe Sichtbarkeit auf der wichtigsten Security-Messe Europas.
 House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob Fake News, Darknet, Datenschutz, Krypto oder neue Hacker*innen-Angriffe - hier stellen Forschende ihre aktuellen Themen aus der IT-Sicherheit vor. Im House of Nerds gibt es fundierte Informationen zu Stand und Entwicklung von Technik und Wissenschaft.
+Termine
+- 10. August 2026
+ Lunch Lecture: Gemeinsamkeiten und Unterschiede zwischen CRA, KI-VO und DSGVO: Ein Überblick
+- 24.-27. August 2026
+ ARES CyResTrust International Workshop on Applied Trust and Cyber Resilience, Linköping, Schweden
+- 24.-27. August 2026
+ ARES WSDF - 19th International Workshop on Digital Forensics, Linköping, Schweden
 Stellenangebote
 Wir suchen Cybersicherheitsexperten (w/m/d)
 Wir suchen engagierte und exzellente Wissenschaftlerinnen und Wissenschaftler für Cybersicherheit und Privatsphärenschutz, die den Aufbau des Nationalen Forschungszentrums für angewandte Cybersicherheit mitgestalten möchten.

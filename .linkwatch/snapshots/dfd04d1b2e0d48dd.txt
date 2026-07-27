@@ -1,9 +1,80 @@
-BorgBackup – Deduplicating archiver with compression and authenticated encryption
-Deduplicating archiver with compression and encryption
-BorgBackup (Borg for short) provides:- Space-efficient storage of backups.
-- Secure, authenticated encryption.
-- Compression: lz4, zstd, zlib, lzma, or none.
-- Mountable backups with FUSE.
-- Easy installation on multiple platforms: Linux, macOS, BSD, ...
-- Free software (BSD license).
-- Backed by a large and active open-source community.
+deduplicating archiver — est. 2015
+Backups with deduplication, compression and authenticated encryption.
+Redundancy is futile. Your data will be deduplicated.
+capabilities
+One archiver. Every defense your data needs.
+Borg stores your files as content-defined chunks. Identical chunks are stored exactly once — across files, across machines, across years of history.
+Space-efficient storage
+Content-defined chunking deduplicates everything in the repository. Daily full backups cost little more than the changes since yesterday.
+Authenticated encryption
+AES encryption with cryptographic authentication. Your backup server never needs to be trusted — it only ever sees ciphertext.
+Compression
+Pick your trade-off: lz4 for speed, zstd for balance, zlib and lzma for maximum squeeze — or none at all.
+Mountable archives
+Mount any archive as a regular filesystem with FUSE and browse old versions of your files like any folder.
+Runs everywhere you do
+Easy installation on Linux, macOS, BSD and more — from distribution packages, single-file binaries, or pip.
+Free & open source
+BSD licensed, developed in the open, and backed by a large, active community since 2015.
+deduplication
+Store it once. Reference it forever.
+Three nightly backups of the same machine. Most chunks already exist in the repository — Borg stores only what changed.
+Visualization: night 1 stores eight new chunks, A through H. Night 2 sees the same chunks again plus one new chunk I — only I is stored. Night 3 adds only the new chunk J. Duplicates are never stored twice.
+history stays complete, the repository stays small.
+in practice
+A backup is one command.
+No daemons, no agents, no lock-in. Point Borg at a repository — local disk, USB drive, or any machine you can reach over SSH — and go.
+demo
+Watch real sessions, not marketing.
+Recorded terminal sessions — every frame is real text, so you can pause the player and select and copy anything you see.
+loading player…
+install
+Get Borg. Choose your series.
+Install from your distribution’s packages, as a single-file binary, or via pip — the installation docs cover all of them.
+Borg 1.4stable
+The current stable series — the right choice for production use.
+Borg 1.2oldstable
+The previous stable series, still maintained (but no new releases).
+Borg 2.0testing
+Currently in testing — do not use it in production yet.
+Borg’s future: view the milestones · follow new releases via the atom feed
+support
+You are not alone. It’s a collective.
+Free community support. Please check the docs, the existing issues and the mailing list posts first — a lot of topics are already documented, explained, discussed and filed.
+Documentation
+Quite nice docs: installation, a reference for all Borg commands, examples and an FAQ, internals documentation, and docs for developers.
+Issue tracker
+Found a bug or have a concrete feature request? Create a ticket. For more general questions or discussions, prefer the chat or the mailing list.
+Chat (IRC)
+Join #borgbackup on libera.chat: just ask or tell directly, then patiently wait for replies — stay connected. A registered nick is preferred, and may even be required during times of high spam activity.
+Mastodon
+Follow @borgbackup@fosstodon.org for announcements. Mastodon is not suitable for longer or more complex discussions — use one of the other channels for that.
+Matrix chat
+Prefer Matrix? Use a client such as Element to join the #borgbackup room — it is bridged to the IRC channel, same people on both sides.
+Mailing list
+The list homepage explains its topic, how to subscribe or unsubscribe, and where to find the list archives.
+live chat
+Talk to the collective, right here.
+The #borgbackup channel on libera.chat, embedded. This is libera.chat’s own web client (web.libera.chat), so you can join from this page without installing anything.
+Join #borgbackup on libera.chat
+Pick a nickname and you’re in. A registered nick is preferred, and may be required during times of high spam activity. Be patient after asking — people reply when they see it.
+Loads web.libera.chat in a frame and connects you to the channel.
+services
+Paid support and services.
+Commercial service and support providers for BorgBackup:
+Waldmann EDV
+BorgBackup consulting, support, and development — the company of Thomas Waldmann, Borg’s lead developer and maintainer.
+fund
+Resistance is futile. Donations are not.
+Please help the software projects you use and love. You can support the BorgBackup project using these options:
+Open Collective
+Contribute directly via Open Collective; those funds also go to OC EU. The funds held on our behalf can be used to pay miscellaneous project-related expenses submitted by BorgBackup team members.
+GitHub Sponsors
+Become a sponsor and support us regularly, or alternatively make a one-time donation. Those funds are transferred to Open Collective Europe (OC EU), our fiscal host.
+Liberapay
+Become a patron and support us regularly to help make the project sustainable in the long term. The funds are distributed to the BorgBackup team members — and as a BorgBackup developer, you can join the team.
+PayPal
+May be the easiest way (if you already use PayPal or a credit card) to directly support a specific developer. Waldmann EDV is the company of Thomas Waldmann, BorgBackup’s lead developer and maintainer.
+the collective
+Trusted by sysadmins, hoarders and the merely paranoid.
+Borg has protected production servers, research data and family photo archives for a decade. It is boring, in the best possible way.

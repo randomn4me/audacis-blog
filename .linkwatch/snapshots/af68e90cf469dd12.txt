@@ -1,6 +1,6 @@
 Instructions to use markusbayer/CySecBERT with libraries, inference providers, notebooks, and local apps. Follow these links to get started.
 - Libraries
--  Transformers How to use markusbayer/CySecBERT with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline("fill-mask", model="markusbayer/CySecBERT")# Load model directly from transformers import AutoTokenizer, AutoModelForMaskedLM tokenizer = AutoTokenizer.from_pretrained("markusbayer/CySecBERT") model = AutoModelForMaskedLM.from_pretrained("markusbayer/CySecBERT")
+-  Transformers How to use markusbayer/CySecBERT with Transformers: # Use a pipeline as a high-level helper from transformers import pipeline pipe = pipeline("fill-mask", model="markusbayer/CySecBERT")# Load model directly from transformers import AutoTokenizer, AutoModelForMaskedLM tokenizer = AutoTokenizer.from_pretrained("markusbayer/CySecBERT") model = AutoModelForMaskedLM.from_pretrained("markusbayer/CySecBERT", device_map="auto")
 - Inference
 - Notebooks
 - Google Colab
@@ -59,4 +59,4 @@ Model Card Authors
 Markus Bayer
 Model Card Contact
 - Downloads last month
-- 1,496
+- 1,438

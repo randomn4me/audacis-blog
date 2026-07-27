@@ -1,0 +1,57 @@
+Dagstuhl Perspectives Workshop 26162
+Autonomous AI Agents in Computer Security
+( Apr 12 – Apr 17, 2026 )
+Permalink
+Organizers
+- Alvaro Cárdenas Mora (University of California - Santa Cruz, US)
+- Kathrin Grosse (IBM Research Europe - Zürich, CH)
+- Nicole Nichols (Palo Alto Networks - Santa Clara, US)
+- Konrad Rieck (TU Berlin, DE)
+Contact
+- Marsha Kleinbauer (for scientific matters)
+- Simone Schilke (for administrative matters)
+Shared Documents
+- Dagstuhl Materials Page (Use personal credentials as created in DOOR to log in)
+Schedule
+AI is transforming computer security in ways that have significant potential to disrupt the effectiveness of current defensive standards. The vulnerabilities of the AI systems themselves, along with their potential use as offensive tools, introduce a new dimension to the threat modeling of computer systems. As AI models increasingly power autonomous agents, this attack surface continues to expand, giving rise to novel threats that impact both society and industry. At the same time, AI models and autonomous agents could also serve as transformative tools for developing advanced defensive techniques. The rapid pace of AI development creates significant uncertainty about what will be required to defend against AI-based attacks and how to devise autonomous cyber defenses. By reducing reliance on manual intervention and integrating with existing defense mechanisms, AI defensive systems may offer new ways to counter attacks and mitigate threats.
+This Dagstuhl Perspectives Workshop aims to develop a systematic understanding of how AI agents can be used in both offensive and defensive security. Our goal is to bring together expertise from diverse domains to establish a comprehensive threat and defense landscape for AI agents, in order to collaboratively synthesize a comprehensive manifesto of how autonomous AI cyber agents can potentially disrupt current defensive standards. More specifically, we aim to discuss questions such as:
+- What is the current state of abilities and adoption in the wild, for AI cyber agents?
+- What stages and contexts of computer security tasks are easiest for AI agents and why?
+- How will the indicators of adversarial behaviors change if an AI agent is orchestrating the attack, instead of a human?
+- How can the security of an AI agent be quantified?
+- What factors most influence capabilities of AI agents and can they be manipulated?
+- What vulnerabilities are unique to AI Agents?
+- How will asymmetries in computer security be disrupted by AI Agents?
+Given the dynamic nature of AI research, the workshop will provide an open platform for discussing related and emerging themes, fostering a broader conversation on the role of AI agents in security.
+Please log in to DOOR to see more details.
+- Sahar Abdelnabi (Microsoft Research - Cambridge, GB) [dblp]
+- Alvaro Cárdenas Mora (University of California - Santa Cruz, US) [dblp]
+- Lorenzo Cavallaro (University College London, GB) [dblp]
+- Gabriela Ciocarlie (Stevens Institute of Technology - Hoboken, US) [dblp]
+- Mario Fritz (CISPA - Saarbrücken, DE) [dblp]
+- Giorgio Giacinto (University of Cagliari, IT) [dblp]
+- Kathrin Grosse (IBM Research Europe - Zürich, CH) [dblp]
+- Chris Hicks (The Alan Turing Institute - London, GB) [dblp]
+- Thorsten Holz (MPI-SP - Bochum, DE) [dblp]
+- Somesh Jha (University of Wisconsin-Madison, US) [dblp]
+- Monica Landoni (USI – Lugano, CH) [dblp]
+- Pavel Laskov (Universität Liechtenstein, LI) [dblp]
+- Wenke Lee (Georgia Institute of Technology - Atlanta, US) [dblp]
+- Jaron Mink (Arizona State University - Tempe, US) [dblp]
+- Nicole Nichols (Palo Alto Networks - Santa Clara, US) [dblp]
+- Daryna Oliynyk (Universität Wien, AT) [dblp]
+- Rebekah Overdorf (Ruhr-Universität Bochum, DE) [dblp]
+- Andrew Paverd (Microsoft Research - Cambridge, GB) [dblp]
+- Fabio Pierazzi (University College London, GB) [dblp]
+- Konrad Rieck (TU Berlin, DE) [dblp]
+- Ahmad-Reza Sadeghi (TU Darmstadt, DE) [dblp]
+- Lea Schönherr (CISPA - Saarbrücken, DE) [dblp]
+- Christian Schroeder de Witt (University of Oxford, GB) [dblp]
+- Edgar Weippl (Universität Wien, AT) [dblp]
+- Christian Wressnegger (KIT - Karlsruher Institut für Technologie, DE) [dblp]
+Classification
+- Artificial Intelligence
+- Cryptography and Security
+Keywords
+- AI Agents
+- AI Security
