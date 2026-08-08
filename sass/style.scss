@@ -557,6 +557,13 @@ code {
         margin-bottom: 0.5rem;
     }
 
+    .post-subtitle {
+        margin: 0 0 0.5rem;
+        color: var(--secondary-color);
+        font-size: 1.1rem;
+        font-style: italic;
+    }
+
     .post-meta {
         display: flex;
         flex-wrap: wrap;
@@ -577,17 +584,17 @@ code {
     }
 
     .post-edits {
-        margin-top: 3rem;
-        padding-top: 1rem;
-        border-top: 1px solid var(--border-color);
-        color: var(--secondary-color);
+        margin: 0 0 2rem;
+        color: var(--accent-color, var(--primary-color));
         font-size: 0.9rem;
 
         .post-edit {
             margin: 0.25rem 0;
+            font-style: italic;
 
             time {
-                font-style: italic;
+                font-style: normal;
+                font-weight: 600;
             }
         }
     }

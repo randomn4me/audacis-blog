@@ -7,6 +7,9 @@
     <article class="page-content">
         <header>
             <h1>{{ page.title }}</h1>
+            {% if page.description %}
+            <p class="post-subtitle">{{ page.description }}</p>
+            {% endif %}
             <div class="post-meta">
                 {% if page.date %}
                 <time datetime="{{ page.date }}">{{ page.date | date(format="%B %d, %Y") }}</time>
@@ -24,19 +27,18 @@
                 </div>
                 {% endif %}
             </div>
+            {% if page.extra.edited %}
+            <div class="post-edits">
+                {% for edit in page.extra.edited %}
+                <p class="post-edit"><time datetime="{{ edit.date }}">Edited {{ edit.date | date(format="%B %d, %Y") }}</time>: {{ edit.note }}</p>
+                {% endfor %}
+            </div>
+            {% endif %}
         </header>
 
         <div class="content">
             {{ page.content | safe }}
         </div>
-
-        {% if page.extra.edited %}
-        <footer class="post-edits">
-            {% for edit in page.extra.edited %}
-            <p class="post-edit"><time datetime="{{ edit.date }}">Edited {{ edit.date | date(format="%B %d, %Y") }}</time>: {{ edit.note }}</p>
-            {% endfor %}
-        </footer>
-        {% endif %}
     </article>
 </div>
 {% endblock %}
