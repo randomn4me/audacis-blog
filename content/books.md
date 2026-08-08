@@ -7,7 +7,8 @@ other_heading = "Earlier"
 items = [
   { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, so I got curious.", year = "Currently Reading" },
   { title = "Dune Messiah (Frank Herbert)", description = "I want to finish it before the next Dune movie comes out in December.", year = "Currently Reading" },
-  { title = "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses (Eric Ries)", description = "It has been on my reading list for a while, and my former research group just gifted me a copy.", year = "Currently Reading" },
+
+  { title = "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses (Eric Ries)", description = "An excellent book and mandatory for any entrepreneur. It touches agile project management, fast iterations, how to ensure learning, and minimizing the time to identify the gaps to fill with the startup's product.", rating = 5, year = 2026 },
 
   { title = "Capitalism and Crises: How to Fix Them (Colin Mayer)", description = "A great book to get into the current problems of the economic system, exemplified through the UK and US. It touches on purposeful business and the different roles and responsibilities of stakeholders, shareholders, the financial sector, and governments - and the interplay between them.", rating = 4, year = 2026 },
   { title = "How to Win Friends and Influence People", description = "A nice introduction to simple life rules. Sometimes you notice its age because of outdated recommendations about the roles of women and men, but if you adjust it to current standards, I can heartily recommend it.", rating = 5, year = 2026 },
