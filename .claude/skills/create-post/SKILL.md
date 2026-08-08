@@ -8,138 +8,86 @@ argument-hint: <topic, idea, or file path>
 
 Draft a blog post for Philipp's personal blog at audacis.net.
 
-## Input
+Source: `$ARGUMENTS` — if a file path, read it first; if a topic or loose thoughts, use it as the starting point.
 
-Source: $ARGUMENTS
+## Voice
 
-If `$ARGUMENTS` is a file path, read the file first to understand the content. If it's a topic, idea, or loose thoughts, use that directly as the starting point.
+**Read 2-3 existing posts in `content/blog/` before writing to calibrate.** That is the real spec; the notes below are guardrails, not a substitute.
 
-## Voice & Tone
+First person, casual, honest. Self-deprecating, opinionated, and tangential are all fine. Show genuine curiosity — the reader should feel they're hearing from someone who cares. No corporate polish, marketing speak, or thought-leadership framing. Don't over-explain; trust a technical reader. Swearing is fine when it fits ("fuck-up" appears in existing posts). Light humor, never forced. Short paragraphs, conversational flow. Emphasis with *italics*, not quotation marks. See `CLAUDE.md` for the house style (Elements of Style, no em dashes).
 
-This is a personal blog. Write like Philipp writes:
+## File and frontmatter
 
-- First person ("I"), casual and honest
-- It's okay to be self-deprecating, opinionated, or tangential
-- Show genuine curiosity and enthusiasm — the reader should feel like they're hearing from someone who actually cares about the topic
-- Avoid corporate polish, marketing speak, or "thought leadership" framing
-- Don't over-explain — trust the reader to be technical enough to follow along
-- Swearing is fine when it fits naturally (see: "fuck-up" in existing posts)
-- Light humor is welcome but don't force it
-- Short paragraphs, conversational flow — more like talking to a friend than writing a paper
-
-Read 2-3 existing posts in `content/blog/` before writing to calibrate the tone for the current session.
-
-## Output
-
-Create the blog post file directly at:
-
-```
-content/blog/SLUG.md
-```
-
-Where SLUG is derived from the title in kebab-case (lowercase, hyphens).
-
-## Frontmatter
-
-Use Zola TOML frontmatter:
+Write to `content/blog/SLUG.md`, SLUG in kebab-case from the title.
 
 ```toml
 +++
 title = "Post Title"
-description = "One-liner for listings and SEO"
-date = YYYY-MM-DD
-draft = true
+description = "Punchy teaser for listings and SEO, not a dry summary"
+date = YYYY-MM-DD   # today
+draft = true        # always; Philipp publishes when ready
 
 [taxonomies]
-tags = ["tag1", "tag2"]
+tags = ["tag1", "tag2"]   # 1-3, reuse existing tags where possible
 +++
 ```
 
-- Use today's date
-- Always start as `draft = true` — Philipp publishes when ready
-- Pick 1-3 tags from existing ones where possible (check `content/blog/` for what's been used)
-- Description should be a punchy subtitle or teaser, not a dry summary
+## Content
 
-## Content Guidelines
-
-- Open with something that pulls the reader in — a situation, a problem, a question, a confession. No "In this post I will discuss..."
-- Use `#` and `##` headings to break up sections when the post is long enough to need them
-- Include links to tools, projects, or references where relevant — the blog already does this naturally
-- **Cite with inline links, not footnotes.** The corpus is consistent about this: `trusting-trust-in-the-age-of-ai.md` carries nine sources and zero footnotes. Where footnotes do appear in older posts they are asides, digressions, and jokes ("WTF Apple ?!?!?!??!!!??"), never bibliography. A stack of numbered references at the bottom is an academic habit and reads as one
-- A `<!-- more -->` break after the first paragraph or two (this controls the excerpt on the listing page)
-- Target length depends on the topic:
-  - Quick tip or rant: 300-500 words
-  - Tutorial or walkthrough: 600-1200 words
-  - Deep dive: as long as it needs to be
-- Don't pad for word count. If it's said in 400 words, stop at 400 words.
-- Code blocks with language hints when showing code (` ```nix `, ` ```rust `, etc.)
-- Images can be referenced from `/img/` if relevant, using the shortcode: `{{ img(src="/img/filename.jpg", alt="description") }}`
-- One sentence per line — this makes diffs cleaner and editing easier
-- Use *italics* for emphasis, not quotation marks
-- Check existing posts in `content/blog/` for related topics and link to them where it fits naturally (e.g., a follow-up, a callback, or shared context)
+- Open on a situation, problem, question, or confession. No "In this post I will discuss...".
+- `<!-- more -->` break after the first paragraph or two (controls the listing excerpt).
+- `#`/`##` headings when the post is long enough to need them.
+- One sentence per line — cleaner diffs.
+- **Cite with inline links, not footnotes.** The corpus is consistent: `trusting-trust-in-the-age-of-ai.md` carries nine sources and zero footnotes. Footnotes in older posts are asides and jokes, never bibliography. A stack of numbered references reads as an academic habit.
+- Code blocks carry language hints (` ```nix `, ` ```rust `). Images via `{{ img(src="/img/filename.jpg", alt="description") }}`.
+- Link to related posts in `content/blog/` where it fits — a follow-up, a callback, shared context.
+- Length follows the topic (rant 300-500, walkthrough 600-1200, deep dive as long as needed). Don't pad; if it's said in 400 words, stop.
 
 ## Timeline sections
 
-When a post walks through dated events, use the `timeline` shortcode rather than a run of "On 16 July, ..." paragraphs. It renders a vertical rail with a dot and a date stamp per event, in the site's own colours.
+For a genuine sequence of three or four dated events where order is the point, use the `timeline` shortcode instead of a run of "On 16 July, ..." paragraphs:
 
 ```
 {% timeline() %}
-## A weekend in mid-July
-
-Something moves through the production infrastructure.
-One sentence per line, as everywhere else.
-
 ## 16 July
 
-The disclosure [goes up](https://example.com)[^1].
+The disclosure goes up. One sentence per line, as everywhere else.
 {% end %}
 ```
 
-Each `## ` heading is the stamp, the lines under it are the event. The stamp carries the date, so the prose should not repeat it: write *Hugging Face publishes the disclosure*, not *On 16 July, Hugging Face publishes the disclosure*.
+Each `## ` heading is the date stamp, so the prose must not repeat it: write *Hugging Face publishes the disclosure*, not *On 16 July, Hugging Face publishes...*. A single dated fact is a sentence, not a timeline.
 
-Use it for a genuine sequence, three or four events, where the order is the point. A single dated fact is a sentence, not a timeline, and a timeline used as decoration reads as one.
-
-**No footnotes inside the timeline.** Zola renders shortcode bodies through the `markdown` filter rather than the page's own pass, so a `[^1]` in there is invisible to the pass that numbers footnotes. The definition is then treated as unreferenced and sorted to the end, which silently shifts the printed number of *every* footnote in the post while the anchors keep working. Cite with an inline link, which a timeline entry usually wants anyway, or put the footnote in the prose around the timeline.
-
-Zola numbers footnotes by order of first reference, not by the order the definitions are written in. Keep the definition block in reference order and the two agree. See `templates/shortcodes/timeline.html` and the timeline styles in `sass/style.scss`.
+**No footnotes inside the timeline.** Zola renders shortcode bodies through the `markdown` filter, separate from the page's footnote pass, so a `[^1]` inside is invisible to numbering — its definition is treated as unreferenced, sorted to the end, and silently shifts the printed number of *every* footnote in the post while anchors keep working. Cite inline instead, or put the footnote in the prose around the timeline. (Zola numbers footnotes by order of first reference; keep the definition block in that order. See `templates/shortcodes/timeline.html` and `sass/style.scss`.)
 
 ## Present the draft as an artifact
 
-Once the file exists, publish a rendered reading copy so Philipp can read the post as a page instead of as markdown. Problems that hide in a diff show up immediately in a rendered column: a section that drags, a wall of citations, an ending that lands flat.
+Publish a rendered reading copy so Philipp reads a page, not markdown — problems that hide in a diff (a section that drags, a wall of citations, a flat ending) show up in a rendered column.
 
-1. Load the `artifact-design` skill first. It is required before writing any artifact HTML.
-2. Write the HTML to the session scratchpad directory, never into the repo. This is a preview, not site content, and it must not end up in `content/` or in a commit.
-3. Publish with the **Artifact** tool, and redeploy the *same file path* for every revision so the URL stays stable and an open tab keeps working.
+1. Load the `artifact-design` skill first (required before writing artifact HTML).
+2. Write the HTML to the session scratchpad, **never** into the repo — it's a preview, not site content.
+3. Publish with the **Artifact** tool; redeploy the *same file path* every revision so the URL and open tabs stay stable. Keep the same favicon.
 
-What the reading copy needs:
+The reading copy needs, beyond plain HTML:
 
-- Absolute URLs for internal links (`https://audacis.net/blog/other-post/`). Relative paths do not resolve outside the site.
-- Footnotes rendered by hand, because Zola's `[^1]` syntax is not HTML. Use superscript anchors pointing at a numbered notes list at the bottom, and check that every reference has a matching note and every note a reference.
-- The draft state shown honestly, such as a `DRAFT` chip and a footer naming the source file. Update both the moment the flag actually changes. A stale "draft = true" footer on a published post is worse than no footer.
-- The same favicon on every redeploy. People find the tab by its icon.
+- **Absolute URLs** for internal links (`https://audacis.net/blog/other-post/`) — relative paths don't resolve off-site.
+- **Footnotes rendered by hand** — Zola's `[^1]` is not HTML. Use superscript anchors to a numbered notes list; check every reference has a note and vice versa.
+- The **draft state shown honestly** (a `DRAFT` chip, a footer naming the source file), updated the moment the flag changes.
 
-Keep the artifact in sync with the markdown. Every edit to the post is an edit to both, or the reading copy quietly starts lying.
+Keep the artifact in sync with the markdown — every edit is an edit to both, or the reading copy starts lying.
 
 ### The share block
 
-End the artifact with a LinkedIn version of the post and a **Copy text** button, so posting is one click rather than a round trip.
+End the artifact with a LinkedIn version and a **Copy text** button.
 
-- Keep it to roughly 150 words. LinkedIn truncates past that, and the hook has to survive the fold.
-- Lead with the single most surprising concrete fact, not with context.
-- Plain text only. LinkedIn strips italics and markdown, so use straight quotes for titles.
-- End with the canonical post URL, `https://audacis.net/blog/SLUG/`.
-- Assemble the copied string from the individual paragraphs in JS so it lands with blank lines between them, rather than copying rendered HTML.
+- ~150 words (LinkedIn truncates past the fold), leading with the single most surprising concrete fact, not context.
+- Plain text only — LinkedIn strips markdown; use straight quotes for titles.
+- End with the canonical URL `https://audacis.net/blog/SLUG/`.
+- Assemble the copied string from individual paragraphs in JS so blank lines survive.
+- **Name the people the post actually leans on** (paper authors, whoever is quoted or did the work) in the body text, so Philipp can turn them into tags — only those the short version genuinely uses. Below the copyable block, outside it, list the candidates with affiliations and any orgs worth tagging; say plainly you haven't verified their profiles and each handle needs confirming.
 
-**Name the people the post actually leans on**, inside the body text, so Philipp can turn them into tags. Paper authors, whoever is quoted, whoever did the work. Naming them in the running text is what makes a tag possible; a name bolted on afterwards reads as reach-chasing and should be left out.
+## After writing
 
-Only name people the text genuinely uses. Someone who appears in the blog post but not in the short version does not belong in the short version.
-
-Below the copyable block, outside it so it never lands in the paste, list the candidates with their affiliations, plus any organisations worth tagging. Say plainly that you have not checked whether these people have profiles, and that Philipp should confirm each handle. Tagging the wrong account is worse than tagging nobody.
-
-## After Writing
-
-1. Use the **Read** tool to display the final post file (so Philipp sees it with line numbers)
-2. Mention the file path where it was saved, and the artifact URL
-3. Remind that it's saved as `draft = true`
-4. Offer `/review-post` before publishing, which checks claims, references, links, voice against the older posts, and bloat
-5. Ask if anything should be adjusted before Philipp removes the draft flag
+1. **Read** the final file so Philipp sees it with line numbers.
+2. Give the file path and the artifact URL, and remind it's `draft = true`.
+3. Offer `/review-post` before publishing (checks claims, references, links, voice, bloat).
+4. Ask what to adjust before Philipp removes the draft flag.
