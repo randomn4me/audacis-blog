@@ -1,10 +1,10 @@
-<div id="search-modal" class="search-modal">
+<div id="search-modal" class="search-modal" role="dialog" aria-modal="true" aria-label="Search" inert>
     <div class="search-modal-overlay"></div>
     <div class="search-modal-content">
         <div class="search-modal-header">
-            <div class="search-input-wrapper">
-                <i class="fa-solid fa-magnifying-glass search-icon"></i>
-                <input type="text" id="search-modal-input" placeholder="Search..." autofocus>
+            <div class="search-input-wrapper" role="search">
+                <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+                <input type="text" id="search-modal-input" placeholder="Search..." aria-label="Search posts">
             </div>
             <button class="search-modal-close" aria-label="Close search">
                 <i class="fa-solid fa-xmark"></i>

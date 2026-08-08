@@ -471,12 +471,31 @@ code {
         gap: 0.5rem;
         padding-left: 1.25rem;  // Indent all items to align with wedge
 
+        // A real button so Enter/Space work and the h3 keeps its heading role.
+        // Stripped back to plain text; the row's cursor/hover styling still
+        // comes from .item-header.expandable.
+        .item-toggle {
+            appearance: none;
+            background: none;
+            border: none;
+            padding: 0;
+            font: inherit;
+            color: inherit;
+            text-align: left;
+            cursor: inherit;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            // Carries the pull-back itself so the wedge stays inside the
+            // button's border box, and so the focus ring encloses it.
+            margin: 0 0 0 -1.25rem;
+        }
+
         .wedge {
             color: var(--primary-color);
             font-size: 0.75rem;
             transition: transform 0.2s ease;
             display: inline-block;
-            margin-left: -1.25rem;  // Pull wedge back to left edge
         }
     }
 
@@ -1248,13 +1267,15 @@ code {
 }
 
 .search-result {
+    position: relative;   // anchor for the stretched link below
     padding: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 8px;
     transition: background-color 0.2s;
     cursor: pointer;
 
-    &:hover {
+    &:hover,
+    &:focus-within {
         background-color: var(--hover-background);
     }
 }
@@ -1268,9 +1289,22 @@ code {
 .search-result-title a {
     color: var(--text-color);
     text-decoration: none;
+
+    // Stretch the hit area over the whole card so it stays mouse-clickable,
+    // while the link's accessible name remains just the title.
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
 }
 
-.search-result-title a:hover {
+.search-result:hover .search-result-title a,
+.search-result:focus-within .search-result-title a {
     color: var(--primary-color);
 }
 

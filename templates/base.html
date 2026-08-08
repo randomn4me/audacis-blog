@@ -195,7 +195,9 @@
             const searchResults = document.getElementById('search-modal-results');
             const searchClose = document.querySelector('.search-modal-close');
             const searchOverlay = document.querySelector('.search-modal-overlay');
+            const focusableSelector = 'a[href], button:not([disabled]), input:not([disabled]), [tabindex]:not([tabindex="-1"])';
             let searchIndex = null;
+            let previouslyFocused = null;
 
             // Load search index
             fetch('{{ get_url(path="search_index.en.json") }}')
@@ -209,6 +211,11 @@
 
             // Open search modal
             function openSearch() {
+                if (searchModal.classList.contains('active')) {
+                    return;
+                }
+                previouslyFocused = document.activeElement;
+                searchModal.removeAttribute('inert');
                 searchModal.classList.add('active');
                 document.body.style.overflow = 'hidden';
                 setTimeout(() => searchInput.focus(), 100);
@@ -217,15 +224,71 @@
             // Close search modal
             function closeSearch() {
                 searchModal.classList.remove('active');
-                document.body.style.overflow = '';
+                searchModal.setAttribute('inert', '');
+                // The gallery lightbox locks scroll through the same property,
+                // so only release it if no lightbox is still holding the lock.
+                if (!document.querySelector('.gallery-lightbox:not([hidden])')) {
+                    document.body.style.overflow = '';
+                }
                 searchInput.value = '';
                 searchResults.innerHTML = '';
+
+                // Restore focus to whatever opened the modal. Two cases need a
+                // fallback: opening with Cmd/Ctrl+K while nothing is focused
+                // records <body>, and on mobile the nav drawer slides to
+                // right: -100% while its links stay focusable, so the trigger
+                // can be off-screen by now. Geometry catches both; offsetParent
+                // would not, since the drawer is positioned, not hidden.
+                function onScreen(el) {
+                    if (!el || typeof el.focus !== 'function') return false;
+                    const r = el.getBoundingClientRect();
+                    if (r.width === 0 || r.height === 0) return false;
+                    return r.right > 0 && r.left < window.innerWidth;
+                }
+
+                let restore = previouslyFocused;
+                if (restore === document.body || !onScreen(restore)) {
+                    // The burger owns the drawer the trigger lives in, so it is
+                    // the honest landing spot once that drawer has closed.
+                    restore = [
+                        document.querySelector('.mobile-menu-toggle'),
+                        document.querySelector('header a[href*="/search"]')
+                    ].find(onScreen);
+                }
+                if (restore) {
+                    restore.focus();
+                }
+                previouslyFocused = null;
+            }
+
+            // Keep Tab focus inside the modal while it is open. The list is
+            // rebuilt on every Tab so results injected as the user types are
+            // included.
+            function trapFocus(e) {
+                const focusable = Array.from(searchModal.querySelectorAll(focusableSelector));
+
+                if (focusable.length === 0) {
+                    e.preventDefault();
+                    return;
+                }
+
+                const first = focusable[0];
+                const last = focusable[focusable.length - 1];
+                const outside = !searchModal.contains(document.activeElement);
+
+                if (e.shiftKey && (outside || document.activeElement === first)) {
+                    e.preventDefault();
+                    last.focus();
+                } else if (!e.shiftKey && (outside || document.activeElement === last)) {
+                    e.preventDefault();
+                    first.focus();
+                }
             }
 
             // Listen for search links
             document.addEventListener('click', function(e) {
                 const target = e.target.closest('a[href*="/search"]');
-                if (target) {
+                if (target && !searchModal.contains(target)) {
                     e.preventDefault();
                     openSearch();
                 }
@@ -239,6 +302,9 @@
                 }
                 if (e.key === 'Escape' && searchModal.classList.contains('active')) {
                     closeSearch();
+                }
+                if (e.key === 'Tab' && searchModal.classList.contains('active')) {
+                    trapFocus(e);
                 }
             });
 
@@ -300,10 +366,21 @@
                 return excerpt;
             }
 
+            // Replacing the results can destroy the anchor currently holding
+            // focus, which drops focus to <body>, outside the dialog. Pull it
+            // back to the input so the trap still has something to work from.
+            function setResults(html) {
+                const hadFocus = searchResults.contains(document.activeElement);
+                searchResults.innerHTML = html;
+                if (hadFocus) {
+                    searchInput.focus();
+                }
+            }
+
             // Perform search
             function performSearch(query) {
                 if (!searchIndex || !query || query.length < 2) {
-                    searchResults.innerHTML = '';
+                    setResults('');
                     return;
                 }
 
@@ -328,12 +405,12 @@
             // Display results
             function displayResults(results, terms, query) {
                 if (results.length === 0) {
-                    searchResults.innerHTML = `
+                    setResults(`
                         <div class="no-results">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                             <p>No results found for "${query}"</p>
                         </div>
-                    `;
+                    `);
                     return;
                 }
 
@@ -346,8 +423,11 @@
                         const highlightedTitle = highlightText(result.title, terms);
                         const highlightedExcerpt = highlightText(excerpt, terms);
 
+                        // The anchor wraps the title only, so its accessible
+                        // name stays the title; .search-result-title a::after
+                        // stretches the hit area over the whole card.
                         return `
-                            <div class="search-result" onclick="window.location.href='${result.url}'">
+                            <div class="search-result">
                                 <div class="search-result-title">
                                     <a href="${result.url}">${highlightedTitle}</a>
                                 </div>
@@ -357,7 +437,7 @@
                     }).join('')}
                 `;
 
-                searchResults.innerHTML = resultsHTML;
+                setResults(resultsHTML);
             }
 
             // Search input listener

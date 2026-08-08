@@ -81,7 +81,10 @@
 .gallery-lightbox {
     position: fixed;
     inset: 0;
-    z-index: 1000;
+    /* Above the mobile menu toggle (1001) and the nav drawer (1000). Below
+       those, the burger stayed tappable over the backdrop and opened a menu
+       that rendered behind it, which the focus trap turns into a dead end. */
+    z-index: 1100;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -179,10 +182,22 @@
     const btnPrev = lightbox.querySelector('.gallery-lightbox-prev');
     const btnNext = lightbox.querySelector('.gallery-lightbox-next');
     const backdrop = lightbox.querySelector('.gallery-lightbox-backdrop');
+    const focusables = [btnPrev, btnNext, btnClose];
     let current = 0;
     const items = Array.from(thumbs);
 
+    function trapFocus(e) {
+        const index = focusables.indexOf(document.activeElement);
+        if (index === -1) {
+            (e.shiftKey ? focusables[focusables.length - 1] : focusables[0]).focus();
+        } else {
+            const step = e.shiftKey ? -1 : 1;
+            focusables[(index + step + focusables.length) % focusables.length].focus();
+        }
+    }
+
     function show(index) {
+        const opening = lightbox.hidden;
         current = (index + items.length) % items.length;
         const thumb = items[current];
         sourceWebp.srcset = thumb.dataset.fullWebp;
@@ -192,12 +207,18 @@
         caption.hidden = !thumb.dataset.alt;
         lightbox.hidden = false;
         document.body.style.overflow = 'hidden';
-        btnClose.focus();
+        // Only grab focus on open. Stealing it on every navigation would move
+        // focus off Prev/Next the moment either is activated by keyboard.
+        if (opening) btnClose.focus();
     }
 
     function hide() {
         lightbox.hidden = true;
-        document.body.style.overflow = '';
+        // The search modal locks scroll through the same property, so only
+        // release it if the modal is not still holding the lock.
+        if (!document.querySelector('.search-modal.active')) {
+            document.body.style.overflow = '';
+        }
         sourceWebp.srcset = '';
         img.src = '';
         items[current].focus();
@@ -214,10 +235,23 @@
     btnPrev.addEventListener('click', function() { show(current - 1); });
     btnNext.addEventListener('click', function() { show(current + 1); });
 
-    lightbox.addEventListener('keydown', function(e) {
+    // Bound to document, not the lightbox: clicking the photo leaves focus on
+    // <body>, and the lightbox would never see the keystroke. That <body>
+    // allowance is why the search modal has to be checked by presence rather
+    // than by focus: clicking its non-focusable chrome also parks focus on
+    // <body>, and we must not act while it is layered over us.
+    document.addEventListener('keydown', function(e) {
+        if (lightbox.hidden) return;
+        if (document.querySelector('.search-modal.active')) return;
+        const active = document.activeElement;
+        if (active && active !== document.body && !lightbox.contains(active)) return;
         if (e.key === 'Escape') hide();
         else if (e.key === 'ArrowLeft') show(current - 1);
         else if (e.key === 'ArrowRight') show(current + 1);
+        else if (e.key === 'Tab' && !e.ctrlKey && !e.metaKey && !e.altKey) {
+            e.preventDefault();
+            trapFocus(e);
+        }
     });
 })();
 </script>

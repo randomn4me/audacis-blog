@@ -53,9 +53,13 @@
                                     <div class="item-header{% if item.description %} expandable{% endif %}">
                                         <h3 class="item-title">
                                             {% if item.description %}
-                                            <span class="wedge">▶</span>
-                                            {% endif %}
+                                            <button type="button" class="item-toggle" aria-expanded="false" aria-controls="item-details-{{ loop.index }}">
+                                                <span class="wedge" aria-hidden="true">▶</span>
+                                                {{ item.title }}
+                                            </button>
+                                            {% else %}
                                             {{ item.title }}
+                                            {% endif %}
                                         </h3>
                                         {% if item.rating %}
                                         <div class="item-meta">
@@ -64,7 +68,7 @@
                                         {% endif %}
                                     </div>
                                     {% if item.description %}
-                                    <div class="item-details" style="display: none;">
+                                    <div class="item-details" id="item-details-{{ loop.index }}" style="display: none;">
                                         <p class="item-description">{{ item.description | safe }}</p>
                                         {% if item.link %}
                                         <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
@@ -92,9 +96,13 @@
                                     <div class="item-header{% if item.description %} expandable{% endif %}">
                                         <h3 class="item-title">
                                             {% if item.description %}
-                                            <span class="wedge">▶</span>
-                                            {% endif %}
+                                            <button type="button" class="item-toggle" aria-expanded="false" aria-controls="item-details-{{ loop.index }}">
+                                                <span class="wedge" aria-hidden="true">▶</span>
+                                                {{ item.title }}
+                                            </button>
+                                            {% else %}
                                             {{ item.title }}
+                                            {% endif %}
                                         </h3>
                                         {% if item.rating %}
                                         <div class="item-meta">
@@ -103,7 +111,7 @@
                                         {% endif %}
                                     </div>
                                     {% if item.description %}
-                                    <div class="item-details" style="display: none;">
+                                    <div class="item-details" id="item-details-{{ loop.index }}" style="display: none;">
                                         <p class="item-description">{{ item.description | safe }}</p>
                                         {% if item.link %}
                                         <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
@@ -136,9 +144,13 @@
                                 <div class="item-header{% if item.description %} expandable{% endif %}">
                                     <h3 class="item-title">
                                         {% if item.description %}
-                                        <span class="wedge">▶</span>
-                                        {% endif %}
+                                        <button type="button" class="item-toggle" aria-expanded="false" aria-controls="item-details-{{ loop.index }}">
+                                            <span class="wedge" aria-hidden="true">▶</span>
+                                            {{ item.title }}
+                                        </button>
+                                        {% else %}
                                         {{ item.title }}
+                                        {% endif %}
                                     </h3>
                                     {% if item.rating %}
                                     <div class="item-meta">
@@ -147,7 +159,7 @@
                                     {% endif %}
                                 </div>
                                 {% if item.description %}
-                                <div class="item-details" style="display: none;">
+                                <div class="item-details" id="item-details-{{ loop.index }}" style="display: none;">
                                     <p class="item-description">{{ item.description | safe }}</p>
                                     {% if item.link %}
                                     <a class="item-link" href="{{ item.link }}" target="_blank" rel="noopener noreferrer">Visit Website →</a>
@@ -170,26 +182,38 @@ document.addEventListener('DOMContentLoaded', function() {
     // Handle expand/collapse
     const expandableHeaders = document.querySelectorAll('.item-header.expandable');
 
+    // Don't toggle if the event is aimed at a link
+    function targetsLink(e) {
+        return e.target.tagName === 'A' || (e.target.closest && e.target.closest('a'));
+    }
+
+    function toggleHeader(header) {
+        const card = header.closest('.list-item-card');
+        const details = card.querySelector('.item-details');
+        const wedge = header.querySelector('.wedge');
+        const toggle = header.querySelector('.item-toggle');
+
+        if (details.style.display === 'none') {
+            details.style.display = 'block';
+            wedge.style.transform = 'rotate(90deg)';
+            toggle.setAttribute('aria-expanded', 'true');
+        } else {
+            details.style.display = 'none';
+            wedge.style.transform = 'rotate(0deg)';
+            toggle.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    // The whole row stays clickable for mouse users. Keyboard activation comes
+    // from the real <button> inside the title, which fires click on Enter and
+    // Space on its own, so no key handler is needed here.
     expandableHeaders.forEach(header => {
         header.addEventListener('click', function(e) {
-            // Don't expand if clicking on a link
-            if (e.target.tagName === 'A' || e.target.closest('a')) {
+            if (targetsLink(e)) {
                 return;
             }
 
-            const card = this.closest('.list-item-card');
-            const details = card.querySelector('.item-details');
-            const wedge = this.querySelector('.wedge');
-
-            if (details.style.display === 'none') {
-                details.style.display = 'block';
-                wedge.style.transform = 'rotate(90deg)';
-                this.setAttribute('aria-expanded', 'true');
-            } else {
-                details.style.display = 'none';
-                wedge.style.transform = 'rotate(0deg)';
-                this.setAttribute('aria-expanded', 'false');
-            }
+            toggleHeader(this);
         });
     });
 });
