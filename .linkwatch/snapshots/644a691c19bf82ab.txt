@@ -78,7 +78,7 @@ References
 - ↑ Forrister, Kelly (August 2, 2010). "Which list manager should I use for GTD?". GTD Times. The David Allen Company. Archived from the original on August 6, 2010. Retrieved January 4, 2015.
 - ↑ Forrister, Kelly (May 4, 2009). "Simply GTD with Kelly: Getting Started". The David Allen Company. Archived from the original on August 29, 2010. Retrieved August 22, 2010. If you're at all familiar with GTD you know that David Allen does not tell you which tools to use--GTD is tool agnostic--so those choices are up to you. Not saying all tools, software programs, paper planners work seamlessly with GTD, but where you organize your stuff is up to you.
 - ↑ "Common Tools & Software". Getting Things Done website. David Allen Co. Retrieved May 30, 2014.
-- 1 2 Heylighen, Francis; Vidal, Clément (December 2008). "Getting Things Done: The Science behind Stress-Free Productivity" (PDF). Long Range Planning: International Journal of Strategic Management. 41 (6): 585–605. CiteSeerX 10.1.1.161.441. doi:10.1016/j.lrp.2008.09.004. ISSN 0024-6301.
+- 1 2 Heylighen, Francis; Vidal, Clément (December 2008). "Getting Things Done: The Science behind Stress-Free Productivity" (PDF). Long Range Planning: International Journal of Strategic Management. 41 (6): 585–605. CiteSeerX 10.1.1.161.441. doi:10.1016/j.lrp.2008.09.004. ISSN 0024-6301. {{cite journal}}: Cite uses deprecated parameter|citeseerx=(help)
 - ↑ Fallows, James (July 1, 2004). "Organize Your Life!". The Atlantic. ISSN 2151-9463. Retrieved October 29, 2024.
 - ↑ Andrews, Robert (July 12, 2005). "A new cult for the info age". Wired. Condé Nast. Retrieved May 2, 2020.
 - ↑ Mann, Merlin (September 8, 2004). "Getting started with "Getting Things Done"". 43 Folders. Retrieved May 2, 2020.

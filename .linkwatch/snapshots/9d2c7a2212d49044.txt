@@ -66,7 +66,7 @@ See also
 - MathJax – System to format mathematics on the web
 - xdvi – Open Source Computer Program
 References
-[edit]- ↑ "LaTeX2e Release Newsletter". Retrieved 27 November 2024.
+[edit]- ↑ "LaTeX 2026-06-01 release distributed". Retrieved 5 August 2026.
 - ↑ "An introduction to LaTeX". LaTeX project. Archived from the original on 31 October 2015. Retrieved 18 April 2016.
 - 1 2 Lamport, Leslie (1986). LATEX: a document preparation system. Addison-Wesley Pub. Co. ISBN 0-201-15790-X. OCLC 12550262.
 - ↑ Leslie Lamport (April 23, 2007). "The Writings of Leslie Lamport: LaTeX: A Document Preparation System". Leslie Lamport's Home Page. Archived from the original on 2012-11-05. Retrieved 2007-04-27.
