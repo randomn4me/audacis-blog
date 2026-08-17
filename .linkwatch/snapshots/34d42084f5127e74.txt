@@ -5,12 +5,6 @@ Um für mehr rechtliche Klarheit in der Cybersicherheitsforschung zu sorgen, sim
 Ob Bewerbungsanschreiben, Schulaufsätze oder Programmcodes – mit der Text-KI ChatGPT lassen sich Texte aller Art innerhalb von Sekunden automatisch generieren. Das Fraunhofer SIT forscht an Möglichkeiten, mit ChatGPT erstellte Texte erkennen zu helfen. Unsere textforensischen Expert*innen arbeiten dabei unter anderem mit einer selbst entwickelten Methode zur Autorschaftsverifikation, COAV.
 House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob Fake News, Darknet, Datenschutz, Krypto oder neue Hacker*innen-Angriffe - hier stellen Forschende ihre aktuellen Themen aus der IT-Sicherheit vor. Im House of Nerds gibt es fundierte Informationen zu Stand und Entwicklung von Technik und Wissenschaft.
 Termine
-- 10. August 2026
- Lunch Lecture: Gemeinsamkeiten und Unterschiede zwischen CRA, KI-VO und DSGVO: Ein Überblick
-- 02. September 2026
- Cyber Range Training: Spionageangriffe auf Organisationen, Darmstadt
-- 03. September 2026
- Cyber Range Training: Angriffe zur Unterbrechung von Geschäfts- und Betriebsprozessen, Darmstadt
 Stellenangebote
 Wir suchen Cybersicherheitsexperten (w/m/d)
 Wir suchen engagierte und exzellente Wissenschaftlerinnen und Wissenschaftler für Cybersicherheit und Privatsphärenschutz, die den Aufbau des Nationalen Forschungszentrums für angewandte Cybersicherheit mitgestalten möchten.

@@ -148,7 +148,7 @@ References
 - ↑ C. Gentry, S. Halevi, and N. P. Smart. Fully Homomorphic Encryption with Polylog Overhead. In EUROCRYPT 2012 (Springer)
 - ↑ C. Gentry, S. Halevi, and N. P. Smart. Better Bootstrapping in Fully Homomorphic Encryption. In PKC 2012 (SpringeR)
 - ↑ C. Gentry, S. Halevi, and N. P. Smart. Homomorphic Evaluation of the AES Circuit. In CRYPTO 2012 (Springer)
-- ↑ Smart, Nigel P.; Vercauteren, Frederik (2014). "Fully Homomorphic SIMD Operations". Designs, Codes and Cryptography. 71 (1): 57–81. CiteSeerX 10.1.1.294.4088. doi:10.1007/s10623-012-9720-4. hdl:1983/caaadb2e-a720-4daf-8016-5d7764b27a9f. S2CID 11202438. {{cite journal}}: Cite uses deprecated parameter|citeseerx=(help)
+- ↑ Smart, Nigel P.; Vercauteren, Frederik (2014). "Fully Homomorphic SIMD Operations". Designs, Codes and Cryptography. 71 (1): 57–81. doi:10.1007/s10623-012-9720-4. hdl:1983/caaadb2e-a720-4daf-8016-5d7764b27a9f. S2CID 11202438.
 - ↑ C. Gentry, A. Sahai, and B. Waters. Homomorphic Encryption from Learning with Errors: Conceptually-Simpler, Asymptotically-Faster, Attribute-Based. In CRYPTO 2013 (Springer)
 - ↑ Z. Brakerski and V. Vaikuntanathan. Lattice-Based FHE as Secure as PKE. In ITCS 2014
 - 1 2 J. Alperin-Sheriff and C. Peikert. Faster Bootstrapping with Polynomial Error. In CRYPTO 2014 (Springer)

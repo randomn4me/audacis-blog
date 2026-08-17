@@ -1,14 +1,3 @@
-Liebe Connaisseure der geregelten Login-Flows,
-in der Woche vom 26.05.2025 wird uns einer der Entwickler von
-    Kanidm
-, einer FOSS IDM Lösung, für vier Tage (bis zum 29.05.2025) besuchen.
-Ein erstes Treffen ist am 26.05.2025 ab 17 Uhr in unseren Räumen in der Wilhelminenstr. 17 in Darmstadt geplant.
-Hier besteht besteht die Möglichkeit sich mit
-    Firstyear
-, dem Entwickler, sowie dem überregionalen deutschprachigen Nuzterkreis auszutauschen.
-Es besteht jederzeit die Möglichkeit auf vielen Wegen zu
-    Kanidm
- zu contributen, wir werden aber auch über Deployments und Konfigurationen,
-sowie Identity Management, Authentication und Authorization im Allgemein diskutieren.
-
-          Weiterlesen >
+Freifunk Darmstadt: Sicherheitsvorfall kompromittiert Nodes
+In der Nacht auf den 14.08.2026 ereignete sich ein Sicherheitsvorfall bei Freifunk Darmstadt (FFDA), der das automatische Installieren eines nicht-vertrauenswürdigen Updates auf verbundene und kompatible Nodes zur Folge hatte. Dieses Update wurde nicht von FFDA veröffentlicht oder erstellt, weshalb wir die Integrität der Firmware nicht garantieren können und von einer Verwendung mit Nachdruck abraten.
+Betreibende einer Node sollten zur Vermeidung größerer Auswirkungen ihre Geräte überprüfen und evtl. das neuste Update von FFDA manuell installieren.
