@@ -1,7 +1,7 @@
 You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert
-Nicholas Marriott edited this page Jul 29, 2026
+Nicholas Marriott edited this page Aug 17, 2026
 ·
-34 revisions
+35 revisions
 Welcome to tmux!
 tmux is a terminal multiplexer. It lets you switch easily between several
 programs in one terminal, detach them (they keep running in the background) and
