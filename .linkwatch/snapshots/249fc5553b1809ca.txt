@@ -3,7 +3,7 @@ host.init.lua!:help nvim-from-vim
 if you already use Vim. If not, try :Tutor.| Google Summer of Code 2026 | 2026.02 |
 | Neovim 0.11 | 2025.03 |
 “Neovim is exactly what it claims to be. It fixes every issue I have with Vim.” —Geoff Greer
-“Full-screen Neovim looks cool as hell!” —DHH
+“Discovering what Neovim and its community had to offer brought me a lot of joy.” —Thorsten Ball
 “A nice looking website, that’s one thing Neovim did right.” —Bram Moolenaar
 irc.libera.chat.What is the project status?
 The current stable release
