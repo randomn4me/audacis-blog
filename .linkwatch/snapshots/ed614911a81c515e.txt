@@ -1,23 +1,7 @@
-European Cloud Infrastructure
-Hosted entirely within the EU on European cloud providers. Full compliance with GDPR, NIS2, DORA, and the Cyber Resilience Act. Data sovereignty guaranteed.
+NIS2
+In effect since October 2024
+Expands mandatory cybersecurity requirements to 100,000–350,000 organisations across 18 sectors. Includes a 24-hour incident reporting obligation for organisations with 50+ employees or €10M+ revenue.
 We automate manual cybersecurity tasks for security teams. Our agentic pipeline of specialised AI agents collects and analyses unstructured external threat information, reducing workload and delivering actionable intelligence for organisations of any size.
-No vendor lock-in. Open standards. Your choice of deployment and models.
-Hosted entirely within the EU on European cloud providers. Full compliance with GDPR, NIS2, DORA, and the Cyber Resilience Act. Data sovereignty guaranteed.
-Native support for STIX, MISP, and industry-standard formats. Export your data anytime. Integrate seamlessly with existing security tools.
-Bring your own LLM. Use local open-weight models or commercial APIs. Switch providers without platform migration. True flexibility.
-No mandatory telemetry or monitoring agents on your systems. Optionally upload your software and hardware inventory so Serify filters incoming threat reports to what is actually relevant to your stack. Privacy by default.
-Eight specialised AI agents work in parallel to extract IOCs, TTPs, threat actors, CVEs, campaigns, C2 infrastructure, kill-chain phases, and defensive measures. Security analysts spend the majority of their time on manual tasks. We automate around 50% of that workload.
-A continuously updated graph database mapping relationships between threat actors, vulnerabilities, campaigns, and infrastructure. Ask complex correlation queries in natural language. No graph query syntax required.
-SaaS for immediate access or on-premise for regulated environments. Hybrid options available. Your infrastructure requirements drive the architecture.
-From daily operations to strategic planning: concrete workflows that save analyst hours every day.
-Start every day with a concise summary of critical and high-severity CVEs published in the last 24 hours, automatically filtered to your technology stack.
-❯ Summarise critical vulnerabilities affecting our Kubernetes and nginx stack published this week, with active exploit availability.
-During active incident response, rapidly contextualise any IOC (IP, domain, or file hash) with associated campaigns, threat actors, and related indicators.
-❯ What do you know about 185.220.101.x? Any links to known ransomware campaigns or recent C2 activity?
-Generate sector-specific threat actor briefings for strategic planning, risk assessments, and board-level reporting without hours of manual research.
-❯ Which threat actors have been most active targeting European financial services in the last 90 days, and what TTPs are they using?
-Go beyond CVSS scores. Prioritise remediation based on real-world exploit availability, active exploitation in the wild, and relevance to your specific environment.
-❯ Which of these open CVEs have known working exploits and are being actively exploited this quarter?
 Why Now?
 Three interconnected EU frameworks are forcing organisations to automate their threat intelligence workflows or fall short on compliance.
 In effect since October 2024
@@ -27,8 +11,52 @@ Covers 22,000+ financial institutions with a strict 4-hour reporting requirement
 Mandatory from September 2026
 The Cyber Resilience Act requires 24-hour disclosure of actively exploited vulnerabilities in digital products, creating direct structural demand for automated vulnerability monitoring.
 Serify automates incident detection, classification, triage, and pre-filled reporting workflows that make compliance with these requirements operationally viable.
+Eight AI agents read the threat landscape so your analysts do not have to.
+Eight specialised AI agents work in parallel to extract IOCs, TTPs, threat actors, CVEs, campaigns, C2 infrastructure, kill-chain phases, and defensive measures. Security analysts spend the majority of their time on manual tasks. We automate around 50% of that workload.
+A continuously updated graph database mapping relationships between threat actors, vulnerabilities, campaigns, and infrastructure. Ask complex correlation queries in natural language. No graph query syntax required.
+Optionally upload your software and hardware inventory so Serify filters incoming threat reports down to what is actually relevant to your stack, instead of another undifferentiated feed.
+From daily operations to strategic planning: concrete workflows that save analyst hours every day.
+Start every day with a concise summary of critical and high-severity CVEs published in the last 24 hours, automatically filtered to your technology stack.
+❯ Summarise critical vulnerabilities affecting our Kubernetes and nginx stack published this week, with active exploit availability.
+During active incident response, rapidly contextualise any IOC (IP, domain, or file hash) with associated campaigns, threat actors, and related indicators.
+❯ What do you know about 185.220.101.x? Any links to known ransomware campaigns or recent C2 activity?
+Generate sector-specific threat actor briefings for strategic planning, risk assessments, and board-level reporting without hours of manual research.
+❯ Which threat actors have been most active targeting European financial services in the last 90 days, and what TTPs are they using?
+Go beyond CVSS scores. Prioritise remediation based on real-world exploit availability, active exploitation in the wild, and relevance to your specific environment.
+❯ Which of these open CVEs have known working exploits and are being actively exploited this quarter?
+Comprehensive external threat intelligence from public sources. No internal telemetry or invasive agents required.
+NVD and EUVD synchronised multiple times daily. Critical CVEs with known exploits receive priority processing. ExploitDB links vulnerabilities to publicly available proof-of-concept code.
+OSINT feeds from security research communities, government and CERT advisories across multiple jurisdictions, and vendor security bulletins aggregated centrally.
+Security blogs, research publications, conference presentations, and vendor advisories from hundreds of sources, collected continuously and indexed for semantic search.
+Aggregated intelligence from selected forums and marketplaces. Provides early warning of credential leaks, emerging attack tooling, and threat actor discussions without requiring direct access.
+VirusTotal multi-engine results, ThreatFox, ThreatMiner, and Shodan internet-wide scanning data. Rapid indicator assessment based on broad industry consensus.
+MISP community feeds, security researcher posts on social media, and academic publications, indexed for both tactical indicators and strategic context.
+No vendor lock-in. Open standards. Your choice of deployment and models.
+Hosted entirely within the EU on European cloud providers. Data sovereignty guaranteed, with no dependency on non-EU platforms.
+Native support for STIX, MISP, and industry-standard formats. Export your data anytime. Integrate seamlessly with existing security tools.
+Bring your own LLM. Use local open-weight models or commercial APIs. Switch providers without platform migration. True flexibility.
+SaaS for immediate access or on-premise for regulated environments. Hybrid options available. Your infrastructure requirements drive the architecture.
+User queries and custom data are never used to train models or shared with third parties. Each organisation's data is logically isolated and encrypted, and on-premise deployment gives regulated environments full control over data location.
+A spinoff from PEASEC at TU Darmstadt, built on two dissertations: automated CTI workflow optimisation and adaptive deep learning in low-data cybersecurity regimes. Research prototypes for every core component, now combined into a unified platform. What began as academic research is now a product built for the security teams facing rising regulatory and threat pressure across Europe.
+Serify aims at making cutting-edge security intelligence accessible to security teams worldwide. Our team uniquely combines expertise in automated security information retrieval and adaptive deep learning in low-data regimes, proven through years of research and real-world prototypes. We are the researchers and engineers behind that work, now building the platform we always wished we had.
+Co-Founder & Product Owner
+Philipp researches automated threat intelligence retrieval, using NLP and Large Language Models to optimise the CTI cycle. That work is the foundation of Serify's collection and extraction pipeline.
+Co-Founder & AI Research Lead
+Markus specialises in active learning, data augmentation, and adversarial training to make machine learning models robust in low-data settings. That research shapes the models behind Serify's agent pipeline.
+From research prototypes to production-ready security intelligence. Each milestone below marks a step on that path, from the first academic experiments to funding, partnerships, and the platform taking shape today.
+Selected recent work from the team behind Serify.
+Julian Bäumler, Louis Blöcher, Lars-Joel Frey, Xian Chen, Markus Bayer, Christian Reuter
+arXiv
+Philipp Kuehn, Dilara Nadermahmoodi, Markus Bayer, Christian Reuter
+arXiv
+Markus Bayer
+Philipp Kuehn
+Philipp Kuehn, Markus Bayer, Tobias Frey, Moritz Kerk, Christian Reuter
+Availability, Reliability and Security
 Updates from Serify: funding, research, and what we're building.
 Wrapping up FIRST CTI 2026 in Munich. A single-track, practitioner-driven conference that felt like the opposite of RSA, and was better for it.
 Read moreNotes from day one at FIRST CTI 2026 in Munich. A full-day workshop on the CTI cycle by Intel 471 and Freddy Murre reframed how I think about stakeholder engagement and evaluation metrics.
-Read moreNIST announced it can no longer enrich every CVE in the National Vulnerability Database. For European organizations facing CRA and NIS2 deadlines, the timing could not be worse.
-Read moreJoin security teams leveraging AI-powered intelligence to protect their organisations, from CSIRTs and SOCs to NIS2-regulated enterprises.
+Read moreNIST announced it can no longer enrich every CVE in the National Vulnerability Database. For European organisations facing CRA and NIS2 deadlines, the timing could not be worse.
+Read moreInterested in enhancing your security team's capabilities? Whether you want to scope a pilot, talk through your threat intelligence workflows, or simply see what we are building, we would love to hear from you.
+Send us an email and we'll get back to you as soon as possible.
+Join security teams leveraging AI-powered intelligence to protect their organisations, from CSIRTs and SOCs to NIS2-regulated enterprises.

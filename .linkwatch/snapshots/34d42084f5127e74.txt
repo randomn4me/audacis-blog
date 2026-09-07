@@ -1,10 +1,16 @@
 Das Enterprise Security Forum (ESF) bringt Unternehmen aus der Region mit führenden Expertinnen und Experten aus Forschung und Praxis zusammen: praxisnah, ohne Umwege, auf Augenhöhe. Die Veranstaltungsreihe greift konkrete Themen auf, von regulatorischen Anforderungen bis zu technischen Maßnahmen, und gibt Orientierung, wo sie gebraucht wird. Diesmal geht es um CRA Ready – Vorsprung durch Good Security Practice.
-Unsere Forschenden haben einen Drucker entwickelt, der fälschungssichere Pflegeetiketten für Textilien erstellt. Um die Echtheit zu überprüfen, reicht es, mit dem Smartphone den aufgedruckten QR-Code des Etiketts in einer eigens hierfür entwickelten App zu scannen. Fälschungssicher ist das Etikett, weil das Smartphone die einzigartige Oberflächenstruktur des Materials nutzt und mit den im QR-Code hinterlegten Informationen abgleicht.
+Wie sieht der Alltag einer Cybersicherheitsforscherin aus? Und was macht man eigentlich als Wissenschaftlerin in IT-Recht? Zwei neue Pixi-Bücher erklären diese Forschungsfelder anschaulich für Kinder im Grundschulalter. Ideengeberinnen für die Geschichten im Mini-Format sind Wissenschaftlerinnen des Fraunhofer SIT im Forschungszentrum ATHENE. Lehrkräfte können die Bücher kostenfrei im Klassensatz bestellen.
 Das Fraunhofer-Institut für Sichere Informationstechnologie SIT bietet besonders realitätsnahe Cyber-Krisen-Planspiele speziell für Krankenhäuser an. In ganztägigen Übungen trainieren Teams aus Technik, Medizin und Verwaltung gemeinsam, wie sie einen Cyberangriff erkennen, kommunizieren und bewältigen. Erste Erfahrungen mit Kliniken zeigen: Die Teilnehmenden machen deutliche Fortschritte, und das unter echtem Druck. Die Ergebnisse fließen außerdem in ein Forschungsprojekt ein.
 Um für mehr rechtliche Klarheit in der Cybersicherheitsforschung zu sorgen, simuliert das Forschungszentrum ATHENE Gerichtsprozesse am Fraunhofer SIT mit echten Anwälten, Staatsanwälten und Richtern. Jetzt fand der zweite Prozess statt, dieses Mal ging es um den Umgang mit hochsensiblen Daten einer Opferberatungsstelle. Organisiert wird die Gerichtssimulation von Dr. Annika Selzer und Team.
 Ob Bewerbungsanschreiben, Schulaufsätze oder Programmcodes – mit der Text-KI ChatGPT lassen sich Texte aller Art innerhalb von Sekunden automatisch generieren. Das Fraunhofer SIT forscht an Möglichkeiten, mit ChatGPT erstellte Texte erkennen zu helfen. Unsere textforensischen Expert*innen arbeiten dabei unter anderem mit einer selbst entwickelten Methode zur Autorschaftsverifikation, COAV.
 House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob Fake News, Darknet, Datenschutz, Krypto oder neue Hacker*innen-Angriffe - hier stellen Forschende ihre aktuellen Themen aus der IT-Sicherheit vor. Im House of Nerds gibt es fundierte Informationen zu Stand und Entwicklung von Technik und Wissenschaft.
 Termine
+- 07. September 2026
+ Lunch Lecture: Gemeinsame technische Dokumentation nach CRA, KI-VO und DSGVO?
+- 08. September 2026
+ Cyber Range Training: Angriffe auf Open Source Web-Infrastrukturen von Unternehmen, Darmstadt
+- 09. September 2026
+ Cyber Range Training: Angriffe auf Unternehmen als Nutzer von Amazon Web Services (AWS), Darmstadt
 Stellenangebote
 Wir suchen Cybersicherheitsexperten (w/m/d)
 Wir suchen engagierte und exzellente Wissenschaftlerinnen und Wissenschaftler für Cybersicherheit und Privatsphärenschutz, die den Aufbau des Nationalen Forschungszentrums für angewandte Cybersicherheit mitgestalten möchten.

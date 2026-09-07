@@ -6,11 +6,11 @@ Expand file tree
 /
 Copy pathdefault.nix
 More file actions
-133 lines (112 loc) · 2.44 KB
+151 lines (128 loc) · 3.13 KB
 /
 Copy pathdefault.nix
 File metadata and controls
-133 lines (112 loc) · 2.44 KB
+151 lines (128 loc) · 3.13 KB
 1
 2
 3
@@ -144,6 +144,24 @@ File metadata and controls
 131
 132
 133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
 {
   lib,
   config,
@@ -181,6 +199,30 @@ in
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;
+      # Startup cost is dominated by rtp scanning and lua parsing; byte-compiling
+      # and merging the plugin pack cuts both. lz-n keeps the rarely-used plugins
+      # out of the startup path (combinePlugins leaves `opt` plugins standalone,
+      # so the two compose).
+      performance = {
+        byteCompileLua = {
+          enable = true;
+          plugins = true;
+          nvimRuntime = true;
+        };
+        combinePlugins = {
+          enable = true;
+          # Kept out of the merged pack because their files collide: oil,
+          # conform and blink all ship `doc/recipes.md`, and snacks ships a
+          # `queries/lua/highlights.scm` that clashes with the treesitter
+          # queries.
+          standalonePlugins = [
+            "conform.nvim"
+            "oil.nvim"
+            "snacks.nvim"
+          ];
+        };
+      };
+      plugins.lz-n.enable = true;
       colorschemes.tokyonight = {
         enable = true;
         settings.style = "night";
@@ -231,14 +273,6 @@ in
           mode = [ "n" ];
           options = {
             desc = "Save buffer";
-          };
-        }
-        {
-          key = "<leader>e";
-          action = "<cmd>Ex<cr>";
-          mode = [ "n" ];
-          options = {
-            desc = "Open netrw";
           };
         }
         {
