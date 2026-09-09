@@ -38,7 +38,7 @@
             <h2>Recent Posts</h2>
             {% set blog_section = get_section(path="blog/_index.md") %}
             {% set posts_count = section.extra.recent_posts_count | default(value=5) %}
-            {% set recent_posts = blog_section.pages | slice(end=posts_count) %}
+            {% set recent_posts = blog_section.pages[:posts_count] %}
 
             <ul class="post-list">
                 {% for post in recent_posts %}

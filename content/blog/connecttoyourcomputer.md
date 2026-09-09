@@ -7,7 +7,7 @@ description = "A short write-up of the importance of keyboard ergonomics."
 tags = [ "writing", "tech", "keyboards" ]
 +++
 
-{{ img(path="static/img/typewriter-keyboard-black.jpg", alt="Old four row typewriter with white letters on rounded, black keys.") }}
+{{ <img path="static/img/typewriter-keyboard-black.jpg" alt="Old four row typewriter with white letters on rounded, black keys." /> }}
 
 When was the last time some broke down in your home, and you had to call a handyman? And have you peeked into the bags with good quality tools they bring with them? I personally have never seen a handyman who dismisses quality tools to get the job done and here is a guess, why this is: *they just don't want to pay the bill of not using them in the long run*.
 Sure, you can get your job done with shitty tools that may break after some time.
@@ -28,7 +28,7 @@ This greatly expands the options available to find what works best for you as an
 And if we consider the fact that our brains are wired to utilize patterns we recognize, switching keyboards and layouts becomes a big hassle.
 Therefore, most people either do not know about other options because they are not exposed to them, or they use what they know due to other obstacles.
 
-{{ img(path="static/img/keyboard-standard.jpg", alt="QWERTY ISO-style keyboard on table with mouse and coffee mug.") }}
+{{ <img path="static/img/keyboard-standard.jpg" alt="QWERTY ISO-style keyboard on table with mouse and coffee mug." /> }}
 
 For me, this was definitely the case until a friend introduced me to Bone, an ergonomic ISO layout designed to replace the German QWERTZ layout.
 While he committed to learning Bone because he wasn't touch typing before, I stuck with QWERTZ because I was faster with it and couldn't spare the mental capacity to learn a new layout.

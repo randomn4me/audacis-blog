@@ -20,11 +20,11 @@ Since I have never been to California before, there was some kind of excitement 
 But after what felt like a short while due to the constant workload at work, the baggage was packed and the date of the flight was there.
 This was the day, when the realization that I was really going to travel there kicked in.
 
-{{ gallery(columns=1, paths=[
+{{ <gallery columns={1} paths={[
     "img_src/sf26-flight.jpeg",
-], alts=[
+]} alts={[
     "Flight from FRA to SFO over Qeqertalik (Greenland)",
-]) }}
+]} /> }}
 
 The flight was fine, the view was great, and the border passing in the US was also a pleasant experience.
 From landing to the Uber it took 90 minutes including the baggage collection.
@@ -43,13 +43,13 @@ The name is not a metaphor.
 It is a literal description of how the thing works, and the rattling is the cable running through the channel beneath your feet.
 One of those moments where the obvious was hiding in plain sight, and you feel a little dumb and a little delighted at the same time.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sf26-cable-car-downtown.jpg",
     "img_src/sf26-cable-car-russian-hill.jpg"
-], alts=[
+]} alts={[
     "Cable car downtown",
     "Cable car on Russian Hill"
-]) }}
+]} /> }}
 
 ## The Hills Are Not a Joke
 
@@ -66,17 +66,17 @@ Fixed gear, no brakes, on grades that had me questioning my life choices on foot
 The event made sense as spectacle before.
 Now it makes sense as a feat of pure athletic absurdity.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sf26-hills.jpg",
     "img_src/sf26-hills-cars.jpg",
     "img_src/sf26-hills-sideways.jpg",
     "img_src/sf26-hills-lombard-street.jpg"
-], alts=[
+]} alts={[
     "San Francisco hills",
     "Cars parked on a steep hill",
     "Sideways view of the hills",
     "Lombard Street"
-]) }}
+]} /> }}
 
 ## Twin Peaks
 
@@ -86,17 +86,17 @@ But the view from up there is one of the best I have seen anywhere.
 The entire city laid out below, the Bay Bridge, the Golden Gate, downtown, the ocean.
 You can see why people fall in love with this place.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sf26-twin-peaks-blvrd.jpg",
     "img_src/sf26-twin-peaks-sutro-tower.jpg",
     "img_src/sf26-twin-peaks-echium-flowers.jpg",
     "img_src/sf26-twin-peaks-skyline.jpg"
-], alts=[
+]} alts={[
     "Twin Peaks Boulevard",
     "Sutro Tower from Twin Peaks",
     "Echium flowers on the hillside",
     "San Francisco skyline from Twin Peaks"
-]) }}
+]} /> }}
 
 ## 50 Miles of Everything
 
@@ -113,13 +113,13 @@ It is another to feel the density of it while wandering around on foot.
 The sheer concentration of talent, money, and ambition in this tiny corridor is unlike anything I have experienced in Europe.
 Not better, not worse, just absurdly concentrated.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sf26-downtown-salesforce.jpg",
     "img_src/sf26-downtown-yerba-buena.jpg"
-], alts=[
+]} alts={[
     "Salesforce Tower and downtown SF",
     "Yerba Buena Gardens"
-]) }}
+]} /> }}
 
 ## The Part You Cannot Look Away From
 
@@ -132,7 +132,7 @@ That juxtaposition is jarring, and it stays with you.
 I do not have a conclusion here.
 Just the observation that San Francisco does not let you look away, and I think that is worth something.
 
-{{ img(path="img_src/sf26-downtown.jpg", alt="Downtown San Francisco") }}
+{{ <img path="img_src/sf26-downtown.jpg" alt="Downtown San Francisco" /> }}
 
 ## The Beautiful Parts
 
@@ -149,15 +149,15 @@ San Francisco is genuinely beautiful.
 And it is also a place that forces you to sit with uncomfortable questions.
 Both things are true at the same time.
 
-{{ gallery(columns=3, paths=[
+{{ <gallery columns={3} paths={[
     "img_src/sf26-golden-gate-bridge.jpg",
     "img_src/sf26-fort-point.jpg",
     "img_src/sf26-bookstore.jpg"
-], alts=[
+]} alts={[
     "Golden Gate Bridge",
     "Fort Point beneath the Golden Gate",
     "The Best Bookstore"
-]) }}
+]} /> }}
 
 ## I Will Be Back
 

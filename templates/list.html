@@ -18,8 +18,8 @@
         {% set_global all_years = [] %}
         {% for item in page.extra.items %}
             {% if item.year %}
-                {% set year_str = item.year | as_str %}
-                {% set_global all_years = all_years | concat(with=year_str) %}
+                {% set year_str = item.year | str %}
+                {% set_global all_years = [...all_years, year_str] %}
             {% endif %}
         {% endfor %}
         {% set_global all_years = all_years | unique %}
@@ -28,10 +28,10 @@
         {% set_global text_years = [] %}
         {% set_global numeric_years = [] %}
         {% for year in all_years %}
-            {% if year is matching("^[0-9]+$") %}
-                {% set_global numeric_years = numeric_years | concat(with=year) %}
+            {% if year is matching(pat="^[0-9]+$") %}
+                {% set_global numeric_years = [...numeric_years, year] %}
             {% else %}
-                {% set_global text_years = text_years | concat(with=year) %}
+                {% set_global text_years = [...text_years, year] %}
             {% endif %}
         {% endfor %}
 
@@ -47,7 +47,7 @@
                     <div class="item-list">
                         {% for item in page.extra.items %}
                             {% if item.year %}
-                                {% set item_year = item.year | as_str %}
+                                {% set item_year = item.year | str %}
                                 {% if item_year == year %}
                                 <div class="list-item-card">
                                     <div class="item-header{% if item.description %} expandable{% endif %}">
@@ -90,7 +90,7 @@
                     <div class="item-list">
                         {% for item in page.extra.items %}
                             {% if item.year %}
-                                {% set item_year = item.year | as_str %}
+                                {% set item_year = item.year | str %}
                                 {% if item_year == year %}
                                 <div class="list-item-card">
                                     <div class="item-header{% if item.description %} expandable{% endif %}">

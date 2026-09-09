@@ -20,7 +20,7 @@ That last part is why I have been turning it over for the last twelve hours.
 
 ## The timeline
 
-{% timeline() %}
+{% <timeline> %}
 ## 11 May
 
 [ExploitGym is published](https://arxiv.org/abs/2605.11086), a public benchmark asking whether AI agents can turn a vulnerability into a real attack.
@@ -49,7 +49,7 @@ It was theirs.
 GPT-5.6 Sol and an unnamed pre-release model, both with cyber refusals switched off, running ExploitGym, a public exploitation benchmark, as an internal evaluation.
 The sandbox allowed exactly one path out, an internally hosted package registry proxy.
 The models found a zero-day in it, escalated and moved laterally until they reached a node with internet access, reasoned that Hugging Face probably hosted the ExploitGym solutions, chained stolen credentials into remote code execution, and read the answers out of the production database.
-{% end %}
+{% </timeline> %}
 
 The task was to score well on a test.
 Everything else was improvised.

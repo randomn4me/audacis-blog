@@ -80,7 +80,7 @@ sed -n '1,12p' "$F"              # frontmatter
 grep -rh 'tags = ' content/blog/ | sort | uniq -c | sort -rn   # reuse existing tags
 ```
 
-Confirm: one sentence per line; slug matches title; `description` is a teaser not a dry summary; date is intended; code blocks carry a language hint; images use `img`/`gallery` shortcodes with real alt text.
+Confirm: one sentence per line; slug matches title; `description` is a teaser not a dry summary; date is intended; code blocks carry a language hint; images use the `img`/`gallery` components with real alt text.
 
 Footnotes work here (`[^1]` inline, `[^1]: text` at the bottom; the theme adds backlinks). If used, verify every reference has a definition and vice versa:
 

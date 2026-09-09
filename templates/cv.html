@@ -116,20 +116,20 @@
                         {# CSV format - pub is an array, access by index #}
                         {# Headers: Key(0), Item Type(1), Publication Year(2), Author(3), Title(4), Publication Title(5), ISBN(6), ISSN(7), DOI(8), Url(9) #}
                         <div class="publication-title">
-                            {% if pub.8 %}
-                            <a href="https://doi.org/{{ pub.8 }}" target="_blank" rel="noopener noreferrer">{{ pub.4 }}</a>
-                            {% elif pub.9 %}
-                            <a href="{{ pub.9 }}" target="_blank" rel="noopener noreferrer">{{ pub.4 }}</a>
+                            {% if pub[8] %}
+                            <a href="https://doi.org/{{ pub[8] }}" target="_blank" rel="noopener noreferrer">{{ pub[4] }}</a>
+                            {% elif pub[9] %}
+                            <a href="{{ pub[9] }}" target="_blank" rel="noopener noreferrer">{{ pub[4] }}</a>
                             {% else %}
-                            {{ pub.4 }}
+                            {{ pub[4] }}
                             {% endif %}
                         </div>
-                        <div class="publication-authors">{{ pub.3 }}</div>
+                        <div class="publication-authors">{{ pub[3] }}</div>
                         <div class="publication-venue">
-                            {%- if pub.5 %}
-                            <em>{{ pub.5 }}</em>
+                            {%- if pub[5] %}
+                            <em>{{ pub[5] }}</em>
                             {%- endif %}
-                            {%- if pub.2 %}{% if pub.5 %}, {% endif %}{{ pub.2 }}{% endif %}
+                            {%- if pub[2] %}{% if pub[5] %}, {% endif %}{{ pub[2] }}{% endif %}
                         </div>
                     {% else %}
                         {# BibTeX format #}

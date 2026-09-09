@@ -39,25 +39,25 @@ tags = ["tag1", "tag2"]   # 1-3, reuse existing tags where possible
 - `#`/`##` headings when the post is long enough to need them.
 - One sentence per line — cleaner diffs.
 - **Cite with inline links, not footnotes.** The corpus is consistent: `trusting-trust-in-the-age-of-ai.md` carries nine sources and zero footnotes. Footnotes in older posts are asides and jokes, never bibliography. A stack of numbered references reads as an academic habit.
-- Code blocks carry language hints (` ```nix `, ` ```rust `). Images via `{{ img(src="/img/filename.jpg", alt="description") }}`.
+- Code blocks carry language hints (` ```nix `, ` ```rust `). Images via `{{ <img path="static/img/filename.jpg" alt="description" /> }}`.
 - Link to related posts in `content/blog/` where it fits — a follow-up, a callback, shared context.
 - Length follows the topic (rant 300-500, walkthrough 600-1200, deep dive as long as needed). Don't pad; if it's said in 400 words, stop.
 
 ## Timeline sections
 
-For a genuine sequence of three or four dated events where order is the point, use the `timeline` shortcode instead of a run of "On 16 July, ..." paragraphs:
+For a genuine sequence of three or four dated events where order is the point, use the `timeline` component instead of a run of "On 16 July, ..." paragraphs:
 
 ```
-{% timeline() %}
+{% <timeline> %}
 ## 16 July
 
 The disclosure goes up. One sentence per line, as everywhere else.
-{% end %}
+{% </timeline> %}
 ```
 
 Each `## ` heading is the date stamp, so the prose must not repeat it: write *Hugging Face publishes the disclosure*, not *On 16 July, Hugging Face publishes...*. A single dated fact is a sentence, not a timeline.
 
-**No footnotes inside the timeline.** Zola renders shortcode bodies through the `markdown` filter, separate from the page's footnote pass, so a `[^1]` inside is invisible to numbering — its definition is treated as unreferenced, sorted to the end, and silently shifts the printed number of *every* footnote in the post while anchors keep working. Cite inline instead, or put the footnote in the prose around the timeline. (Zola numbers footnotes by order of first reference; keep the definition block in that order. See `templates/shortcodes/timeline.html` and `sass/style.scss`.)
+**No footnotes inside the timeline.** Zola renders component bodies through the `markdown` filter, separate from the page's footnote pass, so a `[^1]` inside is invisible to numbering — its definition is treated as unreferenced, sorted to the end, and silently shifts the printed number of *every* footnote in the post while anchors keep working. Cite inline instead, or put the footnote in the prose around the timeline. (Zola numbers footnotes by order of first reference; keep the definition block in that order. See the `timeline` component in `templates/components.html` and `sass/style.scss`.)
 
 ## Present the draft as an artifact
 

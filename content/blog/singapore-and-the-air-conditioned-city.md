@@ -12,13 +12,13 @@ Not a breeze, not a warm day. A physical thing you walk into, 30 °C and humidit
 
 <!-- more -->
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sin26_flight-clouds.jpeg",
     "img_src/sin26_jewels.jpeg"
-], alts=[
+]} alts={[
     "Over the clouds on the way to Singapore",
     "The Jewel and its indoor waterfall at Changi Airport"
-]) }}
+]} /> }}
 
 I was in Singapore for a workshop, but the climate comes first, because it reorganizes everything else.
 It sits between 28 and 32 °C the whole time, and the number undersells it.
@@ -43,13 +43,13 @@ The food was the easy highlight.
 The Asian vegetarian and vegan cooking is everywhere and treated as normal, not as a concession, and the spicing has a depth I rarely find at home.
 I ate better, and more cheaply, than I do on most trips, and I never once had to hunt for a meatless option.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sin26_durian.jpeg",
     "img_src/sin26_chinatown.jpeg"
-], alts=[
+]} alts={[
     "Durian, the fruit you smell before you see",
     "Temple in Chinatown"
-]) }}
+]} /> }}
 
 ## The Workshop
 
@@ -84,13 +84,13 @@ San Francisco green is a dry, grassy green, the green of a place that has to rat
 Singapore green is dark and dense and dripping, the green of a place where it rains constantly and plants treat every wall as an opportunity.
 You can *see* the rainfall in the vegetation before you ever feel it.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sin26_gardens-by-the-bay.jpeg",
     "img_src/sin26_palm-valley.jpeg"
-], alts=[
+]} alts={[
     "Gardens by the Bay",
     "Palm Valley, green stacked on green"
-]) }}
+]} /> }}
 
 The architecture flips too.
 San Francisco wears its old core proudly: the Victorians, the cable cars, the bones of a 19th-century city still very much in use.
@@ -99,13 +99,13 @@ The default is modern, not a layer on top of history but a continuous replacemen
 The MRT is the cleanest expression of this.
 San Francisco's transit has charm, and the cable cars are fun, but Singapore's is *excellent*: clean, fast, frequent, so well-run you stop thinking about it, which is the highest compliment a transit system can earn.
 
-{{ gallery(columns=2, paths=[
+{{ <gallery columns={2} paths={[
     "img_src/sin26_modern-architecture.jpeg",
     "img_src/sin26_modern-arch2.jpeg"
-], alts=[
+]} alts={[
     "Modern Singapore, the default rather than a layer on top",
     "Towers from the ground up"
-]) }}
+]} /> }}
 
 And then the part that actually stayed with me.
 San Francisco does not let you look away from its contrasts.
@@ -119,11 +119,11 @@ I do not have a clean verdict.
 One city makes its contradictions impossible to ignore; the other makes them very hard to see.
 I am not sure which is more honest.
 
-{{ gallery(columns=1, paths=[
+{{ <gallery columns={1} paths={[
     "img_src/sin26_night-sight.jpeg"
-], alts=[
+]} alts={[
     "The city at night, order you can feel"
-]) }}
+]} /> }}
 
 ## Going Back Out
 
@@ -131,8 +131,8 @@ By the end I had the rhythm down: cooled box, humid dash, cooled box.
 You acclimate to the heat the way you acclimate to a city's logic, not by understanding it but by no longer fighting it.
 I left Singapore impressed and slightly unsettled, which is usually the sign a place was worth the trip.
 
-{{ gallery(columns=1, paths=[
+{{ <gallery columns={1} paths={[
     "img_src/sin26_dawn.jpeg"
-], alts=[
+]} alts={[
     "Dawn over Singapore, one last cooled box before the flight home"
-]) }}
+]} /> }}

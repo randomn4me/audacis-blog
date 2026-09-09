@@ -1,24 +1,48 @@
-{% set paths = paths %}
-{% set alts = alts | default(value=[]) %}
-{% set columns = columns | default(value=3) %}
-{% set thumb_width = thumb_width | default(value=300) %}
-{% set full_width = full_width | default(value=1600) %}
-{% set quality = quality | default(value=85) %}
+{#-
+  Tera components, registered globally and callable from templates and from
+  markdown content. These replace the shortcodes Zola dropped in 0.23.
 
+  Keep the emitted markup free of blank lines: a component call in markdown is
+  expanded before the markdown pass, so a blank line ends the HTML block and
+  the indented lines after it become a code block. Hence the `{%- -%}` on
+  every tag below.
+-#}
+
+{% component img(path: string, alt: string = "", width: integer = 800, quality: integer = 85, source: string = "", source_label: string = "Source", raw: bool = false) %}
+<figure style="display: block; width: 80%; margin: 1.5rem auto;">
+    {%- if raw -%}
+    <img src="{{ path | replace(from='static', to='') }}" alt="{{ alt }}" loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
+    {%- else -%}
+    {%- set img_webp = resize_image(path=path, width=width, height=0, op="fit_width", format="webp", quality=quality) -%}
+    {%- set img_jpg = resize_image(path=path, width=width, height=0, op="fit_width", format="jpg", quality=quality) -%}
+    <picture>
+        <source srcset="{{ img_webp.url }}" type="image/webp">
+        <img src="{{ img_jpg.url }}" alt="{{ alt }}" width="{{ img_webp.width }}" height="{{ img_webp.height }}" loading="lazy" style="width: 100%; height: auto; border-radius: 8px;">
+    </picture>
+    {%- endif -%}
+    {%- if source -%}
+    <figcaption style="text-align: center; font-size: 0.85rem; color: #888; margin-top: 0.4rem;">
+        <a href="{{ source }}" rel="noopener">{{ source_label }}</a>
+    </figcaption>
+    {%- endif -%}
+</figure>
+{% endcomponent img %}
+
+{% component gallery(paths: array, alts: array = [], columns: integer = 3, thumb_width: integer = 300, full_width: integer = 1600, quality: integer = 85) %}
 <div class="gallery-grid" style="grid-template-columns: repeat({{ columns }}, 1fr);">
-    {% for path in paths %}
-        {% set thumb_webp = resize_image(path=path, width=thumb_width, height=thumb_width, op="fill", format="webp", quality=quality) %}
-        {% set thumb_jpg = resize_image(path=path, width=thumb_width, height=thumb_width, op="fill", format="jpg", quality=quality) %}
-        {% set full_webp = resize_image(path=path, width=full_width, height=0, op="fit_width", format="webp", quality=quality) %}
-        {% set full_jpg = resize_image(path=path, width=full_width, height=0, op="fit_width", format="jpg", quality=quality) %}
-        {% set alt = alts[loop.index0] | default(value="") %}
+    {%- for path in paths -%}
+        {%- set thumb_webp = resize_image(path=path, width=thumb_width, height=thumb_width, op="fill", format="webp", quality=quality) -%}
+        {%- set thumb_jpg = resize_image(path=path, width=thumb_width, height=thumb_width, op="fill", format="jpg", quality=quality) -%}
+        {%- set full_webp = resize_image(path=path, width=full_width, height=0, op="fit_width", format="webp", quality=quality) -%}
+        {%- set full_jpg = resize_image(path=path, width=full_width, height=0, op="fit_width", format="jpg", quality=quality) -%}
+        {%- set alt = alts[loop.index0] | default(value="") -%}
         <button class="gallery-thumb" data-index="{{ loop.index0 }}" data-full-webp="{{ full_webp.url }}" data-full-jpg="{{ full_jpg.url }}" data-alt="{{ alt }}" aria-label="Open image: {{ alt }}">
             <picture>
                 <source srcset="{{ thumb_webp.url }}" type="image/webp">
                 <img src="{{ thumb_jpg.url }}" alt="{{ alt }}" width="{{ thumb_webp.width }}" height="{{ thumb_webp.height }}" loading="lazy">
             </picture>
         </button>
-    {% endfor %}
+    {%- endfor -%}
 </div>
 
 <div class="gallery-lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
@@ -255,3 +279,33 @@
     });
 })();
 </script>
+{% endcomponent gallery %}
+
+{% component timeline() %}
+{#-
+  Vertical timeline. The body is markdown, split into events by `## ` headings,
+  where the heading text becomes the date stamp:
+
+      {% <timeline> %}
+      ## 16 July
+
+      Something [happened](https://example.com).
+      {% </timeline> %}
+
+  No footnotes in here. Component bodies are rendered by the `markdown` filter
+  rather than by the page's own pass, so Zola never sees the reference and
+  numbers the whole page as if the definition were unreferenced. Cite with an
+  inline link instead, or put the footnote in the prose around the timeline.
+-#}
+{%- set events = body | trim | split(pat="## ") -%}
+<ol class="timeline">
+{%- for event in events -%}
+{%- if event | trim != "" -%}
+{%- set lines = event | trim | split(pat="\n") -%}
+{%- set stamp = lines | first | trim -%}
+{%- set text = lines[1:] | join(sep="\n") | trim -%}
+<li><span class="timeline-stamp">{{ stamp }}</span>{{ text | markdown | safe }}</li>
+{%- endif -%}
+{%- endfor -%}
+</ol>
+{% endcomponent timeline %}
