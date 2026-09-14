@@ -59,4 +59,4 @@ Model Card Authors
 Markus Bayer
 Model Card Contact
 - Downloads last month
-- 1,587
+- 1,449

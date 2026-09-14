@@ -1,9 +1,16 @@
-NIS2
-In effect since October 2024
-Expands mandatory cybersecurity requirements to 100,000–350,000 organisations across 18 sectors. Includes a 24-hour incident reporting obligation for organisations with 50+ employees or €10M+ revenue.
+81%
+of security professionals report a heavier workload than a year ago.
 We automate manual cybersecurity tasks for security teams. Our agentic pipeline of specialised AI agents collects and analyses unstructured external threat information, reducing workload and delivering actionable intelligence for organisations of any size.
 Why Now?
-Three interconnected EU frameworks are forcing organisations to automate their threat intelligence workflows or fall short on compliance.
+Analysts absorb more tasks, more sources, and now the output of AI systems they still have to verify. EU regulation adds fixed deadlines on top.
+81%
+of security professionals report a heavier workload than a year ago.
+44%
+of analyst time still goes on manual work, although 99% of teams now run AI.
+76%
+report emotional exhaustion or mental fatigue.
+SANS 2025 finds the same in operations: high-volume SOCs lose 30 to 40% of analyst hours to automatable work. More AI has not cut the manual share, it has added output to check.
+Sources: Tines Voice of Security 2026SANS 2025 SOC Survey
 In effect since October 2024
 Expands mandatory cybersecurity requirements to 100,000–350,000 organisations across 18 sectors. Includes a 24-hour incident reporting obligation for organisations with 50+ employees or €10M+ revenue.
 In effect since January 2025
