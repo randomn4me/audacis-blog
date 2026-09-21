@@ -111,7 +111,7 @@ See also
 - Confidential computing – Privacy-enhancing computing technique
 - Format-preserving encryption – Method in cryptography
 - Homomorphic secret sharing
-- Homomorphic signatures for network coding
+- Homomorphic signatures for network coding – Network coding concept
 - Private biometrics
 - Private set intersection – Secure multiparty computation cryptographic technique
 - Searchable symmetric encryption – System allowing searching of encrypted documents

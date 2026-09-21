@@ -6,11 +6,11 @@ Expand file tree
 /
 Copy pathdefault.nix
 More file actions
-151 lines (128 loc) · 3.13 KB
+157 lines (133 loc) · 3.46 KB
 /
 Copy pathdefault.nix
 File metadata and controls
-151 lines (128 loc) · 3.13 KB
+157 lines (133 loc) · 3.46 KB
 1
 2
 3
@@ -162,6 +162,12 @@ File metadata and controls
 149
 150
 151
+152
+153
+154
+155
+156
+157
 {
   lib,
   config,
@@ -196,6 +202,11 @@ in
     home.packages = [ pkgs.gcc ];
     programs.nixvim = {
       enable = true;
+      # Nixvim pins its own nixpkgs and warns when the flake input follows ours.
+      # Following is deliberate -- it keeps a second full nixpkgs out of the lock
+      # and both are nixos-unstable -- so accept it explicitly, which is also the
+      # documented way to silence the warning.
+      nixpkgs.source = inputs.nixpkgs;
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;

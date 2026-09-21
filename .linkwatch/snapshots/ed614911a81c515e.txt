@@ -66,4 +66,3 @@ Read moreNotes from day one at FIRST CTI 2026 in Munich. A full-day workshop on 
 Read moreNIST announced it can no longer enrich every CVE in the National Vulnerability Database. For European organisations facing CRA and NIS2 deadlines, the timing could not be worse.
 Read moreInterested in enhancing your security team's capabilities? Whether you want to scope a pilot, talk through your threat intelligence workflows, or simply see what we are building, we would love to hear from you.
 Send us an email and we'll get back to you as soon as possible.
-Join security teams leveraging AI-powered intelligence to protect their organisations, from CSIRTs and SOCs to NIS2-regulated enterprises.

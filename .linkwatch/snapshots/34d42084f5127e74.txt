@@ -4,13 +4,6 @@ Das Fraunhofer-Institut für Sichere Informationstechnologie SIT bietet besonder
 Um für mehr rechtliche Klarheit in der Cybersicherheitsforschung zu sorgen, simuliert das Forschungszentrum ATHENE Gerichtsprozesse am Fraunhofer SIT mit echten Anwälten, Staatsanwälten und Richtern. Jetzt fand der zweite Prozess statt, dieses Mal ging es um den Umgang mit hochsensiblen Daten einer Opferberatungsstelle. Organisiert wird die Gerichtssimulation von Dr. Annika Selzer und Team.
 Ob Bewerbungsanschreiben, Schulaufsätze oder Programmcodes – mit der Text-KI ChatGPT lassen sich Texte aller Art innerhalb von Sekunden automatisch generieren. Das Fraunhofer SIT forscht an Möglichkeiten, mit ChatGPT erstellte Texte erkennen zu helfen. Unsere textforensischen Expert*innen arbeiten dabei unter anderem mit einer selbst entwickelten Methode zur Autorschaftsverifikation, COAV.
 House of Nerds ist der IT-Podcast aus der Cybersicherheitshochburg Darmstadt. Ob Fake News, Darknet, Datenschutz, Krypto oder neue Hacker*innen-Angriffe - hier stellen Forschende ihre aktuellen Themen aus der IT-Sicherheit vor. Im House of Nerds gibt es fundierte Informationen zu Stand und Entwicklung von Technik und Wissenschaft.
-Termine
-- 17. September 2026
- Enterprise Security Forum: CRA Ready – Vorsprung durch Good Security Practice, Heilbronn
-- 06. Oktober 2026
- Cyber Range Training: Angriffe gegen Unternehmensmitarbeiter und Arbeitsplatzrechner, Darmstadt
-- 06. Oktober 2026
- Cyber Range Training: Angriffe gegen Unternehmensmitarbeiter und Arbeitsplatzrechner, Darmstadt
 Stellenangebote
 Wir suchen Cybersicherheitsexperten (w/m/d)
 Wir suchen engagierte und exzellente Wissenschaftlerinnen und Wissenschaftler für Cybersicherheit und Privatsphärenschutz, die den Aufbau des Nationalen Forschungszentrums für angewandte Cybersicherheit mitgestalten möchten.
