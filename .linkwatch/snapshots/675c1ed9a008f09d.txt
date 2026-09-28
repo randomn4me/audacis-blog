@@ -77,7 +77,7 @@ Implementations
 [edit]There are several open-source implementations of partially, somewhat and fully homomorphic encryption schemes. Second-generation and fourth-generation FHE scheme implementations typically operate in the leveled FHE mode (though bootstrapping is still available in some libraries) and support efficient SIMD-like packing of data; they are typically used to compute on encrypted integers or real/complex numbers.[51] Third-generation FHE scheme implementations often bootstrap after each operation but have limited support for packing; they were initially used to compute Boolean circuits over encrypted bits, but have been extended to support integer arithmetics and univariate function evaluation.[52] The choice of using a second-generation vs. third-generation vs fourth-generation scheme depends on the input data types and the desired computation.
 | Library | Language | RSA | ElGamal | Exponential ElGamal | Elliptic Curve ElGamal | Paillier | Damgård–Jurik | Okamoto–Uchiyama | Benaloh | Naccache–Stern | Goldwasser–Micali | Sander–Young–Yung | Boneh–Goh–Nissim | Ishai–Paskin | Joye-Libert | Castagnos–Laguillaumie | Notes |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| LightPHE[53] | Python | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No |
+| LightPHE[53] | Python, Go, Java, TypeScript | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | Yes | No | No | No |
 | Name | Developer | BGV[24] | CKKS[42] | BFV[27] | FHEW[39] | CKKS Bootstrapping[54] | TFHE[40] | Description |
 |---|---|---|---|---|---|---|---|---|
 | HElib[55] | IBM | Yes | Yes | No | No | No | No | BGV scheme with the GHS optimizations. |

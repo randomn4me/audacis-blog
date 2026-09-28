@@ -1,5 +1,4 @@
---embed Neovim as an editor or script
-host.init.lua!:help nvim-from-vim
+CmdAtom.init.lua!nvim --embed as editor or script host.:help nvim-from-vim
 if you already use Vim. If not, try :Tutor.| Google Summer of Code 2026 | 2026.02 |
 | Neovim 0.11 | 2025.03 |
 “Neovim is exactly what it claims to be. It fixes every issue I have with Vim.” —Geoff Greer

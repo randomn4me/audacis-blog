@@ -1,68 +1,118 @@
-81%
-of security professionals report a heavier workload than a year ago.
-We automate manual cybersecurity tasks for security teams. Our agentic pipeline of specialised AI agents collects and analyses unstructured external threat information, reducing workload and delivering actionable intelligence for organisations of any size.
-Why Now?
-Analysts absorb more tasks, more sources, and now the output of AI systems they still have to verify. EU regulation adds fixed deadlines on top.
-81%
-of security professionals report a heavier workload than a year ago.
-44%
-of analyst time still goes on manual work, although 99% of teams now run AI.
-76%
-report emotional exhaustion or mental fatigue.
-SANS 2025 finds the same in operations: high-volume SOCs lose 30 to 40% of analyst hours to automatable work. More AI has not cut the manual share, it has added output to check.
-Sources: Tines Voice of Security 2026SANS 2025 SOC Survey
-In effect since October 2024
-Expands mandatory cybersecurity requirements to 100,000–350,000 organisations across 18 sectors. Includes a 24-hour incident reporting obligation for organisations with 50+ employees or €10M+ revenue.
-In effect since January 2025
-Covers 22,000+ financial institutions with a strict 4-hour reporting requirement for major incidents. Manual detection and classification processes cannot reliably meet this deadline.
-Mandatory from September 2026
-The Cyber Resilience Act requires 24-hour disclosure of actively exploited vulnerabilities in digital products, creating direct structural demand for automated vulnerability monitoring.
-Serify automates incident detection, classification, triage, and pre-filled reporting workflows that make compliance with these requirements operationally viable.
-Eight AI agents read the threat landscape so your analysts do not have to.
-Eight specialised AI agents work in parallel to extract IOCs, TTPs, threat actors, CVEs, campaigns, C2 infrastructure, kill-chain phases, and defensive measures. Security analysts spend the majority of their time on manual tasks. We automate around 50% of that workload.
-A continuously updated graph database mapping relationships between threat actors, vulnerabilities, campaigns, and infrastructure. Ask complex correlation queries in natural language. No graph query syntax required.
-Optionally upload your software and hardware inventory so Serify filters incoming threat reports down to what is actually relevant to your stack, instead of another undifferentiated feed.
-From daily operations to strategic planning: concrete workflows that save analyst hours every day.
-Start every day with a concise summary of critical and high-severity CVEs published in the last 24 hours, automatically filtered to your technology stack.
-❯ Summarise critical vulnerabilities affecting our Kubernetes and nginx stack published this week, with active exploit availability.
-During active incident response, rapidly contextualise any IOC (IP, domain, or file hash) with associated campaigns, threat actors, and related indicators.
-❯ What do you know about 185.220.101.x? Any links to known ransomware campaigns or recent C2 activity?
-Generate sector-specific threat actor briefings for strategic planning, risk assessments, and board-level reporting without hours of manual research.
-❯ Which threat actors have been most active targeting European financial services in the last 90 days, and what TTPs are they using?
-Go beyond CVSS scores. Prioritise remediation based on real-world exploit availability, active exploitation in the wild, and relevance to your specific environment.
-❯ Which of these open CVEs have known working exploits and are being actively exploited this quarter?
-Comprehensive external threat intelligence from public sources. No internal telemetry or invasive agents required.
-NVD and EUVD synchronised multiple times daily. Critical CVEs with known exploits receive priority processing. ExploitDB links vulnerabilities to publicly available proof-of-concept code.
-OSINT feeds from security research communities, government and CERT advisories across multiple jurisdictions, and vendor security bulletins aggregated centrally.
-Security blogs, research publications, conference presentations, and vendor advisories from hundreds of sources, collected continuously and indexed for semantic search.
-Aggregated intelligence from selected forums and marketplaces. Provides early warning of credential leaks, emerging attack tooling, and threat actor discussions without requiring direct access.
-VirusTotal multi-engine results, ThreatFox, ThreatMiner, and Shodan internet-wide scanning data. Rapid indicator assessment based on broad industry consensus.
-MISP community feeds, security researcher posts on social media, and academic publications, indexed for both tactical indicators and strategic context.
-No vendor lock-in. Open standards. Your choice of deployment and models.
-Hosted entirely within the EU on European cloud providers. Data sovereignty guaranteed, with no dependency on non-EU platforms.
-Native support for STIX, MISP, and industry-standard formats. Export your data anytime. Integrate seamlessly with existing security tools.
-Bring your own LLM. Use local open-weight models or commercial APIs. Switch providers without platform migration. True flexibility.
-SaaS for immediate access or on-premise for regulated environments. Hybrid options available. Your infrastructure requirements drive the architecture.
-User queries and custom data are never used to train models or shared with third parties. Each organisation's data is logically isolated and encrypted, and on-premise deployment gives regulated environments full control over data location.
-A spinoff from PEASEC at TU Darmstadt, built on two dissertations: automated CTI workflow optimisation and adaptive deep learning in low-data cybersecurity regimes. Research prototypes for every core component, now combined into a unified platform. What began as academic research is now a product built for the security teams facing rising regulatory and threat pressure across Europe.
-Serify aims at making cutting-edge security intelligence accessible to security teams worldwide. Our team uniquely combines expertise in automated security information retrieval and adaptive deep learning in low-data regimes, proven through years of research and real-world prototypes. We are the researchers and engineers behind that work, now building the platform we always wished we had.
-Co-Founder & Product Owner
-Philipp researches automated threat intelligence retrieval, using NLP and Large Language Models to optimise the CTI cycle. That work is the foundation of Serify's collection and extraction pipeline.
-Co-Founder & AI Research Lead
-Markus specialises in active learning, data augmentation, and adversarial training to make machine learning models robust in low-data settings. That research shapes the models behind Serify's agent pipeline.
-From research prototypes to production-ready security intelligence. Each milestone below marks a step on that path, from the first academic experiments to funding, partnerships, and the platform taking shape today.
-Selected recent work from the team behind Serify.
-Julian Bäumler, Louis Blöcher, Lars-Joel Frey, Xian Chen, Markus Bayer, Christian Reuter
-arXiv
-Philipp Kuehn, Dilara Nadermahmoodi, Markus Bayer, Christian Reuter
-arXiv
-Markus Bayer
-Philipp Kuehn
-Philipp Kuehn, Markus Bayer, Tobias Frey, Moritz Kerk, Christian Reuter
-Availability, Reliability and Security
-Updates from Serify: funding, research, and what we're building.
-Wrapping up FIRST CTI 2026 in Munich. A single-track, practitioner-driven conference that felt like the opposite of RSA, and was better for it.
-Read moreNotes from day one at FIRST CTI 2026 in Munich. A full-day workshop on the CTI cycle by Intel 471 and Freddy Murre reframed how I think about stakeholder engagement and evaluation metrics.
-Read moreNIST announced it can no longer enrich every CVE in the National Vulnerability Database. For European organisations facing CRA and NIS2 deadlines, the timing could not be worse.
-Read moreInterested in enhancing your security team's capabilities? Whether you want to scope a pilot, talk through your threat intelligence workflows, or simply see what we are building, we would love to hear from you.
-Send us an email and we'll get back to you as soon as possible.
+Understand threats. Know what to do.
+Serify connects current threat intelligence to your infrastructure and questions. Your team gets reasoned recommendations, investigates relationships and creates its own analyses and reports.
+Cyber threat intelligence for IT operations, SOC, CTI and CSIRT teams · Demonstrator in development
+Does CISA ICSA-25-023-02 on RTU500 (CVE-2024-2617) affect us?
+- Affected sites
+- North (13.5.2) and South (13.4.3), both high criticality. West: inventory unclear.
+- Source and evidence
+- CISA ICSA-25-023-02: 13.4.1–13.4.4 and 13.5.1–13.5.3 affected if secure update is not enabled on all CMUs.
+- Next step
+- Verify secure update at North and South, assess updates to 13.5.4 or 13.7.7, collect West’s inventory.
+Why now
+The work is growing faster than the teams.
+Analysts absorb more sources, more alerts, and now the output of AI systems they still have to check. European regulation adds fixed clocks on top.
+- 81%
+- say their security workload grew over the past year.
+- 44%
+- of team time still goes on manual, repetitive work.
+- 76%
+- report emotional exhaustion, reduced motivation or mental fatigue.
+From a survey of more than 1,800 security leaders and practitioners. 99% of them already run AI somewhere in the stack, and the manual share did not fall. Tines Voice of Security 2026
+And the clocks are already running
+- NIS2An early warning within 24 hours of becoming aware of a significant incident, a fuller notification within 72 hours. The Commission estimates over 160,000 entities now fall in scope. NIS2 Article 23
+- DORAMore than 22,000 financial entities. Initial notification within four hours of classifying an incident as major, and no later than 24 hours after detection. DORA Article 19
+- CRAManufacturers must report actively exploited vulnerabilities to ENISA and their national CSIRT within 24 hours of becoming aware, with a technical notification at 72 hours. CRA reporting obligations
+What you can do with it
+From a report to a reasoned next decision.
+Serify is being developed for IT operations, SOC, CTI and CSIRT teams that want to turn threat information into practical actions and their own analyses.
+- See what affects you- Automatically compare supplied SBOM and infrastructure data with new reporting.
+- Understand relationships- Trace evidenced links between vulnerabilities, indicators, actors and campaigns.
+- Put findings to work- Review, investigate and report results shaped for each role and question.
+Interactive examples
+One question. The context your team needs.
+Choose a perspective and explore the response, from practical actions to campaign analysis.
+Follow-up on CISA ICSA-25-023-02 (CVE-2024-2617): which of our RTU500 sites need further investigation, and what is missing for a decision?
+Advisory, version ranges and SBOM inventory of four sites matched· Reconstructed · real advisory, fictional sites
+North and South are in the affected range. West is a data gap.
+The CMU firmware at North (13.5.2) and South (13.4.3) falls within the affected version ranges; both sites are recorded as high criticality. The vulnerability is only exploitable if secure update is not enabled on all CMUs. No evidence of that configuration has been supplied yet.
+- Nord · high · 2× 13.5.2Verify secure update on both CMUs; assess an update to 13.5.4 or later.
+- South · high · 2× 13.4.3Verify secure update on both CMUs; assess an update to 13.7.7 or later.
+- West · high · unclearThe export from 20 Aug lists one CMU on 13.5.4 but is neither confirmed as current nor complete. Collect a current inventory.
+- OT lab · low · 13.5.4Outside the range. Usable as a reference device for a compatibility test.
+View source, remediations and limits
+CISA ICSA-25-023-02, Update B of 3 Mar 2026 · CVE-2024-2617 · CVSS 7.2. Authenticated, authorised users can bypass secure update and install unsigned firmware if secure update is not enabled on all CMUs of an RTU500. Affected: CMU firmware 13.2.1–13.2.7, 13.4.1–13.4.4 and 13.5.1–13.5.3.
+Vendor remediation: 13.4.x to 13.7.7 or later, 13.5.x to 13.5.4 or later; in both cases enable secure update on all CMUs.
+Limits: the version match does not establish exploitability. An update target is not an operational approval; compatibility testing and a maintenance window are pending. 13.5.4 is not a general all-clear; other advisories need separate review.
+Data as of: SBOM inventory from 15 Sep 2026, West from 20 Aug 2026. Sites, criticality and operator details are fictional; the advisory is real.
+lastauthserverused.js was modified on our Ivanti Connect Secure. The external Integrity Checker Tool reports no mismatches. What do we know, and how do we proceed?
+File matched against CISA AA24-060B; malware, infrastructure and vulnerabilities retrieved· Reconstructed · real advisory, fictional alert
+The change matches known credential theft. A clean ICT scan is no all-clear.
+CISA AA24-060B describes this exact file as modified to send entered credentials to an attacker-controlled domain and lists variants of it as the WARPWIRE credential harvester. The same advisory reports web shells on devices where the ICT showed no mismatches. This does not prove a compromise, but the credentials should be treated as at risk.
+View next check, sources and case reports
+Next check: search proxy and DNS logs for symantke[.]com and the advisory’s other indicators. Run the current external ICT, but do not treat a clean result as an all-clear. Treat VPN user and service account credentials as compromised.
+CISA AA24-060B of 29 Feb 2024: CVE-2023-46805 and CVE-2024-21887 can be chained into unauthenticated code execution; all supported versions 9.x and 22.x are affected. In CISA lab tests, root-level persistence survived factory resets and upgrades. According to CISA, some IP addresses in the advisory may also be used legitimately.
+Technical case report · example
+Finding: modified lastauthserverused.js on Ivanti Connect Secure, ICT without mismatch. External context: AA24-060B lists the file as a WARPWIRE credential harvester with C2 symantke[.]com. Gaps: time of modification, outbound connections, affected accounts. Next step: check logs for the indicators, isolate or reimage the device, reset all credentials used through the gateway.
+Customer report · example
+A file on your VPN gateway was modified that, according to a warning from the US agency CISA, is used to steal login credentials. Whether any data was actually taken is still open. As a precaution we are resetting credentials and examining the device; the VPN may be briefly unavailable.
+Do the ANSSI report on APT28 in France and the joint advisory on GRU targeting of logistics companies describe the same activity? Show the evidence and its limits.
+Two reports: actors, tools, vulnerabilities and periods compared· Reconstructed · real reports
+Same actor, different campaigns. The reports are not independent.
+Both attribute the activity to APT28 and name HeadLace, CVE-2023-23397 and services such as Mocky and InfinityFree. The targets differ: French government, defence industry and research for ANSSI; logistics, transport and IT in 13 countries in the joint advisory. ANSSI co-sealed that advisory, and it cites the ANSSI report. The overlap is therefore not independent confirmation.
+Same actor per both sources · common campaign not established
+Sources not independent · no shared indicators
+Overlap, differences and limits
+Shared: Attribution to APT28 (Fancy Bear); HeadLace, OceanMap, MASEPIE and SteelHook are named in both; CVE-2023-23397 and attacks on Roundcube servers; phishing, brute force and compromised routers; services such as Mocky and InfinityFree.
+Differences: Only the joint advisory names GRU unit 26165, the Roundcube CVEs, CVE-2023-38831 (WinRAR) and concrete indicators. According to it, OceanMap and SteelHook were not observed against logistics or IT. Period: ANSSI from 2021, joint advisory from 2022.
+Limits: The ANSSI report contains no indicators, so an IOC comparison is not possible. There, “targeting” also covers unsuccessful attempts. The joint advisory notes that its indicators may be shared or compromised infrastructure.
+Sources and collection gaps
+ANSSI CERTFR-2025-CTI-007 of 29 Apr 2025: APT28 activity against French entities since 2021.
+CISA AA25-141A of May 2025: joint advisory by NSA, CISA, FBI and partners including BSI, BND, BfV and ANSSI on GRU unit 26165 and Western logistics and IT. Cites the ANSSI report as a source on CVE-2023-23397.
+Collection gap: own telemetry or reporting from outside the co-sealing agencies to connect or separate the campaigns.
+Knowledge base in development
+Each analysis builds on existing knowledge.
+Example with real reports: new sources add to existing evidence instead of replacing it. Continuous updates and notifications are planned.
+- 01New report: CISA AA25-141AThe joint advisory of May 2025 describes GRU unit 26165 (APT28) targeting Western logistics and IT companies.
+- 02Link to existing knowledgeThe ANSSI report of April 2025 already attributes HeadLace and CVE-2023-23397 to APT28. The new advisory cites it; ANSSI co-sealed it.
+- 03Extend the assessmentPreviously: government, defence and research in France. Now: also logistics, transport and IT in 13 countries, with checkable indicators. Not independent confirmation, as the sources are linked.
+In development
+Keep your data and decisions under your control.
+European sovereignty starts with clear boundaries: public threat information as a shared knowledge base, separate from protected organisational context.
+- Knowledge base
+- Public sources and their evidence.
+- Organisation context
+- Your supplied inventories remain a separate context.
+- Models
+- Model choice is part of the intended flexible design.
+- Integration
+- Interfaces and local processing will be scoped with pilot teams.
+Local processing and private knowledge bases are a target, not an available feature. Demonstrator in development.
+Our team
+The people behind Serify
+We build Serify together with security teams. Philipp translates their requirements into the product. Markus develops the AI methods that extract information and prepare it for analysis.
+Selected research
+Automate the intelligence cycle
+Proactive Cyber Threat Intelligence · 2025
+The research basis for turning sources into usable findings.
+View publicationAI for security text with little data
+Deep Learning in Textual Low-Data Regimes for Cybersecurity · 2025
+Research on deep learning that understands security text from few training examples.
+View publicationOur Journey
+What we are working on
+2026In Progress
+Platform Development
+2026 Q4In Progress
+Pilot Program
+Before you ask
+The questions we get first.
+Serify is a demonstrator in development, so these answers say what holds today and what is still a target. If something here does not survive contact with your environment, that is worth a conversation.
+- Where does our data live?- On European infrastructure. Public threat information sits in a shared knowledge base. Anything you supply, such as an inventory, stays in a separate context and is not mixed into it.
+- Which model do you use, and does our data train it?- Model choice is part of the intended design rather than a fixed dependency, and we are evaluating open-weight and commercial options during the pilot phase. Nothing you supply is used to train a model.
+- Can we run this on-premise?- Not today. Local processing is a target for the platform, not a feature you can buy. Tell us what your environment requires and we will be specific about what the demonstrator can and cannot do inside it.
+- We already run MISP and OpenCTI. Why add this?- Those store and share what you already hold. Serify is aimed at the step before: reading new public reporting, extracting what is in it, and connecting it to what you have. Open formats such as STIX and MISP are part of the intended design, so the goal is to feed those tools rather than replace them.
+- What does a pilot cost us?- Your time, mainly. A pilot means bringing a real recurring task and enough context to judge whether the answers hold up. We are not selling licences yet.
+Pilot project
+Which part of your workflow needs less manual work?
+Tell us about your team, your sources and a specific task. Together we can define what to explore with the demonstrator and how to measure its value.
+Or write to us directly:
+contact@serify.eu

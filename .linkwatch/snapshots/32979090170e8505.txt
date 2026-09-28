@@ -1,5 +1,6 @@
 45,000 Security Professionals, One Clear Signal: Intelligence Is Getting Collaborative
 A wrap-up of RSAC 2026 from the Serify perspective: what we learned about the state of cyber threat intelligence, why the best connections were European, and where agentic AI actually stands.
+On this page
 Four days, 45,000 security professionals, 700+ exhibitors, and more conversations than I can count. RSAC 2026 is wrapping up today, and it delivered.
 When I wrote last week about Europe showing up at RSA, it was an informed prediction. Now I can confirm: Europe did not just show up. It made an impression. But this post is not about Europe alone. It is about what RSAC 2026 revealed about where our industry is heading, and what that means for what we are building at Serify.
 The Event Itself
@@ -31,4 +32,3 @@ Looking Ahead
 RSAC 2026 confirmed that the cybersecurity industry is at an inflection point. Regulation is accelerating. Intelligence is getting collaborative. And the demand for tools that can actually make sense of the data flood is only growing.
 I came to San Francisco to learn, connect, and validate the direction we are building toward. All three happened, and then some. The partnerships forming out of this week will shape our roadmap in the months ahead.
 See you at RSAC 2027.
-Tagged with
