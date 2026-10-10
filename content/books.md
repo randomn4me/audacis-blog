@@ -8,6 +8,9 @@ items = [
   { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, so I got curious.", year = "Currently Reading" },
   { title = "Dune Messiah (Frank Herbert)", description = "I want to finish it before the next Dune movie comes out in December.", year = "Currently Reading" },
 
+  { title = "Brave New World (Aldous Huxley)", description = "Looking at today's world, there is nothing new in here. What struck me is that someone imagined this world in 1932, and how much of it we have built since: pleasure on demand, distraction as a pacifier, and a society that does not want to be free as long as it is comfortable.", rating = 4, year = 2026 },
+  { title = "Niedergetrampelt von Einhörnern (Maëlle Gavet)", description = "Covers the known problems of big tech, but from a different perspective that added a few insights for me. Nothing groundbreaking overall, but the practical suggestions on how to fix them are good.", rating = 3, year = 2026 },
+
   { title = "The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses (Eric Ries)", description = "An excellent book and mandatory reading for any entrepreneur. It covers agile project management, fast iterations, and how to ensure continuous learning while minimizing the time to identify the gaps that your startup's product needs to fill.", rating = 5, year = 2026 },
 
   { title = "Capitalism and Crises: How to Fix Them (Colin Mayer)", description = "A great book to get into the current problems of the economic system, exemplified through the UK and US. It touches on purposeful business and the different roles and responsibilities of stakeholders, shareholders, the financial sector, and governments - and the interplay between them.", rating = 4, year = 2026 },
