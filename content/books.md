@@ -8,6 +8,7 @@ items = [
   { title = "Fountainhead (Ayn Rand)", description = "I've heard a lot about this book and Ayn Rand in general, so I got curious.", year = "Currently Reading" },
   { title = "Dune Messiah (Frank Herbert)", description = "I want to finish it before the next Dune movie comes out in December.", year = "Currently Reading" },
 
+  { title = "The Dip: A Little Book That Teaches You When to Quit (and When to Stick) (Seth Godin)", description = "Short, clear, and to the point. Nothing really new compared to other books I have read lately, but it was nice to have it confirmed and put into words once more.", rating = 4, year = 2026 },
   { title = "Brave New World (Aldous Huxley)", description = "Looking at today's world, there is nothing new in here. What struck me is that someone imagined this world in 1932, and how much of it we have built since: pleasure on demand, distraction as a pacifier, and a society that does not want to be free as long as it is comfortable.", rating = 5, year = 2026 },
   { title = "Niedergetrampelt von Einhörnern (Maëlle Gavet)", description = "Covers the known problems of big tech, but from a different perspective that added a few insights for me. Nothing groundbreaking overall, but the practical suggestions on how to fix them are good.", rating = 4, year = 2026 },
 
